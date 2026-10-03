@@ -214,6 +214,21 @@ class Checker:
             if piece is None:
                 constant += self.scalar_min(lo, hi)
                 continue
+
+            # A parent stable piece can cover an interval that straddles one
+            # or more refinement seams.  Using only that parent is rigorous
+            # but can be catastrophically weak and cause artificial
+            # depth-stalls.  The segmented scalar envelope is also rigorous:
+            # split the interval at exact catalog boundaries, take the best
+            # certified lower model on each segment, then the minimum across
+            # segments.  If it is stronger, use that scalar certificate for
+            # this partial sum instead of the coarse parent quadratic.
+            if piece.index < 56 and len(self.groups.get(piece.owner, ())) > 1:
+                scalar = self.scalar_min(lo, hi)
+                if scalar > piece.minimum(lo, hi):
+                    constant += scalar
+                    continue
+
             constant += piece.a + piece.c * piece.center * piece.center
             if piece.c:
                 for i in range(5):
