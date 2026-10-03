@@ -1,58 +1,69 @@
 # Bandwidth-one v0.2 constructive search gate
 
-## Frozen baseline
+## Baseline
 
-Independent A1290 replay passes with exact finite arithmetic at A=129/10000 and B6=1094977/5000000000. Using the directed HD(1) lower bound and pi upper bound from the replay gives
+A1290 is independently replayed in the review package.
 
-c(A1290,B6) >= 0.6728005676668788382262765469...
+Pinned public upstream PR #17 also contains an exact replay report for A1293 at the same sextuple penalty coefficient
 
-The public upstream A1293 report at the pinned PR #17 head records PASS for A=1293/100000 at the same B6. Its report is public and exact-replay metadata are available, but the full A1293 stream bundle is not yet independently replayed in this repository. Its arithmetic feedback value from the same directed constants is
+A = 1293/100000,
+B = 1094977/5000000000.
 
-c(A1293,B6) >= 0.6728039389347995417365322794...
+Using the same directed HD(1) lower bound and pi upper bound as our replay, this gives the arithmetic feedback value
 
-Treat this as a public reported exact-certificate benchmark, not yet our independently replayed benchmark.
+c(A1293,B) >= 0.6728039389347995417365322794...
 
-## New constructive direction
+The A1293 report is public source evidence, but its full stream bundle has not yet been independently source-free replayed in this repository. It is therefore a public reported exact-certificate benchmark, not yet our independently replayed benchmark.
 
-The upstream catalog ceiling-vs-B sweep shows the best catalog upper ceiling near B=(21/20) B6:
+## First constructive target
 
-B = 22994517/100000000000 = 0.00022994517.
+The cleanest next search keeps B fixed and increases only A.
 
-At this B, the catalog pointwise ceiling recorded upstream is about
+A 666-piece catalog point search using the frozen stable + A1275 + A1290-v3 lower models found a candidate adversarial value near
 
-A* <= 0.013521670981544505,
+A_catalog_point ~= 0.01296157144
 
-with feedback ceiling about 0.6728129728595.
+at B = 1094977/5000000000.
 
-This ceiling is not a constructive certificate. It only says no certificate using that catalog can exceed the ceiling.
+This is an upper ceiling witness for what that catalog could ever certify; it is not a constructive proof.
 
-## First search target
+The first deliberately conservative target is
 
-To beat the public A1293 arithmetic value at B=(21/20)B6, the affine constant must satisfy
-
-A > 0.01344128887629523133949...
-
-Therefore the first deliberately non-extremal constructive target is
-
-A = 269/20000 = 0.01345,
-B = 22994517/100000000000.
+A = 1294/100000 = 0.01294,
+B = 1094977/5000000000.
 
 If certified, the directed feedback lower bound is
 
-c >= 0.6728049179424652451314118136...,
+c >= 0.6728050626982810...
 
-which exceeds the public A1293 arithmetic value by about 9.79e-7.
+which improves on the A1293 arithmetic value by about 1.124e-6.
 
-The target sits about 7.17e-5 below the upstream catalog ceiling, leaving materially more margin than an attempt near A=0.01352.
+The target remains about 2.16e-5 below the current catalog point ceiling estimate, giving materially more slack than immediately changing B or pushing close to the apparent ceiling.
+
+## Why same-B first
+
+1. It changes one finite parameter only.
+2. It reuses the A1293 geometry and refinement catalog directly.
+3. Any failure can be attributed to the A increment rather than a simultaneous B shift.
+4. It gives a larger safety margin than the initial B=(21/20)B6, A=0.01345 proposal.
+
+The B-sweep remains a second-stage option. The old catalog sweep suggests possible additional gain around B approximately 1.05 B6, but a full 666-piece search shows that region is much tighter than the older 272-model ceiling suggested.
 
 ## Gate
 
-Do not launch a large certificate tree immediately. First build a small exact feasibility pilot for A=269/20000, B=(21/20)B6 using the same exact catalog semantics.
+Do not launch a massive full tree immediately.
 
-PASS: local branch-and-bound closes representative hard cells and no counterexample point below A is found.
+First run a small exact branch-and-bound feasibility pilot at A=1294/100000 with the same B and the frozen 666-piece catalog.
 
-FAIL: a source-backed exact point or box proves E6(g)+B sum(g)<A.
+PASS:
+- no exact counterexample point/box below A is found;
+- hard cells close with positive rational margins in a representative pilot;
+- generator semantics match the A1293/A1290 verifier semantics.
+
+FAIL:
+- an exact point or box gives E6(g)+B sum(g)<A;
+- or branch growth indicates the target is computationally impractical without new refinements.
 
 Only after PASS should a full exact tree be generated.
 
-No RH claim. No new density theorem claim until the full certificate, analytic bridge, replay and novelty audit pass.
+No RH claim. No new density theorem claim until the full certificate, analytic bridge, independent replay, and novelty audit pass.
