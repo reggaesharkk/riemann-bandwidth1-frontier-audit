@@ -1,0 +1,32 @@
+{
+  "schema": "a1294-a1299-adaptive-frontier-scan-summary-v1",
+  "source": "Windows ARM64 local adaptive scan log uploaded to Drive on 2026-10-03",
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "ARM64",
+    "python": "3.12.10",
+    "workers": 6
+  },
+  "settings": {
+    "chunk_nodes": 5000,
+    "initial_boxes": 32,
+    "budget_per_candidate": 80000,
+    "B": "1094977/5000000000"
+  },
+  "results": [
+    {"A":"1294/100000","visited":101527,"pending":149,"max_depth":58,"nodes_per_second":3281.73,"speedup_vs_github":4.62,"wall_seconds":30.94},
+    {"A":"1295/100000","visited":102135,"pending":143,"max_depth":58,"nodes_per_second":3306.30,"speedup_vs_github":4.65,"wall_seconds":30.89},
+    {"A":"1296/100000","visited":102815,"pending":131,"max_depth":58,"nodes_per_second":1630.38,"speedup_vs_github":2.29,"wall_seconds":63.06},
+    {"A":"1297/100000","visited":103487,"pending":145,"max_depth":58,"nodes_per_second":3144.93,"speedup_vs_github":4.42,"wall_seconds":32.91},
+    {"A":"1298/100000","visited":104178,"pending":142,"max_depth":58,"nodes_per_second":3156.91,"speedup_vs_github":4.44,"wall_seconds":33.00},
+    {"A":"1299/100000","visited":104828,"pending":154,"max_depth":58,"nodes_per_second":3098.85,"speedup_vs_github":4.36,"wall_seconds":33.83}
+  ],
+  "interpretation": [
+    "Adaptive redistribution removes the severe fixed-partition load imbalance seen in the first local benchmark.",
+    "A1294 through A1299 all survive the ~100k-node diagnostic budget without an exact failure signal.",
+    "Pending counts stay of the same order (131-154) and maximum depth stays fixed at 58 across the scan, so there is no obvious branch-complexity phase transition by A1299 at this budget.",
+    "A1296 throughput anomaly is a performance/load-balancing effect unless reproduced; it is not mathematical evidence.",
+    "This scan is diagnostic only and does not establish complete coverage for any candidate."
+  ],
+  "next_gate": "focused_bracket_scan_near_A_0p01299_to_0p01300_plus_hard-frontier_reuse"
+}
