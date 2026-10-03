@@ -1,0 +1,30 @@
+name: A1294 canonical stream smoke
+
+on:
+  push:
+    branches:
+      - research/bandwidth1-v0.2
+    paths:
+      - .github/workflows/a1294-canonical-smoke.yml
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Generate tiny exact stream
+        run: |
+          mkdir -p results/optimization/a1294_smoke
+          python src/a1294_certificate_generator.py             --stable research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             --v1 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             --v3 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             --output-dir results/optimization/a1294_smoke             --a 1294/100000 --b 1094977/5000000000             --limit 1 --max-nodes 100000 --progress 0
+      - name: Independent exact replay
+        run: |
+          python src/a1294_certificate_verifier.py             --stable research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             --v1 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             --v3 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             --tree-dir results/optimization/a1294_smoke             --report results/optimization/a1294_smoke/replay.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: a1294-canonical-smoke
+          path: results/optimization/a1294_smoke/
