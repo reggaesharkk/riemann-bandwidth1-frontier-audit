@@ -1,0 +1,31 @@
+{
+  "schema": "a1296-fullroot-5m-log-summary-v1",
+  "source": "Drive A1296_5m_diagnostic_log.txt",
+  "A": "1296/100000",
+  "B": "1094977/5000000000",
+  "status": "BUDGET_REACHED_WITH_FRONTIER",
+  "visited": 5057564,
+  "pending": 1024,
+  "maximum_depth": 79,
+  "wall_seconds": 1852.6870000000345,
+  "nodes_per_second": 2729.8534506907567,
+  "progress": [
+    {"visited":502644,"pending":112,"max_depth":70,"elapsed":133.14000000001397},
+    {"visited":1001828,"pending":278,"max_depth":72,"elapsed":262.8280000000377},
+    {"visited":1501061,"pending":381,"max_depth":73,"elapsed":386.65600000001723},
+    {"visited":2008840,"pending":436,"max_depth":75,"elapsed":515.6870000000345},
+    {"visited":2508490,"pending":468,"max_depth":75,"elapsed":713.890000000014},
+    {"visited":3000209,"pending":633,"max_depth":75,"elapsed":902.1870000000345},
+    {"visited":3509516,"pending":672,"max_depth":75,"elapsed":1113.375},
+    {"visited":4000120,"pending":844,"max_depth":77,"elapsed":1238.7030000000377},
+    {"visited":4508365,"pending":1033,"max_depth":79,"elapsed":1486.265000000014},
+    {"visited":5003955,"pending":1003,"max_depth":79,"elapsed":1840.8280000000377}
+  ],
+  "interpretation": [
+    "A1296 did not fully close within five million adaptive nodes.",
+    "No explicit counterexample is reported in the log.",
+    "The unresolved frontier grew from 112 boxes at ~0.5M nodes to 1024 boxes at completion, indicating materially higher search complexity than the earlier A1294/A1299 capped diagnostics.",
+    "This is complexity evidence, not a mathematical failure of A1296.",
+    "The full result JSON containing the exact deepest pending boxes is still required before designing the next targeted continuation."
+  ]
+}
