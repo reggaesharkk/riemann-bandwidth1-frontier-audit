@@ -1,0 +1,39 @@
+{
+  "schema": "a1294-small-exact-feasibility-pilot-v1",
+  "status": "PASS_LOCAL_PILOT_NOT_FULL_CERTIFICATE",
+  "A": "647/50000",
+  "B": "1094977/5000000000",
+  "catalog_piece_count": 666,
+  "exact_adversarial_point": {
+    "point": [
+      "6912667/1048576",
+      "6541989/524288",
+      "860015/131072",
+      "13083885/1048576",
+      "6912651/1048576"
+    ],
+    "value": "1739674247820415045342527228267900485813207074499/134217728000000000000000000000000000000000000000000",
+    "value_float": 0.01296158319577884,
+    "margin": "2896847500415045342527228267900485813207074499/134217728000000000000000000000000000000000000000000",
+    "margin_float": 0.00002158319577883963,
+    "classification": "NOT_COUNTEREXAMPLE"
+  },
+  "public_a1293_tight_leaf_rechecked_at_A1294": {
+    "status": "PASS",
+    "visited": 1,
+    "leaves": 1,
+    "maximum_depth": 0,
+    "smallest_margin": "46939888778239945228317932599574201717/4096000000000000000000000000000000000000000",
+    "smallest_margin_float": 0.000011459933783749986
+  },
+  "twofold_expansion_of_that_leaf": {
+    "status": "PASS",
+    "visited": 57,
+    "leaves": 29,
+    "maximum_depth": 9,
+    "smallest_margin": "15788932689512496459047867926347809993/16384000000000000000000000000000000000000000",
+    "smallest_margin_float": 9.63679973725128e-7
+  },
+  "interpretation": "The known A1293 tight region and a twofold enlargement close exactly at A1294 under the pinned 666-piece catalog. A multistart numerical search produced a rationalized exact point with positive margin. This is encouraging local evidence only; it is not a proof over the full five-dimensional domain.",
+  "next_gate": "FULL_DOMAIN_CAPPED_BRANCH_AND_BOUND_GROWTH_TEST"
+}
