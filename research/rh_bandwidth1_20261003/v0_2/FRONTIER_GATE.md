@@ -2,82 +2,113 @@
 
 ## Evidence hierarchy
 
-The project now distinguishes three levels of the six-translate frontier.
+1. **Independently source-replayed benchmark:** A1290,
+   (A=129/10000), (B_6=1094977/5000000000), with directed lower bound
 
-1. **Independently source-replayed benchmark:** A1290, with
-   (A=129/10000), (B_6=1094977/5000000000), and fixed public coefficient
-   (0.6728005676). The independent exact replay in the review package
-   checks 3,550,925 nodes and 1,775,463 leaves.
+   [
+   c_{1290}ge 0.6728005676668788382262765469ldots
+   ]
 
-2. **Public external exact-replay report, not source-replayable from committed
-   streams:** A1293, with (A=1293/100000). The public A1290 frontier package
-   contains an exact-replay report, manifest, and generator log whose SHA-256
-   values match the upstream SHA256SUMS. The canonical ~200 MB tree streams
-   are not committed, so this project does not promote A1293 to the
-   source-replayed benchmark.
+   The exact replay checks 3,550,925 nodes and 1,775,463 leaves.
 
-3. **Method ceiling diagnostics:** the upstream v3 catalog reports a surrogate
-   ceiling near (A=0.0129616); direct numerical minimization of the true
-   Montgomery–Taylor kernel objective is reported near (A=0.0129938).
-   These are ceiling diagnostics, not constructive density theorems.
+2. **Public exact-replay report, not yet source-free replayed here:** A1293,
+   (A=1293/100000), (B=B_6). The pinned public report at upstream head
+   `fba91d214655aaa1fd0504bb893c8859c20c79f9` records PASS with
+   10,003,455 visited nodes and 5,001,728 leaves. Using the same directed
+   analytic constants as our A1290 replay gives
 
-## Arithmetic
+   [
+   c_{1293}ge0.6728039389347995417365322794ldots
+   ]
 
-Using the same directed lower endpoint for the Montgomery–Taylor constant and
-the same directed upper bound for pi as the A1290 audit,
+3. **Constructive candidate under test:** A1294,
+   (A=1294/100000), (B=B_6). If a full exact certificate closes, the
+   same bridge yields
 
-[
-c(A,B_6)=\frac{6C_0-10\pi B_6}{6-A}.
-]
+   [
+   c_{1294}ge0.6728050626982810080982218842ldots
+   ]
 
-For (A=1293/100000), the directed arithmetic gives approximately
+   This is about (1.124	imes10^{-6}) above the A1293 arithmetic value.
 
-[
-c=0.6728039389347995417\ldots.
-]
+4. **Stretch candidate:** A1295, (A=259/20000). This would yield roughly
+   (0.6728061864655), but it has less catalog slack and is not the primary
+   target until A1294 is resolved.
 
-Thus future work should beat the *reported* A1293 level, not merely A1290,
-before making any novelty claim.
+## Why A1294 is primary
 
-The next constructive target is
+The frozen 666-piece catalog gives a numerical adversarial point near
+(0.01296159) at (B=B_6). Therefore A1294=0.01294 has about
+(2.16	imes10^{-5}) diagnostic slack, while A1295=0.01295 has only about
+(1.16	imes10^{-5}). These are pointwise ceiling diagnostics, not proofs.
 
-[
-A=0.01295=259/20000,
-]
+A1294 also isolates one change from the public A1293 report: only A is
+increased, while B and all analytic inputs remain fixed.
 
-which would give approximately
+## Seam obstruction discovered
 
-[
-c=0.6728061864655164551\ldots,
-]
+The naive exact branch-and-bound implementation can become trapped at a
+refinement seam. A tiny box may straddle two certified one-dimensional
+refinement pieces, forcing fallback to the much weaker parent stable model.
+Repeated dyadic splitting then drives depth upward without reflecting a
+mathematical obstruction.
 
-strictly above the reported A1293 level.
+This was observed independently:
 
-## Feasibility evidence
+- the naive A1293 regeneration run 37117582078 hit depth 513 after only
+  36,751 visited nodes and stopped at DEPTH_CAP;
+- this does **not** contradict the public A1293 PASS report, because it is a
+  different generator/lower-bound selection strategy.
 
-The upstream A1290 frontier notes record:
+The seam-aware A1294 checker instead partitions each affected scalar interval
+at exact catalog boundaries and takes the minimum of the certified
+piecewise lower envelope. Every accepted lower bound remains exact rational.
 
-- A=0.01293 closes with catalog v3;
-- A=0.01295 reached a 12,000,000-node resource cap with only 37 boxes pending
-  at depth 83;
-- A=0.01298 exceeds the v3 catalog ceiling and is not a valid target for that
-  surrogate without further one-dimensional refinement.
+## A1294 scaling gate
 
-Therefore A=0.01295 is a **resource/partition problem, not a known mathematical
-obstruction**.
+GitHub Actions run `37117579760`, artifact `11272088005`
+(`sha256:ebed6d4f37018688ba7549df066174f8c8ed9c690f4781bf868a65c9f6ea21ed`)
+ran the seam-aware A1294 checker on the full root ([0,60]^5) for 250,000
+nodes against the pinned input hashes.
 
-A local independent exact-B&B prototype has been started from the pinned
-stable, v1, and v3 rational catalogs. Its first 10,000-node probes reproduce
-the expected weighted-split tree behavior and preserve exact Fraction
-comparisons at every accepted leaf. No full A1295 certificate is claimed yet.
+Result:
 
-## Next gate
+- status: NODE_CAP, no counterexample;
+- visited: 250,000;
+- closed exact leaves: 124,983;
+- pending stack: 35;
+- maximum depth: 72;
+- elapsed: 171.30 seconds;
+- all closed leaves were exact quadratic leaves;
+- smallest accepted rational margin remained positive.
 
-Build a checkpointable independent A1295 search and attempt to close
-(A=259/20000). A successful search must produce canonical streams, exact
-input hashes, an independent replay, and then a separate analytic/Lean bridge
-audit before any unconditional coefficient is claimed.
+This is strong scaling evidence but **not yet a certificate**, because the
+pending boxes mean the root domain is not fully covered.
 
-Claim boundary: this is a certificate-search program for a zero-density
-constant. It does not claim RH or that all zeta zeros lie on the critical
-line.
+A 1,000,000-node scaling run has been launched next. Full certificate
+generation is authorized only if scaling remains healthy.
+
+## A1295 diagnostic
+
+The independent 25k-node A1295 workflow completed its pilot wrapper, but the
+underlying exact search stopped at NODE_CAP: 25,001 visited, 12,486 closed
+leaves, 29 pending, maximum depth 80. It did not find a counterexample.
+A1295 remains secondary until the seam-aware A1294 route is resolved.
+
+## Required proof chain before any new theorem claim
+
+A PASS search is not sufficient by itself. A publishable improvement requires:
+
+1. complete exact coverage of ([0,60]^5);
+2. a canonical certificate stream;
+3. a verifier that checks the stream without trusting the search generator;
+4. frozen catalog/input hashes;
+5. independent replay of every terminal inequality with rational arithmetic;
+6. catalog-soundness / one-dimensional kernel-envelope audit;
+7. analytic bridge audit from the finite affine inequality to the density
+   theorem;
+8. renewed literature/novelty search;
+9. preferably a Lean finite-certificate port or kernel replay.
+
+Until those gates pass, A1294 is a **candidate certificate**, not a new
+unconditional zero-density theorem and not an RH result.
