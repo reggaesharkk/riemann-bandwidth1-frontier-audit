@@ -2,19 +2,6 @@ name: A1295 exact-search pilot
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - research/bandwidth1-v0.2
-    paths:
-      - src/a1295_exact_search.py
-      - .github/workflows/a1295-pilot.yml
-  pull_request:
-    branches:
-      - research/bandwidth1-v0.1
-    paths:
-      - src/a1295_exact_search.py
-      - .github/workflows/a1295-pilot.yml
-
 permissions:
   contents: read
 
