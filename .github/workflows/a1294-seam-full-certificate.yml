@@ -1,6 +1,11 @@
 name: A1294 seam-aware full certificate
 
 on:
+  push:
+    branches:
+      - research/bandwidth1-v0.2
+    paths:
+      - .github/workflows/a1294-seam-full-certificate.yml
   workflow_dispatch:
 
 permissions:
