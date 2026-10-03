@@ -8,6 +8,12 @@ on:
     paths:
       - src/a1295_exact_search.py
       - .github/workflows/a1295-pilot.yml
+  pull_request:
+    branches:
+      - research/bandwidth1-v0.1
+    paths:
+      - src/a1295_exact_search.py
+      - .github/workflows/a1295-pilot.yml
 
 permissions:
   contents: read
