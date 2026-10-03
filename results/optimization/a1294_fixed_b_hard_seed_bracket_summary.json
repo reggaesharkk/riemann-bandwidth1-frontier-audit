@@ -1,0 +1,27 @@
+{
+  "schema": "a1294-fixed-b-hard-seed-bracket-summary-v1",
+  "source": "Windows ARM64 local run, uploaded Drive log A1294_ceiling_bracket_log.txt",
+  "machine": {"machine":"ARM64","platform":"Windows-11-10.0.26200-SP0","workers":6},
+  "settings": {
+    "chunk_nodes": 5000,
+    "budget_per_candidate": 180000,
+    "hard_seed_box_count": 80,
+    "seed_source": "deepest pending boxes from prior A1299 adaptive scan",
+    "B": "1094977/5000000000"
+  },
+  "results": [
+    {"A":"12990/1000000","visited":17110,"pending":0,"max_depth":58,"nodes_per_second":1215.37,"status":"FULLY_CLOSED_HARD_SEED","directed_density_if_certified":"0.6728106815719984"},
+    {"A":"12992/1000000","visited":17248,"pending":0,"max_depth":58,"nodes_per_second":869.88,"status":"FULLY_CLOSED_HARD_SEED","directed_density_if_certified":"0.6728109063288992"},
+    {"A":"12994/1000000","visited":17410,"pending":0,"max_depth":58,"nodes_per_second":607.87,"status":"FULLY_CLOSED_HARD_SEED","directed_density_if_certified":"0.6728111310859501"},
+    {"A":"12996/1000000","visited":17572,"pending":0,"max_depth":58,"nodes_per_second":911.36,"status":"FULLY_CLOSED_HARD_SEED","directed_density_if_certified":"0.6728113558431513"},
+    {"A":"12998/1000000","visited":17744,"pending":0,"max_depth":58,"nodes_per_second":1227.70,"status":"FULLY_CLOSED_HARD_SEED","directed_density_if_certified":"0.6728115806005026"},
+    {"A":"13000/1000000","visited":17904,"pending":0,"max_depth":58,"nodes_per_second":1244.11,"status":"FULLY_CLOSED_HARD_SEED","directed_density_if_certified":"0.6728118053580041"}
+  ],
+  "interpretation": [
+    "All 80 previously hard A1299 seed boxes close exactly through A=0.013000.",
+    "Therefore those specific A1299-deep boxes are not the location of any fixed-B obstruction at A<=0.013000.",
+    "This does NOT show the full [0,60]^5 domain closes at A=0.013000.",
+    "The next gate must return to full-root adaptive searches near 0.01299-0.01300 rather than continuing to reuse only the A1299 deepest-box subset."
+  ],
+  "next_gate": "full_root_adaptive_million_node_bracket_near_A_0p01299_to_0p01300"
+}
