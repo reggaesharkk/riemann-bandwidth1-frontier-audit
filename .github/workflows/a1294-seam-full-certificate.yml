@@ -12,9 +12,9 @@ permissions:
   contents: read
 
 jobs:
-  build-verify:
+  generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,15 +23,52 @@ jobs:
       - name: Generate complete canonical certificate
         run: |
           mkdir -p results/optimization/a1294_seam_full
-          python -u src/a1294_certificate_generator.py             --stable research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             --v1 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             --v3 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             --output-dir results/optimization/a1294_seam_full             --a 1294/100000 --b 1094977/5000000000             --limit 60 --max-nodes 30000000 --max-depth 512 --progress 250000             | tee results/optimization/a1294_seam_full/generator.log
+          python -u src/a1294_certificate_generator.py \
+            --stable research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json \
+            --v1 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json \
+            --v3 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json \
+            --output-dir results/optimization/a1294_seam_full \
+            --a 1294/100000 --b 1094977/5000000000 \
+            --limit 60 --max-nodes 30000000 --max-depth 512 --progress 250000 \
+            | tee results/optimization/a1294_seam_full/generator.log
+      - name: Upload generated certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: a1294-seam-aware-generated
+          path: results/optimization/a1294_seam_full/
+          compression-level: 6
+          retention-days: 30
+
+  verify:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Download generated certificate
+        uses: actions/download-artifact@v4
+        with:
+          name: a1294-seam-aware-generated
+          path: results/optimization/a1294_seam_full
       - name: Independent verifier
         run: |
-          python -u src/a1294_certificate_verifier.py             --stable research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             --v1 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             --v3 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             --tree-dir results/optimization/a1294_seam_full             --report results/optimization/a1294_seam_full/replay.json             | tee results/optimization/a1294_seam_full/verifier.log
+          python -u src/a1294_certificate_verifier.py \
+            --stable research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json \
+            --v1 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json \
+            --v3 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json \
+            --tree-dir results/optimization/a1294_seam_full \
+            --report results/optimization/a1294_seam_full/replay.json \
+            | tee results/optimization/a1294_seam_full/verifier.log
       - name: Freeze hashes and feedback
         run: |
           python src/v0_2_feedback_gate.py | tee results/optimization/a1294_seam_full/feedback.txt
-          find results/optimization/a1294_seam_full -type f -print0 | sort -z | xargs -0 sha256sum             > results/optimization/a1294_seam_full/SHA256SUMS.txt
-      - uses: actions/upload-artifact@v4
+          find results/optimization/a1294_seam_full -type f -print0 | sort -z | xargs -0 sha256sum \
+            > results/optimization/a1294_seam_full/SHA256SUMS.txt
+      - name: Upload verified certificate
+        uses: actions/upload-artifact@v4
         with:
           name: a1294-seam-aware-full-certificate
           path: results/optimization/a1294_seam_full/
