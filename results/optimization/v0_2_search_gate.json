@@ -1,0 +1,27 @@
+{
+  "schema": "rh-bandwidth1-v0.2-search-gate-v1",
+  "status": "TARGET_SELECTED_NOT_CERTIFIED",
+  "independent_replayed_benchmark": "0.67280056766687883822627654690580934535257773742840180948656",
+  "public_a1293_report": {
+    "A": "1293/100000",
+    "B": "1094977/5000000000",
+    "report_status": "PASS",
+    "feedback_lower_from_same_directed_constants": "0.67280393893479954173653227939205172673117537823302290996715",
+    "classification": "PUBLIC_REPORT_NOT_YET_SOURCE_FREE_REPLAYED_HERE"
+  },
+  "candidate": {
+    "B": "22994517/100000000000",
+    "B_relation": "(21/20)*B6",
+    "A_min_to_beat_public_A1293_arithmetic": "0.01344128887629523133949188142812066383245249830393833",
+    "A_target": "269/20000",
+    "A_target_decimal": "0.01345",
+    "feedback_lower": "0.67280491794246524513141181355501434575179663942631139363690",
+    "gain_over_public_A1293_arithmetic": "0.00000097900766570339487953416296261902062126119328848366976"
+  },
+  "upstream_catalog_ceiling_at_same_B": {
+    "A_ceiling_approx": "0.013521670981544505",
+    "feedback_ceiling_approx": "0.6728129728595195",
+    "interpretation": "upper ceiling from pointwise catalog adversary; not a constructive certificate"
+  },
+  "gate": "SMALL_EXACT_FEASIBILITY_PILOT_BEFORE_FULL_TREE"
+}
