@@ -1,0 +1,84 @@
+name: A1293 exact regeneration gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - research/bandwidth1-v0.1
+    paths:
+      - src/a1295_exact_search.py
+      - .github/workflows/a1293-regeneration.yml
+
+permissions:
+  contents: read
+
+jobs:
+  regenerate-a1293:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "pypy3.10"
+
+      - name: Fetch pinned public catalogs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p upstream results
+          BASE="https://raw.githubusercontent.com/anthropics/formal-math/fba91d214655aaa1fd0504bb893c8859c20c79f9/zeta23/certificates/sextuple"
+          curl -L --fail --retry 3 "$BASE/macro-data-exact.json" -o upstream/macro-data-exact.json
+          curl -L --fail --retry 3 "$BASE/a1275/refinement-catalog/refinement-catalog-exact.json" -o upstream/refinement-catalog-v1.json
+          curl -L --fail --retry 3 "$BASE/a1290/catalog/refinement-catalog-v3.json" -o upstream/refinement-catalog-v3.json
+          echo "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b  upstream/macro-data-exact.json" | sha256sum -c -
+          echo "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9  upstream/refinement-catalog-v1.json" | sha256sum -c -
+          echo "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d  upstream/refinement-catalog-v3.json" | sha256sum -c -
+
+      - name: Regenerate the reported A1293 tree decision
+        shell: bash
+        run: |
+          set -euo pipefail
+          python src/a1295_exact_search.py \
+            --data upstream/macro-data-exact.json \
+            --v1 upstream/refinement-catalog-v1.json \
+            --v3 upstream/refinement-catalog-v3.json \
+            --a 1293/100000 \
+            --b 1094977/5000000000 \
+            --limit 60 \
+            --max-nodes 11000000 \
+            --max-depth 512 \
+            --progress 250000 \
+            --expect-data-sha 961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b \
+            --expect-v1-sha 3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9 \
+            --expect-v3-sha 7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d \
+            --output results/a1293-regenerated.json
+
+      - name: Compare with the public exact-replay report
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open("results/a1293-regenerated.json"))
+          expected={
+              "status":"PASS",
+              "visited":10003455,
+              "closed_leaves":5001728,
+              "tail_leaves":1884,
+              "quadratic_leaves":4999844,
+              "maximum_depth":78,
+          }
+          print("regenerated:", {k:d.get(k) for k in expected})
+          print("reported:   ", expected)
+          for key,value in expected.items():
+              if d.get(key) != value:
+                  raise SystemExit(f"A1293 mismatch for {key}: {d.get(key)!r} != {value!r}")
+          print("A1293 deterministic regeneration matches the public exact-replay counts.")
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: a1293-regeneration
+          path: results/a1293-regenerated.json
+          if-no-files-found: error
