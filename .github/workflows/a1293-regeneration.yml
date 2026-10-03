@@ -2,13 +2,6 @@ name: A1293 independent closure gate
 
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
-      - research/bandwidth1-v0.1
-    paths:
-      - src/a1295_exact_search.py
-      - .github/workflows/a1293-regeneration.yml
-
 permissions:
   contents: read
 
