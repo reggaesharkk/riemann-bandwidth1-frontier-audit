@@ -1,0 +1,133 @@
+{
+  "schema": "rh-bandwidth1-replay-v1",
+  "snapshot_date": "2026-10-03",
+  "arithmetic_method": {
+    "library": "Python standard library only",
+    "core_type": "fractions.Fraction",
+    "root_enclosure": "220 rational bisection steps for sqrt(1/2)",
+    "trigonometric_enclosure": "alternating Taylor bounds with 25 terms on [0,1]",
+    "decimal_rendering": "58 places, outward rounding from rational endpoints"
+  },
+  "montgomery_taylor_R_interval": {
+    "lower_decimal": "1.3274992963205883542656202091967048114065969713737359210704",
+    "upper_decimal": "1.3274992963205883542656202091967048114065969713737359210705",
+    "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000001"
+  },
+  "values": [
+    {
+      "name": "base_simple_on_critical_line",
+      "computed_value": {
+        "exact_rational": "2/3"
+      },
+      "source_value": {
+        "exact_rational": "2/3"
+      },
+      "difference": {
+        "exact_rational": "0"
+      },
+      "formula_used": "2 - R(psi_0), where R(psi_0)=4/3",
+      "input_provenance": "Alpoge-Furman arXiv:2608.13637v2, Theorem A and Sections 3-6",
+      "precision": "exact rational",
+      "status": "PASS",
+      "claim_class": "source theorem formula; arithmetic replay only",
+      "pass_scope": "Exact algebraic evaluation; theorem proof not rebuilt here."
+    },
+    {
+      "name": "montgomery_taylor_simple_on_critical_line",
+      "computed_value": {
+        "lower_decimal": "0.6725007036794116457343797908032951885934030286262640789295",
+        "upper_decimal": "0.6725007036794116457343797908032951885934030286262640789296",
+        "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000001"
+      },
+      "source_value": {
+        "formula": "3/2 - (1/sqrt(2))*cot(1/sqrt(2))",
+        "printed_decimal": "0.67250..."
+      },
+      "difference": {
+        "lower_decimal": "0.0000007036794116457343797908032951885934030286262640789295",
+        "upper_decimal": "0.0000007036794116457343797908032951885934030286262640789296",
+        "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000001"
+      },
+      "formula_used": "2-R_MT, R_MT=1/2+(1/sqrt(2))*cot(1/sqrt(2))",
+      "input_provenance": "Alpoge-Furman arXiv:2608.13637v2, Theorem A and Section 5.4",
+      "precision": "58 outward decimal places; exact Fraction enclosure",
+      "status": "PASS",
+      "claim_class": "source theorem formula; rigorous arithmetic enclosure",
+      "pass_scope": "Exact formula enclosed by rational bisection and alternating Taylor remainder bounds."
+    },
+    {
+      "name": "base_distinct_zero_proportion",
+      "computed_value": {
+        "exact_rational": "5/6"
+      },
+      "source_value": {
+        "exact_rational": "5/6"
+      },
+      "difference": {
+        "exact_rational": "0"
+      },
+      "formula_used": "(3-R(psi_0))/2, where R(psi_0)=4/3",
+      "input_provenance": "Alpoge-Furman arXiv:2608.13637v2, Theorem A and Section 6",
+      "precision": "exact rational",
+      "status": "PASS",
+      "claim_class": "source theorem formula; arithmetic replay only",
+      "pass_scope": "Exact algebraic evaluation; theorem proof not rebuilt here."
+    },
+    {
+      "name": "montgomery_taylor_distinct_zero_proportion",
+      "computed_value": {
+        "lower_decimal": "0.8362503518397058228671898954016475942967015143131320394647",
+        "upper_decimal": "0.8362503518397058228671898954016475942967015143131320394648",
+        "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000001"
+      },
+      "source_value": {
+        "formula": "(1+C0)/2",
+        "printed_decimal": "0.83625..."
+      },
+      "difference": {
+        "lower_decimal": "0.0000003518397058228671898954016475942967015143131320394647",
+        "upper_decimal": "0.0000003518397058228671898954016475942967015143131320394648",
+        "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000001"
+      },
+      "formula_used": "(3-R_MT)/2=(1+C0)/2",
+      "input_provenance": "Alpoge-Furman arXiv:2608.13637v2, Theorem A and Section 6",
+      "precision": "58 outward decimal places; exact Fraction enclosure",
+      "status": "PASS",
+      "claim_class": "source theorem formula; rigorous arithmetic enclosure",
+      "pass_scope": "Exact formula enclosed by rational bisection and alternating Taylor remainder bounds."
+    },
+    {
+      "name": "bandwidth_one_pair_ceiling_law_fraction",
+      "computed_value": {
+        "exact_rational": "10909258999421303588095230195816054408197/16000000000000000000000000000000000000000",
+        "lower_decimal": "0.6818286874638314742559518872385034005123125000000000000000",
+        "upper_decimal": "0.6818286874638314742559518872385034005123125000000000000000",
+        "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000000"
+      },
+      "source_value": {
+        "exact_rational": "10909258999421303588095230195816054408197/16000000000000000000000000000000000000000",
+        "displayed_upper_bound": "0.6818287"
+      },
+      "difference": {
+        "computed_minus_displayed_upper": {
+          "lower_decimal": "-0.0000000125361685257440481127614965994876875000000000000000",
+          "upper_decimal": "-0.0000000125361685257440481127614965994876875000000000000000",
+          "width_upper_decimal": "0.0000000000000000000000000000000000000000000000000000000000"
+        },
+        "exact_rational_difference_to_source": "0"
+      },
+      "formula_used": "p0=1-a_N from the exact N=256 marked-configuration law",
+      "input_provenance": "Alpoge-Furman arXiv:2608.13637v2 Section 7.2; zeta23/PairCeiling/LawN256.lean at formal-math commit 2bafb8c88f177284a2123b5fefa2ff84e2365eb6",
+      "precision": "exact Fraction, plus outward decimal rendering",
+      "status": "PASS",
+      "claim_class": "conditional formalized implication; external EnclOK enclosure not replayed",
+      "pass_scope": "The rational value and its displayed upper decimal are checked; the law interval enclosure and universal ceiling proof are not independently replayed."
+    }
+  ],
+  "gate_status": {
+    "constant_arithmetic": "PASS",
+    "full_analytic_theorem_replay": "NOT_PASSED",
+    "upstream_Lean_rebuild": "NOT_RUN",
+    "EnclOK_external_interval_replay": "NOT_RUN"
+  }
+}
