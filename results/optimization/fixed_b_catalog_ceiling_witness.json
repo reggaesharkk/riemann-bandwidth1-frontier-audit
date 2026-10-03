@@ -1,0 +1,48 @@
+{
+  "schema": "fixed-b-catalog-ceiling-witness-v1",
+  "B": "1094977/5000000000",
+  "witness_point": [
+    "6912667/1048576",
+    "6541989/524288",
+    "860015/131072",
+    "13083885/1048576",
+    "6912651/1048576"
+  ],
+  "best_available_666_piece_catalog_lower_envelope_value": "1739674247820415045342527228267900485813207074499/134217728000000000000000000000000000000000000000000",
+  "decimal": "0.01296158319577883963",
+  "implications": {
+    "A1296": {
+      "A": "1296/100000",
+      "headroom_below_this_catalog_witness": "0.00000158319577883963",
+      "classification": "NOT_RULED_OUT_BY_THIS_WITNESS"
+    },
+    "A12961": {
+      "A": "12961/1000000",
+      "headroom_below_this_catalog_witness": "0.00000058319577883963",
+      "classification": "NOT_RULED_OUT_BY_THIS_WITNESS"
+    },
+    "A129615": {
+      "A": "25923/2000000",
+      "headroom_below_this_catalog_witness": "0.00000008319577883963",
+      "classification": "NOT_RULED_OUT_BY_THIS_WITNESS_BUT_EXTREMELY_TIGHT"
+    },
+    "A1297": {
+      "A": "1297/100000",
+      "classification": "NOT_CERTIFIABLE_FROM_THE_FROZEN_666_PIECE_LOWER_ENVELOPE_AT_THIS_POINT_WITHOUT_STRONGER_LOCAL_MODELS"
+    },
+    "A1300": {
+      "A": "13/1000",
+      "classification": "NOT_CERTIFIABLE_FROM_THE_FROZEN_666_PIECE_LOWER_ENVELOPE_AT_THIS_POINT_WITHOUT_STRONGER_LOCAL_MODELS"
+    }
+  },
+  "active_piece_pattern": {
+    "note": "At the witness all 15 contiguous partial sums select v1 well models; no v3 piece is active.",
+    "active_v1_piece_indices": [76,109,153,246,266,86,108,201,246,74,107,153,86,109,76]
+  },
+  "interpretation": [
+    "The full-root capped A1299/A1300 scans did not contradict this witness because they did not fully close; the unresolved frontier can contain the witness region.",
+    "This value is a ceiling witness for what the current frozen catalog lower envelope can establish at this point, not a counterexample to the true E6 inequality.",
+    "To certify A above this witness value one must strengthen the local one-dimensional lower models/refinements at one or more of the 15 active partial-sum locations or change the certificate architecture."
+  ],
+  "next_target": "A1296_full_root_diagnostic_then_local_refinement_design"
+}
