@@ -82,3 +82,16 @@ Route B could in principle bypass G9, but that new identity has not yet been wri
 Therefore **G9 remains the current fastest theorem-grade bottleneck**.
 
 In parallel, exact {5,2}/C7 computations remain useful because they feed the post-79 model side without depending on how the analytic transport is ultimately closed.
+
+## S5 update — local coupling closed
+
+The local arithmetic portion of the comb identification has now been strengthened independently:
+
+- the pointwise p-local four-point factor K4_p(k,j) is explicit;
+- its j-marginal is exactly the product of the two twin local factors;
+- its k-marginal is exactly the squared two-point lock factor with the common-density normalization;
+- finite-prime Euler products assemble by CRT with no inter-prime constraint.
+
+This removes the ambiguity about hidden pointwise j-k congruences. They exist, but are exactly the local four-point coincidence loci and are already inside K4_p.
+
+What remains in S5 is the analytic/spectral identification of the truncated Euler object with the MM frequency comb in the exact window convention, plus the singular-series tail. Therefore S5 is upgraded from 'exact core not written' to **LOCAL/FINITE-EULER CORE CLOSED; SPECTRAL IDENTIFICATION + TAIL OPEN**.
