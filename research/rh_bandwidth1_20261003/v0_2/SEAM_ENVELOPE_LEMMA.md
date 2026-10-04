@@ -2,64 +2,120 @@
 
 ## Status
 
-Exact mathematical lemma used by the v0.2 A1294 finite search. It does not
-certify the one-dimensional catalog pieces themselves; their soundness is a
-separate upstream/Lean obligation.
+**MATHEMATICAL_COMPOSITION_PASS + CATALOG_IDENTITY_PASS**
+
+This is the exact composition lemma used by the v0.2 A1294 certificate.
+The upstream one-dimensional pieces and the finite five-dimensional tree are
+separate proof layers.
 
 ## Lemma
 
-Let K:I->R. Let I=[a,b] be partitioned by
+Let (K:I	omathbb R) and let
 
-a=x_0<x_1<...<x_m=b.
+[
+I=[a,b]=igcup_{j=1}^{m} I_j,qquad
+I_j=[x_{j-1},x_j],
+]
 
-For each segment I_j=[x_{j-1},x_j], suppose a finite collection of functions
-L_{j,r} is available such that
+where (a=x_0<x_1<cdots<x_m=b).
 
-L_{j,r}(x) <= K(x) for x in I_j.
+For each segment (I_j), suppose a finite nonempty family of functions
+(L_{j,r}) is available with
+
+[
+L_{j,r}(x)le K(x)qquad(xin I_j).
+]
 
 Define
 
-ell_j = max_r inf_{x in I_j} L_{j,r}(x),
-ell   = min_j ell_j.
+[
+ell_j=max_rinf_{xin I_j}L_{j,r}(x),
+qquad
+ell=min_jell_j.
+]
 
-Then K(x) >= ell for every x in I.
+Then
+
+[
+K(x)geellqquad(xin I).
+]
 
 ### Proof
 
-For a fixed segment I_j, every L_{j,r} is a pointwise lower bound for K.
-Therefore for every x in I_j,
+Fix (xin I) and choose a segment (I_j) containing it. For every admissible
+model (r),
 
-K(x) >= L_{j,r}(x) >= inf_{y in I_j} L_{j,r}(y)
+[
+K(x)ge L_{j,r}(x)geinf_{yin I_j}L_{j,r}(y).
+]
 
-for every r. Taking the maximum over r gives K(x) >= ell_j. Taking the
-minimum over segments gives K(x) >= min_j ell_j = ell on the whole interval.
+Taking the maximum over (r) preserves the lower bound, hence
+(K(x)geell_j). Since (ellleell_j), (K(x)geell).
 QED.
 
-## Application to the frozen catalog
+No continuity between neighboring models is assumed.
 
-The v0.2 checker partitions a partial-sum interval at every exact endpoint of
-a stable/refinement catalog piece lying inside that interval. On each segment
-it considers only catalog pieces whose declared validity interval contains
-the entire segment.
+## Exact implementation used by A1294
 
-Each catalog model is either a constant lower barrier or a convex quadratic
-lower well with exact rational parameters. Its segment infimum is therefore
-computed exactly with Fraction arithmetic by evaluating at the quadratic
-center when the center lies in the segment, otherwise at the nearest endpoint.
+For every scalar partial-sum interval the checker:
 
-The segmented result is used only when it is stronger than the single stable
-parent model. Thus the seam handling does not assume continuity between
-different models and does not interpolate across a gap.
+1. clips at the exact cutoff (A/B);
+2. inserts every exact catalog endpoint that lies inside the interval;
+3. obtains atomic rational segments;
+4. on each segment considers only catalog models whose certified domain
+   contains that full segment;
+5. evaluates each constant/quadratic segment infimum exactly with
+   `fractions.Fraction`;
+6. takes the maximum valid lower model on the segment;
+7. takes the minimum over all segments.
 
-## Remaining trust obligation
+For a convex quadratic lower well the exact infimum is evaluated at its center
+when the center is inside the segment, otherwise at the nearest endpoint.
+The segmented bound is used only when it improves on the available direct
+single-piece model.
 
-The lemma reduces seam soundness to the statement that every frozen catalog
-piece really is a lower bound for the target scalar kernel on its declared
-interval.
+## Closed trust obligations
 
-That statement is not proved by the branch-and-bound tree. It must be checked
-against the frozen upstream one-dimensional certificates / Lean WellCert
-chain before a new zeta-density theorem can be claimed.
+The earlier version of this note left catalog soundness as an open premise.
+That premise has now been audited against the pinned upstream Lean source.
 
-The finite tree certificate and the one-dimensional catalog proof therefore
-remain separate layers.
+At upstream head
+`fba91d214655aaa1fd0504bb893c8859c20c79f9`:
+
+- all **56** stable JSON records match the Lean definitions;
+- all **216** v1 records match;
+- all **394** refinement2/v3 records match;
+- total mismatches across **666** models: **0**;
+- `improvedCatalog2_check` proves every corresponding Lean catalog entry
+  passes its formal check;
+- the upstream `MacroPiece.check_sound` chain turns those checks into the
+  required one-dimensional pointwise lower bounds.
+
+An exact structural audit at the A1294 cutoff also found:
+
+- 598 distinct scalar boundaries;
+- 597 atomic segments;
+- 0 uncovered atomic segments;
+- 0 uncovered boundary points;
+- 0 parent-containment mismatches among refinements that declare stable owners
+  (with the owner -1 [59,60] extension treated separately as designed).
+
+Therefore the mathematical premise required by the seam-envelope lemma is
+satisfied by the exact catalog used by the A1294 certificate.
+
+## Evidence boundary
+
+What is now established:
+
+- mathematical seam composition: **PASS**;
+- exact finite implementation/replay: **PASS**;
+- all-666 JSON ↔ Lean identity: **PASS**;
+- upstream one-dimensional soundness chain: **identified and matched**.
+
+What remains optional but desirable for the strongest machine-checked release:
+
+- port this segmented composition and the A1294 canonical finite tree into Lean
+  and replay it in the kernel.
+
+The current external certificate does not rely on a continuity assumption or
+on interpolation across catalog seams.
