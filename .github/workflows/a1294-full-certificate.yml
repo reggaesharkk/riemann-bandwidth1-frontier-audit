@@ -1,0 +1,61 @@
+name: A1294 full exact certificate
+
+on:
+  push:
+    branches:
+      - research/bandwidth1-v0.2
+    paths:
+      - .github/workflows/a1294-full-certificate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Record environment
+        run: |
+          python --version
+          sha256sum             research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             src/generate_exact_macro_tree.py             src/a1294_support/generate_exact_refined_scalar_tree_limit.py             src/a1294_support/generate_exact_refined_scalar_tree_v3.py             src/a1294_support/catalog_v2.py             src/a1294_support/verify_exact_refined_scalar_tree_limit.py             src/a1294_support/verify_exact_refined_scalar_tree_v3.py             > a1294-input-sha256.txt
+          cat a1294-input-sha256.txt
+
+      - name: Generate full A1294 exact tree
+        env:
+          SEXTUPLE_LIMIT: '59'
+        run: |
+          mkdir -p results/optimization/a1294_full_tree
+          python -u src/a1294_support/generate_exact_refined_scalar_tree_v3.py             --data research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             --refinements research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             --refinements2 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             --output-dir results/optimization/a1294_full_tree             --a 1294/100000             --b 1094977/5000000000             --max-nodes 30000000             --max-depth 512             --progress 250000             | tee results/optimization/a1294_full_tree/generator.log
+
+      - name: Independently verify full tree
+        env:
+          SEXTUPLE_LIMIT: '59'
+        run: |
+          python -u src/a1294_support/verify_exact_refined_scalar_tree_v3.py             --data research/rh_bandwidth1_20261003/v0_2/upstream/macro-data-exact.json             --refinements research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v1-exact.json             --refinements2 research/rh_bandwidth1_20261003/v0_2/upstream/refinement-catalog-v3.json             --tree-dir results/optimization/a1294_full_tree             --report results/optimization/a1294_full_tree/exact-replay-report.json             | tee results/optimization/a1294_full_tree/verifier.log
+
+      - name: Compute feedback arithmetic
+        run: |
+          python src/v0_2_feedback_gate.py | tee results/optimization/a1294_full_tree/feedback.txt
+
+      - name: Freeze output hashes
+        run: |
+          find results/optimization/a1294_full_tree -type f -print0             | sort -z             | xargs -0 sha256sum > results/optimization/a1294_full_tree/SHA256SUMS.txt
+          cp a1294-input-sha256.txt results/optimization/a1294_full_tree/INPUT_SHA256SUMS.txt
+          cat results/optimization/a1294_full_tree/exact-replay-report.json
+          cat results/optimization/a1294_full_tree/feedback.txt
+
+      - name: Upload certificate bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: a1294-full-exact-certificate
+          path: results/optimization/a1294_full_tree/
+          compression-level: 6
+          retention-days: 30

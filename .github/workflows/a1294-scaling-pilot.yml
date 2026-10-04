@@ -1,0 +1,52 @@
+name: A1294 1M scaling pilot
+
+on:
+  push:
+    branches:
+      - research/bandwidth1-v0.2
+    paths:
+      - .github/workflows/a1294-scaling-pilot.yml
+  workflow_dispatch:
+
+jobs:
+  a1294-scaling:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch frozen upstream inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .cache/a1294
+          base="https://raw.githubusercontent.com/mdumitrean/zeta-23-lean/fba91d214655aaa1fd0504bb893c8859c20c79f9/zeta23/certificates/sextuple"
+          curl -L --fail "$base/macro-data-exact.json" -o .cache/a1294/macro-data-exact.json
+          curl -L --fail "$base/a1275/refinement-catalog/refinement-catalog-exact.json" -o .cache/a1294/refinement-catalog-exact.json
+          curl -L --fail "$base/a1290/catalog/refinement-catalog-v3.json" -o .cache/a1294/refinement-catalog-v3.json
+          cat > .cache/a1294/SHA256SUMS <<'EOF'
+          961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b  macro-data-exact.json
+          3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9  refinement-catalog-exact.json
+          7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d  refinement-catalog-v3.json
+          EOF
+          (cd .cache/a1294 && sha256sum -c SHA256SUMS)
+
+      - name: Run 250k-node exact A1294 1M scaling pilot
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p results/optimization
+          python src/a1294_seam_pilot.py             --stable .cache/a1294/macro-data-exact.json             --v1 .cache/a1294/refinement-catalog-exact.json             --v3 .cache/a1294/refinement-catalog-v3.json             --a 1294/100000             --b 1094977/5000000000             --limit 60             --max-nodes 1000000             | tee results/optimization/a1294_scaling_1m.json
+
+      - name: Hash result
+        shell: bash
+        run: |
+          sha256sum results/optimization/a1294_scaling_1m.json             > results/optimization/a1294_scaling_1m.SHA256SUMS
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: a1294-scaling-1m
+          path: |
+            results/optimization/a1294_scaling_1m.json
+            results/optimization/a1294_scaling_1m.SHA256SUMS
+            .cache/a1294/SHA256SUMS

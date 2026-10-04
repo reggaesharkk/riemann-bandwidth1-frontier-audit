@@ -1,0 +1,23 @@
+{
+  "schema": "a1294-fullroot-1m-bracket-summary-v1",
+  "source": "Windows ARM64 local full-root adaptive scan log uploaded to Drive on 2026-10-03",
+  "machine": {"machine":"ARM64","platform":"Windows-11-10.0.26200-SP0","workers":6},
+  "settings": {
+    "chunk_nodes": 10000,
+    "budget_per_candidate": 1000000,
+    "B": "1094977/5000000000"
+  },
+  "results": [
+    {"A":"1299/100000","visited":1055320,"pending":366,"max_depth":73,"nodes_per_second":3497.69,"status":"BUDGET_REACHED_WITH_FRONTIER","directed_density_if_certified":"0.6728106815719984253148968039104279317"},
+    {"A":"6497/500000","visited":1041970,"pending":302,"max_depth":73,"nodes_per_second":2984.92,"status":"BUDGET_REACHED_WITH_FRONTIER","directed_density_if_certified":"0.6728111310859501881816287329559668274"},
+    {"A":"13/1000","visited":1066433,"pending":345,"max_depth":74,"nodes_per_second":3903.89,"status":"BUDGET_REACHED_WITH_FRONTIER","directed_density_if_certified":"0.6728118053580040575153733612794005565"}
+  ],
+  "interpretation": [
+    "No candidate fully closed within the one-million-node diagnostic budget.",
+    "There is no monotone complexity blow-up between A=0.01299 and A=0.01300 at this budget: pending frontier sizes are 366, 302, and 345; maximum depths are 73, 73, and 74.",
+    "A=0.01300 therefore remains computationally plausible under this diagnostic, but is not certified.",
+    "Pending-count comparisons are heuristic complexity diagnostics because adaptive scheduling changes the decomposition; they are not proof-strength rankings.",
+    "The previous hard-seed subset closing through A=0.01300 was not sufficient to identify the global bottleneck; the unresolved full-root frontier is distributed elsewhere."
+  ],
+  "next_gate": "inspect and cluster deepest pending full-root boxes, then run targeted exact continuation on their union; do not interpret A=0.01300 as proved"
+}

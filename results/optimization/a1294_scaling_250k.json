@@ -1,0 +1,33 @@
+{
+  "schema": "rh-bandwidth1-a1294-scaling-250k-v1",
+  "status": "NODE_CAP_NO_COUNTEREXAMPLE",
+  "candidate": {
+    "A": "1294/100000",
+    "B": "1094977/5000000000",
+    "directed_density_lower_if_fully_certified": "0.672805062698281008098221884193539254919846831626471836523602569541644813982154847287316312"
+  },
+  "github_actions": {
+    "run_id": 37117579760,
+    "artifact_id": 11272088005,
+    "artifact_name": "a1294-scaling-250k",
+    "artifact_sha256": "ebed6d4f37018688ba7549df066174f8c8ed9c690f4781bf868a65c9f6ea21ed",
+    "head_sha": "d11ff6fb873683e461579d0ceeb14ba872862df8"
+  },
+  "frozen_inputs_sha256": {
+    "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+  },
+  "search": {
+    "visited": 250000,
+    "pending": 35,
+    "closed_leaves": 124983,
+    "tail_leaves": 0,
+    "quadratic_leaves": 124983,
+    "maximum_depth": 72,
+    "smallest_closed_margin": "163160670100160163665765460025055051/2048000000000000000000000000000000000000000000",
+    "scalar_cache_entries": 3846,
+    "elapsed_seconds": 171.30002562099997
+  },
+  "interpretation": "Scaling evidence only. The root domain is not yet fully covered, so this is not a certificate and not a zero-density theorem. The seam-aware exact lower-bound mechanism avoids the depth-513 seam stall seen in the naive A1293 regeneration attempt."
+}

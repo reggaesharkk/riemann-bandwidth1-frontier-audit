@@ -1,0 +1,25 @@
+{
+  "schema": "rh-bandwidth1-v0.2-search-gate-v2",
+  "status": "TARGET_SELECTED_NOT_CERTIFIED",
+  "independent_replayed_benchmark": "0.67280056766687883822627654690580934535257773742840180948656",
+  "public_a1293_report": {
+    "A": "1293/100000",
+    "B": "1094977/5000000000",
+    "report_status": "PASS",
+    "feedback_lower_from_same_directed_constants": "0.67280393893479954173653227939205172673117537823302290996715",
+    "classification": "PUBLIC_REPORT_NOT_YET_SOURCE_FREE_REPLAYED_HERE"
+  },
+  "candidate": {
+    "A": "1294/100000",
+    "B": "1094977/5000000000",
+    "feedback_lower": "0.6728050626982810",
+    "gain_over_public_A1293_arithmetic_approx": "0.0000011237634815"
+  },
+  "catalog_diagnostic": {
+    "piece_count": 666,
+    "best_multistart_point_value_approx": "0.01296157144",
+    "slack_above_A1294_approx": "0.00002157144",
+    "classification": "NUMERICAL_POINTWISE_UPPER_CEILING_DIAGNOSTIC_NOT_CERTIFICATE"
+  },
+  "gate": "SMALL_EXACT_FEASIBILITY_PILOT_BEFORE_FULL_TREE"
+}

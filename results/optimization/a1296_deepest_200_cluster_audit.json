@@ -1,0 +1,52 @@
+{
+  "schema": "a1296-deepest-200-cluster-audit-v1",
+  "source": "user-uploaded A1296_FULLROOT_5M_DIAGNOSTIC_RESULT.json",
+  "pending_total": 1024,
+  "deepest_boxes_analyzed": 200,
+  "families": [
+    {
+      "name": "LOW_MIDDLE_GAP",
+      "count": 163,
+      "criterion": "center(g2) < 9",
+      "center_mean": [6.58518598,12.47157746,6.56551618,12.46971271,6.58692155],
+      "center_ranges": [
+        [6.544189453,6.632080078],
+        [12.427368164,12.551879883],
+        [6.527709961,6.600952148],
+        [12.425537109,12.550048828],
+        [6.551513672,6.632080078]
+      ],
+      "depth_min": 66,
+      "depth_max": 75,
+      "depth_mean": 69.1840490797546
+    },
+    {
+      "name": "HIGH_MIDDLE_GAP",
+      "count": 37,
+      "criterion": "center(g2) >= 9",
+      "center_mean": [6.59729004,12.55955052,12.61304701,12.55133551,6.60100164],
+      "center_ranges": [
+        [6.580810547,6.626586914],
+        [12.522583008,12.617797852],
+        [12.562866211,12.672729492],
+        [12.515258789,12.601318359],
+        [6.580810547,6.624755859]
+      ],
+      "depth_min": 67,
+      "depth_max": 73,
+      "depth_mean": 68.48648648648648
+    }
+  ],
+  "frozen_catalog_witness": {
+    "point_approx": [6.59243298,12.47785378,6.56139374,12.47776508,6.59241772],
+    "contained_in_any_deepest_200_box": false,
+    "nearest_deepest_box_center_distance": 0.02526901940869218,
+    "interpretation": "The low-middle-gap family is geometrically nearby but the old exact catalog witness is not literally one of the stored deepest 200 pending boxes."
+  },
+  "interpretation": [
+    "The stored deepest A1296 frontier is not one homogeneous region.",
+    "It contains a dominant low-middle-gap family (163/200) and a distinct high-middle-gap family (37/200).",
+    "The next useful task is to identify which exact one-dimensional catalog pieces and seam fallbacks dominate each family before spending another multi-million-node full-root run.",
+    "Only the deepest 200 of 1024 pending boxes are stored in the source JSON, so this audit is structural rather than a complete frontier reconstruction."
+  ]
+}

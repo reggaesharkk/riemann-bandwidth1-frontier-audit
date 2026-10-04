@@ -1,0 +1,33 @@
+{
+  "schema": "a1294-capped-growth-comparison-v1",
+  "status": "PASS_TO_FULL_CERTIFICATE_BUILD",
+  "generator_model": "Upstream v3 exact B&B semantics with independently reconstructed base helper module; terminal comparisons use exact Fraction arithmetic.",
+  "cap": 15000,
+  "A1293_control": {
+    "A": "1293/100000",
+    "B": "1094977/5000000000",
+    "visited_at_stop": 15000,
+    "pending_at_stop": 24,
+    "depth_seen_by_10000": 51,
+    "result": "EXPECTED_NODE_CAP"
+  },
+  "A1294_candidate": {
+    "A": "1294/100000",
+    "B": "1094977/5000000000",
+    "visited_at_stop": 15000,
+    "pending_at_stop": 26,
+    "maximum_depth_at_15000": 52,
+    "result": "EXPECTED_NODE_CAP"
+  },
+  "comparison": {
+    "pending_ratio_A1294_over_A1293": 1.0833333333333333,
+    "interpretation": "At the 15k-node gate A1294 shows only a small increase in unresolved stack size relative to the known A1293 control, not an early combinatorial explosion."
+  },
+  "local_exact_pilot": {
+    "known_A1293_tight_leaf_at_A1294": "PASS",
+    "twofold_expansion": "PASS",
+    "twofold_expansion_smallest_margin": "15788932689512496459047867926347809993/16384000000000000000000000000000000000000000"
+  },
+  "decision": "AUTHORIZE_FULL_A1294_EXACT_TREE_BUILD_WITH_POST_BUILD_INDEPENDENT_VERIFICATION",
+  "claim_boundary": "Feasibility/growth evidence only. Not a certificate and not a zeta-density theorem."
+}

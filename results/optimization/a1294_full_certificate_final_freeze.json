@@ -1,0 +1,77 @@
+{
+  "schema": "a1294-full-certificate-final-freeze-v2",
+  "date_utc": "2026-10-04",
+  "candidate": {
+    "A": "647/50000",
+    "A_decimal": "0.01294",
+    "B": "1094977/5000000000",
+    "publication_safe_fixed_headline": "67280506/100000000",
+    "publication_safe_fixed_headline_decimal": "0.67280506",
+    "lean_directed_lower_exact": "201406213933795020896911983481/299353000000000000000000000000",
+    "lean_directed_lower_decimal": "0.6728050626978684726624152204287246160886979585973750054283738596239222590052546658961159567467170865",
+    "headline_exact_margin": "807615020896911983481/299353000000000000000000000000",
+    "headline_margin_decimal": "0.0000000026978684726624152204287246160886979585973750054283738596239222590052546658961159567467170865",
+    "fine_diagnostic_lower_decimal": "0.6728050626982810080982182263815246768130632015977098064119952029877769723370068113564921681092222226",
+    "fine_diagnostic_note": "Uses the finer stored HD lower rational together with Mathlib's certified 20-decimal pi upper endpoint. The fixed public headline is deliberately based on the coarser Lean-certified HD_one_decimal lower endpoint."
+  },
+  "directed_constants": {
+    "HD_lean_lower": "672500703679/1000000000000",
+    "pi_upper_d20": "314159265358979323847/100000000000000000000",
+    "direction_note": "pi appears with a negative coefficient, so a rigorous lower bound uses an upper bound on pi. The earlier v1 freeze used the d20 lower endpoint by mistake; v2 corrects that direction."
+  },
+  "github_actions": {
+    "run_id": 37133363690,
+    "head_sha": "3b748a75ad619ee130c4fabd22792102ccbe986c",
+    "conclusion": "success",
+    "generate_job": "success",
+    "verify_job": "success",
+    "final_artifact_id": 11286675906,
+    "final_artifact_name": "a1294-seam-aware-full-certificate",
+    "artifact_zip_sha256": "11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19"
+  },
+  "certificate": {
+    "visited_nodes": 13454121,
+    "leaves": 6727061,
+    "tail_leaves": 1803,
+    "quadratic_leaves": 6725258,
+    "maximum_depth": 80,
+    "full_stack_exhaustion": true,
+    "elapsed_seconds_generation": 17306.242381538,
+    "smallest_quadratic_margin": "33853157328150681621271330867899241/8192000000000000000000000000000000000000000000",
+    "smallest_quadratic_margin_decimal_approx": "4.132465494159018684e-12",
+    "smallest_tail_margin": "49931/250000000"
+  },
+  "independent_replay": {
+    "status": "PASS",
+    "visited_nodes": 13454121,
+    "leaves": 6727061,
+    "tail_leaves": 1803,
+    "quadratic_leaves": 6725258,
+    "verification_arithmetic": "Fraction-only",
+    "all_archive_member_hashes_match_SHA256SUMS": true
+  },
+  "input_sha256": {
+    "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+  },
+  "catalog_identity_audit": {
+    "stable_56": "PASS_0_MISMATCHES",
+    "v1_216": "PASS_0_MISMATCHES",
+    "v3_394": "PASS_0_MISMATCHES",
+    "total_models": 666
+  },
+  "stream_sha256": {
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "evidence_class": "CERTIFIED_FINITE_EXACT_PLUS_CATALOG_IDENTITY_PASS",
+  "claim_boundary": [
+    "This freezes the finite seam-aware A1294 certificate and its independent exact replay.",
+    "All 666 frozen JSON model parameters were matched against the pinned Lean definitions with zero mismatches.",
+    "The conservative directed analytic arithmetic proves the fixed headline 0.67280506 conditional on accepting the externally verified affine certificate in the generic upstream analytic bridge.",
+    "A source-free replay outside the generating CI environment and formal/integrated seam certificate remain pending before release as a theorem-level result.",
+    "This is not a claim of the Riemann Hypothesis."
+  ]
+}
