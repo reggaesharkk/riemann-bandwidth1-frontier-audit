@@ -1,0 +1,42 @@
+name: C7 exact-polytope feasibility pilot
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - .github/workflows/wp80-c7-exact-pilot.yml
+
+permissions:
+  contents: read
+
+jobs:
+  pilot:
+    strategy:
+      fail-fast: false
+      matrix:
+        segment: ["0:4","100:104","1000:1004","5000:5004","9000:9004"]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin public exact-polytope source
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+      - name: Exact C7 sample terms
+        working-directory: upstream/gpu
+        run: |
+          echo "SEGMENT=${{ matrix.segment }}"
+          /usr/bin/time -v python -u exact_polytope.py cycle 7 --terms "${{ matrix.segment }}" | tee "../../c7_${{ strategy.job-index }}.log"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: c7-exact-pilot-${{ strategy.job-index }}
+          path: c7_${{ strategy.job-index }}.log
+          if-no-files-found: warn
