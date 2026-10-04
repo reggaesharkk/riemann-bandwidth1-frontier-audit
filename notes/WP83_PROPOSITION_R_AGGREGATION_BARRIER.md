@@ -78,3 +78,60 @@ The proof must survive arbitrarily close ordinates, horizontal near-collisions a
 - successor retraction: says this interface was resolved in the private forward archive, but the proof is not released.
 
 This is now the precise Proposition-R reconstruction gate.
+
+
+## 5. Quantitative consequence if globalization holds
+
+The exponent arithmetic of Proposition R is already clear once the missing
+globalization lemma supplies one uncancelled eigenvalue at the natural
+off-line scale.
+
+Let the active bandwidth be X=T^(lambda+o(1)), and suppose a zero has depth
+
+    delta = |beta-1/2|.
+
+C26's self-pair scale X^(2 delta) corresponds to an evaluation-block
+eigenvalue scale X^delta, up to fixed/logarithmic factors.  If the
+globalization lemma gives
+
+    ||G_tilde||_op >= X^delta / (log T)^C,
+
+then any finite normalized 2m-th moment upper bound
+
+    tr(G_tilde^(2m)) <= C_m * d * ell1^(2m),
+
+with d=T*L/(2*pi)+O(1)=T^(1+o(1)), implies
+
+    X^(2m delta) <= T^(1+o(1)),
+
+and therefore
+
+    boxed: delta <= 1/(2m*lambda) + o(1).
+
+At lambda=1 this gives the fixed zero-free strips
+
+    m=2 (fourth moment):  1/4 <= beta <= 3/4 + o(1),
+    m=3 (sixth moment):   1/3 <= beta <= 2/3 + o(1),
+    m=4 (eighth moment):  3/8 <= beta <= 5/8 + o(1),
+
+and the strip contracts to the critical line as m grows.
+
+This shows why the successor retraction speaks about **finite bounds**, not
+only exact moment convergence.  A one-sided finite fourth-moment upper bound
+would already trigger the m=2 barrier if the globalization lemma is valid.
+
+## 6. Consequence for Stage A
+
+The Stage-A target is an upper bound on the same normalized fourth moment.
+Therefore it is not automatically exempt from Proposition R merely because
+it is one-sided.
+
+The only honest ways to revive an unconditional Stage-A theorem are:
+
+1. show that the reviewer globalization lemma does not apply to our precise
+   matrix/window normalization;
+2. find a flaw in Proposition R;
+3. supply the corresponding zero-free input independently.
+
+Until then Stage A remains a conditional/model-side investigation rather
+than an unconditional theorem path.
