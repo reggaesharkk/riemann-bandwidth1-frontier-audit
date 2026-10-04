@@ -1,0 +1,34 @@
+name: C7 symmetry reduction audit
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp80_c7_symmetry_reduce.py
+      - .github/workflows/wp80-c7-symmetry.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  symmetry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin public exact archive
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+      - name: Validate orbit reduction against all b5/b6 exact terms
+        run: python -u src/wp80_c7_symmetry_reduce.py --upstream upstream | tee c7_symmetry.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: c7-symmetry-reduction
+          path: c7_symmetry.log
