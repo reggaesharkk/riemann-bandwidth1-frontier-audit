@@ -253,3 +253,44 @@ only polylogarithmic amplification in the retained bulk.
 Accordingly, a successful resolvent/sign-proxy estimate with arbitrary
 logarithmic saving would evade Proposition R without any EC-star close-pair
 input.
+
+
+## 12. Exact simple-zero consumer
+
+The bounded-spectral route now has an exact zero-side consumer.
+
+If nplus is the positive index of the active normalized block, then the source-closed inequalities
+
+    nplus <= s1+s2+p,
+    s1+2s2+2p <= N(I')
+
+give immediately
+
+    boxed:
+    s1 >= 2*nplus - N(I').
+
+Thus one does **not** need to recover simple zeros indirectly from distinct-zero proportions.
+
+For the bounded minorant
+
+    f_{theta,y}(x)=(2/pi) arctan((x-theta)/y),
+
+we have pointwise
+
+    1_{x>theta} >= f_{theta,y}(x),
+
+so
+
+    nplusAbove_theta(H) >= tr f_{theta,y}(H).
+
+Combining with the existing tail-Weyl transfer gives a direct sufficient target:
+
+    (1/N) tr f_{theta_tail,y}(Ghat) > 0.895+eta
+
+for some eta>0 implies a simple-zero proportion strictly above 79 percent.
+
+Likewise a bound above 0.9+eta gives a simple-zero proportion above 80 percent.
+
+See `WP84_BOUNDED_RESOLVENT_CONSUMER.md`.
+
+This is the precise nonlinear prime-side kill gate.
