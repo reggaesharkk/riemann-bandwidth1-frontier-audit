@@ -80,3 +80,16 @@ Every map in items 1--5 must be explicit. A renamed symbol alone is not enough.
 This does not damage the exact local S4 work or the j-first identity. It tells us exactly where the spectral route must be repaired before it can replace the older bridge/glue import.
 
 The next search should be for the archived meaning of this cell parameter in the upstream program history or, if unavailable, reconstruct the cell-size variable directly from the fourth-moment ledger rather than guessing.
+
+## 6. Public-package provenance check
+
+The ambiguity is not a recent post-release typo:
+
+- the tagged v2.0 paper at commit `01ec104dfcbe64badc352ae3fc9bac938fe499c4` contains the same truncation text;
+- the current main commit changes later exact-constant material but leaves this truncation paragraph structurally unchanged;
+- recursive inspection of the public repository finds no dedicated truncation/consumer implementation or archived D1 script; the only references to the D1 tail and rounds 91--93 are statements in `paper.tex`;
+- `REPRODUCTION.md` says the full forward research archive is preserved separately. It grades truncation as part of the certified-candidate analytic layer, but supplies no separate executable reconstruction of the claimed cell parameter.
+
+So the present public package does not provide enough information to infer safely what the varying `ell_cell` was intended to be.
+
+**Fail-closed rule:** do not repair the notation by guesswork. Either recover the archived definition from an authoritative source, or reconstruct a new truncation theorem directly from the actual cell ledger with fresh notation and proof.
