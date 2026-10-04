@@ -155,36 +155,61 @@ Cauchy--Schwarz estimate in the **shift variable only**:
 The remaining task is to bound the first factor in the public \(R\)-units and
 show that the arbitrary logarithmic saving in G2 dominates it.
 
-### G9 — middle-band welding weight — OPEN / HIGHEST PRIORITY
+### G9 — middle-band four-point glue — OPEN / HIGHEST PRIORITY
 
-For
-
-\[
-w_k(n)=\sum_{m\in I(n)}\Lambda(m)\Lambda(m-rk),
-\]
-
-write
+The original n-first formulation introduced
 
 \[
-w_k(n)=M_k(n)+e_k(n)
+w_k(n)=\sum_{m\in I_k(n)}\Lambda(m)\Lambda(m-rk).
 \]
 
-with \(M_k\) the singular-series main term.  Preserve the signed main term
-exactly.  Only \(e_k\) is fed to Cauchy--Schwarz/dispersion.
+A scale audit of the actual hard Stage-A strip shows that, for fixed \(n\),
+\(I_k(n)\) contains at most 13 integer \(m\)-values. Therefore a
+pointwise singular-series approximation to \(w_k(n)\) is not a valid route.
 
-Required output:
+The analytic ordering is now **j-first**. For fixed lock \(j\),
 
 \[
-\frac{1}{\pi lX\ell_1^4}
-\sum_{k,n}
-(\text{slow geometry})\,e_k(n)\,
-(\text{outer prime-pair factor})
-=o(1).
+A(j)^2=\sum_k N_4(k,j)
 \]
 
-This is the direct analogue of the signed/remainder decomposition repeatedly
-used in our other audit projects: **do not absolute-value the main term.**
+exactly, where
 
+\[
+N_4(k,j)
+=
+\sum_m
+\Lambda(m)\Lambda(m-rk)
+\Lambda(n)\Lambda(n-qk)
+\]
+
+with \(b_1n-b_2m=j\). The remaining \(m\)-sum is long.
+
+Write the four-point object as
+
+\[
+N_4(k,j)=\mathfrak S_4(k,j)V(k,j)+E_4(k,j).
+\]
+
+The signed model main is preserved and calibrated by the exact G9-B local
+factorization. Only the centered four-point remainder \(E_4\) may be
+bounded.
+
+The new G9-C target is a theorem-grade averaged bound of the form
+
+\[
+\sum_{k,j}|E_4(k,j)|^2
+\ll_A
+KJV^2(\log X)^{-A}
+\]
+
+in the exact Stage-A window/weight conventions, followed by a deterministic
+weight-budget calculation in \(R\)-units.
+
+This avoids the impossible O(1)-window pointwise prime-pair problem. See
+`WP71_G9_STAGEA_WINDOW_SCALE.md` and `WP71_G9_C_JFIRST_PIVOT.md`.
+
+**Do not absolute-value the four-point main before model subtraction.**
 ### G10 — low-zone remainder — OPEN / FALSIFIER RUNNING
 
 The public finite-height helper quotes a \(0.0163\) cap.  That number cannot
