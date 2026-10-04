@@ -2,48 +2,41 @@
 """
 WP81 exact {5,2} spectator-pair model certificate driver.
 
-This is a thin fail-closed adapter around the pinned public exact-polytope
-engine
+Fast path: use the pinned public exact POLYTOPE engine, not the much slower
+nested Newton--Cotes piece enumerator.
 
+Pinned upstream:
     JoshuaHKU/zeta-0.7947-reproduction
-    commit d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
-    gpu/exact_connected.py
+    d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
 
-It generalizes the public {4,2} spectator-pair specification to the
-7-cycle {5,2} class.
+The public exact_polytope.py already certifies the {4,2} spectator-pair
+geometry.  This adapter generalizes exactly that convention from a connected
+4-block plus spectator pair to a connected 5-block plus spectator pair.
 
-Free variables:
-    (v,c1,c2,c3,c4), with c5=-(c1+c2+c3+c4).
+For {5,2}:
+    free variables = (v,c1,c2,c3,c4), c5=-(c1+c2+c3+c4)
+    C2(v)=min(|v|,1)=|v| on the support of the full overlap
+    three pair-distance classes d=1,2,3
+    multiplicity of each class = 7
+    {5,2} = 7*(U1+U2+U3)
 
-The pair frequencies are (+v,-v).  Up to dihedral/cyclic symmetry in a
-7-cycle there are three cyclic-distance classes d=1,2,3, each with
-multiplicity 7.  Therefore
+Each U_d is the signed sum of the 150 partition-cyclic C5 terms, so the full
+certificate contains 450 exact rational term integrals.
 
-    {5,2} = 7 * (U1 + U2 + U3).
+Fail-closed convention gate:
+before any {5,2} term is evaluated, the generalized position builder is
+required to reproduce the public exact_polytope.spec42_pos arrays EXACTLY for
+all 26 C4 terms and all three {4,2} placement classes.  This checks the
+spectator-pair geometry without relying on a numerical value.
 
-For each class the integrand is
-
-    O7(full walk) * C5(c1,...,c5) * C2(v),
-
-where C2(v)=min(|v|,1), C5 is the 150-term partition-cyclic cumulant,
-and both overlap factors are integrated exactly by the pinned rational
-polytope engine.
-
-This file contains no numerical target for {5,2}.  It is an identification
-driver: all 450 exact term values must be produced and then aggregated by
-wp81_spec52_aggregate.py.
+No expected target for {5,2} is hard-coded.
 
 Usage:
-    python src/wp81_spec52_exact.py --upstream PATH --d 1 --terms 0:10 \
-        --out work/spec52_d1_000_010.txt
-
-To run a full class locally:
-    python src/wp81_spec52_exact.py --upstream PATH --d 1 --terms 0:150 \
-        --out work/spec52_d1_all.txt
-
-The upstream checkout must be exactly at the pinned commit unless
---allow-unpinned is supplied explicitly.
+    python src/wp81_spec52_exact.py --upstream PATH --d 1 \
+        --terms 0:10 --out work/spec52_d1_000_010.txt
 """
+
+from __future__ import annotations
 
 import argparse
 import importlib.util
@@ -56,11 +49,22 @@ from fractions import Fraction as F
 PINNED = "d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8"
 
 
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"cannot import {path}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def load_upstream(root, allow_unpinned=False):
     root = os.path.abspath(root)
-    engine = os.path.join(root, "gpu", "exact_connected.py")
-    if not os.path.isfile(engine):
-        raise SystemExit(f"missing pinned engine: {engine}")
+    ec_path = os.path.join(root, "gpu", "exact_connected.py")
+    ep_path = os.path.join(root, "gpu", "exact_polytope.py")
+    for p in (ec_path, ep_path):
+        if not os.path.isfile(p):
+            raise SystemExit(f"missing pinned upstream file: {p}")
 
     if not allow_unpinned:
         try:
@@ -77,69 +81,105 @@ def load_upstream(root, allow_unpinned=False):
         if head != PINNED:
             raise SystemExit(f"upstream HEAD {head} != pinned {PINNED}")
 
-    spec = importlib.util.spec_from_file_location("wp81_exact_connected", engine)
-    mod = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(mod)
-    return mod
+    # exact_polytope imports exact_connected by module name.
+    gpu = os.path.join(root, "gpu")
+    if gpu not in sys.path:
+        sys.path.insert(0, gpu)
+    ec = load_module("exact_connected", ec_path)
+    sys.modules["exact_connected"] = ec
+    ep = load_module("exact_polytope", ep_path)
+    return ec, ep
 
 
-def build_terms(ec, dcls):
+def vadd(a, b):
+    return [x + y for x, y in zip(a, b)]
+
+
+def vsub(a, b):
+    return [x - y for x, y in zip(a, b)]
+
+
+def spec_pair_pos(block_b, dcls, masks, zero, one):
+    """General spectator-pair position builder.
+
+    block_b is the connected block size (4 recovers public {4,2};
+    5 gives the new {5,2}).  Coordinates are
+        (v,c1,...,c_{block_b-1})
+    and c_block_b = -sum(c1,...,c_{block_b-1}).
+    """
     if dcls not in (1, 2, 3):
         raise ValueError("d must be 1, 2, or 3")
+    if block_b < 4:
+        raise ValueError("block_b must be >=4")
 
-    Z, O = ec.ZERO, ec.ONE
-    dim = 5
+    dim = block_b
+    Z = [zero] * dim
+    V = [one] + [zero] * (dim - 1)
 
-    # Affine coordinates are (constant,v,c1,c2,c3,c4).
-    ZERO = (Z, Z, Z, Z, Z, Z)
-    V = (Z, O, Z, Z, Z, Z)
-    S1 = (Z, Z, O, Z, Z, Z)
-    S2 = (Z, Z, O, O, Z, Z)
-    S3 = (Z, Z, O, O, O, Z)
-    S4 = (Z, Z, O, O, O, O)
+    # S_j = c1+...+cj in coordinates (v,c1,...).
+    S = []
+    cur = Z[:]
+    for j in range(1, block_b):
+        e = [zero] * dim
+        e[j] = one
+        cur = vadd(cur, e)
+        S.append(cur[:])
 
-    def add(a, b):
-        return tuple(x + y for x, y in zip(a, b))
-
-    # Frequency sequences:
-    # d=1: +v,-v,c1,c2,c3,c4,c5
-    # d=2: +v,c1,-v,c2,c3,c4,c5
-    # d=3: +v,c1,c2,-v,c3,c4,c5
-    # walk contains the seven prefix positions before the final return to 0.
+    # Pair +v,-v at cyclic distance dcls, followed by connected edges.
     if dcls == 1:
-        walk = [ZERO, V, ZERO, S1, S2, S3, S4]
+        A = [Z[:], V[:], Z[:]] + [s[:] for s in S]
     elif dcls == 2:
-        walk = [ZERO, V, add(V, S1), S1, S2, S3, S4]
+        A = [Z[:], V[:], vadd(V, S[0]), S[0][:]] + [s[:] for s in S[1:]]
     else:
-        walk = [ZERO, V, add(V, S1), add(V, S2), S2, S3, S4]
+        A = [
+            Z[:],
+            V[:],
+            vadd(V, S[0]),
+            vadd(V, S[1]),
+            S[1][:],
+        ] + [s[:] for s in S[2:]]
 
-    # Five connected-block frequencies c1,...,c5.
-    W = [
-        S1,
-        ec.aff_sub(S2, S1),
-        ec.aff_sub(S3, S2),
-        ec.aff_sub(S4, S3),
-        tuple(-x for x in S4),
-    ]
+    assert len(A) == block_b + 2
 
-    out = []
-    terms5 = ec.compile_terms(5)
-    assert len(terms5) == 150
+    # Connected frequencies c1,...,c_block_b.
+    W = [S[0][:]]
+    for j in range(1, block_b - 1):
+        W.append(vsub(S[j], S[j - 1]))
+    W.append([-x for x in S[-1]])
+    assert len(W) == block_b
 
-    for sign, masks in terms5:
-        pos = [ZERO]
-        for mk in masks:
-            co = ZERO
-            for j in mk:
-                co = add(co, W[j])
-            pos.append(co)
-        out.append(
-            (
-                sign,
-                ec.Cls(dim, walk, pos, 0, f"52d{dcls}"),
+    B = [Z[:]]
+    for mk in masks:
+        co = Z[:]
+        for j in mk:
+            co = vadd(co, W[j])
+        B.append(co)
+
+    return dim, A, B
+
+
+def convention_gate(ec, ep):
+    """Exact structural regression against every public {4,2} term."""
+    terms4 = ec.compile_terms(4)
+    assert len(terms4) == 26
+    for dcls in (1, 2, 3):
+        for _, masks in terms4:
+            d0, A0, B0 = ep.spec42_pos(dcls, masks)
+            d1, A1, B1 = spec_pair_pos(
+                4, dcls, masks, ep.ZERO, ep.ONE
             )
-        )
-    return out
+            assert d0 == d1 == 4
+            assert A0 == A1, ("A convention mismatch", dcls, masks)
+            assert B0 == B1, ("B convention mismatch", dcls, masks)
+    print("CONVENTION_GATE: generic spectator builder == public spec42_pos "
+          "for 26 terms x 3 classes PASS", flush=True)
+
+
+def run_term(ep, dcls, masks):
+    d, A, B = spec_pair_pos(5, dcls, masks, ep.ZERO, ep.ONE)
+    n, rows = ep.hrep(A, B, d)
+    # On O_7 support |v|<1, hence C2(v)=min(|v|,1)=|v|.
+    return ep.weighted_x0(rows, n)
 
 
 def parse_terms(spec, n):
@@ -163,26 +203,27 @@ def main():
     ap.add_argument("--allow-unpinned", action="store_true")
     args = ap.parse_args()
 
-    ec = load_upstream(args.upstream, args.allow_unpinned)
-    terms = build_terms(ec, args.d)
+    ec, ep = load_upstream(args.upstream, args.allow_unpinned)
+    convention_gate(ec, ep)
+
+    terms = ec.compile_terms(5)
+    assert len(terms) == 150
     lo, hi = parse_terms(args.terms, len(terms))
 
-    print(f"# WP81 {{5,2}} d={args.d}: {len(terms)} terms, doing [{lo},{hi})")
+    print(f"# WP81 {{5,2}} d={args.d}: 150 terms, doing [{lo},{hi})")
     print(f"# upstream pin = {PINNED}")
+    print("# engine = gpu/exact_polytope.py (exact Fraction arithmetic)")
     print("# class multiplicity = 7")
-    if terms:
-        print(f"# breakpoint counts term0 = {terms[0][1].cost()}")
     sys.stdout.flush()
 
     fh = open(args.out, "a", encoding="utf-8") if args.out else None
     total = F(0)
     t0 = time.time()
-
     try:
         for i in range(lo, hi):
-            sign, cls = terms[i]
+            sign, masks = terms[i]
             ts = time.time()
-            val = cls.integrate()
+            val = run_term(ep, args.d, masks)
             total += sign * val
             line = (
                 f"spec52 d {args.d} term {i} sign {sign} "
@@ -197,8 +238,8 @@ def main():
             fh.close()
 
     print(
-        f"# partial U{args.d} [{lo},{hi}) = {total} = {float(total):+.15f} "
-        f"wall={time.time()-t0:.3f}s",
+        f"# partial U{args.d} [{lo},{hi}) = {total} = "
+        f"{float(total):+.15f} wall={time.time()-t0:.3f}s",
         flush=True,
     )
     if lo == 0 and hi == len(terms):
