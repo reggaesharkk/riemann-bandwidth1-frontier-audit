@@ -1,0 +1,56 @@
+name: Reproduce public higher-moment gate suite
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - .github/workflows/reproduce-public-higher-moment-gates.yml
+
+permissions:
+  contents: read
+
+jobs:
+  public-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy scipy sympy
+      - name: Pin public source
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+          test "$(git rev-parse HEAD)" = "d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8"
+      - name: Exact dual certificate
+        working-directory: upstream/certification
+        run: python -u certify_lp.py | tee ../../public_certify_lp.log
+      - name: Identity and face gate suite
+        working-directory: upstream/pipeline
+        run: python -u run_all.py | tee ../../public_run_all.log
+      - name: Convolution calculus
+        working-directory: upstream/certification
+        run: python -u cyclic_cumulant.py check | tee ../../public_cyclic.log
+      - name: Writeout faces W1-W3
+        working-directory: upstream/certification
+        run: python -u writeouts_verification.py | tee ../../public_writeouts.log
+      - name: N2 c0 certification
+        working-directory: upstream/certification
+        run: python -u n2_c0_certification.py | tee ../../public_n2_c0.log
+      - name: Mu3 ledger gates
+        working-directory: upstream/scripts
+        run: python -u mu3_ledger_gates.py | tee ../../public_mu3.log
+      - name: Certificate algebra
+        working-directory: upstream/scripts
+        run: python -u certificate_verification.py | tee ../../public_certificate_verification.log
+      - name: Upload public gate logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-higher-moment-gate-reproduction
+          path: public_*.log
+          if-no-files-found: error
