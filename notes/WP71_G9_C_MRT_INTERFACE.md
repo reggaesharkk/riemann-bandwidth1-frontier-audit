@@ -1,147 +1,118 @@
 # WP71 G9-C — exact MRT interface and constant ledger
 
 Date: 2026-10-04
-Status: **SOURCE INTERFACE PINNED; endpoint maximalization quantified at exponent level; Stage-A substitution still open**
+Status: **SOURCE INTERFACE PINNED; notation corrected; two-modulus dilation audit is the next analytic gate**
 
 Source:
-K. Matomäki, M. Radziwill, T. Tao, *Correlations of the von Mangoldt and higher divisor functions I. Long shift ranges*, Proc. LMS 118 (2019), 284--350.
+K. Matomaki, M. Radziwill, T. Tao, *Correlations of the von Mangoldt and higher divisor functions I. Long shift ranges*, Proc. LMS 118 (2019), 284--350.
 
-## 1. Proposition 5.4: exact hypothesis ledger
+## 1. Do not identify the two q's
 
-MRT Proposition 5.4 fixes a sufficiently small epsilon>0, A>0, fixed k>=2, and B sufficiently large depending on k and A. It sets
+Stage A has a welding multiplier
+
+    q_w=b2/gcd(b1,b2),
+
+appearing in the physical shift h=q_w*k.
+
+MRT has an arc denominator q_arc in alpha=a/q_arc+beta, with q_arc<=Q=(log X)^B.
+
+They are unrelated. See `notes/WP71_WELDING_VS_ARC_MODULUS.md`.
+
+G2 controls the structured h=q_w*k family through divisor-bounded multiplicity and does not require q_w to be polylogarithmic.
+
+## 2. Proposition 5.4 source hypotheses
+
+MRT Proposition 5.4 fixes sufficiently small epsilon>0, A>0, fixed k>=2, and B sufficiently large depending on k,A. It sets
 
     H = X^(sigma+epsilon),
     Q = (log X)^B,
 
-with the long-shift regime sigma>=8/33 inherited from Proposition 3.4(ii). It assumes
+with sigma>=8/33 for the long-shift application. It assumes
 
-    1 <= q <= Q,
-    q = q0*q1,
+    1 <= q_arc <= Q,
+    q_arc=q0*q1,
 
 and
 
-    X^(-1/6-epsilon) <= lambda <= 1/(q*Q).
+    X^(-1/6-epsilon) <= lambda <= 1/(q_arc*Q).
 
-The arithmetic function is either Lambda*1_(X,2X] or d_k*1_(X,2X].
+The arithmetic function is Lambda*1_(X,2X] or d_k*1_(X,2X]. The resulting mean-value estimate has arbitrary requested logarithmic saving, with an implied constant depending on k,epsilon,A,B.
 
-The conclusion is a squared Dirichlet-series mean-value bound of size
+## 3. Proposition 3.4 additive-frequency interface
 
-    <<_{k,epsilon,A,B} q * lambda^2 * H^2 * X * (log X)^(-A).
+For alpha=a/q_arc+beta, q_arc<=Q, Proposition 3.4 gives the minor-arc L2 estimate. In the localized long-shift form (sigma>=8/33), the center beta satisfies
 
-The implied constant is not numerical in the paper.
+    X^(-1/6-epsilon) <= |beta| <= 1/(q_arc*Q).
 
-## 2. Proposition 3.4: additive-frequency interface
+Part (i) handles the complementary larger-frequency region down to the major-arc boundary.
 
-For q<=Q and (a,q)=1, Proposition 3.4(ii) gives, for sigma>=8/33,
+## 4. Exact dilation denominator reduction
 
-    integral_{|theta-beta| <= X^(-sigma-epsilon)}
-      |S_f(a/q+theta)|^2 dtheta
-        <<_{k,epsilon,A,B} X (log X)^(-A),
+For the Stage-A sums
 
-provided
+    S_m(alpha)=sum Lambda(m)e(b2*m*alpha),
+    S_n(alpha)=sum Lambda(n)e(b1*n*alpha),
 
-    X^(-1/6-epsilon) <= |beta| <= 1/(qQ).
+write alpha=a/q_arc+beta with (a,q_arc)=1. Then the rational parts reduce exactly to denominators
 
-Part (i) treats the complementary larger-frequency region.
+    q_m = q_arc/gcd(q_arc,b2),
+    q_n = q_arc/gcd(q_arc,b1).
 
-Important: MRT's H is a **shift-window scale**. It is not the same object as the length of our moving m-interval I_k(n). A bulk lower bound on |I_k(n)| does not by itself verify H>=X^(8/33+epsilon). These checks must remain separate in the substitution table.
+Hence q_m,q_n<=q_arc<=Q. This is the arithmetic core of the claimed b-uniformity.
 
-## 3. Lemma 2.2 has an explicit operator constant
+What is not automatic is the width: the residual frequencies are b2*beta and b1*beta modulo 1. The proof must classify when both are major and, outside that finite family, show that at least one dilated side satisfies the minor-arc estimate in its own approximation quality.
 
-MRT defines the maximal interval sum
+## 5. Lemma 2.2 exact maximal constant
 
-    |sum_{X<=n<=X0} g(n)|*
-      = sup_{X<=X1<=X2<=X0} |sum_{X1<=n<=X2} g(n)|.
-
-Lemma 2.2 gives the exact inequality
+MRT's maximal summation-by-parts inequality is
 
     |sum f(n)g(n)|*
       <= |sum g(n)|*
-         * ( sup|f| + (X0-X)*sup|f'| ).
+         * (sup|f| + interval_length*sup|f'|).
 
-There is no hidden multiplicative constant in this displayed summation-by-parts step. For a slow Stage-A weight f, the only price is its explicit variation norm
+The displayed operator coefficient is exactly 1. Thus the Stage-A slow-weight cost is the explicit variation norm
 
-    V(f) := sup|f| + length*sup|f'|.
+    V(f)=sup|f|+length*sup|f'|.
 
-This is the correct quantity to put in the G9 weight ledger.
+## 6. Corollary 2.5 endpoint truncation
 
-## 4. Corollary 2.5: endpoint-independent, but not numerically constant-explicit
+For f supported on [X/C,CX], Corollary 2.5 bounds every interval-truncated Dirichlet polynomial by an endpoint-independent integral of the untruncated polynomial plus a truncation error.
 
-For f supported on [X/C,CX], Corollary 2.5 gives uniformly for every interval I=[X1,X2]
+The kernel mass is exactly
 
-    |D[f 1_I](1/2+it)|
-      <=_C
-      integral_{-T}^{T} |D[f](1/2+i(t+u))| du/(1+|u|)
-      + ||f||_infty * X^(1/2) * log(2+T)/T.
+    integral_{-T}^{T} du/(1+|u|)=2*log(1+T).
 
-The endpoint dependence is completely absent from the right-hand side.
+So maximalizing over endpoints introduces logarithmic losses, not a count of endpoint choices.
 
-The kernel mass is explicit:
+The corollary still carries an implicit C-dependent constant, and Proposition 5.4 carries further implicit constants. These are not numerical finite-height certification constants. The correct target is an exponent-level o(1), not a fabricated rational decimal bound.
 
-    integral_{-T}^{T} du/(1+|u|) = 2 log(1+T).
+## 7. Correct fail-closed substitution table
 
-So one application costs at most one logarithmic power at amplitude level, hence two logarithmic powers after squaring, before any additional outer integrations.
-
-However the symbol <=_C carries an implicit constant depending on C. The paper does not supply a numerical value for this constant. Therefore it is invalid to turn Corollary 2.5 into a finite exact rational R-unit number unless that constant is reconstructed from the proof and all imported Perron constants.
-
-For our asymptotic purpose this is unnecessary: the constant is fixed while Proposition 5.4 supplies arbitrary log-power saving.
-
-## 5. Proposition 5.4 itself is not an effective numerical constant source
-
-The bound in Proposition 5.4 is stated with an implied constant depending on k, epsilon, A and B, with B only required to be sufficiently large. The proof also uses standard asymptotic estimates. Hence the correct certification target is
-
-    fixed constant * (log X)^(-eta) = o(1),
-
-not a finite decimal upper bound at a particular X.
-
-This distinction is essential. The local exact checker should certify algebraic identities and exponent inequalities; it must not invent numerical values for hidden big-O constants.
-
-## 6. Maximalization inheritance
-
-Because Corollary 2.5 is pointwise and endpoint-independent, define
-
-    Dstar_f(t) = sup_I |D[f 1_I](1/2+it)|.
-
-Taking the supremum over I preserves the same right-hand side. Minkowski then passes this through the Proposition-5.4 type character/t0 functional with only powers of log X coming from the kernel mass 2 log(1+T).
-
-Thus no endpoint union bound is needed.
-
-This closes the **maximalization mechanism**, not the full Stage-A theorem.
-
-## 7. Fail-closed Stage-A substitution table
-
-| MRT symbol | Stage-A object | Required check | Status |
+| object | Stage-A meaning | required check | status |
 |---|---|---|---|
-| X | dyadic prime scale of m or n block | exact support after dyadic partition | OPEN |
-| H=X^(sigma+eps) | shift-window length in h | identify h=qk range and prove sigma>=8/33 | OPEN |
-| q | structured shift modulus | q<=Q=(log X)^B | PARTIAL: polylog truncation available |
-| q0,q1 | character factorization | specify factorization used by MRT transform | OPEN |
-| lambda | additive/multiplicative frequency scale | X^(-1/6-eps)<=lambda<=1/(qQ) | OPEN |
-| f | prime sequence | exactly Lambda*1_(X,2X] after dyadic split | OPEN |
-| interval I | moving m-window | handled by Cor. 2.5 maximalization | MECHANISM CLOSED |
-| slow weight | Stage-A geometry/kernel | Lemma 2.2 variation norm V(f) | FORMULA CLOSED; bound OPEN |
-| collar | small n/k endpoint family | exact consumed R-unit charge | OPEN |
+| X_m,X_n | dyadic scales of the prime variables after block partition | each support lies in a fixed-ratio dyadic interval | OPEN write-out |
+| H_shift | long physical-shift averaging scale used before structured extraction | H_shift>=X^(8/33+epsilon) where MRT is consumed | OPEN |
+| q_w | b2/g welding multiplier | handled only through divisor multiplicity | G2 DERIVED |
+| q_arc | rational-approximation denominator for alpha | q_arc<=Q=(log X)^B | source condition |
+| q_m,q_n | reduced denominators after dilation | exact q_arc/gcd(q_arc,b_i) | ALGEBRA CLOSED |
+| beta/lambda | residual frequency scale | verify the Proposition 3.4/5.4 ranges after dilation | OPEN / HIGH PRIORITY |
+| interval truncation | moving/block endpoints | Cor. 2.5 endpoint-independent maximalization | MECHANISM CLOSED |
+| slow geometry | kernel/overlap amplitude | Lemma 2.2 variation bound | FORMULA CLOSED; Stage-A bound OPEN |
 
-If any OPEN row survives, G9-C remains open.
+## 8. Citation map
 
-## 8. Citation correction
+- Lemma 2.2: maximal summation by parts.
+- Corollary 2.5: arbitrary interval truncation.
+- Proposition 3.4: additive-frequency minor-arc estimate.
+- Proposition 5.4: Dirichlet-series mean-value estimate, proved through Sections 6--7.
+- Proposition 5.5: complementary mean-value estimate, proved in Appendix A.
 
-The shorthand 'Proposition 5.4, Appendix A' is incorrect.
+The shorthand 'Prop. 5.4, Appendix A' is incorrect.
 
-- Proposition 5.4 is proved through the main Sections 6--7 argument.
-- Appendix A proves Proposition 5.5.
-- Lemma 2.2 supplies maximal summation by parts.
-- Corollary 2.5 supplies endpoint-independent interval truncation.
+## 9. Current analytic target
 
-All four roles must be cited separately.
+Because the n-first moving window is O(1), G9 no longer seeks pointwise control of w_k(n). The preferred route is the j-first centered four-point object in `WP71_G9_C_JFIRST_PIVOT.md`.
 
-## 9. Gate state
+The MRT interface is therefore used inside a long averaged/spectral proof, where q_arc is a frequency denominator and q_w remains a structured physical shift.
 
-- G9-A exact welding reindexing: CLOSED.
-- G9-B signed main local factorization and rectangular calibration: CLOSED.
-- G9-B moving-interval combinatorics: CLOSED.
-- G9-C maximal endpoint mechanism: CLOSED AT REDUCTION LEVEL.
-- G9-C full Stage-A parameter substitution: OPEN.
-- G9-D exact R-unit collar/outer-budget normalization: OPEN.
-
-No theorem percentage is promoted by this source audit.
+No percentage claim is promoted here.
