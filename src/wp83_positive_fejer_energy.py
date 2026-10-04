@@ -53,7 +53,8 @@ def main():
     for fi,mi in masses.items():
         for fj,mj in masses.items():
             rhs=(rhs+mi*mj*Kh[(fi-fj)%N])%P
-    rhs=rhs*pow(N,P-2,P)%P
+    # No 1/N factor appears here: we expanded the weighted time-domain
+    # quadratic form directly, rather than applying inverse-DFT Parseval.
     assert lhs==rhs,(lhs,rhs)
 
     print("N",N,"box length",M)
