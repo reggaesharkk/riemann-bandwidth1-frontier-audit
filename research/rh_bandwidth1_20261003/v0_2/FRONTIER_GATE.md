@@ -1,114 +1,110 @@
-# Bandwidth-one v0.2 frontier gate — 2026-10-03
+# Bandwidth-one v0.2 frontier gate — frozen 2026-10-04
 
-## Evidence hierarchy
+## Current evidence hierarchy
 
-1. **Independently source-replayed benchmark:** A1290,
-   (A=129/10000), (B_6=1094977/5000000000), with directed lower bound
-
-   [
-   c_{1290}ge 0.6728005676668788382262765469ldots
-   ]
-
-   The exact replay checks 3,550,925 nodes and 1,775,463 leaves.
-
-2. **Public exact-replay report, not yet source-free replayed here:** A1293,
-   (A=1293/100000), (B=B_6). The pinned public report at upstream head
-   `fba91d214655aaa1fd0504bb893c8859c20c79f9` records PASS with
-   10,003,455 visited nodes and 5,001,728 leaves. Using the same directed
-   analytic constants as our A1290 replay gives
+1. **A1290 — independently source-replayed benchmark**
 
    [
-   c_{1293}ge0.6728039389347995417365322794ldots
+   A=129/10000,qquad B=B_6=1094977/5000000000.
    ]
 
-3. **Constructive candidate under test:** A1294,
-   (A=1294/100000), (B=B_6). If a full exact certificate closes, the
-   same bridge yields
+   The exact replay checks 3,550,925 nodes and 1,775,463 leaves. The pinned
+   upstream Lean development integrates this target and proves the fixed
+   coefficient `0.6728005676`.
+
+2. **A1293 — public external exact replay**
 
    [
-   c_{1294}ge0.6728050626982810080982218842ldots
+   A=1293/100000,qquad B=B_6.
    ]
 
-   This is about (1.124	imes10^{-6}) above the A1293 arithmetic value.
+   The pinned upstream report records PASS with 10,003,455 visited nodes and
+   5,001,728 leaves. Upstream explicitly says this closes externally and has
+   been independently replayed, but is not integrated into the Lean theorem
+   chain.
 
-4. **Stretch candidate:** A1295, (A=259/20000). This would yield roughly
-   (0.6728061864655), but it has less catalog slack and is not the primary
-   target until A1294 is resolved.
+3. **A1294 — this project, finite exact certificate PASS**
 
-## Why A1294 is primary
+   [
+   A=1294/100000=0.01294,qquad B=B_6.
+   ]
 
-The frozen 666-piece catalog gives a numerical adversarial point near
-(0.01296159) at (B=B_6). Therefore A1294=0.01294 has about
-(2.16	imes10^{-5}) diagnostic slack, while A1295=0.01295 has only about
-(1.16	imes10^{-5}). These are pointwise ceiling diagnostics, not proofs.
+   GitHub Actions run `37133363690` completed successfully:
 
-A1294 also isolates one change from the public A1293 report: only A is
-increased, while B and all analytic inputs remain fixed.
+   - visited: **13,454,121**
+   - leaves: **6,727,061**
+   - max depth: **80**
+   - full stack exhaustion: **true**
+   - independent Fraction-only verifier: **PASS**
+   - final artifact ID: `11286675906`
+   - downloaded ZIP SHA-256:
+     `11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19`
 
-## Seam obstruction discovered
+   The publication-safe directed analytic arithmetic proves the fixed
+   coefficient
 
-The naive exact branch-and-bound implementation can become trapped at a
-refinement seam. A tiny box may straddle two certified one-dimensional
-refinement pieces, forcing fallback to the much weaker parent stable model.
-Repeated dyadic splitting then drives depth upward without reflecting a
-mathematical obstruction.
+   [
+   oxed{0.67280506}
+   ]
 
-This was observed independently:
+   conditional only on admitting the externally verified affine certificate
+   into the already generic upstream analytic bridge.
 
-- the naive A1293 regeneration run 37117582078 hit depth 513 after only
-  36,751 visited nodes and stopped at DEPTH_CAP;
-- this does **not** contradict the public A1293 PASS report, because it is a
-  different generator/lower-bound selection strategy.
+4. **A1296 — diagnostic only**
 
-The seam-aware A1294 checker instead partitions each affected scalar interval
-at exact catalog boundaries and takes the minimum of the certified
-piecewise lower envelope. Every accepted lower bound remains exact rational.
+   A 5M-node local full-root run did not close: 5,057,564 visited, 1,024
+   pending, depth 79. The deepest frontier is highly structured and has been
+   localized for future catalog refinement work. No theorem claim is made.
 
-## A1294 scaling gate
+## Structural contribution of v0.2
 
-GitHub Actions run `37117579760`, artifact `11272088005`
-(`sha256:ebed6d4f37018688ba7549df066174f8c8ed9c690f4781bf868a65c9f6ea21ed`)
-ran the seam-aware A1294 checker on the full root ([0,60]^5) for 250,000
-nodes against the pinned input hashes.
+The naive checker can lose strength when a scalar partial-sum interval crosses
+a refinement seam: no single refinement piece covers the whole interval, so a
+weak parent may be used repeatedly.
 
-Result:
+The v0.2 checker instead partitions at exact catalog boundaries. On every
+atomic segment it takes the strongest certified model infimum and then takes
+the minimum across segments. This is a valid lower bound without any
+continuity assumption between neighboring pieces.
 
-- status: NODE_CAP, no counterexample;
-- visited: 250,000;
-- closed exact leaves: 124,983;
-- pending stack: 35;
-- maximum depth: 72;
-- elapsed: 171.30 seconds;
-- all closed leaves were exact quadratic leaves;
-- smallest accepted rational margin remained positive.
+The seam composition has now passed three distinct checks:
 
-This is strong scaling evidence but **not yet a certificate**, because the
-pending boxes mean the root domain is not fully covered.
+- elementary mathematical proof;
+- exact finite implementation/replay;
+- all-666 JSON ↔ Lean catalog identity plus upstream model soundness chain.
 
-A 1,000,000-node scaling run has been launched next. Full certificate
-generation is authorized only if scaling remains healthy.
+## Closed A1294 gates
 
-## A1295 diagnostic
+- [x] complete exact coverage of the five-dimensional root;
+- [x] canonical certificate streams;
+- [x] independent verifier not importing the search generator;
+- [x] frozen input/stream hashes;
+- [x] exact replay of every terminal inequality;
+- [x] positive smallest terminal margin;
+- [x] all 666 JSON model definitions matched to the pinned Lean definitions;
+- [x] upstream one-dimensional model soundness chain identified;
+- [x] exact seam-domain structural coverage checked;
+- [x] analytic feedback/ledger chain audited as generic in A,B;
+- [x] directed arithmetic corrected to use a certified pi upper bound;
+- [x] conservative fixed headline `0.67280506` established.
 
-The independent 25k-node A1295 workflow completed its pilot wrapper, but the
-underlying exact search stopped at NODE_CAP: 25,001 visited, 12,486 closed
-leaves, 29 pending, maximum depth 80. It did not find a counterexample.
-A1295 remains secondary until the seam-aware A1294 route is resolved.
+## Remaining release gates
 
-## Required proof chain before any new theorem claim
+- [ ] source-free full replay outside the generating GitHub CI environment;
+- [ ] final broad novelty/priority audit;
+- [ ] preferably a Lean kernel integration of the A1294 seam-aware finite
+      certificate;
+- [ ] final rights/provenance audit and immutable release/DOI deposit.
 
-A PASS search is not sufficient by itself. A publishable improvement requires:
+## Freeze rule
 
-1. complete exact coverage of ([0,60]^5);
-2. a canonical certificate stream;
-3. a verifier that checks the stream without trusting the search generator;
-4. frozen catalog/input hashes;
-5. independent replay of every terminal inequality with rational arithmetic;
-6. catalog-soundness / one-dimensional kernel-envelope audit;
-7. analytic bridge audit from the finite affine inequality to the density
-   theorem;
-8. renewed literature/novelty search;
-9. preferably a Lean finite-certificate port or kernel replay.
+No further A1294 optimization search is authorized.
 
-Until those gates pass, A1294 is a **candidate certificate**, not a new
-unconditional zero-density theorem and not an RH result.
+Do not merge PR #2 or publish a theorem-level release until the external replay
+and final release gates pass.
+
+A1294 is now classified:
+
+**CERTIFIED_FINITE_EXACT + CATALOG_IDENTITY_PASS + ANALYTIC_BRIDGE_STRUCTURE_PASS**
+
+This is not a claim of the Riemann Hypothesis.
