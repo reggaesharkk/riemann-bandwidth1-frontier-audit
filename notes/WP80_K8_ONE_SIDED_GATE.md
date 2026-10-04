@@ -1,149 +1,144 @@
 # WP80 — one-sided k=8 gate: exact route past 80%
 
 Date: 2026-10-04
-Status: EXACT CONSUMER-SIDE THEOREM; zeta moment transport remains open
+Status: **EXACT CONSUMER-SIDE THEOREM; zeta moment transport remains open**
 
-## Why this is stronger than the previous k=8 gate
+Assume a nonnegative measure on ([0,infty)) with exact
+(m_0,ldots,m_6) equal to the pinned values, and only one-sided information
 
-The previous exact gate assumed exact m7 and m8.  The analytic side is more
-likely to deliver inequalities than identities.  We therefore recast the
-consumer in one-sided form.
-
-Assume a nonnegative measure on [0,infinity) with the exact moments
-
-m0=1, m1=1, m2=4/3, m3=2, m4=13/4,
-m5=101/18, m6=12809/1260,
-
-and only
-
-m7 >= L,
-m8 <= U.
+[
+m_7ge L,qquad m_8le U.
+]
 
 Put
 
-L0 = 25866469/1352400 = 19.126345016267...
+[
+L_0=rac{25866469}{1352400}=19.126345016267ldots .
+]
 
-from the exact shifted-Hankel moment-cone floor.
+## Feasibility and sign-safe consumption
 
-## Feasibility floor
+Moment positivity forces
 
-Positivity of the order-4 moment matrix forces
-
-m8 >= F8(m7),
+[
+m_8ge F_8(m_7),
+]
 
 where
 
-F8(x) =
-(13335840000 x^2 - 504286322400 x + 4794396454037) / 748818000.
+[
+F_8(x)=
+rac{13335840000x^2-504286322400x+4794396454037}{748818000}.
+]
 
-For x >= L0 this function is increasing because
+For (xge L_0), (F_8) is increasing. Thus (m_7ge L) implies
 
-F8'(x) = 2(25200x-476461)/1415 > 0.
+[
+Uge m_8ge F_8(m_7)ge F_8(L).
+]
 
-Hence m7 >= L implies
+Build the degree-4 Christoffel minimizer at the surrogate point ((L,U)).
+Its square (P(x)=Q(x)^2) has top coefficients
 
-U >= m8 >= F8(m7) >= F8(L).
+[
+y_7=2q_3q_4le0,qquad y_8=q_4^2>0
+]
 
-## Sign-safe surrogate Christoffel polynomial
+throughout the feasible one-sided region. Therefore
 
-Build the degree-4 Christoffel minimizer using the surrogate moments
-(m7,m8)=(L,U).  Its square P(x)=Q(x)^2 has coefficients y7,y8.
+[
+mathbb E_{m actual}P
+le
+mathbb E_{m surrogate}P.
+]
 
-The highest polynomial coefficients have the exact sign structure
-
-q4 = 945(1352400L-25866469)/D > 0,
-
-q3 = 1470(3393360L-869400U-32718563)/D,
-
-with D>0 in the feasible region.
-
-Moreover
-
-F8(L) - (3393360L-32718563)/869400
-=
-((25200L-476461)(1352400L-25866469))/1913646000
->= 0.
-
-Since U >= F8(L), q3 <= 0. Therefore
-
-y7 = 2 q3 q4 <= 0,
-y8 = q4^2 > 0.
-
-This is the key one-sided sign gate. It gives
-
-E_actual[P]
-<=
-E_surrogate[P].
-
-So exact m7 and m8 are unnecessary for consumption: a theorem-grade lower
-bound for m7 and upper bound for m8 are enough.
+So exact values of (m_7,m_8) are unnecessary: a lower bound for (m_7)
+and an upper bound for (m_8) are sufficient.
 
 ## Strict improvement over 79.627%
 
-The surrogate Christoffel value obeys the same exact factorization
+The surrogate Christoffel value satisfies
 
-lambda4(L,U) - 1415/13891
+[
+lambda_4(L,U)-rac{1415}{13891}
 =
--27(1352400L-25866469)^2 / (55564 D(L,U)).
+-rac{27(1352400L-25866469)^2}{55564,D(L,U)}.
+]
 
-Therefore every valid finite U with
+Hence every valid finite (U), with (L>L_0), strictly improves the
+conditional k<=6 coefficient (11061/13891), once the moment inequalities
+are transported analytically.
 
-L > L0
+## Exact 80% gate
 
-gives a strict consumer improvement over
+The sufficient-and-exact surrogate condition is
 
-11061/13891 = 79.6270966813...%
-
-provided the one-sided moment premises have been analytically transported.
-
-## Exact 80% kill gate
-
-The condition
-
-1 - 2 lambda4(L,U) > 4/5
-
-is equivalent to
-
-U < T80(L),
+[
+U<T_{80}(L),
+]
 
 where
 
-T80(L) =
-(18670176000 L^2 - 713649484800 L + 6822174057191) / 68531400.
+[
+T_{80}(L)=
+rac{
+18670176000L^2-713649484800L+6822174057191
+}{68531400}.
+]
 
-Thus the theorem-grade target is now only
+The key new structural factorization is
 
-boxed:
-    m7 >= L > L0
-    and
-    m8 <= U < T80(L).
+[
+oxed{
+T_{80}(L)-F_8(L)
+=
+rac{(1352400L-25866469)^2}{7183106000}.
+}
+]
 
-This is strictly easier than pinning both moments exactly.
+Thus the feasible 80% corridor is not an accidental decimal window. It opens
+**quadratically and exactly** as soon as (L) moves above the flat Stieltjes
+floor (L_0).
 
-For orientation only, at L=19.136 the feasible/80 corridor is
+At (L=19.136),
 
-F8(L) = 37.0956753273...
-T80(L)= 37.1194109780...
+[
+F_8(L)=37.095675327302ldots,
+]
 
-so an upper bound for m8 landing inside that corridor is sufficient.
+[
+T_{80}(L)=37.119410977975ldots,
+]
+
+and therefore
+
+[
+oxed{
+T_{80}(L)-F_8(L)
+=
+0.0237356506725ldots .
+}
+]
+
+A midpoint diagnostic gives a valid surrogate simple-zero coefficient
+approximately (0.80359497536), but this is **not** a zeta theorem claim.
 
 ## Research consequence
 
-The post-79 programme should target one-sided analytic transport:
+The post-79 analytic target is now one-sided:
 
-1. use exact C7 and exact {5,2} to sharpen a rigorous LOWER bound for m7;
-2. bound the m8 mixed classes from ABOVE;
-3. compare that upper bound directly to T80(L);
-4. use the exact square-polynomial certificate above.
+1. obtain a theorem-grade (m_7) lower bound (L>L_0);
+2. obtain a theorem-grade (m_8) upper bound (U);
+3. prove (U<T_{80}(L));
+4. consume with the exact square-polynomial certificate.
 
-This mirrors the successful LRSC K10/K11 proof architecture: a passing witness
-and an exclusion/transport certificate are separate objects, with interval
-bounds used only where exact algebra ends.
+The exact ({5,2}), (C_7), and m8 mixed-class work should therefore be
+organized around lower-bounding (m_7) and upper-bounding (m_8), rather than
+forcing exact evaluation when an inequality is enough.
 
-Companion checker:
-src/wp80_k8_one_sided_gate.py
+Companion checker: `src/wp80_k8_one_sided_gate.py`.
 
 ## Evidence boundary
 
-This note proves only an exact moment-consumer implication.  It does not prove
-that zeta supplies the required m7 lower bound or m8 upper bound.
+This note proves an exact moment-consumer implication only. It does not prove
+that zeta supplies the required (m_7) lower bound or (m_8) upper bound.
