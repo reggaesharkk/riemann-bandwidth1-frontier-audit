@@ -1,12 +1,23 @@
 {
-  "schema": "a1294-full-certificate-final-freeze-v1",
-  "date_utc": "2026-10-03",
+  "schema": "a1294-full-certificate-final-freeze-v2",
+  "date_utc": "2026-10-04",
   "candidate": {
     "A": "647/50000",
     "A_decimal": "0.01294",
     "B": "1094977/5000000000",
-    "directed_density": "0.672805062698281008098221884193539254919846831626471836523602569541644813982154847287316312",
-    "gain_over_public_A1293_arithmetic": "0.00000112376348146636168960480148752818867145339344892655645670353373109324730457829096250305460"
+    "publication_safe_fixed_headline": "67280506/100000000",
+    "publication_safe_fixed_headline_decimal": "0.67280506",
+    "lean_directed_lower_exact": "201406213933795020896911983481/299353000000000000000000000000",
+    "lean_directed_lower_decimal": "0.6728050626978684726624152204287246160886979585973750054283738596239222590052546658961159567467170865",
+    "headline_exact_margin": "807615020896911983481/299353000000000000000000000000",
+    "headline_margin_decimal": "0.0000000026978684726624152204287246160886979585973750054283738596239222590052546658961159567467170865",
+    "fine_diagnostic_lower_decimal": "0.6728050626982810080982182263815246768130632015977098064119952029877769723370068113564921681092222226",
+    "fine_diagnostic_note": "Uses the finer stored HD lower rational together with Mathlib's certified 20-decimal pi upper endpoint. The fixed public headline is deliberately based on the coarser Lean-certified HD_one_decimal lower endpoint."
+  },
+  "directed_constants": {
+    "HD_lean_lower": "672500703679/1000000000000",
+    "pi_upper_d20": "314159265358979323847/100000000000000000000",
+    "direction_note": "pi appears with a negative coefficient, so a rigorous lower bound uses an upper bound on pi. The earlier v1 freeze used the d20 lower endpoint by mistake; v2 corrects that direction."
   },
   "github_actions": {
     "run_id": 37133363690,
@@ -44,15 +55,23 @@
     "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
     "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
   },
+  "catalog_identity_audit": {
+    "stable_56": "PASS_0_MISMATCHES",
+    "v1_216": "PASS_0_MISMATCHES",
+    "v3_394": "PASS_0_MISMATCHES",
+    "total_models": 666
+  },
   "stream_sha256": {
     "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
     "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
     "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
   },
-  "evidence_class": "CERTIFIED_FINITE_EXACT",
+  "evidence_class": "CERTIFIED_FINITE_EXACT_PLUS_CATALOG_IDENTITY_PASS",
   "claim_boundary": [
     "This freezes the finite seam-aware A1294 certificate and its independent exact replay.",
-    "It is not yet a new published theorem or an RH result.",
-    "Remaining gates are catalog-to-Lean identity/soundness, analytic bridge audit, formal integration or equivalent proof audit, independent external replay, and final novelty audit."
+    "All 666 frozen JSON model parameters were matched against the pinned Lean definitions with zero mismatches.",
+    "The conservative directed analytic arithmetic proves the fixed headline 0.67280506 conditional on accepting the externally verified affine certificate in the generic upstream analytic bridge.",
+    "A source-free replay outside the generating CI environment and formal/integrated seam certificate remain pending before release as a theorem-level result.",
+    "This is not a claim of the Riemann Hypothesis."
   ]
 }
