@@ -206,3 +206,23 @@ What it does show is a sharper sequence of gates:
       -> Proposition-R moment-to-zero-free implication.
 
 The final isolation step remains the genuine barrier.
+
+
+## 11. Two-window cluster-energy refinement
+
+The raw two-window inequality in coefficient l2 norm is false without zero spacing: for any finite family of analytic observation windows U(z), the two columns U(z), U(z+eps) have a difference of size O(eps), so their smallest Gram eigenvalue is O(eps^2).
+
+The correct near-collision coordinates are confluent jets. For a cluster of size s<=4, the full-lattice centered-jet Gram dominates
+
+    c_s * L * exp(delta L - 2 delta(w+1)),
+
+with exact rational Hilbert floors
+
+    c_1=1,
+    c_2=1/16,
+    c_3=5/25392,
+    c_4=49/1395654656.
+
+Thus internal cluster energy is quantitatively nonzero in confluent coordinates even when raw zero nodes coalesce. The remaining barrier is not cluster self-conditioning but **background isolation**: show that one/two finite windows retain a polynomially large component of this cluster energy after projecting away all other clusters.
+
+See `WP83_TWO_WINDOW_CLUSTER_ENERGY.md`.
