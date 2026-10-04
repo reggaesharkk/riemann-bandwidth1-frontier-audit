@@ -1,0 +1,79 @@
+name: Reproduce public continuum-core quadrature
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - .github/workflows/reproduce-public-core-quadrature.yml
+
+permissions:
+  contents: read
+
+jobs:
+  public-core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install runtime dependency
+        run: python -m pip install --disable-pip-version-check numpy
+
+      - name: Pin public reproduction source
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+          test "$(git rev-parse HEAD)" = "d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8"
+
+      - name: Public gamma-tail gate
+        working-directory: upstream/scripts
+        run: python -u quadrature_cert.py gamma | tee ../../public_core_gamma.log
+
+      - name: Public c-star ladder gate
+        working-directory: upstream/scripts
+        run: python -u quadrature_cert.py ladder | tee ../../public_core_ladder.log
+
+      - name: Public derivative gate
+        working-directory: upstream/scripts
+        run: python -u quadrature_cert.py dc | tee ../../public_core_dc.log
+
+      - name: Public hybrid continuum gate
+        working-directory: upstream/scripts
+        run: python -u quadrature_cert.py hybrid | tee ../../public_core_hybrid.log
+
+      - name: Extract decisive quantities
+        run: |
+          python - <<'PY'
+          import re, pathlib, json
+          txt = pathlib.Path("public_core_hybrid.log").read_text(errors="replace")
+          pats = {
+              "B_total": r"B_total\s*=\s*([+\-0-9.]+)",
+              "C_core": r"C_core\s*=\s*([+\-0-9.]+)",
+              "Rbar": r"R̄_cert\s*≤\s*([+\-0-9.]+)",
+          }
+          out = {}
+          for k,p in pats.items():
+              m = re.search(p, txt)
+              out[k] = None if m is None else float(m.group(1))
+          out["target_CcoreUB"] = -1499/90000
+          if out["C_core"] is not None and out["B_total"] is not None:
+              out["CcoreUB_reproduced"] = out["C_core"] + out["B_total"]
+              out["crosses_70_threshold"] = out["CcoreUB_reproduced"] < out["target_CcoreUB"]
+          pathlib.Path("public_core_summary.json").write_text(json.dumps(out, indent=2)+"\n")
+          print(json.dumps(out, indent=2))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-continuum-core-reproduction
+          path: |
+            public_core_*.log
+            public_core_summary.json
+          if-no-files-found: error
