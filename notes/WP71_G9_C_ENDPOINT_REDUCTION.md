@@ -6,20 +6,21 @@ Status: **EXACT REDUCTION CLOSED; maximal shifted-prime input still to be proved
 The moving-interval audit reduced the general welding error, outside the
 lower-dimensional j=0 puncture family, to
 
-e_k(n)
- =
-E_{rk}(U_k(n))
--
-E_{rk}(L_k(n)-1),
+e_k(n) = E_{rk}(U_k(n)) - E_{rk}(L_k(n)-1),
 
 where E_h(t) is the cumulative prime-pair error at shift h.
 
 This note isolates one sufficient analytic statement which would close the
 general middle-band remainder.
 
-## 1. Maximal pair-error norm
+## 1. Maximal short-interval pair-error norm
 
-On a dyadic prime scale M define
+On a dyadic prime scale M let Y be an upper bound for the length of every
+moving interval in the cell. For the hard j-strip,
+
+Y <= min(B_k-A_k+1, floor(2J/b2)+2).
+
+Define
 
 D_h(u,v)
  =
@@ -29,19 +30,19 @@ S(h)(v-u),
 
 and
 
-Emax(h;M)
+Emax(h;M,Y)
  =
-sup_{M<=u<v<=2M} |D_h(u,v)|.
+sup_{M<=u<v<=2M, v-u<=Y} |D_h(u,v)|.
 
-The moving interval I_k(n) is always a subinterval of the corresponding
-outer m-block, up to the already isolated j=0 puncture. Therefore
+The moving interval I_k(n) is always one of these intervals, up to the
+already isolated j=0 puncture. Therefore
 
-|e_k(n)| <= 2 Emax(rk;M)
+|e_k(n)| <= 2 Emax(rk;M,Y)
 
-for every admissible n in that dyadic block.
+for every admissible n.
 
-No smoothness or number theory is used here; this is a direct consequence of
-the two-endpoint representation.
+No smoothness or number theory is used here; this follows directly from the
+two-endpoint representation.
 
 ## 2. Exact shift-only Cauchy--Schwarz
 
@@ -50,23 +51,17 @@ cell prefactors are extracted, and put
 
 A_{k,n}=Lambda(n)Lambda(n-qk).
 
-The general endpoint remainder is
+The endpoint remainder is
 
-R_end
- =
-sum_k sum_n G_{k,n} A_{k,n} e_k(n).
+R_end = sum_k sum_n G_{k,n} A_{k,n} e_k(n).
 
 Define the nonnegative outer weight budget
 
-W_k
- =
-sum_n |G_{k,n}| A_{k,n}.
+W_k = sum_n |G_{k,n}| A_{k,n}.
 
 Then, without applying Cauchy--Schwarz in n or across the cell family,
 
-|R_end|
- <=
-2 sum_k Emax(rk;M) W_k
+|R_end| <= 2 sum_k Emax(rk;M,Y) W_k,
 
 and hence
 
@@ -74,11 +69,11 @@ boxed:
 |R_end|
  <=
 2
-( sum_k Emax(rk;M)^2 )^(1/2)
+( sum_k Emax(rk;M,Y)^2 )^(1/2)
 ( sum_k W_k^2 )^(1/2).
 
-This is exactly the allowed use of Cauchy--Schwarz: **in the shift variable
-only**.
+This is exactly the allowed use of Cauchy--Schwarz: in the shift variable
+only.
 
 The signed main has already been removed before this inequality is invoked.
 
@@ -90,49 +85,65 @@ For every A and every polylogarithmic structured multiplier r,
 
 boxed:
 sum_{k<=K}
-Emax(rk;M)^2
+Emax(rk;M,Y)^2
  <<_A
-K M^2 (log M)^(-A),
+K Y^2 (log M)^(-A),
 
-uniformly in the Stage-A range K r <= M^(1-epsilon).
+uniformly in the Stage-A shift range and in the actual cell widths Y supplied
+by the middle-band/Gallagher decomposition.
 
-Call this the **maximal structured-shift L2 input**.
+Call this the **maximal short-window structured-shift L2 input**.
 
 Once it is available, any fixed logarithmic losses in the deterministic
 outer budget W_k can be beaten by choosing A larger.
 
-This is stronger than the already-derived fixed-window G2 statement because
-of the supremum over interval endpoints.  Therefore G2 by itself does not
-close G9-C.
+This is stronger than the already-derived fixed-window G2 statement for two
+reasons: it is maximal over interval endpoints, and it must scale with the
+actual short moving-window length Y rather than the ambient dyadic scale M.
+Therefore G2 by itself does not close G9-C.
 
-## 4. Why the target is plausible but not yet claimed
+## 4. MRT evidence relevant to this target
 
-MRT supplies the underlying long-shift correlation theorem and, deeper in the
-proof, the minor-arc mean-value estimates.  The public candidate also invokes
-a smoothing collar and Abel summation.
+The published MRT paper contains two pieces that are directly relevant:
 
-There are two legitimate ways to prove the maximal structured-shift input:
+1. Lemma 2.2 introduces a maximal-sum norm over arbitrary subintervals and
+   proves summation-by-parts control for that maximal norm.
+2. Corollary 2.5 controls an arbitrary interval truncation of a Dirichlet
+   series by the untruncated Dirichlet series with only logarithmic losses.
+   The proof of Proposition 5.4 explicitly invokes Corollary 2.5 to remove a
+   support truncation before the mean-value argument.
+
+Those facts make a maximal short-window extension plausible, but they do not
+by themselves prove the exact Stage-A statement above. The scale Y and all
+MRT parameter inequalities still have to be tracked through the circle-method
+reduction.
+
+## 5. Two legitimate completion routes
 
 ### Route M1 — smooth maximal family
 
-Replace sharp interval endpoints by a fixed finite family of smooth monotone
-cutoffs at the Gallagher scale, prove the corresponding structured-shift
-L2 estimate from MRT Proposition 3.4 / Proposition 5.4, and pay the hard/smooth
-difference through G7.
+Replace the hard endpoint indicator by the same smooth family used at the
+Gallagher scale, use MRT's truncation/maximal machinery before the
+mean-value estimate, and pay the hard/smooth difference through G7.
 
-### Route M2 — direct endpoint decomposition
+### Route M2 — direct endpoint family
 
-Decompose every moving interval into a logarithmic family of canonical
-subintervals or smooth blocks and union the exceptional-shift estimates with
-an arbitrarily stronger logarithmic saving.
+Push Corollary 2.5 through the Proposition 5.4 to Proposition 3.4 reduction
+with the interval endpoints left arbitrary, and then prove the resulting
+correlation estimate in the maximal norm of Lemma 2.2.
 
-This route must be written carefully: Theorem 1.3 as printed is not itself a
-black-box maximal-prefix theorem.
+This route must verify, cell by cell:
 
-Until one of M1/M2 is fully written with all parameter inequalities checked,
-G9-C remains open.
+- X and the dyadic prime scale;
+- the short interval length Y;
+- H >= X^(8/33+epsilon);
+- q <= (log X)^B;
+- X^(-1/6-epsilon) <= lambda <= 1/(qQ);
+- all extra logarithmic losses from truncation/maximalization.
 
-## 5. Deterministic outer-budget obligation
+Until M1 or M2 is written completely, G9-C remains open.
+
+## 6. Deterministic outer-budget obligation
 
 The second factor
 
@@ -143,12 +154,10 @@ G9-D must place it in the exact public normalization
 
 1/(pi*l*X*ell1^4)
 
-and prove that its growth costs only a fixed power of log M (and the already
-charged cell-mass factors).
+and prove that its growth costs only fixed logarithmic powers plus the already
+charged cell-mass factors.
 
-This is now a separate deterministic calculation.
-
-## 6. Gate map after the reduction
+## 7. Gate map
 
 - G9-A exact welding reindexing: CLOSED.
 - G9-B local Euler factorization: CLOSED.
@@ -156,7 +165,7 @@ This is now a separate deterministic calculation.
 - G9-B moving-interval combinatorics: CLOSED.
 - G9-B j=0 support isolation: CLOSED IN SHAPE / lower-dimensional charge.
 - G9-C endpoint reduction: CLOSED.
-- G9-C maximal structured-shift L2 theorem: OPEN.
+- G9-C maximal short-window structured-shift L2 theorem: OPEN.
 - G9-D exact R-unit outer-budget normalization: OPEN.
 
 This is the smallest honest analytic target currently visible for the
