@@ -1,7 +1,7 @@
 # WP83 — isolation condition map for Proposition R
 
 Date: 2026-10-04
-Status: **PAIR-LEVEL CONDITIONING DERIVED; NO UNCONDITIONAL GLOBAL ISOLATION FROM GABOR SPACING ALONE**
+Status: **PAIR-LEVEL CONDITIONING REDUCED TO A NEW COMPLEX-POISSON GATE; NO UNCONDITIONAL GLOBAL ISOLATION FROM GABOR SPACING ALONE**
 
 Goal: identify exact spectral hypotheses under which the signature-(1,1) off-line blocks cannot cancel in the full compressed Weil matrix.
 
@@ -23,7 +23,7 @@ Therefore a quantitative lower Riesz bound
 
     sigma_min(V)^2 >= a > 0
 
-for the relevant evaluation family is a sufficient globalization lemma. Under such a bound, exact cancellation of a nonzero hyperbolic block family is impossible.
+for the relevant evaluation family is a sufficient globalization lemma.
 
 ## 2. Localized version
 
@@ -41,49 +41,132 @@ then
     ||Q||_op >= ||P_perp Q P_perp||_op
              >= a_J ||H_J||_op.
 
-This is the precise finite-dimensional form of an isolation lemma: one must exhibit a pair/cluster whose evaluation vectors retain a quantitative component outside the span of all competing pairs.
+This is the exact finite-dimensional isolation obligation.
 
-## 3. What critical-density Gabor spacing actually gives
+## 3. Source audit: the public formalization does NOT prove complex Poisson
 
-C26's Poisson--Gabor identity controls the Gram kernel of evaluation vectors. For complex evaluation points z,z',
+The public Lean file `zeta23/Zeta23/Poisson.lean` explicitly says that it proves the Poisson--Gabor identity only for **real** arguments and that the complex continuation mentioned in the paper's pair-block remark is not used by the proof.
+
+Therefore the earlier draft of this note was too aggressive when it treated
 
     sum_k phihat(z-alpha_k) phihat(z'-alpha_k)
-      = L * widehat(phi^2)(z-z').
+      = L * widehat(phi^2)(z-z')
 
-For an off-line pair with depth delta, z=gamma-i*delta and zbar=gamma+i*delta. Because phi is real/even, the two-column Gram matrix has the symmetric form
+for complex z,z' as already source-closed.
 
-    G_pair = [[A,B],[B,A]],
+It is not source-closed.
 
-with
+## 4. Independent complex-continuation target
+
+The continuation is nevertheless a concrete theorem we can try to prove.
+
+For the actual C^2 compactly supported taper, the strip estimate
+
+    |phihat(r-i y)| <= exp(L|y|/2) * C / |r-i y|^2
+
+is available for |y|<=1/2.
+
+Hence on every compact subset of the zero strip, the series
+
+    F(z,z') = sum_k phihat(z-alpha_k) phihat(z'-alpha_k)
+
+is normally convergent because each factor is O(k^-2), so the product is O(k^-4).
+
+Thus F is holomorphic separately in z and z'. The right side
+
+    L * widehat(phi^2)(z-z')
+
+is entire.
+
+The real-real identity is already proved. Fix real z'. Identity in the variable z extends from the real line to the strip by the one-variable identity theorem. Then fix the now-complex z and extend in z' from the real line in the same way.
+
+This would prove the complex identity throughout the relevant strip.
+
+This argument still needs a polished write-out checking the uniform compact-strip decay and the exact Fourier convention. Until that is frozen, pair-level complex Gram formulas remain **derived-but-not-yet-closed**.
+
+## 5. Consequence if the complex continuation is closed
+
+Let
+
+    z = gamma - i*delta,
+    zbar = gamma + i*delta,
+
+and u be the infinite-grid evaluation vector at z.
+
+Because phi is real,
+
+    v(zbar)=conj(v(z)).
+
+Define
 
     A = L * widehat(phi^2)(2 i delta),
     B = L * widehat(phi^2)(0).
 
-Thus its two squared singular values are
+Then the complex Poisson identity would give
 
-    A+B,  A-B.
+    ||u||^2 = A,
+    sum_k u_k^2 = B.
 
-For delta>0 and a nontrivial window, A>B, so a **single isolated pair is internally nondegenerate**. For the flat-window heuristic, A grows like sinh(delta L)/delta while B is only of order L; this recovers the exponential/off-line amplification behind Proposition R.
+Writing u=x+i y with real x,y gives
 
-## 4. Why this does not yet globalize
+    x dot y = 0,
+    ||x||^2 = (A+B)/2,
+    ||y||^2 = (A-B)/2.
 
-The Gabor spacing alpha_{k+1}-alpha_k=2*pi/L is spacing of the **test frequencies**. It is not a spacing theorem for the zero ordinates gamma.
+The single off-line pair contribution
 
-A lower bound for sigma_min(V) over many zero evaluation vectors requires quantitative control of the Gram matrix
+    2m (x x^T - y y^T)
 
-    widehat(phi^2)(z_i-z_j)
+would therefore have exact nonzero eigenvalues
 
-for distinct zeros. Such a bound can fail or become arbitrarily small when evaluation points cluster. Neither C26 nor the declared prime-side inputs supply a uniform separation theorem for distinct zeta zeros.
+    m(A+B),
+    -m(A-B).
 
-Therefore critical-density Gabor sampling by itself does not provide the missing Proposition-R globalization lemma.
+For delta!=0 and a nontrivial even window,
 
-## 5. Three sufficient mechanisms and their status
+    A>B,
+
+because widehat(phi^2)(2 i delta) is the integral of phi(u)^2 cosh(2 delta u), strictly larger than its value at zero.
+
+So a **single infinite-grid off-line pair is internally nondegenerate** once the complex-continuation gate is proved.
+
+## 6. Finite compression is another separate gate
+
+The actual compressed Weil matrix uses only k=0,...,d-1, not the full infinite lattice.
+
+Therefore the infinite-grid spectrum above is not yet the spectrum of the consumed finite pair block.
+
+To transfer it, we need a tail estimate showing that for a target zero placed well inside the active frequency window, the omitted k<0 and k>=d evaluation energy is negligible relative to A-B.
+
+Because the moment statement is supposed to hold for every large dyadic height, a target zero at ordinate gamma can in principle be placed in the interior of a suitable dyadic window rather than at an endpoint. But the resulting finite-grid capture estimate must be written explicitly.
+
+## 7. Why Gabor spacing still does not globalize
+
+Even after the complex-Poisson and finite-capture gates close, they only control one pair.
+
+The spacing
+
+    alpha_{k+1}-alpha_k=2*pi/L
+
+is spacing of the **test frequencies**. It is not a spacing theorem for the zero ordinates.
+
+A lower bound for sigma_min(V) over many zero evaluation vectors requires quantitative control of the full Gram matrix for the actual zero set. Such a bound can collapse under near-collisions.
+
+Neither C26 nor the declared prime-side inputs gives a uniform polynomial lower bound on distinct zero spacing.
+
+Therefore critical-density Gabor sampling by itself does not supply the missing Proposition-R globalization lemma.
+
+## 8. Three sufficient globalization mechanisms
 
 ### R1 — global Riesz lower bound
 
-Prove V*V >= a I on the complete off-line family with a at worst polylogarithmically small.
+Prove
 
-Status: OPEN; impossible from dimension counting if the selected column family has more columns than the Gabor dimension.
+    V*V >= a I
+
+on the complete relevant off-line family with a at worst polylogarithmically small.
+
+Status: OPEN; also impossible by dimension counting whenever the selected column family has more columns than the Gabor dimension.
 
 ### R2 — isolated pair/cluster after projection
 
@@ -91,37 +174,35 @@ Find one maximal-depth pair/cluster J with
 
     sigma_min(P_perp V_J) >= (log T)^(-C).
 
-Status: OPEN. This is the cleanest direct form of the reviewer isolation obligation.
+Status: OPEN. This is the cleanest exact form of the reviewer isolation obligation.
 
 ### R3 — depth-gap dominance
 
-Split Q=Q_max+R. If one depth delta_max exceeds all competing depths by a fixed/logarithmic gap and
+Split
 
-    ||Q_max|| >> ||R||,
+    Q=Q_max+R.
 
-then Weyl's inequality prevents cancellation.
+If the maximal-depth block/cluster is exponentially larger than the rest, Weyl's inequality prevents cancellation.
 
 Status: NOT AVAILABLE UNCONDITIONALLY; no suitable depth-gap theorem for zeta zeros is among the declared inputs.
 
-## 6. Cluster variant
+## 9. Cluster variant
 
-If several zeros share nearly the same ordinate/depth, they must be treated as one cluster. A cluster-level globalization theorem would need a lower bound for the smallest nonzero singular value of its evaluation matrix after projecting away the background.
+Near-colliding zeros must be treated as one cluster. A cluster theorem would need a lower bound for the smallest nonzero singular value of its projected evaluation matrix.
 
-Near-collisions cannot simply be called multiplicities: distinct zeros may be arbitrarily close, and no unconditional polynomial spacing lower bound is available from the current input list.
+Distinct zeros cannot simply be relabelled as multiplicities. No unconditional polynomial spacing lower bound is available from the present input list.
 
-## 7. Consequence for Proposition R
+## 10. Current verdict
 
-The pair-level exponential amplification is structurally real, but the missing step is now exact:
+The targeted search does **not** show that the specific Gabor grid bypasses Proposition R.
 
-    local off-line amplification
-       + quantitative evaluation-vector isolation
-       => full-matrix operator lower bound
-       => finite even moment bound forces a power-law zero-free strip.
+What it does show is a sharper sequence of gates:
 
-The second arrow is the only unresolved part of our reconstruction.
+    real Poisson identity [SOURCE-CLOSED]
+      -> complex continuation [DERIVABLE; WRITE-OUT OPEN]
+      -> exact isolated-pair spectrum [CONDITIONAL ON PREVIOUS]
+      -> finite-grid capture [OPEN]
+      -> pair/cluster isolation against background [OPEN]
+      -> Proposition-R moment-to-zero-free implication.
 
-## 8. Current verdict
-
-The specific Gabor dimension/frequency spacing does **not** presently bypass Proposition R. It gives an exact Gram kernel and strong conditioning for one isolated pair, but no theorem-grade lower frame bound against an arbitrary background of clustered zero evaluations.
-
-The next productive search is for an argument using extremal depth plus the exact Poisson--Gabor kernel to prove R2 at cluster level without assuming zero spacing. If that cannot be done, the successor retraction remains a genuine external barrier rather than a bookkeeping issue.
+The final isolation step remains the genuine barrier.
