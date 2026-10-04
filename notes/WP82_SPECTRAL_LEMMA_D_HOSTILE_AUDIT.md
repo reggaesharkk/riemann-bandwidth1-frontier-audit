@@ -24,7 +24,7 @@ This is a finite Fubini/bijection identity. At b=4, finite Fourier orthogonality
 
 The candidate claims cells beyond P=(log X)^B have two-sided consumed tail of size Y^2(log Y)^c P^{-(k-2)+epsilon}. The exponent bookkeeping is plausible, but the cell-mass normalization is compressed into a paragraph and should be independently expanded.
 
-**Grade S1: RECONSTRUCTABLE, NOT YET INDEPENDENTLY CLOSED HERE.**
+**Grade S1: BLOCKED BY AN UNDEFINED/COLLIDING CELL PARAMETER.**  The public paper globally defines `ell_1` as the zero-density normalization, but the truncation section later reuses `ell_1=ell` as a varying cell parameter without a separate definition. The tail algebra is plausible conditional on a correct arithmetic `ell_cell`, but the map from the actual moment cell to that variable, its weight, its multiplicity, and the implication `ell_cell<=P => logarithmic spectral moduli` must be reconstructed. See `WP82_TRUNCATION_CONSUMPTION_HOSTILE_AUDIT.md`.
 
 ## S2 — local coincidence law and model comb locals
 
