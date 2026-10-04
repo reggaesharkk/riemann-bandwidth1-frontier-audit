@@ -36,3 +36,16 @@ Thus the current theorem frontier has exactly two possible star closures:
 2. **PT-star:** a spacing-free positive-amplitude endpoint-transfer theorem.
 
 No other unresolved G9 or finite-model calculation is hidden in this step.
+
+
+## 9. PT-star verdict
+
+PT-star has now been falsified by an explicit equal-depth, positive-multiplicity, local-count-compatible Dirichlet-kernel configuration.
+
+Accordingly the large-component branch cannot be closed from positivity plus local Riemann--von Mangoldt counting alone.
+
+The raw higher-moment route now has one honest large-component escape:
+
+    **EC-star or an equivalent theorem carrying genuinely new close-pair / spacing information.**
+
+The rank-robust bounded-functional-calculus route in WP84 does not require EC-star and is now the primary theorem-side attack.
