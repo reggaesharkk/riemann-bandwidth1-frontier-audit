@@ -52,7 +52,7 @@ The proof still needs an explicit uniform sum over all major-image strata, inclu
 
 The CRT support statement is exact: t=0 mod b2 and t=tau mod b1. The local factors should match the coincidence-counting law prime by prime. But face_dispersion.py only measures finite-height profile tracking. It cannot replace exact CRT/local-factor algebra or the singular-series truncation tail.
 
-**Grade S5: EXACT CORE + ANALYTIC TAIL; INDEPENDENT WRITE-OUT NEEDED.**
+**Grade S5: FINITE ALGEBRAIC/LOCAL CORE CLOSED; ANALYTIC OFF-DIAGONAL IDENTIFICATION + TAIL OPEN.**
 
 ## S6 — critical dependency: bridge/glue normalization
 
@@ -95,3 +95,19 @@ The local arithmetic portion of the comb identification has now been strengthene
 This removes the ambiguity about hidden pointwise j-k congruences. They exist, but are exactly the local four-point coincidence loci and are already inside K4_p.
 
 What remains in S5 is the analytic/spectral identification of the truncated Euler object with the MM frequency comb in the exact window convention, plus the singular-series tail. Therefore S5 is upgraded from 'exact core not written' to **LOCAL/FINITE-EULER CORE CLOSED; SPECTRAL IDENTIFICATION + TAIL OPEN**.
+
+
+## S5 update — full tau CRT core
+
+The finite spectral support is now reconstructed independently for every lock offset tau:
+
+    rho(tau)=sum_j A(j)A(j-tau)
+            =sum_{b2*u-b1*w=tau} C_m(u)C_n(w).
+
+With t=b2*u this is exactly the CRT progression
+
+    t=0 mod b2,   t=tau mod b1.
+
+The two diagonal branches t=0 and t=tau are exact and are kept outside the off-diagonal twin-singular-series model. The orientation swap b1<->b2 sends tau->-tau, giving a fail-closed asymmetry check.
+
+Together with WP71_S4_LOCAL_COUPLING and WP71_S4_FINITE_EULER_CRT, this closes the finite/local arithmetic part of the comb. What remains is the analytic replacement of off-diagonal pair autocorrelations by the truncated singular-series mains in identical smoothing/window conventions, plus the tail and mixed/minor spectral budget.
