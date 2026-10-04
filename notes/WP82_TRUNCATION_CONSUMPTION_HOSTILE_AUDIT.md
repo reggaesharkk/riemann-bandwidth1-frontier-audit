@@ -93,3 +93,13 @@ The ambiguity is not a recent post-release typo:
 So the present public package does not provide enough information to infer safely what the varying `ell_cell` was intended to be.
 
 **Fail-closed rule:** do not repair the notation by guesswork. Either recover the archived definition from an authoritative source, or reconstruct a new truncation theorem directly from the actual cell ledger with fresh notation and proof.
+
+## 7. C26 notation cross-check
+
+The upstream two-thirds framework cited by the public paper does not resolve this ambiguity. Its notation section defines
+
+    ell_1 := log(T/(2*pi)) + 2 log 2 - 1
+
+globally as the zero-count/first-moment normalization, and uses it that way throughout the second-moment argument. A search of that paper finds no cell/modulus parameter with the same notation.
+
+Therefore the varying `ell_1=ell` of the higher-moment truncation section is not inherited from C26. It is a new, presently undefined object (or a notation error) in the 0.7947 paper.
