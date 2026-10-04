@@ -115,3 +115,45 @@ This sharply localizes Proposition R:
 C26 itself warns that individual pair traces may be distorted near the ends of a fixed [T,2T] compression. A Proposition-R proof may therefore choose a dyadic window placing the target zero a fixed distance from both Gabor endpoints, or prove a uniform finite-window recovery estimate.
 
 That endpoint step must be explicit; the full-grid formula alone is not enough.
+
+
+## 7. On-line zeros cannot cancel the positive branch
+
+This removes one entire class of possible cancellations.
+
+Let H_z be the target off-line pair matrix and let P be the contribution of all on-line zeros in the active window. C26 Proposition 4.1 gives
+
+    P >= 0.
+
+Hence by the min-max principle / Loewner monotonicity,
+
+    lambda_max(P+H_z) >= lambda_max(H_z).
+
+Therefore the polynomially large positive eigenvalue
+
+    m( N_delta + C0 )
+
+of one deep pair cannot be cancelled by any collection of on-line zeros, simple or multiple.
+
+Only the **other off-line hyperbolic pairs** can cancel it.
+
+More generally, if Q_rest is the sum of the remaining off-line-pair matrices, Weyl gives
+
+    lambda_max(P+H_z+Q_rest)
+      >= m(N_delta+C0) - ||Q_rest||_op.
+
+Thus a sufficient globalization condition is simply
+
+    ||Q_rest||_op = o( N_delta ).
+
+This is substantially sharper than treating every zero as part of one undifferentiated background.
+
+## 8. Revised hard case
+
+The Proposition-R problem is now localized to a near-maximal-depth **off-line cluster**:
+
+- on-line background: harmless for the target positive branch;
+- off-line pairs with a fixed depth gap: expected to be lower order after localization;
+- off-line pairs within O(log log X / log X) of the maximal depth: genuine hard cluster.
+
+The next reconstruction gate is therefore a cluster anti-cancellation lemma for the deepest off-line layer, not a general zero-background estimate.
