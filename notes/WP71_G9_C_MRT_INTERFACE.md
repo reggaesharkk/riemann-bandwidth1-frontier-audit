@@ -1,139 +1,147 @@
-# WP71 G9-C — exact MRT interface audit
+# WP71 G9-C — exact MRT interface and constant ledger
 
-Date: 2026-10-04  
-Status: **SOURCE INTERFACE PINNED; reduction from welding remainder still open**
+Date: 2026-10-04
+Status: **SOURCE INTERFACE PINNED; endpoint maximalization quantified at exponent level; Stage-A substitution still open**
 
-Source independently checked:
+Source:
+K. Matomäki, M. Radziwill, T. Tao, *Correlations of the von Mangoldt and higher divisor functions I. Long shift ranges*, Proc. LMS 118 (2019), 284--350.
 
-K. Matomäki, M. Radziwiłł, T. Tao,
-*Correlations of the von Mangoldt and higher divisor functions I.
-Long shift ranges*, Proc. London Math. Soc. 118 (2019), 284--350,
-DOI 10.1112/plms.12181.
+## 1. Proposition 5.4: exact hypothesis ledger
 
-## 1. Exact Proposition 5.4 hypotheses
+MRT Proposition 5.4 fixes a sufficiently small epsilon>0, A>0, fixed k>=2, and B sufficiently large depending on k and A. It sets
 
-MRT Proposition 5.4 is a Dirichlet-series mean-value estimate.
+    H = X^(sigma+epsilon),
+    Q = (log X)^B,
 
-With
+with the long-shift regime sigma>=8/33 inherited from Proposition 3.4(ii). It assumes
 
-[
-sigma=8/33,qquad
-H=X^{sigma+arepsilon},qquad
-Q=(log X)^B,
-]
-
-it assumes
-
-[
-1le qle Q,qquad q=q_0q_1,
-]
+    1 <= q <= Q,
+    q = q0*q1,
 
 and
 
-[
-oxed{
-X^{-1/6-arepsilon}lelambdalerac1{qQ}.
-}
-]
+    X^(-1/6-epsilon) <= lambda <= 1/(q*Q).
 
-The arithmetic function is either
+The arithmetic function is either Lambda*1_(X,2X] or d_k*1_(X,2X].
 
-[
-f=Lambda,1_{(X,2X]}
-]
+The conclusion is a squared Dirichlet-series mean-value bound of size
 
-or
+    <<_{k,epsilon,A,B} q * lambda^2 * H^2 * X * (log X)^(-A).
 
-[
-f=d_k,1_{(X,2X]}.
-]
+The implied constant is not numerical in the paper.
 
-The proposition gives the required log-power saving for a character-summed
-Dirichlet-series mean value in the (t)-window associated with
-(lambda H).
+## 2. Proposition 3.4: additive-frequency interface
 
-## 2. Exact Proposition 3.4 interface
+For q<=Q and (a,q)=1, Proposition 3.4(ii) gives, for sigma>=8/33,
 
-The additive-frequency minor-arc statement that is ultimately used in the
-correlation theorem is Proposition 3.4.
+    integral_{|theta-beta| <= X^(-sigma-epsilon)}
+      |S_f(a/q+theta)|^2 dtheta
+        <<_{k,epsilon,A,B} X (log X)^(-A),
 
-For (qle Q), ((a,q)=1), it supplies:
+provided
 
-- a range down to additive frequency (X^{-1/6-arepsilon});
-- and, in the long-shift regime (sigmage8/33), a localized bound around
-  (eta) when
+    X^(-1/6-epsilon) <= |beta| <= 1/(qQ).
 
-[
-X^{-1/6-arepsilon}le |eta|lerac1{qQ}.
-]
+Part (i) treats the complementary larger-frequency region.
 
-This is the clean additive-frequency interface against which the Stage-A
-welding remainder should be matched.
+Important: MRT's H is a **shift-window scale**. It is not the same object as the length of our moving m-interval I_k(n). A bulk lower bound on |I_k(n)| does not by itself verify H>=X^(8/33+epsilon). These checks must remain separate in the substitution table.
 
-## 3. Important citation correction
+## 3. Lemma 2.2 has an explicit operator constant
 
-The public candidate sentence
+MRT defines the maximal interval sum
 
-> "... divisor-bounded envelopes of Proposition 5.4, Appendix A of MRT ..."
+    |sum_{X<=n<=X0} g(n)|*
+      = sup_{X<=X1<=X2<=X0} |sum_{X1<=n<=X2} g(n)|.
 
-is too compressed and conflates two different pieces of the published paper.
+Lemma 2.2 gives the exact inequality
 
-- Proposition 5.4 is proved in the main argument, through the
-  combinatorial/Dirichlet-polynomial work of Sections 6--7.
-- Appendix A is explicitly the proof of Proposition 5.5, a different
-  mean-value estimate.
+    |sum f(n)g(n)|*
+      <= |sum g(n)|*
+         * ( sup|f| + (X0-X)*sup|f'| ).
 
-Therefore **G9-C is not closed by citing "Prop. 5.4, App. A"**.
+There is no hidden multiplicative constant in this displayed summation-by-parts step. For a slow Stage-A weight f, the only price is its explicit variation norm
 
-The final proof must say exactly which of Proposition 3.4, Proposition 5.4,
-or Proposition 5.5 is being invoked at each step and verify its own
-hypotheses.
+    V(f) := sup|f| + length*sup|f'|.
 
-## 4. Fail-closed substitution table for G9-C
+This is the correct quantity to put in the G9 weight ledger.
 
-Before any MRT estimate is consumed, the welding reduction must provide a
-table with the following rows.
+## 4. Corollary 2.5: endpoint-independent, but not numerically constant-explicit
 
-| MRT symbol | Stage-A object | Required check |
-|---|---|---|
-| (X) | dyadic prime scale of the relevant (m) or (n) block | support lies in one dyadic interval after partition |
-| (H) | allowed shift-window length | (Hge X^{8/33+arepsilon}) and (Hle X^{1-arepsilon}) |
-| (q) | structured modulus from (b_1,b_2) gcd reduction | (qle(log X)^B) after truncation |
-| (q_0,q_1) | factorization used in character decomposition | explicitly stated and within the proposition's range |
-| (lambda) | additive-frequency / smoothing scale | (X^{-1/6-arepsilon}lelambdale1/(qQ)) |
-| (f) | prime block being transformed | exactly (Lambda 1_{(X,2X]}), or a stated dyadic decomposition into such blocks |
-| weight | slow Stage-A geometry | removed by Abel/partial summation with a proved variation bound |
+For f supported on [X/C,CX], Corollary 2.5 gives uniformly for every interval I=[X1,X2]
 
-If one row is missing, G9-C remains open.
+    |D[f 1_I](1/2+it)|
+      <=_C
+      integral_{-T}^{T} |D[f](1/2+i(t+u))| du/(1+|u|)
+      + ||f||_infty * X^(1/2) * log(2+T)/T.
 
-## 5. Current strategic consequence
+The endpoint dependence is completely absent from the right-hand side.
 
-There are two legitimate routes:
+The kernel mass is explicit:
 
-### Route C1 — use Proposition 3.4 directly
+    integral_{-T}^{T} du/(1+|u|) = 2 log(1+T).
 
-After dyadic partition and Abel summation, rewrite the welding remainder as a
-weighted additive-frequency prime exponential-sum error and invoke the minor
-arc estimate directly.
+So one application costs at most one logarithmic power at amplitude level, hence two logarithmic powers after squaring, before any additional outer integrations.
 
-This is preferable if the Stage-A geometry naturally lives in additive
-frequency.
+However the symbol <=_C carries an implicit constant depending on C. The paper does not supply a numerical value for this constant. Therefore it is invalid to turn Corollary 2.5 into a finite exact rational R-unit number unless that constant is reconstructed from the proof and all imported Perron constants.
 
-### Route C2 — descend to Proposition 5.4
+For our asymptotic purpose this is unnecessary: the constant is fixed while Proposition 5.4 supplies arbitrary log-power saving.
 
-Perform the same Fourier transformations used by MRT and identify the exact
-Dirichlet-series family and its ((q,q_0,q_1,lambda)) parameters.
+## 5. Proposition 5.4 itself is not an effective numerical constant source
 
-This route is longer but exposes every analytic interface.
+The bound in Proposition 5.4 is stated with an implied constant depending on k, epsilon, A and B, with B only required to be sufficiently large. The proof also uses standard asymptotic estimates. Hence the correct certification target is
 
-We should choose the shorter route only after the Stage-A weight is written
-explicitly enough to verify the range inequalities.
+    fixed constant * (log X)^(-eta) = o(1),
 
-## 6. Gate state
+not a finite decimal upper bound at a particular X.
 
-- G9-A exact welding reindexing: **CLOSED**.
-- G9-B signed main factorization/Abel transport: **OPEN**.
-- G9-C MRT analytic remainder reduction: **OPEN, source hypotheses now pinned**.
-- G9-D conversion to exact (R)-units and (o(1)): **OPEN**.
+This distinction is essential. The local exact checker should certify algebraic identities and exponent inequalities; it must not invent numerical values for hidden big-O constants.
+
+## 6. Maximalization inheritance
+
+Because Corollary 2.5 is pointwise and endpoint-independent, define
+
+    Dstar_f(t) = sup_I |D[f 1_I](1/2+it)|.
+
+Taking the supremum over I preserves the same right-hand side. Minkowski then passes this through the Proposition-5.4 type character/t0 functional with only powers of log X coming from the kernel mass 2 log(1+T).
+
+Thus no endpoint union bound is needed.
+
+This closes the **maximalization mechanism**, not the full Stage-A theorem.
+
+## 7. Fail-closed Stage-A substitution table
+
+| MRT symbol | Stage-A object | Required check | Status |
+|---|---|---|---|
+| X | dyadic prime scale of m or n block | exact support after dyadic partition | OPEN |
+| H=X^(sigma+eps) | shift-window length in h | identify h=qk range and prove sigma>=8/33 | OPEN |
+| q | structured shift modulus | q<=Q=(log X)^B | PARTIAL: polylog truncation available |
+| q0,q1 | character factorization | specify factorization used by MRT transform | OPEN |
+| lambda | additive/multiplicative frequency scale | X^(-1/6-eps)<=lambda<=1/(qQ) | OPEN |
+| f | prime sequence | exactly Lambda*1_(X,2X] after dyadic split | OPEN |
+| interval I | moving m-window | handled by Cor. 2.5 maximalization | MECHANISM CLOSED |
+| slow weight | Stage-A geometry/kernel | Lemma 2.2 variation norm V(f) | FORMULA CLOSED; bound OPEN |
+| collar | small n/k endpoint family | exact consumed R-unit charge | OPEN |
+
+If any OPEN row survives, G9-C remains open.
+
+## 8. Citation correction
+
+The shorthand 'Proposition 5.4, Appendix A' is incorrect.
+
+- Proposition 5.4 is proved through the main Sections 6--7 argument.
+- Appendix A proves Proposition 5.5.
+- Lemma 2.2 supplies maximal summation by parts.
+- Corollary 2.5 supplies endpoint-independent interval truncation.
+
+All four roles must be cited separately.
+
+## 9. Gate state
+
+- G9-A exact welding reindexing: CLOSED.
+- G9-B signed main local factorization and rectangular calibration: CLOSED.
+- G9-B moving-interval combinatorics: CLOSED.
+- G9-C maximal endpoint mechanism: CLOSED AT REDUCTION LEVEL.
+- G9-C full Stage-A parameter substitution: OPEN.
+- G9-D exact R-unit collar/outer-budget normalization: OPEN.
 
 No theorem percentage is promoted by this source audit.
