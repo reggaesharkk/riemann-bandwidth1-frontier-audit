@@ -142,3 +142,46 @@ Companion checker: `src/wp80_k8_one_sided_gate.py`.
 
 This note proves an exact moment-consumer implication only. It does not prove
 that zeta supplies the required (m_7) lower bound or (m_8) upper bound.
+
+
+## Slack form of the 80% target
+
+Because
+
+\[
+1352400L-25866469=1352400(L-L_0),
+\]
+
+the corridor identity can be rewritten as
+
+\[
+\boxed{
+T_{80}(L)-F_8(L)
+=
+\frac{2666160}{10471}(L-L_0)^2.
+}
+\]
+
+Numerically,
+
+\[
+\frac{2666160}{10471}=254.62324515328\ldots .
+\]
+
+Therefore, if the analytic m8 argument produces an excess
+
+\[
+\eta:=U-F_8(L)\ge0,
+\]
+
+the exact 80% condition is simply
+
+\[
+\boxed{
+\eta<
+\frac{2666160}{10471}(L-L_0)^2.
+}
+\]
+
+This is the most useful planning form: every improvement in the transported
+m7 lower bound buys quadratic tolerance in the m8 upper-bound error.
