@@ -105,3 +105,30 @@ G9-C is now:
 5. perform G9-D normalization of the deterministic weight L2 budget.
 
 No pointwise asymptotic for w_k(n) is required.
+
+## 7. Exact local model now identified
+
+The p-local factor of `S4(k,j)` has now been derived independently.
+
+For equal p-valuations of b1,b2, after stripping the common p-power the four forbidden residues are a translated/unit-scaled copy of
+
+    {0, -r*k, d, d-r*k}.
+
+Thus pointwise local coincidences occur not only when p divides k or j, but also on the cross loci
+
+    p | (j-lcm(b1,b2)k),
+    p | (j+lcm(b1,b2)k).
+
+These pointwise cross constraints are essential. A pointwise model `S(rk)S(qk)` would miss them.
+
+However the exact marginals are
+
+    E_j K4_p(k,j) = tau_p(rk)tau_p(qk),
+
+and
+
+    E_k K4_p(k,j) = kappa_p(j)^2 / p^e.
+
+So the j-frame squared lock series and the k-frame twin-product series are exact marginals of one local S4 coupling.
+
+See `notes/WP71_S4_LOCAL_COUPLING.md` and `notes/WP71_S4_FINITE_EULER_CRT.md`.
