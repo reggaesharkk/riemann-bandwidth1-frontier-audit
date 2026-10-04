@@ -1,0 +1,25 @@
+name: Robust 70 percent moment gate
+
+on:
+  push:
+    branches:
+      - research/70pct-support-escape-v0.1
+    paths:
+      - src/wp70_moment_region_exact.py
+      - .github/workflows/wp70-moment-region.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-moment-region:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify exact 70 percent moment region
+        run: python -u src/wp70_moment_region_exact.py
