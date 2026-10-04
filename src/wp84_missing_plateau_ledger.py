@@ -19,16 +19,27 @@ This is an exact ledger identity, not yet an operator derivation.
 from fractions import Fraction as F
 
 def main():
-    pairings=F(4,15)
+    t_adj=F(7,60)
+    t_opp=F(1,30)
+    phi4=-F(1,60)
+    pairings=2*t_adj+t_opp
     plateau=F(1,60)
     R_model=-F(1,30)
 
     mu4_cov=F(7,30)
     mu4_target=F(1,4)
 
+    # Covariance-only / operator-valued semicircle keeps the two adjacent
+    # noncrossing pairings and misses the opposite crossing pairing and the
+    # connected fourth cumulant.
+    assert 2*t_adj == mu4_cov
+    assert 2*t_adj + t_opp + phi4 == mu4_target
+    assert t_opp + phi4 == plateau
+    assert mu4_target-mu4_cov == plateau
+
+    # Equivalent bare-diagonal bookkeeping.
     assert pairings + R_model == mu4_cov
     assert pairings + plateau + R_model == mu4_target
-    assert mu4_target-mu4_cov == plateau
 
     raw_cov=F(1)+F(2)+mu4_cov
     raw_target=F(1)+F(2)+mu4_target
@@ -36,6 +47,11 @@ def main():
     assert raw_target==F(13,4)
     assert raw_target-raw_cov==plateau
 
+    print("t_adj =",t_adj)
+    print("t_opp =",t_opp)
+    print("Phi4 =",phi4)
+    print("2*t_adj =",2*t_adj)
+    print("t_opp+Phi4 =",t_opp+phi4)
     print("pairings =",pairings)
     print("R_model =",R_model)
     print("plateau =",plateau)
