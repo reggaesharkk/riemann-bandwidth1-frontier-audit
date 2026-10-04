@@ -3,93 +3,71 @@
 Date: 2026-10-04
 Status: **DETERMINISTIC GEOMETRY REDUCTION; analytic bulk estimate and normalized collar charge remain**
 
-The apparent 'short-window' difficulty in G9-C can be reduced further by using the actual Stage-A scales.
+The apparent short-window difficulty in G9-C can be reduced further by using the actual Stage-A scales.
 
-After the consumed cell truncation, b1 and b2 are polylogarithmic. The Stage-A locks have J on the ambient X-scale, while an m-block has scale comparable to X/b2 (equivalently, in the paper's rescaled notation the prime windows have length Y comparable to their ambient scale). Thus the natural moving j-strip width 2J/b2 is also of the same ambient m-scale up to logarithmic factors.
+After the consumed cell truncation, the relevant moduli are polylogarithmic. In the public Stage-A notation the prime window has ambient scale X, the lock range has J asymptotic to X, and the moving strip |b1*n-b2*m|<=J has m-width asymptotic to J/b2. Since b2<=(log X)^B, this width loses only logarithmic powers relative to the ambient prime scale.
 
-For fixed k, let [A_k,B_k] be the simultaneous static support and put
+For fixed k, let [A_k,B_k] be the simultaneous static support and put Hm=J/b2 and c(n)=b1*n/b2. Ignoring integer rounding and the already isolated j=0 puncture, the moving interval is exactly [A_k,B_k] intersect [c(n)-Hm,c(n)+Hm]. Its length is a trapezoidal piecewise-linear function of c(n): two monotone ramps and a plateau. The exact floor/ceiling version differs only by endpoint O(1) terms.
 
-    Hm = J/b2,
-    c(n) = b1*n/b2.
+## 1. The n-endpoint collar
 
-Ignoring integer rounding and the already isolated j=0 puncture, the moving interval is exactly
+Let M_k=min(B_k-A_k+1, floor(2J/b2)+1) be the maximal moving-window length at fixed k, and choose delta=(log X)^(-D). Call n bulk when |I_k(n)|>=delta*M_k and collar otherwise.
 
-    [A_k,B_k] intersect [c(n)-Hm, c(n)+Hm].
+Because c(n+1)-c(n)=b1/b2, each ramp spends at most delta*M_k*b2/b1+O(1) integer n-values below the bulk threshold. There are two ramps, hence
 
-Its length is therefore a trapezoidal piecewise-linear function of c(n): two monotone ramps and a plateau. The exact floor/ceiling version differs by O(1).
+    #collar_n(k) <= 2*delta*M_k*b2/b1 + O(1).
 
-## Logarithmic collar
+The complete nonempty n-support has size comparable to (B_k-A_k+1+2J/b2)*b2/b1, so the n-collar is an O(delta) geometric fraction, up to endpoint O(1) terms.
 
-Let
+The companion falsifier src/wp71_g9_bulk_collar_count.py checks a conservative exact floor/ceiling version of this estimate over a large grid of unrelated integer cells.
 
-    M_k = min(B_k-A_k+1, floor(2J/b2)+1)
+## 2. The k-endpoint collar is even cheaper
 
-be the maximal moving-window length in the cell, and choose
+Let the unsheared outer m-window have integer length M. The exact simultaneous support of m and m-rk has triangular length W_k=(M-r|k|)_+ up to the harmless choice of inclusive endpoints.
 
-    delta = (log X)^(-D).
+Declare the k-edge collar by 0<W_k<delta*M. There are O(delta*M/r+1) such k near each edge, and every one has weight at most delta*M. Therefore its weighted triangular mass is
 
-Call n **bulk** when
+    sum_{k in edge collar} W_k
+      << delta^2*M^2/r + delta*M.
 
-    |I_k(n)| >= delta*M_k,
+The full triangular mass is asymptotic to M^2/r. Thus away from the negligible endpoint lattice term the k-edge costs O(delta^2), stronger than the O(delta) n-collar.
 
-and **collar** otherwise.
+Consequently we may place the doubly-bulk analysis on cells satisfying both W_k>=delta*M and |I_k(n)|>=delta*M_k. All remaining short-support configurations belong to deterministic collars.
 
-Because c(n+1)-c(n)=b1/b2, each ramp spends at most
+## 3. Consequence for the analytic bulk
 
-    delta*M_k * b2/b1 + O(1)
+On the bulk, every moving interval loses at most a fixed logarithmic factor from its ambient cell scale. If an MRT/Dirichlet-series argument gives a maximal arbitrary-subinterval estimate at ambient scale M_k,
 
-integer n-values below the bulk threshold. There are two ramps, hence
+    sum_k Emax(rk;M_k)^2 << K*M_k^2*(log X)^(-A'),
 
-    # collar_n(k)
-      <= 2*delta*M_k*b2/b1 + O(1).
+then M_k^2 <= delta^(-2)*|I_k(n)|^2 = (log X)^(2D)*|I_k(n)|^2.
 
-The complete nonempty n-support has size of order
+Thus maximalization/truncation and the bulk lower-length threshold cost only fixed logarithmic powers. Since the MRT input permits an arbitrarily large requested logarithmic saving, choose A'>A+2D+C, where C absorbs deterministic outer-weight losses.
 
-    (B_k-A_k+1 + 2J/b2)*b2/b1,
+MRT Corollary 2.5 is especially useful here: its right-hand side is independent of the truncation endpoints, so the supremum over all moving intervals can be taken without a union bound.
 
-so the collar is an O(delta) geometric fraction, up to endpoint O(1) terms.
+## 4. Consequence for G7 and the collar
 
-This statement is purely deterministic and survives the exact floor/ceiling endpoints from WP71_G9_B_MOVING_INTERVAL.
+The collar need not consume the full shifted-prime theorem. Its geometric support is O(delta) in the n-ramps and O(delta^2) in triangular k-mass.
 
-## Consequence for the bulk
+A crude prime-weight envelope costs only fixed powers of log X. Therefore choosing D larger than those powers will force the collar to zero **once the exact consumed R-unit mass bound is written out**.
 
-On the bulk, every moving interval has length at least delta*M_k. If an MRT/Dirichlet-series argument gives a maximal arbitrary-subinterval estimate at the ambient block scale
+This is the natural merger of G7 and G9:
 
-    sum_k Emax(rk;M_k)^2
-      << K*M_k^2*(log X)^(-A'),
-
-then
-
-    M_k^2 <= delta^(-2) * |I_k(n)|^2
-             = (log X)^(2D) * |I_k(n)|^2.
-
-Thus any fixed logarithmic loss caused by maximalization/truncation is harmless: request the source estimate with
-
-    A' > A + 2D + C,
-
-where C covers the deterministic outer-weight logarithms.
-
-This is exactly the setting where MRT Lemma 2.2 and Corollary 2.5 are useful: arbitrary endpoint truncation costs logarithms, not a power of X.
-
-## Consequence for the collar
-
-The collar no longer needs the full shifted-prime theorem. Its deterministic n-support is only an O(delta) fraction of the geometric support. A crude prime-weight envelope costs fixed powers of log X. Therefore choosing D larger than those fixed powers is sufficient **provided the exact R-unit cell-mass normalization is written out**.
-
-This is the natural place to merge G7 and G9:
-
-- G9-C handles bulk endpoint errors with MRT maximal/truncation machinery;
-- G7 charges the logarithmic boundary collar;
+- G9-C handles the doubly-bulk endpoint errors through MRT maximal/truncation machinery;
+- G7 charges the logarithmic n- and k-collars;
 - the j=0 puncture is already confined to the lower-dimensional same-prime outer family.
 
-## What this does not yet prove
+## 5. What remains to make this theorem-grade
 
-The statement 'O(delta) geometric fraction' is not by itself an R-unit estimate. The next write-out must multiply the collar count by:
+The geometric O(delta) and O(delta^2) statements are not by themselves R-unit estimates. The next write-out must multiply them by:
 
 - the exact outer Lambda(b1)Lambda(b2)/(b1*b2) weight;
-- the largest overlap/kernel factor on the cell;
-- the prime n and m envelopes;
-- the T/(pi*l*X*ell1^4) normalization;
+- the largest overlap/kernel factor in the cell;
+- the crude inner prime-weight envelope;
+- the factor T/(pi*l*X*ell1^4);
+- the polylogarithmic cell multiplicity;
 
-and show the full sum is O((log X)^(-eta)) for some eta>0.
+and show the total collar contribution is O((log X)^(-eta)) for some eta>0.
 
-If that calculation closes, the troublesome genuinely short moving intervals disappear into G7, and the bulk G9-C theorem only needs arbitrary interval truncation at essentially the ambient prime scale.
+If that calculation closes, genuinely short moving intervals disappear into G7 and the G9-C bulk theorem only needs arbitrary interval truncation at an ambient scale reduced by logarithmic factors.
