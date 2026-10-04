@@ -178,3 +178,78 @@ But they are no longer the theorem-side transport mechanism by themselves.
 This note does **not** prove a new >79% theorem. It establishes a viable architecture that is logically compatible with classical zero-density information and is not ruled out by Proposition R.
 
 The next target is to derive or falsify the bounded functional-calculus / resolvent limit for the actual compressed Weil matrix.
+
+
+## 10. Exact Ingham log-budget trade
+
+The deep-rank reduction can be made quantitatively cleaner using Ingham's
+classical zero-density estimate
+
+    N(sigma,T)
+      << T^[3(1-sigma)/(2-sigma)] (log T)^5.
+
+Set
+
+    sigma = 1/2 + W/log T.
+
+Writing x=W/log T, the exponent satisfies
+
+    3(1/2-x)/(3/2-x)
+      = 1 - 2x/(3/2-x).
+
+Hence, uniformly for x=o(1),
+
+    T^[3(1-sigma)/(2-sigma)]
+      = T * exp(-(4/3+o(1))W).
+
+Therefore
+
+    rank(B_deep)/d
+      << exp(-(4/3+o(1))W) (log T)^4,
+
+up to the harmless dyadic-height enlargement and reflection factor.
+
+Now choose
+
+    W = K log log T
+
+with a fixed constant K>0. Then
+
+    rank(B_deep)/d
+      << (log T)^[4-(4/3)K+o(1)],
+
+while every retained near-line off-line weight satisfies
+
+    X^|beta-1/2|
+      <= exp(lambda W+o(W))
+      = (log T)^[lambda K+o(1)].
+
+Thus for any prescribed rank-error exponent A we can choose K so that
+
+    rank(B_deep)/d << (log T)^(-A),
+
+and the cost of retaining the near-line part is only another **fixed power of
+log T**.
+
+This is stronger and cleaner than taking W=sqrt(log log T): both the discarded
+rank and the retained amplification can now be entered in one ordinary
+log-power ledger.
+
+The trade is exact at the exponent level:
+
+    deep-rank saving exponent  ~ (4/3)K-4,
+    near-line amplification    ~ lambda K.
+
+Any proposed bounded-functional-calculus prime-side estimate must beat the
+second quantity while the rank-stability argument consumes the first.
+
+## 11. Consequence for the theorem architecture
+
+This does not compute the bounded spectral observable. It does show that
+classical zero density is already sufficient to move every power-of-T
+off-line obstruction into an arbitrarily small rank fraction while leaving
+only polylogarithmic amplification in the retained bulk.
+
+Accordingly, a successful resolvent/sign-proxy estimate with arbitrary
+logarithmic saving would evade Proposition R without any EC-star close-pair
+input.
