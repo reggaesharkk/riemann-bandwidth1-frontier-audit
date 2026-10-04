@@ -61,3 +61,78 @@ The arithmetic finite-Euler assembly is now clean. The next nontrivial step is a
 1. identify the finite Euler comb with the major-major spectral comb at the same truncation P*;
 2. control the omitted Euler tail;
 3. close the mixed/minor spectral size budget.
+
+
+## Full tau-frame CRT identity
+
+The same-lock marginal is only tau=0 of a stronger exact finite identity.
+
+For finite weighted position sequences define
+
+    A(j)=sum_{b1*n-b2*m=j} a_m b_n
+
+and
+
+    rho(tau)=sum_j A(j) A(j-tau).
+
+Expanding and writing
+
+    u=m'-m,
+    w=n'-n
+
+gives
+
+    b2*u - b1*w = tau.
+
+The m and n sums then factor, so exactly
+
+    boxed:
+    rho(tau)
+      = sum_{b2*u-b1*w=tau} C_m(u) C_n(w),
+
+where C_m,C_n are the two autocorrelations.
+
+Now set
+
+    t=b2*u.
+
+Then
+
+    t == 0 mod b2,
+    t == tau mod b1,
+
+and conversely every integer t on that CRT progression gives
+
+    u=t/b2,
+    w=(t-tau)/b1.
+
+Thus the support of the public spectral comb is an exact finite Fubini/CRT identity. It is not inferred from finite-height tracking.
+
+### Exact diagonal branches
+
+The two excluded off-diagonal values are structural:
+
+- t=0 iff b1 divides tau. This gives C_m(0) times the n-side pair correlation at shift -tau/b1.
+- t=tau iff b2 divides tau. This gives C_n(0) times the m-side pair correlation at shift tau/b2.
+
+These are precisely the two diagonal branches added separately by the public spectral model. They must remain exact; the twin singular series is not used at shift zero.
+
+### Orientation symmetry
+
+Swapping the two outer legs and the two sequences sends tau -> -tau. Therefore
+
+    rho_(b1,b2)(tau) = rho_(b2,b1)(-tau)
+
+in the swapped-window convention. This is the full-profile asymmetry anomaly gate.
+
+## S5 consequence
+
+The finite algebraic CRT support and diagonal decomposition are now closed. Together with the p-local coupling and finite Euler CRT assembly, the exact core of S5 is no longer open.
+
+The remaining S5 debt is analytic:
+
+1. identify the off-diagonal pair-correlation mains with the truncated Euler factors in the identical window/smoothing convention;
+2. prove the omitted Euler/singular-series tail;
+3. combine this with the independently proved mixed/minor spectral bound.
+
+Finite-height face_dispersion is retained only as a falsifier.
