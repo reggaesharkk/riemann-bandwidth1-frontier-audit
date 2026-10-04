@@ -97,3 +97,16 @@ Only after that audit do we decide whether Stage A is salvageable, conditional, 
 C7 and {5,2} may continue because they are exact finite/model certificates and do not consume the disputed analytic transport. Their claim label remains **conditional/model-side**.
 
 PR #5 remains draft and must not merge.
+
+
+## 8. One-sided Stage-A is inside the stated barrier
+
+The successor retraction is stronger than a rejection of exact convergence: it states that **finite unconditional bounds on higher even moments** already force power-law zero-free information. Therefore the Stage-A goal, which is an unconditional finite upper bound on the normalized fourth moment, is not exempt merely because it is one-sided.
+
+Conditional on the missing globalization/isolation lemma of Proposition R, the exponent calculation in `WP83_PROPOSITION_R_AGGREGATION_BARRIER.md` gives
+
+    |beta-1/2| <= 1/(4*lambda)+o(1)
+
+from any finite fourth-moment bound at bandwidth X=T^lambda. At lambda=1 this would confine all active-window zeros to the fixed strip [1/4,3/4]+o(1), far stronger than the declared analytic inputs.
+
+Accordingly, Stage A remains useful as an audit/model decomposition but is **not an unconditional theorem route** until Proposition R is independently resolved.
