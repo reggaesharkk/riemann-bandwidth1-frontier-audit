@@ -32,7 +32,7 @@ An exact positive rational seven-atom measure matching those moments has
 See:
 
     src/wp84_b3_radau_surrogate_falsifier.py
-    notes/WP84_EXTERNAL_AUDIT_RECONCILIATION_2026_10_05.md
+    notes/WP84_THEOREM_STATE_CORRECTIONS_2026_10_05.md
 
 Therefore the previously quoted b3 circle target 3.59e-5 is **not an active theorem error budget**. It is only the transfer tolerance relative to the Radau surrogate if that surrogate were independently proved to be the actual limiting law.
 
@@ -90,7 +90,7 @@ No unconditional >79 claim is promoted.
 
 ## Round-3 refinement — full operator-valued m4 gate first
 
-Fresh hostile audit rejects Google's shifted-Hankel/m7 falsifier and confirms
+A fresh hostile audit rejects the shifted-Hankel/m7 falsifier and confirms
 that qualitative weak convergence is sufficient for the asymptotic liminf
 theorem.
 
@@ -115,8 +115,8 @@ Also, the round-3 exact Hankel audit records:
 - `K(0,0)=13891/1415`;
 - Christoffel function `=1415/13891`;
 - shifted 3x3 determinant `=23/1296>0`, using only m1..m5;
-- no m7 is involved in Google's displayed shifted test.
+- no m7 is involved in the displayed shifted test.
 
 See:
 - `src/wp84_round3_hankel_christoffel_audit.py`
-- `notes/WP84_ROUND3_CLAUDE_ADJUDICATION_2026_10_05.md`.
+- `notes/WP84_THEOREM_STATE_CORRECTIONS_2026_10_05.md`.
