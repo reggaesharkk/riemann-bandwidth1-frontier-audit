@@ -992,3 +992,62 @@ See:
     src/wp84_balanced_product_kernel_gate.py
 
 No unconditional >79 theorem is claimed.
+
+
+## 23. Priority theorem rung: bounded four-pole delta=6
+
+Before forcing the full six-pole 79.627% comparison, use the degree-2
+Christoffel minimizer
+
+    P2(x)=1-(7/4)x+(2/3)x^2,
+
+for which
+
+    integral P2^2 dnu = 5/36,
+    P2(x)^2>=1 for x<=0.
+
+The bounded family
+
+    F_delta^(4)
+      =(delta+1)P2^2/(P2^2+delta)
+
+has four fixed nonreal poles and Jensen cap
+
+    integral F_delta^(4)dnu
+      <= 5(delta+1)/(36delta+5).
+
+At delta=6 the model simple-zero ledger is exactly
+
+    boxed:
+    151/221
+      = 68.325791855...%.
+
+This is about 0.98 percentage points above the audited 67.3500037 level and
+about 1.05 points above the 67.28005676 public/formalized level.
+
+The four poles satisfy an exact strip bound
+
+    |Im z_j|>1,
+
+and numerically
+
+    min |Im z_j| ~= 1.314975.
+
+This rung remains Proposition-R safe because the theorem target is one
+bounded combination of four fixed resolvents, not a finite-T raw fourth
+moment.
+
+Strategically this becomes the first record-beating theorem target:
+
+    close F_6^(4)
+      -> generalize fixed delta toward 13/18
+      -> transfer the same bounded generator theorem to the six-pole
+         degree-6 family
+      -> 79.62709668... target.
+
+See:
+
+    notes/WP84_FOUR_POLE_RECORD_BEATING_RUNG.md
+    src/wp84_four_pole_record_rung.py
+
+No unconditional 68.3258% theorem is claimed yet.
