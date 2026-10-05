@@ -1,6 +1,6 @@
 # WP84 resolvent kill gate -- 2026-10-05
 
-Status: **BOUNDED SIX-POLE >79 CONSUMER ACTIVE; FULL-LAW IDENTIFICATION NO LONGER NECESSARY FOR THE FIRST >79 TARGET**
+Status: **PARAMETRIC BOUNDED SIX-POLE FAMILY ACTIVE; FULL 79.627 FRONTIER RECOVERABLE WITHOUT AN UNBOUNDED FINITE-T CONSUMER**
 
 No unconditional >79 theorem is claimed.
 
@@ -76,72 +76,90 @@ Therefore every representing probability measure on R satisfies
 
 This is support-free.
 
-## 4. Active bounded consumer
+## 4. Active bounded consumer family
 
-For delta=61 define
+For every fixed delta>=61 define
 
-    F_61(x)
-      = 62 g(x)/(g(x)+61).
+    F_delta(x)
+      = (delta+1) g(x)/(g(x)+delta).
+
+The delta=61 member remains the easiest baseline instance.
 
 Then
 
-    F_61(x)>=1 for x<=0,
+    F_delta(x)>=1 for x<=0,
 
 and
 
-    0 <= F_61(x) <= (62/61) g(x).
+    0 <= F_delta(x) <= (1+1/delta) g(x).
 
 Hence every pinned-moment model law satisfies
 
-    integral F_61 dnu
-      <= 87730/847351
-      = 0.1035344267....
+    integral F_delta dnu
+      <= (1+1/delta) * 1415/13891.
 
-The exact counting ledger then gives the bounded-consumer coefficient
+The exact simple-zero ledger is
 
-    boxed:
-    671891/847351
-      = 0.7929311466... > 0.79.
+    S(delta)
+      = 11061/13891 - 2830/(13891 delta).
 
-This sacrifices part of the 79.627% polynomial optimum in exchange for a
-bounded theorem interface.
+Examples:
 
-## 5. Six simple fixed poles
+    delta=161    -> 79.5005569... percent
+    delta=752    -> 79.6000051... percent
+    delta=2871   -> 79.6200006... percent
+    delta=9717   -> 79.6250001... percent
+    delta=18577  -> 79.6260000... percent.
 
-The denominator
+For a theorem valid for every fixed delta>=61,
 
-    P(z)^2+61
+    sup_delta S(delta)
+      = 11061/13891
+      = 79.62709668... percent.
 
-has six simple nonreal roots.  Numerically
+Thus the full Christoffel headline is recoverable as the supremum of fixed
+bounded rational consumers; no delta(T)->infinity and no unbounded finite-T
+functional is required.
 
-    min_j |Im z_j| ~= 1.0760.
+## 5. Six simple fixed poles for every fixed delta
+
+For every delta>=61 the denominator
+
+    P(z)^2+delta
+
+has six simple nonreal roots satisfying the exact uniform strip bound
+
+    |Im z_j|>1.
+
+This is certified by an exact real/imaginary elimination and Sturm gate at
+delta=61 together with continuity of the three real branches of Re P=0;
+larger delta only increases the required |Im P| target.
 
 With residues
 
-    c_j
-      = -61*62/[2 P(z_j)P'(z_j)],
+    c_j(delta)
+      = -delta(delta+1)/[2 P(z_j)P'(z_j)],
 
 we have
 
-    F_61(x)
-      = 62 + sum_j c_j/(x-z_j).
+    F_delta(x)
+      = delta+1 + sum_j c_j(delta)/(x-z_j).
 
-Thus the active theorem target is the single bounded statistic
+Thus for each fixed delta the theorem target is one bounded statistic
 
-    L_61(T)
-      = 62 + sum_j c_j m_{H_T}(z_j).
+    L_delta(T)
+      = delta+1 + sum_j c_j(delta) m_{H_T}(z_j(delta)).
 
 A sufficient theorem is
 
-    boxed:
-    limsup_T L_61(T)
-      <= 87730/847351.
+    limsup_T L_delta(T)
+      <= (1+1/delta) * 1415/13891.
 
-After the vanishing-threshold correction and o(d)-rank deletion, this yields
-the >79 asymptotic simple-zero bound.
+If proved for every fixed delta>=61, the final asymptotic coefficient reaches
+79.62709668... percent by taking the supremum over the already-proved fixed
+parameter inequalities.
 
-No contour derivatives and no full limiting spectral law are required for
-this first bounded target.
+No contour derivatives and no full limiting spectral law are required.
 
 ## 6. Order-four consistency gate
 
@@ -186,7 +204,7 @@ been identified; see
 
 ## 8. Current analytic debt
 
-At each of the six poles z_j, use the exact permutation-Lindeberg identity
+For arbitrary fixed delta>=61, at each of its six poles z_j(delta), use the exact permutation-Lindeberg identity
 
     m_H(z_j)-m_S(z_j)
       = -A1(z_j)+A2(z_j)+o(1).
@@ -194,10 +212,10 @@ At each of the six poles z_j, use the exact permutation-Lindeberg identity
 The remaining task is to prove the **weighted six-pole inequality**
 
     limsup_T
-      [62 + sum_j c_j(
+      [delta+1 + sum_j c_j(delta)(
           m_S(z_j)-A1(z_j)+A2(z_j)
       )]
-      <= 87730/847351.
+      <= (1+1/delta) * 1415/13891.
 
 The active attack must preserve:
 
@@ -206,3 +224,25 @@ The active attack must preserve:
 3. the actual prime-block arithmetic interface.
 
 That six-pole scalar inequality is the current kill gate.
+
+
+## 9. Parametric bounded-frontier principle
+
+The full headline does not require a single nearly-unbounded consumer.
+
+It is enough to prove one theorem schema:
+
+    for every fixed delta>=61,
+    the six-pole bounded resolvent comparison holds.
+
+Then each fixed delta gives one valid asymptotic simple-zero lower bound and
+the supremum over delta recovers
+
+    11061/13891
+      = 79.62709668... percent.
+
+See:
+
+    notes/WP84_BOUNDED_CHRISTOFFEL_LADDER.md
+    src/wp84_bounded_christoffel_ladder.py
+    src/wp84_bounded_christoffel_family_pole_gate.py
