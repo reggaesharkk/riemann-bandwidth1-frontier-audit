@@ -89,8 +89,10 @@ The exact simple-zero model ledger is
 Examples:
 
     delta=5   -> 25/37   = 67.567567...%
-    delta=9   -> 229/329 = 69.604863222...%
+    delta=6   -> 151/221 = 68.325791...%
     delta=7   -> 177/257 = 68.871595...%
+    delta=8   -> 203/293 = 69.283276...%
+    delta=9   -> 229/329 = 69.604863...%
     delta=10  -> 51/73   = 69.863013...%
     delta=20  -> 103/145 = 71.034482...%
     delta=30  -> 5/7     = 71.428571...%
@@ -134,29 +136,29 @@ fixed poles.
 
 The poles solve
 
-    P2(z)^2+6=0.
+    P2(z)^2+9=0.
 
 Equivalently
 
-    P2(z)= +/- i sqrt(6).
+    P2(z)= +/- 3 i.
 
 After multiplying by 12,
 
-    8 z^2 -21 z +12(1 -/+ i sqrt(6))=0,
+    8 z^2 -21 z +12(1 -/+ 3i)=0,
 
 so the quadratic discriminants are
 
-    57 +/- 384 i sqrt(6).
+    57 +/- 1152 i.
 
 If
 
-    sqrt(57+384 i sqrt(6))=u+i v,
+    sqrt(57+1152 i)=u+i v,
 
 then
 
     v^2
-      = [sqrt(57^2+384^2*6)-57]/2
-      = [sqrt(887985)-57]/2.
+      = [sqrt(57^2+1152^2)-57]/2
+      = [sqrt(1330353)-57]/2.
 
 Every pole has
 
@@ -164,7 +166,7 @@ Every pole has
 
 To prove |Im z|>1 it is enough to show
 
-    sqrt(887985)>569,
+    sqrt(1330353)>569,
 
 which is immediate from
 
@@ -176,10 +178,10 @@ Numerically the minimum pole distance is
       ~= 1.4633610177.
 
 There are exactly four simple poles.  The derivative P2' vanishes only at
-the real point 21/16, which cannot solve P2(z)=+/- i sqrt(6).
+the real point 21/16, which cannot solve P2(z)=+/- 3i.
 
 So the delta=9 rung is better conditioned off the real axis than the
-six-pole delta=91 baseline.
+six-pole delta=61 baseline.
 
 ## 5. Proposition-R firewall
 
@@ -188,7 +190,7 @@ coefficient or by proving a raw fourth-moment upper bound.
 
 The theorem target is the fixed bounded rational functional
 
-    tau F_6^(4)(H_T),
+    tau F_9^(4)(H_T),
 
 equivalently one weighted combination of four fixed nonreal resolvents.
 
@@ -208,7 +210,7 @@ The four-pole target has:
 - fewer consumed resolvents: 4 instead of 6;
 - a clean exact parameter delta=9;
 - minimum pole gap about 1.463 rather than just above 1;
-- an approximately one-percentage-point margin over the audited
+- a more-than-two-percentage-point margin over the audited
   67.28--67.35 frontier;
 - the same rank-robust bounded-functional architecture;
 - the same prime-base grouping, LRSC displacement-rank, boundary quarantine,
