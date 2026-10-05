@@ -149,15 +149,20 @@ Theorem 3.2 gives, for almost all |h|<=H,
       = singular_series(h) * main_term
         + O(M/log^eta M).
 
-More useful for us than the pointwise-exception formulation is the L2
-estimate proved immediately before the theorem: the squared correlation
-error summed over |h|<=H is
+The proof also gives an L2-in-shift estimate: the squared correlation error
+summed over |h|<=H is
 
     O(H M^2 / log^eta M).
 
-That is exactly the norm needed for a bounded smooth h-kernel: Cauchy--Schwarz
-turns the L2 average into an aggregate error without requiring a theorem for
-every fixed h.
+This is relevant, but it is **not by itself sufficient** for the WP84 trace
+weight.  The finite-compression Dirichlet kernel has O(1) size across O(H)
+near-resonant shifts.  A naive Cauchy--Schwarz insertion can therefore lose
+a factor of H and need not be o(1) after the WP84 normalization.
+
+The more promising source-level interface is Proposition 3.5 in Evans:
+a local minor-arc energy bound on every frequency window of width 1/H.
+That estimate occurs before the lossy passage to an almost-all-h
+corollary and is structurally closer to our weighted Fourier kernel.
 
 ## 5. Why the Evans weight is structurally compatible with Lambda*Lambda
 
@@ -182,9 +187,12 @@ Therefore a theorem-grade adaptation should proceed by:
 1. dyadic/smooth partition in product scale n;
 2. multiplicative partition of one prime factor;
 3. partial summation to insert 1/sqrt(n) and log p_1;
-4. use the L2-in-h Evans estimate before summing the bounded Dirichlet kernel;
-5. sum the factor slices;
-6. handle diagonal p=q and proper-prime-power pieces separately.
+4. rewrite the actual WP84 h-weight as its circle/Fourier multiplier;
+5. apply Evans' local minor-arc estimate (Proposition 3.5) before taking any
+   absolute h-sum;
+6. treat the major-arc multiplier with the same exact WP84 weight;
+7. sum the factor slices;
+8. handle diagonal p=q and proper-prime-power pieces separately.
 
 This is substantially narrower than proving a new pointwise
 Hardy--Littlewood conjecture for Lambda*Lambda.
@@ -200,11 +208,13 @@ Equivalently,
     M >= T log^(19+eps) M.
 
 For those cells, the first balanced near-resonance obstruction has a
-published unconditional average-correlation mechanism whose norm matches the
-statistic we actually consume.
+published unconditional circle-method mechanism in the correct short-shift
+regime.
 
-The remaining analytic work is an adaptation/provenance proof, not the
-invention of a new correlation conjecture.
+However, the exact WP84 weighted multiplier still has to be transported
+through the major/minor-arc argument.  Until that weighted transfer is
+proved, the Evans theorem is a relevant source input rather than a closed
+WP84 correlation theorem.
 
 ## 7. The short-shift patch is now explicit
 
@@ -250,10 +260,10 @@ under o(d)-rank power-law outliers.
 
 The next theorem-grade statement is now concrete:
 
-> Prove the Evans/dispersion L2 correlation estimate with the exact
-> Lambda*Lambda, taper-cell and finite-population weights appearing in the
-> bounded D1/D2 generator, then insert it into the six-pole F_delta
-> functional.
+> Prove a weighted circle-method transfer for the exact WP84
+> Lambda*Lambda / E2 kernel, using the local minor-arc estimate before the
+> almost-all-shift Cauchy--Schwarz step, and preserve the exact
+> finite-compression multiplier through the major arcs.
 
 At order four the target must still reproduce
 
