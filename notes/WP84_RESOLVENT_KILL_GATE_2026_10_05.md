@@ -4411,3 +4411,184 @@ because there the only denominator is the one introduced by
     Q_ij=[D,Q]_ij/(i-j).
 
 No unconditional record theorem is claimed.
+
+
+## 61. External hostile-audit reconciliation
+
+Two external audits disagreed on the differentiated repeated-pole constant.
+
+The full repo definitions resolve the issue.
+
+For the sharp real-symmetric Loewner state,
+
+    Delta_ij
+      =
+      (alpha_i-alpha_j)/[pi(j-i)]
+
+on the long-displacement tail, with
+
+    tau(Delta^2)
+      <=8 q_alpha/(pi^2 R),
+
+and
+
+    ||[D,H_R]||_F^2/d
+      <=8 R q_alpha/pi^2.
+
+Direct differentiation of the second resolvent identity gives
+
+    m_H'-m_R'
+
+      =
+      -2 tau(Delta S^3)
+      + three quadratic tail terms.
+
+The exact bounds are
+
+    |tau(Delta S^3)|
+      <=24 q_alpha/(pi^2 eta^4 R),
+
+and each quadratic term costs at most
+
+    8 q_alpha/(pi^2 eta^4 R).
+
+Therefore
+
+    boxed:
+
+    |m_H'-m_R'|
+      <=72 q_alpha/(pi^2 eta^4 R).
+
+The decomposition is exactly
+
+    72=2*24+3*8.
+
+Thus the proposed external repair 72->96 is not needed.
+
+The same audit also raised a transpose/adjoint concern. The actual subset
+sharp state and Gaussian bridge are real symmetric, so
+
+    R(z)^T=R(z)
+
+at nonreal z. The analytic D2 primitive is bilinear, not a Hilbert--Schmidt
+energy. Moreover the factor
+
+    (1/2) d/dz tau(BRBR)
+      =
+      tau(RBRBR)
+
+follows from trace cyclicity alone.
+
+See:
+
+    notes/WP84_EXTERNAL_HOSTILE_AUDIT_RECONCILIATION.md
+
+## 62. Direct positive energy reduces to a two-vector wedge
+
+For the preferred sine-square point
+
+    a=63/50,
+    t=17/16,
+
+let
+
+    R=(H-iaI)^(-1),
+
+    u=R1,
+    v=R alpha.
+
+Since
+
+    [D,H]
+      =
+      (1/pi)
+      (1 alpha^T-alpha 1^T),
+
+the exact commutator is
+
+    boxed:
+
+    [D,Q]
+
+      =
+      (2ta/pi)
+      Re[
+        u v^T-v u^T
+      ].
+
+Hence
+
+    tau(Q^2)
+      =
+      E_diag+E_off,
+
+with
+
+    E_diag
+      =
+      d^(-1)
+      sum_i
+        [1-2ta Re R_ii]^2,
+
+and
+
+    E_off
+      =
+      4t^2a^2/(pi^2d)
+      sum_{i!=j}
+        [Re(u_i v_j-v_i u_j)]^2/(i-j)^2.
+
+Define
+
+    rho_i=|u_i|^2+|v_i|^2.
+
+Then
+
+    |u_i v_j-v_i u_j|^2
+      <=rho_i rho_j,
+
+and the K2 row-sum/operator bound
+
+    ||K2||op<=pi^2/3
+
+gives the deterministic majorant
+
+    boxed:
+
+    E_off
+      <=
+      4t^2a^2/(3d)
+      ||rho||_2^2.
+
+At the preferred rational point,
+
+    4t^2a^2/3
+      =
+      382347/160000
+      =
+      2.38966875.
+
+So a sufficient static direct theorem at R=256 is
+
+    boxed:
+
+    E_diag
+      +
+      2.38966875
+      d^(-1)||rho||_2^2
+
+      <
+      0.1459198495....
+
+This exposes the direct route's cleanest remaining deterministic debt:
+row-energy/delocalization control for only
+
+    R1,
+    R alpha.
+
+See:
+
+    notes/WP84_SINE_TWO_VECTOR_WEDGE.md
+    src/wp84_sine_two_vector_wedge_gate.py
+
+No unconditional record theorem is claimed yet.
