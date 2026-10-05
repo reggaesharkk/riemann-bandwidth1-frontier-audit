@@ -228,3 +228,100 @@ displacement interface:
 
 This is the direct non-heat-flow route to test before expanding any
 resolvent into prime words.
+
+
+## 14. Superseding band-conditioning update
+
+The original conditioning estimate in this note used the Cauchy-circle bound
+for m'(ia).  That has now been superseded by direct differentiation of the
+second resolvent identity.
+
+The theorem-grade derivative comparison is
+
+    |m_H'(z)-m_HR'(z)|
+      <=
+      18/(pi^2 eta^4 R)
+      +o(R^-1)
+
+in the sharp q_alpha=1/4 normalization.
+
+Therefore the sine-square full-to-band constant improves to
+
+    boxed:
+
+    C_sine(a,t)
+
+      =
+      [
+        12 t sqrt(4+t^2)
+        +36 t^2
+      ]
+      /
+      (pi^2 a^2).
+
+This replaces the earlier
+
+    12/(pi^2 a^2)
+    [
+      t sqrt(4+t^2)
+      +(256/27)t^2
+    ].
+
+The continuous model-only conditioning optimum moves slightly to
+
+    a~=1.26441,
+    t~=1.06235.
+
+A simple exact rational pair now preferred for the band-conditioned route is
+
+    boxed:
+
+    a=63/50,
+    t=17/16.
+
+At this pair the exact pinned-model defect energy is
+
+    16936977322225889866362306131535233
+    /
+    138296662375342896486666218354808008
+
+      =
+      0.12246844595756208...,
+
+giving model simple-zero ledger
+
+    boxed:
+    75.50631080848759...%.
+
+The conservative defect margin is
+
+    0.0407815354985099...,
+
+while
+
+    C_sine
+      ~=4.43651377028.
+
+Hence
+
+    boxed:
+    Delta/C_sine
+      ~=0.00919224815.
+
+This more than doubles the earlier explicit margin-to-band-cost ratio.
+
+Residual margins after the full-to-band theorem charge are approximately:
+
+    R=128: 0.00612127
+    R=192: 0.01767469
+    R=256: 0.02345140
+    R=400: 0.02969025
+
+So the prior t=37/35 point remains a valid exact certificate, but
+a=63/50,t=17/16 is now the preferred fixed-band-conditioned sine-square
+configuration.
+
+See:
+
+    notes/WP84_DIRECT_MPRIME_TAIL_O1_OVER_R.md
+    src/wp84_direct_mprime_tail_o1_over_r_gate.py
