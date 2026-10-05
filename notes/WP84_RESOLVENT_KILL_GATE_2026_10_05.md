@@ -1,122 +1,208 @@
 # WP84 resolvent kill gate -- 2026-10-05
 
-Status: **RESET AFTER DUAL HOSTILE AUDIT — RADAU b3/b10 VALUES ARE SURROGATE RECONNAISSANCE, NOT CERTIFIED TARGET-LAW MARGINS**
+Status: **BOUNDED SIX-POLE >79 CONSUMER ACTIVE; FULL-LAW IDENTIFICATION NO LONGER NECESSARY FOR THE FIRST >79 TARGET**
 
-## Surviving exact structure
+No unconditional >79 theorem is claimed.
 
-1. The bounded beta family remains a valid pointwise positive-index minorant family.
-2. The Laurent/Cauchy fixed-circle transfer constants are algebraically correct.
-3. The exact one-block resolvent identity and the deterministic cubic remainder bound survive.
-4. The prime-block cube mass gives a uniform fixed-circle o(1) cubic debt if the recorded O(L^-3) estimate is used.
-5. The covariance-only scalar closure is false: it gives centered m4=7/30 instead of 1/4.
-6. Non-cyclic partial translations reproduce the exact overlap rule
-       (1-spread(partial walk))_+.
-7. The Laplace resolvent-to-unitary-flow representation and Duhamel signs/remainders survive.
-8. A finite F/G state does not close; repeated evolution generates a word hierarchy.
+## 1. Exact structural facts already closed
 
-## Major correction: no active b3 numerical margin
+- Every intermediate matrix in the Lindeberg path is Hermitian, so for
+  nonreal z
 
-The values
+      ||(H-zI)^(-1)|| <= 1/|Im z|
 
-    q3 ~= 0.8964412949,
-    q10 ~= 0.8981347675
+  deterministically.
 
-come from evaluation on one specific Radau representing measure.
+- Prime-power blocks satisfy
 
-They are not lower bounds over all measures with the pinned moments m0..m6.
+      max_j ||B_j|| = O(1/L),
+      sum_j ||B_j||^2 = O(1),
+      sum_j ||B_j||^3 = O(L^-3)=o(1).
 
-An exact positive rational seven-atom measure matching those moments has
+- The exact one-block resolvent identity reduces the bounded fixed-z problem
+  to conditional first/second-order operators plus an o(1) cubic remainder.
 
-    E[b3] ~= 0.890363090084 < 0.895.
+- Non-cyclic translation-word traces obey the exact spread law
 
-See:
+      tr(word)=max(0,N-(max partial_sum-min partial_sum))
 
-    src/wp84_b3_radau_surrogate_falsifier.py
-    notes/WP84_THEOREM_STATE_CORRECTIONS_2026_10_05.md
+  for closed words.
 
-Therefore the previously quoted b3 circle target 3.59e-5 is **not an active theorem error budget**. It is only the transfer tolerance relative to the Radau surrogate if that surrogate were independently proved to be the actual limiting law.
+- o(d)-rank perturbations are invisible to the weak/Stieltjes limit:
 
-## Rejected audit objections
+      |m_A(z)-m_B(z)|
+        <= pi rank(A-B)/(d Im z).
 
-No resolvent 'outlier exclusion' or high-probability delocalization lemma is needed merely to sum the Lindeberg cubic remainder: every intermediate matrix is Hermitian and
+## 2. Closures already rejected
 
-    ||(H-zI)^(-1)|| <= 1/|Im z|
+- scalar covariance/multiplication closure:
+      centered m4=7/30 instead of 1/4;
 
-deterministically.
+- finite F/G unitary state:
+      repeated evolution generates longer translation words;
 
-Also, the missing fourth-order 1/60 is not assigned a priori to the V-sum branch. The final closure must reproduce it, but it may arise from repeated word geometry across the full translation algebra.
+- Radau beta values:
+      surrogate evaluations, not moment-forced lower bounds;
 
-## Current theorem gate
+- prolate sharp-window counting-statistic spectral identification:
+      failed its low-order gates;
 
-The clean surviving target is now a **positive-limit resolvent theorem**:
+- raw finite higher-even moment route:
+      exposed to the Proposition-R amplification barrier.
 
-Prove that the empirical spectral measures nu_T have Stieltjes transforms converging locally uniformly in C_+ to a probability law nu_* whose first six model moments are the pinned values.
+## 3. Exact polynomial half-line certificate
 
-No support restriction is required.  The exact degree-6 square polynomial
+Let
 
-    g(x)=P(x)^2,
+    P(x)
+      = 1
+        - (43428/13891)x
+        + (37704/13891)x^2
+        - (9660/13891)x^3,
 
-with P the Christoffel cubic, satisfies g(x)>=1 for every x<=0 and
+    g(x)=P(x)^2.
 
-    int g dnu_* = 1415/13891.
+For the pinned model moments through degree six,
+
+    integral g dnu = 1415/13891,
+
+and the coefficient-sign identity gives
+
+    g(x)>=1 for x<=0.
+
+Therefore every representing probability measure on R satisfies
+
+    nu((-infinity,0]) <= 1415/13891.
+
+This is support-free.
+
+## 4. Active bounded consumer
+
+For delta=61 define
+
+    F_61(x)
+      = 62 g(x)/(g(x)+61).
+
+Then
+
+    F_61(x)>=1 for x<=0,
+
+and
+
+    0 <= F_61(x) <= (62/61) g(x).
+
+Hence every pinned-moment model law satisfies
+
+    integral F_61 dnu
+      <= 87730/847351
+      = 0.1035344267....
+
+The exact counting ledger then gives the bounded-consumer coefficient
+
+    boxed:
+    671891/847351
+      = 0.7929311466... > 0.79.
+
+This sacrifices part of the 79.627% polynomial optimum in exchange for a
+bounded theorem interface.
+
+## 5. Six simple fixed poles
+
+The denominator
+
+    P(z)^2+61
+
+has six simple nonreal roots.  Numerically
+
+    min_j |Im z_j| ~= 1.0760.
+
+With residues
+
+    c_j
+      = -61*62/[2 P(z_j)P'(z_j)],
+
+we have
+
+    F_61(x)
+      = 62 + sum_j c_j/(x-z_j).
+
+Thus the active theorem target is the single bounded statistic
+
+    L_61(T)
+      = 62 + sum_j c_j m_{H_T}(z_j).
+
+A sufficient theorem is
+
+    boxed:
+    limsup_T L_61(T)
+      <= 87730/847351.
+
+After the vanishing-threshold correction and o(d)-rank deletion, this yields
+the >79 asymptotic simple-zero bound.
+
+No contour derivatives and no full limiting spectral law are required for
+this first bounded target.
+
+## 6. Order-four consistency gate
+
+Any proposed operator-valued closure used to prove the six-pole inequality
+must pass the exact order-four model check.
+
+The pair sector is
+
+    2*t_adj + t_opp
+      = 2*(7/60)+1/30
+      = 4/15.
+
+The connected core is
+
+    Phi4=-1/60.
 
 Therefore
 
-    nu_*((0,infinity)) >= 12476/13891.
+    centered m4
+      = 4/15 - 1/60
+      = 1/4.
 
-Weak convergence and Portmanteau then give the asymptotic positive-index bound, and the exact zero-side counting ledger gives
+The exact latest-block decomposition locates:
 
-    simple proportion >= 11061/13891
-      = 0.7962709668... > 0.79.
+- every 2+2 pair word in the second-order sector A2;
+- every four-distinct word in the first-order history A1;
+- mixed 2+1+1 words across both.
 
-Support positivity is NOT a theorem obligation: the moment-only half-line certificate works for arbitrary positive Borel measures on R.  The genuine obligation is to identify the limiting law and its pinned moments without reverting to raw finite-T higher-moment estimates.
+Hence a static covariance-only law cannot close the theorem.
 
-## Active analytic technologies
+## 7. Proposition-R firewall
 
-Either of the following may prove the positive-limit theorem:
+The order-four coefficient is a **model/generator consistency gate only**.
+Do not prove the theorem by extracting finite-T raw theta^4 derivatives.
 
-A. direct compressed-translation / finite Wiener-Hopf resolvent convergence;
-B. bounded-time unitary-flow convergence followed by Laplace transform.
+The theorem itself stays at the six fixed nonreal poles of F_61.
 
-Any candidate must:
+Bounded rational probes may recover moments only **after** a limiting law has
+been identified; see
 
-- derive the target law rather than insert the Radau quadrature;
-- reproduce the known order-4, order-5 and order-6 overlap/connected anchors;
-- preserve Proposition-R safety;
-- include the actual arithmetic prime-block interface.
+    notes/WP84_BOUNDED_RATIONAL_MOMENT_RECOVERY.md.
 
-No unconditional >79 claim is promoted.
+## 8. Current analytic debt
 
+At each of the six poles z_j, use the exact permutation-Lindeberg identity
 
-## Round-3 refinement — full operator-valued m4 gate first
+    m_H(z_j)-m_S(z_j)
+      = -A1(z_j)+A2(z_j)+o(1).
 
-A fresh hostile audit rejects the shifted-Hankel/m7 falsifier and confirms
-that qualitative weak convergence is sufficient for the asymptotic liminf
-theorem.
+The remaining task is to prove the **weighted six-pole inequality**
 
-The next finite theorem-relevant checkpoint is now:
+    limsup_T
+      [62 + sum_j c_j(
+          m_S(z_j)-A1(z_j)+A2(z_j)
+      )]
+      <= 87730/847351.
 
-`notes/WP84_OPERATOR_GENERATOR_M4_GATE.md`.
+The active attack must preserve:
 
-Before attempting full model identification or finite-height m5/m6 numerics,
-derive the centered fourth coefficient from the **full operator-valued**
-conditional drift/variance generator on the truncated-translation algebra.
+1. the alternating/crossing 2+2 word geometry;
+2. the connected non-pair state memory;
+3. the actual prime-block arithmetic interface.
 
-Required result:
-
-`m4_centered = 1/4 = 7/30 + 1/60`.
-
-If a proposed closure returns `7/30`, that closure is rejected.  This does
-not falsify the exact Lindeberg identity.
-
-Also, the round-3 exact Hankel audit records:
-
-- `det H = 283/108864 > 0`;
-- `K(0,0)=13891/1415`;
-- Christoffel function `=1415/13891`;
-- shifted 3x3 determinant `=23/1296>0`, using only m1..m5;
-- no m7 is involved in the displayed shifted test.
-
-See:
-- `src/wp84_round3_hankel_christoffel_audit.py`
-- `notes/WP84_THEOREM_STATE_CORRECTIONS_2026_10_05.md`.
+That six-pole scalar inequality is the current kill gate.
