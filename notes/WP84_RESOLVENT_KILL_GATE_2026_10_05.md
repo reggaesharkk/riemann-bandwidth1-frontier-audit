@@ -2914,3 +2914,187 @@ The proof-oriented ordering is now:
        target near 79.62710...%.
 
 No unconditional record theorem is claimed yet.
+
+
+## 47. Conditioned two-pole first strike is essentially optimal under the current simple-resolvent tail metric
+
+For the fixed poles
+
+    a=1,
+    b=9/4,
+
+the model-optimal coefficient A is not quite the proof-optimal one.
+
+Retuning to
+
+    A=82/25
+
+gives
+
+    f_{2,*}(x)
+      =
+      1-
+      [
+        x^2-(82/25)x+9/4
+      ]^2
+      /
+      [
+        (x^2+1)(x^2+81/16)
+      ].
+
+The exact global minorant identity is
+
+    [y^2+(82/25)y+9/4]^2
+      -(y^2+1)(y^2+81/16)
+
+      =
+      y(
+        65600y^2+91959y+147600
+      )/10000
+      >=0.
+
+Its exact model value is
+
+    q_{2,*}
+      =
+      7443419191454660716613888
+      /
+      8598328490971737344205625
+
+      =
+      0.8656821147587309...,
+
+with model simple-zero ledger
+
+    73.1364229517...%.
+
+The positive-index record margin is
+
+    0.0289320962148030....
+
+The simple-resolvent O(1/R) constant is
+
+    C_{2,*}
+      =
+      2.2079400595...,
+
+so
+
+    Delta_{2,*}/C_{2,*}
+      =
+      0.01310366017....
+
+A continuous reconnaissance with min pole height >=1 puts the optimum near
+
+    a=1,
+    b=2.26263,
+    A=3.29207,
+
+with ratio
+
+    0.01310447....
+
+Thus the fully rational choice
+
+    a=1,
+    b=9/4,
+    A=82/25
+
+is effectively at the conditioned optimum for this theorem metric.
+
+See:
+
+    notes/WP84_TWO_SIMPLE_POLE_RECORD_RUNG.md
+
+## 48. The second pole can be eliminated: finite Cayley hierarchy at z=i
+
+Let
+
+    U
+      =
+      (H+iI)(H-iI)^(-1).
+
+Then U is unitary and
+
+    R(i)
+      =
+      (U-I)/(2i).
+
+For b>1,
+
+    R(ib)
+      =
+      (U-I)
+      /
+      [
+        i(1+b)
+      ]
+      *
+      (I-q_bU)^(-1),
+
+where
+
+    q_b=(b-1)/(b+1).
+
+At
+
+    b=9/4,
+
+    q_b=5/13.
+
+Therefore
+
+    R(9i/4)
+
+      =
+      4/(13i)
+      (U-I)
+      sum_{n>=0}
+        (5/13)^n U^n.
+
+Truncating after N terms gives the uniform operator error
+
+    boxed:
+
+    ||R(9i/4)-R_b^[N]||
+      <=
+      (5/13)^N.
+
+For the conditioned two-pole residue
+
+    |c_b|
+      =
+      1108881/325000,
+
+the total consumer truncation cost is
+
+    epsilon_N
+      =
+      2(1108881/325000)(5/13)^N.
+
+In particular
+
+    epsilon_8
+      ~=0.00326772,
+
+    epsilon_10
+      ~=0.00048339.
+
+Hence, after spending only a small fraction of the record margin, the entire
+first-strike consumer becomes a polynomial in one unitary U of degree at
+most 8 or 10.
+
+Every U^k is bounded by one and
+
+    rank[D,U^k]
+      <=2k.
+
+This is Proposition-R safe and converts the two-pole theorem to a finite
+bounded-unitary hierarchy at the single spectral point z=i.
+
+See:
+
+    notes/WP84_TWO_POLE_CAYLEY_FINITE_REDUCTION.md
+    src/wp84_two_pole_cayley_reduction_gate.py
+
+No unconditional record theorem is claimed yet.
