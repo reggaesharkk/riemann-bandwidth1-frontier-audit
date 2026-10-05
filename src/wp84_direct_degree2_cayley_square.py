@@ -66,12 +66,25 @@ def main():
     )
     assert E==expected_E
 
+    # Exact degree-one dual obstruction.
+    mcos= -sp.Rational(164937945,1707336793)
+    msin=  sp.Rational(1372449200,1707336793)
+    lam_upper=msin
+    lam_minus=(1-msin-mcos)/2
+    lam_plus=(1-msin+mcos)/2
+    assert lam_upper>0 and lam_minus>0 and lam_plus>0
+    assert sp.simplify(lam_upper+lam_minus+lam_plus-1)==0
+    degree1_lower=sp.factor(lam_minus+lam_plus)
+    assert degree1_lower==sp.Rational(334887593,1707336793)
+
     print("negative-half-line Sturm root count =",
           Pneg.count_roots(-sp.oo,0))
     print("p(0) =",p0)
     print("E_model =",E,"~",float(E))
     print("model positive-index value =",1-E,"~",float(1-E))
     print("model simple-zero ledger =",1-2*E,"~",float(1-2*E))
+    print("degree-one model energy lower =",degree1_lower,
+          "~",float(degree1_lower))
     print("RESULT: WP84_DIRECT_DEGREE2_CAYLEY_SQUARE_PASS")
 
 if __name__=="__main__":
