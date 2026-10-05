@@ -600,3 +600,97 @@ See:
 
     notes/WP84_LRSC_BOUNDARY_QUADRATURE_TRANSFER.md
     src/wp84_boundary_quadrature_gate.py
+
+
+## 17. Global taper-edge quarantine
+
+The boundary-channel construction closes more than the endpoint layer.
+
+Write
+
+    phi=chi-r,
+
+where chi is the sharp interval indicator and r is supported on the two fixed
+physical taper ramps.
+
+After the common carrier gauge,
+
+    A_y=M_phi U_y M_phi,
+    S_y=M_chi U_y M_chi,
+
+and exactly
+
+    A_y-S_y
+      = -M_r U_y M_chi
+        -M_chi U_y M_r
+        +M_r U_y M_r.
+
+Summing over every prime first gives one middle translation operator K_+.
+Every term in the complete ramp error still contains the **same fixed
+boundary multiplier** M_r.
+
+The self-contained boundary quadrature on the two width-w ramp strips gives
+
+    P_actual
+      = P_sharp + D_rank + D_small,
+
+with
+
+    rank(D_rank)/d=O(w/L)=o(1),
+
+and
+
+    ||D_small||op=o(1)
+
+under only the crude polynomial bound on ||K_+||.
+
+Therefore all bounded fixed-resolvent consumers may be analyzed on the sharp
+carrier-free partial-translation operator.  This closes the old first-order
+drift ramp-transfer debt as well as the variance ramp transfer.
+
+See:
+
+    notes/WP84_GLOBAL_RAMP_SHARP_BOUNDARY_QUARANTINE.md
+    src/wp84_global_ramp_sharp_boundary_gate.py
+
+## 18. Adaptive endpoint deletion
+
+The endpoint strip width need not be K log L.
+
+For every
+
+    W->infinity,
+    W/L->0,
+
+the endpoint family y>=L-W has
+
+    rank fraction O(W/L)=o(1)
+
+and exponentially small complementary norm.
+
+Thus one may choose, for example,
+
+    W=sqrt(L),
+
+and remove
+
+    n>=X exp(-sqrt(L))
+
+at zero asymptotic coefficient cost.
+
+At lambda=1,
+
+    X_ret/T
+      <= exp(-sqrt(log T)+o(1)),
+
+which beats every fixed negative power of log T.
+
+More generally W=L^alpha, 0<alpha<1, gives retained ratio exp(-L^alpha).
+
+This means any retained-range obstruction consisting only of fixed
+polylogarithmic endpoint losses can be discharged before the arithmetic
+resolvent analysis begins.
+
+See:
+
+    notes/WP84_TAPER_UNIVERSALITY_ADAPTIVE_ENDPOINT.md
