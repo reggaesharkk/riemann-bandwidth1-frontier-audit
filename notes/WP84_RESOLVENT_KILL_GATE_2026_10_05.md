@@ -519,3 +519,84 @@ See:
 
     notes/WP84_K8_80_GONOGO_MAP.md
     src/wp84_k8_80_gonogo_map.py
+
+
+## 16. Self-contained endpoint closure from boundary evaluation channels
+
+The endpoint quarantine no longer depends on a published DPSS theorem.
+
+For a boundary strip I of physical width W, the concentration matrix
+
+    Q_I=T_I^*T_I
+
+has entries
+
+    (Q_I)_{kl}
+      =(1/L) int_I exp(i2*pi(l-k)x/L) dx.
+
+A p-node Gauss-Legendre rule on I gives the positive rank-p matrix
+
+    R_p
+      =(1/L) sum_s omega_s v(x_s)v(x_s)^*.
+
+With
+
+    Z=pi(d-1)W/L <= TW/2,
+
+polynomial exactness through degree 2p-1 and the real Taylor remainder imply
+
+    ||Q_I-R_p||op
+      <= (2dW/L) Z^(2p)/(2p)!.
+
+Taking
+
+    p=ceil(e Z)
+
+gives the explicit bound
+
+    ||Q_I-R_p||op
+      <= (TW/pi) 4^(-p).
+
+Hence the restriction map has a p-dimensional singular subspace with tail
+
+    ||T_I(I-Pi_I)||op
+      <= sqrt((TW/pi)4^(-p)),
+
+while
+
+    p/d
+      <= e*pi*W/L+1/d.
+
+For W=K log L, this is o(1) rank fraction and exponentially small norm tail.
+
+Inserted into
+
+    E_plus=T_left^* K_W T_right,
+
+the real endpoint operator decomposes as
+
+    E_endpoint=E_rank+E_small,
+
+with
+
+    rank(E_rank)/d=o(1),
+    ||E_small||op=o(1),
+
+even under the crude polynomial middle-operator bound and with no prime
+cancellation.
+
+This proof is self-contained except for standard p-node Gauss-Legendre
+existence.  The previous DPSS argument is retained only as independent
+corroboration.
+
+The infinitesimal identity
+
+    d/da Q([-a,a])
+      = L^(-1)[v(a)v(a)^*+v(-a)v(-a)^*]
+
+is the continuous reflection-pair boundary update underlying the construction.
+
+See:
+
+    notes/WP84_LRSC_BOUNDARY_QUADRATURE_TRANSFER.md
+    src/wp84_boundary_quadrature_gate.py
