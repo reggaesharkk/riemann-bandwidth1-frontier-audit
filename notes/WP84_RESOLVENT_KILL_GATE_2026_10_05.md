@@ -854,3 +854,58 @@ See:
     src/wp84_d1_d2_displacement_gate.py
 
 No unconditional >79 theorem is claimed.
+
+
+## 20. Sign-balance near-resonance reduction
+
+The exact continuous spread/Dirichlet trace identity can be sharpened using
+integer spacing on the **smaller sign side** of a nonclosed translation word.
+
+If
+
+    Y=log(A/B)
+
+and the positive/negative products use r_plus and r_minus retained factors,
+put
+
+    m=min(r_plus,r_minus).
+
+When |Y|<=1 and A!=B, the side with only m factors is at most N^m.  Near
+equality then forces both integers to be O(N^m), so
+
+    |Y| >= c/N^m
+
+and therefore
+
+    |tau_d(word)| <= C N^m/T.
+
+After the adaptive endpoint deletion N/T->0, every nonclosed sector with
+m=1 vanishes uniformly.  This includes every nonclosed word through degree
+three and every 3-vs-1 sign pattern at degree four.
+
+The first finite-compression sector not killed by elementary spacing is
+therefore the balanced degree-four window
+
+    |log(n1*n2/(n3*n4))| <= O(1/T).
+
+More generally, for N=T^(lambda+o(1)) the automatic-spacing condition is
+
+    m*lambda<1.
+
+For balanced degree k=2m this is exactly
+
+    k*lambda<2,
+
+matching the independently identified Rudnick--Sarnak / Proposition-R
+threshold.
+
+Thus the theorem-side arithmetic debt is now narrower: at lambda=1 the first
+genuine near-resonance problem is the bounded-resolvent-weighted 2-vs-2
+product-collision sector.  LRSC boundary/rank transfer does not remove this
+balanced core and should not be asked to.
+
+See:
+
+    notes/WP84_SIGN_BALANCE_NEAR_RESONANCE_GATE.md
+
+No unconditional >79 theorem is claimed.
