@@ -261,3 +261,31 @@ At order four the target must still reproduce
     connected core = -1/60.
 
 No unconditional >79% theorem is claimed yet.
+
+
+## 10. Evidence boundary: this is not yet the full fixed-pole theorem
+
+The Evans/dispersion interface controls the first balanced degree-four
+near-product-collision calibration sector.
+
+It must **not** be promoted to a proof of the full four-pole or six-pole
+resolvent comparison merely because the order-four model gate closes.
+
+A fixed nonreal resolvent contains translation words of all degrees through
+the evolving intermediate state.  The active theorem still needs one of:
+
+1. a direct bounded-resolvent estimate that sums those higher-degree sectors;
+2. a closed finite generator law for the rank-four displacement statistics;
+3. a truncation/approximation theorem with an error budget uniform enough to
+   reduce the full bounded consumer to finitely many calibrated sectors.
+
+Accordingly, the published almost-prime correlation theorem is a real
+source-closed input for one previously unnamed arithmetic obstruction, but it
+is **not** by itself the WP84 kill shot.
+
+The new four-pole delta=6 rung in
+
+    notes/WP84_FOUR_POLE_RECORD_BEATING_RUNG.md
+
+is the preferred place to test whether the remaining bounded generator can
+be closed with enough margin before escalating to the six-pole 79.627% rung.
