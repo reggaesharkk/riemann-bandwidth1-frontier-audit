@@ -252,3 +252,48 @@ The next analytic task is now:
     assemble into bounded six-pole D1/D2 inequality.
 
 No unconditional >79% theorem is claimed yet.
+
+
+## 9. Quantitative turn-on bound at the threshold
+
+The same argument gives more than support.
+
+For one ordered-partition term with spread r,
+
+    (1-r)_+ - (1-r) = (r-1)_+.
+
+The complete untruncated connected sum is exactly zero, so the actual
+connected bracket can be written entirely as a signed sum of truncation
+defects.
+
+There are 26 terms, and every ordered-partition spread obeys
+
+    r <= s.
+
+Hence pointwise
+
+    |C4(v)|
+      <= sum_terms (r_term-1)_+
+      <= 26 (s-1)_+.
+
+Including the common first overlap can only reduce the magnitude.
+
+Therefore
+
+    boxed:
+    |connected Phi4 density|
+      <= 26 (s-1)_+.
+
+So the connected sector not only starts at s=1; it turns on at most linearly
+in the excess product exponent.
+
+For a transition layer
+
+    1 < s <= 1+epsilon
+
+the kernel itself is uniformly O(epsilon).
+
+This converts the remaining short-shift patch into a domination problem for
+the underlying weighted almost-prime correlation measure.  We no longer need
+to discover cancellation inside the connected kernel there; the kernel has
+already supplied an explicit small factor.
