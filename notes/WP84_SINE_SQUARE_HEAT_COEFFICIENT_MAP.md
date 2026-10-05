@@ -221,8 +221,8 @@ The preferred order is:
        A1 T12 + A2 partial_z T12
    intact;
 
-2. use the 2x4 T12 factorization and differentiate the resulting small
-   Fourier channel analytically in z;
+2. use the 2x4 T12 factorization with the corrected S4 Fourier kernel and
+   differentiate the resulting small channel analytically in z;
 
 3. only split into 4x4 and 2x6 terms for a fail-closed norm estimate.
 
@@ -249,3 +249,31 @@ See:
     notes/WP84_DIRECT_DEGREE2_HEAT_CURVATURE_STENCIL.md
     notes/WP84_DIRECT_MPRIME_TAIL_O1_OVER_R.md
     notes/WP84_SINE_SQUARE_RANK4_ROUTE.md
+
+
+## 7. Fourier-kernel correction
+
+When T_ab is represented through **both** displacement commutators
+[D,R^a] and [D,R^b], the correct scalar Fourier kernel is
+
+    S4(t)
+      =
+      sum_{r!=0} e^(irt)/r^4,
+
+not S2.
+
+The reason is
+
+    [D,R^a]_ij[D,R^b]_ij
+      =
+      (i-j)^2(R^a)_ij(R^b)_ij,
+
+while T_ab already contains an additional 1/(i-j)^2.
+
+Thus the commutator representation needs 1/(i-j)^4.
+
+The channel sizes and the exact derivative identity
+
+    partial_z T12=T22+2T13
+
+remain unchanged.
