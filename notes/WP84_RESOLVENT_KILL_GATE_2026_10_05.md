@@ -1467,3 +1467,187 @@ small displacement generators, not a generic local law.
 See:
 
     notes/WP84_MATRIX_DYSON_LITERATURE_AUDIT.md
+
+
+## 26. D1 current average is one scalar complement polynomial
+
+For a subset S of inserted prime bases, let
+
+    Q_rem,S
+      = (1/(M-|S|))
+        sum_{p notin S} Q_p.
+
+Then the conditional D1 current average is encoded exactly by
+
+    alpha_bar=Im Q_rem,S,
+    beta_bar=2 Re Q_rem,S - 2(Im Q_rem,S)'/L.
+
+With
+
+    u=R_S 1,
+    v=R_S Im Q_S,
+
+the primitive is
+
+    E_{p|S} tr(G_p R_S)
+      =
+      sum_i beta_bar_i (R_S)_{ii}
+      + (2/pi^2) u^T L_{alpha_bar} v.
+
+Thus D1 has no per-current-prime state.
+
+See:
+
+    notes/WP84_D1_AGGREGATE_D2_PRIME_ONLY.md
+
+## 27. Proper powers disappear from D2
+
+Write
+
+    G_p=B_p+E_p,
+
+where B_p is the ordinary-prime block and E_p contains p^a, a>=2.
+
+Uniformly at every fixed nonreal pole,
+
+    sum_p
+      |
+        D2(H;G_p,z)-D2(H;B_p,z)
+      |
+      = O(L^-2).
+
+This follows from absolute convergence of
+
+    sum_p (log p)^2/p^(3/2)
+
+and the fixed resolvent bound.
+
+Therefore the theorem-side D2 current field may be taken to be one ordinary
+prime exponential
+
+    Q_p(tau)=c_p exp(i tau log p).
+
+No proper-power covariance theorem remains.
+
+## 28. D2 current/state exclusion decouples at o(1)
+
+The actual permutation stage has p notin S.
+
+A one-swap coupling to an independent current p and uniform k-subset S0
+changes the state by G_p-G_q.
+
+Because D2 contains G_p twice, the accumulated coupling error is controlled
+by the block cube mass:
+
+    total error
+      =
+      O_eta(
+        L^-3 + X^(-1/2)
+      )
+      = o(1).
+
+Hence the complete D2 path uses one deterministic full variance map
+
+    V(A)=sum_p B_p A B_p,
+
+with the current p independent of the subset state up to o(1).
+
+See:
+
+    notes/WP84_D2_LEAVE_ONE_OUT_DECOUPLING.md
+
+## 29. Exact continuous Bernoulli/Shapley flow
+
+The permutation average itself has an exact Boolean-cube representation:
+
+    F(full)-F(empty)
+      =
+      sum_p int_0^1
+        E[
+          F(S_t^(-p)+p)-F(S_t^(-p))
+        ] dt,
+
+where every q!=p is included independently with probability t.
+
+Thus the theorem path can be indexed by one continuous parameter
+
+    t in [0,1],
+
+rather than M discrete hypergeometric stages.
+
+After the one-block resolvent expansion, the accumulated cubic remainder is
+still O(L^-3).
+
+See:
+
+    notes/WP84_SHAPLEY_BERNOULLI_FLOW.md
+
+## 30. Resonant prime-square covariance constants are explicit
+
+For the ordinary-prime current field
+
+    alpha_p=c_p sin(tau log p),
+    beta_p=2c_p(1-s_p) cos(tau log p),
+
+the difference-frequency covariance at lattice displacement r has the exact
+continuum values
+
+    C_aa(0)=1/(4a^2),
+    C_aa(r)=0                    (r!=0),
+
+    C_ab(r)=0                    (all r),
+
+    C_bb(0)=1/(6a^2),
+
+    C_bb(r)
+      = -1/(2a^2 pi^2 r^2)      (r!=0).
+
+Thus the resonant beta covariance is literally a diagonal term plus the same
+squared-Cauchy K2 kernel that arose from the LRSC displacement algebra.
+
+There are no unknown resonant covariance constants.
+
+See:
+
+    notes/WP84_RESONANT_SCALAR_COVARIANCE.md
+
+## 31. PNT upgrade removes the old fixed-r K2 objection
+
+The classical PNT with zero-free-region error implies the stronger ordinary
+prime-square asymptotic
+
+    sum_{p<=x} (log p)^2/p
+      =
+      (1/2)(log x)^2
+      + C0
+      + exponentially small remainder.
+
+After scaling x=e^(Ls), the cumulative prime-square measure differs from
+s ds by only
+
+    O(L^-2),
+
+not merely O(L^-1).
+
+Therefore any K2-weighted bilinear of state vectors with bounded normalized
+l2 norms has discrete-to-continuum substitution error
+
+    O(log d/L^2)
+      = O(L^-1)
+      = o(1).
+
+This closes the growing-section passage for every resonant contribution that
+can be rearranged into the K2 class.
+
+The remaining resonant task is now purely algebraic:
+
+    put the alpha/J pieces into K2-weighted bilinear form
+    while using J only through its bounded l2 operator norm.
+
+The carrier-2T fast/Hankel channel remains separate and open.
+
+See:
+
+    notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md
+
+No unconditional record theorem is claimed yet.
