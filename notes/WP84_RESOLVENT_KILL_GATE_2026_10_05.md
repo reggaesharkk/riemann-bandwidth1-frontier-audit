@@ -4676,3 +4676,117 @@ See:
     src/wp84_sine_scalar_k2_wedge_gate.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 64. Full-sharp sine-square route retuned to a single variance gate
+
+For the full sharp route, the best current rational point is now
+
+    boxed:
+
+    a=23/20,
+    t=113/100.
+
+This is distinct from the fixed-band-conditioned point
+a=63/50,t=17/16.
+
+Define
+
+    S_a
+      =
+      2aH/(H^2+a^2),
+
+    Q
+      =
+      I-tS_a.
+
+The exact mean/variance decomposition is
+
+    boxed:
+
+    tau(Q^2)
+
+      =
+      [1-t tau(S_a)]^2
+      +
+      t^2 Var_tau(S_a).
+
+At a=23/20, the global quadratic minorant
+
+    L_2(x)
+      =
+      -3/625
+      +(16189/10000)x
+      -(819/1250)x^2
+
+satisfies
+
+    L_2(x)<=2ax/(x^2+a^2)
+
+for every real x.
+
+Using the source-closed moments
+
+    tau(H)=1+o(1),
+
+    tau(H^2)=4/3+o(1),
+
+gives
+
+    boxed:
+
+    tau(S_a)
+      >=
+      1481/2000
+      +o(1)
+
+      =
+      0.7405+o(1).
+
+Therefore the entire full-sharp theorem is implied by
+
+    boxed:
+
+    Var_tau(S_{23/20})
+      <
+      0.1069812171909....
+
+The pinned model has
+
+    Var_model(S_{23/20})
+      =
+      0.0831191228378...,
+
+leaving variance cushion
+
+    boxed:
+    0.0238620943531....
+
+The exact pinned defect energy is
+
+    0.1150576608395159...,
+
+giving model simple-zero ledger
+
+    boxed:
+    76.9884678321...%.
+
+This is now the preferred full-sharp sine-square benchmark.
+
+Keep the two parameter choices separate:
+
+- full sharp / variance route:
+      a=23/20,
+      t=113/100;
+
+- fixed-band O(1/R) route:
+      a=63/50,
+      t=17/16.
+
+No unconditional record theorem is claimed.
+
+See:
+
+    notes/WP84_SINE_FULL_SHARP_RETUNED.md
+    src/wp84_sine_full_sharp_retuned.py
+    notes/WP84_SINE_MEAN_VARIANCE_GATE.md
