@@ -286,42 +286,62 @@ This does not undo the rank-four statement for the consumed energy Q^*Q.
 It only records the size of one exact derivative representation of its
 Gaussian curvature.
 
-## 6. One-dimensional Fourier form
+## 6. One-dimensional Fourier form — corrected kernel
 
-For matrices X,Y define
+For
 
-    S_K2(X,Y)
+    T_ab
       =
       d^(-1)
       sum_{i!=j}
-        X_ij Y_ij/(i-j)^2.
+        (R^a)_ij (R^b)_ij/(i-j)^2,
 
-Using
+using both commutators contributes an additional factor (i-j)^2:
 
-    S2(t)
+    [D,R^a]_ij [D,R^b]_ij
       =
-      sum_{r!=0} e^(irt)/r^2,
+      (i-j)^2
+      (R^a)_ij (R^b)_ij.
 
-every T_ab has the exact representation
+Therefore the low-rank Fourier representation uses the **fourth-order**
+kernel
+
+    S4(t)
+      =
+      sum_{r!=0} e^(irt)/r^4
+
+      =
+      pi^4/45
+      -pi^2 t^2/6
+      +pi t^3/6
+      -t^4/24
+
+for 0<=t<=2pi.
+
+The exact representation is
+
+    boxed:
 
     T_ab
       =
       1/(2pi d)
       int_0^(2pi)
-        S2(t)
+        S4(t)
         tr(
           [D,R^a] e^(itD)
           [D,R^b]^T e^(-itD)
         )
-      dt,
+      dt.
 
-with the transpose convention appropriate to the real-symmetric sharp core.
+The earlier S2 statement was a bookkeeping error: S2 would remove only the
+two powers introduced by the commutators and would represent the unweighted
+sum of (R^a)_ij(R^b)_ij instead of T_ab.
 
-After low-rank factorization this becomes one scalar t integral of matrices
-no larger than the channel sizes listed in Section 5.
+The channel dimensions from Section 5 are unchanged; only the scalar Fourier
+kernel is corrected from S2 to S4.
 
-So the direct heat-flow theorem has no hidden high-dimensional covariance
-object left.
+So the direct heat-flow theorem still has no hidden high-dimensional
+covariance object, but its exact low-rank Fourier kernel is S4.
 
 ## 7. Immediate theorem target
 
@@ -390,3 +410,15 @@ See:
     notes/WP84_DIRECT_DEGREE2_SCALE_CONDITIONING.md
     notes/WP84_RESONANT_D2_EXPLICIT_FUNCTIONAL.md
     notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md
+
+
+## 9. Correction record
+
+This note originally stated an S2 Fourier kernel for T_ab after replacing
+both resolvent powers by their displacement commutators. That was incorrect
+by two powers of displacement.
+
+The corrected theorem-grade identity uses S4, as shown in Section 6.
+
+The direct formulas for Xi_z and Xi_zz, the regression gate, and all scalar
+coefficients are unchanged.
