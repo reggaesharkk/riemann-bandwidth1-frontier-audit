@@ -4135,3 +4135,205 @@ See:
     notes/WP84_DIRECT_DEGREE2_A4_3_RETUNED.md
 
 No unconditional record theorem is claimed yet.
+
+
+## 57. Direct differentiation sharply improves the repeated-pole band constant
+
+The earlier O(1/R) theorem controlled m'(z) by applying Cauchy's derivative
+estimate to the m(z) comparison.
+
+That is valid but not constant-optimal.
+
+Differentiate the second resolvent identity itself:
+
+    m_H'-m_R'
+
+      =
+      -2 tau(Delta S^3)
+
+      +tau(S^2 Delta S Delta G)
+
+      +tau(S Delta S^2 Delta G)
+
+      +tau(S Delta S Delta G^2).
+
+The same displacement denominator used for m(z), together with
+
+    ||[D,S^3]||_F
+      <=
+      3 eta^(-4)
+      ||[D,H_R]||_F,
+
+gives
+
+    |tau(Delta S^3)|
+      <=
+      24 q_alpha/
+      (pi^2 eta^4 R).
+
+The three quadratic terms together cost at most
+
+    24 q_alpha/
+    (pi^2 eta^4 R).
+
+Hence
+
+    boxed:
+
+    |m_H'(z)-m_R'(z)|
+
+      <=
+      72 q_alpha/
+      (pi^2 eta^4 R).
+
+With q_alpha=1/4+o(1),
+
+    boxed:
+
+    |m_H'-m_R'|
+      <=
+      18/
+      (pi^2 eta^4 R)
+      +o(R^-1).
+
+This improves the previous Cauchy-circle coefficient by the exact factor
+
+    256/81
+      ~=3.16049.
+
+See:
+
+    notes/WP84_DIRECT_MPRIME_TAIL_O1_OVER_R.md
+    src/wp84_direct_mprime_tail_o1_over_r_gate.py
+
+## 58. Updated sine-square fixed-band conditioning
+
+For the sine-square energy
+
+    P_{a,t}
+      =
+      [I-t 2aH/(H^2+a^2)]^2,
+
+the improved direct derivative bound gives
+
+    boxed:
+
+    C_sine(a,t)
+
+      =
+      [
+        12 t sqrt(4+t^2)
+        +36 t^2
+      ]
+      /
+      (pi^2 a^2)
+
+for the O(1/R) full-to-band comparison.
+
+A new conditioning scan peaks near
+
+    a~=1.26441,
+    t~=1.06235.
+
+Use the simple exact rational point
+
+    boxed:
+
+    a=63/50,
+    t=17/16.
+
+Its exact pinned-model defect energy is
+
+    16936977322225889866362306131535233
+    /
+    138296662375342896486666218354808008
+
+      =
+      0.12246844595756208...,
+
+giving model simple-zero ledger
+
+    boxed:
+    75.5063108085...%.
+
+The conservative defect margin is
+
+    0.0407815354985099...,
+
+and the improved band constant is only
+
+    boxed:
+    C_sine
+      ~=4.43651377028.
+
+Thus
+
+    Delta/C_sine
+      ~=0.00919224815.
+
+At fixed bands the residual theorem margins are approximately
+
+    R=128: 0.00612127
+    R=192: 0.01767469
+    R=256: 0.02345140
+    R=400: 0.02969025.
+
+This more than doubles the explicit margin-to-band-cost ratio of the earlier
+sine-square estimate.
+
+The direct bounded theorem remains open; these are theorem-grade comparison
+constants plus model benchmarks, not an unconditional zero proportion.
+
+## 59. Heat-curvature Fourier debt is only T12 and its z derivative
+
+At the preferred rational sine-square point,
+
+    A1
+      =
+      a(-2t-it^2)
+      =
+      -1071/400
+      -(18207/12800)i,
+
+    A2
+      =
+      a^2t^2
+      =
+      1147041/640000.
+
+The squared-Cauchy part of the exact Gaussian heat curvature is
+
+    -1/pi^2
+    Re E[
+      A1 T12
+      +A2(T22+2T13)
+    ].
+
+But exactly
+
+    boxed:
+    partial_z T12
+      =
+      T22+2T13.
+
+Therefore the Fourier leakage should be treated as the combined object
+
+    boxed:
+
+    -1/pi^2
+    Re E[
+      A1 T12
+      +A2 partial_z T12
+    ],
+
+not as three independent errors.
+
+Among the split channels T13 has the largest raw Fourier coefficient, but
+splitting it from T22 would throw away the derivative cancellation.
+
+See:
+
+    notes/WP84_SINE_SQUARE_HEAT_COEFFICIENT_MAP.md
+    src/wp84_sine_square_heat_coefficient_map.py
+
+No unconditional record theorem is claimed yet.
