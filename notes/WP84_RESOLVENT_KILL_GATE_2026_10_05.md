@@ -1936,3 +1936,240 @@ Loewner/displacement generator statistics at four fixed poles.
 See:
 
     notes/WP84_FULL_DRIFT_SCALAR_LOEWNER.md
+
+
+## 37. Bernoulli self-consistency removes the independent D1 theorem
+
+The common-state equation from Section 34 can be sharpened again.
+
+Let
+
+    H_t=s_0 I + X_t,
+    R_t=(H_t-zI)^(-1),
+
+and define
+
+    C_t=E tau(R_t X_t R_t).
+
+Because X_t=H_t-s_0 I commutes with H_t,
+
+    C_t
+      =
+      m_t(z)
+      +(z-s_0) partial_z m_t(z)
+
+exactly.
+
+A one-coordinate Bernoulli calculation gives
+
+    C_t
+      =
+      t A_t
+      -2t(1-t)B_t
+      +o(1),
+
+where
+
+    A_t=E tau(R_t P R_t),
+
+and
+
+    B_t=E sum_p tau(R_t G_p R_t G_p R_t).
+
+Combining this with
+
+    partial_t m_t
+      =
+      -A_t+(1-2t)B_t+o(1)
+
+eliminates A_t completely:
+
+    boxed:
+
+    t partial_t m_t
+      +m_t
+      +(z-s_0) partial_z m_t
+      +t B_t
+
+      =
+      o(1).
+
+Since the D2 arithmetic work already gives
+
+    B_t
+      =
+      E Xi_res(R_t)
+      +o(1),
+
+the common-state evolution is
+
+    boxed:
+
+    t partial_t m_t
+      +m_t
+      +(z-s_0) partial_z m_t
+
+      =
+      -t E Xi_res(R_t)
+      +o(1).
+
+Thus there is no separate D1 arithmetic theorem left.
+
+Important warning: the characteristics send z toward the real axis as
+t->0.  A proof must not integrate blindly to t=0 with only fixed-strip
+resolvent bounds.
+
+See:
+
+    notes/WP84_BERNOULLI_DRIFT_ELIMINATION.md
+    src/wp84_bernoulli_drift_elimination_gate.py
+
+## 38. Matched Gaussian replacement of every intermediate Bernoulli state
+
+Write the centered Bernoulli state as
+
+    H_t
+      =
+      H_0+tP
+      +sum_p eta_p(t)G_p,
+
+with
+
+    E eta_p=0,
+    E eta_p^2=t(1-t).
+
+Replace eta_p by
+
+    sqrt(t(1-t)) g_p,
+
+with independent standard real Gaussians g_p.
+
+At every fixed nonreal spectral parameter the two scalar coefficients match
+through second order, while one-coordinate resolvent replacement costs
+
+    O_eta(||G_p||^3).
+
+Since
+
+    sum_p ||G_p||^3=o(1),
+
+Lindeberg replacement yields uniformly for t in [0,1]
+
+    boxed:
+
+    E tau(H_t-zI)^(-1)
+
+      =
+      E tau(H_t^G-zI)^(-1)
+      +o(1).
+
+The same holds for every fixed z-derivative and every fixed bounded rational
+consumer whose poles stay a fixed distance from the real axis.
+
+Therefore the remaining state theorem may be studied in the Gaussian
+Loewner ensemble with the same mean field and the already-explicit covariance
+map.
+
+This does not imply a scalar semicircle closure: the Gaussian matrix series
+is still built from noncommuting partial-translation/Loewner blocks, so
+crossing/connected geometry survives.
+
+See:
+
+    notes/WP84_BERNOULLI_GAUSSIAN_INVARIANCE.md
+    src/wp84_bernoulli_gaussian_invariance_gate.py
+
+## 39. Parallel one-point record rung
+
+In addition to the four-simple-pole F9 consumer, there is now a smaller
+parallel bounded consumer
+
+    r_{2,a}(x)
+      =
+      1-
+      [
+        (x-a)^2/(x^2+a^2)
+      ]^2.
+
+It satisfies
+
+    1_{x>0} >= r_{2,a}(x)
+
+for every real x and is globally bounded in [-3,1].
+
+At
+
+    a=3/2,
+
+the consumer is determined by only one upper-half-plane point and its first
+z derivative:
+
+    tau r_{2,3/2}(H)
+
+      =
+      2 Re[
+        (3/2)(2+i)m_H(3i/2)
+        -(9/4)m_H'(3i/2)
+      ].
+
+Against the current pinned six-moment extremal model its exact value is
+
+    q
+      =
+      506616611216431521048
+      /
+      593746460699485818169
+
+      =
+      0.8532541156027985...,
+
+giving model simple-zero ledger
+
+    2q-1
+      =
+      0.706508231205597...
+      =
+      70.65082312...%.
+
+To beat the audited 67.3500037 comparison it only needs
+
+    tau r_{2,3/2}(H_T)
+      >
+      0.8367500185,
+
+leaving model consumer margin
+
+    0.0165040971027985... .
+
+This is a model/consumer certificate, not an unconditional theorem.
+
+It should be carried in parallel with F9:
+
+- F9: four simple poles, no z derivative;
+- scaled r2: one upper-half-plane point, one z derivative, larger model margin.
+
+See:
+
+    notes/WP84_SCALED_R2_RECORD_RUNG.md
+    src/wp84_scaled_r2_record_rung.py
+
+## 40. Authoritative frontier after the recovered failed-chat commits
+
+The chat session that produced Sections 37--39 terminated at the UI layer,
+but the Git commits landed successfully.  The branch state, not the failed
+chat display, is authoritative.
+
+The current mathematical frontier is now:
+
+1. no independent D1 arithmetic theorem;
+2. all current-prime D2 arithmetic closed;
+3. Bernoulli intermediate states replaceable by matched Gaussian Loewner
+   states at fixed bounded consumers;
+4. remaining task: control the explicit noncommutative Gaussian/Loewner state
+   functional strongly enough for either
+       F9
+   or
+       r_{2,3/2}
+   to cross the audited record threshold.
+
+No unconditional record theorem is claimed yet.
