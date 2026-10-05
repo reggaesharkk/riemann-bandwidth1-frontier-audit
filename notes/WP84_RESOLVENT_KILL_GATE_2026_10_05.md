@@ -613,10 +613,10 @@ Write
 where chi is the sharp interval indicator and r is supported on the two fixed
 physical taper ramps.
 
-After the common carrier gauge,
+Retaining the finite-compression carrier omega_y=exp(iTy),
 
-    A_y=M_phi U_y M_phi,
-    S_y=M_chi U_y M_chi,
+    A_y=omega_y M_phi U_y M_phi,
+    S_y=omega_y M_chi U_y M_chi,
 
 and exactly
 
@@ -645,7 +645,9 @@ and
 under only the crude polynomial bound on ||K_+||.
 
 Therefore all bounded fixed-resolvent consumers may be analyzed on the sharp
-carrier-free partial-translation operator.  This closes the old first-order
+**carrier-bearing finite-band** partial-translation operator.  The full-space
+gauge does not preserve the compressed Fourier band and may not be used to
+delete the factors exp(±iT log n).  This closes the old first-order
 drift ramp-transfer debt as well as the variance ramp transfer.
 
 See:
@@ -694,3 +696,29 @@ resolvent analysis begins.
 See:
 
     notes/WP84_TAPER_UNIVERSALITY_ADAPTIVE_ENDPOINT.md
+
+
+## 19. Carrier-gauge correction
+
+A hostile audit found that the full-space identity
+
+    Q_T^* U_s Q_T
+      = exp(iTy) U_s
+
+does not yield a unitary equivalence inside the d-dimensional Gabor
+compression, because Q_T does not preserve the projection P_d.
+
+Therefore the active sharp finite operator retains the factors
+
+    exp(+iT log n), exp(-iT log n).
+
+This correction does **not** reopen the LRSC-derived boundary quarantine:
+those phases have unit modulus and are absorbed into K_W/K_+ in every
+absolute norm and rank factorization.
+
+It does reopen any argument that attempted to dismiss carrier oscillation as
+a pure gauge in the finite theorem problem.
+
+See:
+
+    notes/WP84_SHARP_CARRIER_GAUGE.md
