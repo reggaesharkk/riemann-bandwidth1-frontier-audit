@@ -89,7 +89,7 @@ The exact simple-zero model ledger is
 Examples:
 
     delta=5   -> 25/37   = 67.567567...%
-    delta=6   -> 151/221 = 68.325791855...%
+    delta=9   -> 229/329 = 69.604863222...%
     delta=7   -> 177/257 = 68.871595...%
     delta=10  -> 51/73   = 69.863013...%
     delta=20  -> 103/145 = 71.034482...%
@@ -102,13 +102,19 @@ and
 Thus one bounded theorem schema would recover the old 72.222... fourth-order
 headline without ever asserting a finite-T raw fourth moment.
 
-## 3. Delta=6 is a clean first record target
+## 3. Delta=9 is a clean first record target
 
-At delta=6,
+At delta=9,
 
-    model simple ledger
-      = 151/221
-      = 68.325791855...%.
+    Jensen cap
+      = 50/329
+      = 15.197568389...%,
+
+and the model simple ledger is
+
+    boxed:
+    229/329
+      = 69.604863222...%.
 
 This lies above both audited comparison levels:
 
@@ -117,14 +123,14 @@ This lies above both audited comparison levels:
 
 The model margins are about
 
-    +1.045735 percentage points over 67.28005676...,
-    +0.975788 percentage points over 67.3500037....
+    +2.324807 percentage points over 67.28005676...,
+    +2.254860 percentage points over 67.3500037....
 
 The point is not the decimal itself.  It is that the bounded theorem has
-almost a full percentage point of simple-zero budget while using only four
+more than two percentage points of simple-zero budget while using only four
 fixed poles.
 
-## 4. Exact pole geometry at delta=6
+## 4. Exact pole geometry at delta=9
 
 The poles solve
 
@@ -162,18 +168,18 @@ To prove |Im z|>1 it is enough to show
 
 which is immediate from
 
-    887985 > 569^2.
+    1330353 > 569^2.
 
 Numerically the minimum pole distance is
 
     min |Im z_j|
-      ~= 1.3149750177.
+      ~= 1.4633610177.
 
 There are exactly four simple poles.  The derivative P2' vanishes only at
 the real point 21/16, which cannot solve P2(z)=+/- i sqrt(6).
 
-So the delta=6 rung is better conditioned off the real axis than the
-six-pole delta=61 baseline.
+So the delta=9 rung is better conditioned off the real axis than the
+six-pole delta=91 baseline.
 
 ## 5. Proposition-R firewall
 
@@ -200,8 +206,8 @@ Order four is used only as a limiting-generator consistency gate:
 The four-pole target has:
 
 - fewer consumed resolvents: 4 instead of 6;
-- a clean exact parameter delta=6;
-- minimum pole gap about 1.315 rather than just above 1;
+- a clean exact parameter delta=9;
+- minimum pole gap about 1.463 rather than just above 1;
 - an approximately one-percentage-point margin over the audited
   67.28--67.35 frontier;
 - the same rank-robust bounded-functional architecture;
@@ -215,7 +221,7 @@ first theorem-grade crossing substantially more forgiving.
 
 The recommended order is now:
 
-    bounded four-pole delta=6
+    bounded four-pole delta=9
       -> close arithmetic D1/D2 comparison
       -> obtain the first genuinely record-beating bounded-rung theorem
          if the comparison passes
@@ -229,3 +235,54 @@ lower-pole theorem interface has been exhausted.
 Companion exact checker:
 
     src/wp84_four_pole_record_rung.py
+
+
+## 8. Why delta=9 replaces delta=6 as the first target
+
+A fixed-pole theorem ultimately pays not only the pole distance but also the
+partial-fraction residue sizes.
+
+For
+
+    F_delta^(4)
+      = delta+1 + sum_j c_j/(x-z_j),
+
+the residues are
+
+    c_j
+      = -delta(delta+1)/
+          [2 P2(z_j) P2'(z_j)].
+
+If every consumed Stieltjes value is known to common absolute accuracy
+epsilon, the transfer loss is at most
+
+    epsilon * sum_j |c_j|.
+
+Using the audited 67.3500037 level as the comparison target, the relevant
+first-order error budget is
+
+    [allowed consumer slack] / sum_j |c_j|.
+
+A direct scan over integer delta=5,...,200 places the maximum at
+
+    boxed:
+    delta=9.
+
+Numerically at delta=9,
+
+    min |Im z_j| ~= 1.46336065,
+    sum_j |c_j| ~= 21.20024,
+
+and the consumer-expectation slack over 67.3500037 is about
+
+    0.01127430.
+
+Thus a crude equal-error pole comparison would allow approximately
+
+    epsilon < 5.318e-4
+
+before other theorem errors are charged.
+
+This is only a conditioning reconnaissance, not the analytic proof, but it
+makes delta=9 a better first fixed-pole target than delta=6 or a very large
+delta.
