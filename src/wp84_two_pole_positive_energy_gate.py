@@ -5,8 +5,15 @@ import numpy as np
 def main():
     rng=np.random.default_rng(8417)
     d=31
-    X=rng.normal(size=(d,d))
-    H0=(X+X.T)/2
+    alpha=rng.normal(size=d)
+    beta=rng.normal(size=d)
+    J=np.zeros((d,d),dtype=float)
+    for i in range(d):
+        for j in range(d):
+            if i!=j:
+                J[i,j]=1/(np.pi*(j-i))
+    H0=np.diag(beta)+np.diag(alpha)@J-J@np.diag(alpha)+np.eye(d)
+    assert np.linalg.norm(H0-H0.T)<1e-12
     I=np.eye(d)
 
     b=9/4
