@@ -2,10 +2,21 @@
 
 Date: 2026-10-05
 
-Status: **RAMP ENDPOINT LOW-RANK + SMALL-NORM QUARANTINE CLOSED, CONDITIONAL ONLY ON A STANDARD PUBLISHED DPSS EIGENVALUE-CONCENTRATION THEOREM**
+Status: **INDEPENDENT PROLATE/DPSS CORROBORATION; NO LONGER NEEDED FOR CLOSURE AFTER THE SELF-CONTAINED BOUNDARY-QUADRATURE PROOF**
 
 This note upgrades the sharp endpoint-shift rank observation to the actual
 compactly supported ramp taper.
+
+A later self-contained proof removes the external DPSS dependency entirely by
+approximating the common strip concentration matrix with positive
+Gauss-Legendre evaluation channels.  That proof is now the primary endpoint
+gate:
+
+    notes/WP84_LRSC_BOUNDARY_QUADRATURE_TRANSFER.md
+    src/wp84_boundary_quadrature_gate.py
+
+The present note is retained as an independent spectral-concentration
+cross-check.
 
 ## 1. Exact physical representation of the complex block
 
