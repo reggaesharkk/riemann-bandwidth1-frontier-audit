@@ -3353,3 +3353,221 @@ See:
     src/wp84_conditioned_degree3_cayley_majorant.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 45. Degree three is genuinely minimal in the conditioned one-Cayley majorant route
+
+A degree-2 trigonometric majorant would reduce the positive-energy
+displacement rank ceiling from six to four.
+
+An exact dual certificate now rules that out.
+
+For the conditioned defect
+
+    g_*(x)
+      =
+      [x^2-(82/25)x+9/4]^2
+      /
+      [(x^2+1)(x^2+81/16)],
+
+take any degree-2 real trigonometric polynomial
+
+    p_2(theta)
+      =
+      a_0
+      +a_1 cos theta+b_1 sin theta
+      +a_2 cos 2theta+b_2 sin 2theta
+
+satisfying
+
+    p_2(theta(x))>=g_*(x)
+
+for all real x.
+
+Using five exact rational support points
+
+    63/50,
+    5/4,
+    51/200,
+    1/4,
+    -17/5,
+
+there is an exact positive quadrature matching all five pinned-model Cayley
+basis moments.
+
+It gives the universal lower bound
+
+    boxed:
+
+    E_model[p_2]
+      >=
+      202255841048454875843203393363533529
+      /
+      1212298386228020210032390410776980000
+
+      =
+      0.1668366825742955....
+
+This is already strictly above
+
+    0.16325,
+
+and therefore above the actual conservative defect ceiling
+
+    0.163249981456072....
+
+So degree two cannot cross the record even before paying any band or
+arithmetic error.
+
+Hence, within the present global one-sided Cayley-majorant architecture,
+
+    boxed:
+    degree three / displacement rank six is minimal.
+
+See:
+
+    notes/WP84_DEGREE2_CAYLEY_OBSTRUCTION.md
+    src/wp84_degree2_cayley_obstruction.py
+
+## 46. Exact small-integer rank-six square replaces the algebraic Fejer factor
+
+The optimized degree-3 majorant admitted an algebraic Fejer--Riesz factor.
+
+For the arithmetic proof we can do better structurally.
+
+Define the exact polynomial
+
+    boxed:
+
+    q(u)
+      =
+      1/105
+      [
+        72u^3
+        -(6+106i)u^2
+        -(44+8i)u
+        -(12-3i)
+      ].
+
+Then
+
+    p_q(u)=|q(u)|^2
+
+globally majorizes the conditioned two-pole defect:
+
+    p_q(u(x))-g_*(x)
+      =
+      N_q(x)
+      /
+      [
+        275625
+        (x^2+1)^3
+        (16x^2+81)
+      ],
+
+where the degree-eight integer polynomial
+
+    N_q(x)
+      =
+      558400 x^8
+      +4033600 x^7
+      -3655019 x^6
+      -46464400 x^5
+      +102823262 x^4
+      -73448000 x^3
+      +17415581 x^2
+      -486000 x
+      +234900
+
+has zero real roots by exact Sturm count and is positive at x=0.
+
+Therefore
+
+    boxed:
+
+    1-|q(U)|^2
+      <=
+      f_*(H)
+      <=
+      1_{H>0}.
+
+The exact model energy is
+
+    E_model |q(U)|^2
+      =
+      7587045874174614507624172997869
+      /
+      54870156196139009489148448558425
+
+      =
+      0.13827272237122745....
+
+This gives model simple-zero ledger
+
+    boxed:
+    72.3454555258...%.
+
+The implementation target is now the single positive energy
+
+    boxed:
+    tau(Q_R^*Q_R),
+
+    Q_R=q(U_R),
+
+with
+
+    rank[D,Q_R]<=6.
+
+The exact rank-six commutator is
+
+    [D,Q]
+
+      =
+      C(
+        q_1 I+q_2U+q_3U^2
+      )
+
+      + U C(
+          q_2 I+q_3U
+        )
+
+      + U^2 C q_3,
+
+    C=[D,U],
+    rank C<=2.
+
+At R=256, retain the two-simple-pole wrapper only for the full-to-band step.
+Its charge is
+
+    0.00862476586...,
+
+so the finite-band positive-energy theorem target becomes
+
+    boxed:
+
+    limsup_T
+      tau(Q_{T,R}^*Q_{T,R})
+
+      <
+      0.15462521560...,
+
+against exact model benchmark
+
+    0.13827272237....
+
+leaving about
+
+    boxed:
+    0.01635249323
+
+for the finite-band arithmetic/local-law proof.
+
+This small-integer q should replace the algebraic Fejer factor in all
+implementation work.
+
+See:
+
+    notes/WP84_INTEGER_RANK6_CAYLEY_SQUARE.md
+    src/wp84_integer_rank6_cayley_square.py
+
+No unconditional record theorem is claimed yet.
