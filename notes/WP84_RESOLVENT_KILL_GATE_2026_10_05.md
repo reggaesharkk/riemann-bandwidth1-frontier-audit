@@ -1353,3 +1353,117 @@ The next kill test should attack the drift in both representations and keep
 whichever gives the smaller source-closed bound at the four F9 poles.
 
 No unconditional 69.6049% theorem is claimed yet.
+
+
+## 31. Bernoulli D1 collapses to one complement operator
+
+Under the full Bernoulli mask define
+
+    P_sel=sum_p xi_p G_p,
+    P_rem=sum_p(1-xi_p)G_p,
+
+so
+
+    H_t=S+P_sel,
+    Q_rem=Q_full-Q_sel.
+
+Conditioning on xi_p=0 reproduces the exact leave-one-out current-p state.
+
+Because D1 is linear in the current block,
+
+    boxed:
+    A1(z)
+      =
+      int_0^1
+        (1/(1-t))
+        E[
+          tau(R_t P_rem R_t)
+        ] dt.
+
+Thus the entire current-prime sum is replaced by one remaining sharp
+Loewner operator with scalar field
+
+    Q_rem
+      =(1-t)Q_full-Z_t,
+
+while
+
+    Q_sel
+      =tQ_full+Z_t.
+
+The stochastic state therefore contains one centered scalar field Z_t, not a
+family of current-prime functionals.
+
+See:
+
+    notes/WP84_BERNOULLI_D1_COMPLEMENT_COLLAPSE.md
+
+## 32. Quadrature noise is a circular Gaussian Q-field
+
+In the Gaussian bridge the two Hermitian quadratures combine into one
+circular complex coefficient
+
+    gamma_p=(g_pc+i g_ps)/sqrt2.
+
+Hence
+
+    Z_L(tau)
+      =sum_p gamma_p q_p(tau)
+
+has
+
+    E[Z_L(tau)Z_L(sigma)]=0
+
+and carrier-free conjugate covariance
+
+    E[
+      Z_L(tau) conjugate(Z_L(sigma))
+    ]
+
+      =
+      1/(a^2L^2)
+      sum_p (log p)^2/p
+        exp(i(tau-sigma)log p).
+
+On the Fourier grid this covariance is Toeplitz.
+
+For fixed lag r it converges to
+
+    K_infty(0)=1/(2a^2),
+
+    K_infty(r)=1/(2*pi*i*r*a^2),
+    r!=0,
+
+whose physical symbol is simply
+
+    s/a^2 on [0,1].
+
+Thus the artificial noise is a fully explicit long-range Gaussian scalar
+field and still satisfies rank[D,W]<=2 sample by sample.
+
+See:
+
+    notes/WP84_CIRCULAR_GAUSSIAN_Q_FIELD.md
+
+## 33. Standard correlated-Gaussian MDE theorems do not black-box close the route
+
+The Ajanki--Erdos--Kruger matrix-Dyson framework is a useful design guide,
+but its standard hypotheses include flatness and fast correlation decay.
+
+The WP84 mixed covariance is not flat, and its natural Fourier-grid
+correlation has 1/|r| Cauchy decay.
+
+Therefore those local laws cannot simply be cited as the missing theorem.
+
+The advantage specific to WP84 is different:
+
+    fixed pole distance about 1.46
+      + exact displacement rank two
+      + explicit covariance symbol.
+
+The next candidate is a bespoke fixed-imaginary-part Dyson equation for the
+small displacement generators, not a generic local law.
+
+See:
+
+    notes/WP84_MATRIX_DYSON_LITERATURE_AUDIT.md
