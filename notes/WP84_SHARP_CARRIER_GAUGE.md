@@ -1,78 +1,145 @@
-# WP84 — sharp carrier gauge: the T-phase is not arithmetic randomness
+# WP84 — carrier gauge audit: infinite-space identity does not preserve the finite compression
 
 Date: 2026-10-05
 
-Status: **EXACT SHARP-MODEL UNITARY GAUGE IDENTIFIED; FAST/RESONANT PHASE LANGUAGE IS REPRESENTATION-DEPENDENT**
+Status: **FINITE-COMPRESSION GAUGE SHORTCUT RETRACTED; INFINITE-SPACE IDENTITY RETAINED ONLY AS A DIAGNOSTIC**
 
-The four-channel algebra in WP84_VARIANCE_TOEPLITZ_RULES is correct.  But the interpretation of the exp(+/- i T y) carriers needs a crucial correction in the sharp physical model.
+The earlier note observed a correct identity on the full physical Hilbert
+space but promoted it too far.
 
-## 1. Sharp complex block
+The finite Gabor matrix is a compression to a d-dimensional Fourier band.
+The gauge multiplication that removes the carrier does **not** preserve that
+band.  Therefore the carrier cannot simply be erased from the theorem-side
+finite matrix.
 
-With s=y/L in [0,1], the sharp physical block is
+## 1. Exact sharp complex block
 
-    Cplus_T(s) = 2*pi * exp(i T y) * U_s^+,
-    Cminus_T(s)= 2*pi * exp(-i T y) * U_s^-,
+With s=y/L, the sharp physical shift is
 
-where U_s^+ is the partial translation f(x)->1_{x<=1-s}f(x+s), and U_s^- is its adjoint.
+    U_s^+ f(x)
+      = 1_{x in overlap(s)} f(x+s).
 
-## 2. One unitary removes every carrier simultaneously
+The finite complex block is the compression
 
-Define on L2[0,1]
+    Cplus_T(s)
+      = 2*pi e^(iTy)
+          P_d U_s^+ P_d
 
-    (Q_T f)(x)=exp(i T L x) f(x).
+in the physical Fourier representation, up to the frozen normalization and
+coordinate convention.
+
+The negative branch is the adjoint.
+
+## 2. The full-space gauge identity is correct
+
+On the full L2 interval define
+
+    (Q_T f)(x)=e^(iTLx)f(x).
 
 Then
 
-    Q_T^* U_s^+ Q_T = exp(i T L s) U_s^+ = exp(i T y) U_s^+,
+    Q_T^* U_s^+ Q_T
+      = e^(iTy) U_s^+.
 
-and
+So on the **uncompressed full space** the carrier may indeed be absorbed into
+a modulation.
 
-    Q_T^* U_s^- Q_T = exp(-i T y) U_s^-.
+## 3. Why this is not a finite-matrix unitary equivalence
+
+The Gabor compression uses
+
+    P_d
+      = projection onto d consecutive Fourier modes.
+
+But Q_T shifts Fourier frequency by approximately
+
+    TL/(2*pi)
+      asymp d.
+
+Consequently
+
+    Q_T P_d Q_T^*
+      != P_d.
+
+In fact it moves the selected Fourier band to a different band.
 
 Therefore
 
+    P_d Q_T^* U_s Q_T P_d
+
+is not obtained from
+
+    P_d U_s P_d
+
+by unitary conjugation **inside the same d-dimensional compressed space**.
+
+The previous statement that one fixed unitary removes all prime carriers from
+the finite theorem operator is invalid.
+
+## 4. Correct finite theorem operator
+
+The sharp finite prime operator must retain the scalar carriers:
+
     boxed:
-    Cplus_T(s)=2*pi Q_T^* U_s^+ Q_T,
-    Cminus_T(s)=2*pi Q_T^* U_s^- Q_T.
+    P_sharp
+      = - sum_{n<=X}
+          Lambda(n)/(a L sqrt(n))
+          [
+            e^(iT log n) P_d U_{s_n}^+ P_d
+            + e^(-iT log n) P_d U_{s_n}^- P_d
+          ],
 
-The same Q_T works for every prime power because y=L s.
+    s_n=log n/L,
 
-Consequently the entire sharp prime operator is unitarily equivalent to a carrier-free sum of partial shifts.
+again up to the already frozen harmless constants.
 
-Companion exact finite partial-shift gate:
+Equivalently,
 
-    src/wp84_sharp_carrier_gauge.py
+    e^(iT log n)=n^(iT).
 
-## 3. Consequence for the variance split
+These phases are part of the finite-compression arithmetic state.
 
-The labels 'fast carrier' and 'resonant carrier' are algebraically useful in the original Gabor basis, but the macroscopic T phase is not an invariant source of cancellation.  In the sharp model it is a gauge.
+## 5. What survives from the old note
 
-Therefore no theorem may close V-sum or drift merely by appealing to exp(+/-2iTy) or exp(+/-iTy) oscillation.
+Several later results do **not** depend on deleting the carriers:
 
-The invariant reason those branches vanish in WP84_SHARP_RESOLVENT_TRACE is different: when the resolvent belongs to the multiplication algebra, same-sign products are nonzero partial translations with zero normalized diagonal trace.
+1. boundary support/factorization:
+   scalar unit-modulus carriers can be absorbed into the middle operator K;
 
-That geometric statement survives the gauge change.
+2. crude operator norms:
+   |e^(iTy)|=1, so every absolute norm bound is unchanged;
 
-## 4. Carrier-free sharp prime operator
+3. endpoint low-rank quarantine:
+   unchanged;
 
-Up to the common unitary conjugation and the already recorded normalization, the sharp prime part has the form
+4. global ramp-to-sharp boundary quarantine:
+   unchanged after defining
+       K_+=sum c_n e^(iTy_n)U_{y_n};
 
-    P_sharp = - sum_{n<=X} Lambda(n)/(a L sqrt(n))
-                * (U_{s_n}^+ + U_{s_n}^-),
+5. closed translation-word traces:
+   when a signed displacement word closes,
+       sum eps_j y_j=0,
+   the total carrier is
+       exp(iT sum eps_j y_j)=1.
 
-    s_n=log n/L.
+Thus the fixed-degree resonance/overlap calculations remain valid.
 
-This is a deterministic truncated-translation / Wiener-Hopf type operator, not a random-phase matrix.
+## 6. What must be corrected strategically
 
-Thus the remaining ALG-star problem should be formulated as a spectral-distribution theorem for this structured translation operator (plus scalar background), rather than as a high-frequency prime cancellation theorem.
+The active theorem is **not** a carrier-free Wiener--Hopf problem.
 
-## 5. Strategic correction
+It is a finite-band compressed, carrier-bearing truncated-translation problem.
 
-This removes one misleading possible shortcut and points to the correct operator algebra:
+Carrier oscillation may therefore be used if proved through the compressed
+trace; it may not be dismissed as a pure gauge.
 
-    sharp partial translations
-      -> truncated convolution / Wiener-Hopf calculus
-      -> normalized trace of bounded resolvents
-      -> fixed-pole r_m consumer.
+Likewise no same-sign branch may be killed by citing the full-space gauge.
 
-The ramp-transfer note already shows that the second-order consumed variance trace may be moved to the sharp model at o(1) cost.  The next audit should test whether a classical Wiener-Hopf/Szego trace theorem can be adapted to the T-dependent prime translation measure.
+## 7. Evidence boundary
+
+This correction does not reopen the LRSC-inspired boundary quarantine.
+
+It retracts only the stronger and unjustified finite-compression unitary
+equivalence.
+
+No unconditional >79 theorem is claimed.
