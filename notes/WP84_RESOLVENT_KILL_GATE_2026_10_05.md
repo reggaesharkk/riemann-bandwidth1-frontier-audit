@@ -3203,3 +3203,153 @@ See:
 This is currently the cleanest one-sided theorem interface.
 
 No unconditional record theorem is claimed yet.
+
+
+## 44. Conditioned two-pole first strike collapses to one Cayley point and degree three
+
+The theorem-conditioned two-pole defect
+
+    g_*(x)
+      =
+      [x^2-(82/25)x+9/4]^2
+      /
+      [(x^2+1)(x^2+81/16)]
+
+admits an exact global degree-3 majorant in the Cayley variable
+
+    u=(x+i)/(x-i).
+
+Define
+
+    p_3(e^{i theta})
+      =
+      1.6895
+      +0.2101 cos(theta)
+      -2.2720 sin(theta)
+      -0.6312 cos(2theta)
+      -0.3306 sin(2theta)
+      -0.1525 cos(3theta)
+      +0.0439 sin(3theta).
+
+Then exactly
+
+    p_3(u(x))-g_*(x)
+      =
+      N(x)
+      /
+      [
+        positive denominator
+      ],
+
+where the degree-eight integer polynomial
+
+    N(x)
+      =
+      18544 x^8
+      +153120 x^7
+      -141929 x^6
+      -1672190 x^5
+      +3748517 x^4
+      -2772972 x^3
+      +737557 x^2
+      -34542 x
+      +567
+
+has zero real roots by exact Sturm count and N(0)>0.
+
+Therefore
+
+    boxed:
+    1-p_3(U)
+      <=
+      f_*(H)
+      <=
+      1_{H>0}
+
+in functional calculus.
+
+The pinned-model expectation is exactly
+
+    E p_3(U)
+      =
+      6816992961687106121191829211903
+      /
+      49768849157495700216914692570000
+
+      =
+      0.13697308812816694....
+
+So the induced model positive-index lower bound is
+
+    0.8630269118718330...,
+
+and the induced model simple-zero ledger is
+
+    boxed:
+    72.6053823744...%.
+
+The conservative positive-index margin is
+
+    boxed:
+    0.0262768933279051....
+
+This is smaller than the exact two-pole model margin but still ample.
+
+The preferred hybrid architecture is now:
+
+1. use the two simple poles only to compare H with a fixed-band H_R:
+
+       tau f_*(H)
+         >=
+         tau f_*(H_R)
+         -
+         2.2079400595/R
+         +o(R^-1);
+
+2. on H_R use
+
+       f_*(H_R)
+         >=
+         1-p_3(U_R);
+
+3. prove one finite-band inequality for
+
+       tau p_3(U_R),
+
+   where
+
+       U_R
+         =
+         (H_R+iI)(H_R-iI)^(-1).
+
+Thus the post-band arithmetic theorem consumes only
+
+    U_R,
+    U_R^2,
+    U_R^3
+
+at the single point z=i.
+
+For example:
+
+    R=256
+
+spends about
+
+    0.00862477
+
+on the full-to-band comparison and leaves roughly
+
+    0.01765213
+
+for the remaining finite-band arithmetic theorem.
+
+This supersedes the previous degree-8 Cayley-geometric fallback as the
+smallest currently certified bounded-unitary first strike.
+
+See:
+
+    notes/WP84_CONDITIONED_DEGREE3_CAYLEY_MAJORANT.md
+    src/wp84_conditioned_degree3_cayley_majorant.py
+
+No unconditional record theorem is claimed yet.
