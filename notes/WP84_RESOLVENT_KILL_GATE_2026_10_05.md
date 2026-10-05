@@ -4608,3 +4608,71 @@ See:
     src/wp84_sine_wedge_canonical_frame.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 63. Full-sharp off-diagonal energy is six scalar K2 bilinears
+
+For the full sharp sine-square route define
+
+    u=R1,
+    v=R alpha,
+
+and the six scalar sequences
+
+    A_i=|u_i|^2,
+    B_i=|v_i|^2,
+    C_i=u_i conjugate(v_i),
+
+    P_i=u_i^2,
+    Q_i=v_i^2,
+    S_i=u_i v_i.
+
+Then the exact real-wedge identity is
+
+    boxed:
+
+    sum_{i!=j}
+      [Re(u_i v_j-v_i u_j)]^2/(i-j)^2
+
+      =
+      A^T K2 B
+      -Re(C^*K2C)
+      +Re(P^T K2 Q-S^T K2 S).
+
+Therefore
+
+    boxed:
+
+    E_off
+
+      =
+      4t^2a^2/(pi^2 d)
+      {
+        A^T K2 B
+        -Re(C^*K2C)
+        +Re(P^TK2Q-S^TK2S)
+      }.
+
+With
+
+    S2(theta)
+      =
+      pi^2/3-pi theta+theta^2/2,
+
+every term is a scalar one-dimensional Fourier integral.
+
+This is now the preferred full-sharp representation because it preserves
+the signed cancellations that are lost in the gamma-kappa majorant.
+
+Route hierarchy:
+
+1. exact scalar K2 wedge — primary;
+2. canonical gamma-kappa majorant — sufficient fallback;
+3. fixed-band locality/moment route — separate branch after paying C_sine/R.
+
+See:
+
+    notes/WP84_SINE_SCALAR_K2_WEDGE.md
+    src/wp84_sine_scalar_k2_wedge_gate.py
+
+No unconditional record theorem is claimed yet.
