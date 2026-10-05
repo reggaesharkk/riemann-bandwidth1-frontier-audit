@@ -386,3 +386,73 @@ See:
 
     notes/WP84_BOUNDED_K8_SUPPORT_FREE_80.md
     src/wp84_bounded_k8_support_free_80_gate.py
+
+
+## 14. Same-sign branch must remain active
+
+An exact finite sharp-model calculation now falsifies automatic V-sum
+cancellation once the intermediate resolvent is the true inverse of a shift
+operator.
+
+For the five-dimensional non-cyclic shift S, with
+
+    H=S+S^*,
+    R=(H-iI)^(-1),
+
+exact Q(i) arithmetic gives
+
+    tau(RSR)+tau(RS^*R) = 7 i/20,
+
+    V_sum
+      = tau(RSRSR)+tau(RS^*RS^*R)
+      = 17 i/80,
+
+    V_diff
+      = tau(RSRS^*R)+tau(RS^*RSR)
+      = 3 i/80.
+
+Thus V_sum can exceed V_diff.  Carrier oscillation, adjoint symmetry, and the
+diagonal multiplication surrogate cannot justify removing it.
+
+See:
+
+    notes/WP84_VSUM_EXACT_FALSIFIER.md
+    src/wp84_vsum_exact_falsifier.py
+
+## 15. Model-first >80 gate
+
+Before opening any new k=8 arithmetic transport, compute the exact model pair
+
+    (M7,M8)
+
+and evaluate the exact degree-4 Christoffel gate.
+
+PASS requires
+
+    M8<T80(M7).
+
+FAIL means the present k=8 consumer cannot cross 80 and must be redesigned.
+
+See:
+
+    notes/WP84_K8_MODEL_GONOGO.md
+    src/wp84_k8_model_gonogo.py
+
+## 16. Arithmetic raw m7/m8 transport is optional on the bounded route
+
+If the exact model pair passes the >80 gate, freeze its degree-4 minimizer Q
+and one finite bounded rationalization
+
+    F=(delta+1)Q^2/(Q^2+delta)
+
+with model expectation below 0.1.
+
+The arithmetic theorem may then compare this bounded functional directly at
+its eight fixed nonreal poles.
+
+Finite-T arithmetic m7/m8 bounds are therefore sufficient but not necessary
+for the rank-robust >80 route.
+
+See:
+
+    notes/WP84_K8_BOUNDED_RESOLVENT_BYPASS.md
