@@ -146,3 +146,22 @@ A theorem-grade conclusion still requires the actual fixed-circle resolvent law.
 Companion exact checker:
 
     `src/wp84_beta_minorant_model.py`.
+
+## 8. Conditioning update — theorem target versus model target
+
+A later fixed-circle conditioning audit shows that boundedness/rank robustness and analytic conditioning are different questions.
+
+The Laurent pole order of b_m is 2m+1.  If a uniform Stieltjes-transform error epsilon is transferred by raw Cauchy estimates on |z-i|=rho, the statistic error is bounded by
+
+    C_m(rho) * epsilon,
+
+with C_m growing rapidly with m.
+
+At rho=0.9:
+
+- b3 has model q=0.8964412949 and requires epsilon < about 3.59e-5 to retain q>0.895;
+- b10 has model q=0.8981347675 but requires epsilon < about 5.14e-8.
+
+Therefore b10 remains the strongest model member of the displayed ladder, but **b3 is the current preferred theorem target** under the available fixed-circle transfer.
+
+See `WP84_BETA_CIRCLE_CONDITIONING.md` and `src/wp84_beta_circle_conditioning.py`.
