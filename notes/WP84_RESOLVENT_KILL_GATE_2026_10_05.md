@@ -3605,3 +3605,37 @@ This gives a degree-four fallback aligned exactly with the existing balanced E2/
 See WP84_MATCHED_QUARTIC_MAJORANT.md.
 
 No unconditional record theorem is claimed yet.
+
+
+## 47. Fixed-band lower moments collapse to one variance parameter
+
+For H_R=I+P_R after scalar background reduction, define v_R=tau(P_R^2). The fixed-band degree-three gate gives
+
+    mu1=1+o(1),
+    mu2=1+v_R+o(1),
+    mu3=1+3v_R+o(1).
+
+Because the band and tail supports are disjoint in matrix displacement,
+
+    tau(P^2)=tau(P_R^2)+tau(Delta_R^2),
+
+and therefore
+
+    1/3-2/(pi^2R)+o(1) <= v_R <=1/3+o(1).
+
+For the exact quartic majorant this implies
+
+    tau P4(H_R)
+      <=233/1600+(593/2000)delta4+783/(250 pi^2 R)+o(1),
+
+where mu4(H_R)=13/4+delta4.
+
+Combining with the matched-filter full-to-band charge gives one scalar theorem target. Sufficient fourth-moment ceilings are approximately
+
+    R=256: 3.27663658,
+    R=400: 3.28844705,
+    R=512: 3.29304001.
+
+Thus the remaining first-strike fallback no longer needs separate mu1/mu2/mu3 estimates; it needs one one-sided fixed-band fourth-moment bound.
+
+See WP84_FIXED_BAND_LOWER_MOMENT_COLLAPSE.md.
