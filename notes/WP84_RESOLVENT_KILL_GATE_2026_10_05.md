@@ -3925,3 +3925,213 @@ See:
     src/wp84_direct_degree2_a4_3.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 54. Gaussian curvature is now an explicit one-point scalar stencil
+
+For the direct degree-two bounded-energy route, the abstract heat-flow term
+
+    C_u(z)
+      =
+      partial_u m_u(z)
+
+is no longer left as a black box.
+
+Let
+
+    R=(H-zI)^(-1),
+
+    r_k=diag(R^k),
+    h_k=diag(JR^k),
+    q_k=diag(JR^kJ),
+
+and
+
+    T_ab
+      =
+      d^(-1)
+      sum_{i!=j}
+        (R^a)_ij (R^b)_ij/(i-j)^2.
+
+For the sharp resonant covariance primitive
+
+    Xi(R)
+      =
+      <r1,r1>/(6d)
+      -T11/(2pi^2)
+      +[<h1,h1>-<r1,q1>]/(2d),
+
+exact differentiation gives
+
+    Xi_z
+      =
+      <r1,r2>/(3d)
+      -T12/pi^2
+      +<h1,h2>/d
+      -[<r2,q1>+<r1,q2>]/(2d),
+
+and
+
+    Xi_zz
+      =
+      [<r2,r2>+2<r1,r3>]/(3d)
+      -[T22+2T13]/pi^2
+      +[<h2,h2>+2<h1,h3>]/d
+      -[<r3,q1>+<r2,q2>+<r1,q3>]/d.
+
+Hence
+
+    C_u=(1/2)E Xi_z+o(1),
+
+    partial_z C_u=(1/2)E Xi_zz+o(1).
+
+The complete one-point heat curvature therefore consists of a finite list of
+scalar resolvent statistics plus only
+
+    T12,
+    T22,
+    T13.
+
+Since rank[D,R^k]<=2k, these require at most
+
+    2x4,
+    4x4,
+    2x6
+
+one-dimensional Fourier channels respectively.
+
+See:
+
+    notes/WP84_DIRECT_DEGREE2_HEAT_CURVATURE_STENCIL.md
+    src/wp84_direct_heat_curvature_stencil.py
+
+## 55. A simpler sine-square rank-four family improves current band conditioning
+
+There is an exact support-free two-parameter family simpler than the ad hoc
+complex degree-two square.
+
+For
+
+    U_a=(H+iaI)(H-iaI)^(-1),
+
+put
+
+    S_a=(U_a-U_a^*)/(2i),
+
+    Q_{a,t}=I-tS_a,
+
+    P_{a,t}=Q_{a,t}^2.
+
+For real x,
+
+    S_a(x)=2ax/(x^2+a^2).
+
+Thus x<=0 implies S_a(x)<=0 and, for t>0,
+
+    Q_{a,t}(x)>=1.
+
+Therefore
+
+    boxed:
+    1-P_{a,t}(x)<=1_{x>0}
+
+globally, with no Sturm certificate required.
+
+The scalar repeated-pole form is
+
+    tau P_{a,t}(H)
+
+      =
+      1
+
+      +2 Re[
+          a(-2t-it^2)m(ia)
+          +a^2t^2 m'(ia)
+        ].
+
+Also
+
+    rank[D,Q_{a,t}]<=4.
+
+A simple rational pair close to the best current fixed-pole conditioning is
+
+    a=63/50,
+    t=37/35.
+
+Its exact pinned-model defect energy is
+
+    2123356554130375347858538674965521
+    /
+    17287082796917862060833277294351001
+
+      =
+      0.12282908452945869...,
+
+giving model simple-zero ledger
+
+    75.4341830941...%.
+
+The conservative defect margin is
+
+    0.0404208969266133....
+
+Its explicit full-to-band constant is
+
+    C_tail
+      ~=9.9464075751,
+
+so the margin-to-band-cost ratio is
+
+    ~=0.004063869,
+
+about 11.3% better than the reused-q a=4/3 route under the same current
+O(1/R) theorem.
+
+The Gaussian curvature coefficients are especially simple:
+
+    E_u'
+      =
+      Re E[
+        a(-2t-it^2) Xi_z
+        +a^2 t^2 Xi_zz
+      ]
+      +o(1).
+
+This sine-square route should now be treated as the cleanest
+proof-conditioned rank-four one-point family.
+
+See:
+
+    notes/WP84_SINE_SQUARE_RANK4_ROUTE.md
+    src/wp84_sine_square_rank4.py
+
+## 56. Retuned complex q at a=4/3 is raw-margin, not band-conditioning, improvement
+
+A separately retuned complex degree-two q at a=4/3 raises the exact model
+simple-zero ledger to
+
+    77.4557818983...%
+
+with raw defect margin
+
+    0.05052889095....
+
+However its larger resolvent coefficients increase the present O(1/R) band
+constant to about
+
+    19.27989141.
+
+So under the current explicit full-to-band theorem its margin-to-band-cost
+ratio is worse than both:
+
+- the reused-q a=4/3 route;
+- the sine-square route above.
+
+Keep the retuned q as a larger-raw-margin direct heat-flow candidate, but do
+not label it the better-conditioned band route.
+
+See:
+
+    notes/WP84_DIRECT_DEGREE2_A4_3_RETUNED.md
+
+No unconditional record theorem is claimed yet.
