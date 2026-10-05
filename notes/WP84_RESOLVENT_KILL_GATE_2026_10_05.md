@@ -4790,3 +4790,106 @@ See:
     notes/WP84_SINE_FULL_SHARP_RETUNED.md
     src/wp84_sine_full_sharp_retuned.py
     notes/WP84_SINE_MEAN_VARIANCE_GATE.md
+
+
+## 65. First-two-moment ceiling for the full-sharp variance route
+
+The full-sharp mean/variance reduction is exact, but the first two raw
+moments cannot close it by themselves.
+
+The measure
+
+    (1/4) delta_0
+    +(3/4) delta_{4/3}
+
+has first moments
+
+    m1=1,
+    m2=4/3,
+
+but positive mass only 3/4.
+
+So any argument using only m1 and m2 has a universal positive-index ceiling
+of 3/4.
+
+More sharply, at a=23/20 the two-atom measure
+
+    (3/25) delta_{1-sqrt(22)/3}
+    +(22/25) delta_{1+sqrt(22)/22}
+
+has exactly the same first two moments and satisfies
+
+    Var(S_a)>1/3,
+
+while the active theorem requires
+
+    Var(S_a)<0.1069812171909...<1/9.
+
+Therefore the remaining variance theorem must consume genuine
+Loewner/arithmetic structure.
+
+See:
+
+    notes/WP84_SINE_FIRST_TWO_MOMENT_OBSTRUCTION.md
+    src/wp84_sine_first_two_moment_obstruction.py
+
+## 66. Balanced fourth-order leakage has the exact E2 local-window scale
+
+On a short product cell
+
+    m,n in [M_0,M_0(1+delta)],
+
+with near-resonant shift
+
+    h=n-m,
+    |h|<=C M_0/T,
+
+the exact multiplicative phase obeys
+
+    tau_k log(m/n)
+
+      =
+      -tau_k h/M_0
+
+      +O_C(delta+1/T).
+
+Thus the finite-compression kernel becomes, up to this controlled phase
+error,
+
+    (1/d)
+    sum_k
+      e(-h alpha_k),
+
+with
+
+    alpha_k=tau_k/(2pi M_0).
+
+The alpha grid spans a window of width comparable to
+
+    T/M_0=1/H,
+
+where
+
+    H=M_0/T.
+
+Hence the balanced Lambda*Lambda / E2 trace sector is a local additive
+Fourier energy on exactly the 1/H frequency scale used by the E2 minor-arc
+theorem.
+
+This identifies the correct theorem interface:
+
+1. transfer the WP84 sliced coefficient to the E2 weight by smooth partial
+   summation;
+2. apply the local minor-arc energy estimate before any absolute shift sum;
+3. match the major-arc main term to the nonpositive closed connected kernel;
+4. treat the shrinking H<polylog transition layer separately.
+
+At R=400 the available positive non-pair leakage remains
+
+    >0.0247937.
+
+See:
+
+    notes/WP84_E2_LOCAL_WINDOW_TRANSFER.md
+
+No unconditional record theorem is claimed yet.
