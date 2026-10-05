@@ -56,9 +56,12 @@ def main():
             "analytic_entry_to_op_bound":bnd,
             "lambda_pplus1":tail,
         })
-        assert err <= bnd*(1+1e-8)+1e-12
+        # Once the analytic bound drops below binary64 roundoff, the direct
+        # matrix comparison is roundoff-limited rather than theorem-limited.
+        roundoff_floor=100*np.finfo(float).eps*d
+        assert err <= max(bnd*(1+1e-8),roundoff_floor)
         if p<d:
-            assert tail <= err+1e-10
+            assert tail <= max(err,roundoff_floor)+1e-12
 
     print("RESULT: WP84_BOUNDARY_QUADRATURE_GATE_PASS")
 
