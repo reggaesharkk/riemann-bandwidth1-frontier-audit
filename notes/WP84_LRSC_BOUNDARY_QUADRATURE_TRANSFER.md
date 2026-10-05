@@ -324,3 +324,95 @@ Every quantity is explicit.
 
 No unconditional >79 theorem is claimed; this closes only the endpoint
 geometry used by the bounded-resolvent route.
+
+
+## 10. Matching lower bound on effective rank
+
+The O(W/L) rank fraction is not an artifact of the proof.
+
+Because T_I is a restriction operator,
+
+    0 <= Q_I <= I,
+
+and
+
+    tr Q_I = d W/L.
+
+Suppose R has rank at most r and
+
+    ||Q_I-R||op <= epsilon.
+
+Weyl gives
+
+    lambda_{r+1}(Q_I) <= epsilon.
+
+Since every eigenvalue of Q_I is at most one,
+
+    tr Q_I
+      <= r + (d-r) epsilon.
+
+Therefore
+
+    boxed:
+    r
+      >= d (W/L-epsilon)/(1-epsilon).
+
+For epsilon=o(W/L),
+
+    r/d
+      >= W/L-o(W/L).
+
+Our constructive quadrature upper bound is
+
+    p/d
+      <= e*pi W/L+o(W/L).
+
+Thus the self-contained construction has the correct
+time-bandwidth scaling up to an absolute constant.
+
+There is no hidden exact O(1)-rank endpoint shortcut.
+
+## 11. Reflection-orbit/Vandermonde interpretation
+
+For the centered boundary derivative,
+
+    Q'(a)
+      = L^(-1)
+          [v(a)v(a)^*+v(-a)v(-a)^*].
+
+Passing to reflection-even and reflection-odd coordinates separates this into
+one cosine rank-one channel and one sine rank-one channel.
+
+For distinct points
+
+    0<=a_1<...<a_p<L/2,
+
+put
+
+    x_s=cos(2*pi*a_s/L).
+
+The even evaluation matrix has entries
+
+    C_{rs}
+      = cos(2*pi*r*a_s/L)
+      = T_r(x_s),
+
+where T_r is the Chebyshev polynomial.
+
+The first p rows therefore have determinant equal to a nonzero leading-factor
+multiple of
+
+    prod_{i<j}(x_j-x_i).
+
+Hence the p cosine boundary channels are linearly independent.
+
+This is the exact same algebraic mechanism as the reflection-orbit
+Chebyshev/Vandermonde rank proof in the LRSC odd-ring theorem, now appearing
+inside the continuous Fourier boundary family.
+
+It explains why:
+
+- infinitesimal boundary motion is rank one per parity sector;
+- a continuum of distinct boundary locations has large exact span;
+- only approximation, not exact algebraic collapse, produces the o(d)
+  endpoint rank.
