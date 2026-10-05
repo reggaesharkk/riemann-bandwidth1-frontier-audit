@@ -2,7 +2,7 @@
 
 Date: 2026-10-05
 
-Status: **EXACT COMMON-BOUNDARY FACTORIZATION DERIVED; LOW-RANK APPROXIMATION REDUCED TO A STANDARD PROLATE EIGENVALUE-CONCENTRATION INPUT**
+Status: **RAMP ENDPOINT LOW-RANK + SMALL-NORM QUARANTINE CLOSED, CONDITIONAL ONLY ON A STANDARD PUBLISHED DPSS EIGENVALUE-CONCENTRATION THEOREM**
 
 This note upgrades the sharp endpoint-shift rank observation to the actual
 compactly supported ramp taper.
@@ -33,8 +33,8 @@ Fourier synthesis gives the exact weighted-shift form
 
 The adjoint branch is the reverse shift.
 
-Thus the actual ramp changes only the weight.  Compact support still enforces
-the same geometric shift support as the sharp block.
+Thus the ramp changes only the weight. Compact support preserves the exact
+shift support.
 
 ## 2. Common boundary strips for endpoint shifts
 
@@ -42,11 +42,7 @@ Fix W>0 and suppose
 
     y >= L-W.
 
-Then a nonzero term requires both x and x+y to lie in
-
-    [-L/2,L/2].
-
-Hence necessarily
+A nonzero term requires both x and x+y in [-L/2,L/2]. Therefore
 
     x in I_left
       := [-L/2,-L/2+W],
@@ -56,131 +52,149 @@ and
     x+y in I_right
       := [L/2-W,L/2].
 
-Therefore **every** endpoint block in the whole range y>=L-W factors through
-the same pair of boundary strips.
+Hence every endpoint block in the entire range y>=L-W factors through the
+same pair of boundary strips.
 
-After the common carrier gauge is removed, the total complex endpoint operator
-has the form
+After the common carrier gauge is removed, the total complex endpoint
+operator has the exact factorization
 
     E_plus
-      = P_d M_{I_left} K_W M_{I_right} P_d
+      = T_left^* K_W T_right,
 
-for one bounded operator K_W assembled from the weighted translations.
+where
+
+    T_I := M_I P_d
+
+is the time-restriction map from the d-mode Fourier space to L2(I), and K_W
+is the weighted-translation sum between the two boundary strips.
 
 The real endpoint operator is E_plus+E_plus^*.
 
-## 3. Crude middle-operator norm is only polynomial in T
+## 3. The concentration matrix is exactly a DPSS prolate matrix
 
-Using only
+For a strip I of length W,
 
-    Lambda(n)<=log n,
-    X<=T^(1+o(1)),
+    Q_I := T_I^* T_I
+         = P_d M_I P_d.
 
-and the already-closed block norm,
+After rescaling x=L t and translating I to start at zero,
 
-    ||B_n|| <= 4 Lambda(n)/(L sqrt(n)),
+    (Q_I)_{kl}
+      = int_0^(W/L) exp(i2*pi(l-k)t) dt.
 
-the absolute endpoint sum obeys
+Up to a harmless diagonal phase from interval translation, this is exactly
+the standard d by d prolate Toeplitz matrix with DPSS bandwidth
 
-    ||K_W||
-      <= sum_{n<=X} O(Lambda(n)/(L sqrt(n)))
-      <= O(sqrt(X))
-      <= T^(1/2+o(1)).
+    W_DPS = W/(2L).
 
-No prime cancellation is used.
+Therefore the published nonasymptotic DPSS eigenvalue-concentration bounds
+apply directly.
 
-Thus the middle operator may be large, but only polynomially large in T.
-
-## 4. Boundary concentration operator
-
-Put
-
-    Q_I = P_d M_I P_d
-
-for either boundary strip I of length W.
-
-The nonzero singular values of
-
-    M_I P_d
-
-are the square roots of the eigenvalues of Q_I.
-
-The time-bandwidth product is
-
-    d * W/L.
-
-Classical prolate/DPSS eigenvalue concentration says that, for
-epsilon in (0,1/2), the number of eigenvalues in the plunge region is only
-
-    O(log d * log(1/epsilon)),
-
-while the number near one is the Shannon count
-
-    d W/L
-
-up to the same logarithmic correction.
-
-A suitable nonasymptotic source is:
+A suitable source is:
 
     S. Karnik, J. Romberg, M. A. Davenport,
     "Improved bounds for the eigenvalues of prolate spheroidal wave functions
     and discrete prolate spheroidal sequences",
     Applied and Computational Harmonic Analysis 55 (2021), 97--128.
 
-The paper proves logarithmic transition-width bounds for both DPSS and PSWF
-eigenvalues.
+Their transition-width theorem gives, for epsilon in (0,1/2),
 
-## 5. Choose polynomially tiny concentration error
+    #{j: epsilon < lambda_j(Q_I) < 1-epsilon}
+      = O(log d * log(1/epsilon))
+
+uniformly in the present small bandwidth regime.
+
+## 4. Rank of the epsilon-concentrated boundary subspace
+
+Let Pi_I be the spectral projection of Q_I onto eigenvalues >epsilon.
+
+Since
+
+    tr Q_I = d W/L,
+
+the number of eigenvalues above 1-epsilon is at most
+
+    d W/[L(1-epsilon)].
+
+Adding the transition-width bound gives
+
+    rank(Pi_I)
+      <= d W/[L(1-epsilon)]
+         + O(log d * log(1/epsilon)).
+
+On the complementary subspace,
+
+    ||T_I(I-Pi_I)||op
+      <= sqrt(epsilon).
+
+This is the exact approximation interface needed below.
+
+## 5. Crude middle-operator norm is only polynomial in T
+
+The already-closed prime-block norm gives
+
+    ||B_n||op
+      <= 4 Lambda(n)/(L sqrt(n)).
+
+Using only Lambda(n)<=log n and X<=T^(1+o(1)),
+
+    ||K_W||op
+      <= sum_{n<=X} O(Lambda(n)/(L sqrt(n)))
+      <= T^(1/2+o(1)).
+
+No prime cancellation is used.
+
+## 6. Choose polynomially tiny concentration error
 
 Take
 
     epsilon=T^(-A)
 
-with fixed A>2.
+with any fixed A>2.
 
-Let Pi_I project onto the prolate singular directions with concentration
-eigenvalue > epsilon.
+Choose
 
-Then the literature bound gives
+    W=K log L
 
-    rank(Pi_I)
-      <= d W/L
-         + O(log d * log T).
+with fixed K.
 
-For
-
-    W=K log L,
-    d asymp T L,
-
-the rank fraction is
+Since d asymp T L,
 
     rank(Pi_I)/d
-      = O(log L/L) + O(log T/(T))
+      <= O(W/L)
+         + O(log d * log T / d)
+
+      = O(log L/L)+o(1)
       = o(1).
 
-On the orthogonal complement,
+Also
 
-    ||M_I P_d (I-Pi_I)|| <= sqrt(epsilon)=T^(-A/2).
+    ||T_I(I-Pi_I)||op
+      <= T^(-A/2).
 
-## 6. Low-rank plus small-norm endpoint decomposition
+## 7. Low-rank plus small-norm decomposition
 
 Insert Pi_left and Pi_right into
 
-    E_plus=P_d M_left K_W M_right P_d.
+    E_plus=T_left^* K_W T_right.
 
-The part touching either high-concentration projection has rank
+Define the main piece by retaining the high-concentration subspaces on both
+sides. Its rank is at most
 
-    o(d).
+    rank(Pi_left)+rank(Pi_right)
+      = o(d).
 
-The complementary part has operator norm at most
+Every complementary term contains at least one factor
 
-    ||K_W|| * epsilon^(1/2)
+    T_I(I-Pi_I),
+
+so its operator norm is
+
+    O(||K_W|| sqrt(epsilon))
       <= T^(1/2+o(1)-A/2)
-      = o(1)
+      = o(1).
 
-for any fixed A>1.
-
-Therefore the endpoint family admits
+Therefore
 
     boxed:
     E_endpoint
@@ -191,38 +205,42 @@ with
     rank(E_rank)/d=o(1),
     ||E_small||op=o(1).
 
-This is exactly the decomposition required by the bounded-resolvent route.
+This conclusion is independent of the signs and sizes of the individual
+endpoint coefficients beyond the crude polynomial norm bound above.
 
-## 7. Consequence for the prime cutoff
+## 8. Prime cutoff consequence
 
-Taking
-
-    W=K log L
-
-corresponds to
+The condition
 
     y>=L-K log L
 
-or
+is exactly
 
     n>=X/L^K.
 
-Hence the actual ramp-taper endpoint prime family above X/L^K can be
-quarantined at o(1) bounded spectral cost, provided the prolate concentration
-theorem is mapped to the present Fourier normalization exactly.
+Hence the **actual ramp-taper endpoint prime family**
 
-This mapping is the only remaining formalization step in the endpoint gate.
+    n in [X/L^K, X]
 
-## 8. Strategic gain
+may be removed at o(1) bounded spectral cost:
 
-After endpoint quarantine, the retained prime range is
+- E_rank is invisible by rank stability;
+- E_small is invisible by the fixed nonreal resolvent identity.
+
+No endpoint prime cancellation is required.
+
+## 9. Strategic gain
+
+After this quarantine the active arithmetic range is
 
     n<=X/L^K.
 
 K may be chosen after a fixed logarithmic loss budget.
 
-Thus any retained-range estimate suffering an L^C loss can first choose K>C
-and work away from the geometric endpoint, while the discarded layer is
-handled by rank plus small norm rather than arithmetic cancellation.
+Therefore any later retained-range bounded-resolvent estimate with an L^C
+loss can choose K>C before beginning the arithmetic analysis.
+
+This closes the endpoint geometry that previously contaminated the
+large-shift regime.
 
 No unconditional >79 theorem is claimed.
