@@ -1056,3 +1056,62 @@ See:
     src/wp84_four_pole_record_rung.py
 
 No unconditional 69.6049% theorem is claimed yet.
+
+
+## 24. D2 is now a one-dimensional 4x4 Fourier channel
+
+The LRSC displacement reduction can be pushed one step further.
+
+For
+
+    X=BR,
+    C=[D,X],
+    rank C<=4,
+
+the old formula
+
+    tr(X^2)
+      = sum_i X_ii^2
+        - sum_{i!=j} C_ij C_ji/(i-j)^2
+
+contained an apparent two-dimensional squared-Cauchy transform.
+
+Let
+
+    S2(t)=pi^2/3-pi t+t^2/2,
+    0<=t<=2*pi,
+
+so that
+
+    S2(t)=sum_{r!=0} e^(irt)/r^2.
+
+If C=G H^T with r<=4 and
+
+    A(t)=H^T e^(itD) G,
+
+then exactly
+
+    boxed:
+    sum_{i!=j} C_ij C_ji/(i-j)^2
+      =
+      (1/(2*pi)) int_0^(2*pi)
+        S2(t) tr_r[A(t)A(-t)] dt.
+
+Thus D2 no longer needs an O(d^2) transition object.  It needs a scalar
+diagonal term plus a one-dimensional integral of matrices of size at most
+4 by 4.
+
+This is the strongest LRSC-style state compression obtained so far.
+
+For the F9 record gate the next arithmetic object is therefore the
+prime/subset average of a handful of 4 by 4 Fourier transforms at four fixed
+nonreal poles, with
+
+    |S2(t)|<=pi^2/3
+
+available for one-sided domination.
+
+See:
+
+    notes/WP84_D2_FOUR_BY_FOUR_FOURIER_CHANNEL.md
+    src/wp84_d2_fourier_channel_gate.py
