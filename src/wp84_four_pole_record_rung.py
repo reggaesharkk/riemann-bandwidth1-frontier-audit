@@ -54,6 +54,25 @@ def poles(delta):
         out += [(21+root)/16,(21-root)/16]
     return out
 
+def residues(delta):
+    zs=poles(delta)
+    out=[]
+    for z in zs:
+        pv=1-7*z/4+2*z*z/3
+        dp=-7/4+4*z/3
+        out.append(-delta*(delta+1)/(2*pv*dp))
+    return zs,out
+
+def common_pole_error_budget(delta, record=0.673500037):
+    # To prove simple coefficient > record, it is enough that
+    # consumer expectation < (1-record)/2.
+    c=float(cap(delta))
+    slack=(1-record)/2-c
+    if slack<=0:
+        return -1.0
+    _,rs=residues(delta)
+    return slack/sum(abs(r) for r in rs)
+
 def main():
     p2sq=mul(P,P)
     w=moment(p2sq)
@@ -108,6 +127,16 @@ def main():
     print("ladder:")
     for dd in (5,6,7,8,9,10,20,30):
         print(dd,simple(dd),float(simple(dd)))
+
+    # Conditioning reconnaissance against the audited 67.3500037 level.
+    budgets={dd:common_pole_error_budget(dd) for dd in range(5,201)}
+    best=max(budgets,key=budgets.get)
+    assert best==9,(best,budgets[best])
+    _,r9=residues(9)
+    print()
+    print("integer-delta conditioning optimum on [5,200] =",best)
+    print("sum |residue_j| at delta=9 =",sum(abs(r) for r in r9))
+    print("common per-pole error budget =",budgets[9])
     print("RESULT: WP84_FOUR_POLE_RECORD_RUNG_PASS")
 
 if __name__=="__main__":
