@@ -246,3 +246,143 @@ See:
     notes/WP84_BOUNDED_CHRISTOFFEL_LADDER.md
     src/wp84_bounded_christoffel_ladder.py
     src/wp84_bounded_christoffel_family_pole_gate.py
+
+
+## 11. Jensen-sharpened bounded frontier
+
+The exact bounded optimum associated with the degree-6 Christoffel square is
+
+    F_star(x)=min(P(x)^2,1).
+
+It satisfies
+
+    0<=F_star<=1,
+    F_star(x)=1 for x<=0,
+
+and concavity of h(t)=min(t,1) gives
+
+    integral F_star dnu
+      <= min(integral P^2 dnu,1)
+      = 1415/13891.
+
+Thus the full 79.62709668... coefficient already has a bounded continuous
+consumer.
+
+For the analytic rational family
+
+    F_delta=(delta+1)P^2/(P^2+delta),
+
+the sharper universal model cap is
+
+    h_delta(w0)
+      = (delta+1)w0/(delta+w0),
+
+not merely (1+1/delta)w0.
+
+The rational family remains the preferred fixed-resolvent interface because
+each member has only six simple nonreal poles.
+
+See:
+
+    notes/WP84_BOUNDED_CHRISTOFFEL_JENSEN.md
+    src/wp84_bounded_christoffel_jensen.py
+
+## 12. Connected-memory provenance
+
+The permutation state at subset size k is a uniform k-subset of the fixed
+block family.
+
+For every fixed block word using r distinct labels,
+
+    E inclusion weight
+      = (k)_r/(M)_r.
+
+The one-step generator weight is exactly
+
+    Delta[(k)_r/(M)_r]
+      = r (k)_(r-1)/(M)_r.
+
+At order four this leaves the r=3 and r=4 distinct-label sectors alive in the
+exact evolving first/second-order state.
+
+Therefore
+
+    sum_j ||B_j||^3=o(1)
+
+does not force a Wick/Gaussian fourth moment.  The connected model value
+Phi4=-1/60 can be carried by state memory inside the exact D1/D2 evolution.
+
+The still-open theorem is to transport the retained arithmetic symmetric word
+sums to that connected model value.
+
+See:
+
+    notes/WP84_FINITE_POPULATION_STATE_LAW.md
+    src/wp84_finite_population_word_weights.py
+
+## 13. Bounded >80 extension
+
+The order-4 Christoffel minimizer Q for the one-sided k=8 surrogate obeys,
+throughout the feasible parametrization
+
+    L=L0+t,
+    U=F8(L)+eta,
+    t,eta>=0,
+
+the exact sign pattern
+
+    q1<=0,
+    q2>=0,
+    q3<=0,
+    q4>=0.
+
+Hence
+
+    Q(x)>=1 for x<=0,
+
+so the one-sided k=8 certificate is support-free.
+
+If
+
+    m7_actual>=L,
+    m8_actual<=U<T80(L),
+
+then
+
+    integral Q^2 dnu_actual
+      <= lambda4(L,U)
+      < 1/10.
+
+Thus the conditional >80 consumer is valid on the whole real spectral line.
+
+Moreover for fixed delta define
+
+    F_{delta;L,U}
+      =(delta+1)Q^2/(Q^2+delta).
+
+This bounded consumer certifies >80 whenever
+
+    delta
+      > 9 lambda4/(1-10 lambda4).
+
+At the exact midpoint diagnostic
+
+    L=19.136,
+    U=(F8(L)+T80(L))/2,
+
+one has
+
+    lambda4=1415/14409
+
+and delta=50 already gives the exact bounded simple-zero ledger
+
+    115507/144373
+      = 80.00595679... percent.
+
+This is a consumer-side theorem only.  The new analytic debt is a
+rank-robust bounded transport of one-sided m7/m8 information.
+
+See:
+
+    notes/WP84_BOUNDED_K8_SUPPORT_FREE_80.md
+    src/wp84_bounded_k8_support_free_80_gate.py
