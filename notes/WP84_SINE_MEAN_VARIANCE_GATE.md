@@ -203,10 +203,10 @@ Therefore
       )^2
 
       =
-      26794489/640000000
+      267944161/6400000000
 
       =
-      0.0418663890625.
+      0.04186627515625.
 
 [The exact checker below is authoritative for the rational arithmetic.]
 
@@ -242,7 +242,7 @@ Numerically this is
 
     Var_tau(S_a)
       <
-      0.10752318....
+      0.1075232831....
 
 Thus the first two raw moments already pay for the entire mean part of the
 sine-square energy.
@@ -345,7 +345,7 @@ form.
 
 Prove
 
-    Var_tau(S_a)<0.10752318....
+    Var_tau(S_a)<0.1075232831....
 
 The mean is already bounded below by 0.7486 from mu1 and mu2.
 
@@ -373,7 +373,7 @@ Open:
 
 - the one-sided bounded variance estimate
 
-      Var_tau(S_a)<0.10752318....
+      Var_tau(S_a)<0.1075232831....
 
 No unconditional record theorem is claimed.
 
