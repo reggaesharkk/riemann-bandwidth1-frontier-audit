@@ -3571,3 +3571,37 @@ See:
     src/wp84_integer_rank6_cayley_square.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 45. New exact first-strike reductions
+
+Two new reductions supersede the idea that rank six is the only minimal state.
+
+First, the matched two-pole filter is an exact rational function of the single Cayley unitary U=(H+iI)(H-iI)^(-1). With A=(I-(5/13)U)^(-1), ||A||<=13/8 and
+
+    [D,U_{9/4}] = (144/169) A[D,U]A.
+
+Hence the matched positive defect factor K_match=L_1L_{9/4} satisfies rank[D,K_match]<=4. The rank-six obstruction is therefore only a polynomial-majorant obstruction, not a universal bounded-rational obstruction. See WP84_ONE_CAYLEY_RATIONAL_RANK4.md.
+
+Second, after the bounded O(1/R) full-to-band comparison, the matched defect admits the exact quartic majorant
+
+    P4(x)=(593/2000)x^4-(212/125)x^3+(1761/500)x^2-(3133/1000)x+1011/1000.
+
+Exact Sturm certification proves P4(x)>=g_match(x) for every real x. At the pinned target moments E_model P4=233/1600=0.145625.
+
+If fixed-band moments obey
+
+    mu1>=1-d1, mu2<=4/3+d2, mu3>=2-d3, mu4<=13/4+d4,
+
+then a sufficient record condition is
+
+    (593/2000)d4+(212/125)d3+(1761/500)d2+(3133/1000)d1
+      < E_rec-233/1600-C_match/R,
+
+with C_match=2.1728342265.... If d1=d2=d3=0, then R=256 only requires mu4(H_R)<3.28081736..., R=400 requires <3.29112275..., and R=512 requires <3.29513040....
+
+This gives a degree-four fallback aligned exactly with the existing balanced E2/Phi4/Evans machinery, while keeping Proposition-R quarantined because the polynomial is used only after bounded full-to-band reduction.
+
+See WP84_MATCHED_QUARTIC_MAJORANT.md.
+
+No unconditional record theorem is claimed yet.
