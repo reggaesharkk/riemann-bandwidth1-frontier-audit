@@ -240,45 +240,66 @@ Thus a sufficient direct theorem inequality is
 where E_target is the fixed-band ceiling after any chosen full-to-band
 charge.
 
-## 4. Fixed-band ceilings under the surviving 72 constant
+## 4. Scope of the rank-four identity
 
-The external hostile audit proposed replacing 72 by 96, but the
-repo-level reconciliation shows the exact constant 72 is valid.
+The two-vector factorization uses the exact full sharp displacement law
 
-Therefore
+    [D,H]
+      =
+      (1/pi)
+      (1 alpha^T-alpha 1^T).
 
-    C_sine
-      ~=4.43651377028.
+It therefore applies to the **full sharp Loewner matrix H**.
 
-The absolute fixed-band target is
+A hard displacement truncation H_R does not preserve this rank-two
+commutator.  In general,
+
+    [D,H_R]
+
+has rank growing with R.
+
+Therefore the two-vector wedge must not be combined directly with the
+fixed-band ceiling
 
     E_rec-C_sine/R.
 
-Examples:
+There are two separate proof interfaces:
 
-    R=128:
-      E_target
-        ~=0.1285897176;
+### Full sharp route
 
-    R=192:
-      E_target
-        ~=0.1401431390;
+Use the exact rank-four wedge directly on H, with target
 
-    R=256:
-      boxed:
-      E_target
-        ~=0.1459198495;
+    boxed:
 
-    R=400:
-      boxed:
-      E_target
-        ~=0.1521586970.
+    tau(Q(H)^2)
+      <
+      E_rec
+      =
+      0.163249981456072....
 
-These are absolute energy ceilings, not residual margins.
+A sufficient deterministic inequality is
 
-## 5. New theorem debt exposed by the direct route
+    boxed:
 
-The direct route is now reduced to two positive quantities:
+    E_diag
+      +
+      2.38966875
+      d^(-1)||rho||_2^2
+
+      <
+      0.163249981456072....
+
+### Fixed-band route
+
+First compare the scalar bounded consumer on H and H_R by the O(1/R)
+resolvent theorem.  After that comparison, analyze Q(H_R) by finite-band
+locality / moment methods.
+
+Do not reuse the rank-four full-sharp factorization for H_R.
+
+## 5. Direct theorem debt
+
+For the full sharp route, the exact remaining positive quantities are
 
 1. diagonal resolvent energy
 
@@ -290,34 +311,22 @@ The direct route is now reduced to two positive quantities:
              1-2ta Re R_ii
            ]^2;
 
-2. row-energy delocalization
+2. the exact two-vector wedge energy E_off.
 
-       d^(-1)
-       ||rho||_2^2,
+The rho/K2 estimate is only a sufficient majorant:
 
-   where
+    E_off
+      <=
+      2.38966875
+      d^(-1)||rho||_2^2.
 
-       rho_i
-         =
-         |(R1)_i|^2
-         +
-         |(R alpha)_i|^2.
-
-A sufficient theorem at R=256 is
+The full-sharp theorem closes if
 
     boxed:
 
-    E_diag
-      +
-      2.38966875
-      d^(-1)||rho||_2^2
-
+    E_diag+E_off
       <
-      0.1459198495.
-
-This is stronger than the exact identity because of the determinant/K2
-majorants, but it is now a static one-sided target with no curvature
-integration.
+      0.163249981456072....
 
 ## 6. Ward identities available for the two vectors
 
