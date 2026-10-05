@@ -4413,11 +4413,7 @@ because there the only denominator is the one introduced by
 No unconditional record theorem is claimed.
 
 
-## 61. External hostile-audit reconciliation
-
-Two external audits disagreed on the differentiated repeated-pole constant.
-
-The full repo definitions resolve the issue.
+## 61. Repeated-pole and symmetry verification
 
 For the sharp real-symmetric Loewner state,
 
@@ -4463,15 +4459,12 @@ The decomposition is exactly
 
     72=2*24+3*8.
 
-Thus the proposed external repair 72->96 is not needed.
-
-The same audit also raised a transpose/adjoint concern. The actual subset
-sharp state and Gaussian bridge are real symmetric, so
+The subset sharp state and Gaussian bridge are real symmetric, so
 
     R(z)^T=R(z)
 
-at nonreal z. The analytic D2 primitive is bilinear, not a Hilbert--Schmidt
-energy. Moreover the factor
+at nonreal z. The analytic D2 primitive is bilinear rather than a
+Hilbert--Schmidt energy. Moreover
 
     (1/2) d/dz tau(BRBR)
       =
@@ -4481,7 +4474,7 @@ follows from trace cyclicity alone.
 
 See:
 
-    notes/WP84_EXTERNAL_HOSTILE_AUDIT_RECONCILIATION.md
+    notes/WP84_MPRIME_TRANSPOSE_VERIFICATION.md
 
 ## 62. Direct positive energy reduces to a two-vector wedge
 
