@@ -4490,14 +4490,14 @@ let
     u=R1,
     v=R alpha.
 
-Since
+For the **full sharp Loewner matrix**,
 
     [D,H]
       =
       (1/pi)
       (1 alpha^T-alpha 1^T),
 
-the exact commutator is
+so the exact commutator is
 
     boxed:
 
@@ -4540,11 +4540,11 @@ Then
     |u_i v_j-v_i u_j|^2
       <=rho_i rho_j,
 
-and the K2 row-sum/operator bound
+and
 
     ||K2||op<=pi^2/3
 
-gives the deterministic majorant
+gives
 
     boxed:
 
@@ -4561,7 +4561,7 @@ At the preferred rational point,
       =
       2.38966875.
 
-So a sufficient static direct theorem at R=256 is
+Thus a sufficient **full-sharp** theorem is
 
     boxed:
 
@@ -4571,17 +4571,40 @@ So a sufficient static direct theorem at R=256 is
       d^(-1)||rho||_2^2
 
       <
-      0.1459198495....
+      0.163249981456072....
 
-This exposes the direct route's cleanest remaining deterministic debt:
-row-energy/delocalization control for only
+Important scope rule:
 
-    R1,
-    R alpha.
+    the hard band truncation H_R does not preserve
+    rank[D,H]<=2.
+
+Therefore the two-vector rank-four identity must not be combined directly
+with the fixed-band target E_rec-C_sine/R.
+
+The two proof interfaces are separate:
+
+1. full sharp H:
+       exact rank-four/two-vector wedge, no band charge;
+
+2. fixed-band H_R:
+       O(1/R) scalar consumer comparison followed by locality/moment
+       analysis, without claiming rank four for H_R.
+
+The canonical source-frame reduction further rewrites the full-sharp
+off-diagonal majorant as
+
+    E_off
+      <=
+      2.38966875 gamma kappa,
+
+where gamma is a 2x2 Ward determinant and kappa is the leverage-score IPR
+of the canonical rank-two source frame.
 
 See:
 
     notes/WP84_SINE_TWO_VECTOR_WEDGE.md
+    notes/WP84_SINE_WEDGE_CANONICAL_FRAME.md
     src/wp84_sine_two_vector_wedge_gate.py
+    src/wp84_sine_wedge_canonical_frame.py
 
 No unconditional record theorem is claimed yet.
