@@ -24,19 +24,24 @@ and let phi be the actual taper, with
 
 away from the two boundary ramps of width w.
 
-After the common carrier gauge, the positive-shift complex block is exactly
+For the positive-shift branch, retain the finite-compression scalar carrier
+
+    omega_y = exp(i T y).
+
+The actual and sharp physical blocks are
 
     A_y
-      = M_phi U_y M_phi,
+      = omega_y M_phi U_y M_phi,
+
+    S_y
+      = omega_y M_chi U_y M_chi,
 
 where
 
     (U_y f)(x)=f(x+y).
 
-The sharp block is
-
-    S_y
-      = M_chi U_y M_chi.
+The scalar carrier has unit modulus and must remain in the finite theorem
+operator; it is absorbed below into the middle translation sum.
 
 The negative-shift branch is the adjoint.
 
@@ -57,9 +62,11 @@ The exact block difference is
 
     boxed:
     A_y-S_y
-      = - M_r U_y M_chi
-        - M_chi U_y M_r
-        + M_r U_y M_r.
+      = omega_y [
+          - M_r U_y M_chi
+          - M_chi U_y M_r
+          + M_r U_y M_r
+        ].
 
 Every term contains the **same fixed boundary multiplier M_r**.
 
@@ -83,7 +90,7 @@ up to the already fixed sign convention.
 Define the full translation sum
 
     K_+
-      = sum_{n<=X} c_n U_{y_n},
+      = sum_{n<=X} c_n exp(i T y_n) U_{y_n},
     K_- = K_+^*.
 
 Then the **complete** positive-branch ramp error is
@@ -271,12 +278,19 @@ All taper-edge effects are quarantined by one fixed boundary subspace.
 This does **not** prove that the sharp intermediate resolvent is a
 multiplication operator.
 
-The active theorem debt moves cleanly to the sharp carrier-free operator
+The active theorem debt moves cleanly to the **carrier-bearing finite-band
+sharp operator**
 
     P_sharp
       = - sum_{n<=X}
           Lambda(n)/(a L sqrt(n))
-          (U_{s_n}^+ + U_{s_n}^-).
+          [
+            exp(iT log n) P_d U_{s_n}^+ P_d
+            + exp(-iT log n) P_d U_{s_n}^- P_d
+          ].
+
+The full-space carrier gauge does not preserve P_d and therefore is not a
+finite-matrix unitary equivalence.
 
 The remaining task is its bounded spectral / resolvent law, including the
 mixed-sign connected state memory required by the order-four calibration.
