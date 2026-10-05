@@ -207,3 +207,44 @@ See:
     notes/WP84_D2_FOUR_BY_FOUR_FOURIER_CHANNEL.md
     notes/WP84_FOUR_POLE_INEQUALITY_KILL_GATE.md
     notes/WP84_SHARP_LOEWNER_DIRICHLET_REPRESENTATION.md
+
+
+## Superseding sharpening — 2026-10-05
+
+The generic bound
+
+    rank[D,BR] <= 4
+
+is correct but not sharp for the actual Loewner generators shared by B and R.
+
+Using
+
+    [D,B]=(1/pi)(1 alpha^T-alpha 1^T),
+
+    [D,R]=(1/pi)(v u^T-u v^T),
+
+one gets exactly
+
+    [D,BR]
+      =(1/pi)[
+        1 w^T+(Bv-alpha)u^T-(Bu)v^T
+      ],
+
+with
+
+    u=R1,
+    v=R a,
+    w=R alpha.
+
+Therefore
+
+    boxed: rank[D,BR] <= 3.
+
+The D2 Fourier channel may consequently be taken to be at most 3 by 3.
+
+See the controlling note:
+
+    notes/WP84_BR_RANK3_SCALAR_D1.md
+
+Any occurrence of "4 by 4" in the earlier sections should now be read as a
+valid but non-sharp upper bound.
