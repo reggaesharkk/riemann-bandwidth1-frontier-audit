@@ -313,3 +313,131 @@ See:
     notes/WP84_R2_RESOLVENT_TAIL_O1_OVER_R.md
     notes/WP84_THREE_SIMPLE_POLE_RECORD_RUNG.md
     notes/WP84_RESOLVENT_KILL_GATE_2026_10_05.md
+
+
+## 9. Conditioning retune: A=82/25 is a better theorem choice
+
+The exact choice A=17/5 is essentially model-optimal for the fixed pole pair
+
+    a=1,
+    b=9/4,
+
+but the first theorem should optimize record margin against the explicit
+O(1/R) resolvent-tail constant, not the model value alone.
+
+Retune to
+
+    boxed:
+    A=82/25.
+
+Then
+
+    Q(x)
+      = x^2 -(82/25)x +9/4,
+
+and the same negative-half-line proof remains exact:
+
+    [y^2+(82/25)y+9/4]^2
+      -(y^2+1)(y^2+81/16)
+
+      =
+      y(
+        65600y^2+91959y+147600
+      )/10000
+
+      >=0.
+
+The exact partial fractions become
+
+    f_{2,*}(x)
+
+      =
+      (82000x+91959)/
+        [40625(x^2+1)]
+
+      + 9(328000x-827631)/
+        [40625(16x^2+81)].
+
+Equivalently the upper-half-plane residues are
+
+    c_1
+      =
+      328/325
+      -(91959/81250)i,
+
+    c_{9/4}
+      =
+      738/325
+      +(827631/325000)i.
+
+The exact pinned model value is
+
+    boxed:
+
+    q_{2,*}
+      =
+      7443419191454660716613888
+      /
+      8598328490971737344205625
+
+      =
+      0.8656821147587309....
+
+The model simple-zero ledger is
+
+    boxed:
+
+    2q_{2,*}-1
+      =
+      6288509891937584089022151
+      /
+      8598328490971737344205625
+
+      =
+      0.7313642295174617....
+
+The conservative positive-index record margin is
+
+    Delta_{2,*}
+      =
+      0.0289320962148030....
+
+The explicit simple-resolvent band constant drops to
+
+    boxed:
+    C_{2,*}
+      =
+      2.2079400595....
+
+Therefore
+
+    boxed:
+
+    Delta_{2,*}/C_{2,*}
+      =
+      0.01310366017....
+
+This is better than the A=17/5 ratio 0.01268646.
+
+A continuous three-parameter reconnaissance with the constraint
+min pole height >=1 places the optimum near
+
+    a=1,
+    b=2.26263,
+    A=3.29207,
+
+with ratio about
+
+    0.01310447.
+
+So the exact rational choice
+
+    a=1,
+    b=9/4,
+    A=82/25
+
+is essentially at the conditioned optimum while keeping the entire
+certificate rational and transparent.
+
+For the first theorem attempt, this conditioned version should replace the
+model-optimal A=17/5 member.
