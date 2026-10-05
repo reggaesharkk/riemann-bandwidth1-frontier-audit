@@ -2609,3 +2609,121 @@ See:
     src/wp84_r2_beta_quarantine_gate.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 42. The preferred r2 scale should now be conditioned against proof constants, not model value alone
+
+The raw model ledger is largest at a=1 among the simple scales tested, but
+the new one-point O(R^-1) displacement theorem has explicit pole-height
+dependence.
+
+For
+
+    r_{2,a}(x)
+      =
+      1-
+      [ (x-a)^2/(x^2+a^2) ]^2,
+
+the optimized Cauchy-circle band-tail constant is
+
+    C_band(a)
+      =
+      12/pi^2
+      [
+        sqrt(5)+256/27
+      ]
+      a^(-2)
+
+      ~=14.24683177/a^2.
+
+Thus proof conditioning depends naturally on
+
+    Delta_a a^2,
+
+where Delta_a is the positive-index consumer margin over the audited record
+threshold.
+
+Exact model reduction at
+
+    a=6/5
+
+gives
+
+    q_{6/5}
+      =
+      113898001480425765678720
+      /
+      130234262317191955294681
+
+      =
+      0.8745624957203779...,
+
+with model simple-zero ledger
+
+    74.912499144...%
+
+and positive-index record margin
+
+    0.03781247717645....
+
+The quantity Delta_a a^2 is about 16.8% larger at a=6/5 than at a=1.
+
+A continuous reconnaissance maximum occurs near a=1.21038.
+
+Therefore:
+
+- keep a=1 as the maximal raw-margin rung;
+- use a=6/5 as the current better-conditioned theorem candidate;
+- do not freeze the scale permanently until the final local arithmetic error
+  is written with its exact a-dependence.
+
+See:
+
+    notes/WP84_R2_SCALE_CONDITIONING.md
+    src/wp84_r2_a6_5_conditioning.py
+
+## 43. The finite-local fallback has modern published correlation inputs
+
+The new fixed-band/local reduction should not be followed by inventing an
+arbitrary correlation theorem from scratch.
+
+Published short-interval results already cover substantial supercritical
+ranges.
+
+If the balanced product scale is
+
+    M=T^s,
+    s>1,
+
+then its additive near-collision window is
+
+    H=M/T
+      =M^((s-1)/s).
+
+Useful inputs:
+
+1. Evans' almost-prime correlation theorem reaches E2 correlations down to
+   polylogarithmic H under factor-size restrictions.  Hence every fixed
+   supercritical semiprime cell is eventually in its long-shift range after
+   the already-identified weight adaptation.
+
+2. Matomaki--Radziwill--Shao--Tao--Teravainen (Invent. Math. 244, 2026)
+   prove higher uniformity for Lambda and d_k in almost all short intervals.
+   Their one-average Hardy--Littlewood theorem for Lambda applies in the
+   range H>=X^(1/3+epsilon), while the d_k correlation theorem reaches
+   H>=X^epsilon.
+
+These do not automatically prove the exact WP84 weighted
+Lambda^{*m}-type correlations.  An explicit coefficient/Heath--Brown bridge
+is still required.
+
+But they materially narrow the finite-degree fallback:
+
+    source-match each fixed word first,
+    then prove only the unmatched transition sectors.
+
+See:
+
+    notes/WP84_LOCAL_ARITHMETIC_LITERATURE_INTERFACE.md
+
+No unconditional record theorem is claimed yet.
