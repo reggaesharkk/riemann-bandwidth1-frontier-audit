@@ -1651,3 +1651,207 @@ See:
     notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md
 
 No unconditional record theorem is claimed yet.
+
+
+## 32. Resonant D2 is now uniform over the growing Fourier section
+
+The fixed-r covariance formulas have been upgraded to a uniform theorem for
+the actual d~TL section.
+
+For the sharp partial translations U_s^+, U_s^-,
+
+    dU_s^+/ds
+      = i 2*pi U_s^+ D - e(s) 1^T,
+
+    dU_s^-/ds
+      = -i 2*pi D U_s^- - 1 e(s)^*.
+
+Therefore, for
+
+    g_R(s)=tau(R U_s^+ R U_s^-),
+
+the derivative collapses to one displacement-commutator term plus two
+rank-one endpoint terms:
+
+    g_R'(s)
+      =
+      i2*pi tau(
+        U_s^- R U_s^+ [D,R]
+      )
+      - boundary_1
+      - boundary_2.
+
+The Montgomery--Vaughan large sieve applied to the subset Dirichlet
+polynomial gives uniformly over every subset state
+
+    ||Im Q_S(tau_k)||_2/sqrt(d)=O(1),
+
+because retained prime-power frequencies have spacing
+delta^{-1}=O(NL)=o(d) after endpoint quarantine.
+
+Hence
+
+    d^{-1}||[D,R]||_1=O_eta(1),
+
+and both
+
+    ||g_R||_infinity,
+    Var(g_R)
+
+are uniformly O_eta(1).
+
+Abel summation against the square-prime measure therefore gives the
+resonant continuum substitution with O_eta(L^-1)+o(1) error uniformly in
+the state.
+
+Thus the old fixed-r/growing-d gap in D2-res is closed.
+
+See:
+
+    notes/WP84_RESONANT_D2_UNIFORM_BV_CLOSURE.md
+
+## 33. The carrier-2T D2 channel is o(1)
+
+The complementary same-sign covariance has frequencies
+
+    tau_i+tau_j ~ 2T,...,4T.
+
+A Vinogradov--Korobov prime-polynomial estimate (QJM 77 (2026), Lemma 2.6)
+gives on every sufficiently large dyadic prime block
+
+    |
+      sum_{p~P} p^(-1-it)
+    |
+      <<
+      P^(-sigma0)
+      + L^3/T,
+
+uniformly for the required |t|.
+
+Choose
+
+    log P0
+      =
+      K L^(2/3)(log L)^(4/3)
+
+with K sufficiently large.
+
+The normalized square-prime mass below P0 is o(1), while above P0 the
+zero-free-region term is an arbitrarily strong negative power of L.
+
+Restoring the log-square and degree-two slow weights costs only O(L^-1).
+
+Consequently every fast alpha/beta covariance entry satisfies
+
+    sup_{i,j}|C_fast(i,j)|=o(1).
+
+Since the D2 primitive is quadratic in alpha,beta and every contraction is
+against products of bounded resolvents and the uniformly bounded discrete
+Hilbert transform J, Hilbert--Schmidt Cauchy--Schwarz gives
+
+    boxed:
+    D2_fast=o(1)
+
+uniformly over the actual subset state.
+
+Therefore:
+
+    boxed:
+    all current-prime arithmetic in D2 is closed.
+
+The only surviving D2 main is the explicit resonant state functional.
+
+See:
+
+    notes/WP84_D2_FAST_CHANNEL_VK_CLOSURE.md
+
+## 34. Common-state Bernoulli generator
+
+D1 and D2 combine more cleanly before taking the continuum limit.
+
+Let H_t be the independent Bernoulli(t) subset state and R_t its resolvent.
+Replacing the leave-one-out state by the common Bernoulli state inside D1
+costs a second-order term; when combined with D2 it produces exactly the
+factor
+
+    1-2t.
+
+Uniformly at fixed nonreal z,
+
+    boxed:
+
+    d/dt E tau(R_t)
+
+      =
+      - E tau(
+          R_t P R_t
+        )
+
+      + (1-2t)
+        E tau(
+          R_t V_res(R_t) R_t
+        )
+
+      + o(1),
+
+where
+
+    P=sum_p G_p
+
+is the full deterministic sharp prime operator and V_res is now an explicit
+continuum variance channel.
+
+Equivalently for any fixed bounded rational consumer f,
+
+    d/dt E tau f(H_t)
+
+      =
+      E D[tau f(H_t)][P]
+
+      + (1-2t)/2
+        E sum_p
+          D^2[tau f(H_t)][G_p,G_p]
+
+      + o(1).
+
+The current-prime leave-one-out state is gone from both terms.
+
+See:
+
+    notes/WP84_BERNOULLI_COMMON_STATE_GENERATOR.md
+
+## 35. Frontier after the D2 closure
+
+The arithmetic frontier is now materially smaller.
+
+Closed:
+
+- cubic-and-higher one-block Lindeberg debt;
+- taper/ramp boundary quarantine;
+- proper-prime-power D2 debt;
+- current-prime exclusion in D2;
+- D2 current dependence beyond second covariance;
+- resonant prime-square continuum substitution;
+- carrier-2T fast D2 covariance;
+- D1/D2 large-matrix algebra down to displacement/small channels.
+
+Still open:
+
+1. the deterministic first-order drift
+       E tau(R_t P R_t)
+   for the full scalar-Loewner prime operator P;
+
+2. the Bernoulli-state average/evolution of the explicit resonant D2
+   functional coupled to that drift;
+
+3. insertion of the resulting four-pole bound into the
+       tau F9 < 0.1632499815
+   record inequality.
+
+So the kill gate has moved from
+"prove a nonlinear prime-side resolvent law"
+to
+"close one explicit Bernoulli Loewner-resolvent flow with known second-order
+generator."
+
+No unconditional record theorem is claimed yet.
