@@ -1171,3 +1171,185 @@ See:
 
     notes/WP84_D1_D2_SMALL_CHANNEL_CLOSURE.md
     src/wp84_cross_displacement_fourier_gate.py
+
+
+## 26. Exact Bernoulliization removes fixed-cardinality subset combinatorics
+
+The permutation average has an exact beta-integral representation.
+
+For any current-base functional F(S,p),
+
+    E_pi sum_k F(S_{k-1},p_k)
+
+equals
+
+    boxed:
+    sum_p int_0^1
+      E_{xi_q~Bernoulli(t), q!=p}
+        F(S_t^(p),p) dt.
+
+Thus the subset state is now encoded by the independent-mask scalar field
+
+    Q_{t,-p}(tau)
+      = sum_{q!=p} xi_q(t) Q_q(tau).
+
+No approximation is involved, and the current base p remains excluded.
+
+See:
+
+    notes/WP84_BERNOULLI_PERMUTATION_BRIDGE.md
+    src/wp84_bernoulli_permutation_bridge.py
+
+## 27. BR displacement rank sharpens from four to three
+
+For state scalar field a=Im Q_S and current field alpha=Im Q_B, put
+
+    u=R1,
+    v=Ra,
+    w=R alpha.
+
+Then exactly
+
+    [D,BR]
+      =(1/pi)[
+        1 w^T
+        +(Bv-alpha)u^T
+        -(Bu)v^T
+      ].
+
+Hence
+
+    boxed:
+    rank[D,BR] <= 3.
+
+Moreover with
+
+    L_alpha=M_alpha K2-K2 M_alpha,
+    (K2 f)_i=sum_{j!=i}f_j/(i-j)^2,
+
+the D1 primitive is
+
+    boxed:
+    tr(BR)
+      = sum_i beta_i R_ii
+        +(2/pi^2) u^T L_alpha v,
+
+and
+
+    (BR)_ii
+      = beta_i R_ii
+        +pi^(-2)[
+          u_i(L_alpha v)_i
+          -v_i(L_alpha u)_i
+        ].
+
+So D1 is scalar and D2 needs at most a 3 by 3 Fourier channel.
+
+See:
+
+    notes/WP84_BR_RANK3_SCALAR_D1.md
+    src/wp84_br_rank3_scalar_d1_gate.py
+
+## 28. Current D2 block is ordinary-prime only up to o(1)
+
+For one prime base p,
+
+    Q_p(tau)
+      = -(log p)/(aL)
+          z_p(1-z_p^M)/(1-z_p),
+
+    z_p=p^(-1/2)e^(i tau log p).
+
+Thus grouped current blocks are exact finite geometric series.
+
+Writing
+
+    G_p=B_p+H_p
+
+with B_p the ordinary-prime block and H_p the proper-power tail,
+
+    sum_p
+      ||G_p A G_p-B_p A B_p||
+      =O(||A||/L^2).
+
+Therefore the accumulated current D2/variance slot may use ordinary primes
+only, with o(1) total error at fixed nonreal poles.
+
+D1 does not admit this deletion by the same absolute argument and retains the
+exact grouped Q_p.
+
+See:
+
+    notes/WP84_PRIME_BASE_GEOMETRIC_Q.md
+    src/wp84_prime_base_geometric_q_gate.py
+
+## 29. Exact Gaussian quadrature bridge removes same-sign variance by design
+
+There is now an alternative to the permutation path.
+
+For the ordinary-prime positive branch A_p define the two Hermitian
+quadratures
+
+    C_p=A_p+A_p^*,
+    S_p=i(A_p-A_p^*).
+
+Then exactly
+
+    (1/2)(C_p X C_p+S_p X S_p)
+      =A_p X A_p^*+A_p^* X A_p.
+
+Hence an artificial Gaussian bridge with noise
+
+    W=(1/sqrt2)sum_p(g_pc C_p+g_ps S_p)
+
+has a **mixed-sign-only** covariance map.
+
+Put
+
+    H_t=S+tP_full+sqrt(t(1-t))W.
+
+The endpoints are exactly S and S+P_full.
+
+Gaussian integration by parts gives the exact identity
+
+    boxed:
+    m_{S+P_full}(z)-m_S(z)
+
+      =int_0^1 [
+          -E tau(R_t P_full R_t)
+          +(1-2t)
+            E tau(R_t V_mix(R_t) R_t)
+        ] dt.
+
+There is no Taylor remainder.
+
+The bridge remains inside the same scalar-Loewner/displacement-rank-two class
+sample by sample, but the old same-sign p^(+/-2iT) variance channel is absent
+from this representation.
+
+This does not solve the deterministic drift.  It removes one previously hard
+variance object without changing the endpoint matrix.
+
+See:
+
+    notes/WP84_GAUSSIAN_QUADRATURE_BRIDGE.md
+    src/wp84_gaussian_quadrature_bridge_gate.py
+
+## 30. Active choice of attack
+
+Two exact representations now coexist:
+
+A. **Bernoulli/current-exclusion path**
+   - preserves the p-adic valuation firewall in D1;
+   - current D2 reduces to ordinary primes;
+   - no fixed-cardinality subset combinatorics.
+
+B. **Gaussian quadrature bridge**
+   - removes same-sign variance completely;
+   - replaces subset combinatorics by a Gaussian scalar Dirichlet field;
+   - leaves the deterministic full-prime drift as the central hard term.
+
+The next kill test should attack the drift in both representations and keep
+whichever gives the smaller source-closed bound at the four F9 poles.
+
+No unconditional 69.6049% theorem is claimed yet.
