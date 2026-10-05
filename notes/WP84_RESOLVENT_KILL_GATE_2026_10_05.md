@@ -3098,3 +3098,108 @@ See:
     src/wp84_two_pole_cayley_reduction_gate.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 49. Two-pole first strike is a positive rank-four displacement energy
+
+For the conditioned two-pole minorant define
+
+    h(x)
+      =
+      [
+        x^2-(82/25)x+9/4
+      ]
+      /
+      [
+        (x-i)(x-(9/4)i)
+      ].
+
+For real x,
+
+    |h(x)|^2
+      =
+      1-f_{2,*}(x).
+
+Hence for the sharp real-symmetric matrix H,
+
+    K=h(H)
+
+satisfies exactly
+
+    boxed:
+    tau f_{2,*}(H)
+      =
+      1-tau(K^*K).
+
+The record crossing is therefore equivalent to
+
+    boxed:
+    limsup tau(K_T^*K_T)
+      <
+      0.163249981456072....
+
+The pinned model energy is
+
+    0.1343178852412691...,
+
+leaving margin
+
+    0.0289320962148030....
+
+Moreover
+
+    K
+      =
+      I
+      + d_1 R(i)
+      + d_b R(9i/4),
+
+with
+
+    d_1
+      =
+      328/125+i,
+
+    d_b
+      =
+      -738/125+(9/4)i.
+
+Because each sharp Loewner resolvent has displacement rank at most two,
+
+    C_K=[D,K]
+
+has
+
+    rank C_K<=4.
+
+Therefore
+
+    boxed:
+
+    tau(K^*K)
+
+      =
+      d^(-1)
+      sum_i |K_ii|^2
+
+      +
+      d^(-1)
+      sum_{i!=j}
+        |(C_K)_ij|^2/(i-j)^2.
+
+Both terms are nonnegative.
+
+The off-diagonal energy has a one-dimensional S2 Fourier representation
+whose internal matrix size is at most 4x4.
+
+So the first theorem has now been reduced to one positive diagonal energy
+plus one positive rank-four squared-Cauchy energy.
+
+See:
+
+    notes/WP84_TWO_POLE_POSITIVE_DISPLACEMENT_ENERGY.md
+    src/wp84_two_pole_positive_energy_gate.py
+
+This is currently the cleanest one-sided theorem interface.
+
+No unconditional record theorem is claimed yet.
