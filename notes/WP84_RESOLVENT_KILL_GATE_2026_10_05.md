@@ -50,16 +50,17 @@ Also, the missing fourth-order 1/60 is not assigned a priori to the V-sum branch
 
 The clean surviving target is now a **positive-limit resolvent theorem**:
 
-Prove that the empirical spectral measures nu_T have Stieltjes transforms converging locally uniformly in C_+ to a probability law nu_* such that
+Prove that the empirical spectral measures nu_T have Stieltjes transforms converging locally uniformly in C_+ to a probability law nu_* whose first six model moments are the pinned values.
 
-1. nu_* is supported on [0,infinity);
-2. nu_* has the pinned first six model moments.
+No support restriction is required.  The exact degree-6 square polynomial
 
-Then
+    g(x)=P(x)^2,
 
-    nu_*({0}) <= 1415/13891
+with P the Christoffel cubic, satisfies g(x)>=1 for every x<=0 and
 
-by the degree-3 Christoffel atom bound, and therefore
+    int g dnu_* = 1415/13891.
+
+Therefore
 
     nu_*((0,infinity)) >= 12476/13891.
 
@@ -68,7 +69,7 @@ Weak convergence and Portmanteau then give the asymptotic positive-index bound, 
     simple proportion >= 11061/13891
       = 0.7962709668... > 0.79.
 
-The support condition is a genuine theorem obligation. The finite matrices may be indefinite; positivity of the limit may not be assumed from the moment sequence.
+Support positivity is NOT a theorem obligation: the moment-only half-line certificate works for arbitrary positive Borel measures on R.  The genuine obligation is to identify the limiting law and its pinned moments without reverting to raw finite-T higher-moment estimates.
 
 ## Active analytic technologies
 
