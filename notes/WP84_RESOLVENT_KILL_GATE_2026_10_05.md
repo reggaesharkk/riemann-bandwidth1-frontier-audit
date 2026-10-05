@@ -1855,3 +1855,84 @@ to
 generator."
 
 No unconditional record theorem is claimed yet.
+
+
+## 36. The full first-order drift is also a scalar Loewner statistic
+
+The common-state drift
+
+    tau(R_t P R_t)
+
+contains the full deterministic prime operator P, but P has the same exact
+scalar Loewner representation as every subset block.
+
+Let
+
+    alpha_*=Im Q_*,
+
+    beta_*
+      =2 Re Q_* - 2(Im Q_*)'/L,
+
+for the full retained scalar prime polynomial Q_*.
+
+For the Bernoulli state put
+
+    a_t=Im Q_t,
+    r_t=diag R_t,
+    u_t=R_t 1,
+    v_t=R_t a_t.
+
+Then
+
+    tau(P R_t)
+
+      =
+      d^(-1)
+      [
+        beta_*^T r_t
+        + (2/pi^2)
+          u_t^T L_{alpha_*} v_t
+      ],
+
+and therefore
+
+    boxed:
+
+    tau(R_t P R_t)
+
+      =
+      d/dz
+      {
+        d^(-1)
+        [
+          beta_*^T r_t
+          + (2/pi^2)
+            u_t^T L_{alpha_*} v_t
+        ]
+      }.
+
+Thus the final D1 drift is not a generic d by d matrix operation.
+
+Introducing
+
+    m(t,theta,z)
+      =
+      E tau(
+        H_t+theta P-zI
+      )^(-1),
+
+the common-state equation has the characteristic form
+
+    partial_t m
+      =
+      partial_theta m
+      + (1-2t)
+        E D2_res_state
+      + o(1).
+
+The remaining theorem is now a limiting-state theorem for a finite list of
+Loewner/displacement generator statistics at four fixed poles.
+
+See:
+
+    notes/WP84_FULL_DRIFT_SCALAR_LOEWNER.md
