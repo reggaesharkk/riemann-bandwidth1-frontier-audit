@@ -909,3 +909,86 @@ See:
     notes/WP84_SIGN_BALANCE_NEAR_RESONANCE_GATE.md
 
 No unconditional >79 theorem is claimed.
+
+
+## 21. Connected Phi4 is purely supercritical product mass
+
+The first balanced 2-vs-2 obstruction can now be localized exactly.
+
+For a closed four-step vector define
+
+    s=(|v0|+|v1|+|v2|+|v3|)/2.
+
+This is the normalized balanced product logarithm:
+
+    s=log A/L=log B/L.
+
+An exact 32-chamber rational audit proves that the untruncated 26-term
+connected b=4 kernel vanishes identically.
+
+Every ordered-partition path has spread at most s.  Therefore when s<=1 no
+positive-part cutoff activates, and the **actual** connected kernel vanishes
+pointwise.
+
+Consequently
+
+    boxed:
+    Phi4|_{s<=1}=0,
+    Phi4|_{s>1}=-1/60.
+
+Moreover the turn-on is quantitatively bounded by
+
+    |C4(v)| <= 26 (s-1)_+.
+
+This identifies the connected correction as a purely supercritical
+product-length phenomenon, exactly beyond the k*lambda=2 wall.
+
+See:
+
+    notes/WP84_PHI4_SUPERCRITICAL_SUPPORT_THEOREM.md
+    src/wp84_phi4_untruncated_cancellation.py
+
+## 22. Published almost-prime correlation route for the supercritical sector
+
+The balanced product kernel collapses exactly to a Dirichlet polynomial in
+the product index m with coefficients given by a weighted two-almost-prime
+convolution.
+
+On a product block M<m<=2M the finite-compression near-resonance window is
+
+    |h| ~< M/T.
+
+Thus the connected supercritical sector is a weighted average of additive
+correlations of Lambda*Lambda.
+
+This is the same dispersion object isolated independently in WP70.
+
+A published unconditional average-correlation theorem for E2 numbers
+(N. Evans, 2023) treats weighted products of two primes over shift ranges
+
+    log^(19+eps) M <= H <= M log^(-A) M
+
+and its proof supplies an L2-in-h error estimate, which is the correct norm
+for our bounded smooth Dirichlet kernel.
+
+For every fixed s>1,
+
+    M=T^(s+o(1)),
+    H=M/T=T^(s-1+o(1)),
+
+so the supercritical scale eventually lies well inside that theorem's
+long-shift range.
+
+The remaining bridge debt is now only:
+
+1. adapt the E2 weight to the exact Lambda*Lambda / taper-cell coefficients;
+2. sum factor slices with the finite-population weights;
+3. control the shrinking threshold layer immediately above s=1, where
+   |C4|<=26(s-1).
+
+See:
+
+    notes/WP84_BALANCED_PRODUCT_CORRELATION_BRIDGE.md
+    src/wp84_balanced_product_kernel_gate.py
+
+No unconditional >79 theorem is claimed.
