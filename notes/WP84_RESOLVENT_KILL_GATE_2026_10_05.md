@@ -1115,3 +1115,59 @@ See:
 
     notes/WP84_D2_FOUR_BY_FOUR_FOURIER_CHANNEL.md
     src/wp84_d2_fourier_channel_gate.py
+
+
+## 25. Both D1 and D2 primitives are now small Fourier channels
+
+The rank-four D2 reduction extends to a cross-displacement identity.
+
+For arbitrary A,B,
+
+    tr(AB)
+      = sum_i A_ii B_ii
+        - sum_{i!=j}
+            [D,A]_ij [D,B]_ji/(i-j)^2.
+
+Using the same periodic Bernoulli kernel S2, the cross term is one
+one-dimensional Fourier integral.
+
+Since
+
+    rank[D,B_current] <= 2,
+    rank[D,R] <= 2,
+
+the primitive
+
+    tau(BR)
+
+whose z-derivative is D1 reduces to a diagonal pairing plus a 2 by 2 Fourier
+channel.
+
+Likewise
+
+    rank[D,BR] <= 4,
+
+so the primitive
+
+    tau((BR)^2)
+
+whose z-derivative gives D2 reduces to a diagonal-square term plus a 4 by 4
+Fourier channel.
+
+At the four F9 poles, ordinary Cauchy differentiation on fixed small circles
+controls the z-derivatives without reintroducing a large matrix state.
+
+The surviving theorem state is therefore:
+
+    four fixed spectral poles
+      x one scalar Fourier variable t
+      x matrices of size at most 4 by 4
+      + diagonal scalar statistics.
+
+This is now the preferred analytic representation for the
+69.6048632... model rung.
+
+See:
+
+    notes/WP84_D1_D2_SMALL_CHANNEL_CLOSURE.md
+    src/wp84_cross_displacement_fourier_gate.py
