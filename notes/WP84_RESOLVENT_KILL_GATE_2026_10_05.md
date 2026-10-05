@@ -4337,3 +4337,77 @@ See:
     src/wp84_sine_square_heat_coefficient_map.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 60. Heat-curvature low-rank Fourier kernel correction
+
+The exact scalar heat-curvature formulas
+
+    Xi_z,
+    Xi_zz
+
+and the definitions of
+
+    T12,
+    T22,
+    T13
+
+remain correct.
+
+However, when a T_ab term is represented through **both** displacement
+commutators
+
+    [D,R^a],
+    [D,R^b],
+
+the Fourier kernel is
+
+    boxed:
+
+    S4(t)
+      =
+      sum_{r!=0} e^(irt)/r^4
+
+      =
+      pi^4/45
+      -pi^2 t^2/6
+      +pi t^3/6
+      -t^4/24
+
+on 0<=t<=2pi,
+
+not S2.
+
+Reason:
+
+    [D,R^a]_ij[D,R^b]_ij
+      =
+      (i-j)^2
+      (R^a)_ij(R^b)_ij,
+
+while T_ab already contains an additional 1/(i-j)^2.
+
+Thus the low-rank representation needs 1/(i-j)^4.
+
+The channel dimensions are unchanged:
+
+    T12: 2x4
+    T22: 4x4
+    T13: 2x6.
+
+The identity
+
+    partial_z T12=T22+2T13
+
+is unchanged.
+
+This correction is now exact-checked by
+
+    src/wp84_heat_s4_kernel_gate.py.
+
+The direct positive sine-square displacement energy itself still uses S2,
+because there the only denominator is the one introduced by
+
+    Q_ij=[D,Q]_ij/(i-j).
+
+No unconditional record theorem is claimed.
