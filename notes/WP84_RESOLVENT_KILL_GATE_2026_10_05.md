@@ -3639,3 +3639,33 @@ Combining with the matched-filter full-to-band charge gives one scalar theorem t
 Thus the remaining first-strike fallback no longer needs separate mu1/mu2/mu3 estimates; it needs one one-sided fixed-band fourth-moment bound.
 
 See WP84_FIXED_BAND_LOWER_MOMENT_COLLAPSE.md.
+
+
+## 50. Correction: fixed matrix bandwidth does not close the raw fourth moment
+
+The fixed-band quartic route remains a conditional fallback, not the primary bounded theorem route.
+
+For H_R=M_beta+[M_alpha,J_R], the diagonal beta field is unchanged by matrix-displacement truncation.  Therefore
+
+    tau(P_R^4) >= d^(-1) sum_i beta_i^4,
+
+so the bandwidth-one balanced 2-vs-2 prime-correlation obstruction can survive entirely on the diagonal.
+
+What is genuinely closed is narrower:
+
+- exact quartic majorant after bounded full-to-band comparison;
+- exact centered scalar threshold W_R;
+- exact R=400 pair layer Pair_400<0.266329;
+- exact pointwise sign C4<=0 for closed connected cycles.
+
+At R=400 the theorem still needs to bound positive nonclosed / near-resonant leakage by roughly 0.02479.  This remains a real arithmetic theorem.
+
+The safe route priority is therefore restored to:
+
+1. matched rational rank-four bounded route;
+2. degree-3 / integer Cayley bounded route;
+3. fixed-band quartic as a one-sided fourth-moment fallback.
+
+The Evans almost-prime theorem is relevant, but its almost-all-shift L2 corollary is not automatically the right norm for the WP84 trace multiplier.  The exact weighted circle-method transfer, preferably using the local minor-arc estimate before the lossy h-sum, remains open.
+
+See WP84_FIXED_BAND_M4_EVIDENCE_BOUNDARY.md and the corrected WP84_BALANCED_PRODUCT_CORRELATION_BRIDGE.md.
