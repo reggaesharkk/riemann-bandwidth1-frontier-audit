@@ -2245,3 +2245,205 @@ See:
     notes/WP84_R2_A1_PREFERRED_RECORD_RUNG.md
 
 No unconditional record theorem is claimed.
+
+
+## 37. Preferred first rung is now r2 at a=1
+
+The scaled r2 reconnaissance has been superseded by the simpler member
+
+    r2(x)
+      = 1 - [ (x-1)^2/(x^2+1) ]^2.
+
+Its exact model positive-index consumer value is
+
+    0.8833827124943086...,
+
+giving model simple-zero ledger
+
+    76.67654249886171...%.
+
+Against the audited 67.3500037 comparison, the positive-index threshold is
+
+    0.8367500185439279...,
+
+so the model consumer margin is
+
+    0.0466326939503807....
+
+The theorem consumes only
+
+    z=i
+
+and one z derivative:
+
+    tau r2(H)
+      =
+      2 Re[
+        (2+i)m(i)-m'(i)
+      ].
+
+Equivalently, with the Cayley defect
+
+    B
+      =
+      I-Im[(H+iI)(H-iI)^(-1)],
+
+one has exactly
+
+    tau r2(H)
+      =
+      1-tau(B^2).
+
+Thus the first record crossing is the positive energy estimate
+
+    limsup tau(B_T^2)
+      <
+      0.163249981456072....
+
+See:
+
+    notes/WP84_R2_A1_PREFERRED_RECORD_RUNG.md
+    notes/WP84_R2_CAYLEY_DEFECT_GATE.md
+
+## 38. Long displacement tails can be removed before any word expansion
+
+For the sharp Loewner form
+
+    H
+      =
+      M_beta+[M_alpha,J],
+
+let H^(R) keep only displacements |i-j|<=R.
+
+Then
+
+    Delta_R
+      =
+      H-H^(R)
+
+satisfies exactly
+
+    tau(Delta_R^2)
+      <=
+      8/(pi^2 R)
+      [||alpha||_2^2/d].
+
+The retained full prime field has
+
+    ||alpha||_2^2/d
+      =
+      1/4+o(1)
+
+after the already-closed degree-two nonresonance and high-frequency gates.
+
+Therefore
+
+    limsup_T tau(Delta_R^2)
+      <=
+      2/(pi^2 R).
+
+Since r2 is globally Lipschitz, Hoffman--Wielandt gives
+
+    lim_{R->infinity}
+    limsup_{T->infinity}
+    |
+      tau r2(H_T)
+      -
+      tau r2(H_T^(R))
+    |
+      =0.
+
+Thus the preferred bounded theorem does not require controlling arbitrarily
+long Loewner displacements.
+
+Large alpha sites can then be clipped by an o(d)-rank perturbation because
+
+    |{i:|alpha_i|>M}|/d
+      =
+      O(M^-2).
+
+This reduction is performed at the bounded-consumer level and does not
+revive the Proposition-R raw-moment problem.
+
+See:
+
+    notes/WP84_R2_DISPLACEMENT_TAIL_TRUNCATION.md
+    src/wp84_r2_displacement_tail_gate.py
+
+## 39. After fixed-band truncation the one-point resolvent is exponentially local
+
+With fixed displacement bandwidth R and clipped |alpha_i|<=M, the
+off-diagonal hopping has row sum
+
+    J0(R,M)
+      <=
+      (4M/pi)
+      sum_{r=1}^R 1/r.
+
+Choose
+
+    theta
+      =
+      R^(-1)
+      log(
+        1+1/[2J0(R,M)]
+      ).
+
+Exponential conjugation gives the finite-section Combes--Thomas estimate
+
+    boxed:
+    |(H-iI)^(-1)_{jk}|
+      <=
+      2 exp(-theta|j-k|).
+
+No bound on the diagonal beta field is needed.
+
+Consequently both
+
+    R_{jj}(i)
+
+and
+
+    (R(i)^2)_{jj}
+
+are approximable from a finite window of radius S with error
+
+    O_{R,M}(exp(-c_{R,M}S)).
+
+Hence, after arbitrarily small band-tail and rank-quarantine errors,
+
+    tau r2(H_T)
+
+is the empirical average of one bounded local observable depending on only
+
+    alpha_{j-S},...,alpha_{j+S},
+    beta_{j-S},...,beta_{j+S}
+
+for fixed finite R,M,S.
+
+The remaining theorem is therefore a **finite local arithmetic law**, not a
+global long-range matrix-Dyson law.
+
+The recommended limit order is
+
+    T -> infinity at fixed R,M,S,
+    then S -> infinity,
+    M -> infinity,
+    R -> infinity.
+
+At fixed R,M,S one may either:
+
+1. prove the finite local joint law directly, preserving the known
+   near-product connected corrections; or
+
+2. approximate the bounded local observable by a fixed finite polynomial and
+   invoke finitely many translation-word / almost-prime correlation gates.
+
+This is now the preferred first-strike architecture.
+
+See:
+
+    notes/WP84_R2_FINITE_BAND_LOCALITY.md
+    src/wp84_r2_finite_band_locality_gate.py
+
+No unconditional record theorem is claimed yet.
