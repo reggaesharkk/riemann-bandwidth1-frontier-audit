@@ -325,3 +325,36 @@ See:
 
     notes/WP84_DIRECT_MPRIME_TAIL_O1_OVER_R.md
     src/wp84_direct_mprime_tail_o1_over_r_gate.py
+
+
+## 15. Scope of the rank-four statement
+
+The exact rank-four factorization
+
+    [D,Q]
+      =
+      ta(
+        R_+[D,H]R_+
+        +R_-[D,H]R_-
+      )
+
+uses the full sharp identity
+
+    rank[D,H]<=2.
+
+A hard displacement truncation H_R does not preserve that rank-two
+commutator. Therefore:
+
+- rank[D,Q(H)]<=4 is a full-sharp statement;
+- after replacing H by H_R, the O(1/R) scalar comparison remains valid, but
+  the rank-four generator must not be reused for Q(H_R).
+
+Keep the two routes distinct:
+
+1. full sharp direct energy:
+       exploit the exact rank-four/two-vector wedge;
+
+2. fixed-band fallback:
+       pay C_sine/R and use finite-band locality or moment bounds.
+
+This scope separation is load-bearing.
