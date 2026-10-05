@@ -175,12 +175,12 @@ For r2,
       =
       -4 (x-1)^3 (x+1)/(x^2+1)^3.
 
-Its exact global Lipschitz constant is below 5
-(the maximum is approximately 4.91834), so the elementary bound
+The already-closed scaled-r2 derivative bound gives the fully elementary
+global estimate
 
-    Lip(r2)<=5
+    Lip(r2)<=8.
 
-is sufficient.
+(The exact optimum is smaller, but no optimization is needed here.)
 
 Combining with Section 3 gives
 
@@ -193,7 +193,7 @@ Combining with Section 3 gives
     |
 
       <=
-      (5 sqrt(2))/(pi sqrt(R)).
+      (8 sqrt(2))/(pi sqrt(R)).
 
 Thus
 
