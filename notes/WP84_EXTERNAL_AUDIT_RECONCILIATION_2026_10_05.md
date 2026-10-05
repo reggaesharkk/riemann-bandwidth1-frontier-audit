@@ -221,3 +221,32 @@ for proving that convergence.  Their target law must be derived, not inserted
 from the Radau quadrature.
 
 No >79 theorem is claimed.
+
+
+## 11. Round-2 correction to this note
+
+A second cross-examination showed that the support hypothesis in §8--§9 above
+is unnecessary.
+
+Let P be the exact Christoffel cubic and g=P^2.  The cubic has three distinct
+positive roots, P(0)=1, and therefore g(x)>=1 for every x<=0.  Exact moment
+evaluation gives
+
+    int g dnu = 1415/13891
+
+for every positive measure on R with the pinned moments through degree six.
+
+Hence directly
+
+    nu((-infty,0]) <= 1415/13891,
+    nu((0,infinity)) >= 12476/13891.
+
+So the current sufficient limiting-law theorem requires only the pinned six
+moments of the limit law; it does NOT require supp(nu_*) subset [0,infinity).
+
+See:
+
+    notes/WP84_ROUND2_ADJUDICATION_2026_10_05.md
+    src/wp84_moment_only_positive_index_certificate.py
+
+Sections 8--9 of this file should therefore be read with this correction.
