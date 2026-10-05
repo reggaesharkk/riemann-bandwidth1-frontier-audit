@@ -2447,3 +2447,165 @@ See:
     src/wp84_r2_finite_band_locality_gate.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 40. One-point resolvent structure sharpens the band-tail error to O(1/R)
+
+The earlier bounded-consumer truncation used Hoffman--Wielandt and gave only
+
+    O(R^(-1/2))
+
+for the r2 trace error.
+
+For the preferred one-point consumer this is not sharp.
+
+Let H_R keep only |i-j|<=R and put
+
+    Delta=H-H_R,
+    G=(H-zI)^(-1),
+    S=(H_R-zI)^(-1).
+
+Iterating the resolvent identity once gives
+
+    G-S
+      =
+      -S Delta S
+      + S Delta S Delta G.
+
+The quadratic term is
+
+    O_eta(
+      tau(Delta^2)
+    )
+      =
+      O_eta(R^-1).
+
+For the linear term,
+
+    tau(Delta S^2),
+
+both factors acquire one displacement denominator:
+
+    Delta_ij
+      =
+      (alpha_i-alpha_j)/
+      [pi(j-i)],
+
+    (S^2)_ji
+      =
+      [D,S^2]_ji/(j-i).
+
+The banded commutator satisfies
+
+    ||[D,H_R]||_F^2/d
+      <=
+      8 R q_alpha/pi^2,
+
+while
+
+    tau(Delta^2)
+      <=
+      8 q_alpha/(pi^2 R).
+
+Cauchy--Schwarz therefore yields
+
+    |
+      tau(Delta S^2)
+    |
+
+      <=
+      16 q_alpha/
+      (pi^2 eta^3 R).
+
+Together,
+
+    boxed:
+
+    |
+      m_H(z)-m_{H_R}(z)
+    |
+
+      <=
+      24 q_alpha/
+      (pi^2 eta^3 R).
+
+With q_alpha=1/4+o(1),
+
+    |
+      m_H(z)-m_{H_R}(z)
+    |
+
+      <=
+      6/
+      (pi^2 eta^3 R)
+      +o(R^-1).
+
+A fixed Cauchy circle around z=i gives the same O(R^-1) control for m'(i),
+hence
+
+    boxed:
+
+    |
+      tau r2(H)
+      -
+      tau r2(H_R)
+    |
+
+      =
+      O(R^-1).
+
+So the preferred r2 architecture needs displacement bandwidth proportional
+to epsilon_band^(-1), not epsilon_band^(-2).
+
+See:
+
+    notes/WP84_R2_RESOLVENT_TAIL_O1_OVER_R.md
+    src/wp84_r2_resolvent_tail_o1_over_r_gate.py
+
+## 41. The diagonal beta field can also be rank-quarantined
+
+The full ordinary-prime diagonal field obeys
+
+    ||beta||_2^2/d
+      =
+      1/6+o(1).
+
+This follows from:
+
+- the square-prime diagonal contribution;
+- degree-two nonclosed suppression;
+- the already-closed carrier-2T fast channel.
+
+Therefore, clipping beta to [-B,B] changes only a fraction
+
+    <=1/(6B^2)+o(1)
+
+of diagonal sites.
+
+Since r2 has total variation 8,
+
+    boxed:
+
+    r2 beta-clip error
+      <=
+      4/(3B^2)+o(1).
+
+Combined with fixed displacement R and alpha clip M, the operator then has
+compact spectral support
+
+    ||H||op
+      <=
+      B+(4M/pi)H_R.
+
+This makes a finite polynomial/local-word reduction formally legitimate if
+the direct local-resolvent route stalls.
+
+The note deliberately does **not** claim that the resulting polynomial
+degree is currently small enough for the available arithmetic gates.
+
+See:
+
+    notes/WP84_R2_BETA_RANK_QUARANTINE.md
+    src/wp84_r2_beta_quarantine_gate.py
+
+No unconditional record theorem is claimed yet.
