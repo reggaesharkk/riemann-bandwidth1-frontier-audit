@@ -271,22 +271,18 @@ The direct route has now separated into:
 2. one scalar 2 by 2 Ward determinant gamma;
 3. one rank-two leverage IPR kappa.
 
-## 6. Static sufficient inequality
+## 6. Static sufficient inequality on the full sharp state
 
-At a fixed band R, let
+The canonical frame inherits the same scope as the exact rank-two
+displacement law: it applies to the full sharp Loewner matrix.
 
-    E_target(R)
+Thus the direct theorem target is the absolute ceiling
+
+    E_rec
       =
-      E_rec
-      -
-      C_sine/R,
+      0.163249981456072....
 
-with
-
-    C_sine
-      ~=4.43651377028.
-
-A sufficient theorem is
+A sufficient full-sharp inequality is
 
     boxed:
 
@@ -295,35 +291,13 @@ A sufficient theorem is
       2.38966875 gamma kappa
 
       <
-      E_target(R),
+      0.163249981456072....
 
-where
+A hard band truncation H_R does not preserve the rank-two source
+commutator, so gamma and kappa from this note must not be inserted into a
+fixed-band target E_rec-C_sine/R.
 
-    E_diag
-      =
-      d^(-1)
-      sum_i
-        [
-          1-2ta Re R_ii
-        ]^2.
-
-For example,
-
-    R=256:
-
-      E_target
-        ~=0.1459198495.
-
-Thus a sufficient fixed-band gate is
-
-    boxed:
-
-    E_diag
-      +
-      2.38966875 gamma kappa
-
-      <
-      0.1459198495.
+The fixed-band route is a separate local/moment fallback.
 
 ## 7. Interpretation of the remaining debt
 
