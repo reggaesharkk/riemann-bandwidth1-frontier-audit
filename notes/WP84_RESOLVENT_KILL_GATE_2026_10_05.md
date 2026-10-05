@@ -86,3 +86,37 @@ Any candidate must:
 - include the actual arithmetic prime-block interface.
 
 No unconditional >79 claim is promoted.
+
+
+## Round-3 refinement — full operator-valued m4 gate first
+
+Fresh hostile audit rejects Google's shifted-Hankel/m7 falsifier and confirms
+that qualitative weak convergence is sufficient for the asymptotic liminf
+theorem.
+
+The next finite theorem-relevant checkpoint is now:
+
+`notes/WP84_OPERATOR_GENERATOR_M4_GATE.md`.
+
+Before attempting full model identification or finite-height m5/m6 numerics,
+derive the centered fourth coefficient from the **full operator-valued**
+conditional drift/variance generator on the truncated-translation algebra.
+
+Required result:
+
+`m4_centered = 1/4 = 7/30 + 1/60`.
+
+If a proposed closure returns `7/30`, that closure is rejected.  This does
+not falsify the exact Lindeberg identity.
+
+Also, the round-3 exact Hankel audit records:
+
+- `det H = 283/108864 > 0`;
+- `K(0,0)=13891/1415`;
+- Christoffel function `=1415/13891`;
+- shifted 3x3 determinant `=23/1296>0`, using only m1..m5;
+- no m7 is involved in Google's displayed shifted test.
+
+See:
+- `src/wp84_round3_hankel_christoffel_audit.py`
+- `notes/WP84_ROUND3_CLAUDE_ADJUDICATION_2026_10_05.md`.
