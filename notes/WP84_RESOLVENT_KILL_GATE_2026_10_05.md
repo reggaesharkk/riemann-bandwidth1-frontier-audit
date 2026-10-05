@@ -979,12 +979,17 @@ For every fixed s>1,
 so the supercritical scale eventually lies well inside that theorem's
 long-shift range.
 
-The remaining bridge debt is now only:
+For the **degree-four calibration sector**, the remaining bridge debt is:
 
 1. adapt the E2 weight to the exact Lambda*Lambda / taper-cell coefficients;
 2. sum factor slices with the finite-population weights;
 3. control the shrinking threshold layer immediately above s=1, where
    |C4|<=26(s-1).
+
+This does not yet close the full fixed-pole theorem: the bounded resolvent
+contains all word degrees through the evolving intermediate state.  A direct
+bounded generator/resolvent summation or a theorem-grade finite approximation
+is still required.
 
 See:
 
@@ -994,7 +999,7 @@ See:
 No unconditional >79 theorem is claimed.
 
 
-## 23. Priority theorem rung: bounded four-pole delta=6
+## 23. Priority theorem rung: bounded four-pole delta=9
 
 Before forcing the full six-pole 79.627% comparison, use the degree-2
 Christoffel minimizer
@@ -1016,14 +1021,14 @@ has four fixed nonreal poles and Jensen cap
     integral F_delta^(4)dnu
       <= 5(delta+1)/(36delta+5).
 
-At delta=6 the model simple-zero ledger is exactly
+At delta=9 the model simple-zero ledger is exactly
 
     boxed:
-    151/221
-      = 68.325791855...%.
+    229/329
+      = 69.604863222...%.
 
-This is about 0.98 percentage points above the audited 67.3500037 level and
-about 1.05 points above the 67.28005676 public/formalized level.
+This is about 2.25 percentage points above the audited 67.3500037 level and
+about 2.32 points above the 67.28005676 public/formalized level.
 
 The four poles satisfy an exact strip bound
 
@@ -1031,7 +1036,7 @@ The four poles satisfy an exact strip bound
 
 and numerically
 
-    min |Im z_j| ~= 1.314975.
+    min |Im z_j| ~= 1.463361.
 
 This rung remains Proposition-R safe because the theorem target is one
 bounded combination of four fixed resolvents, not a finite-T raw fourth
@@ -1039,7 +1044,7 @@ moment.
 
 Strategically this becomes the first record-beating theorem target:
 
-    close F_6^(4)
+    close F_9^(4)
       -> generalize fixed delta toward 13/18
       -> transfer the same bounded generator theorem to the six-pole
          degree-6 family
@@ -1050,4 +1055,4 @@ See:
     notes/WP84_FOUR_POLE_RECORD_BEATING_RUNG.md
     src/wp84_four_pole_record_rung.py
 
-No unconditional 68.3258% theorem is claimed yet.
+No unconditional 69.6049% theorem is claimed yet.
