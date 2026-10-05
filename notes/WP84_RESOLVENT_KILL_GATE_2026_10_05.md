@@ -3669,3 +3669,103 @@ The safe route priority is therefore restored to:
 The Evans almost-prime theorem is relevant, but its almost-all-shift L2 corollary is not automatically the right norm for the WP84 trace multiplier.  The exact weighted circle-method transfer, preferably using the local minor-arc estimate before the lossy h-sum, remains open.
 
 See WP84_FIXED_BAND_M4_EVIDENCE_BOUNDARY.md and the corrected WP84_BALANCED_PRODUCT_CORRELATION_BRIDGE.md.
+
+
+## 51. Direct degree-two Cayley square supersedes the wrapped degree-three route
+
+The conditioned-defect degree-two obstruction was too restrictive for the
+global search.  A direct support-free square exists at degree two.
+
+Let
+
+    U=(H+iI)(H-iI)^(-1),
+
+and
+
+    q(u)
+      =
+      [623u^2 +(55-1058i)u -(557+58i)]/1000.
+
+Then
+
+    h(H)=I-q(U)^*q(U)
+
+is a global positive-index minorant.
+
+For x<=0,
+
+    |q((x+i)/(x-i))|^2-1
+      =
+      N(x)/[1000000(x^2+1)^2],
+
+with
+
+    N(x)
+      =
+      260097x^4-5295592x^3+5812394x^2-4717448x+121.
+
+Exact Sturm count gives no roots on (-infinity,0], and N(0)>0.  For x>0
+the square is automatically nonnegative.  Hence
+
+    h(x)<=1_{x>0}
+
+globally.
+
+The exact pinned-model energy is
+
+    314919677809788131206697
+    /
+    2914998924731524849000000
+
+      =
+      0.10803423463999824...,
+
+giving model positive-index value
+
+    0.8919657653600017...
+
+and model simple-zero ledger
+
+    78.3931530720...%.
+
+The model energy margin below the conservative ceiling is about
+
+    0.0552157468160738.
+
+Putting Q=q(U),
+
+    tau h(H)=1-tau(Q^*Q),
+
+and
+
+    [D,Q]
+      =
+      [D,U](q1 I+q2 U)
+      +q2 U[D,U].
+
+Since rank[D,U]<=2,
+
+    boxed:
+    rank[D,Q]<=4.
+
+Thus the new primary bounded state is:
+
+    one Cayley point z=i,
+    degree two,
+    one positive energy,
+    displacement rank at most four,
+    no repeated pole,
+    no rational inverse,
+    no band truncation required in the statement.
+
+An exact three-point dual certificate also shows that degree one cannot reach
+the comparison ceiling in the direct one-Cayley trigonometric-energy
+hierarchy.
+
+See:
+
+    notes/WP84_DIRECT_DEGREE2_CAYLEY_SQUARE.md
+    src/wp84_direct_degree2_cayley_square.py
+
+This is now the preferred bounded route.  The fixed-band quartic remains a
+diagnostic/conditional fallback, not the primary theorem path.
