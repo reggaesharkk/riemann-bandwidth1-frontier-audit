@@ -15,9 +15,9 @@ For fixed delta>0 define the bounded rational consumer
 
     F_delta(x)=(delta+1)P2(x)^2/(P2(x)^2+delta).
 
-It has four simple nonreal poles.  At delta=6 all poles satisfy |Im z|>1
+It has four simple nonreal poles.  At delta=9 all poles satisfy |Im z|>1
 by an exact radical inequality, and the Jensen model ledger gives the
-simple-zero coefficient 151/221 = 0.6832579185...
+simple-zero coefficient 229/329 = 0.6960486322...
 """
 from fractions import Fraction as F
 import cmath, math
@@ -64,23 +64,23 @@ def main():
     assert P[1]<0 and P[2]>0
 
     # Jensen cap for h_delta(t)=(delta+1)t/(t+delta).
-    d=6
+    d=9
     c=cap(d)
     s=simple(d)
-    assert c==F(35,221)
-    assert s==F(151,221)
-    assert s>F(683,1000)
+    assert c==F(50,329)
+    assert s==F(229,329)
+    assert s>F(696,1000)
     assert s>F(6735,10000)  # safely above 67.35%
 
-    # Exact pole-strip proof for delta=6.
+    # Exact pole-strip proof for delta=9.
     #
-    # sqrt(57+384 i sqrt(6)) = u+i v gives
-    # v^2=(sqrt(57^2+384^2*6)-57)/2
-    #     =(sqrt(887985)-57)/2.
+    # sqrt(57+384 i 3) = u+i v gives
+    # v^2=(sqrt(57^2+1152^2)-57)/2
+    #     =(sqrt(1330353)-57)/2.
     #
-    # |Im pole|=v/16 > 1 iff sqrt(887985)>569.
-    rad2=57*57+384*384*6
-    assert rad2==887985
+    # |Im pole|=v/16 > 1 iff sqrt(1330353)>569.
+    rad2=57*57+1152*1152
+    assert rad2==1330353
     assert rad2>569*569
 
     zs=poles(d)
@@ -98,17 +98,25 @@ def main():
     print("positive-index floor =",1-w,"~",float(1-w))
     print("unbounded delta->infty simple ledger =",1-2*w,"~",float(1-2*w))
     print()
-    print("delta=6 Jensen cap =",c,"~",float(c))
-    print("delta=6 simple ledger =",s,"~",float(s))
-    print("delta=6 poles:")
+    print("delta=9 Jensen cap =",c,"~",float(c))
+    print("delta=9 simple ledger =",s,"~",float(s))
+    print("delta=9 poles:")
     for z in sorted(zs,key=lambda z:(z.real,z.imag)):
         print(" ",f"{z.real:.15f} {z.imag:+.15f}i")
     print("min |Im pole| =",mingap)
     print()
     print("ladder:")
-    for dd in (5,6,7,10,20,30):
+    for dd in (5,6,7,8,9,10,20,30):
         print(dd,simple(dd),float(simple(dd)))
     print("RESULT: WP84_FOUR_POLE_RECORD_RUNG_PASS")
 
 if __name__=="__main__":
     main()
+
+
+# Conditioning reconnaissance:
+# For a theorem comparing the four consumed Stieltjes values with one common
+# absolute error epsilon, the consumer transfer cost is bounded by
+#     epsilon * sum_j |residue_j|.
+# Against the audited 67.3500037 comparison level, delta=9 maximizes the
+# simple slack / (2*sum|residue|) budget among integer delta=5..200.
