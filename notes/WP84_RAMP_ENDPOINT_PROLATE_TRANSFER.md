@@ -97,12 +97,20 @@ A suitable source is:
     and discrete prolate spheroidal sequences",
     Applied and Computational Harmonic Analysis 55 (2021), 97--128.
 
-Their transition-width theorem gives, for epsilon in (0,1/2),
+Their nonasymptotic Theorem 2 gives, for epsilon in (0,1/2),
 
     #{j: epsilon < lambda_j(Q_I) < 1-epsilon}
-      = O(log d * log(1/epsilon))
+      <= (2/pi^2) log(100 d W_DPS + 25)
+           log(5/[epsilon(1-epsilon)])
+         + 7,
 
-uniformly in the present small bandwidth regime.
+with
+
+    W_DPS=W/(2L).
+
+Thus in the present regime the transition width is
+
+    O(log(d W_DPS) log(1/epsilon)).
 
 ## 4. Rank of the epsilon-concentrated boundary subspace
 
@@ -244,3 +252,48 @@ This closes the endpoint geometry that previously contaminated the
 large-shift regime.
 
 No unconditional >79 theorem is claimed.
+
+
+## 10. Precision-budget check
+
+The possible failure mode is that the concentration threshold needed to beat
+the crude middle-operator norm might make the DPSS transition rank too large.
+
+Here it does not.
+
+With
+
+    d asymp T L/(2*pi),
+    W=K log L,
+    W_DPS=W/(2L),
+
+we have
+
+    d W_DPS
+      asymp T log L.
+
+Choose
+
+    epsilon=T^(-A)
+
+with fixed A>2.  Then
+
+    log(d W_DPS)=O(L),
+    log(1/epsilon)=O(L).
+
+The explicit DPSS transition bound therefore gives only
+
+    O(L^2)
+
+transition directions.
+
+Since
+
+    d asymp T L,
+
+their rank fraction is
+
+    O(L/T)=o(1).
+
+So the polynomially small concentration precision needed for
+`||E_small||=o(1)` is fully compatible with an o(d) deleted subspace.
