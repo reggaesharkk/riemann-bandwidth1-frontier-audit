@@ -2727,3 +2727,190 @@ See:
     notes/WP84_LOCAL_ARITHMETIC_LITERATURE_INTERFACE.md
 
 No unconditional record theorem is claimed yet.
+
+
+## 44. Two simple poles are enough to beat the conservative record line
+
+The r2 repeated-pole route is no longer the smallest bounded consumer.
+
+Define
+
+    f_2(x)
+      =
+      1
+      -
+      [
+        x^2-(17/5)x+9/4
+      ]^2
+      /
+      [
+        (x^2+1)(x^2+81/16)
+      ].
+
+For x>0, f_2<=1 trivially.
+
+For x=-y<=0,
+
+    [y^2+(17/5)y+9/4]^2
+      -(y^2+1)(y^2+81/16)
+
+      =
+      y(
+        2720y^2+3999y+6120
+      )/400
+      >=0,
+
+so
+
+    f_2(x)<=0
+    for x<=0.
+
+Thus f_2 is a global support-free positive-index minorant.
+
+Its exact partial fraction expansion consumes only
+
+    z=i,
+    z=9i/4,
+
+with simple poles and no z derivative.
+
+The exact pinned model value is
+
+    q_2
+      =
+      298046731976058910350368
+      /
+      343933139638869493768225
+
+      =
+      0.8665833489875636...,
+
+giving model simple-zero ledger
+
+    73.3166697975...%.
+
+Against the conservative positive-index threshold
+
+    q_rec=0.8367500185439279...,
+
+the model margin is
+
+    Delta_2
+      =
+      0.0298333304436357....
+
+Using the O(1/R) simple-resolvent tail theorem at the two pole heights gives
+
+    C_2
+      =
+      2.3515890423...
+
+in
+
+    |
+      tau f_2(H)-tau f_2(H_R)
+    |
+      <=
+      C_2/R
+      +o(R^-1).
+
+Hence
+
+    Delta_2/C_2
+      ~=0.01268646,
+
+which is the best explicit margin/band-tail ratio among the currently
+certified first-strike consumers.
+
+The immediate theorem target should therefore be reduced to the two
+Stieltjes values
+
+    m(i),
+    m(9i/4).
+
+See:
+
+    notes/WP84_TWO_SIMPLE_POLE_RECORD_RUNG.md
+    src/wp84_two_simple_pole_minorant.py
+
+## 45. Three simple poles recover a much higher model rung without repeated poles
+
+A second exact minorant is
+
+    f_3(x)
+      =
+      1
+      -
+      [
+        x^3-20x^2+(81/2)x-18
+      ]^2
+      /
+      [
+        (x^2+1)(x^2+9)(x^2+36)
+      ].
+
+It is globally support-free by a coefficientwise-positive negative-half-line
+identity.
+
+It uses only the three simple poles
+
+    i,
+    3i,
+    6i.
+
+Its exact pinned model value is
+
+    q_3
+      =
+      0.8873368070783458...,
+
+giving model simple-zero ledger
+
+    77.4673614157...%.
+
+Its positive-index margin over q_rec is
+
+    0.0505867885344...,
+
+and the explicit O(1/R) band constant is
+
+    C_3
+      =
+      4.8634168148....
+
+So
+
+    Delta_3/C_3
+      ~=0.01040149.
+
+This is slightly less band-efficient than the two-pole rung but has a much
+larger raw model margin.
+
+See:
+
+    notes/WP84_THREE_SIMPLE_POLE_RECORD_RUNG.md
+    src/wp84_three_simple_pole_minorant.py
+
+## 46. Updated first-strike hierarchy
+
+The proof-oriented ordering is now:
+
+1. two-simple-pole f_2:
+       model simple ledger 73.31667...%;
+       poles i and 9i/4;
+       no derivatives;
+       best current explicit tail-conditioning ratio;
+
+2. three-simple-pole f_3:
+       model simple ledger 77.46736...%;
+       poles i,3i,6i;
+       no derivatives;
+       larger raw margin;
+
+3. r2,a=1 / a=6/5:
+       one spectral point but one repeated-pole derivative;
+
+4. full Christoffel / higher simple-pole constructions:
+       target near 79.62710...%.
+
+No unconditional record theorem is claimed yet.
