@@ -56,8 +56,8 @@ def main():
             evr=np.linalg.eigvalsh(HR)
             stat=abs(np.mean(r2(ev))-np.mean(r2(evr)))
 
-            # Use the safe global bound Lip(r2)<=5.
-            hw=5.0*np.sqrt(lhs)
+            # Use the fully elementary safe global bound Lip(r2)<=8.
+            hw=8.0*np.sqrt(lhs)
             assert stat<=hw*(1+1e-10),(d,R,stat,hw)
 
             print(
