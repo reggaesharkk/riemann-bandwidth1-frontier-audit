@@ -353,3 +353,61 @@ See:
     notes/WP84_BERNOULLI_DRIFT_ELIMINATION.md
     notes/WP84_BERNOULLI_GAUSSIAN_INVARIANCE.md
     notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md
+
+
+## 10. Correction to the finite-d invertibility argument
+
+The phrase in Section 6 saying that the p=2 cosine direction is an
+operator-norm perturbation of the identity is not needed and should not be
+used.  The Fourier band dimension grows with T, so small normalized shift
+does not by itself imply operator-norm closeness to I.
+
+The correct finite-d argument is as follows.
+
+For one retained sharp shift s in (0,1), the positive branch matrix can be
+written
+
+    A_s = G_s D_s,
+
+where D_s is diagonal unitary and G_s is the Gram matrix of the first d
+Fourier exponentials restricted to an interval of length 1-s.
+
+The restricted exponentials remain linearly independent on every interval
+of positive length, hence
+
+    G_s > 0
+
+and A_s is invertible.
+
+Its two Hermitian quadratures are
+
+    C_s=A_s+A_s^*,
+    S_s=i(A_s-A_s^*).
+
+For real theta,
+
+    cos(theta) C_s + sin(theta) S_s
+      =
+      exp(i theta) A_s
+      + exp(-i theta) A_s^*.
+
+The determinant of this matrix is a nonzero trigonometric polynomial in
+theta, because its highest and lowest Fourier coefficients contain
+det(A_s) and det(A_s^*), both nonzero.
+
+Therefore some real quadrature combination is invertible.  Hence the
+determinant polynomial of the full Gaussian quadrature matrix W is not
+identically zero in its Gaussian coordinates.  Since the zero set of a
+nonzero real polynomial has Lebesgue measure zero,
+
+    boxed:
+    W is invertible almost surely
+
+for every fixed finite section.
+
+This supplies the correct justification for the fixed-d boundary
+
+    Phi_r2(u) -> 0
+    as u->infinity.
+
+The uniform-in-d boundary issue remains open exactly as stated in Section 9.
