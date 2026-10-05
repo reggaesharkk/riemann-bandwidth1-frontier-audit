@@ -88,3 +88,143 @@ This is currently the simplest coefficient pattern for the rank-four one-point r
 Evidence boundary: exact support-free family, exact scalar form, exact rank bound, exact rational model value and explicit conditioning constant are closed. The large-T one-sided bounded-energy transport remains open.
 
 See WP84_DIRECT_DEGREE2_HEAT_CURVATURE_STENCIL.md and WP84_DIRECT_DEGREE2_SCALE_CONDITIONING.md.
+
+
+## 12. Exact four-column displacement generator
+
+Let
+
+    C_H=[D,H]=G_2 H_2^*
+
+be any rank-two factorization of the sharp Loewner commutator.
+
+Write
+
+    R_+=(H-iaI)^(-1),
+    R_-=(H+iaI)^(-1).
+
+Since
+
+    S_a=a(R_+ + R_-),
+
+we have
+
+    [D,R_+]
+      =
+      -R_+ C_H R_+,
+
+    [D,R_-]
+      =
+      -R_- C_H R_-.
+
+Therefore
+
+    boxed:
+
+    [D,Q_{a,t}]
+
+      =
+      t a
+      [
+        R_+ C_H R_+
+        +R_- C_H R_-
+      ].
+
+Hence an explicit four-column factorization is
+
+    boxed:
+
+    [D,Q_{a,t}]
+      =
+      G_4 H_4^*,
+
+with
+
+    G_4
+      =
+      [
+        t a R_+ G_2,
+        t a R_- G_2
+      ],
+
+and block rows
+
+    H_4^*
+      =
+      [
+        H_2^* R_+;
+        H_2^* R_-
+      ].
+
+This realizes the rank-four bound without any generic rank inequality.
+
+## 13. Positive diagonal plus 4x4 Fourier energy
+
+Because Q_{a,t} is Hermitian,
+
+    tau(Q_{a,t}^2)
+
+      =
+      d^(-1)
+      sum_i
+        |Q_{ii}|^2
+
+      +
+      d^(-1)
+      sum_{i!=j}
+        |Q_{ij}|^2.
+
+For i!=j,
+
+    Q_{ij}
+      =
+      [D,Q]_{ij}/(i-j).
+
+Also
+
+    Q_{ii}
+      =
+      1
+      -t a[
+          (R_+)_{ii}
+          +(R_-)_{ii}
+        ]
+
+      =
+      1
+      -2 t a
+        Re (R_+)_{ii}.
+
+Thus exactly
+
+    boxed:
+
+    tau(Q_{a,t}^2)
+
+      =
+      d^(-1)
+      sum_i
+        [
+          1
+          -2ta Re(R_+)_{ii}
+        ]^2
+
+      +
+      d^(-1)
+      sum_{i!=j}
+        |[D,Q]_{ij}|^2/(i-j)^2.
+
+Both terms are nonnegative.
+
+Using the standard squared-Cauchy Fourier kernel S2(t), the second term is a
+one-dimensional integral of a matrix channel of size at most 4x4.
+
+Therefore the sine-square theorem also has a completely positive
+displacement interface:
+
+    one diagonal resolvent energy
+      +
+    one 4x4 Fourier energy.
+
+This is the direct non-heat-flow route to test before expanding any
+resolvent into prime words.
