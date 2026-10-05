@@ -183,3 +183,82 @@ exists.
 This is currently the smallest bounded one-point model consumer on the
 branch: one Cayley point z=i, no derivative, degree two, rational
 coefficients, and displacement rank at most four.
+
+
+## Degree one cannot reach the comparison line
+
+The direct degree-two construction is not hiding an even simpler
+degree-one solution.
+
+Let a general real degree-one trigonometric energy be
+
+    p_1(theta)
+      =
+      a0+a1 cos(theta)+b1 sin(theta),
+
+with
+
+    p_1>=0
+
+on the full circle and
+
+    p_1>=1
+
+on the lower semicircle corresponding to x<=0.
+
+The pinned model degree-one Cayley moments are
+
+    E cos(theta)
+      =
+      -164937945/1707336793,
+
+    E sin(theta)
+      =
+      1372449200/1707336793.
+
+There is an exact positive three-point quadrature for this basis using
+
+    theta=pi/2       (upper semicircle),
+    theta=-pi        (lower semicircle),
+    theta=0          (lower boundary),
+
+with weights
+
+    lambda_U
+      =
+      1372449200/1707336793,
+
+    lambda_minus
+      =
+      [1-E sin(theta)-E cos(theta)]/2,
+
+    lambda_plus
+      =
+      [1-E sin(theta)+E cos(theta)]/2.
+
+All three weights are positive and sum to one.
+
+Therefore every feasible degree-one energy obeys
+
+    E_model p_1
+      >=
+      lambda_minus+lambda_plus
+
+      =
+      1-E sin(theta)
+
+      =
+      334887593/1707336793
+
+      =
+      0.1961461421....
+
+This is already above the conservative energy ceiling
+
+    0.1632499814....
+
+Hence one Cayley power is insufficient in the direct half-line formulation,
+while the explicit degree-two square above succeeds.
+
+So degree two is minimal within the direct one-Cayley trigonometric-energy
+hierarchy.
