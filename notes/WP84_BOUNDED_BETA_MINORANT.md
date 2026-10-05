@@ -165,3 +165,32 @@ At rho=0.9:
 Therefore b10 remains the strongest model member of the displayed ladder, but **b3 is the current preferred theorem target** under the available fixed-circle transfer.
 
 See `WP84_BETA_CIRCLE_CONDITIONING.md` and `src/wp84_beta_circle_conditioning.py`.
+
+
+## 9. Hostile-audit correction — Radau values are not theorem margins
+
+A subsequent exact falsifier shows that the displayed q_m table is evaluation
+on one particular Radau representing measure, not a universal bound over all
+measures with the pinned moments.
+
+In particular, an exact positive rational seven-atom measure matching
+m0..m6 has
+
+    E[b3] = 0.890363090084... < 0.895.
+
+Therefore the statement 'b3 already clears 79%' is valid only as model
+reconnaissance for that chosen quadrature, not as a moment-implied theorem
+margin.
+
+Consequences:
+
+- the 3.59e-5 fixed-circle number remains a correct Cauchy transfer tolerance
+  relative to the Radau surrogate;
+- it is not an active theorem budget until the actual limiting spectral law
+  is identified and its b3 value is certified;
+- neither b3 nor b10 is presently designated as the theorem consumer.
+
+See:
+
+    notes/WP84_EXTERNAL_AUDIT_RECONCILIATION_2026_10_05.md
+    src/wp84_b3_radau_surrogate_falsifier.py
