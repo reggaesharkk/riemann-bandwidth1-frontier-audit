@@ -456,3 +456,66 @@ for the rank-robust >80 route.
 See:
 
     notes/WP84_K8_BOUNDED_RESOLVENT_BYPASS.md
+
+
+## 14. Same-sign order-four resonance gate
+
+The exact noncommuting witness shows that V-sum need not vanish for an
+arbitrary state. The actual permutation path has an additional arithmetic
+selection rule: the current block is excluded from the previous subset and
+sharp translation trace requires exact displacement closure.
+
+For a current prime p, two same-sign insertions contribute p-exponent +2.
+At theta^4 there are two previous block occurrences. Unique factorization
+forces any resonance to use proper powers p^b,p^c with
+
+    2 + eps1 b + eps2 c = 0,
+    b,c>=2.
+
+The complete solution pattern has
+
+    |b-c|=2,
+    b+c>=6.
+
+Hence the resonant fixed-degree weight is
+
+    O((log p)^4/(L^4 p^4)),
+
+and summing over p is O(L^-4).
+
+Current proper-prime-power blocks have total square mass O(L^-2).
+
+Therefore the sharp order-four V-sum sector is o(1). The crossing repair
+t_opp=1/30 and Phi4=-1/60 must be carried by the mixed-sign / evolving-state
+sectors, not by order-four same-sign variance.
+
+This is only a fixed-degree result. The full bounded-resolvent V-sum still
+requires control of longer resonance families.
+
+See:
+
+    notes/WP84_ORDER4_VSUM_PRIME_RESONANCE.md
+    src/wp84_order4_vsum_prime_resonance.py
+
+## 15. k=8 model screening before transport
+
+Write
+
+    L=L0+t,
+    m8=F8(L)+eta.
+
+The exact >80 corridor is
+
+    eta < (2666160/10471) t^2.
+
+This should be used as a model-side screening test before theorem-grade
+transport.
+
+The exact C7 / {5,2} model program is valuable because it can decide the
+actual (m7,m8) location. If lambda4(m7_model,m8_model)>=1/10, the present
+degree-4 consumer cannot cross 80 regardless of transport quality.
+
+See:
+
+    notes/WP84_K8_80_GONOGO_MAP.md
+    src/wp84_k8_80_gonogo_map.py
