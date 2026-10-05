@@ -30,7 +30,8 @@ The exact identity
 
 has r supported on two fixed boundary strips of total length 2w.
 
-The global ramp-to-sharp factorization then gives
+Keeping the scalar finite-compression carriers inside the middle translation
+sum, the global ramp-to-sharp factorization gives
 
     P_phi
       = P_sharp + D_rank + D_small,
