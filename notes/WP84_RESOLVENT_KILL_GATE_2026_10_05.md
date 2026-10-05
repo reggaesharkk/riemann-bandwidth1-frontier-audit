@@ -3769,3 +3769,159 @@ See:
 
 This is now the preferred bounded route.  The fixed-band quartic remains a
 diagnostic/conditional fallback, not the primary theorem path.
+
+
+## 52. Direct degree-two square is also a one-point repeated-pole scalar
+
+For the direct square
+
+    q(u)
+      =
+      [623u^2 +(55-1058i)u -(557+58i)]/1000,
+
+write
+
+    U=(H+iI)(H-iI)^(-1).
+
+The positive defect energy has the exact scalar form
+
+    boxed:
+
+    tau q(U)^*q(U)
+
+      =
+      1260097/1000000
+
+      +2 Re[
+          A m(i)
+          +B m'(i)
+        ],
+
+where
+
+    A
+      =
+      -661949/250000
+      -(157257/125000)i,
+
+    B
+      =
+      347011/250000
+      -(18067/125000)i.
+
+Equivalently,
+
+    q(U)
+
+      =
+      (121/1000-279i/250)I
+
+      +(529/250+1301i/500)R(i)
+
+      -(623/250)R(i)^2.
+
+Thus the current best direct support-free consumer has three exact theorem
+interfaces:
+
+1. one positive rank-four displacement energy;
+2. one scalar pair m(i),m'(i);
+3. one Gaussian heat-flow curvature at z=i.
+
+Its model defect energy is
+
+    0.10803423463999824...,
+
+against the conservative ceiling
+
+    0.163249981456072...,
+
+leaving margin
+
+    0.0552157468160738....
+
+See:
+
+    notes/WP84_DIRECT_DEGREE2_SCALAR_HEAT_FLOW.md
+    src/wp84_direct_degree2_scalar_reduction.py
+
+## 53. Scale the direct square before paying fixed-pole constants
+
+The direct half-line certificate is scale invariant.
+
+For
+
+    U_a=(H+iaI)(H-iaI)^(-1),
+
+the same q gives a valid support-free minorant for every a>0.
+
+The scalar energy becomes
+
+    tau q(U_a)^*q(U_a)
+
+      =
+      1260097/1000000
+
+      +2 Re[
+          a A m(ia)
+          +a^2 B m'(ia)
+        ].
+
+The explicit O(1/R) fixed-pole comparison scales as
+
+    C_dir/(a^2 R),
+
+with
+
+    C_dir
+      =
+      12/pi^2
+      [
+        |A|+(256/27)|B|
+      ]
+
+      ~=19.65226898.
+
+So the correct conditioning diagnostic is
+
+    Delta_a a^2.
+
+At the exact rational scale
+
+    a=4/3,
+
+the pinned-model defect energy is
+
+    2643915226535620881849576949
+    /
+    21513987578630813262384200000
+
+      =
+      0.12289284898359526...,
+
+giving model simple-zero ledger
+
+    75.4214302033...%
+
+and conservative defect margin
+
+    0.0403571324724767....
+
+The quantity Delta_a a^2 is about 29.9% larger at a=4/3 than at a=1.
+A continuous reconnaissance optimum occurs near a=1.34424.
+
+Therefore:
+
+- keep a=1 for the maximal raw model ledger 78.39315...%;
+- use a=4/3 as the better-conditioned fixed-pole variant unless a later
+  theorem constant changes the scale dependence.
+
+The bounded direct-square route remains primary.
+The fixed-band quartic route remains a conditional arithmetic fallback, not
+a completed theorem.
+
+See:
+
+    notes/WP84_DIRECT_DEGREE2_SCALE_CONDITIONING.md
+    src/wp84_direct_degree2_a4_3.py
+
+No unconditional record theorem is claimed yet.
