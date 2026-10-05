@@ -129,3 +129,34 @@ These are now the only places where noncommutative leakage can re-enter.
 ## 8. Evidence boundary
 
 This note does not assert that the true intermediate resolvent is multiplication. It proves exactly what follows **if** that algebra closure is established, and identifies the corresponding scalar functional without guessing it.
+
+## 9. Order-four status correction
+
+The multiplication-algebra hypothesis used in §§2--4 is **not** an
+established closure theorem.
+
+The exact order-four audit now shows why it cannot be promoted:
+
+- scalar multiplication covariance retains only the adjacent pair class and
+  gives centered m4=7/30;
+- the full operator pair layer must also retain the alternating/crossing class
+  t_opp=1/30, raising the pair layer to 4/15;
+- the connected non-pair sector then contributes Phi4=-1/60, giving 1/4.
+
+Therefore the statements
+
+    drift vanishes,
+    same-sign variance vanishes
+
+remain valid only **inside the assumed multiplication algebra**.  They may
+not be used to eliminate those channels in the true operator-valued flow,
+because doing so deletes the word sectors needed at order four.
+
+The multiplication calculation is retained as a falsified closure benchmark,
+not as the active theorem route.
+
+See:
+
+    notes/WP84_M4_LINDEBERG_WORD_ATTACK.md
+    notes/WP84_M4_LATEST_BLOCK_DECOMPOSITION.md
+    notes/WP84_OPERATOR_GENERATOR_M4_GATE.md
