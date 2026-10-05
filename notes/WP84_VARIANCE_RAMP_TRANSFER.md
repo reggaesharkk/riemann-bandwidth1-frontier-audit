@@ -2,9 +2,20 @@
 
 Date: 2026-10-04
 
-Status: **ACTUAL w=1 TAPER -> SHARP-FLAT TRANSFER CLOSED FOR THE SECOND-ORDER VARIANCE TRACE; FIRST-ORDER DRIFT NOT COVERED BY THIS ABSOLUTE ARGUMENT**
+Status: **HISTORICAL VARIANCE-ONLY TRANSFER; SUPERSEDED BY THE GLOBAL BOUNDARY-QUARANTINE RESULT THAT ALSO COVERS DRIFT**
 
-The sharp channel in `WP84_SHARP_VARIANCE_CHANNEL.md` is useful only if the real ramp taper can be replaced at o(1) cost in the Lindeberg variance term. For the second-order prime-square sum this can be done without any prime cancellation.
+The sharp channel in `WP84_SHARP_VARIANCE_CHANNEL.md` is useful only if the
+real ramp taper can be replaced at o(1) cost.
+
+This note originally closed that transfer only for the second-order
+prime-square variance sum.  A later fixed-boundary factorization now proves a
+stronger statement for the **entire prime operator**, including first-order
+drift:
+
+    notes/WP84_GLOBAL_RAMP_SHARP_BOUNDARY_QUARANTINE.md
+    src/wp84_global_ramp_sharp_boundary_gate.py
+
+The argument below is retained as an independent Hilbert--Schmidt check.
 
 ## 1. Edge support of the overlap error
 
