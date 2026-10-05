@@ -50,15 +50,17 @@ Therefore
     nu((-infinity,0])
       <= integral F_star dnu.
 
-Now h(t)=min(t,1) is concave on [0,infinity).  Jensen gives
+Even more directly,
+
+    F_star(x)<=g(x)
+
+pointwise.  Therefore
 
     integral F_star dnu
-      = integral h(g) dnu
-      <= h(integral g dnu)
-      = h(w0)
-      = w0,
+      <= integral g dnu
+      = w0.
 
-since w0<1.
+Concavity of h(t)=min(t,1) gives the same inequality by Jensen, but is not needed for this clipped optimum.
 
 Hence
 
@@ -79,9 +81,9 @@ at the model-consumption level.
 
 No unbounded observable is intrinsically required by the consumption step.
 
-## 2. Optimality among concave scalarizations of g
+## 2. Optimality and the Markov--Krein interpretation
 
-Let h:[0,infinity)->[0,1] be concave with
+The clipped bound equals the degree-6 Markov--Krein extremal mass at the nonpositive half-line: the Christoffel measure attains the same cap w0.  So the bounded clipping loses no certificate strength.\n\nLet h:[0,infinity)->[0,1] be concave with
 
     h(t)>=1 for t>=1
 
