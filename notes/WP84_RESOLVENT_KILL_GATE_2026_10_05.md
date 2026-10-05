@@ -2173,3 +2173,75 @@ The current mathematical frontier is now:
    to cross the audited record threshold.
 
 No unconditional record theorem is claimed yet.
+
+
+## 37. Co-moving scaled-r2 update
+
+For the Gaussian bridge
+
+    H_t=s0 I+tP+sqrt(t(1-t))W,
+
+transport the test function by
+
+    f_t(x)=f(s0+(x-s0)/t).
+
+Then
+
+    t partial_t f_t+(x-s0)partial_x f_t=0,
+
+and Gaussian integration by parts gives
+
+    d/dt E tau f_t(H_t)
+      =
+      -1/2 E sum_j D^2[tau f_t(H_t)][E_j,E_j].
+
+With u=(1-t)/t this is exactly
+
+    E tau f_t(H_t)
+      =
+      E tau f(H_1+sqrt(u)W).
+
+So the moving deterministic mean and first-order drift disappear together.
+
+For
+
+    r_2(x)=1-[ (x-1)^2/(x^2+1) ]^2,
+
+the exact one-point identity is
+
+    tau r_2(H)
+      =
+      2 Re[(2+i)m_H(i)-m_H'(i)].
+
+The pinned model value is
+
+    2575059657047327248/2914998924731524849
+      =0.8833827124943086...,
+
+giving model simple-zero ledger
+
+    76.67654249886171...%.
+
+Against the public 67.3500037087... line the positive-index threshold is
+
+    0.8367500185439279...,
+
+so the model consumer margin is
+
+    0.0466326939503807....
+
+This is now the preferred first bounded theorem rung.  F9 and a=3/2 remain
+cross-checks.
+
+The remaining analytic target is the one-point mixed-covariance heat flow at
+
+    z=i
+
+plus a uniform large-u truncation/boundary estimate.
+
+See:
+
+    notes/WP84_R2_COMOVING_GAUSSIAN_HEAT_FLOW.md
+    notes/WP84_R2_A1_PREFERRED_RECORD_RUNG.md
+
+No unconditional record theorem is claimed.
