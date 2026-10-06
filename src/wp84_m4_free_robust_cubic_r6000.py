@@ -2,6 +2,7 @@
 """Exact regression gate for the m4-free robust cubic >79 fallback."""
 
 from fractions import Fraction as F
+import argparse
 import sympy as sp
 
 x,y=sp.symbols("x y")
@@ -88,17 +89,26 @@ Mq=F(137721,5000)
 Cband=3*Mq/(pi_lo*pi_lo)
 assert Cband==F(128952763,15401250)
 
-R=6000
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--R', type=int, default=6000, help='fixed positive integer bandwidth')
+args=parser.parse_args()
+R=args.R
+if R < 1:
+    parser.error('--R must be positive')
 band=Cband/R
 c2abs=F(26060119,430128125)
 variance=c2abs*F(2)/(pi_lo*pi_lo*R)
-assert variance==F(26060119,12734908593750)
+assert variance*R==F(26060119,12734908593750)*6000
 
 ceiling=F(21,200)
 Erob_q=F(240421959557,2322691875000)
 margin=ceiling-Erob_q-band-variance
-assert margin==F(52897896569489,572357731837500000)
-assert margin>0
+M_infinity=ceiling-Erob_q
+band_total=Cband+c2abs*F(2)/(pi_lo*pi_lo)
+assert M_infinity==F(1730343659,1161345937500)
+assert band_total==F(284757804319,33959756250)
+assert margin==M_infinity-band_total/R
+assert M_infinity-band_total/6000==F(52897896569489,572357731837500000)
 
 R0=1
 while ceiling-Erob_q-Cband/R0-c2abs*F(2)/(pi_lo*pi_lo*R0)<=0:
@@ -115,5 +125,7 @@ print("band charge =",band,"~",float(band))
 print("variance deficit charge =",variance,"~",float(variance))
 print("final residual below 0.105 =",margin,"~",float(margin))
 print("first positive-budget integer R =",R0)
+print("CLOSED variable-R margin =",M_infinity,"-",band_total,"/ R")
+print("CLOSED sixth model slack =",F(34,135)-F(157,630))
 print("TARGET: mu5_c >= 1/36-o(1), mu6_c <= 34/135+o(1), no mu4 target")
 print("RESULT: WP84_M4_FREE_ROBUST_CUBIC_R6000_PASS")

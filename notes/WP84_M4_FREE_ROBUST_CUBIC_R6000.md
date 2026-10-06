@@ -1,6 +1,9 @@
-# WP84 — m4-free robust cubic >79 fallback at fixed band R=6000
+# WP84 — m4-free robust cubic >79 fallback at arbitrary fixed band R
 
 Date: 2026-10-06
+
+Variable-R update: 2026-10-07. Sections 6–7 retain the R=6000 example;
+Section 10 states the general theorem and current evidence boundary.
 
 Status: **EXACT CONSUMER/ALGEBRA REDUCTION — THE >79 FIXED-BAND TARGET NO LONGER REQUIRES ANY QUANTITATIVE FOURTH-MOMENT CONNECTED CORRECTION; IT REDUCES TO ONE-SIDED CENTERED m5 AND m6 BOUNDS**
 
@@ -344,3 +347,39 @@ one-point heat-curvature route remains the primary all-resolvent attack.
 Public model constants used for orientation:
 C5=1/36, {4,2}=-23/420, {6}=-1/126.  Their finite symbolic values do not by
 themselves prove the required zeta-side fixed-band transport.
+
+## 10. CLOSED variable-R algebra / CONDITIONAL theorem
+
+For any fixed positive integer R, assume on the same selected section
+mu1^c=o(1), mu3^c=o(1), mu2^c>=1/3-2/(pi^2 R)+o(1), and
+
+    mu5^c>=1/36-eps5-o(1),
+    mu6^c<=34/135+eps6+o(1).
+
+Under the same bounded full-to-band and zero-transfer hypotheses the cubic
+consumer has defect strictly below 21/200 whenever
+
+    (11501/12500)eps5+(137641/250000)eps6 < M(R),
+    M(R)=1730343659/1161345937500-284757804319/(33959756250 R).
+
+Indeed the constant term is 21/200-Erob and the 1/R coefficient is
+Cband+2|c2|/(333/106)^2. The first positive integer R is 5628;
+M(6000)=52897896569489/572357731837500000, and the limit is
+1730343659/1161345937500, approximately 0.001489946796322263.
+The sharp sixth value has slack 34/135-157/630=1/378.
+
+The companion script now accepts --R (default 6000) and checks this exact
+formula, including bands with a nonpositive budget. Nothing in the scalar
+gate singles out R=6000. Choose R first; constants depending on that fixed R
+are permitted when T then tends to infinity.
+
+Evidence correction: the previous lower-moment/sign-balance descriptions
+are not a fresh audit of selected-section aggregate raw moments. The new
+two-scale note proves uniform geometric filter convergence and preserves
+the selected-section A->B bridge, but B->C at degrees 5/6 is OPEN because
+signed near-product sums have not been reduced to the stated PNT measures.
+Thus a finite successful R for the actual zeta moments and the arithmetic
+>79 gate remain CONDITIONAL. No unconditional percentage theorem follows.
+
+See WP84_TWO_SCALE_FILTERED_TO_SHARP_MOMENT_BRIDGE.md and its independent
+scalar/geometry gate. The prior C5 sign theorem and C6 witnesses are preserved.
