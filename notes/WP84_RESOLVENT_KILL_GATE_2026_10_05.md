@@ -5393,3 +5393,103 @@ See:
     notes/WP84_GOOD_ENDPOINT_TRIMMING.md
     notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md
     src/wp84_r400_first_record_assembly.py
+
+
+## 71. Symmetric cubic linearization — preferred >79 theorem interface
+
+The bounded Christoffel family no longer needs to be treated as six unrelated
+H-plane resolvents.
+
+For
+
+    P(x)=1-(43428/13891)x+(37704/13891)x^2-(9660/13891)x^3,
+
+define the exact rational constants
+
+    r=9660/13891,
+    b=-1571/805,
+    c=5343048/11182255,
+
+and the symmetric 3 by 3 pencil
+
+    L_z(x)
+      =
+      [ r x   1      0        ]
+      [ 1     0      x+b      ]
+      [ 0     x+b    c x+z-1  ].
+
+Then exactly
+
+    det L_z(x)=P(x)-z,
+
+and the (3,3) inverse entry is
+
+    (L_z(x)^(-1))_33
+      =
+      -1/(P(x)-z).
+
+Thus, for the matrix H,
+
+    (P(H)-zI)^(-1)
+      =
+      -[mathcal L_z(H)^(-1)]_33,
+
+where mathcal L_z(H) is affine in H and remains symmetric under transpose.
+
+For delta>0, q=sqrt(delta),
+
+    F_delta(x)
+      =
+      (delta+1)
+      [
+        1-q Im(P(x)-iq)^(-1)
+      ],
+
+so the moment-certified theorem target becomes the single corner inequality
+
+    boxed:
+
+    -q Im tau(
+      [mathcal L_(iq)(H)^(-1)]_33
+    )
+      >=
+      1-(1415/13891)/delta
+      +o(1).
+
+At delta=61 the right side is exactly
+
+    845936/847351
+      =
+      0.9983300898919....
+
+The internal H-coefficient matrix has rank three.  Therefore the sharp
+rank-two displacement law lifts only to rank at most six:
+
+    rank[
+      I_3 tensor D,
+      mathcal L_z(H)^(-1)
+    ]
+      <=6.
+
+A current prime block lifts linearly as K tensor B_p, so the existing
+sum ||B_p||^3=o(1) Lindeberg remainder survives with only a fixed constant.
+
+This is now the preferred >79 theorem interface because it simultaneously:
+
+- stays bounded and Proposition-R safe;
+- replaces six pole states by one goal-oriented corner state;
+- preserves transpose symmetry;
+- keeps the LRSC displacement channel finite (rank <=6);
+- permits the Gaussian drift-elimination calculation to be lifted with no
+  explicit deterministic-prime drift.
+
+The remaining theorem is the finite-channel expectation inequality above,
+after lifting the already-closed mixed prime-square and fast-channel
+covariance substitutions to the 3-layer state.
+
+See:
+
+    notes/WP84_CHRISTOFFEL_SYMMETRIC_LINEARIZATION.md
+    src/wp84_christoffel_symmetric_linearization.py
+
+No unconditional >79 percent theorem is claimed yet.
