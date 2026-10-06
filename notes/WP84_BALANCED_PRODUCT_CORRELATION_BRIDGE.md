@@ -299,3 +299,50 @@ The new four-pole delta=6 rung in
 
 is the preferred place to test whether the remaining bounded generator can
 be closed with enough margin before escalating to the six-pole 79.627% rung.
+
+
+## 11. Source-interface correction: principal q=1 arc, not the generic minor arc
+
+The earlier discussion in Sections 4--6 identified Evans' local minor-arc
+estimate as the preferred source interface.
+
+That classification has been superseded by the exact frequency-location
+calculation.
+
+For a product cell of scale M with H=M/T,
+
+    alpha_k=tau_k/(2pi M)
+
+lies in
+
+    [1/(2pi H),1/(pi H)]+o(1/H).
+
+In the E2 long-shift range, Evans' parameters satisfy Q<H.  Hence this
+entire interval lies inside the q=1 principal major arc
+
+    |alpha|<=1/Q.
+
+Therefore:
+
+- the balanced product collapse and H=M/T shift geometry in this note remain
+  valid;
+- the generic minor-arc estimate is not the load-bearing theorem for the
+  main WP84 window;
+- the primary source object is the q=1 centered major-arc remainder.
+
+A further normalization audit shows that the published global positive L2
+bound
+
+    B^2(M)<<M/log^eta M
+
+cannot simply be inserted after oversampling: the extra factor H is too
+large on a fixed supercritical cell.
+
+The active target is a signed pair-subtracted q=1 principal-arc estimate, or
+a genuinely local centered-remainder bound with an additional effective
+H^(-1) gain.
+
+See:
+
+    notes/WP84_E2_PRINCIPAL_ARC_GEOMETRY.md
+    notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md
