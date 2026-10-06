@@ -113,18 +113,49 @@ J of length U,
       C (U+N)
       sum_m |a_m(theta)|^2.
 
-Sampling at spacing 2 pi/L costs only an additional factor O(L).  One may
-obtain the discrete form directly from the large sieve, or by applying the
-continuous theorem to disjoint intervals of length comparable with 1/L and
-using the same theorem for the derivative.
+For the actual Fourier grid, with spacing h=2 pi/L, use the elementary local
+Sobolev sampling inequality on disjoint h-cells (enlarging J by O(h) at the
+two ends):
 
-Thus for the r grid points in one candidate endpoint window,
+    sum_{tau_k in J} |S_theta(tau_k)|^2
+      <=
+      C [
+        h^(-1) int_{J+} |S_theta(t)|^2 dt
+        + h int_{J+} |S_theta'(t)|^2 dt
+      ].
+
+Here
+
+    S_theta'(t)
+      =
+      i sum_{m<=N}
+          (log m) a_m(theta) exp(i t log m).
+
+Apply Montgomery--Vaughan separately to S_theta and S_theta'.  Since
+
+    N<=T^2,
+    log N=O(L)
+
+in the active scaling, the derivative term obeys
+
+    h (U+N)
+      sum_m (log m)^2 |a_m(theta)|^2
+      <=
+      C L (U+N)
+      sum_m |a_m(theta)|^2,
+
+while the zeroth-order term has the same C L(U+N) scale.  Therefore, after
+integrating the finite feature parameters and using their uniform second-mass
+bound,
 
     sum_{k in window}
       int |S_theta(tau_k)|^2 dtheta
 
       <=
       C L (U+N).
+
+This supplies the discrete step directly; no unproved pointwise sampling
+claim is being inserted.
 
 Since
 
