@@ -118,7 +118,35 @@ This is only an obstruction to that particular conditional-variance method.
 It does not rule out a direct averaged eigenvalue small-ball theorem for the
 full matrix \(W_d\), nor does it show that such a theorem is false.
 
-## 4. Evidence boundary and next kill gate
+
+
+## 4. Exact falsifier for pointwise transfer from the F61 route
+
+The shifted consumer and the active bounded consumer
+\[
+F_{61}(x)=\frac{62P(x)^2}{P(x)^2+61}
+\]
+are distinct. In particular, \(p_s\le F_{61}\) is false. At the rational
+point \(x=4/5\),
+\[
+P(4/5)=-\frac{41669}{347275},\qquad
+P(4/5)^2=\frac{1736305561}{120599925625},
+\]
+and the shifted denominator is \(16/25\). Hence
+\[
+p_s(4/5)=\frac{13890444488}{120599925625}
+       \approx0.1151778860,
+\]
+whereas
+\[
+F_{61}(4/5)=\frac{53825472391}{3679165884343}
+       \approx0.0146298031.
+\]
+Thus the fixed-pole \(F_{61}\) arithmetic gate cannot imply the shifted
+\(p_s\) gate by pointwise consumer domination. Any transfer between those
+routes would need a different, proved relation on the actual spectral law.
+
+## 5. Evidence boundary and next kill gate
 
 The exact scalar-shift tail lemma is unconditional as a finite-dimensional
 inequality, uniform in \(A_d\) and \(d\). The continuum covariance conclusion
