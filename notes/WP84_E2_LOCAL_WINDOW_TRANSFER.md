@@ -2,7 +2,7 @@
 
 Date: 2026-10-06
 
-Status: **THEOREM-INTERFACE REDUCTION — ON SHORT PRODUCT CELLS, THE MULTIPLICATIVE FINITE-COMPRESSION KERNEL BECOMES A LOCAL ADDITIVE FOURIER ENERGY ON THE EXACT 1/H SCALE USED BY THE E2 MINOR-ARC THEOREM**
+Status: **THEOREM-INTERFACE REDUCTION — ON SHORT PRODUCT CELLS, THE MULTIPLICATIVE FINITE-COMPRESSION KERNEL BECOMES A LOCAL ADDITIVE FOURIER ENERGY OF WIDTH 1/H; THE ACTUAL WINDOW IS PRINCIPAL-MAJOR-ARC, NOT GENERIC MINOR-ARC**
 
 No unconditional zero-density percentage is claimed here.
 
@@ -182,37 +182,56 @@ plus the controlled phase-linearization error.
 So the hard balanced trace sector is a local additive Fourier energy, not an
 arbitrary sum over shifts.
 
-## 5. Match to the E2 minor-arc theorem
+## 5. Source-interface correction: the window is principal major arc
 
-For the factor-sliced semiprime coefficient, Evans' E2 circle-method
-argument uses
+The location of the window matters, not only its width.
 
-    S(alpha)
-      =
-      sum_{X<n<=2X}
-        varpi_2(n)e(n alpha).
+Since
 
-Its Proposition 3.5 controls, uniformly for a minor-arc centre alpha,
+    alpha_k=tau_k/(2pi M_0)
 
-    int_{
-      minor
-      cap
-      [alpha-1/(2H),alpha+1/(2H)]
-    }
-      |S(theta)|^2 dtheta
+and the consumed height interval satisfies
 
-by a power of log smaller than the full local mass, in the range
+    T<=tau_k<=2T+o(T),
 
-    log^(19+epsilon) X
+we have
+
+    1/(2pi H)
       <=
-      H
+      alpha_k
       <=
-      X log^(-A) X.
+      1/(pi H)+o(1/H).
 
-The WP84 finite-compression window found above has the same width 1/H.
+In the E2 long-shift range the circle-method parameters satisfy
 
-This is the correct source interface: apply the local frequency-window bound
-before converting to an absolute sum over additive shifts.
+    Q<H.
+
+The q=1 principal major arc contains
+
+    |alpha|<=1/Q.
+
+Hence
+
+    boxed:
+
+    the entire WP84 local window lies inside the q=1 principal major arc.
+
+Therefore the principal source interface is the E2 **major-arc**
+decomposition, not Proposition 3.5's generic minor-arc estimate.
+
+The major-arc source writes the E2 exponential sum as
+
+    principal model
+      +
+    centered remainder.
+
+The WP84 task is to transfer this decomposition through the exact smooth
+factor weights, identify the principal term with the closed-cycle connected
+main, and prove the centered q=1 remainder is o(1) in the project
+normalization.
+
+The minor-arc estimate remains relevant only for auxiliary side windows or
+partition errors that genuinely leave the principal arc.
 
 ## 6. Discrete samples versus local integral
 
@@ -223,40 +242,11 @@ The alpha grid spacing is
 which is finer by a factor comparable to L than the natural 1/M_0
 oscillation scale of a product-block exponential sum.
 
-Therefore the discrete local average can be transferred to a slightly
-enlarged local integral by the standard oversampling inequality for
-trigonometric polynomials.
+The discrete-to-local transfer is proved separately in
 
-A theorem-grade implementation should prove the elementary form directly:
+    notes/WP84_E2_OVERSAMPLING_TRANSFER.md.
 
-    boxed:
-
-    (1/N_I)
-    sum_{alpha_k in J}
-      |S_I(alpha_k)|^2
-
-      <=
-      C
-      H
-      int_{J^+}
-        |S_I(theta)|^2 dtheta,
-
-where
-
-    |J| comparable to 1/H,
-
-    J^+
-
-is enlarged by O(1/M_0), and C is absolute.
-
-The enlargement is negligible because
-
-    1/M_0
-      =
-      1/(T H)
-      =
-      o(1/H).
-
+It is independent of the major/minor-arc classification and remains valid.
 ## 7. Weight transfer still required
 
 The WP84 product coefficient is not literally varpi_2.
@@ -365,15 +355,14 @@ Closed here:
 - uniform multiplicative-to-additive phase linearization on short product
   cells;
 - exact identification of the additive frequency-window width 1/H;
-- correct placement of the E2 local minor-arc theorem before any lossy
-  shiftwise Cauchy--Schwarz step.
+- exact location of the local window inside the q=1 principal major arc.
 
 Still open:
 
 - the weighted varpi_2 transfer with explicit constants/uniformity;
-- the discrete-sample-to-local-integral lemma in the exact normalization;
+- weighted q=1 principal-character transfer with explicit normalization;
 - major-arc matching to the closed connected kernel;
-- a normalized mass bound for the shrinking s=1+o(1) transition layer.
+- a normalized bound for the centered q=1 major-arc remainder.
 
 No unconditional record theorem is claimed.
 
