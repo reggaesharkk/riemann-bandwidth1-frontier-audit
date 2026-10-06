@@ -5590,3 +5590,83 @@ See:
 
 No unconditional >79 theorem is claimed until the large-T positive-energy
 bound is proved.
+
+
+## 72. Bounded Christoffel ladder collapses to one rank-six positive energy
+
+The six-simple-pole representation of F_delta is no longer the smallest
+theorem state.
+
+Let
+
+    A=P(H),
+
+and
+
+    Q_delta
+      =
+      sqrt(delta+1)
+      A
+      (A+i sqrt(delta) I)^(-1).
+
+Then exactly
+
+    boxed:
+
+    F_delta(H)=Q_delta^*Q_delta.
+
+Moreover, for the full sharp Loewner matrix,
+
+    rank[D,H]<=2
+
+implies
+
+    rank[D,P(H)]<=6,
+
+and the resolvent identity gives
+
+    boxed:
+
+    rank[D,Q_delta]<=6
+
+for every fixed delta>0.
+
+Thus the complete bounded Christoffel ladder is a family of the same positive
+finite-channel geometry:
+
+    tau F_delta(H)
+      =
+      diagonal energy
+      +
+      rank-six K2 Fourier energy.
+
+The channel dimension does not grow with delta.
+
+At delta=61 the theorem target is
+
+    limsup tau(Q_61^*Q_61)
+      <=
+      87730/847351,
+
+which yields 79.29311466...%.
+
+If the same fixed-delta rank-six estimate is proved for every delta>=61, the
+external supremum over fixed delta recovers
+
+    boxed:
+
+    11061/13891
+      =
+      79.6270966813...%.
+
+Therefore the full 79.627 frontier can now be attacked through a
+parameterized rank-six positive-energy theorem rather than six unrelated
+resolvents or a rank-20 repeated-pole state.
+
+See:
+
+    notes/WP84_CHRISTOFFEL_RANK6_POSITIVE_ENERGY.md
+    src/wp84_christoffel_rank6_positive_energy.py
+
+No unconditional >79 theorem is claimed until the large-T rank-six energy
+estimate is closed.
