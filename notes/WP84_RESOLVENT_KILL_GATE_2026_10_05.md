@@ -5098,3 +5098,105 @@ See:
     notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md
 
 No unconditional record theorem is claimed yet.
+
+
+## 69. Fixed-scale connected sector is a negative covariance kernel
+
+A stronger structure is available after summing the six balanced sign
+interleavings.
+
+Fix one exact normalized product scale
+
+    1<=s<=2,
+
+and write the two factor pairs as
+
+    (x,s-x),
+    (y,s-y).
+
+Set
+
+    r_x=min(x,s-x),
+    r_y=min(y,s-y),
+    c=s-1.
+
+The exact symbolic certificate proves
+
+    boxed:
+
+    C_s(x,y)
+      =
+      -2c
+      [
+        min(r_x,r_y)-c
+      ].
+
+Hence
+
+    -C_s(x,y)
+
+      =
+      2c
+      int_c^(s/2)
+        1_{u<=r_x}
+        1_{u<=r_y}
+      du
+
+is positive semidefinite.
+
+The finite trace matrix
+
+    K_ij
+      =
+      d^(-1)
+      sum_k
+        exp(i tau_k log(m_i/m_j))
+
+is also positive semidefinite because it is a Gram matrix.
+
+Therefore, on an exact common product-scale slice,
+
+    boxed:
+
+    C_s o K
+
+is negative semidefinite,
+
+and the complete balanced connected finite-compression quadratic form is
+nonpositive, including all outer Dirichlet lobes.
+
+The remaining mismatch is only that actual near-resonant products have
+
+    |s_i-s_j|
+      =
+      O(1/(TL)),
+
+not exactly zero.
+
+A scale partition with width
+
+    delta_L=L^(-1/2)
+
+reduces that mismatch to:
+
+- bulk same-scale cells: sign-closed;
+- scale-boundary strips: O(L^(-1/2)) normalized mass;
+- branch-wall strips: the same boundary-annulus mechanism;
+- within-cell scale perturbation: large-sieve amplification
+  O(1+M/T) times O(1/(TL)), hence O(1/L) because M<=T^2.
+
+Thus the outer-tail problem has been converted from a shifted-prime
+correlation theorem into a scale-freezing / boundary-annulus theorem
+interface.
+
+Before promotion, verify the exact balanced-ledger orientation match and the
+coefficient second-mass normalization.
+
+See:
+
+    notes/WP84_FIXED_SCALE_CONNECTED_KERNEL.md
+    src/wp84_fixed_scale_connected_kernel.py
+    notes/WP84_CONNECTED_SCALE_FREEZING_BRIDGE.md
+    certificates/WP84_FIXED_SCALE_CONNECTED_KERNEL_MANIFEST.json
+
+No unconditional record theorem is claimed yet.
