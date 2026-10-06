@@ -4943,3 +4943,82 @@ See:
     notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md
 
 No unconditional record theorem is claimed yet.
+
+
+## 67. Balanced nonclosed connected amplitude is sign-closed
+
+The exact closed-cycle theorem
+
+    C4<=0
+
+extends farther than previously recorded.
+
+For four arbitrary normalized shifts v0,...,v3, do not impose
+
+    v0+v1+v2+v3=0.
+
+Retain the final nonclosed endpoint
+
+    Y=sum_j v_j
+
+in every first- and second-overlap path.
+
+Let B4_nc be the same signed 26-term connected second-overlap bracket.
+
+An exact 4D hyperplane-arrangement certificate proves:
+
+    boxed:
+
+    if exactly two v_j are nonnegative and two are nonpositive,
+    and the common first overlap is nonzero,
+
+    then
+
+    B4_nc(v)<=0.
+
+The certificate uses:
+
+    45 exact kink/cutoff/sign hyperplanes,
+    327 ambient rational vertices,
+
+and checks all six balanced sign orthants with exact Fraction arithmetic.
+
+Thus finite-compression positivity cannot come from the balanced connected
+overlap amplitude itself.
+
+The only remaining sign-changing scalar is the common finite trace factor
+
+    K_T(Y)
+      =
+      exp(iTY)D_d(Y/L)
+      =
+      d^(-1) sum_k exp(i tau_k Y).
+
+For the real fourth moment, positive connected leakage requires
+
+    Re K_T(Y)<0
+
+where the connected amplitude is strictly negative.
+
+Moreover
+
+    |Y|<=pi/(2 tau_max)
+
+implies every cos(tau_k Y)>=0, hence the whole balanced connected
+contribution is pointwise nonpositive.
+
+With tau_max=2T+o(T), the central safe detuning interval is asymptotically
+
+    boxed:
+
+    |Y|<=pi/(4T)+o(1/T).
+
+Therefore the R=400 fourth-moment arithmetic debt is now confined to the
+outer near-resonant detuning lobes where Re K_T is negative.
+
+See:
+
+    notes/WP84_PHI4_BALANCED_NONCLOSED_NONPOSITIVITY.md
+    src/wp84_phi4_balanced_nonclosed_nonpositive.py
+
+No unconditional record theorem is claimed yet.
