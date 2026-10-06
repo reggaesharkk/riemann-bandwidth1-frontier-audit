@@ -317,3 +317,113 @@ See:
     notes/WP84_FIXED_SCALE_CONNECTED_KERNEL.md
     notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md
     notes/WP84_PRODUCT_BLOCK_LARGE_SIEVE.md
+
+
+## 10. Torus-distance strengthening and Dirichlet cancellation
+
+The linear detuning bound in Section 6 can be upgraded to the natural
+mod-one distance.
+
+Put
+
+    delta=|s-t| in [0,1],
+
+    rho=min(delta,1-delta).
+
+For delta<=1/2, Section 6 already gives
+
+    |E|<=630 rho.
+
+For delta>=1/2, use the endpoint geometry directly.
+
+Every first-walk overlap contains both the initial point 0 and the final
+endpoint s-t.  Therefore
+
+    O_A
+      <=
+      1-delta
+      =
+      rho.
+
+Since |B4_nc|<=26, the six-word connected sum obeys
+
+    |C_6|
+      <=
+      6*26*rho
+      =
+      156 rho.
+
+For the cross-scale reference,
+
+    min(c_s,c_t)
+      <=
+      1-|s-t|
+      =
+      rho,
+
+so
+
+    0<=G<=2 rho.
+
+Hence globally
+
+    boxed:
+
+    |E(s,t;x,y)|
+      <=
+      630
+      dist(s-t,Z).
+
+Now use the exact Dirichlet kernel
+
+    D_d(u)
+      =
+      sin(pi d u)
+      /
+      [
+        d sin(pi u)
+      ]
+
+up to a unit phase.
+
+For
+
+    rho=dist(u,Z)<=1/2,
+
+    |sin(pi u)|
+      >=
+      2 rho.
+
+Thus
+
+    |D_d(u)|
+      <=
+      min(
+        1,
+        1/(2d rho)
+      ).
+
+Combining with the residual bound gives the pointwise high-frequency
+cancellation
+
+    boxed:
+
+    |E_ij K_ij|
+      <=
+      315/d.
+
+This is a genuine detuning-versus-Dirichlet cancellation: the zero of the
+cross-scale residual at exact scale matching and at the mod-one alias walls
+cancels the singular denominator of the finite trace.
+
+Important:
+
+    the entrywise 315/d bound alone does not close the quadratic form,
+    because an l1 estimate for the full product coefficient is too costly.
+
+The remaining step must preserve either:
+
+- product-block l2 structure through a Schur/large-sieve estimate; or
+- the exact finite-branch separability of E before taking absolute values.
+
+Still, the dangerous high-frequency denominator is now removed exactly.
