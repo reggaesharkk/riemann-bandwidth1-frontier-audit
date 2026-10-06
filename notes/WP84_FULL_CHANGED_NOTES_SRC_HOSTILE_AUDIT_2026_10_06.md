@@ -81,9 +81,12 @@ The notes do not give one consistent active attack contract:
   differentiated-`T12` inequality as the active >79/full-frontier
   obstruction.
 
-These are distinct analytic routes. Their exact/model algebra does not make
-either arithmetic transport theorem automatic. A canonical current-head
-decision and one matching theorem statement are still needed.
+These are distinct analytic routes. The user's explicit project instruction
+selects the shifted exact-frontier one-point rank-six/heat-curvature route as
+the primary attack. Treat the fixed-parameter six-pole family as a separate
+bounded-resolvent route and R=400 as the lower-risk conditional route, not as
+substitutes for the selected primary target. Their exact/model algebra does
+not make the arithmetic transport theorem automatic.
 
 ## Mathematical status after audit
 
