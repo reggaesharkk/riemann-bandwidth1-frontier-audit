@@ -5100,103 +5100,148 @@ See:
 No unconditional record theorem is claimed yet.
 
 
-## 69. Fixed-scale connected sector is a negative covariance kernel
+## 69. Connected sector: exact orientation, global Brownian reference, and detuning gate
 
-A stronger structure is available after summing the six balanced sign
-interleavings.
+The fixed-scale balanced connected sector is now normalized exactly.
 
-Fix one exact normalized product scale
+For one common product scale s,
 
-    1<=s<=2,
+    C6(s;x,y)
 
-and write the two factor pairs as
+denotes the sum over the six balanced sign patterns with fixed internal
+same-sign label ordering.
 
-    (x,s-x),
-    (y,s-y).
+The exact orientation gate proves
 
-Set
+    C24=4 C6=C8,
 
-    r_x=min(x,s-x),
-    r_y=min(y,s-y),
-    c=s-1.
+where C24 is the full 24-labelled-word sum and C8 is the sum of the eight
+alternating labelled words.  Equivalently,
 
-The exact symbolic certificate proves
+    C6/2=C8/8.
+
+Thus the apparent factor-of-two difference between the six-sign and
+eight-alternating Brownian formulas is only a normalization change.
+
+At fixed scale,
 
     boxed:
 
-    C_s(x,y)
+    C6(s;x,y)
+
       =
-      -2c
+      -2(s-1)
       [
-        min(r_x,r_y)-c
-      ].
+        min(r_s(x),r_s(y))
+        -(s-1)
+      ],
 
-Hence
+with
 
-    -C_s(x,y)
+    r_s(x)=min(x,s-x).
 
+This is negative semidefinite after the Brownian min-kernel factorization.
+
+A global unequal-scale positive-semidefinite reference is now available.
+For i=(s,x), j=(t,y), set
+
+    c_i=s-1,
+    r_i=min(x,s-x),
+
+and
+
+    G_ij
       =
-      2c
-      int_c^(s/2)
-        1_{u<=r_x}
-        1_{u<=r_y}
-      du
+      2 min(c_i,c_j)
+      [
+        min(r_i,r_j)
+        -
+        max(c_i,c_j)
+      ]_+.
 
-is positive semidefinite.
+Both factors are positive-semidefinite Gram kernels, so G is positive
+semidefinite on arbitrary unequal scales.
 
-The finite trace matrix
+Moreover
 
-    K_ij
-      =
-      d^(-1)
-      sum_k
-        exp(i tau_k log(m_i/m_j))
+    C6(s,s;x,y)=-G((s,x),(s,y)).
 
-is also positive semidefinite because it is a Gram matrix.
+For the exact unequal-scale six-word kernel define
 
-Therefore, on an exact common product-scale slice,
+    E=C6+G.
+
+An elementary overlap-Lipschitz estimate gives
 
     boxed:
 
-    C_s o K
+    |E(s,t;x,y)|
+      <=
+      630 |s-t|.
 
-is negative semidefinite,
+Using the endpoint overlap when |s-t| is close to one upgrades this to the
+torus-distance form
 
-and the complete balanced connected finite-compression quadratic form is
-nonpositive, including all outer Dirichlet lobes.
+    boxed:
 
-The remaining mismatch is only that actual near-resonant products have
+    |E(s,t;x,y)|
+      <=
+      630 dist(s-t,Z).
 
-    |s_i-s_j|
-      =
-      O(1/(TL)),
+The exact finite trace K is positive semidefinite, hence
 
-not exactly zero.
+    -G o K
 
-A scale partition with width
+is negative semidefinite globally.
 
-    delta_L=L^(-1/2)
+All possible positive connected leakage is therefore confined to
 
-reduces that mismatch to:
+    boxed:
 
-- bulk same-scale cells: sign-closed;
-- scale-boundary strips: O(L^(-1/2)) normalized mass;
-- branch-wall strips: the same boundary-annulus mechanism;
-- within-cell scale perturbation: large-sieve amplification
-  O(1+M/T) times O(1/(TL)), hence O(1/L) because M<=T^2.
+    E o K.
 
-Thus the outer-tail problem has been converted from a shifted-prime
-correlation theorem into a scale-freezing / boundary-annulus theorem
-interface.
+The Dirichlet denominator is already neutralized pointwise:
 
-Before promotion, verify the exact balanced-ledger orientation match and the
-coefficient second-mass normalization.
+    |E_ij K_ij|
+      <=
+      315/d.
+
+The balanced ordinary-prime product coefficient also has theorem-side
+second mass
+
+    ||c||_2^2=O(1),
+
+with proper-prime-power squared mass o(1).
+
+Finally, on a dyadic product block M<m,n<=2M, the classical large sieve gives
+
+    boxed:
+
+    ||K||_op
+      <=
+      1+16pi M/T.
+
+Important correction:
+
+    a cell-center freezing of width L^(-1/2) is not by itself enough to
+    conclude o(1), because the factor M/T may grow.
+
+The remaining analytic gate is now precisely
+
+    boxed:
+
+    c^*(E o K)c=o(1),
+
+using the actual detuning factor in E before any large-sieve or
+shift-correlation estimate.
+
+This is strictly smaller than the previous generic outer-lobe problem.
 
 See:
 
-    notes/WP84_FIXED_SCALE_CONNECTED_KERNEL.md
-    src/wp84_fixed_scale_connected_kernel.py
-    notes/WP84_CONNECTED_SCALE_FREEZING_BRIDGE.md
-    certificates/WP84_FIXED_SCALE_CONNECTED_KERNEL_MANIFEST.json
+    notes/WP84_BALANCED_ORIENTATION_NORMALIZATION.md
+    notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md
+    notes/WP84_PRODUCT_BLOCK_LARGE_SIEVE.md
+    notes/WP84_CROSS_SCALE_BROWNIAN_REFERENCE.md
+    src/wp84_cross_scale_brownian_reference.py
 
 No unconditional record theorem is claimed yet.
