@@ -6157,3 +6157,61 @@ See:
 
     notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md
     src/wp84_functional_band_delta80_gate.py.
+
+
+## 77. Delta=79 is the current sharp integer-curvature fixed-band rung
+
+A neighboring exact Sturm gate improves the delta=80 functional-band
+fallback.
+
+For
+
+    F_79=80P^2/(P^2+79),
+
+the global real-line curvature satisfies
+
+    ||F_79''||_infinity<71.
+
+Hence, using pi>333/106,
+
+    |tau F_79(H)-tau F_79(H_R)|
+      <
+      [797756/36963]/R
+      +o(R^-1).
+
+At R=12000,
+
+    h_79(w0)
+      =
+      28300/274701,
+
+and the certified band charge is
+
+      199439/110889000.
+
+Their sum lies below 0.105 by
+
+    915620351/5076886531500
+      ~=1.80350761302e-4.
+
+The corresponding exact fixed-band square target is
+
+    boxed:
+
+    limsup_T tau P(H_12000)^2
+      <
+      452034287/4429838047
+      ~=0.102043072953001.
+
+The allowance above w0 is
+
+    10987444212/61534880310877
+      ~=1.78556359523e-4.
+
+This supersedes delta=80 as the current explicit fixed-band fallback rung.
+The hard arithmetic object remains the same degree-six Christoffel square.
+
+See:
+
+    notes/WP84_FUNCTIONAL_BAND_DELTA79_SHARPENING.md
+    src/wp84_functional_band_delta79_gate.py.
