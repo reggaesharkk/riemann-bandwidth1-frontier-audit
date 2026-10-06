@@ -5493,3 +5493,100 @@ See:
     src/wp84_christoffel_symmetric_linearization.py
 
 No unconditional >79 percent theorem is claimed yet.
+
+
+## 71. Exact rank-six >79 direct consumer
+
+A new full-sharp bounded consumer now improves the first direct >79 target.
+
+Let
+
+    U=(H+iI)(H-iI)^(-1),
+
+and
+
+    q(u)
+      =
+      (1/1000)
+      [
+        419 u^3
+        +(-15-1127 i)u^2
+        +(-1127+7 i)u
+        +(8+419 i)
+      ].
+
+Put
+
+    h(x)=1-|q((x+i)/(x-i))|^2.
+
+The exact support identity is
+
+    |q(u(x))|^2-1
+      =
+      S(x)/[500000(1+x^2)^3],
+
+with
+
+    S(-y)
+      =
+        1313 y^6
+       +3353410 y^5
+       +7506675 y^4
+       +12370084 y^3
+       +7613939 y^2
+       +3398722 y
+       +1313
+      >0
+
+for y>=0.
+
+Hence h(x)<=1_{x>0} globally.
+
+Against the frozen Christoffel extremal model,
+
+    E_model |q(U)|^2
+      =
+      0.10240129924430702...,
+
+so the model simple-zero coefficient is
+
+    boxed:
+
+    79.5197401511...%.
+
+The defect is one positive energy
+
+    tau(q(U)^*q(U)),
+
+and because rank[D,U]<=2,
+
+    boxed:
+
+    rank[D,q(U)]<=6.
+
+Therefore a direct unconditional >79 theorem follows from the single
+full-sharp inequality
+
+    boxed:
+
+    limsup_T tau(q(U_T)^*q(U_T))<0.105.
+
+The theorem-side cushion relative to the exact model is
+
+    0.00259870075569298...,
+
+over five times the cushion of the special repeated-pole r_3 consumer, with
+the same rank-six displacement ceiling.
+
+This is now the preferred direct >79 kill gate.  It does not replace the
+R=400 quartic first-record route, which remains the lower-risk promotion path,
+and it does not yet recover the full 79.62709668... frontier.
+
+See:
+
+    notes/WP84_OPTIMIZED_RANK6_79_CONSUMER.md
+    src/wp84_optimized_rank6_79_consumer.py
+    notes/WP84_RM_POSITIVE_DISPLACEMENT_ENERGY.md
+
+No unconditional >79 theorem is claimed until the large-T positive-energy
+bound is proved.
