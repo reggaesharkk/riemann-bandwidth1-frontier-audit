@@ -6080,3 +6080,80 @@ See:
 
 This is a parallel fallback.  The selected primary attack remains the
 minimal-radius shifted one-point grouped heat-curvature inequality.
+
+
+## 76. Functional-calculus band theorem sharpens the fixed-band >79 fallback
+
+The pole-by-pole residue bound is no longer the best full-to-band theorem.
+
+For every real C^2 consumer f with bounded second derivative, direct trace
+Taylor expansion plus the sharp displacement commutator gives
+
+    |tau f(H)-tau f(H_R)|
+      <=
+      12 q_alpha ||f''||_infinity/(pi^2 R).
+
+In the sharp prime normalization q_alpha=1/4+o(1),
+
+    boxed:
+
+    |tau f(H)-tau f(H_R)|
+      <=
+      3 ||f''||_infinity/(pi^2 R)
+      +o(R^-1).
+
+This avoids summing absolute values of fixed-pole residues.
+
+For
+
+    F_80=81 P^2/(P^2+80),
+
+an exact rational Sturm gate proves
+
+    ||F_80''||_infinity < 72.
+
+Hence
+
+    |tau F_80(H)-tau F_80(H_R)|
+      <
+      216/(pi^2 R)+o(R^-1).
+
+Using pi>333/106 gives the fully rational band constant
+
+    C80=2426976/110889
+       ~=21.8865351838.
+
+At the fixed band
+
+    R=12000,
+
+the exact Jensen model cap plus the certified band charge is strictly below
+0.105 by
+
+    464637587/2741903019000
+      ~=1.69458067547e-4.
+
+Therefore the fixed-band theorem target can be frozen as
+
+    boxed:
+
+    limsup_T tau P(H_12000)^2
+      <
+      101698640/996729767
+      ~=0.102032309425349.
+
+This threshold is
+
+    2323187935/13845573193397
+      ~=1.67792831871e-4
+
+above the exact Christoffel model value 1415/13891.
+
+This is not yet an unconditional >79 theorem: the remaining debt is the
+fixed-band degree-six arithmetic estimate.  But the required band radius has
+dropped substantially relative to the earlier residue-sum fallback.
+
+See:
+
+    notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md
+    src/wp84_functional_band_delta80_gate.py.
