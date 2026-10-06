@@ -5705,3 +5705,109 @@ This is now the lowest-risk first-strike route.  The remaining distinction is
 validation rather than an identified missing word class: the load-bearing
 analytic inputs must still receive a hostile source audit before public
 unconditional promotion.
+
+
+## 74. Single fixed rank-six consumer now hits the full 79.627 model frontier
+
+The bounded Christoffel ladder is no longer the only route to the full
+Christoffel headline.
+
+Let
+
+    P(x)
+      =
+      1-(43428/13891)x
+       +(37704/13891)x^2
+       -(9660/13891)x^3,
+
+and define the canonical pole height
+
+    a_*^3=13891/9660.
+
+Put
+
+    p_*(x)
+      =
+      a_*^6 P(x)^2/(x^2+a_*^2)^3,
+
+    h_*(x)=1-p_*(x).
+
+The exact coefficient-sign calculation in
+
+    notes/WP84_EXACT_FRONTIER_RANK6_CHRISTOFFEL_CAYLEY.md
+
+proves
+
+    h_*(x)<=1_{x>0}
+
+globally.
+
+At x=0, h_*(0)=0.  At the three positive Christoffel nodes,
+P(x_j)=0 and h_*(x_j)=1.  Therefore the frozen extremal model gives exactly
+
+    E_model p_*
+      =
+      1415/13891,
+
+and hence
+
+    boxed:
+
+    model simple coefficient
+      =
+      11061/13891
+      =
+      79.6270966813...%.
+
+The positive factor
+
+    Q_*
+      =
+      a_*^3 P(H)(H-i a_* I)^(-3)
+
+is exactly a degree-three polynomial in the Cayley unitary
+
+    U_*=(H+i a_* I)(H-i a_* I)^(-1).
+
+Therefore
+
+    boxed:
+
+    rank[D,Q_*]<=6.
+
+Because H is real symmetric, Q_* is complex symmetric and [D,Q_*] is
+complex skew-symmetric, so its nonzero singular values occur in at most three
+equal pairs.
+
+The first direct >79 theorem target is now
+
+    boxed:
+
+    limsup_T tau(Q_{*,T}^*Q_{*,T})<0.105,
+
+with exact model cushion
+
+    8711/2778200
+      =
+      0.00313548340652221....
+
+This exceeds the r_10 cushion while reducing the displacement width from
+20 to 6.
+
+The exact full-headline target is
+
+    limsup_T tau(Q_{*,T}^*Q_{*,T})
+      <=
+      1415/13891.
+
+This is still an open large-T arithmetic inequality.  The 79.627 value is
+therefore a model/consumer frontier, not yet an unconditional zeta theorem.
+
+The conditioned rational cubic in
+
+    notes/WP84_CONDITIONED_RANK6_79_CONSUMER.md
+
+remains a useful alternate first-strike consumer because its exposed
+heat-curvature coefficients are smaller, even though its model value is
+79.54891665...%.
+
