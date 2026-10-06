@@ -5892,3 +5892,109 @@ See:
 
 The active >79/full-frontier obstruction remains the theorem-grade large-T
 one-sided rank-six energy / differentiated-T12 estimate.
+
+
+## 75. Minimal-radius exact-frontier semicircle supersedes the isolated shifted point
+
+The exact-frontier rank-six consumer is not tied to one pole location.
+
+Let
+
+    r_*^3=13891/9660,
+
+and for every 0<=c<r_* put
+
+    a_c=sqrt(r_*^2-c^2),
+    z_c=c+i a_c.
+
+Then
+
+    p_c(x)
+      =
+      r_*^6 P(x)^2
+      /
+      [((x-c)^2+a_c^2)^3]
+
+satisfies, exactly,
+
+    p_c(x)>=1   for x<=0,
+    p_c(0)=1,
+    p_c(x_j)=0  at all three positive Christoffel roots,
+    p_c(x)->1   as |x|->infinity.
+
+The half-line support proof is coefficientwise after x=-y.  The five
+nonzero coefficients are monotone decreasing in c, and their limiting values
+at c=r_* are positive by elementary rational inequalities.  Hence the whole
+open semicircle is admissible.
+
+Therefore every member has the same exact frozen model defect
+
+    1415/13891
+
+and the same model simple-zero frontier
+
+    11061/13891
+      =
+    79.6270966813...%.
+
+The positive factor is
+
+    Q_c
+      =
+      r_*^3 P(H)(H-z_c I)^(-3),
+
+which is still a degree-three Cayley polynomial and obeys
+
+    rank[D,Q_c]<=6.
+
+Because r_*^3 C=1,
+
+    q_c(1)=-1
+
+for every c, so the large-noise boundary is exactly one throughout the
+family.
+
+A convenient new default is
+
+    c=4/5,
+    a=sqrt(r_*^2-16/25)
+      ~=0.796243923908096.
+
+It improves the exposed one-point heat conditioning relative to the previous
+rational point z=(4/5)(1+i):
+
+    |A|+|B|+|C|
+      ~=2.81446
+      versus
+      ~=2.85878,
+
+and the simple eta-weighted Cauchy proxy is
+
+    ~=4.36692
+      versus
+    ~=4.40132.
+
+Unlike the previous rational shift, this point also restores
+
+    E_infinity=1
+
+exactly.
+
+This does not close the large-T theorem.  It removes an unnecessary
+normalization penalty and exposes a genuine one-parameter conditioning degree
+of freedom without changing the model ledger or displacement rank.
+
+Primary exact-frontier target remains
+
+    limsup_T tau p_c(H_T)<0.105
+
+for the first >79 theorem, and
+
+    limsup_T tau p_c(H_T)<=1415/13891
+
+for the full 79.62709668... frontier.
+
+See:
+
+    notes/WP84_MINIMAL_RADIUS_EXACT_FRONTIER_FAMILY.md
+    src/wp84_minimal_radius_exact_frontier_family.py.
