@@ -281,7 +281,7 @@ No additional almost-prime theorem is needed for this step.
 ## 6. Consequence for the E2 interface
 
 The discrete Gabor average may now be replaced by a local frequency integral
-before the circle-method split:
+before the circle-method decomposition:
 
     discrete balanced trace cell
 
@@ -293,8 +293,19 @@ before the circle-method split:
 
       +o(1).
 
-Therefore the local minor-arc estimate on intervals of width 1/H is at the
-correct analytic level for the WP84 trace.
+The transfer itself is agnostic about major versus minor arcs.
+
+For the actual WP84 location,
+
+    J
+      subset
+      [1/(2pi H),1/(pi H)]
+
+up to lower-order endpoint errors, and in the E2 long-shift regime this lies
+inside the q=1 principal major arc.
+
+Thus the next source theorem is a **principal-major-arc centered-error**
+estimate.  The oversampling lemma remains closed and unchanged.
 
 The previously open discrete-sample-to-local-integral step is closed.
 
@@ -302,9 +313,9 @@ The previously open discrete-sample-to-local-integral step is closed.
 
 Still open:
 
-1. transfer the exact WP84 factor-sliced smooth coefficient to the E2 weight;
-2. preserve the major-arc signed main term under that transfer;
-3. sum the factor slices with uniform constants.
+1. transfer the exact WP84 factor-sliced smooth coefficient to the q=1 principal model plus centered remainder;
+2. preserve the signed principal main term under that transfer;
+3. prove the centered q=1 remainder is o(1) in the exact WP84 normalization.
 
 The shrinking transition layer is handled separately.
 
