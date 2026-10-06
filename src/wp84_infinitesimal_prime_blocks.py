@@ -14,9 +14,9 @@ For cubes, Lambda(n)<=log n and a dyadic comparison proves
   sum_{n>=2} (log n)^3/n^(3/2) < infinity,
 so sum ||B_n||^3 = O(L^-3).
 
-This script checks the elementary dyadic majorant numerically and prints
-a rigorous closed-form upper bound based on sum (k+1)^3 r^k.
-It is a ledger/check, not the analytic proof.
+This script checks a finite partial sum of the dyadic majorant numerically.
+It does not certify the infinite sum; convergence follows from the geometric-series
+argument in the accompanying note. The printed partial sum is a floating-point diagnostic; the convergence argument is the analytic input.
 """
 from fractions import Fraction as F
 import math
@@ -30,7 +30,7 @@ def main():
         s += ((k+1)*math.log(2))**3 * 2**(-k/2)
     # tail after 80 is microscopic; this is diagnostic only.
     print("dyadic cube-mass majorant first 80 shells =",repr(s))
-    assert s < 100.0
+    assert 195.0 < s < 200.0  # loose floating-point smoke range; not a proof bound
     print("hat block square-mass asymptotic coefficient <= 8")
     print("hat block cube-mass = O(L^-3)")
     print("RESULT: WP84_INFINITESIMAL_BLOCK_LEDGER_PASS")
