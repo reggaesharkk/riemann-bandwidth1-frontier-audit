@@ -5022,3 +5022,79 @@ See:
     src/wp84_phi4_balanced_nonclosed_nonpositive.py
 
 No unconditional record theorem is claimed yet.
+
+
+## 68. Entire E2 source shift range is sign-safe
+
+The exact finite trace admits
+
+    Re K_T(Y)
+
+      =
+      A_{T,L}(Y)
+      cos(
+        [T+pi(d-1)/L]Y
+      ),
+
+with A_{T,L}(Y)>=0 on the central lobe.
+
+Since
+
+    d<=TL/(2pi),
+
+the averaged carrier frequency is strictly below 3T/2.  Therefore
+
+    boxed:
+
+    |Y|<=pi/(3T)
+      =>
+    Re K_T(Y)>=0.
+
+For a product block M<m,n<=2M and
+
+    H=M/T,
+
+every shift
+
+    |h|=|n-m|<=H
+
+satisfies, for T>=12,
+
+    |log(m/n)|
+      <=
+      -log(1-1/T)
+      <
+      pi/(3T).
+
+Hence the complete E2 correlation range |h|<=H lies inside the nonnegative
+trace lobe.
+
+Combined with the exact theorem
+
+    B4_nc<=0
+
+on the balanced connected overlap amplitude, this gives
+
+    boxed:
+
+    |h|<=H
+      =>
+    B4_nc * Re K_T <=0.
+
+Consequently the shifted-correlation mechanism that produced the dangerous
+dimensionless +1 in the positive principal-arc L2 audit cannot create
+positive WP84 connected leakage once the exact signs are retained.
+
+The arithmetic frontier is reduced to:
+
+1. exact q=1 diagonal/principal-term matching;
+2. outer shifts |h|>H where Re K_T can change sign.
+
+The R=400 positive non-pair allowance remains >0.0247937.
+
+See:
+
+    notes/WP84_E2_SHIFT_RANGE_SAFE_LOBE.md
+    notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md
+
+No unconditional record theorem is claimed yet.
