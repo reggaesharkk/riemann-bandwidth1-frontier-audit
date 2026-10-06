@@ -5998,3 +5998,85 @@ See:
 
     notes/WP84_MINIMAL_RADIUS_EXACT_FRONTIER_FAMILY.md
     src/wp84_minimal_radius_exact_frontier_family.py.
+
+
+## 75. Fixed-band Christoffel-square fallback
+
+A theorem-safe parallel >79 route has been isolated.
+
+For the bounded Christoffel consumer
+
+    F_delta=(delta+1)P^2/(P^2+delta),
+
+first compare the full sharp matrix H with its fixed displacement truncation
+H_R using the already-established fixed-pole O(1/R) resolvent comparison.
+If z_j(delta) are the six simple poles and c_j(delta) their residues, then
+
+    |tau F_delta(H)-tau F_delta(H_R)|
+      <= C_band(delta)/R+o(R^-1),
+
+with
+
+    C_band(delta)
+      =
+      (6/pi^2) sum_j
+        |c_j(delta)|/|Im z_j(delta)|^3.
+
+Only after this bounded comparison, use concavity of
+
+    h_delta(w)=(delta+1)w/(delta+w)
+
+to obtain the exact Jensen reduction
+
+    tau F_delta(H_R)
+      <=
+      h_delta(tau P(H_R)^2).
+
+Therefore a strict >79 theorem follows from one fixed-band scalar inequality
+
+    h_delta(
+      limsup_T tau P(H_R)^2
+    )
+      +C_band(delta)/R
+      <0.105.
+
+This route never applies the unbounded degree-six polynomial to the full
+arithmetic matrix and therefore preserves the Proposition-R firewall.
+
+The centered Christoffel square is
+
+    P(1+X)^2
+      =
+      1/192959881 [
+        2229049
+        -8958000 X
+        -17049864 X^2
+        +81188760 X^3
+        +18148176 X^4
+        -168547680 X^5
+        +93315600 X^6
+      ].
+
+The top three powers combine exactly as
+
+    c6 X^6+c5 X^5+c4 X^4
+      =
+      c6 X^4(X-727/805 I)^2
+      -(57960000/192959881)X^4.
+
+So the new high-order arithmetic target is one positive fixed-band square,
+not separate raw fifth and sixth moments.
+
+Important limitation: the existing degree-four inequality
+connected<=0 only yields mu4^c<=4/15.  Replacing the Christoffel model value
+1/4 by 4/15 costs exactly about 0.00156752584233 in the degree-six square.
+Hence the fallback must recover quantitative connected m4 negativity or gain
+the same amount through the combined degree-five/six term.
+
+See:
+
+    notes/WP84_FIXED_BAND_CHRISTOFFEL_SQUARE_FALLBACK.md
+    notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md
+
+This is a parallel fallback.  The selected primary attack remains the
+minimal-radius shifted one-point grouped heat-curvature inequality.
