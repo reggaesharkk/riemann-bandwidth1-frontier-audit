@@ -6298,3 +6298,73 @@ See:
 
     notes/WP84_RATIONAL_CANONICAL_ONE_POLE_BAND.md
     src/wp84_rational_canonical_one_pole_band.py.
+
+
+## 76. Exact pointwise C5 sign theorem
+
+The m4-free R=6000 fallback asks for a one-sided centered fifth-moment lower
+bound and a sixth-moment upper bound.
+
+A new exact finite-polyhedral certificate now proves the pointwise connected
+five-cycle structure.
+
+For a closed five-step vector
+
+    v0+v1+v2+v3+v4=0,
+
+write
+
+    s(v)=1/2 sum_j |v_j|
+
+and let C5(v) be the standard 150-term connected overlap kernel.
+
+On the complete outer-overlap support,
+
+    0 <= C5(v) <= (s(v)-1)_+.
+
+Hence
+
+    s(v)<=1  =>  C5(v)=0.
+
+The proof is exact and finite:
+
+- the common piecewise-affine arrangement has 45 hyperplanes;
+- every 4-fold intersection is checked (148995 candidates);
+- 151 rational vertices lie in the closed outer-support polytope;
+- Fraction arithmetic verifies both inequalities at every vertex;
+- cellwise affinity then gives the global result.
+
+The vertex range is
+
+    min C5=0,
+    max C5=1/2.
+
+This is stronger than the previously known integrated identity
+
+    integral O5 C5 = 1/36.
+
+It shows that the entire fifth connected correction is a positive
+supercritical object with at most linear turn-on.
+
+It does NOT yet prove
+
+    mu5^c(H_6000) >= 1/36-o(1),
+
+because the finite-compression arithmetic transport of the full positive
+supercritical mass remains open.  It does, however, remove any hidden
+negative C5 amplitude and localizes the transport debt entirely to s>1.
+
+See:
+
+    notes/WP84_C5_POINTWISE_SUPERCRITICAL_SIGN.md
+    src/wp84_c5_pointwise_supercritical_sign.py.
+
+The preferred fixed-band arithmetic target remains the m4-free R=6000 gate:
+
+    mu5^c(H_6000) >= 1/36-o(1),
+
+    mu6^c(H_6000) <= 34/135+o(1).
+
+The next useful attack is therefore a lower-bound-preserving finite-compression
+transport for the positive supercritical C5 kernel, in parallel with the
+sixth-order upper-bound route.
