@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Finite-dimensional regression for the shifted consumer's 3x3 wedge factorization.
+"""Finite regression for the shifted consumer's exact Gram/wedge identities.
 
-Exact Fraction checks cover the coefficient matrix M and its invariants.
-Floating matrix checks cover only finite algebra, not a large-T zeta estimate.
+Fraction checks are exact. Matrix checks use one deterministic floating-point
+example and do not establish a large-T zeta-side estimate.
 """
 from fractions import Fraction as F
 import math, random
@@ -34,6 +34,11 @@ def inv(A):
     return [row[n:] for row in X]
 def err(A,B):
     return max(abs(A[i][j]-B[i][j]) for i in range(len(A)) for j in range(len(A[0])))
+def outer(a,b):
+    return [[a[i][0]*b[j][0] for j in range(len(b))] for i in range(len(a))]
+def inner_k2(A,B):
+    return sum(A[i][j].conjugate()*B[i][j]/(i-j)**2
+               for i in range(len(A)) for j in range(len(A)) if i!=j)
 
 def exact_coefficients():
     A,B,C=F(43428,13891),F(37704,13891),F(9660,13891)
@@ -64,8 +69,8 @@ def exact_coefficients():
 def main():
     A,B,C,b1q,b2q,b3q=exact_coefficients()
     b1,b2,b3=map(as_complex,(b1q,b2q,b3q))
-    z=.8+.8j
-    r3=(math.sqrt(32/25))**3
+    bvec=[b1,b2,b3]
+    z=.8+.8j; r3=(math.sqrt(32/25))**3
     d=9; rng=random.Random(8406); alpha=[rng.uniform(-1,1) for _ in range(d)]
     H=[[0.0 for _ in range(d)] for _ in range(d)]
     for i in range(d):
@@ -91,6 +96,28 @@ def main():
     pred=scale(-r3/math.pi,wedge)
     comm_res=err(comm,pred)
     assert comm_res<2e-10,comm_res
+
+    # Three resolvent-power channels W_k and their K2 Gram matrix.
+    W=[]
+    for k in range(1,4):
+        wk=[[0j for _ in range(d)] for _ in range(d)]
+        for j in range(1,k+1):
+            m=k+1-j
+            u_j=[[U[i][j-1]] for i in range(d)]
+            v_j=[[V[i][j-1]] for i in range(d)]
+            u_m=[[U[i][m-1]] for i in range(d)]
+            v_m=[[V[i][m-1]] for i in range(d)]
+            wk=add(wk,add(outer(u_j,v_m),scale(-1,outer(v_j,u_m))))
+        W.append(wk)
+    G=[[inner_k2(W[k],W[l]) for l in range(3)] for k in range(3)]
+    gram_energy=sum(bvec[k].conjugate()*G[k][l]*bvec[l]
+                    for k in range(3) for l in range(3))
+    grouped_energy=sum(abs(wedge[i][j])**2/(i-j)**2
+                       for i in range(d) for j in range(d) if i!=j)
+    gram_res=abs(gram_energy-grouped_energy)
+    assert gram_res<2e-10,(gram_energy,grouped_energy)
+    assert gram_energy.real>=-1e-12 and abs(gram_energy.imag)<1e-12
+
     lhs=sum(abs(Q[i][j])**2 for i in range(d) for j in range(d))/d
     rhs=sum(abs(Q[i][i])**2 for i in range(d))/d
     rhs+=sum(abs(comm[i][j])**2/(i-j)**2 for i in range(d) for j in range(d) if i!=j)/d
@@ -98,6 +125,7 @@ def main():
     assert energy_res<1e-12,(lhs,rhs)
     print('exact M coefficients and invariants: PASS')
     print('max_commutator_factorization_residual =',comm_res)
+    print('three_channel_Gram_contraction_residual =',gram_res)
     print('positive_energy_identity_residual =',energy_res)
-    print('RESULT: SHIFTED_RESOLVENT_WEDGE_FACTOR_PASS (finite algebra only)')
+    print('RESULT: SHIFTED_THREE_CHANNEL_GRAM_PASS (finite algebra only)')
 if __name__=='__main__': main()
