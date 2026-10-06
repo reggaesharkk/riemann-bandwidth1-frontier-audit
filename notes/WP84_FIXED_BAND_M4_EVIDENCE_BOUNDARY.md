@@ -53,7 +53,7 @@ and the exact pair calculation gives
 
 Together with C4<=0 on exact closed cycles, this leaves roughly 0.02479 for positive nonclosed / finite-compression leakage.  Bounding that leakage is the actual remaining arithmetic problem.
 
-The Evans almost-prime theorem remains relevant in the long-shift regime, but its almost-all-h L2 corollary cannot simply be inserted into the WP84 trace sum: a naive Cauchy--Schwarz step can lose the full shift length H.  The correct source interface should work at the weighted circle-method / local minor-arc level.
+The Evans almost-prime theorem remains relevant in the long-shift regime, but neither its almost-all-h L2 corollary nor its generic minor-arc estimate is the load-bearing source input for the main WP84 window.  The exact frequency calculation places that window inside the q=1 principal major arc.  The published global positive major-arc L2 remainder bound also loses the full factor H after WP84 oversampling.  The current source target is therefore a signed pair-subtracted q=1 principal-arc estimate, or a genuinely local centered-remainder bound with an effective H^(-1) gain.
 
 See:
 
@@ -62,3 +62,9 @@ See:
     notes/WP84_PHI4_POINTWISE_NONPOSITIVITY.md
     notes/WP84_BALANCED_PRODUCT_CORRELATION_BRIDGE.md
     notes/WP84_ONE_CAYLEY_RATIONAL_RANK4.md
+
+
+See also:
+
+    notes/WP84_E2_PRINCIPAL_ARC_GEOMETRY.md
+    notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md
