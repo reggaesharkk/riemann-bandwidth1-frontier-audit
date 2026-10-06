@@ -427,3 +427,57 @@ The remaining step must preserve either:
 - the exact finite-branch separability of E before taking absolute values.
 
 Still, the dangerous high-frequency denominator is now removed exactly.
+
+
+## 11. Superseding sharp residual theorem
+
+The coarse constants 630 and 315/d above are no longer authoritative.
+
+The exact alternating-word chamber reduction now gives
+
+    boxed:
+
+    -dist(s-t,Z)
+      <=
+      E(s,t;x,y)
+      <=
+      0.
+
+Hence
+
+    boxed:
+
+    |E|
+      <=
+      dist(s-t,Z).
+
+Consequently the divided difference
+
+    H_ij
+      =
+      E_ij/(z_i-z_j)
+
+satisfies
+
+    boxed:
+
+    |H_ij|
+      <=
+      1/4,
+
+and the finite-trace product obeys
+
+    boxed:
+
+    |E_ij K_ij|
+      <=
+      1/(2d).
+
+The proof is not a numerical optimization.  It comes from the exact two
+alternating-word formulas on the fundamental chamber and elementary case
+analysis.
+
+See:
+
+    notes/WP84_CROSS_SCALE_SHARP_DETUNING.md
+    src/wp84_cross_scale_sharp_detuning.py
