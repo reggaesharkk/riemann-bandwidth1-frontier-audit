@@ -213,3 +213,38 @@ See:
     notes/WP84_CROSS_SCALE_BROWNIAN_REFERENCE.md
     notes/WP84_PRODUCT_BLOCK_LARGE_SIEVE.md
     notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md
+
+
+## 7. Superseding sharp divided-difference constant
+
+The exact cross-scale chamber theorem improves the residual estimate from
+
+    |E|<=630 dist(s-t,Z)
+
+to
+
+    boxed:
+
+    |E|<=dist(s-t,Z).
+
+Therefore Section 3 sharpens to
+
+    boxed:
+
+    |H_ij|
+      <=
+      1/4.
+
+Likewise the pointwise finite-trace product is
+
+    boxed:
+
+    |E_ij K_ij|
+      <=
+      1/(2d).
+
+The rank-two commutator identity itself is unchanged.
+
+See:
+
+    notes/WP84_CROSS_SCALE_SHARP_DETUNING.md
