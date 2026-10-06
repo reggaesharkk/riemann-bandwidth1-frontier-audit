@@ -5670,3 +5670,38 @@ See:
 
 No unconditional >79 theorem is claimed until the large-T rank-six energy
 estimate is closed.
+
+
+## 73. R=400 first-strike word ledger internally closed
+
+The complete same-normalization degree-four replay has now been written in
+
+    notes/WP84_R400_COMPLETE_WORD_LEDGER_REPLAY.md.
+
+The principal-section pair stability needed by the good-endpoint selection is
+closed in
+
+    notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md.
+
+Taken together with the existing fixed-band, connected-detuning, and
+proper-power gates, the internal theorem-side chain gives
+
+    boxed:
+
+    w_400<=0.266329+o(1),
+
+hence
+
+    defect<=0.15589863406625+o(1),
+
+and
+
+    boxed:
+
+    simple-zero coefficient
+      >=68.82027318675...%-o(1).
+
+This is now the lowest-risk first-strike route.  The remaining distinction is
+validation rather than an identified missing word class: the load-bearing
+analytic inputs must still receive a hostile source audit before public
+unconditional promotion.
