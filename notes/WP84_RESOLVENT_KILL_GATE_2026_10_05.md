@@ -4833,7 +4833,7 @@ See:
     notes/WP84_SINE_FIRST_TWO_MOMENT_OBSTRUCTION.md
     src/wp84_sine_first_two_moment_obstruction.py
 
-## 66. Balanced fourth-order leakage has the exact E2 local-window scale
+## 66. Balanced fourth-order leakage: principal-arc normalization frontier
 
 On a short product cell
 
@@ -4844,52 +4844,102 @@ with near-resonant shift
     h=n-m,
     |h|<=C M_0/T,
 
-the exact multiplicative phase obeys
+the multiplicative phase obeys
 
     tau_k log(m/n)
 
       =
       -tau_k h/M_0
-
       +O_C(delta+1/T).
 
-Thus the finite-compression kernel becomes, up to this controlled phase
-error,
+Thus the finite-compression kernel becomes an additive Fourier-energy sample
+at
 
-    (1/d)
-    sum_k
-      e(-h alpha_k),
+    alpha_k=tau_k/(2pi M_0),
 
-with
-
-    alpha_k=tau_k/(2pi M_0).
-
-The alpha grid spans a window of width comparable to
+with local window width comparable to
 
     T/M_0=1/H,
-
-where
-
     H=M_0/T.
 
-Hence the balanced Lambda*Lambda / E2 trace sector is a local additive
-Fourier energy on exactly the 1/H frequency scale used by the E2 minor-arc
-theorem.
+The discrete-to-local oversampling step is closed, and the shrinking
+H<polylog transition layer has o(1) normalized mass.
 
-This identifies the correct theorem interface:
+The source-interface classification has been corrected:
 
-1. transfer the WP84 sliced coefficient to the E2 weight by smooth partial
-   summation;
-2. apply the local minor-arc energy estimate before any absolute shift sum;
-3. match the major-arc main term to the nonpositive closed connected kernel;
-4. treat the shrinking H<polylog transition layer separately.
+    the main long-shift WP84 frequency window lies inside the q=1
+    principal major arc.
 
-At R=400 the available positive non-pair leakage remains
+Therefore the main source theorem is not a generic minor-arc estimate.
+
+The q=1 centered major-arc remainder must be treated in the exact WP84
+normalization.
+
+A direct positive insertion of the published global bound
+
+    B^2(M)
+      << M/log^eta M
+
+is insufficient.  On a factor slice the WP84 coefficient has scale
+
+    |w_I|
+      comparable to
+      log P/
+      (a_phi^2 L^2 sqrt M),
+
+and oversampling multiplies local L2 energy by H.
+
+Consequently the black-box estimate yields only
+
+    H (log P)^2/
+    [
+      a_phi^4
+      L^4
+      log^eta M
+    ],
+
+which does not tend to zero on a fixed supercritical cell M=T^s, s>1.
+
+The exact local positive estimate that would suffice is
+
+    int_J |b_I(alpha)|^2 d alpha
+
+      =
+      o(
+        a_phi^4 L^4 M/
+        [H (log P)^2]
+      ).
+
+The source Dirichlet-polynomial bound contains the schematic factor
+
+    q P T_src log M/M
+      +1.
+
+The +1 comes from the shifted-prime off-diagonal term in the mean-value
+decomposition, not from the diagonal coefficient square mass.
+
+Therefore it cannot be discarded merely because the exact WP84 pair layer
+has already been isolated.
+
+The active arithmetic target is now:
+
+    boxed:
+
+    prove the q=1 principal-arc estimate after assembling the signed,
+    pair-subtracted connected WP84 combination,
+
+or obtain a genuinely local centered-remainder estimate with the missing
+effective H^(-1) gain.
+
+At R=400 the certified positive non-pair allowance remains
 
     >0.0247937.
 
 See:
 
-    notes/WP84_E2_LOCAL_WINDOW_TRANSFER.md
+    notes/WP84_E2_PRINCIPAL_ARC_GEOMETRY.md
+    notes/WP84_E2_OVERSAMPLING_TRANSFER.md
+    notes/WP84_E2_TRANSITION_LAYER_MASS.md
+    notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md
 
 No unconditional record theorem is claimed yet.
