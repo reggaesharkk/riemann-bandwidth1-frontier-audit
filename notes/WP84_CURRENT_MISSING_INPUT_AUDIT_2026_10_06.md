@@ -54,7 +54,7 @@ limsup_{T -> infinity}
   [ delta+1 + sum_{j=1}^6 c_j(delta) m_{H_T}(z_j(delta)) ]
   <= h_delta(1415/13891),
 ```
-where `h_delta(w)=(delta+1)w/(delta+w)), with the fixed-pole residues and
+where `h_delta(w)=(delta+1)w/(delta+w)`, with the fixed-pole residues and
 normalizations from the bounded-consumer note.
 
 After the exact Lindeberg reduction, the open task is to bound the weighted
