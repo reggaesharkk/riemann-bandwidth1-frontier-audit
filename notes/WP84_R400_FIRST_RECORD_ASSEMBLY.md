@@ -2,7 +2,7 @@
 
 Date: 2026-10-06
 
-Status: **NEAR-FINAL SAME-CONVENTION ASSEMBLY; IF THE GOOD-ENDPOINT PRINCIPAL-SECTION INSERTION IS ACCEPTED IN THE FIXED-BAND ORDER-FOUR LEDGER, THE CURRENT R=400 CONSTANTS ALREADY CLEAR THE RECORD THRESHOLD**
+Status: **INTERNAL SAME-CONVENTION ASSEMBLY CLOSED; COMPLETE ORDER-FOUR REPLAY NOW SUPPORTS THE R=400 FIRST-STRIKE INEQUALITY, WITH EXTERNAL HOSTILE SOURCE AUDIT STILL REQUIRED BEFORE PUBLIC UNCONDITIONAL PROMOTION**
 
 No unconditional percentage theorem is claimed in this note.
 
@@ -201,3 +201,36 @@ See:
     notes/WP84_MATCHED_QUARTIC_MAJORANT.md
     notes/WP84_SIGN_BALANCE_NEAR_RESONANCE_GATE.md
     notes/WP84_ORDER4_VSUM_PRIME_RESONANCE.md
+
+
+## 7. 6 October replay closure update
+
+The six-item promotion replay requested above has now been carried out in
+
+    notes/WP84_R400_COMPLETE_WORD_LEDGER_REPLAY.md.
+
+The missing principal-section pair-stability lemma is recorded separately in
+
+    notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md.
+
+The complete ordinary-prime degree-four sign partition is:
+
+    same-sign        -> o(1),
+    3-vs-1 / 1-vs-3 -> o(1),
+    balanced pair    -> Pair_400<0.266329+o(1),
+    balanced nonpair -> positive part o(1),
+    proper powers    -> o(1).
+
+Hence the internal theorem-side chain now gives
+
+    w_400<=0.266329+o(1)
+
+and therefore
+
+    defect<=0.15589863406625+o(1),
+
+    simple-zero coefficient
+      >=0.6882027318675-o(1).
+
+The branch still does not label this externally validated/unconditional until
+the load-bearing source inputs receive one hostile audit.
