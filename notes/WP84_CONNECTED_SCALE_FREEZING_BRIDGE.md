@@ -258,3 +258,54 @@ See:
     src/wp84_fixed_scale_connected_kernel.py
     notes/WP84_PHI4_BALANCED_NONCLOSED_NONPOSITIVITY.md
     notes/WP84_CONTINUOUS_SPREAD_DIRICHLET_TRACE.md
+
+
+## 8. Superseding correction: do not pay the cell width as the detuning error
+
+The cell-center argument above is not, by itself, sufficient.
+
+Freezing a common scale to a cell center of width
+
+    delta_L=L^(-1/2)
+
+produces an O(delta_L) kernel perturbation.  The product-block Gram norm can
+grow like
+
+    1+M/T,
+
+so an estimate of the form
+
+    delta_L (1+M/T)
+
+is not uniform over the full consumed product range.
+
+The theorem-grade route must instead preserve the **actual pair detuning**
+
+    |s_i-s_j|
+      =
+      |log(m_i/m_j)|/L.
+
+A global cross-scale positive-semidefinite reference now does this exactly.
+The residual connected kernel satisfies
+
+    boxed:
+
+    |E_ij|
+      <=
+      630
+      |s_i-s_j|.
+
+Thus the active problem is the detuning-weighted quadratic form
+
+    c^*(E o K)c,
+
+not a cell-center freezing error.
+
+Sections 1--4 remain useful for boundary geometry, but any conclusion that
+the within-cell perturbation is automatically O(1/L) from
+delta_L=L^(-1/2) alone is superseded.
+
+See:
+
+    notes/WP84_CROSS_SCALE_BROWNIAN_REFERENCE.md
+    notes/WP84_PRODUCT_BLOCK_LARGE_SIEVE.md
