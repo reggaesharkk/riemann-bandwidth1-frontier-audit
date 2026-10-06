@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
 """Finite-dimensional regression for the shifted consumer's 3x3 wedge factorization.
 
-Checks algebra only; this is not a large-T zeta-side estimate.
+Exact Fraction checks cover the coefficient matrix M and its invariants.
+Floating matrix checks cover only finite algebra, not a large-T zeta estimate.
 """
 from fractions import Fraction as F
 import math, random
+
+def zadd(x,y): return (x[0]+y[0], x[1]+y[1])
+def zsub(x,y): return (x[0]-y[0], x[1]-y[1])
+def zmul(x,y): return (x[0]*y[0]-x[1]*y[1], x[0]*y[1]+x[1]*y[0])
+def zscale(c,x): return (c*x[0],c*x[1])
+def zpow(x,n):
+    out=(F(1),F(0))
+    for _ in range(n): out=zmul(out,x)
+    return out
+def as_complex(x): return complex(float(x[0]),float(x[1]))
 
 def mm(A,B):
     return [[sum(A[i][k]*B[k][j] for k in range(len(B))) for j in range(len(B[0]))] for i in range(len(A))]
@@ -21,15 +32,39 @@ def inv(A):
             if i!=k:
                 v=X[i][k]; X[i]=[x-v*y for x,y in zip(X[i],X[k])]
     return [row[n:] for row in X]
-def err(A,B): return max(abs(A[i][j]-B[i][j]) for i in range(len(A)) for j in range(len(A[0])))
+def err(A,B):
+    return max(abs(A[i][j]-B[i][j]) for i in range(len(A)) for j in range(len(A[0])))
+
+def exact_coefficients():
+    A,B,C=F(43428,13891),F(37704,13891),F(9660,13891)
+    z=(F(4,5),F(4,5))
+    p0,p1,p2,p3=F(1),-A,B,-C
+    b1=zadd(zscale(F(3),zmul(z,(p3,F(0)))),(p2,F(0)))
+    b2=zadd(zadd(zscale(F(3),zmul(zpow(z,2),(p3,F(0)))),
+                 zscale(F(2),zmul(z,(p2,F(0))))),(p1,F(0)))
+    b3=zadd(zadd(zadd(zmul(zpow(z,3),(p3,F(0))),
+                         zmul(zpow(z,2),(p2,F(0)))),
+                 zmul(z,(p1,F(0)))),(p0,F(0)))
+    expected=[
+        (F(14520,13891),F(-23184,13891)),
+        (F(84492,69455),F(23232,13891)),
+        (F(-273989,347275),F(90672,347275)),
+    ]
+    assert [b1,b2,b3]==expected
+    trace=zadd(b1,b3)
+    second=zsub(zsub(zmul(b1,b3),zmul(b2,b2)),zmul(b3,b3))
+    det=zscale(F(-1),zpow(b3,3))
+    assert trace==(F(89011,347275),F(-488928,347275))
+    assert second==(F(45103112063,120599925625),F(-249325314384,120599925625))
+    assert det==(F(13810617575994941,41881339171421875),
+                 F(-19674781705321488,41881339171421875))
+    assert b3!=(F(0),F(0))
+    return A,B,C,b1,b2,b3
 
 def main():
-    A=F(43428,13891); B=F(37704,13891); C=F(9660,13891)
+    A,B,C,b1q,b2q,b3q=exact_coefficients()
+    b1,b2,b3=map(as_complex,(b1q,b2q,b3q))
     z=.8+.8j
-    p0,p1,p2,p3=1,-A,B,-C
-    b1=3*z*float(p3)+float(p2)
-    b2=3*z*z*float(p3)+2*z*float(p2)+float(p1)
-    b3=z**3*float(p3)+z*z*float(p2)+z*float(p1)+float(p0)
     r3=(math.sqrt(32/25))**3
     d=9; rng=random.Random(8406); alpha=[rng.uniform(-1,1) for _ in range(d)]
     H=[[0.0 for _ in range(d)] for _ in range(d)]
@@ -61,6 +96,7 @@ def main():
     rhs+=sum(abs(comm[i][j])**2/(i-j)**2 for i in range(d) for j in range(d) if i!=j)/d
     energy_res=abs(lhs-rhs)
     assert energy_res<1e-12,(lhs,rhs)
+    print('exact M coefficients and invariants: PASS')
     print('max_commutator_factorization_residual =',comm_res)
     print('positive_energy_identity_residual =',energy_res)
     print('RESULT: SHIFTED_RESOLVENT_WEDGE_FACTOR_PASS (finite algebra only)')
