@@ -6215,3 +6215,86 @@ See:
 
     notes/WP84_FUNCTIONAL_BAND_DELTA79_SHARPENING.md
     src/wp84_functional_band_delta79_gate.py.
+
+
+## 78. Rational canonical one-pole route now dominates the fixed-band fallback
+
+The six-pole F_delta band fallback is no longer the smallest fixed-band
+interface.
+
+Take the rational purely-imaginary pole
+
+    a=1129/1000
+
+and the bounded consumer
+
+    p_a(x)=a^6 P(x)^2/(x^2+a^2)^3.
+
+Exact coefficient positivity proves
+
+    p_a(x)>=1
+    for x<=0,
+
+while p_a>=0 globally.
+
+Moreover, exactly,
+
+    p_a(x)<=P(x)^2
+
+for every real x because (x^2+a^2)^3>=a^6.
+
+An exact Sturm gate proves
+
+    ||p_a''||_infinity
+      <261637/10000
+      =26.1637.
+
+The general functional band theorem therefore gives, using pi>333/106,
+
+    |tau p_a(H)-tau p_a(H_R)|
+      <
+      [734938333/92407500]/R
+      +o(R^-1),
+
+with fixed constant about 7.95323250818.
+
+Hence a strict >79 theorem follows from the single fixed-band condition
+
+    limsup_T tau P(H_R)^2
+      <
+      0.105
+      -
+      [734938333/92407500]/R.
+
+Useful exact rungs:
+
+    R=3000:
+      target <0.102348922497272,
+      allowance above w0 ~=4.8440590e-4;
+
+    R=5300:
+      target <0.103499390092796,
+      allowance above w0 ~=1.6348735e-3.
+
+The first integer R with any positive Christoffel-model allowance is 2537.
+
+The first integer R whose allowance exceeds the exact pair-only m4 cost
+(4/15-1/4) times the centered Christoffel-square x^4 coefficient is 5073.
+
+This route has:
+
+- one rational triple-pole pair;
+- no Jensen inflation;
+- direct domination by the banded Christoffel square;
+- a certified band constant ~7.95;
+- useful band radii roughly half the previous F_delta fallback.
+
+It is now the preferred fixed-band >79 fallback.
+
+The hard theorem remains the degree-six fixed-band arithmetic estimate; no
+unconditional >79 claim is made.
+
+See:
+
+    notes/WP84_RATIONAL_CANONICAL_ONE_POLE_BAND.md
+    src/wp84_rational_canonical_one_pole_band.py.
