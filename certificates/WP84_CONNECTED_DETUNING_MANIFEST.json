@@ -1,0 +1,47 @@
+{
+  "schema": "wp84-connected-detuning-certificate-v1",
+  "title": "WP84 balanced connected detuning reduction",
+  "date": "2026-10-06",
+  "evidence_class": "exact finite identities plus theorem-side analytic bounds",
+  "branch": "research/frontier-7962-hostile-audit-v0.1",
+  "source_files": [
+    {
+      "path": "src/wp84_balanced_orientation_normalization.py",
+      "github_blob_sha": "3029eecc78467a8e4238bc4cfcbf26479d521b26"
+    },
+    {
+      "path": "notes/WP84_BALANCED_ORIENTATION_NORMALIZATION.md",
+      "github_blob_sha": "e48bb9871fbc4f9a4f320fa2b796d3a6a188d64f"
+    },
+    {
+      "path": "notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md",
+      "github_blob_sha": "fce2a0ae56c4e06d265d9adf05e6ee26d0967b85"
+    },
+    {
+      "path": "notes/WP84_PRODUCT_BLOCK_LARGE_SIEVE.md",
+      "github_blob_sha": "cf3ab64e16906130b149d323f3cb57970fd1e38d"
+    },
+    {
+      "path": "notes/WP84_CROSS_SCALE_BROWNIAN_REFERENCE.md",
+      "github_blob_sha": "ffd93b74ec1cebe8b6de38f18a63b10a8d908d44"
+    },
+    {
+      "path": "src/wp84_cross_scale_brownian_reference.py",
+      "github_blob_sha": "c2ac75c551d211134c0979877a86323c83c420e4"
+    }
+  ],
+  "closed": [
+    "six-sign / 24-labelled / eight-alternating orientation normalization",
+    "fixed-scale negative Brownian covariance kernel",
+    "global unequal-scale positive-semidefinite reference kernel",
+    "deterministic residual bound |E| <= 630 dist(s-t,Z)",
+    "pointwise Dirichlet cancellation |E_ij K_ij| <= 315/d",
+    "balanced ordinary-prime product coefficient L2 mass O(1)",
+    "proper-prime-power squared mass o(1)",
+    "product-block Gram norm <= 1 + 16*pi*M/T"
+  ],
+  "open": [
+    "prove c^*(E o K)c = o(1) in the exact balanced arithmetic normalization"
+  ],
+  "claim_boundary": "No unconditional zero-density percentage is asserted by this certificate."
+}

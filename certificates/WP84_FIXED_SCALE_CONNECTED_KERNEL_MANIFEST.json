@@ -1,0 +1,29 @@
+{
+  "schema": "wp84-exact-certificate-manifest-v1",
+  "title": "WP84 fixed-scale balanced connected kernel certificate",
+  "date": "2026-10-06",
+  "evidence_class": "exact symbolic finite-dimensional certificate",
+  "branch": "research/frontier-7962-hostile-audit-v0.1",
+  "source_files": [
+    {
+      "path": "src/wp84_fixed_scale_connected_kernel.py",
+      "github_blob_sha": "8fec6d05c3ef61a8e964f9ce14a5080728ebcb38"
+    },
+    {
+      "path": "notes/WP84_FIXED_SCALE_CONNECTED_KERNEL.md",
+      "github_blob_sha": "132cf600fad7289eb75e492a6a206a32f04ccb6c"
+    }
+  ],
+  "theorem_interface": {
+    "exact_identity": "C_s(x,y) = -2(s-1)(min(r_x,r_y)-(s-1))",
+    "domain": "1 <= s <= 2; x,s-x,y,s-y in [0,1]",
+    "consequence": "-C_s is positive semidefinite; exact same-scale connected finite-compression quadratic form is nonpositive after Schur product with the trace Gram kernel"
+  },
+  "promotion_boundary": [
+    "exact balanced-ledger orientation match",
+    "exact coefficient second-mass normalization",
+    "scale-boundary and branch-wall o(1) estimate",
+    "uniform block large-sieve bound"
+  ],
+  "claim": "No unconditional zero-density result is asserted by this certificate."
+}

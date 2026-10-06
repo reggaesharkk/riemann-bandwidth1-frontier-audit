@@ -1,0 +1,25 @@
+name: Exact 79.62 consumption audit
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/frontier7962_exact_consumption.py
+      - .github/workflows/frontier7962-consumption.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-consumption:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Independent exact consumption optimization
+        run: python -u src/frontier7962_exact_consumption.py
