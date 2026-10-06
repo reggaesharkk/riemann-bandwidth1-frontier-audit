@@ -5273,3 +5273,123 @@ See:
     notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md
 
 No unconditional record theorem is claimed yet.
+
+
+## 70. Good-endpoint trimming and R=400 first-record assembly
+
+The rank-two detuning endpoint family can be controlled without a new
+pointwise semiprime theorem.
+
+Because the first-strike consumer is bounded, delete o(d) Fourier rows before
+the quartic fallback.
+
+Choose
+
+    epsilon_L=L^(-1/2),
+
+and permit the lower and upper endpoints of the retained contiguous principal
+section to vary inside candidate windows of epsilon_L d rows.
+
+The bounded-consumer rank charge is
+
+    O(epsilon_L)=o(1).
+
+After the sharp detuning and endpoint-feature reductions, every remaining
+endpoint object is a Dirichlet polynomial family
+
+    S_theta(t)
+      =
+      sum_{m<=T^2}
+        a_m(theta) m^(it),
+
+with integrated coefficient second mass O(1).
+
+The classical Montgomery--Vaughan mean-value theorem on a candidate frequency
+window of length
+
+    U asymp epsilon_L T
+
+gives a discrete averaged endpoint score
+
+    O(T/epsilon_L).
+
+Therefore good lower and upper endpoints exist with that score.
+
+The rank-two commutator carries normalization 1/d, so Cauchy--Schwarz gives
+
+    endpoint debt
+      =
+      O(
+        T/(epsilon_L d)
+      )
+
+      =
+      O(
+        1/(epsilon_L L)
+      )
+
+      =
+      O(L^(-1/2))
+      =
+      o(1).
+
+Hence the positive balanced connected finite-compression leakage on the
+selected principal section is o(1).
+
+At R=400 the certified pair bound is
+
+    Pair_400<0.266329.
+
+If the final complete order-four replay confirms that all other word classes
+are already covered by their existing o(1) gates, then
+
+    w_400<=0.266329+o(1).
+
+The centered quartic majorant then gives
+
+    tau P4(H_400)
+      <=
+      0.1504665485+o(1).
+
+Adding the matched full-to-band charge
+
+    2.1728342265/400
+      =
+      0.00543208556625
+
+gives total defect
+
+    boxed:
+
+    <=
+    0.15589863406625
+    +o(1).
+
+Against
+
+    E_rec=0.163249981456072...,
+
+the margin is
+
+    boxed:
+
+    0.007351347389822....
+
+The induced simple-zero coefficient would be
+
+    boxed:
+
+    >=
+    0.6882027318675
+    +o(1).
+
+This is not promoted to an unconditional theorem yet.
+
+The sole remaining promotion task for this R=400 first strike is the complete
+same-normalization order-four replay on the selected principal section.
+
+See:
+
+    notes/WP84_GOOD_ENDPOINT_TRIMMING.md
+    notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md
+    src/wp84_r400_first_record_assembly.py
