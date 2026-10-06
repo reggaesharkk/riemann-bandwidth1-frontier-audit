@@ -330,3 +330,64 @@ See:
     notes/WP84_E2_TRANSITION_LAYER_MASS.md
     notes/WP84_R400_EXACT_PAIR_LAYER.md
     notes/WP84_PHI4_POINTWISE_NONPOSITIVITY.md
+
+
+## 9. Superseding sign refinement for the shifted-correlation +1 term
+
+The positive-L2 normalization failure in Sections 3--7 remains correct as a
+statement about a black-box absolute-value insertion.
+
+However the shifted-correlation +1 term no longer needs to be paid as a
+positive WP84 error.
+
+The exact finite trace is
+
+    Re K_T(Y)
+      =
+      A_{T,L}(Y)
+      cos(
+        [T+pi(d-1)/L]Y
+      ).
+
+For T>=12,
+
+    boxed:
+
+    |Y|<=pi/(3T)
+      =>
+    Re K_T(Y)>=0.
+
+On one product block M<m,n<=2M, with
+
+    H=M/T,
+
+every source shift
+
+    |h|=|n-m|<=H
+
+satisfies
+
+    |log(m/n)|
+      <
+      pi/(3T).
+
+Therefore the complete short shifted-prime range responsible for the
+dimensionless +1 lies inside a nonnegative finite-trace lobe.
+
+Since the balanced connected overlap amplitude is pointwise nonpositive, the
+signed WP84 contribution of this whole range is nonpositive.
+
+Thus the H-loss from treating the +1 term by a positive L2 norm is an
+artifact of discarding the exact connected sign before insertion.
+
+The remaining positive arithmetic problem is now outside that range:
+
+    |h|>H,
+
+together with exact matching of the q=1 diagonal/principal term to the
+closed/pair ledger.
+
+See:
+
+    notes/WP84_E2_SHIFT_RANGE_SAFE_LOBE.md
+    src/wp84_e2_shift_range_safe_lobe.py
