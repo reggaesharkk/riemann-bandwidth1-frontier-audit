@@ -5811,3 +5811,84 @@ remains a useful alternate first-strike consumer because its exposed
 heat-curvature coefficients are smaller, even though its model value is
 79.54891665...%.
 
+
+
+## 74. Exact-frontier hostile replay + shifted conditioned point
+
+Two further checks now sharpen the rank-six line.
+
+First, the canonical exact-frontier consumer has passed an independent
+80-decimal deterministic sharp-Loewner replay of:
+
+- Cayley unitarity;
+- Q symmetry;
+- [D,Q] skew symmetry;
+- the cubic commutator identity;
+- the exact rank-two sharp source factorization;
+- the inherited six-column factorization;
+- the positive displacement-energy identity.
+
+Residuals were between 1e-81 and 3.3e-85.  See
+
+    notes/WP84_EXACT_FRONTIER_RANK6_HP_AUDIT.md
+    src/wp84_exact_frontier_rank6_hp_audit.py.
+
+Second, the full 79.6270966813... Christoffel model frontier is not tied to
+the purely imaginary pole i a_*.
+
+The shifted fixed point
+
+    z=(4/5)(1+i)
+
+gives the exact bounded consumer
+
+    p_s(x)
+      =
+      (32/25)^3 P(x)^2
+      /
+      [((x-4/5)^2+(4/5)^2)^3],
+
+with h_s=1-p_s.
+
+The negative-half-line support numerator has strictly positive rational
+coefficients after x=-y, so h_s<=1_{x>0} globally.
+
+It still satisfies
+
+    p_s(0)=1,
+    p_s(x_j)=0
+
+at all three positive Christoffel nodes.  Therefore
+
+    E_model[p_s]=1415/13891
+
+exactly, giving the full
+
+    79.6270966813...%
+
+model coefficient with no ladder and no approximation gap.
+
+Its operator factor is one shifted Cayley cubic with
+
+    rank[D,Q_s]<=6.
+
+The one-point heat coefficients are much smaller:
+
+    |A_s|+|B_s|+|C_s| ~= 2.85878,
+
+versus about 13.0089 for the canonical exact-frontier point.
+
+A simple eta-weighted resolvent proxy also improves from about 11.4935 to
+4.4013 despite the smaller fixed imaginary height eta=0.8.
+
+This is diagnostic conditioning, not yet the large-T theorem.  It makes the
+shifted point the preferred exact-frontier heat-flow candidate, while the
+canonical point remains the clean normalization cross-check.
+
+See:
+
+    notes/WP84_SHIFTED_EXACT_FRONTIER_RANK6.md
+    src/wp84_shifted_exact_frontier_rank6.py.
+
+The active >79/full-frontier obstruction remains the theorem-grade large-T
+one-sided rank-six energy / differentiated-T12 estimate.
