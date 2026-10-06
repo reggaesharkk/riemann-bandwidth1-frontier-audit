@@ -5100,148 +5100,176 @@ See:
 No unconditional record theorem is claimed yet.
 
 
-## 69. Connected sector: exact orientation, global Brownian reference, and detuning gate
+## 69. Connected sector: exact sharp detuning and rank-two endpoint reduction
 
-The fixed-scale balanced connected sector is now normalized exactly.
+The balanced connected sector is now normalized exactly.
 
-For one common product scale s,
-
-    C6(s;x,y)
-
-denotes the sum over the six balanced sign patterns with fixed internal
-same-sign label ordering.
-
-The exact orientation gate proves
+The orientation identity is
 
     C24=4 C6=C8,
 
-where C24 is the full 24-labelled-word sum and C8 is the sum of the eight
-alternating labelled words.  Equivalently,
+so no orientation factor is missing.
 
-    C6/2=C8/8.
+On the fundamental chamber
 
-Thus the apparent factor-of-two difference between the six-sign and
-eight-alternating Brownian formulas is only a normalization change.
+    1<=s<=t<=2,
 
-At fixed scale,
+write
 
-    boxed:
+    c=s-1,
+    d=t-1,
+    delta=d-c,
 
-    C6(s;x,y)
-
-      =
-      -2(s-1)
-      [
-        min(r_s(x),r_s(y))
-        -(s-1)
-      ],
+    x=c+a,
+    y=d+b,
 
 with
 
-    r_s(x)=min(x,s-x).
+    0<=a<=(1-c)/2,
+    0<=b<=(1-d)/2.
 
-This is negative semidefinite after the Brownian min-kernel factorization.
+Only the two alternating sign words survive.
 
-A global unequal-scale positive-semidefinite reference is now available.
-For i=(s,x), j=(t,y), set
+Their exact amplitudes are
 
-    c_i=s-1,
-    r_i=min(x,s-x),
+    A1
+      =
+      -min(c+a,d)
+       [
+         min(a,b,1-d-a)
+       ]_+,
 
 and
 
-    G_ij
+    A2
       =
-      2 min(c_i,c_j)
+      -c
+      min(
+        b,
+        (a-delta)_+
+      ).
+
+Thus
+
+    C6=A1+A2.
+
+The global Brownian reference is
+
+    G
+      =
+      2c
+      min(
+        b,
+        (a-delta)_+
+      ).
+
+For the residual
+
+    E=C6+G,
+
+elementary case analysis gives the sharp theorem
+
+    boxed:
+
+    -dist(s-t,Z)
+      <=
+      E
+      <=
+      0.
+
+Hence
+
+    boxed:
+
+    |E|
+      <=
+      dist(s-t,Z).
+
+This supersedes the earlier coarse constant 630.
+
+Let
+
+    z_i=exp(2 pi i s_i),
+
+    Z=diag(z_i).
+
+The finite trace satisfies the exact endpoint commutator identity
+
+    boxed:
+
+    [Z,K]
+      =
+      d^(-1)
       [
-        min(r_i,r_j)
+        a b^*
         -
-        max(c_i,c_j)
-      ]_+.
+        v w^*
+      ],
 
-Both factors are positive-semidefinite Gram kernels, so G is positive
-semidefinite on arbitrary unequal scales.
+so
 
-Moreover
+    rank[Z,K]<=2.
 
-    C6(s,s;x,y)=-G((s,x),(s,y)).
+For
 
-For the exact unequal-scale six-word kernel define
+    H_ij=E_ij/(z_i-z_j),
 
-    E=C6+G.
-
-An elementary overlap-Lipschitz estimate gives
+we have exactly
 
     boxed:
 
-    |E(s,t;x,y)|
+    E o K
+      =
+      H o [Z,K],
+
+and the sharp detuning theorem gives
+
+    boxed:
+
+    |H_ij|
       <=
-      630 |s-t|.
+      1/4.
 
-Using the endpoint overlap when |s-t| is close to one upgrades this to the
-torus-distance form
-
-    boxed:
-
-    |E(s,t;x,y)|
-      <=
-      630 dist(s-t,Z).
-
-The exact finite trace K is positive semidefinite, hence
-
-    -G o K
-
-is negative semidefinite globally.
-
-All possible positive connected leakage is therefore confined to
+Also
 
     boxed:
-
-    E o K.
-
-The Dirichlet denominator is already neutralized pointwise:
 
     |E_ij K_ij|
       <=
-      315/d.
+      1/(2d).
 
-The balanced ordinary-prime product coefficient also has theorem-side
-second mass
+The residual formula contains only minima and positive parts.  Writing those
+as interval-indicator integrals shows that the only genuine cross-state
+features are one-sided threshold kernels.  After the rank-two endpoint
+commutator, every such feature becomes a moving prefix / interval-truncated
+endpoint Dirichlet sum.
+
+Therefore the remaining connected-sector theorem is no longer a dense
+high-frequency matrix estimate.
+
+It is the finite family:
+
+    boxed:
+
+    maximal endpoint Dirichlet sums
+      at the two Fourier-band edges,
+
+inserted into the rank-two boundary identity with the exact WP84
+prime-pair normalization.
+
+The balanced product coefficient already has
 
     ||c||_2^2=O(1),
 
-with proper-prime-power squared mass o(1).
-
-Finally, on a dyadic product block M<m,n<=2M, the classical large sieve gives
-
-    boxed:
-
-    ||K||_op
-      <=
-      1+16pi M/T.
-
-Important correction:
-
-    a cell-center freezing of width L^(-1/2) is not by itself enough to
-    conclude o(1), because the factor M/T may grow.
-
-The remaining analytic gate is now precisely
-
-    boxed:
-
-    c^*(E o K)c=o(1),
-
-using the actual detuning factor in E before any large-sieve or
-shift-correlation estimate.
-
-This is strictly smaller than the previous generic outer-lobe problem.
+and proper prime powers have o(1) squared mass.
 
 See:
 
-    notes/WP84_BALANCED_ORIENTATION_NORMALIZATION.md
+    notes/WP84_CROSS_SCALE_SHARP_DETUNING.md
+    src/wp84_cross_scale_sharp_detuning.py
+    notes/WP84_DETUNING_COMMUTATOR_ENDPOINT.md
+    src/wp84_detuning_commutator_endpoint.py
+    notes/WP84_DETUNING_FEATURE_MAXIMAL_REDUCTION.md
     notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md
-    notes/WP84_PRODUCT_BLOCK_LARGE_SIEVE.md
-    notes/WP84_CROSS_SCALE_BROWNIAN_REFERENCE.md
-    src/wp84_cross_scale_brownian_reference.py
 
 No unconditional record theorem is claimed yet.
