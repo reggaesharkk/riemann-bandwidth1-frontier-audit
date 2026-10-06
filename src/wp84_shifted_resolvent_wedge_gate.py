@@ -79,7 +79,7 @@ def main():
             H[i][j]=H[j][i]=(alpha[j]-alpha[i])/(math.pi*(i-j))
     Hc=[[complex(x) for x in row] for row in H]
     R=inv([[Hc[i][j]-(z if i==j else 0) for j in range(d)] for i in range(d)])
-    R2=mm(R,R); R3=mm(R2,R)
+    R2=mm(R,R); R3=mm(R2,R); powers=[R,R2,R3]
     H2=mm(Hc,Hc); H3=mm(H2,Hc)
     PH=add(add(add(eye(d),scale(-float(A),Hc)),scale(float(B),H2)),scale(-float(C),H3))
     Q=scale(r3,mm(PH,R3))
@@ -87,7 +87,7 @@ def main():
     comm=add(mm(D,Q),scale(-1,mm(Q,D)))
     one=[[1.0] for _ in range(d)]; al=[[x] for x in alpha]
     Us=[]; Vs=[]
-    for power in (R,R2,R3):
+    for power in powers:
         Us.append(mm(power,one)); Vs.append(mm(power,al))
     U=[[Us[k][i][0] for k in range(3)] for i in range(d)]
     V=[[Vs[k][i][0] for k in range(3)] for i in range(d)]
@@ -97,7 +97,6 @@ def main():
     comm_res=err(comm,pred)
     assert comm_res<2e-10,comm_res
 
-    # Three resolvent-power channels W_k and their K2 Gram matrix.
     W=[]
     for k in range(1,4):
         wk=[[0j for _ in range(d)] for _ in range(d)]
@@ -118,6 +117,14 @@ def main():
     assert gram_res<2e-10,(gram_energy,grouped_energy)
     assert gram_energy.real>=-1e-12 and abs(gram_energy.imag)<1e-12
 
+    cancel_res=0.0
+    for k in range(3):
+        for ell in range(3):
+            rhs=math.pi**2*sum(powers[k][i][j].conjugate()*powers[ell][i][j]
+                               for i in range(d) for j in range(d) if i!=j)
+            cancel_res=max(cancel_res,abs(G[k][ell]-rhs))
+    assert cancel_res<2e-10,cancel_res
+
     lhs=sum(abs(Q[i][j])**2 for i in range(d) for j in range(d))/d
     rhs=sum(abs(Q[i][i])**2 for i in range(d))/d
     rhs+=sum(abs(comm[i][j])**2/(i-j)**2 for i in range(d) for j in range(d) if i!=j)/d
@@ -126,6 +133,7 @@ def main():
     print('exact M coefficients and invariants: PASS')
     print('max_commutator_factorization_residual =',comm_res)
     print('three_channel_Gram_contraction_residual =',gram_res)
+    print('K2_cancellation_to_resolvent_Gram_residual =',cancel_res)
     print('positive_energy_identity_residual =',energy_res)
-    print('RESULT: SHIFTED_THREE_CHANNEL_GRAM_PASS (finite algebra only)')
+    print('RESULT: SHIFTED_K2_GRAM_CANCELLATION_PASS (finite algebra only)')
 if __name__=='__main__': main()
