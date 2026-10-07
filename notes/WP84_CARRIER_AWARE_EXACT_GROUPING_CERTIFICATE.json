@@ -1,0 +1,36 @@
+{
+  "parent": "c402000ac35b9d06c05f7981d9c3ece7bde35807",
+  "decision": "D",
+  "theorem": "ordinary prime leaf count b implies Omega(A_reduced)+Omega(B_reduced) congruent b mod 2",
+  "proof": "b=sum_p(r_p+s_p); reduced mass=sum_p abs(r_p-s_p)=b-2 sum_p min(r_p,s_p)",
+  "ordinary_common_fifth_sixth_carrier_classes": [],
+  "ratio_interval_certificate": {
+    "common_domain": "EMPTY EXACTLY",
+    "fifth_only_A6": "0",
+    "rho_on_fifth_only": "undefined; denominator zero",
+    "rho_on_sixth_only": "0 when A6 nonzero",
+    "common_real_concentration_claim": "inapplicable"
+  },
+  "enumeration": {
+    "5": {
+      "ordered_signed_tuple_count": 7776,
+      "exact_ratio_class_count": 146,
+      "zero_frequency_present": false
+    },
+    "6": {
+      "ordered_signed_tuple_count": 46656,
+      "exact_ratio_class_count": 231,
+      "zero_frequency_present": true
+    }
+  },
+  "proper_power_raw_counterexample_ratio": "220/21",
+  "proper_power_raw_common_classes_can_exist": true,
+  "proper_power_deletion_scope": "complete bounded signed-gate equivalence, not per-class L1 smallness",
+  "aliases_change_exact_frequency": true,
+  "phase_uniform_TV_identity": "|c5| TV(A5)+c6 TV(A6) for c6>=0; no cross-degree carrier cancellation",
+  "phase_uniform_counting_L2_identity": "c5^2 ||A5||2^2+c6^2 ||A6||2^2",
+  "true_complex_dual_lower_bound_obtained": false,
+  "strict_gt79": false,
+  "consumer_search_stopped_at_gate_2": true,
+  "order8_optimization_performed": false
+}
