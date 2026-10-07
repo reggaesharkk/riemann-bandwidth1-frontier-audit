@@ -48,4 +48,3 @@ try:check(bad)
 except AssertionError:pass
 else:raise AssertionError('corruption accepted')
 print('PASS three deliberate corruption tests')
-

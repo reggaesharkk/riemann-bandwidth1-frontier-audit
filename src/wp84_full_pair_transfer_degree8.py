@@ -87,7 +87,7 @@ def certificate():
     assert any(w==word for i,j,w in insertion_channels(lower,[2],1,0,(0,2)))
     return {'decision':'F','SOS_witness':{'q_coefficients':[str(s.Poly(q,x).nth(i)) for i in range(5)],'p_coefficients':[str(p.nth(i)) for i in range(9)],'support_q_minus1_minusy':[str(support.nth(i)) for i in range(5)],'relaxed_completion_moments':[str(t) for t in m],'H8_leading_minors':[str(H8[:i,:i].det()) for i in range(1,6)],'expectation':str(E),'uncharged_coefficient':str(1-2*E),'c7_over_c5':str(p.nth(7)/p.nth(5)),'c8_over_c6':str(p.nth(8)/p.nth(6))},'operator_counterexample':{'higher_word':word,'deleted_skeleton':lower,'lower_total_displacement':-2,'complete_on_augmented_open_skeletons':True,'complete_on_closed_lower_space':False},'fixed_consumer_completion_optimum':completion_optimizer([p.nth(i) for i in range(9)]),'actual_mu7_mu8':'NOT COMPUTED','arithmetic_ratio_region':'UNCERTIFIED','intersection':'UNRESOLVED'}
 if __name__=='__main__':
-    
+
     try:spectral_gate(5,7)
     except ValueError:pass
     else:raise AssertionError('invalid spectrum accepted')
