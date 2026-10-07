@@ -1,0 +1,164 @@
+{
+  "schema": "wp84-non-Gaussian-first-strike-v1",
+  "parent": "adbaef99d4aa6fd16119135a349facc127a8ca54",
+  "decision": "B",
+  "strict_gt79": false,
+  "arithmetic_theorem_proved": false,
+  "budget": {
+    "centered_cubic": [
+      "-19101/185500",
+      "961/3710",
+      "31/50",
+      "-371/500"
+    ],
+    "square_coefficients": [
+      "364848201/34410250000",
+      "-18356061/344102500",
+      "-26060119/430128125",
+      "21981971/46375000",
+      "0",
+      "-11501/12500",
+      "137641/250000"
+    ],
+    "R_band": 6000,
+    "pole_height": "221/200",
+    "fourth_coefficient": "0",
+    "E_gaussian_sharp_pair_reference": "334737684433/2064615000000",
+    "E_target_sharp_model": "35116876419/344102500000",
+    "E_relaxed_target": "240421959557/2322691875000",
+    "gain_by_order_and_sector": {
+      "fifth": "11501/450000",
+      "sixth_42": "452249/15000000",
+      "sixth_6": "19663/4500000"
+    },
+    "total_sharp_gain": "901159/15000000",
+    "band_payment": "128952763/92407500000",
+    "variance_payment": "26060119/12734908593750",
+    "joint_margin": "52897896569489/572357731837500000",
+    "single_signed_cap_strict": "64788151489666079/572357731837500000",
+    "required_robust_gain_strict": "66998281104243827/1144715463675000000",
+    "required_robust_gain_before_payments_strict": "117953109433/2064615000000",
+    "required_robust_gain_after_band_strict": "1488798635828159/25438121415000000",
+    "required_old_Gaussian_gain_before_payments_strict": "1/250",
+    "required_old_Gaussian_gain_after_initial_strict": "317503/66000000",
+    "fifth_fraction_if_sixth_at_relaxed_ceiling_strict": "14575293823126261/14628191719695750",
+    "fifth_fraction_if_sixth_at_model_strict": "6870822093743843/7314095859847875",
+    "sixth_connected_fraction_if_full_fifth_strict": "1614401374707661/2500948906915725",
+    "model_extra_room_over_relaxed_ceiling": "19663/13500000",
+    "fifth_loss_axis": "52897896569489/526614901909047000",
+    "sixth_excess_axis": "52897896569489/315119562271381350",
+    "completion_square_center": "310/371",
+    "completion_negative_fourth_coefficient": "-961/2500",
+    "finite_R_Gaussian_value_numeric_certified": false
+  },
+  "hybrid_noncommutative_replay": [
+    {
+      "degree": 5,
+      "empirical_trace": "2461/108",
+      "Gaussian_trace": "0",
+      "A1": "65/4",
+      "A2": "0",
+      "A3_to_A6": [
+        "353/54",
+        "0",
+        "0",
+        "0"
+      ],
+      "complete_difference": "2461/108",
+      "only_A1_A2_is_not_exact": true
+    },
+    {
+      "degree": 6,
+      "empirical_trace": "51885847081/729000000",
+      "Gaussian_trace": "9740379601/48600000",
+      "A1": "0",
+      "A2": "0",
+      "A3_to_A6": [
+        "0",
+        "-21431881/270000",
+        "0",
+        "-18176884117/364500000"
+      ],
+      "complete_difference": "-47109923467/364500000",
+      "only_A1_A2_is_not_exact": true
+    }
+  ],
+  "multiplication_only_ansatz": {
+    "mu4": "7/30",
+    "mu6": "29/140",
+    "robust_square": "215654545181/2064615000000",
+    "is_full_Gaussian_Loewner_reference": false
+  },
+  "structural_gates": {
+    "partition_counts": {
+      "5": {
+        "(1, 1, 1, 1, 1)": 1,
+        "(1, 1, 1, 2)": 10,
+        "(1, 1, 3)": 10,
+        "(1, 2, 2)": 15,
+        "(1, 4)": 5,
+        "(2, 3)": 10,
+        "(5,)": 1
+      },
+      "6": {
+        "(1, 1, 1, 1, 1, 1)": 1,
+        "(1, 1, 1, 1, 2)": 15,
+        "(1, 1, 1, 3)": 20,
+        "(1, 1, 2, 2)": 45,
+        "(1, 1, 4)": 15,
+        "(1, 2, 3)": 60,
+        "(1, 5)": 6,
+        "(2, 2, 2)": 15,
+        "(2, 4)": 15,
+        "(3, 3)": 10,
+        "(6,)": 1
+      }
+    },
+    "C6_positive_witness": "2/5",
+    "C6_negative_witness": "-1/10",
+    "Re_D3_at_3_over_10": "(2-sqrt(5))/6 < 0",
+    "central_window_Re_K_at_pi_over_2T_limit": "-2/pi",
+    "discarding_arithmetic_complement_using_C5_geometry_is_valid": false
+  },
+  "resolved_Parseval_replay": [
+    {
+      "degree": 5,
+      "lock_variance": "142920",
+      "spectral_value": "142920",
+      "first_factor_frequency": "-sum(xi_2,...,xi_b) mod M",
+      "normalization": "M^(-(b-1))"
+    },
+    {
+      "degree": 6,
+      "lock_variance": "20350440",
+      "spectral_value": "20350440",
+      "first_factor_frequency": "-sum(xi_2,...,xi_b) mod M",
+      "normalization": "M^(-(b-1))"
+    }
+  ],
+  "public_candidate_pin": "JoshuaHKU/zeta-0.7947-reproduction@d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8",
+  "public_source_sha256": {
+    "paper.tex": "a2be2895348a26c93ca97ebf0f202c69cf2e3b447415c5e7174fd954601666f2",
+    "pipeline/face_b5_frame.py": "f69d1982d7c48bd7b7265fb728da10e0acb514745be590dd168564198c580dec",
+    "pipeline/face_b6_frame.py": "c67be2fe225a9dc5a019e6ba72ae83485d6ab751cd9f47f2a386e6479cb97e29",
+    "pipeline/face_local_closure.py": "5f4e08de1a8cc22597379d3dfe139712bcd9fb87fe7b2514538ce5e570bb446a",
+    "pipeline/face_parseval.py": "82c4527470aceb59edf383e4e2c2031d115cd6fe3c1c1ca9eb13db3f09ed108a",
+    "certification/writeouts_verification.py": "24e998b13969669ad5e8537d5436a3e5039bcabafc29ed4b854ba303ec35f5b2"
+  },
+  "historical_compression_audit_commit": "c3f38619c4d1b534c58b91e990b5a44fd220e599",
+  "source_sha256": {
+    "notes/WP84_M4_FREE_ROBUST_CUBIC_R6000.md": "af50c9d62c7d4251db3f1ccfe548c6884dce5021387052af94a92e7a0d01568d",
+    "notes/WP84_C5_POINTWISE_SUPERCRITICAL_SIGN.md": "9b80724d6e3da2d2e53c9ee7ad89afae3633f6afcc3160c5fdf1a0651dfa0eab",
+    "notes/WP84_FOURIER_REPROJECTION_BRIDGE_AUDIT.md": "563451a6193cbf62269fb389f7e58a82f7218557f44da8f1a633692c1fddb715",
+    "notes/WP84_FIXED_BAND_WEIGHTED_REPROJECTION.md": "51daaa95ab2fe51c5f557da2a8c2c2329ac64d532626dfe1f7fcfceca61b5b04",
+    "notes/WP84_TWO_SCALE_FILTERED_TO_SHARP_MOMENT_BRIDGE.md": "701bb4dbb5c0d8ef0f8364160b5db29f689915852a424da8630105054246f001",
+    "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md": "198ec5f110906aabeecd7ba8d698381fe288685dc62dacd97565b6a064bbb532",
+    "notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md": "366a50f656df228a053a7c6225a359f9f0794409513ee3c00854bf41b3095c42",
+    "notes/WP84_COVARIANCE_ONLY_MOMENT_FALSIFIER.md": "09d959e4ff61c45d276a5db06d1af1d4b94c169ac25a14d76e8ed6da20b42a8e",
+    "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW.md": "3a8cc3db925435dbce3c1d3fa8f8fa0f7003dd41160fa2997ec58616cfd89714",
+    "notes/WP84_POSITIVE_LAG_GAUSSIAN_VIABILITY_AND_PHASE_RESPONSE.md": "6eab68d8a07df5ca61e94a770838c3736a442807eda27d1883f8128c1a977e8c"
+  },
+  "new_parameters_optimized": false,
+  "prime_cutoff_changed": false,
+  "Monte_Carlo_used": false
+}
