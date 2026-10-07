@@ -1,0 +1,523 @@
+{
+  "low_order_algebra": {
+    "max_derivative_per_Q_factor": 2,
+    "max_total_derivative_order": 2,
+    "K_dependence": false,
+    "real_Price_factor": "1/2",
+    "noncommuting_matrix_and_singular_covariance": "PASS",
+    "missing_rho_cross_block": "REJECTED",
+    "Hermite_masses_standard_covariance": [
+      "8074/25",
+      "39414/25",
+      "13696/25",
+      "4352/5"
+    ]
+  },
+  "BV_two_word_algebra": {
+    "general_noncommuting_M_N": "PASS",
+    "reverse_branch": "PASS",
+    "norm_bound": "2pi(B(M)D(N)+B(N)D(M))+4B(M)B(N)",
+    "D_semnorm": "trace_norm([D,X])/d"
+  },
+  "BV_rational_constants": {
+    "alpha_amplitude": "241292924755566961111513247030054089/27103188584064450312500000000000",
+    "beta_variation_constant": "241292924755566961111513247030054089/13551594292032225156250000000000",
+    "gamma_variation_field_norm": "4364298378552974428644715979676712179/15533514957241938085351562500000",
+    "formula": "||h||inf<=u alpha; E Var(h)<=u(beta+gamma sigma_state); multiply by a_phi^-2",
+    "scope": "rational upper conditioning constants for covariance substitution, not consumer losses"
+  },
+  "hostile_duals": {
+    "boundary_atoms": true,
+    "high_n_10000": true,
+    "geometric_infinite_tail": true,
+    "two_point_adversaries": true,
+    "rho_near_0_and_1": true,
+    "corrupt_rho_coefficient_and_unproved_tail": "REJECTED"
+  },
+  "all_n_witness_checks": [
+    {
+      "kind": "lower",
+      "K": 4,
+      "checked_integer_range": [
+        0,
+        256
+      ],
+      "analytic_tail_start": 257,
+      "worst_finite_n": 22,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 4,
+      "checked_integer_range": [
+        0,
+        4
+      ],
+      "analytic_tail_start": 5,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "lower",
+      "K": 6,
+      "checked_integer_range": [
+        0,
+        256
+      ],
+      "analytic_tail_start": 257,
+      "worst_finite_n": 3,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 6,
+      "checked_integer_range": [
+        0,
+        6
+      ],
+      "analytic_tail_start": 7,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "lower",
+      "K": 8,
+      "checked_integer_range": [
+        0,
+        256
+      ],
+      "analytic_tail_start": 257,
+      "worst_finite_n": 55,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 8,
+      "checked_integer_range": [
+        0,
+        8
+      ],
+      "analytic_tail_start": 9,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "lower",
+      "K": 12,
+      "checked_integer_range": [
+        0,
+        256
+      ],
+      "analytic_tail_start": 257,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 12,
+      "checked_integer_range": [
+        0,
+        12
+      ],
+      "analytic_tail_start": 13,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "lower",
+      "K": 16,
+      "checked_integer_range": [
+        0,
+        256
+      ],
+      "analytic_tail_start": 257,
+      "worst_finite_n": 32,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 16,
+      "checked_integer_range": [
+        0,
+        16
+      ],
+      "analytic_tail_start": 17,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "lower",
+      "K": 24,
+      "checked_integer_range": [
+        0,
+        4096
+      ],
+      "analytic_tail_start": 4097,
+      "worst_finite_n": 2,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 24,
+      "checked_integer_range": [
+        0,
+        24
+      ],
+      "analytic_tail_start": 25,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "lower",
+      "K": 32,
+      "checked_integer_range": [
+        0,
+        256
+      ],
+      "analytic_tail_start": 257,
+      "worst_finite_n": 33,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    },
+    {
+      "kind": "upper",
+      "K": 32,
+      "checked_integer_range": [
+        0,
+        32
+      ],
+      "analytic_tail_start": 33,
+      "worst_finite_n": 0,
+      "all_n_valid": true,
+      "tail_method": "constant plus adverse coefficient sum times rho_max^(N+1)"
+    }
+  ],
+  "best_synthetic_K": 32,
+  "consumer_certified": false,
+  "final_actual_margin": null,
+  "decision": "B: low-order noise covariance transfer closed under frozen sharp-state bounds; reference measurement certificate remains",
+  "reference_diagnostic": {
+    "T": 128,
+    "d": 61,
+    "N": 3,
+    "samples": 128,
+    "delta": 1e-05,
+    "E_delta_diagnostic": 0.42200113390482996,
+    "A_delta_diagnostic": [
+      0.4219924963272105,
+      0.42199810731353654,
+      0.42200243033630436,
+      0.4220036603580981,
+      0.4220036914802837,
+      0.42200331677596437,
+      0.4220028608245886,
+      0.42200244540582765
+    ],
+    "rows": [
+      {
+        "U": 1,
+        "E_ref_diagnostic": 0.4239977393084458,
+        "A_ref_diagnostic": [
+          0.17518957116192707,
+          0.2037091349362899,
+          0.2540150740102364,
+          0.3050261981295883,
+          0.3498989084479264,
+          0.38191350539191127,
+          0.40148243403593076,
+          0.41236529791157783
+        ],
+        "cutoff_duals": [
+          {
+            "K": 4,
+            "dual_difference_diagnostic": -0.003970705428473442,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 6,
+            "dual_difference_diagnostic": 8.347862095230978,
+            "exceeds_exact_global_energy_cap": true,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 8,
+            "dual_difference_diagnostic": 0.1176865782526717,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 12,
+            "dual_difference_diagnostic": 8.518077820649507,
+            "exceeds_exact_global_energy_cap": true,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 16,
+            "dual_difference_diagnostic": 2.5339712228587654,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 24,
+            "dual_difference_diagnostic": 0.0043957641145033755,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 32,
+            "dual_difference_diagnostic": 0.2510883336931171,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          }
+        ]
+      },
+      {
+        "U": 2,
+        "E_ref_diagnostic": 0.5809571578453276,
+        "A_ref_diagnostic": [
+          0.2227060429645637,
+          0.27787284966603243,
+          0.35739697624886824,
+          0.422296910886121,
+          0.4776030662808637,
+          0.5192977933260039,
+          0.5466378779876845,
+          0.5627042000508095
+        ],
+        "cutoff_duals": [
+          {
+            "K": 4,
+            "dual_difference_diagnostic": -0.4006306841797753,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 6,
+            "dual_difference_diagnostic": -13.915413410249146,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 8,
+            "dual_difference_diagnostic": -0.4049549849596745,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 12,
+            "dual_difference_diagnostic": -14.381489192229326,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 16,
+            "dual_difference_diagnostic": -4.00749800384712,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 24,
+            "dual_difference_diagnostic": -0.01013385726150784,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 32,
+            "dual_difference_diagnostic": -0.29169900011813055,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          }
+        ]
+      },
+      {
+        "U": 4,
+        "E_ref_diagnostic": 0.9076443772915271,
+        "A_ref_diagnostic": [
+          0.34313985726286844,
+          0.4614800071016545,
+          0.6037827671251208,
+          0.7013453612663088,
+          0.7732870216280977,
+          0.8255273046533163,
+          0.8607758507668313,
+          0.8822561043486147
+        ],
+        "cutoff_duals": [
+          {
+            "K": 4,
+            "dual_difference_diagnostic": -0.9200606378456244,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 6,
+            "dual_difference_diagnostic": -33.909333488830285,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 8,
+            "dual_difference_diagnostic": -0.6206127135360633,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 12,
+            "dual_difference_diagnostic": -35.494096274603194,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 16,
+            "dual_difference_diagnostic": -9.638849283353027,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 24,
+            "dual_difference_diagnostic": 0.00458848907881626,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 32,
+            "dual_difference_diagnostic": -0.6495095828149873,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          }
+        ]
+      },
+      {
+        "U": 8,
+        "E_ref_diagnostic": 1.396247486236039,
+        "A_ref_diagnostic": [
+          0.5579632629490219,
+          0.7521634980934488,
+          0.9876766544617492,
+          1.1331795754053156,
+          1.226815408069121,
+          1.291408012312046,
+          1.334555887005588,
+          1.361732712157863
+        ],
+        "cutoff_duals": [
+          {
+            "K": 4,
+            "dual_difference_diagnostic": -5.807989474743652,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 6,
+            "dual_difference_diagnostic": -144.84192807780258,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 8,
+            "dual_difference_diagnostic": -1.9549623003395185,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 12,
+            "dual_difference_diagnostic": -155.5552132689036,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 16,
+            "dual_difference_diagnostic": -42.07889499893555,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 24,
+            "dual_difference_diagnostic": -0.6906103607314451,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 32,
+            "dual_difference_diagnostic": -3.91170811044414,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          }
+        ]
+      },
+      {
+        "U": 16,
+        "E_ref_diagnostic": 1.9614998602037383,
+        "A_ref_diagnostic": [
+          0.9036390811494918,
+          1.1373689920236825,
+          1.4440811734277617,
+          1.6367941966591837,
+          1.7567573213397267,
+          1.8352075711612197,
+          1.8861596975096115,
+          1.9183873051741656
+        ],
+        "cutoff_duals": [
+          {
+            "K": 4,
+            "dual_difference_diagnostic": -10.243296968460088,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 6,
+            "dual_difference_diagnostic": -351.26398563722523,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 8,
+            "dual_difference_diagnostic": -6.718664544378969,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 12,
+            "dual_difference_diagnostic": -367.98479389760087,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 16,
+            "dual_difference_diagnostic": -103.4566138690998,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 24,
+            "dual_difference_diagnostic": -0.9877791920410889,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          },
+          {
+            "K": 32,
+            "dual_difference_diagnostic": -9.694806985700795,
+            "exceeds_exact_global_energy_cap": false,
+            "usable_as_a_bound": false
+          }
+        ]
+      }
+    ],
+    "scope": "Monte Carlo on SAME actual finite-prime mean with continuum field covariance; not interval-certified or a T-limit",
+    "measurement_enclosures_certified": false
+  }
+}
