@@ -1,0 +1,248 @@
+{
+  "pair": {
+    "scalar_laurent_ratios": {
+      "5": {
+        "1": "7/2",
+        "3": "21/5",
+        "5": "7"
+      },
+      "6": {
+        "0": "7/2",
+        "2": "56/15",
+        "4": "14/3",
+        "6": "8"
+      }
+    },
+    "nondeletable_closed_path": [
+      1,
+      1,
+      -1,
+      0,
+      -1,
+      0,
+      0
+    ],
+    "canonical_multiplier": "2*S0_T -> 1/6",
+    "full_scalarization": false
+  },
+  "partitions": {
+    "7": {
+      "1,1,1,1,1,1,1": {
+        "count": 1,
+        "inverse_mobius": 720
+      },
+      "2,1,1,1,1,1": {
+        "count": 21,
+        "inverse_mobius": -120
+      },
+      "2,2,1,1,1": {
+        "count": 105,
+        "inverse_mobius": 24
+      },
+      "2,2,2,1": {
+        "count": 105,
+        "inverse_mobius": -6
+      },
+      "3,1,1,1,1": {
+        "count": 35,
+        "inverse_mobius": 24
+      },
+      "3,2,1,1": {
+        "count": 210,
+        "inverse_mobius": -6
+      },
+      "3,2,2": {
+        "count": 105,
+        "inverse_mobius": 2
+      },
+      "3,3,1": {
+        "count": 70,
+        "inverse_mobius": 2
+      },
+      "4,1,1,1": {
+        "count": 35,
+        "inverse_mobius": -6
+      },
+      "4,2,1": {
+        "count": 105,
+        "inverse_mobius": 2
+      },
+      "4,3": {
+        "count": 35,
+        "inverse_mobius": -1
+      },
+      "5,1,1": {
+        "count": 21,
+        "inverse_mobius": 2
+      },
+      "5,2": {
+        "count": 21,
+        "inverse_mobius": -1
+      },
+      "6,1": {
+        "count": 7,
+        "inverse_mobius": -1
+      },
+      "7": {
+        "count": 1,
+        "inverse_mobius": 1
+      }
+    },
+    "8": {
+      "1,1,1,1,1,1,1,1": {
+        "count": 1,
+        "inverse_mobius": -5040
+      },
+      "2,1,1,1,1,1,1": {
+        "count": 28,
+        "inverse_mobius": 720
+      },
+      "2,2,1,1,1,1": {
+        "count": 210,
+        "inverse_mobius": -120
+      },
+      "2,2,2,1,1": {
+        "count": 420,
+        "inverse_mobius": 24
+      },
+      "2,2,2,2": {
+        "count": 105,
+        "inverse_mobius": -6
+      },
+      "3,1,1,1,1,1": {
+        "count": 56,
+        "inverse_mobius": -120
+      },
+      "3,2,1,1,1": {
+        "count": 560,
+        "inverse_mobius": 24
+      },
+      "3,2,2,1": {
+        "count": 840,
+        "inverse_mobius": -6
+      },
+      "3,3,1,1": {
+        "count": 280,
+        "inverse_mobius": -6
+      },
+      "3,3,2": {
+        "count": 280,
+        "inverse_mobius": 2
+      },
+      "4,1,1,1,1": {
+        "count": 70,
+        "inverse_mobius": 24
+      },
+      "4,2,1,1": {
+        "count": 420,
+        "inverse_mobius": -6
+      },
+      "4,2,2": {
+        "count": 210,
+        "inverse_mobius": 2
+      },
+      "4,3,1": {
+        "count": 280,
+        "inverse_mobius": 2
+      },
+      "4,4": {
+        "count": 35,
+        "inverse_mobius": -1
+      },
+      "5,1,1,1": {
+        "count": 56,
+        "inverse_mobius": -6
+      },
+      "5,2,1": {
+        "count": 168,
+        "inverse_mobius": 2
+      },
+      "5,3": {
+        "count": 56,
+        "inverse_mobius": -1
+      },
+      "6,1,1": {
+        "count": 28,
+        "inverse_mobius": 2
+      },
+      "6,2": {
+        "count": 28,
+        "inverse_mobius": -1
+      },
+      "7,1": {
+        "count": 8,
+        "inverse_mobius": -1
+      },
+      "8": {
+        "count": 1,
+        "inverse_mobius": 1
+      }
+    }
+  },
+  "moment_certificate": {
+    "lower_bound": "234617453201/677185805569",
+    "completion_mu7_minimizer": "271/5600",
+    "square_coefficient": "104509440000000/3911093530123",
+    "percentage_upper_bound": "20795089916700/677185805569",
+    "excess_over_21_200": "32702588723251/135437161113800",
+    "H_leading_minors": [
+      "1",
+      "1/3",
+      "5/108",
+      "283/108864"
+    ],
+    "mu7": "UNCERTIFIED",
+    "mu8": "UNCERTIFIED"
+  },
+  "sources": {
+    "src/wp81_spec52_exact.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "107fe5b2a888e482035b953048dbd3cece226ea9",
+      "sha256": "5356ce4b2c137fadbcbc260c7064feb6012b14acf06edcbc496165f304f35e93"
+    },
+    "src/wp81_spec52_verify.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "021c80f34475589f65d412cfddb1ba95dfe607b7",
+      "sha256": "2ca39383f65b59b4954d26eb42e84efccfa762de9d68d042a465d27daf3fc145"
+    },
+    "src/wp80_c7_full_orbit_batch.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "b159e132730185de2cb6b934616c930f1217831b",
+      "sha256": "caee824c28b1c13c27518cade424d820f2c712080f307557675ecc23eb198592"
+    },
+    "src/wp80_c7_full_orbit_aggregate.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "2b7c4b8b6d96764cb1d1f1802aa06432432af219",
+      "sha256": "20bf69727a76ce7f25298575bc317ab63fff62d41965318d97abf369268f1168"
+    },
+    "src/wp80_c7_symmetry_reduce.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "8b43fd19e2fc2352933b618cac6d04c6d190b846",
+      "sha256": "c6ebcbaed4b470807f0172f21e6512ea5a6a9f4370c6c2911e91a598cfc9efe4"
+    },
+    "src/wp84_c5_pointwise_supercritical_sign.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "d62a70963481368e4d27ae9197f96efd5037f34c",
+      "sha256": "c19e34545dbb561c23a25153c3e22f66632a8d74039170a44b58e297ed15123b"
+    },
+    "src/wp84_parity_graded_degree8_verify.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "a8622afbf20f0423faf4b7c169c486411f326bb0",
+      "sha256": "d15650206e11cab4f008cb7d99ffca976438df4624462f963b7ecba9e448e0c0"
+    },
+    "src/wp84_parity_graded_degree8_recon.py": {
+      "commit": "855a47a80f962c7d068ab5db233c36bc6f0e6852",
+      "git_blob": "2c2ceb52f6c05f07ea447f4d5192acb98545867d",
+      "sha256": "3e38123ff431d3769edc0d517729d547f85c6d6d9664843e0aa8bda53ad7bb40"
+    }
+  },
+  "integration_workload": {
+    "C7_ordered_terms": 9366,
+    "C7_symmetry_orbits": 397,
+    "SPEC52_terms": 450,
+    "C8_ordered_terms": 94586,
+    "mu7_dimension": 6,
+    "mu8_dimension": 7
+  },
+  "decision": "C"
+}

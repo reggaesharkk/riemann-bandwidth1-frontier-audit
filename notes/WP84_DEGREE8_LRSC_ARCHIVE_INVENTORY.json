@@ -1,0 +1,602 @@
+[
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\lrsc-odd-ring-spectral-rank_github_ready_2026-09-24.zip",
+    "sha256": "210063708ffb6694597fa0b35f372a60b7e48fb6454e0dd91f00e8552e51b5b4",
+    "candidate_members": [],
+    "examined_members": []
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\lrsc-verifiable-research-kernel.zip",
+    "sha256": "1ab0414e64c6568bb2d177800ec5867b4b24f6d9bd51df05dd53175bf80a8d48",
+    "candidate_members": [
+      "lrsc_verifiable_research_kernel/verify_lrsc_kernel.py",
+      "lrsc_verifiable_research_kernel/lrsc_kernel_engine.py"
+    ],
+    "examined_members": [
+      {
+        "member": "lrsc_verifiable_research_kernel/verify_lrsc_kernel.py",
+        "sha256": "e0f4765c77f25744b4c696ea7ce5c7bc341f72f7f44d118cfc2736a86d64b9a4",
+        "functions": [
+          "run_verifiable_research_kernel_audit"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "lrsc_verifiable_research_kernel/lrsc_kernel_engine.py",
+        "sha256": "e94bdc11fc603451faa6aaac7b0504f64cf82a62d94fcf1706a0e6dd78ac1df3",
+        "functions": [
+          "LRSCOddRingEngine",
+          "generate_payload_sha256",
+          "__init__",
+          "compute_exact_spectral_rank",
+          "evaluate_subset_l2_error",
+          "verify_theta_plateau"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_interval_gate_2026-09-26.zip",
+    "sha256": "ba15cfd51cbe921e9107bde3dd528824ab24db8ba716f14f0ceb4746a3a7ce5f",
+    "candidate_members": [
+      "lrsc_interval_gate/source/audit_k1_to_k10.py",
+      "lrsc_interval_gate/lrsc_interval_certificate.py"
+    ],
+    "examined_members": [
+      {
+        "member": "lrsc_interval_gate/source/audit_k1_to_k10.py",
+        "sha256": "a176e9bbc4c4dd49cfe55b5b9bb792f28413026b95f8110a30d978248a690381",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "lrsc_interval_gate/lrsc_interval_certificate.py",
+        "sha256": "e2713beb117df8d39641549c6dbb12ce0f5396c4ea2b1e19cfcb744a9ab96ce3",
+        "functions": [
+          "ceildiv",
+          "I",
+          "arctan_series",
+          "timesint",
+          "trig",
+          "zadd",
+          "zmul",
+          "zscale",
+          "zsq",
+          "zdot_real",
+          "zsum",
+          "build",
+          "zsum_real",
+          "within",
+          "score",
+          "run",
+          "__post_init__",
+          "rational",
+          "fraction",
+          "__add__",
+          "__neg__",
+          "__sub__",
+          "__mul__",
+          "divint",
+          "square",
+          "width",
+          "dft"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_K11_exact_integer_certificate_2026-09-26.zip",
+    "sha256": "17d86e154ae4c72f1ca5b55076f0c4ea3e0931304f504e50d898ca2e50fc69a5",
+    "candidate_members": [
+      "lrsc_interval_gate/check_exact_output.py",
+      "lrsc_interval_gate/export_integer_coefficients.py",
+      "lrsc_interval_gate/source/audit_k1_to_k10.py",
+      "lrsc_interval_gate/lrsc_interval_certificate.py"
+    ],
+    "examined_members": [
+      {
+        "member": "lrsc_interval_gate/check_exact_output.py",
+        "sha256": "c31ed6d342a4b31cd753d9d4adc98067a2362470a6866c6c915e6cbd78c93bdf",
+        "functions": [],
+        "integration_keywords": []
+      },
+      {
+        "member": "lrsc_interval_gate/export_integer_coefficients.py",
+        "sha256": "c65fea04bacede01496234eb011bb21ec7d29d1ad17c107aaa675d315e26892f",
+        "functions": [
+          "main"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "lrsc_interval_gate/source/audit_k1_to_k10.py",
+        "sha256": "a176e9bbc4c4dd49cfe55b5b9bb792f28413026b95f8110a30d978248a690381",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "lrsc_interval_gate/lrsc_interval_certificate.py",
+        "sha256": "e2713beb117df8d39641549c6dbb12ce0f5396c4ea2b1e19cfcb744a9ab96ce3",
+        "functions": [
+          "ceildiv",
+          "I",
+          "arctan_series",
+          "timesint",
+          "trig",
+          "zadd",
+          "zmul",
+          "zscale",
+          "zsq",
+          "zdot_real",
+          "zsum",
+          "build",
+          "zsum_real",
+          "within",
+          "score",
+          "run",
+          "__post_init__",
+          "rational",
+          "fraction",
+          "__add__",
+          "__neg__",
+          "__sub__",
+          "__mul__",
+          "divint",
+          "square",
+          "width",
+          "dft"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_K7_Exhaustive_Audit.zip",
+    "sha256": "465ac630dfe5c386047ebd0932d55dd9d422605f95c50d7dc057c15c5b511bd0",
+    "candidate_members": [
+      "audit_k7.py"
+    ],
+    "examined_members": [
+      {
+        "member": "audit_k7.py",
+        "sha256": "b8a39804928554978b14a502b5c6d64ebbd5ff0429ae61cc5c45438d41a9178c",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_One_Step_Formula_Audit_v0_1.zip",
+    "sha256": "eb29c798682af9b1ec37c9f7a36a7196f59729639f01486fdd96bbfb025e6c4c",
+    "candidate_members": [
+      "LRSC_One_Step_Formula_Audit_v0_1/verify_one_step.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_One_Step_Formula_Audit_v0_1/verify_one_step.py",
+        "sha256": "84e9311d29fc7996276055ee82e3703e69343a3e2390e341956b2ddabbc215ad",
+        "functions": [
+          "build_state",
+          "direct_normalized_convolution",
+          "centered_dirichlet_mask",
+          "audit_amplitude",
+          "main"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_Single_Step_Spectral_Certificate_v1_0.zip",
+    "sha256": "5a82e2eabdc12bad4aa48414285091814cdf79b0192be8b079c2eee3955ea0ef",
+    "candidate_members": [
+      "LRSC_Single_Step_Spectral_Certificate_v1.0/verify_lrsc_certificate_v1_0.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_Single_Step_Spectral_Certificate_v1.0/verify_lrsc_certificate_v1_0.py",
+        "sha256": "422ae6edc30ab2e7b5d66eeb7470257db392944b0776d4837aa14dc7dbee8746",
+        "functions": [],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_v1_0_Companion_Verification.zip",
+    "sha256": "0c9ed1a7793f6be0c5c92f84cd8b8c2f9f59073968d0d8b8b0df6449ef275144",
+    "candidate_members": [
+      "LRSC_v1_0_Companion_Verification/direct_residual_reproduction.py",
+      "LRSC_v1_0_Companion_Verification/exhaustive_search_K1_6.py",
+      "LRSC_v1_0_Companion_Verification/lrsc_operator.py",
+      "LRSC_v1_0_Companion_Verification/local_search_K7_11.py",
+      "LRSC_v1_0_Companion_Verification/run_all.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_v1_0_Companion_Verification/direct_residual_reproduction.py",
+        "sha256": "d81442fcf3b41b0193fc17d0cd4589ba98ad211b9cd0847d7f838fa1e8f10bd9",
+        "functions": [],
+        "integration_keywords": []
+      },
+      {
+        "member": "LRSC_v1_0_Companion_Verification/exhaustive_search_K1_6.py",
+        "sha256": "78cb1bd770b3da4c786622820ad9c417f1fe455d4d5c7d9fb190497049091af0",
+        "functions": [],
+        "integration_keywords": []
+      },
+      {
+        "member": "LRSC_v1_0_Companion_Verification/lrsc_operator.py",
+        "sha256": "ff260eea2e977375699318a4de10cc3206c64e83a97aabb3e62ebc4bfaa0024e",
+        "functions": [
+          "build",
+          "residual",
+          "closure_error"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "LRSC_v1_0_Companion_Verification/local_search_K7_11.py",
+        "sha256": "407e4f574876c1e6f66fdf667656334eb74c9886487c7551643b726eb00ead18",
+        "functions": [
+          "one_swap_local_search"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "LRSC_v1_0_Companion_Verification/run_all.py",
+        "sha256": "491497d47d037791cd70553f880ef7f937d401b81df8430628751a364647d7e6",
+        "functions": [],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Independent_Companion (1).zip",
+    "sha256": "9971ed513df181e42e8f3c16073243b770fe0e2a8b71a5bc312b775e9266210c",
+    "candidate_members": [
+      "LRSC_v1_1_1_Independent_Companion/build_operator.py",
+      "LRSC_v1_1_1_Independent_Companion/highprec_borderline.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_v1_1_1_Independent_Companion/build_operator.py",
+        "sha256": "8c96b897cfc019412e7345823114c59209b07dbb5bdc88b1e982f0b9ef550ab6",
+        "functions": [
+          "build",
+          "direct_residual",
+          "quadratic_coefficients"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "LRSC_v1_1_1_Independent_Companion/highprec_borderline.py",
+        "sha256": "61fe8cd4749080debadcc80ea4ac61100f3fd184c2191eefffe6f3ee22036d96",
+        "functions": [
+          "build_mp",
+          "resid",
+          "dft"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Independent_Companion.zip",
+    "sha256": "cdc955f297d60aa4f1ecd5d78f51003f08ab3adc336bc5ea5487554d617d96fa",
+    "candidate_members": [
+      "LRSC_v1_1_1_Independent_Companion/highprec_borderline.py",
+      "LRSC_v1_1_1_Independent_Companion/build_operator.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_v1_1_1_Independent_Companion/highprec_borderline.py",
+        "sha256": "543a303c9c579fe332320b74aeffac8fba5d85b92312e9be176238dd97319f2b",
+        "functions": [
+          "build_mp",
+          "resid",
+          "dft"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "LRSC_v1_1_1_Independent_Companion/build_operator.py",
+        "sha256": "8c96b897cfc019412e7345823114c59209b07dbb5bdc88b1e982f0b9ef550ab6",
+        "functions": [
+          "build",
+          "direct_residual",
+          "quadratic_coefficients"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle (1).zip",
+    "sha256": "b0d9c6af1ca83d2f13bd54d35d5a06423c276b7698b266a16237201b7772a161",
+    "candidate_members": [
+      "LRSC_v1_1_1_Reproducibility_Supplement/source/audit_k1_to_k10.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_v1_1_1_Reproducibility_Supplement/source/audit_k1_to_k10.py",
+        "sha256": "a176e9bbc4c4dd49cfe55b5b9bb792f28413026b95f8110a30d978248a690381",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle.zip",
+    "sha256": "ff5f26b04a10c0d665bc89e1ad2ec025bd99c61c8b5815dacac3f89d362f26b7",
+    "candidate_members": [
+      "LRSC_v1_1_1_Reproducibility_Supplement/source/audit_k1_to_k10.py"
+    ],
+    "examined_members": [
+      {
+        "member": "LRSC_v1_1_1_Reproducibility_Supplement/source/audit_k1_to_k10.py",
+        "sha256": "93afe9e821248ea8b826236864716cfe0db5e2722a58a79fe2ba59bb6845f16a",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\LRSC_v1_2_1_Source_Bundle.zip",
+    "sha256": "b017e336253d5446a6c309d2092b7d7587ca368ed45d8c249f857f3a8b1836e9",
+    "candidate_members": [
+      "source/verify_LRSC_v1_2_1_independent.py"
+    ],
+    "examined_members": [
+      {
+        "member": "source/verify_LRSC_v1_2_1_independent.py",
+        "sha256": "06717b00df425c7558273fbbe8ee93c858e252f44ee95bb48c4a4261cd3fbb62",
+        "functions": [
+          "direct_shedding",
+          "compact_coefficient",
+          "finite_sum_coefficient",
+          "numerical_rank",
+          "rank_checks",
+          "main"
+        ],
+        "integration_keywords": [
+          "Fourier"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\OSF_DEPOSIT_LRSC_v1_1_1_NUMERICAL.zip",
+    "sha256": "4db7cb2c0c03a2c99ae3674078dd14e1cc4db2c0e9255942680d2ae90df23dbe",
+    "candidate_members": [],
+    "examined_members": []
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\Prince_Upadhyay_Curated_Research_MasterLock_to_LRSC_v1_1_1_2026-09-23 (1).zip",
+    "sha256": "b27ca774b5f7bb218f54e068f8ea853497663762d2b7e5b6416ae6048f072d77",
+    "candidate_members": [
+      "01_Self_Referential_Processing/Gate5_Power/estimator.py",
+      "01_Self_Referential_Processing/Gate5_Power/original_recovery_harness.py",
+      "01_Self_Referential_Processing/Gate5_Power/power_simulation.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/api_ping_check.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/estimator.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/recovery_harness.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/sensitivity.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/verify_lock_v8_6_3.py",
+      "02_Psi_Benchmark/Operationalizing_Self_Modeling_Organization.pdf",
+      "02_Psi_Benchmark/colab_psi_benchmark-v4.py",
+      "02_Psi_Benchmark/generate_peer_control_bank.py",
+      "03_Physics_and_Recursive_Cosmology/Hopf_Certificates/exact_rational_spot_checks_v1_4.json",
+      "03_Physics_and_Recursive_Cosmology/Hopf_Certificates/hopf_l1_symbolic_positivity_v1_4.py",
+      "03_Physics_and_Recursive_Cosmology/Hopf_Certificates/verify_positive_certificate_v1_4_1.py",
+      "04_LRSC/v1.0_Spectral_Certificate/verify_lrsc_certificate_v1_0.py",
+      "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/build_operator.py",
+      "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/highprec_borderline.py",
+      "04_LRSC/v1.1.1_Numerical_Reproducibility/audit_k1_to_k10.py",
+      "04_LRSC/v1.2.1_Proof_Clarification/verify_LRSC_v1_2_1_independent.py",
+      "04_LRSC/v1.2_Odd_Ring_Rank/verify_lrsc_odd_ring_rank_v1_2.py",
+      "05_DesignLab/PHASE_4/phase4_assignment_geometry_runner.py",
+      "05_DesignLab/PHASE_5/phase5_information_scale_runner.py",
+      "05_DesignLab/PHASE_6/phase6_covariance_identifiability_runner.py",
+      "05_DesignLab/PHASE_7/phase7_inferential_validation_runner.py"
+    ],
+    "examined_members": [
+      {
+        "member": "04_LRSC/v1.0_Spectral_Certificate/verify_lrsc_certificate_v1_0.py",
+        "sha256": "422ae6edc30ab2e7b5d66eeb7470257db392944b0776d4837aa14dc7dbee8746",
+        "functions": [],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/build_operator.py",
+        "sha256": "8c96b897cfc019412e7345823114c59209b07dbb5bdc88b1e982f0b9ef550ab6",
+        "functions": [
+          "build",
+          "direct_residual",
+          "quadratic_coefficients"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/highprec_borderline.py",
+        "sha256": "61fe8cd4749080debadcc80ea4ac61100f3fd184c2191eefffe6f3ee22036d96",
+        "functions": [
+          "build_mp",
+          "resid",
+          "dft"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.1.1_Numerical_Reproducibility/audit_k1_to_k10.py",
+        "sha256": "a176e9bbc4c4dd49cfe55b5b9bb792f28413026b95f8110a30d978248a690381",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.2.1_Proof_Clarification/verify_LRSC_v1_2_1_independent.py",
+        "sha256": "06717b00df425c7558273fbbe8ee93c858e252f44ee95bb48c4a4261cd3fbb62",
+        "functions": [
+          "direct_shedding",
+          "compact_coefficient",
+          "finite_sum_coefficient",
+          "numerical_rank",
+          "rank_checks",
+          "main"
+        ],
+        "integration_keywords": [
+          "Fourier"
+        ]
+      },
+      {
+        "member": "04_LRSC/v1.2_Odd_Ring_Rank/verify_lrsc_odd_ring_rank_v1_2.py",
+        "sha256": "6b36dfb408c87cdd2cc6bc64c23867f906722c84a0a73dc91518b90f4815f583",
+        "functions": [
+          "closed_j",
+          "direct_j",
+          "simple_jhat",
+          "active_orbits",
+          "cyclo_poly_reduced",
+          "exact_ring",
+          "main",
+          "add"
+        ],
+        "integration_keywords": [
+          "Fourier"
+        ]
+      }
+    ]
+  },
+  {
+    "path": "C:\\Users\\Asus\\Downloads\\Prince_Upadhyay_Curated_Research_MasterLock_to_LRSC_v1_1_1_2026-09-23.zip",
+    "sha256": "b27ca774b5f7bb218f54e068f8ea853497663762d2b7e5b6416ae6048f072d77",
+    "candidate_members": [
+      "01_Self_Referential_Processing/Gate5_Power/estimator.py",
+      "01_Self_Referential_Processing/Gate5_Power/original_recovery_harness.py",
+      "01_Self_Referential_Processing/Gate5_Power/power_simulation.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/api_ping_check.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/estimator.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/recovery_harness.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/sensitivity.py",
+      "01_Self_Referential_Processing/Master_Lock_v8.6.3/verify_lock_v8_6_3.py",
+      "02_Psi_Benchmark/Operationalizing_Self_Modeling_Organization.pdf",
+      "02_Psi_Benchmark/colab_psi_benchmark-v4.py",
+      "02_Psi_Benchmark/generate_peer_control_bank.py",
+      "03_Physics_and_Recursive_Cosmology/Hopf_Certificates/exact_rational_spot_checks_v1_4.json",
+      "03_Physics_and_Recursive_Cosmology/Hopf_Certificates/hopf_l1_symbolic_positivity_v1_4.py",
+      "03_Physics_and_Recursive_Cosmology/Hopf_Certificates/verify_positive_certificate_v1_4_1.py",
+      "04_LRSC/v1.0_Spectral_Certificate/verify_lrsc_certificate_v1_0.py",
+      "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/build_operator.py",
+      "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/highprec_borderline.py",
+      "04_LRSC/v1.1.1_Numerical_Reproducibility/audit_k1_to_k10.py",
+      "04_LRSC/v1.2.1_Proof_Clarification/verify_LRSC_v1_2_1_independent.py",
+      "04_LRSC/v1.2_Odd_Ring_Rank/verify_lrsc_odd_ring_rank_v1_2.py",
+      "05_DesignLab/PHASE_4/phase4_assignment_geometry_runner.py",
+      "05_DesignLab/PHASE_5/phase5_information_scale_runner.py",
+      "05_DesignLab/PHASE_6/phase6_covariance_identifiability_runner.py",
+      "05_DesignLab/PHASE_7/phase7_inferential_validation_runner.py"
+    ],
+    "examined_members": [
+      {
+        "member": "04_LRSC/v1.0_Spectral_Certificate/verify_lrsc_certificate_v1_0.py",
+        "sha256": "422ae6edc30ab2e7b5d66eeb7470257db392944b0776d4837aa14dc7dbee8746",
+        "functions": [],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/build_operator.py",
+        "sha256": "8c96b897cfc019412e7345823114c59209b07dbb5bdc88b1e982f0b9ef550ab6",
+        "functions": [
+          "build",
+          "direct_residual",
+          "quadratic_coefficients"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.1.1_Numerical_Reproducibility/Independent_Check/highprec_borderline.py",
+        "sha256": "61fe8cd4749080debadcc80ea4ac61100f3fd184c2191eefffe6f3ee22036d96",
+        "functions": [
+          "build_mp",
+          "resid",
+          "dft"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.1.1_Numerical_Reproducibility/audit_k1_to_k10.py",
+        "sha256": "a176e9bbc4c4dd49cfe55b5b9bb792f28413026b95f8110a30d978248a690381",
+        "functions": [
+          "Result",
+          "operator_arrays",
+          "direct_error",
+          "main"
+        ],
+        "integration_keywords": []
+      },
+      {
+        "member": "04_LRSC/v1.2.1_Proof_Clarification/verify_LRSC_v1_2_1_independent.py",
+        "sha256": "06717b00df425c7558273fbbe8ee93c858e252f44ee95bb48c4a4261cd3fbb62",
+        "functions": [
+          "direct_shedding",
+          "compact_coefficient",
+          "finite_sum_coefficient",
+          "numerical_rank",
+          "rank_checks",
+          "main"
+        ],
+        "integration_keywords": [
+          "Fourier"
+        ]
+      },
+      {
+        "member": "04_LRSC/v1.2_Odd_Ring_Rank/verify_lrsc_odd_ring_rank_v1_2.py",
+        "sha256": "6b36dfb408c87cdd2cc6bc64c23867f906722c84a0a73dc91518b90f4815f583",
+        "functions": [
+          "closed_j",
+          "direct_j",
+          "simple_jhat",
+          "active_orbits",
+          "cyclo_poly_reduced",
+          "exact_ring",
+          "main",
+          "add"
+        ],
+        "integration_keywords": [
+          "Fourier"
+        ]
+      }
+    ]
+  }
+]
