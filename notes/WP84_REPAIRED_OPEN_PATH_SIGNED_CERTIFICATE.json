@@ -1,0 +1,179 @@
+{
+  "decision": "F",
+  "hard_masked_lifts": {
+    "5": [
+      [
+        17,
+        1,
+        1
+      ],
+      [
+        17,
+        -1,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        5,
+        -1,
+        -1
+      ],
+      [
+        7,
+        -1,
+        0
+      ],
+      [
+        11,
+        -1,
+        0
+      ]
+    ],
+    "6": [
+      [
+        17,
+        1,
+        1
+      ],
+      [
+        17,
+        -1,
+        1
+      ],
+      [
+        2,
+        1,
+        -1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        5,
+        -1,
+        -1
+      ],
+      [
+        7,
+        -1,
+        0
+      ],
+      [
+        11,
+        -1,
+        0
+      ],
+      [
+        13,
+        -1,
+        0
+      ]
+    ]
+  },
+  "pair_window_multiplier_lower_limit": "343/8921088",
+  "ordinary_O7_diagonal": "0 exactly",
+  "R1_O8_diagonal_polynomial_in_x": [
+    "0",
+    "0",
+    "373/36",
+    "-1293/4",
+    "36130/9"
+  ],
+  "x": "-1/(4*pi^2)",
+  "R1_full_diagonal_moments": {
+    "2": "1/6 - 4*x",
+    "4": "32*x**2 - 8*x/3 + 1/12",
+    "6": "-414*x**3 + 42*x**2 - 7*x/3 + 5/72",
+    "8": "65336*x**4/9 - 2708*x**3/3 + 164*x**2/3 - 8*x/3 + 35/432"
+  },
+  "R1_scalar_kappa8": "-190696*x**4/9 + 8240*x**3/3 - 824*x**2/9 + 4*x/9",
+  "R6000_diagonal": "explicit finite covariance formula certified; numerical value/sign not evaluated",
+  "residual": {
+    "ordinary_exact_diagonal": "subtract explicit M_open_8(R), O7=0; repeated groups o(1)",
+    "exact_nonzero_alias": "o(1), absolute bound extended to b<=8",
+    "proper_power_exact_diagonal": "o(1) by balanced prime-exponent group summation",
+    "masked_nonexact_proper_powers": "NOT removed unconditionally; full bounded-eighth signed gate needed",
+    "canonical_closed_component": "outside O by reserved definition; remains in complete consumer ledger",
+    "near_alias": "OPEN",
+    "central_nonexact": "OPEN",
+    "transition": "OPEN outside certified short-product cells",
+    "far": "OPEN outside certified short-product cells"
+  },
+  "witness": {
+    "q_coefficients": [
+      "-708647100/6882128371",
+      "3565290899/13764256742",
+      "137641000/222004141",
+      "-5106481100/6882128371",
+      "137641/13764256742"
+    ],
+    "p_coefficients": [
+      "502180712338410000/47363690914923113641",
+      "-2526533056232742900/47363690914923113641",
+      "-11478346887300571799/189454763659692454564",
+      "22450022388946649000/47363690914923113641",
+      "0",
+      "-87154293740347770741/94727381829846227282",
+      "26076736521048521000/47363690914923113641",
+      "-702861165085100/47363690914923113641",
+      "18945044881/189454763659692454564"
+    ],
+    "support_q_minus1_minusy": [
+      "1",
+      "44141630265/13764256742",
+      "19586727223/6882128371",
+      "5106756382/6882128371",
+      "137641/13764256742"
+    ],
+    "relaxed_completion_moments": [
+      "1",
+      "0",
+      "1/3",
+      "0",
+      "1/4",
+      "1/36",
+      "157/630",
+      "0",
+      "984591917/748818000"
+    ],
+    "H8_leading_minors": [
+      "1",
+      "1/3",
+      "5/108",
+      "283/108864",
+      "283/108864"
+    ],
+    "expectation": "295472201803619444358246773/2895247698247420090647048000",
+    "uncharged_coefficient": "1152151647320090600965277227/1447623849123710045323524000",
+    "c7_over_c5": "10212962200/633200091109101",
+    "c8_over_c6": "1/5505764000"
+  },
+  "allowance_ceiling": "8528806512359665159693267/2895247698247420090647048000",
+  "partial_variance_payment": "32242676406427306183391/15756336965594727445610547000",
+  "partial_allowance": "105010427619399283011381545483/35672346890106462936862278408000",
+  "fully_paid_budget": "UNCERTIFIED",
+  "signed_open_coefficients": [
+    "-702861165085100/47363690914923113641",
+    "18945044881/189454763659692454564"
+  ],
+  "hardness": "masked embedding preserves old carrier/shift, but full signed aggregate comparison uncertified",
+  "mu7_mu8": "NO-GO",
+  "parent": "def80b674410ff58361f506f1922cc2e952c646d",
+  "source_blobs": {
+    "src/wp84_full_pair_transfer_degree8.py": "bc7a7d2fac3665355573a55fa39e784f8813e351",
+    "src/wp84_augmented_open_path_pair_transfer.py": "9fbcc960e6d979dbf702e2a6c822866403990b81",
+    "notes/WP84_SIGNED_NEAR_PRODUCT_CELL_DECOMPOSITION.md": "dfaf32875e33ae374c65b41f81b8b54e07b0c2b4",
+    "notes/WP84_POWER_SCALE_CENTRAL_WINDOW_AND_DENSITY_BRIDGE.md": "5544be2aa1b3e513c4aef5d8bf306472c12cef12"
+  }
+}
