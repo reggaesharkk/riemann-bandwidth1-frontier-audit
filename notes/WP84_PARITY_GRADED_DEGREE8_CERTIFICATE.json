@@ -1,0 +1,312 @@
+{
+  "parent": "c819938650457a94d3e821c2407a0b1034202f31",
+  "decision": "A",
+  "general_parity_theorem": "sum_p |r_p-s_p|=b-2 sum_p min(r_p,s_p)",
+  "support_characterization": "e supported on cutoff primes; ||e||1<=b; ||e||1=b mod 2 (nonempty prime alphabet)",
+  "orders_1_through_10_counts": {
+    "1": 6,
+    "2": 19,
+    "3": 44,
+    "4": 85,
+    "5": 146,
+    "6": 231,
+    "7": 344,
+    "8": 489,
+    "9": 670,
+    "10": 891
+  },
+  "same_parity_dictionary": {
+    "5_into_7": 146,
+    "6_into_8": 231
+  },
+  "hard_ratio_witnesses": {
+    "5_7": "6/385",
+    "6_8": "6/5005"
+  },
+  "connected_pair_insertion_survival": [
+    {
+      "vector": [
+        "3/5",
+        "-2/5",
+        "3/5",
+        "-2/5",
+        "-2/5",
+        "3/10",
+        "-3/10"
+      ],
+      "terms": 9366,
+      "C": "-1/5",
+      "outer": "1/5",
+      "signed_density": "-1/25"
+    },
+    {
+      "vector": [
+        "-7/10",
+        "4/5",
+        "-7/10",
+        "3/5",
+        "-2/5",
+        "2/5",
+        "1/5",
+        "-1/5"
+      ],
+      "terms": 94586,
+      "C": "1/5",
+      "outer": "1/10",
+      "signed_density": "1/50"
+    }
+  ],
+  "partition_counts": {
+    "7": {
+      "(1, 1, 1, 1, 1, 1, 1)": {
+        "placements": 1,
+        "inverse_cumulant_coefficient": 720
+      },
+      "(2, 1, 1, 1, 1, 1)": {
+        "placements": 21,
+        "inverse_cumulant_coefficient": -120
+      },
+      "(2, 2, 1, 1, 1)": {
+        "placements": 105,
+        "inverse_cumulant_coefficient": 24
+      },
+      "(2, 2, 2, 1)": {
+        "placements": 105,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(3, 1, 1, 1, 1)": {
+        "placements": 35,
+        "inverse_cumulant_coefficient": 24
+      },
+      "(3, 2, 1, 1)": {
+        "placements": 210,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(3, 2, 2)": {
+        "placements": 105,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(3, 3, 1)": {
+        "placements": 70,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(4, 1, 1, 1)": {
+        "placements": 35,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(4, 2, 1)": {
+        "placements": 105,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(4, 3)": {
+        "placements": 35,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(5, 1, 1)": {
+        "placements": 21,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(5, 2)": {
+        "placements": 21,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(6, 1)": {
+        "placements": 7,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(7,)": {
+        "placements": 1,
+        "inverse_cumulant_coefficient": 1
+      }
+    },
+    "8": {
+      "(1, 1, 1, 1, 1, 1, 1, 1)": {
+        "placements": 1,
+        "inverse_cumulant_coefficient": -5040
+      },
+      "(2, 1, 1, 1, 1, 1, 1)": {
+        "placements": 28,
+        "inverse_cumulant_coefficient": 720
+      },
+      "(2, 2, 1, 1, 1, 1)": {
+        "placements": 210,
+        "inverse_cumulant_coefficient": -120
+      },
+      "(2, 2, 2, 1, 1)": {
+        "placements": 420,
+        "inverse_cumulant_coefficient": 24
+      },
+      "(2, 2, 2, 2)": {
+        "placements": 105,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(3, 1, 1, 1, 1, 1)": {
+        "placements": 56,
+        "inverse_cumulant_coefficient": -120
+      },
+      "(3, 2, 1, 1, 1)": {
+        "placements": 560,
+        "inverse_cumulant_coefficient": 24
+      },
+      "(3, 2, 2, 1)": {
+        "placements": 840,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(3, 3, 1, 1)": {
+        "placements": 280,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(3, 3, 2)": {
+        "placements": 280,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(4, 1, 1, 1, 1)": {
+        "placements": 70,
+        "inverse_cumulant_coefficient": 24
+      },
+      "(4, 2, 1, 1)": {
+        "placements": 420,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(4, 2, 2)": {
+        "placements": 210,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(4, 3, 1)": {
+        "placements": 280,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(4, 4)": {
+        "placements": 35,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(5, 1, 1, 1)": {
+        "placements": 56,
+        "inverse_cumulant_coefficient": -6
+      },
+      "(5, 2, 1)": {
+        "placements": 168,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(5, 3)": {
+        "placements": 56,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(6, 1, 1)": {
+        "placements": 28,
+        "inverse_cumulant_coefficient": 2
+      },
+      "(6, 2)": {
+        "placements": 28,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(7, 1)": {
+        "placements": 8,
+        "inverse_cumulant_coefficient": -1
+      },
+      "(8,)": {
+        "placements": 1,
+        "inverse_cumulant_coefficient": 1
+      }
+    }
+  },
+  "degree8_coefficients": [
+    "g00",
+    "2*g01",
+    "2*g02 + g11",
+    "2*g03 + 2*g12",
+    "2*g04 + 2*g13 + g22",
+    "2*g14 + 2*g23",
+    "2*g24 + g33",
+    "2*g34",
+    "g44"
+  ],
+  "exact_scalar_same_carrier_ratios": {
+    "7_over_5": {
+      "1": "7/2",
+      "3": "21/5",
+      "5": "7"
+    },
+    "8_over_6": {
+      "0": "7/2",
+      "2": "56/15",
+      "4": "14/3",
+      "6": "8"
+    }
+  },
+  "pair_factorization_countercheck": {
+    "naive_42": "-1/12",
+    "actual_model_42": "-23/420"
+  },
+  "frozen_ratio": "-620/371",
+  "negative_coercivity_quantity": "-1240/371",
+  "known_exact_mu7": false,
+  "known_exact_mu8": false,
+  "canonical_pair_lift": "A_(b+2)^lift=2*S0_T*A_b, S0_T=sum_p c_p^2*(1-log(p)/L)^2",
+  "canonical_pair_limit": "2*S0_T -> 1/6",
+  "quartic_candidate": {
+    "q": "144000*X**4/117559 + 14400*X**3/117559 - 12720*X**2/117559 - 1128*X/117559 - 449/117559",
+    "coefficients": [
+      "201601/13820118481",
+      "1012944/13820118481",
+      "12694944/13820118481",
+      "15765120/13820118481",
+      "0",
+      "-691200000/13820118481",
+      "-3456000000/13820118481",
+      "4147200000/13820118481",
+      "20736000000/13820118481"
+    ],
+    "support_q_minus_one_coefficients": [
+      "144000/117559",
+      "43200/9043",
+      "62160/9043",
+      "508488/117559",
+      "0"
+    ],
+    "Gram_certificate": "rational rank-one outer product of q coefficients",
+    "all_31_principal_minors": [
+      "201601/13820118481",
+      "1272384/13820118481",
+      "161798400/13820118481",
+      "207360000/13820118481",
+      "20736000000/13820118481",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "known_model_part": "-6132167257/96740829367",
+    "unknown_model_part": "c7*mu7+c8*mu8",
+    "model_gt79_certified": false,
+    "band_charge_certified": false
+  },
+  "first_uncertified_gate": "remaining higher-order amplitude norms and exact centered mu7/mu8",
+  "new_model_gt79_certified": false,
+  "strict_gt79": false,
+  "Liouville_projector_algebraically_valid": true,
+  "auxiliary_zero_side_equivalence_proved": false,
+  "full_7_8_theorem_started": false
+}

@@ -1,0 +1,16 @@
+src\wp84_carrier_aware_consumer_verify.py:10:    assert rec['c5_over_c6']=='-620/371'
+src\wp84_carrier_aware_consumer_verify.py:18:         'requested_previous_ratio':'-1240/371','actual_exact_c5_over_c6':'-620/371',
+src\wp84_carrier_aware_consumer_verify.py:19:         'factor_two_error':'-1240/371 equals -2*abs(c5)/c6, not c5/c6',
+src\wp84_carrier_aware_consumer_verify.py:22:    print('PASS: preserved rational support/PSD consumer, c4=0, ratio=-620/371; no new amplitude-safe consumer.')
+notes\WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md:154:The frozen centered coefficients have c5/c6=-620/371, equivalently
+notes\WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md:258:Its exact support is X<=-1, c4=0, and frozen ratio -620/371. The c4=c5=0
+notes\WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md:299:ratio=-620/371 and the exact sharp pair-reference deficit. It certifies
+notes\WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md:308: c5/c6=-620/371, c6/c5=-371/620,
+notes\WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md:309: -2*abs(c5)/c6=-1240/371.
+notes\WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md:313:-620/371; the earlier human reports were wrong. No coefficients are changed
+notes\WP84_CARRIER_AWARE_CONSUMER_CERTIFICATE.json:66:    "c5_over_c6": "-620/371",
+notes\WP84_CARRIER_AWARE_CONSUMER_CERTIFICATE.json:79:  "requested_previous_ratio": "-1240/371",
+notes\WP84_CARRIER_AWARE_CONSUMER_CERTIFICATE.json:80:  "actual_exact_c5_over_c6": "-620/371",
+notes\WP84_CARRIER_AWARE_CONSUMER_CERTIFICATE.json:81:  "factor_two_error": "-1240/371 equals -2*abs(c5)/c6, not c5/c6",
+notes\WP84_DEGREE6_CONSUMER_EXACT_CERTIFICATE.json:82:      "c5_over_c6": "-620/371",
+notes\WP84_THEOREM_AWARE_DEGREE6_CONSUMER_DESIGN.md:241: c5/c6=-1240/371,

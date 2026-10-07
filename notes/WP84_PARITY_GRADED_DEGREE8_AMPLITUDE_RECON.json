@@ -1,0 +1,421 @@
+{
+  "same_parity_ratio_recon": {
+    "7_over_5": {
+      "nonzero_common_count": 146,
+      "spread_from_first": 26.055769515650724,
+      "real_range": [
+        -0.7650065887429006,
+        27.21250982957157
+      ],
+      "imaginary_range": [
+        -3.0054194252485197e-12,
+        2.9964767972909956e-12
+      ],
+      "exact_constant_factor_proved": false
+    },
+    "8_over_6": {
+      "nonzero_common_count": 231,
+      "spread_from_first": 10.07974834528297,
+      "real_range": [
+        -0.1814744643031334,
+        10.630709007396778
+      ],
+      "imaginary_range": [
+        -7.476555844426314e-13,
+        7.229085818177355e-13
+      ],
+      "exact_constant_factor_proved": false
+    }
+  },
+  "evidence": "NUMERICAL finite algebra replay only; no arithmetic theorem",
+  "parameters": {
+    "primes": [
+      2,
+      3,
+      5
+    ],
+    "L_toy": 7.0,
+    "T_phase": 13.0,
+    "I": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "R_toy": 1,
+    "a_phi": 1
+  },
+  "selected_section_certified_for_original_theorem": false,
+  "all_lag_paths_and_roots_included": true,
+  "common_degree5_degree6_carriers": [],
+  "rows": [
+    {
+      "degree": 5,
+      "class_count": 146,
+      "TV": 0.008316769741594031,
+      "counting_L2": 0.0016159536057796494,
+      "conjugacy_error": 6.06087439757635e-20,
+      "resolved_trace_error": 1.3645761244930418e-18,
+      "complete_resolved_real_trace": -6.827631540960419e-05,
+      "samples": [
+        {
+          "exponents": [
+            -1,
+            0,
+            0
+          ],
+          "lambda": -0.6931471805599453,
+          "amplitude_real": 0.0003807925822060374,
+          "amplitude_imag": 0.0005485730080027748
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            0
+          ],
+          "lambda": 0.6931471805599453,
+          "amplitude_real": 0.0003807925822060374,
+          "amplitude_imag": -0.0005485730080027748
+        },
+        {
+          "exponents": [
+            -1,
+            -1,
+            1
+          ],
+          "lambda": -0.1823215567939548,
+          "amplitude_real": -0.0004214227315168801,
+          "amplitude_imag": 0.0002717745882299089
+        },
+        {
+          "exponents": [
+            1,
+            1,
+            -1
+          ],
+          "lambda": 0.1823215567939548,
+          "amplitude_real": -0.0004214227315168801,
+          "amplitude_imag": -0.0002717745882299089
+        },
+        {
+          "exponents": [
+            0,
+            1,
+            0
+          ],
+          "lambda": 1.0986122886681098,
+          "amplitude_real": 0.000474127712990458,
+          "amplitude_imag": 0.00015177141120095554
+        },
+        {
+          "exponents": [
+            0,
+            -1,
+            0
+          ],
+          "lambda": -1.0986122886681098,
+          "amplitude_real": 0.00047412771299045793,
+          "amplitude_imag": -0.00015177141120095554
+        },
+        {
+          "exponents": [
+            0,
+            2,
+            -1
+          ],
+          "lambda": 0.5877866649021193,
+          "amplitude_real": 8.211980340943191e-05,
+          "amplitude_imag": -0.00029017430958697387
+        },
+        {
+          "exponents": [
+            0,
+            -2,
+            1
+          ],
+          "lambda": -0.5877866649021193,
+          "amplitude_real": 8.211980340943188e-05,
+          "amplitude_imag": 0.00029017430958697387
+        }
+      ]
+    },
+    {
+      "degree": 6,
+      "class_count": 231,
+      "TV": 0.003976424066843128,
+      "counting_L2": 0.0007798924546126557,
+      "conjugacy_error": 2.7939250479261703e-20,
+      "resolved_trace_error": 2.1228681099923205e-19,
+      "complete_resolved_real_trace": 3.075118434084292e-05,
+      "samples": [
+        {
+          "exponents": [
+            0,
+            0,
+            0
+          ],
+          "lambda": 0.0,
+          "amplitude_real": 0.00043572414223918193,
+          "amplitude_imag": -1.826414792517085e-21
+        },
+        {
+          "exponents": [
+            0,
+            -1,
+            1
+          ],
+          "lambda": 0.5108256237659905,
+          "amplitude_real": -8.931657363591471e-06,
+          "amplitude_imag": 0.00026251961775700203
+        },
+        {
+          "exponents": [
+            0,
+            1,
+            -1
+          ],
+          "lambda": -0.5108256237659905,
+          "amplitude_real": -8.931657363591485e-06,
+          "amplitude_imag": -0.00026251961775700203
+        },
+        {
+          "exponents": [
+            -1,
+            1,
+            0
+          ],
+          "lambda": 0.4054651081081645,
+          "amplitude_real": 7.293215102793382e-05,
+          "amplitude_imag": 0.00023830810770679507
+        },
+        {
+          "exponents": [
+            1,
+            -1,
+            0
+          ],
+          "lambda": -0.4054651081081645,
+          "amplitude_real": 7.293215102793382e-05,
+          "amplitude_imag": -0.00023830810770679507
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            -1
+          ],
+          "lambda": -0.916290731874155,
+          "amplitude_real": -0.0001791623727197339,
+          "amplitude_imag": -4.8233273802359756e-05
+        },
+        {
+          "exponents": [
+            -1,
+            0,
+            1
+          ],
+          "lambda": 0.916290731874155,
+          "amplitude_real": -0.00017916237271973386,
+          "amplitude_imag": 4.8233273802359756e-05
+        },
+        {
+          "exponents": [
+            1,
+            -2,
+            1
+          ],
+          "lambda": 0.105360515657826,
+          "amplitude_real": 0.00010701551843610082,
+          "amplitude_imag": 3.677506691457463e-05
+        }
+      ]
+    },
+    {
+      "degree": 7,
+      "class_count": 344,
+      "TV": 0.0018204755035997197,
+      "counting_L2": 0.0002962235236691359,
+      "conjugacy_error": 7.576092996970438e-21,
+      "resolved_trace_error": 8.974439931881884e-20,
+      "complete_resolved_real_trace": -3.399498250711317e-06,
+      "samples": [
+        {
+          "exponents": [
+            -1,
+            0,
+            0
+          ],
+          "lambda": -0.6931471805599453,
+          "amplitude_real": 6.207254837457514e-05,
+          "amplitude_imag": 8.94222371112631e-05
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            0
+          ],
+          "lambda": 0.6931471805599453,
+          "amplitude_real": 6.207254837457514e-05,
+          "amplitude_imag": -8.94222371112631e-05
+        },
+        {
+          "exponents": [
+            -1,
+            -1,
+            1
+          ],
+          "lambda": -0.1823215567939548,
+          "amplitude_real": -7.763667246840446e-05,
+          "amplitude_imag": 5.00677185013115e-05
+        },
+        {
+          "exponents": [
+            1,
+            1,
+            -1
+          ],
+          "lambda": 0.1823215567939548,
+          "amplitude_real": -7.763667246840446e-05,
+          "amplitude_imag": -5.00677185013115e-05
+        },
+        {
+          "exponents": [
+            0,
+            -1,
+            0
+          ],
+          "lambda": -1.0986122886681098,
+          "amplitude_real": 7.739087546690739e-05,
+          "amplitude_imag": -2.477333018482792e-05
+        },
+        {
+          "exponents": [
+            0,
+            1,
+            0
+          ],
+          "lambda": 1.0986122886681098,
+          "amplitude_real": 7.739087546690739e-05,
+          "amplitude_imag": 2.4773330184827926e-05
+        },
+        {
+          "exponents": [
+            0,
+            -2,
+            1
+          ],
+          "lambda": -0.5877866649021193,
+          "amplitude_real": 1.6436953708389507e-05,
+          "amplitude_imag": 5.8080773406931515e-05
+        },
+        {
+          "exponents": [
+            0,
+            2,
+            -1
+          ],
+          "lambda": 0.5877866649021193,
+          "amplitude_real": 1.6436953708389507e-05,
+          "amplitude_imag": -5.8080773406931515e-05
+        }
+      ]
+    },
+    {
+      "degree": 8,
+      "class_count": 489,
+      "TV": 0.000866187985416946,
+      "counting_L2": 0.00013866922930592606,
+      "conjugacy_error": 3.3881317890172014e-21,
+      "resolved_trace_error": 1.5746857577333798e-19,
+      "complete_resolved_real_trace": 1.2456685028131977e-06,
+      "samples": [
+        {
+          "exponents": [
+            0,
+            0,
+            0
+          ],
+          "lambda": 0.0,
+          "amplitude_real": 6.808650357323149e-05,
+          "amplitude_imag": -1.3565762045869654e-22
+        },
+        {
+          "exponents": [
+            0,
+            -1,
+            1
+          ],
+          "lambda": 0.5108256237659905,
+          "amplitude_real": -1.5348300614198562e-06,
+          "amplitude_imag": 4.511178436919786e-05
+        },
+        {
+          "exponents": [
+            0,
+            1,
+            -1
+          ],
+          "lambda": -0.5108256237659905,
+          "amplitude_real": -1.534830061419858e-06,
+          "amplitude_imag": -4.511178436919786e-05
+        },
+        {
+          "exponents": [
+            -1,
+            1,
+            0
+          ],
+          "lambda": 0.4054651081081645,
+          "amplitude_real": 1.287903148626184e-05,
+          "amplitude_imag": 4.2082642282301015e-05
+        },
+        {
+          "exponents": [
+            1,
+            -1,
+            0
+          ],
+          "lambda": -0.4054651081081645,
+          "amplitude_real": 1.287903148626184e-05,
+          "amplitude_imag": -4.2082642282301015e-05
+        },
+        {
+          "exponents": [
+            -1,
+            0,
+            1
+          ],
+          "lambda": 0.916290731874155,
+          "amplitude_real": -3.216895201199144e-05,
+          "amplitude_imag": 8.660377995532386e-06
+        },
+        {
+          "exponents": [
+            1,
+            0,
+            -1
+          ],
+          "lambda": -0.916290731874155,
+          "amplitude_real": -3.216895201199144e-05,
+          "amplitude_imag": -8.660377995532385e-06
+        },
+        {
+          "exponents": [
+            -1,
+            2,
+            -1
+          ],
+          "lambda": -0.105360515657826,
+          "amplitude_real": 2.3189239141175115e-05,
+          "amplitude_imag": -7.968805212339255e-06
+        }
+      ]
+    }
+  ],
+  "frozen_joint_TV_toy": 0.009841369443783256,
+  "frozen_joint_counting_L2_toy": 0.0015475663605733828,
+  "ratio_reconnaissance": "5/7 and 6/8 overlap; toy ratios vary; no factorization theorem",
+  "strict_gt79": false
+}

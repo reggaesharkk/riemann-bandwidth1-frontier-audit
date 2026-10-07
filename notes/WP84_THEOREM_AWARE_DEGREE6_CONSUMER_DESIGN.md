@@ -238,7 +238,7 @@ mu6=157/630. The preserved rational square has
  c=(364848201/34410250000,-18356061/344102500,
     -26060119/430128125,21981971/46375000,0,
     -11501/12500,137641/250000),
- c5/c6=-1240/371,
+ c5/c6=-620/371,
  E_model=35116876419/344102500000.
 
 Its uncharged model simple-zero coefficient is 1-2E_model, not a certified
@@ -372,3 +372,10 @@ Outputs include EXACT_CERTIFICATE.json, REGION_SIGN_CERTIFICATE.json and
 DUAL_OBSTRUCTION_CERTIFICATE.json. The dual scope is explicitly conditional
 on the disjoint sharp proxy, except the independent c5=0 model bound. All
 prior audit commits and notebooklm_packet are preserved. No push occurs.
+
+
+Erratum 2026-10-07 (parity-graded audit): the previous version's statement
+`c5/c6=-1240/371` was a BUG. The preserved coefficients give `c5/c6=-620/371`.
+The separate negative coercivity quantity is `-2|c5|/c6=-1240/371`.
+The live ratio above is corrected; prior commits and exact JSON candidates
+are preserved. See WP84_PARITY_GRADED_RATIO_ERRATUM.csv for the source audit.
