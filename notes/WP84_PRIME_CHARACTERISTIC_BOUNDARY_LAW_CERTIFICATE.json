@@ -1,0 +1,119 @@
+{
+  "parent": "00f5f8f67b9c03d399c90650d0811cf01e6c7464",
+  "witnesses": [
+    {
+      "kind": "lower",
+      "K": 32,
+      "finite_end": 256,
+      "rhos": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "7/8",
+        "15/16",
+        "31/32",
+        "63/64",
+        "127/128"
+      ],
+      "coefficients": [
+        "-177474003807058873909/55887390900000000",
+        "-16820385/938417306",
+        "150292891/874129933",
+        "-458723607/134099951",
+        "50678184278/828307931",
+        "-634564925781/913638178",
+        "414028352447/98018322",
+        "-9148412858571/774794887",
+        "4252112992579/373099229"
+      ],
+      "producer": "floating LP proposal followed by exact rational repair",
+      "repair": "0",
+      "safety": "1/100000000"
+    },
+    {
+      "kind": "upper",
+      "K": 32,
+      "finite_end": 32,
+      "rhos": [],
+      "coefficients": [
+        "1"
+      ],
+      "producer": "exact mass cap"
+    }
+  ],
+  "characteristic": {
+    "invariants": [
+      "v1/t^2",
+      "v2/t^2",
+      "c/t^2",
+      "Re(zeta)/t",
+      "Im(zeta)/t",
+      "Re(q0)",
+      "Im(q0)",
+      "Re(q1)/t",
+      "Im(q1)/t",
+      "Re(q2)/t^2",
+      "Im(q2)/t^2",
+      "Re(q3)/t^3",
+      "Im(q3)/t^3"
+    ],
+    "independent_invariant_count_real": 13,
+    "consumer_scaling": "PASS",
+    "incorrect_scaling": "REJECTED",
+    "pointwise_boundary_equals_terminal": true
+  },
+  "prime_field_reconstruction": {
+    "prime_powers": [
+      "2",
+      "4"
+    ],
+    "L": "4 log 2",
+    "T": "2pi/log2",
+    "Q_samples": [
+      "-sqrt(2)/8 - 1/8",
+      "1/8 - sqrt(2)*I/8",
+      "-1/8 + sqrt(2)/8"
+    ],
+    "Qprime_over_L_samples": [
+      "I*(-1/16 - sqrt(2)/32)",
+      "I*(1/16 - sqrt(2)*I/32)",
+      "I*(-1/16 + sqrt(2)/32)"
+    ],
+    "matrix_reconstruction": "PASS",
+    "rank_two_source": "PASS",
+    "scope": "finite exact algebra only"
+  },
+  "boundary_classification": "A: literally the original compiled signed target under reparameterization",
+  "stop_condition": "16.A: equivalent original target; no simplification from master characteristic",
+  "decision": "D: master route provably circular at the first requested stop gate",
+  "finite_lag_localization": "not pursued after stop gate; not established",
+  "finite_prime_field_CLT": "not pursued after stop gate; neither proved nor falsified",
+  "literature_and_public_candidate_audit": "not reached under explicit stop condition",
+  "Gaussian_smoothing": "already present and unchanged by the characteristic identity",
+  "lag_tail_error": null,
+  "reconstructed_boundary_value": null,
+  "actual_margin": null,
+  "required_grouped_lower_threshold": "83446820694177651440799215197979/18482819123692026401760000000000",
+  "epsilon": "8711/2778200",
+  "initial_payment_upper": "53503/66000000",
+  "synthetic_regression_margin": "1939150689002692291975282055154320449187120336298337560823715234499173313925824774560673798529347302779552006063733737/4517961845055676110694372160903595755068596513383240544406098304843348968726715330221618653003539948272000000000000000000",
+  "consumer_certified": false,
+  "source_coverage": [
+    {
+      "path": "notes/WP84_SHARP_LOEWNER_DIRICHLET_REPRESENTATION.md",
+      "sha256": "91bca88286e36885e11bb73ac70dfc9d52d718c3e48c3526eed0a361783d454b"
+    },
+    {
+      "path": "notes/WP84_JOINT_GAUSSIAN_MEHLER_MASTER_LAW.md",
+      "sha256": "1f2a295e96df4718d59ce345191f6d150d7767ab4aa31329ef83a3f18c0dde15"
+    },
+    {
+      "path": "notes/WP84_COMPILED_MEHLER_PRIME_LINDEBERG.md",
+      "sha256": "443529d6c30664ab1b1d6affaef5676e1f7e370a10b80fa0c6dd4352ad2a9e21"
+    },
+    {
+      "path": "notes/WP84_MEHLER_WEAK_DUAL_CHAOS_CUTOFF.md",
+      "sha256": "3cb74c6e76fd3b5f508ab90de12573772b93ab0cfd68dfb2e3bab18a9a2ac37e"
+    }
+  ]
+}
