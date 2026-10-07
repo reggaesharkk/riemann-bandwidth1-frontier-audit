@@ -1,0 +1,43 @@
+{
+  "scope": "EXACT disjoint sharp-proxy obstruction and c5=0 model bound; not a dual for an unidentified actual joint kernel",
+  "quadratic_dual_matrix": [
+    [
+      "3/4",
+      "1/4"
+    ],
+    [
+      "1/4",
+      "1/12"
+    ]
+  ],
+  "quadratic_lower_model_defect": "1/4",
+  "quadratic_upper_simple_zero_coefficient": "1/2",
+  "fallback_nodes": [
+    "-1",
+    "-1/2",
+    "0",
+    "1/2",
+    "1"
+  ],
+  "fallback_weights": [
+    "1151/9450",
+    "848/4725",
+    "626/1575",
+    "848/4725",
+    "1151/9450"
+  ],
+  "fallback_moments": [
+    "1",
+    "0",
+    "1/3",
+    "0",
+    "419/1575",
+    "0",
+    "157/630"
+  ],
+  "c5_zero_model_lower_defect": "1151/9450",
+  "c5_zero_model_upper_coefficient": "3574/4725",
+  "Pareto_outer_bound": "E_model >= 1151/9450 + c5/36 (c4=0)",
+  "necessary_c5_for_model_gt79": "-127/210",
+  "exact_full_Pareto_frontier_proved": false
+}

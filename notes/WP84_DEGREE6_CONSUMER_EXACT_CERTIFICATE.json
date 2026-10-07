@@ -1,0 +1,262 @@
+{
+  "parent": "195928861e6227d6b7cd824fd35b7eccda7d139c",
+  "decision": "D",
+  "actual_safe_consumer_found": false,
+  "actual_degree6_impossibility_proved": false,
+  "first_uncertified_step": "joint kernel coupling and positive arithmetic measure for sign transfer",
+  "coefficient_parameterization": [
+    "g00",
+    "2*g01",
+    "2*g02 + g11",
+    "2*g03 + 2*g12",
+    "2*g13 + g22",
+    "2*g23",
+    "g33"
+  ],
+  "centered_support": "X<=-1; physical x=X+1<=0",
+  "exact_candidates": [
+    {
+      "label": "frozen_original",
+      "q_centered": "-371*X**3/500 + 31*X**2/50 + 961*X/3710 - 19101/185500",
+      "G": [
+        [
+          "364848201/34410250000",
+          "-18356061/688205000",
+          "-592131/9275000",
+          "19101/250000"
+        ],
+        [
+          "-18356061/688205000",
+          "923521/13764100",
+          "29791/185500",
+          "-961/5000"
+        ],
+        [
+          "-592131/9275000",
+          "29791/185500",
+          "961/2500",
+          "-11501/25000"
+        ],
+        [
+          "19101/250000",
+          "-961/5000",
+          "-11501/25000",
+          "137641/250000"
+        ]
+      ],
+      "principal_minors": [
+        "364848201/34410250000",
+        "923521/13764100",
+        "961/2500",
+        "137641/250000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        "364848201/34410250000",
+        "-18356061/344102500",
+        "-26060119/430128125",
+        "21981971/46375000",
+        "0",
+        "-11501/12500",
+        "137641/250000"
+      ],
+      "support_p_minus_one_nonnegative_y_coefficients": [
+        "137641/250000",
+        "527933/125000",
+        "642943/50000",
+        "915353239/46375000",
+        "549760824449/34410250000",
+        "594893/92750",
+        "0"
+      ],
+      "c5_over_c6": "-620/371",
+      "model_defect": "35116876419/344102500000",
+      "model_simple_zero_coefficient": "136934373581/172051250000",
+      "lower_moment_part": "-990264917/103230750000",
+      "c4_part": "0",
+      "fifth_part": "-11501/450000",
+      "sixth_pair_part": "2575853/15000000",
+      "sixth_42_part": "-452249/15000000",
+      "sixth_6_part": "-19663/4500000"
+    },
+    {
+      "label": "exact_safe_disjoint_proxy_optimum",
+      "q_centered": "3*X/4 - 1/4",
+      "G": [
+        [
+          "1/16",
+          "-3/16",
+          "0",
+          "0"
+        ],
+        [
+          "-3/16",
+          "9/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "principal_minors": [
+        "1/16",
+        "9/16",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        "1/16",
+        "-3/8",
+        "9/16",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "support_p_minus_one_nonnegative_y_coefficients": [
+        "9/16",
+        "3/2",
+        "0"
+      ],
+      "c5_over_c6": null,
+      "model_defect": "1/4",
+      "model_simple_zero_coefficient": "1/2",
+      "lower_moment_part": "1/4",
+      "c4_part": "0",
+      "fifth_part": "0",
+      "sixth_pair_part": "0",
+      "sixth_42_part": "0",
+      "sixth_6_part": "0"
+    },
+    {
+      "label": "c5_zero_single_square_hostile",
+      "q_centered": "157/787 - 630*X**3/787",
+      "G": [
+        [
+          "24649/619369",
+          "0",
+          "0",
+          "-98910/619369"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-98910/619369",
+          "0",
+          "0",
+          "396900/619369"
+        ]
+      ],
+      "principal_minors": [
+        "24649/619369",
+        "0",
+        "0",
+        "396900/619369",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "coefficients": [
+        "24649/619369",
+        "0",
+        "0",
+        "-197820/619369",
+        "0",
+        "0",
+        "396900/619369"
+      ],
+      "support_p_minus_one_nonnegative_y_coefficients": [
+        "396900/619369",
+        "2381400/619369",
+        "5953500/619369",
+        "8135820/619369",
+        "6546960/619369",
+        "3780/787",
+        "0"
+      ],
+      "c5_over_c6": "0",
+      "model_defect": "157/787",
+      "model_simple_zero_coefficient": "473/787",
+      "lower_moment_part": "24649/619369",
+      "c4_part": "0",
+      "fifth_part": "0",
+      "sixth_pair_part": "123795/619369",
+      "sixth_42_part": "-21735/619369",
+      "sixth_6_part": "-3150/619369"
+    }
+  ],
+  "ledger_frozen": {
+    "coefficients": [
+      "364848201/34410250000",
+      "-18356061/344102500",
+      "-26060119/430128125",
+      "21981971/46375000",
+      "0",
+      "-11501/12500",
+      "137641/250000"
+    ],
+    "signed_target": "64788151489666079/572357731837500000",
+    "band": "128952763/92407500000",
+    "variance": "26060119/12734908593750",
+    "ideal_slack": "27704610381502/17886179119921875",
+    "conservative_slack": "52897896569489/572357731837500000",
+    "illustrative_half_ideal_cell_allowance": "13852305190751/17886179119921875",
+    "illustrative_half_conservative_cell_allowance": "52897896569489/1144715463675000000",
+    "fifth_fraction_model_sixth": "6870822093743843/7314095859847875",
+    "fifth_fraction_relaxed_sixth": "14575293823126261/14628191719695750",
+    "sixth_6_fraction_full_fifth_with_42": "1614401374707661/2500948906915725"
+  },
+  "proper_power_and_exact_alias_closures_preserved": true,
+  "strict_gt79": false,
+  "new_candidate_band_charges_certified": false,
+  "numerical_candidates_promoted": false
+}
