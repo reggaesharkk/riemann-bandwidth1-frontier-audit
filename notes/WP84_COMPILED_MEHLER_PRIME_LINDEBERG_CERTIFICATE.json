@@ -1,0 +1,195 @@
+{
+  "parent": "3e332c1df5d00b588df38cd417f19cc216cb6400",
+  "witnesses": [
+    {
+      "kind": "lower",
+      "K": 32,
+      "finite_end": 256,
+      "rhos": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "7/8",
+        "15/16",
+        "31/32",
+        "63/64",
+        "127/128"
+      ],
+      "coefficients": [
+        "-177474003807058873909/55887390900000000",
+        "-16820385/938417306",
+        "150292891/874129933",
+        "-458723607/134099951",
+        "50678184278/828307931",
+        "-634564925781/913638178",
+        "414028352447/98018322",
+        "-9148412858571/774794887",
+        "4252112992579/373099229"
+      ],
+      "producer": "floating LP proposal followed by exact rational repair",
+      "repair": "0",
+      "safety": "1/100000000"
+    },
+    {
+      "kind": "upper",
+      "K": 32,
+      "finite_end": 32,
+      "rhos": [],
+      "coefficients": [
+        "1"
+      ],
+      "producer": "exact mass cap"
+    }
+  ],
+  "channel_tests": {
+    "arbitrary_nonsymmetric_two_word_covariance": "PASS",
+    "cross_displacement": "PASS",
+    "mixed_K2_Gram": "PASS",
+    "corrupt_covariance_factor": "REJECTED",
+    "pi_for_finite_rational_regression": "22/7; analytic formula holds for actual pi"
+  },
+  "mixed_response_test": {
+    "first_derivative": "PASS",
+    "half_Hessian_with_cross_term": "PASS",
+    "dropped_cross_term": "REJECTED",
+    "cross_term": "2"
+  },
+  "flow_tests": {
+    "all_six_permutations": "PASS",
+    "exact_complement_collapse": "PASS",
+    "common_state_1_minus_2t": "PASS",
+    "corrupt_skew_factor": "REJECTED",
+    "q0_minus_1": "-14641478124768848992075605797862542657889975886494040533063654801421274119/1464335424254653067548029711979939531507358814605809137840968965277127411900000000",
+    "D1_zero_noise_at_2": "151809175242269011390395877619122682109227819164881715663550464311476639114045070974616303382988909225638488606011657753/21094138660235633203843191695795837024890099112131792817265755094658669842119930845134217237472044403984048048037800376887500000",
+    "D2_zero_noise_at_2": "-16952135051416508525105061764012409218890022298937192520123351324352690960203955821517077236749783408661440913983056069882265046109/270925404797860389431131013244937001766999192514199707332650712763505940127212758754407354634896506501768727935134833108679557480231250000",
+    "scope": "exact fixed-realization algebra; no Gaussian or arithmetic measurement value"
+  },
+  "C3_Q_upper": "45377294430321/70252843750",
+  "dual_absolute_mass": "505204123037862990876978802552973438830726387329456939708343293073282617319728734015309/16107689666801183743028326831779334846580946960663900516250658618048401530900000000",
+  "uniform_Taylor_cubic_constant": "853870735586178739818879954943887175575470259552195456008999605854234369963204906520825976082222406709/22632220106705462476280183934738522909115629771091167984674037114566905653751569937500000000000",
+  "initial_payment_upper": "53503/66000000",
+  "exact_required_grouped_limit_lower_threshold": "83446820694177651440799215197979/18482819123692026401760000000000",
+  "synthetic_regression_margin": "1939150689002692291975282055154320449187120336298337560823715234499173313925824774560673798529347302779552006063733737/4517961845055676110694372160903595755068596513383240544406098304843348968726715330221618653003539948272000000000000000000",
+  "state_average_closed": false,
+  "scalar_noisy_start_certified": false,
+  "consumer_certified": false,
+  "decision": "C: one augmented Bernoulli/Gaussian state-average resolvent response law remains",
+  "source_coverage": [
+    {
+      "path": "notes/WP84_BACKGROUND_SCALARIZATION.md",
+      "sha256": "b28d7392555be49f0169b60b19c82afcb7627120174dd38bbe04e261e479332b"
+    },
+    {
+      "path": "notes/WP84_PERMUTATION_LINDEBERG_RESOLVENT.md",
+      "sha256": "9cb7c3b658b7661bfab4927da1ffdfe816a11b74c3a5589287bea29417c02349"
+    },
+    {
+      "path": "notes/WP84_F61_FUNCTIONAL_LINDEBERG.md",
+      "sha256": "ac31b60d2b82ef41714b73f3860edb5dcd2b39c3f9ba98d43e75d2f963623584"
+    },
+    {
+      "path": "notes/WP84_BERNOULLI_D1_COMPLEMENT_COLLAPSE.md",
+      "sha256": "04a2906d2bcb9e01022cbb3e93f3814609b1dea760f25d79dba7fc23c066910d"
+    },
+    {
+      "path": "notes/WP84_D1_D2_SMALL_CHANNEL_CLOSURE.md",
+      "sha256": "29d48fcee90920460c27075ec1a00cb70b019dd8578591b6876d63623ceaf872"
+    },
+    {
+      "path": "notes/WP84_BR_RANK3_SCALAR_D1.md",
+      "sha256": "a9adcb563ac927c79e3e835af33019a0d929710b484df4798d5b0b2864e19f1c"
+    },
+    {
+      "path": "notes/WP84_D2_CURRENT_COVARIANCE_CLOSURE.md",
+      "sha256": "bacde033b0040f5e7552f4185a57db85a6e916f7ded3090c8d2003c8774c0a27"
+    },
+    {
+      "path": "notes/WP84_RESONANT_D2_EXPLICIT_FUNCTIONAL.md",
+      "sha256": "bd8e91985a066338a7defcf97d4e5709d4509653e74990d643512a19034dd3e1"
+    },
+    {
+      "path": "notes/WP84_D2_FAST_CHANNEL_VK_CLOSURE.md",
+      "sha256": "b5ff2abfbb5cea8e987989422c4fe05e63c32a874901b90c218a2cebec8f8d2b"
+    },
+    {
+      "path": "notes/WP84_BERNOULLI_COMMON_STATE_GENERATOR.md",
+      "sha256": "b8768286abbdb597715ff6972bb197aa280de5caf60974ba4940076ffb7124a0"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_DRIFT_ELIMINATION.md",
+      "sha256": "165af3acf087f764c50089c29b36e6a5b6761970ada4d1ee78fea7e805c6c56d"
+    },
+    {
+      "path": "notes/WP84_SHIFTED_K2_GRAM_CANCELLATION.md",
+      "sha256": "e9f3382ee478f2dcfae2559acf662d6144fe5465f8f09b25678261e3d13453a7"
+    },
+    {
+      "path": "notes/WP84_SHIFTED_THREE_CHANNEL_GRAM.md",
+      "sha256": "9a691d1200f3641e020412ac7c6a8b9073886a631ef484ad7f463a7a61c08cda"
+    },
+    {
+      "path": "notes/WP84_RESONANT_D2_UNIFORM_BV_CLOSURE.md",
+      "sha256": "c5b35e466d61025d9476e6ba2d0653a5a491cea191370f469f76f8e4f209decc"
+    },
+    {
+      "path": "src/wp84_bernoulli_common_state_gate.py",
+      "sha256": "8fb20dba749608cf7a66899f5ad9113d99ed883151fb00d967446f40625da794"
+    },
+    {
+      "path": "src/wp84_bernoulli_drift_elimination_gate.py",
+      "sha256": "6572c8a56091de8530788706365986b47a56f96689ef48f04d4693e5c3385e54"
+    },
+    {
+      "path": "src/wp84_br_rank3_scalar_d1_gate.py",
+      "sha256": "bf2bc53149cf9e5e3023e58ef479abc951fce402d396f8f18b1dfcff1b2a1276"
+    },
+    {
+      "path": "src/wp84_compiled_mehler_prime_lindeberg.py",
+      "sha256": "751197679ad04282245fbd9d5773f3751dd195334149019048e3a8b73e752efe"
+    },
+    {
+      "path": "src/wp84_d1_aggregate_d2_prime_only_gate.py",
+      "sha256": "45869ad6e9700be559f62479185673c1fee8e6d10190eaafd4d52bea52132809"
+    },
+    {
+      "path": "src/wp84_d1_d2_displacement_gate.py",
+      "sha256": "33ad5aa7ac9263cb9bc47f9e192a3ac93c715913c1efc0008b417b032ec8c0d0"
+    },
+    {
+      "path": "src/wp84_d2_current_covariance_gate.py",
+      "sha256": "808e225e597553b54c49dd16cfb1eb665522ec15c5ef716ea9d611112a1267e1"
+    },
+    {
+      "path": "src/wp84_d2_fourier_channel_gate.py",
+      "sha256": "acf64217e295962c944fb3f44e0b3a64e44e376b5ba264f3fc1f3040c61fc6ee"
+    },
+    {
+      "path": "src/wp84_d2_leave_one_out_coupling.py",
+      "sha256": "b3a1d823b4985c5f0bd160dff17bc7cd6f0ca9cd640b1328d26738757ac3be0e"
+    },
+    {
+      "path": "src/wp84_mehler_weak_dual_certificate.py",
+      "sha256": "fcfc1929b155167d12f934bbcfcc7a4f7c19124e9e6a49a64dcc11b6fcf71853"
+    },
+    {
+      "path": "src/wp84_mehler_weak_dual_chaos_cutoff.py",
+      "sha256": "cf642f14ca6b7fad3a2bb81c5cd1460891b85d1000d5de57941e1ac2b2811f97"
+    },
+    {
+      "path": "src/wp84_reference_mehler_measurement_certificate.py",
+      "sha256": "71de6d96b02adf5407b73647064722efe2dd91e6f9f59affa57b6a2400564663"
+    },
+    {
+      "path": "src/wp84_resonant_d2_bv_derivative_gate.py",
+      "sha256": "fd13946a1dac7bee8c7d2c884fdbde513ae2893f0a41abd262b9e01c7086bf4b"
+    },
+    {
+      "path": "src/wp84_resonant_d2_explicit_gate.py",
+      "sha256": "0ebca6a43eb43242b0d113a39c59d335e07bcf8decf7d8c6bf0f5e72b424fc6f"
+    },
+    {
+      "path": "src/wp84_shifted_resolvent_wedge_gate.py",
+      "sha256": "ba54418c69fa323902f1c0c52c797ee930094242f61994b453e1ef258f294ae5"
+    }
+  ]
+}
