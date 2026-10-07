@@ -1,0 +1,42 @@
+EXACT THREE-PAIR INTEGRAL REPLAY — 2026-10-07
+
+Scope: sharp Gaussian Wick/model pair geometry only. No actual-prime
+arithmetic transfer or fixed-R sharp substitution is certified.
+
+Preserved source commit:
+c3f38619c4d1b534c58b91e990b5a44fd220e599
+
+Source path:
+certificates/wp84_c5_c6_upstream/exact_t222.py
+
+Git source blob:
+cfcdf9e665266c798cce4a64333d038383358ba3
+
+The source was read completely with git show, then exported to a temporary
+file without switching any checkout. Four local executions completed:
+
+python <exported exact_t222.py> T0
+T0 = 3/70 = 0.0428571429   target 3/70 (MATCH)
+
+python <exported exact_t222.py> T1
+T1 = 1/90 = 0.0111111111   target 1/90 (MATCH)
+
+python <exported exact_t222.py> T2
+T2 = 1/180 = 0.0055555556   target 1/180 (MATCH)
+
+python <exported exact_t222.py> T3
+T3 = 1/70 = 0.0142857143   target 1/70 (MATCH)
+
+Each returned process exit code 0. Internal acceptance used Fraction
+integration with full breakpoint and boundary/collision enumeration,
+and whole-piece versus two-halves checks. The decimal display is not an
+acceptance criterion. This reruns the archived integration algorithm;
+it is not a second independent integration algorithm. The first-strike
+verifier and its independent Fraction replay separately check:
+
+5*(3/70)+6*(1/90)+3*(1/180)+(1/70) = 131/420.
+
+The Gaussian Wick-to-walk dictionary and uniform sharp-word reprojection
+argument are in WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md, Section 3.
+Pair6_6000 is still the finite filtered integral of Section 6; its value
+has not been replaced by 131/420.

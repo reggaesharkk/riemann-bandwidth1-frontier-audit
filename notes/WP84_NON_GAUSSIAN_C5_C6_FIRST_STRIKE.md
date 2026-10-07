@@ -663,6 +663,10 @@ all connected-partition counts; preserves the C6 sign witnesses; and
 checks complete resolved Parseval/product identities with exact integers.
 The independent replay uses Fraction-only polynomial convolution and
 checks all budget identities without importing the producer.
+All four historical exact three-pair integrations were also rerun from
+their preserved source and returned 3/70,1/90,1/180,1/70 exactly. See
+WP84_NON_GAUSSIAN_PAIR_INTEGRAL_REPLAY.txt for the source blob, commands
+and outputs. This is Gaussian/model geometry validation, not prime transport.
 
 Reading/provenance: the eleven requested notes and their companion
 verifiers were inspected, including the historical compression note and
