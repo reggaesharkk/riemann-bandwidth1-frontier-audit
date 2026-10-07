@@ -1,0 +1,86 @@
+{
+  "parent": "e85002990e9fb65dc2dd1cc1aea145c7f9910b06",
+  "decision": "D",
+  "strict_gt79": false,
+  "prime_arithmetic_proved": false,
+  "q": [
+    "-19101/185500",
+    "961/3710",
+    "31/50",
+    "-371/500"
+  ],
+  "square_coefficients": [
+    "364848201/34410250000",
+    "-18356061/344102500",
+    "-26060119/430128125",
+    "21981971/46375000",
+    "0",
+    "-11501/12500",
+    "137641/250000"
+  ],
+  "R_band": 6000,
+  "pole_height": "221/200",
+  "square_threshold_strict": "9573834737/92407500000",
+  "band": "128952763/92407500000",
+  "variance_envelope": "26060119/12734908593750",
+  "ideal_square_reference": "35116876419/344102500000",
+  "relaxed_square_reference": "240421959557/2322691875000",
+  "ideal_paid_slack": "27704610381502/17886179119921875",
+  "relaxed_paid_slack": "52897896569489/572357731837500000",
+  "ideal_direct_slack_before_variance": "246588549499/158988258843750",
+  "relaxed_direct_slack_before_variance": "80102433419/847937380500000",
+  "ideal_relative_paid_precision": "886547532208064/58411129638397365",
+  "relaxed_relative_paid_precision": "52897896569489/59244779274035940",
+  "signed_cap": "64788151489666079/572357731837500000",
+  "finite_example_energy": "4940687154667229297089/57617275324218750000",
+  "finite_pair_blocks": {
+    "0,0": "1",
+    "0,1": "38/315",
+    "0,2": "137314/33075",
+    "0,3": "-6238/3472875",
+    "1,0": "38/315",
+    "1,1": "137314/33075",
+    "1,2": "-6238/3472875",
+    "1,3": "9229317346/364651875",
+    "2,0": "137314/33075",
+    "2,1": "-6238/3472875",
+    "2,2": "9229317346/364651875",
+    "2,3": "-6987015982/38288446875",
+    "3,0": "-6238/3472875",
+    "3,1": "9229317346/364651875",
+    "3,2": "-6987015982/38288446875",
+    "3,3": "626744397945394/4020286921875"
+  },
+  "public_polarized_example": "1808 - 16*I",
+  "common_shift_counterexample": [
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      0,
+      2,
+      3
+    ]
+  ],
+  "carrier_witness_ratio": "2/3",
+  "spectral_dimension": 2,
+  "spectral_grid": [
+    4,
+    4
+  ],
+  "spectral_weight": "1/(d*M^2)",
+  "tests": [
+    "all 16 path blocks",
+    "complex Hermitian HS identity",
+    "full weighted Parseval",
+    "all 16 polarized Parseval blocks",
+    "public complex product identity",
+    "complete public coupled-frequency transform",
+    "free-slot Fubini",
+    "endpoint/common-shift counterexample",
+    "identity-padding counterexample",
+    "covariance upper-bound obstruction"
+  ]
+}
