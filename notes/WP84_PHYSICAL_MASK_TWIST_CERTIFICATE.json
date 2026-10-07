@@ -1,0 +1,136 @@
+{
+  "physical_prime_atom": {
+    "L": 10,
+    "T": "2*pi*exp(10)",
+    "primes": [
+      5,
+      379,
+      401,
+      47,
+      53,
+      61
+    ],
+    "H": 32,
+    "central_window_certified": true,
+    "all_leaves_below_natural_cutoff": true,
+    "root_amplitude_nonzero": true,
+    "scope": "realizable single auxiliary root/word correlation, not an untwisted full-block cancellation counterexample"
+  },
+  "decision": "F",
+  "Delta_only_counterexample": {
+    "M": [
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        5,
+        -1,
+        1
+      ],
+      [
+        379,
+        1,
+        -1
+      ],
+      [
+        401,
+        1,
+        0
+      ],
+      [
+        47,
+        -1,
+        -1
+      ],
+      [
+        53,
+        -1,
+        0
+      ],
+      [
+        61,
+        -1,
+        0
+      ]
+    ],
+    "competitor": [
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        379,
+        1,
+        -1
+      ],
+      [
+        5,
+        -1,
+        1
+      ],
+      [
+        401,
+        1,
+        -1
+      ],
+      [
+        47,
+        -1,
+        0
+      ],
+      [
+        53,
+        -1,
+        0
+      ],
+      [
+        61,
+        -1,
+        0
+      ]
+    ],
+    "Delta": -2,
+    "carrier_equal": true,
+    "character_measurement_rank": 1,
+    "mask_augmented_rank": 2
+  },
+  "slot_lag_projector": {
+    "q": "2R+1",
+    "angles": "theta_j=2*pi*k_j/q",
+    "norm": 1,
+    "R6000_samples_per_order7_lag_mask": 2987477303074562160072001
+  },
+  "pair_equality_projector": {
+    "physical_operation": "shared independent prime coefficient phases on the two selected slots",
+    "q": 3,
+    "norm": 1,
+    "finite_family_size": "3^(number of allowed pair primes), T dependent"
+  },
+  "distinctness_mobius_norms": {
+    "2": 2,
+    "3": 6,
+    "4": 24
+  },
+  "raw_order7_mask_norm_bound": "24",
+  "hard_trimmed_inverse_norm_bound_consumer_scaled": "71782047155720841469548497436672/144709098119419627325",
+  "degree6_ideal_slack_comparison_only": "27704610381502/17886179119921875",
+  "degree6_relaxed_slack_comparison_only": "52897896569489/572357731837500000",
+  "uniform_aux_error_needed_for_ideal_comparison": "582545779536194092187545123/186558736571501446633986640599729408000000",
+  "uniform_aux_error_needed_for_relaxed_comparison": "2224571720631234764503824397/11939759140576092584575144998382682112000000",
+  "paid_degree8_budget": "UNCERTIFIED",
+  "physical_natural_subspace_kernel": "UNCERTIFIED; actual family is nonlinear",
+  "physical_aux_linear_span": "finite character reconstruction exists at fixed T; arithmetic-only",
+  "full_cancellation_coefficient": "UNCERTIFIED",
+  "R6000_diagonal": "UNEVALUATED",
+  "mu7_mu8": "DEFERRED",
+  "strict_gt79": "OPEN",
+  "parent": "876188d9f67cf8de5b3a15f6ed60b9ab3ea37596",
+  "source_blobs": {
+    "src/wp84_open_path_hardness_transfer.py": "138e023ccc023e66a2c8cbd6cdc2bd993920d895",
+    "src/wp84_repaired_open_diagonal.py": "7dff747592b1d5305cd438ccc6cbff2b02f42997",
+    "notes/WP84_FULL_PAIR_TRANSFER_OPERATOR_AND_DEGREE8_CERTIFICATE.json": "f740de275c1e74abfc8bcecdb26070f4cb605b60"
+  }
+}
