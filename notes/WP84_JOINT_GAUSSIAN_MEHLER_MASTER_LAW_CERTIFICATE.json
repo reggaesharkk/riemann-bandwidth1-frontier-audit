@@ -1,0 +1,294 @@
+{
+  "parent": "25694f1db77b95e2f47060dda48e806b70b36815",
+  "witnesses": [
+    {
+      "kind": "lower",
+      "K": 32,
+      "finite_end": 256,
+      "rhos": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "7/8",
+        "15/16",
+        "31/32",
+        "63/64",
+        "127/128"
+      ],
+      "coefficients": [
+        "-177474003807058873909/55887390900000000",
+        "-16820385/938417306",
+        "150292891/874129933",
+        "-458723607/134099951",
+        "50678184278/828307931",
+        "-634564925781/913638178",
+        "414028352447/98018322",
+        "-9148412858571/774794887",
+        "4252112992579/373099229"
+      ],
+      "producer": "floating LP proposal followed by exact rational repair",
+      "repair": "0",
+      "safety": "1/100000000"
+    },
+    {
+      "kind": "upper",
+      "K": 32,
+      "finite_end": 32,
+      "rhos": [],
+      "coefficients": [
+        "1"
+      ],
+      "producer": "exact mass cap"
+    }
+  ],
+  "exact": {
+    "copy_modes": [
+      "rho*u - 2*t*(t - 1) + u",
+      "u*(1 - rho)"
+    ],
+    "Price_and_radial_IBP": "PASS",
+    "missing_cross_block": "REJECTED",
+    "rational_degree_three_dilation": "PASS",
+    "same_scalar_boundary_two_different_prime_directions": {
+      "s0": "1",
+      "P": [
+        "0",
+        "1"
+      ],
+      "Sigma": "0",
+      "energies_at_t1": [
+        "17299960054265282494173877728425088361/22001664087015817976445407410953228409",
+        "2530449656356906900513602558065544649/121131487059762972686200905524498580409"
+      ],
+      "same_t0_energy": "17299960054265282494173877728425088361/22001664087015817976445407410953228409",
+      "scope": "synthetic Loewner states; nonuniqueness of PDE data, not prime-theorem counterexamples"
+    },
+    "trace_zero_two_by_two_P_counterexample": {
+      "P_diagonals": [
+        "(1,-1)",
+        "(2,-2)"
+      ],
+      "terminal_energies": [
+        "61830968358059939793357254041282062529/121131487059762972686200905524498580409",
+        "2107710420029806511378502908903150045920117885844330083705974617706092089/870748563249992129233311190732874687735293263508227133104668965159799401"
+      ],
+      "same_t0_all_Sigma_boundary": true
+    },
+    "finite_map_mismatch": {
+      "B_covariance_scalar_branch_real_one": "4",
+      "circular_covariance_same_branch": "2",
+      "exactly_equal_at_finite_T": false
+    },
+    "energy_second_derivatives": {
+      "0": "-29031754442553015119001839616/75639853533581807903139390121",
+      "1": "-15731665700929963637973033158719170092145560702992562147472/517346125793081273080748757851155002435291847975196127769",
+      "2": "111150319050295840720636244304842002251286420330545038708256/8880765441371842774510668983713415402968753583552621847769",
+      "3": "-9092675647378710031183785552008968007579692885724704922045040/5470003970407167487173613498116166170664229713843084819167769",
+      "10": "-391722272553744633472281207922712351248979431325218596416139180384/34849013957689997375873230068794595688500202428551679708796605207769"
+    }
+  },
+  "numerical_regressions": [
+    {
+      "order": 48,
+      "matrix_dimension": 1,
+      "M": 0.19469819445681313,
+      "radial_IBP_residual": 4.858863311696382e-12,
+      "Price_finite_difference_error": 6.416092657168804e-10,
+      "finite_parameter_dilation_error": 6.110635608624904e-11,
+      "scope": "numerical regression only, not interval-certified theorem data"
+    },
+    {
+      "order": 96,
+      "matrix_dimension": 1,
+      "M": 0.19469819445678108,
+      "radial_IBP_residual": 6.938893903907228e-18,
+      "Price_finite_difference_error": 6.444554334628094e-10,
+      "finite_parameter_dilation_error": 5.5320928393776114e-11,
+      "scope": "numerical regression only, not interval-certified theorem data"
+    },
+    {
+      "order": 48,
+      "matrix_dimension": 2,
+      "M": 0.24310166629783383,
+      "radial_IBP_residual": 7.632783294297951e-17,
+      "Price_finite_difference_error": 1.4164613926226366e-10,
+      "finite_parameter_dilation_error": 4.465539049647305e-12,
+      "scope": "numerical regression only, not interval-certified theorem data"
+    },
+    {
+      "order": 96,
+      "matrix_dimension": 2,
+      "M": 0.24310166629783375,
+      "radial_IBP_residual": 6.245004513516506e-17,
+      "Price_finite_difference_error": 1.4442164131267532e-10,
+      "finite_parameter_dilation_error": 4.465650071949767e-12,
+      "scope": "numerical regression only, not interval-certified theorem data"
+    }
+  ],
+  "dual_multiplier_0_1_2": [
+    "1464335409613174942779180719904333733644816156715833251346928432213472610478725881/1464335424254653067548029711979939531507358814605809137840968965277127411900000000",
+    "16107689505746202984368896474642145887307162671980994087016519471061324979738640941/16107689666801183743028326831779334846580946960663900516250658618048401530900000000",
+    "33251361620681501328306176109240110424150019160060508339860564411251096329556072729/33254585118557282566252029588189594521973567918789988162582004888874119289600000000"
+  ],
+  "q0_minus_q1": "-96638339979577383589428360891995421515425100549748000425/1217428118523389506282206001809182872266773147247500433602148745194624",
+  "q0_minus_one": "-14641478124768848992075605797862542657889975886494040533063654801421274119/1464335424254653067548029711979939531507358814605809137840968965277127411900000000",
+  "synthetic_margin_regression": "1939150689002692291975282055154320449187120336298337560823715234499173313925824774560673798529347302779552006063733737/4517961845055676110694372160903595755068596513383240544406098304843348968726715330221618653003539948272000000000000000000",
+  "synthetic_master_embedding_proved": false,
+  "scalar_boundary_determines_master": false,
+  "consumer_certified": false,
+  "decision": "D: degenerate drift-free master transport does not determine the prime-dependent characteristic boundary",
+  "exact_ledger": {
+    "epsilon": "8711/2778200",
+    "initial_payment_upper": "53503/66000000",
+    "invariance_cube_constant": "853870735586178739818879954943887175575470259552195456008999605854234369963204906520825976082222406709/18105776085364369981024147147790818327292503816872934387739229691653524523001255950000000000000",
+    "required_grouped_lower_threshold": "83446820694177651440799215197979/18482819123692026401760000000000",
+    "actual_margin": null,
+    "vanishing_errors_do_not_pay_characteristic_boundary": true
+  },
+  "source_coverage": [
+    {
+      "path": "notes/WP84_BERNOULLI_COMMON_STATE_GENERATOR.md",
+      "sha256": "b8768286abbdb597715ff6972bb197aa280de5caf60974ba4940076ffb7124a0"
+    },
+    {
+      "path": "notes/WP84_BERNOULLI_GAUSSIAN_INVARIANCE.md",
+      "sha256": "5f9370bd92a655ed7e368aa419c28e5b5a3c40eaeb683a3f602914c6c33bf9b3"
+    },
+    {
+      "path": "notes/WP84_CHARACTERISTIC_HEATFLOW_EQUIVALENCE.md",
+      "sha256": "4fd3f611791e1642c429c84a21b2d98b0b44083346db0d00b1a1b952e27d6de7"
+    },
+    {
+      "path": "notes/WP84_CIRCULAR_GAUSSIAN_Q_FIELD.md",
+      "sha256": "2c68c9faef16bd12281552c7d722501055ce752c63c1a86948cbffb5c8e2e410"
+    },
+    {
+      "path": "notes/WP84_COMPILED_MEHLER_PRIME_LINDEBERG.md",
+      "sha256": "443529d6c30664ab1b1d6affaef5676e1f7e370a10b80fa0c6dd4352ad2a9e21"
+    },
+    {
+      "path": "notes/WP84_D2_CURRENT_COVARIANCE_CLOSURE.md",
+      "sha256": "bacde033b0040f5e7552f4185a57db85a6e916f7ded3090c8d2003c8774c0a27"
+    },
+    {
+      "path": "notes/WP84_D2_FAST_CHANNEL_VK_CLOSURE.md",
+      "sha256": "b5ff2abfbb5cea8e987989422c4fe05e63c32a874901b90c218a2cebec8f8d2b"
+    },
+    {
+      "path": "notes/WP84_FULL_DRIFT_SCALAR_LOEWNER.md",
+      "sha256": "93c292cc3ab0ee5b1bed484121ee7e2708c4d9194c68d71ab46391045ac44c8a"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md",
+      "sha256": "4bf5279133622b9f0e0c7bfd3177cc2168ba3345c12b61efcb3c29e154a40e4b"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_DRIFT_ELIMINATION.md",
+      "sha256": "165af3acf087f764c50089c29b36e6a5b6761970ada4d1ee78fea7e805c6c56d"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_QUADRATURE_BRIDGE.md",
+      "sha256": "acdd57473f103a5959711b6aa6e3dc54affd2e2edc7f4a2e721e2284223fe9e0"
+    },
+    {
+      "path": "notes/WP84_JOINT_GAUSSIAN_MEHLER_MASTER_LAW.md",
+      "sha256": "1f2a295e96df4718d59ce345191f6d150d7767ab4aa31329ef83a3f18c0dde15"
+    },
+    {
+      "path": "notes/WP84_MEHLER_WEAK_DUAL_CHAOS_CUTOFF.md",
+      "sha256": "3cb74c6e76fd3b5f508ab90de12573772b93ab0cfd68dfb2e3bab18a9a2ac37e"
+    },
+    {
+      "path": "notes/WP84_PRIME_FRAME_GAUSSIAN_CONCENTRATION.md",
+      "sha256": "494c845960d7d0e319091babf2453dcf3cc33dc90a78e91009a2cc0b3dd216a2"
+    },
+    {
+      "path": "notes/WP84_R2_COMOVING_GAUSSIAN_HEAT_FLOW.md",
+      "sha256": "19c9370e18bf10434478c1981a225004aa5e182ea33d661aac0714f2f4b0fbb3"
+    },
+    {
+      "path": "notes/WP84_REFERENCE_MEHLER_MEASUREMENT_CERTIFICATE.md",
+      "sha256": "77014577fb842d36496d3b6f701be65b27ae757f0a52e9cedac6182fbd035731"
+    },
+    {
+      "path": "notes/WP84_RESONANT_D2_UNIFORM_BV_CLOSURE.md",
+      "sha256": "c5b35e466d61025d9476e6ba2d0653a5a491cea191370f469f76f8e4f209decc"
+    },
+    {
+      "path": "src/wp84_bernoulli_common_state_gate.py",
+      "sha256": "8fb20dba749608cf7a66899f5ad9113d99ed883151fb00d967446f40625da794"
+    },
+    {
+      "path": "src/wp84_bernoulli_drift_elimination_gate.py",
+      "sha256": "6572c8a56091de8530788706365986b47a56f96689ef48f04d4693e5c3385e54"
+    },
+    {
+      "path": "src/wp84_bernoulli_gaussian_invariance_gate.py",
+      "sha256": "ef93cedc20a18eff98152448c54372a8a584a687450958dc80583e76865b09f8"
+    },
+    {
+      "path": "src/wp84_br_rank3_scalar_d1_gate.py",
+      "sha256": "bf2bc53149cf9e5e3023e58ef479abc951fce402d396f8f18b1dfcff1b2a1276"
+    },
+    {
+      "path": "src/wp84_characteristic_heatflow_equivalence.py",
+      "sha256": "ef4667fce14a167c4c16085c730219690e7c6ec27b7e64cf00a685bf5cf58842"
+    },
+    {
+      "path": "src/wp84_compiled_mehler_prime_lindeberg.py",
+      "sha256": "751197679ad04282245fbd9d5773f3751dd195334149019048e3a8b73e752efe"
+    },
+    {
+      "path": "src/wp84_d1_aggregate_d2_prime_only_gate.py",
+      "sha256": "45869ad6e9700be559f62479185673c1fee8e6d10190eaafd4d52bea52132809"
+    },
+    {
+      "path": "src/wp84_d1_d2_displacement_gate.py",
+      "sha256": "33ad5aa7ac9263cb9bc47f9e192a3ac93c715913c1efc0008b417b032ec8c0d0"
+    },
+    {
+      "path": "src/wp84_d2_current_covariance_gate.py",
+      "sha256": "808e225e597553b54c49dd16cfb1eb665522ec15c5ef716ea9d611112a1267e1"
+    },
+    {
+      "path": "src/wp84_d2_fourier_channel_gate.py",
+      "sha256": "acf64217e295962c944fb3f44e0b3a64e44e376b5ba264f3fc1f3040c61fc6ee"
+    },
+    {
+      "path": "src/wp84_d2_leave_one_out_coupling.py",
+      "sha256": "b3a1d823b4985c5f0bd160dff17bc7cd6f0ca9cd640b1328d26738757ac3be0e"
+    },
+    {
+      "path": "src/wp84_gaussian_covariance_hadamard_gate.py",
+      "sha256": "d21f610cb07b12d1212c19c1cd85729f1af9b942c0d57136c71cd302dfcd18e2"
+    },
+    {
+      "path": "src/wp84_gaussian_quadrature_bridge_gate.py",
+      "sha256": "32ba480bb81bb84f19c4ab43ac42f4bf89134b354bc25f8a54cd22c3bf6dd21b"
+    },
+    {
+      "path": "src/wp84_joint_gaussian_mehler_master_law.py",
+      "sha256": "5ac26a4cb17d1cc9c4fc9a1f6d6e7aadcf286919e9cebb7f44eb4dbea238f15f"
+    },
+    {
+      "path": "src/wp84_mehler_weak_dual_certificate.py",
+      "sha256": "fcfc1929b155167d12f934bbcfcc7a4f7c19124e9e6a49a64dcc11b6fcf71853"
+    },
+    {
+      "path": "src/wp84_mehler_weak_dual_chaos_cutoff.py",
+      "sha256": "cf642f14ca6b7fad3a2bb81c5cd1460891b85d1000d5de57941e1ac2b2811f97"
+    },
+    {
+      "path": "src/wp84_reference_mehler_measurement_certificate.py",
+      "sha256": "71de6d96b02adf5407b73647064722efe2dd91e6f9f59affa57b6a2400564663"
+    },
+    {
+      "path": "src/wp84_resonant_d2_bv_derivative_gate.py",
+      "sha256": "fd13946a1dac7bee8c7d2c884fdbde513ae2893f0a41abd262b9e01c7086bf4b"
+    },
+    {
+      "path": "src/wp84_resonant_d2_explicit_gate.py",
+      "sha256": "0ebca6a43eb43242b0d113a39c59d335e07bcf8decf7d8c6bf0f5e72b424fc6f"
+    }
+  ]
+}
