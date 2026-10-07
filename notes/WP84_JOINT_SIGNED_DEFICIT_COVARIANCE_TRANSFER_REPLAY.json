@@ -1,0 +1,90 @@
+{
+  "certified_K_U": null,
+  "consumer_certified": false,
+  "covariance_price": {
+    "K_witness": 3,
+    "U_witness": "4",
+    "explicit_projection_derivative_mutation": "REJECTED",
+    "mass_polynomials": [
+      "1174752*theta**4/245 + 2255136*theta**3/175 + 17972204*theta**2/1225 + 1391066*theta/175 + 8812781/4900",
+      "805355136*theta**5/1225 + 1577035008*theta**4/1225 + 1381910736*theta**3/1225 + 20308248*theta**2/35 + 90727837*theta/490 + 3002149/98",
+      "44352576*theta**4/1225 + 114341376*theta**3/1225 + 124198016*theta**2/1225 + 67702912*theta/1225 + 630688/49",
+      "2119329792*theta**5/1225 + 82003968*theta**4/25 + 675290304*theta**3/245 + 238162368*theta**2/175 + 523937856*theta/1225 + 3556032/49"
+    ],
+    "max_one_factor_derivative_order": "K+2",
+    "max_total_derivative_order": "2K+2",
+    "price_polynomial": "2924684928*theta**4/245 + 22581823104*theta**3/1225 + 14665468752*theta**2/1225 + 5040190952*theta/1225 + 331279129/490",
+    "real_Price_factor": "1/2",
+    "scope": "exact algebra, not the missing projected BV bound",
+    "singular_endpoint": "PASS"
+  },
+  "decision": "C: projected two-copy covariance-substitution extension remains open",
+  "hostile_and_symbol": {
+    "bounded_wrong_scope_joint_limit_interval": "[-0.0699546268443862417234163757473873680619499928, -0.0699546268443862417234163757473873680619385134]",
+    "consumer_scalar_p_second_at_zero": "-29031754442553015119001839616/75639853533581807903139390121",
+    "field_symbols": {
+      "a": "1/(4 a_phi^2)",
+      "h": "s(1-s)/a_phi^2"
+    },
+    "finite_Toeplitz_is_circulant": false,
+    "positive_second_derivative_rational_point": "1/20",
+    "scope": "not an actual-prime/current-Q counterexample; tests missing Hessian uniformity"
+  },
+  "joint_telescope": {
+    "J": "57987/112",
+    "K": 3,
+    "fluxes": [
+      "47907/196",
+      "18175/4"
+    ],
+    "joint_amplification_remaining": false,
+    "retained_endpoint_difference": "4159837/784",
+    "scope": "exact polynomial normalization witness only"
+  },
+  "ledger": {
+    "K": 16,
+    "additional_Malliavin_residual_cost": "0 (exact telescope)",
+    "covariance_transfer_error_certified": false,
+    "cushion": "8711/2778200",
+    "delta": "1/100000",
+    "final_margin": null,
+    "initial_cost_upper": "28047/34000000",
+    "initial_only_remaining": "1091269123/472294000000",
+    "kappa_star": "1/2",
+    "reference_signed_deficit": null
+  },
+  "parent": "ab70f368e66ccb04f15e65e59223ebf9eee0832b",
+  "projected_loewner_diagnostic": {
+    "rigorous": false,
+    "rows": [
+      {
+        "N": 3,
+        "T": 128,
+        "d": 61,
+        "six_response_Gram_difference_eigenvalues": [
+          0.02928220678931215,
+          0.030973383003110564,
+          0.07004261873543147,
+          0.5697090858382023,
+          0.6118355764152936,
+          3.2235185156818855
+        ]
+      },
+      {
+        "N": 5,
+        "T": 256,
+        "d": 151,
+        "six_response_Gram_difference_eigenvalues": [
+          0.037003270922787615,
+          0.03749860940528537,
+          0.09368589035394827,
+          0.5844282181877736,
+          0.6337858181276476,
+          2.7828539927677483
+        ]
+      }
+    ],
+    "scope": "finite full-sharp actual-prime mean, u=0; does not certify projected order at theta,u or the signed cross Hessian"
+  },
+  "schema": "wp84-joint-signed-deficit-covariance-transfer-v1"
+}

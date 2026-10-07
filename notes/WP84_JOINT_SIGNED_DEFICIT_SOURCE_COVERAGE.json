@@ -1,0 +1,259 @@
+{
+  "parent": "ab70f368e66ccb04f15e65e59223ebf9eee0832b",
+  "source_count": 42,
+  "sources": [
+    {
+      "path": "notes/WP84_CHARACTERISTIC_HEATFLOW_EQUIVALENCE.md",
+      "parent_git_blob": "8ddce89382870b2b16bb403793394d1973086994",
+      "sha256": "4fd3f611791e1642c429c84a21b2d98b0b44083346db0d00b1a1b952e27d6de7",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_QUADRATURE_BRIDGE.md",
+      "parent_git_blob": "1d7c66dcf69ba941bd0f13206cfaf5827f50027d",
+      "sha256": "acdd57473f103a5959711b6aa6e3dc54affd2e2edc7f4a2e721e2284223fe9e0",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_DRIFT_ELIMINATION.md",
+      "parent_git_blob": "dea4b929f6485f1e55ae1bcfa270c61f532e3d49",
+      "sha256": "165af3acf087f764c50089c29b36e6a5b6761970ada4d1ee78fea7e805c6c56d",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_CIRCULAR_GAUSSIAN_Q_FIELD.md",
+      "parent_git_blob": "b4060bffff4ece0d524a8d374fa05d2e923da4fb",
+      "sha256": "2c68c9faef16bd12281552c7d722501055ce752c63c1a86948cbffb5c8e2e410",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_SHIFTED_UNIFORM_HEAT_TAIL_CRITERION.md",
+      "parent_git_blob": "ca99eba60b363269d6a4fb0daca784b524d3e50f",
+      "sha256": "6963f2c88292ab4c60dc0c8d689e325e03d60deb68fc8d9b77e3a32f826a7dc1",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_SCALAR_HEAT_TAIL_AND_TWO_SIDED_SMALL_BALL_AUDIT_2026_10_06.md",
+      "parent_git_blob": "d66c2856f2769270e92ff0b6853398aa629575c2",
+      "sha256": "058d8b47b4935ec5bc065eb175dcdf69cba1a146fef9c8871a9e6c9fc2b8fc11",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_TAIL_CAPPED_EXACT_FRONTIER_CONSUMER.md",
+      "parent_git_blob": "a58a0a67b39a49f4e2c0bfcac778a5fa55b4bda7",
+      "sha256": "db1f810d41fe238509e9cfac6a1a5d5e404d66eef47b19917fc428d8977eea0e",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_INTEGRATED_CROSS_ERROR_STEIN_CHAOS.md",
+      "parent_git_blob": "7c5ee016d2a034ef19121a40e370ca92401d32b5",
+      "sha256": "a91414d271c92c07fe8bf374602c11f6236abdedd3edaceb24deb81e401ee1ee",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_CROSS_REPOSITORY_PROOF_TRANSPLANT_AUDIT.md",
+      "parent_git_blob": "7277191977dc3d0b32a60a103c387e0ccee69626",
+      "sha256": "1a69948f6653df61901259e5eeea23c63c21d8532b27ed488a1058f3e44d5588",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_ACTUAL_STATE_SIGNED_DUAL_FLUX.md",
+      "parent_git_blob": "1d50c023517cd51260aa2d44e6ff29ae4bec364e",
+      "sha256": "76c6aecbe71c8701fb1cd2a9674e9fd16001fb3977b690051deb58a283bdd6fa",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_RESONANT_D2_UNIFORM_BV_CLOSURE.md",
+      "parent_git_blob": "4a77cc6b8f6c467b08fc3f475318c0c2e8c992de",
+      "sha256": "c5b35e466d61025d9476e6ba2d0653a5a491cea191370f469f76f8e4f209decc",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md",
+      "parent_git_blob": "f76f1e8e8c85a868e565bd1ccdf8a2b4bb7765d8",
+      "sha256": "4bf5279133622b9f0e0c7bfd3177cc2168ba3345c12b61efcb3c29e154a40e4b",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md",
+      "parent_git_blob": "e3907ba38f8f7ea3e3baeeb3d25e8c0b1c2fc337",
+      "sha256": "2b348d665ad51cd98a61fa9e4fc6eaef3e3b3464055d84c0ad5da37db16f4453",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_D2_FAST_CHANNEL_VK_CLOSURE.md",
+      "parent_git_blob": "aae4af49a6d6e5c4335e826b761a9901b26dca2b",
+      "sha256": "b5ff2abfbb5cea8e987989422c4fe05e63c32a874901b90c218a2cebec8f8d2b",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_EXACT_FRONTIER_ONE_POINT_HEAT_FLOW.md",
+      "parent_git_blob": "250421bab164695a2afe27f8b404324b73db0565",
+      "sha256": "6c92153d647bd6e5804b407ea3cc9c13fcea4b01e64e75a5d3d2da33fc74880e",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_TAIL_CAPPED_FINITE_U_CURVATURE.md",
+      "parent_git_blob": "459dd327507a1a471ec7a8ab1022dd84a619160f",
+      "sha256": "f7a7c1bde489476f86a6d332b6a2e9dba1df00657aa54632ae9ad44ef5b3be40",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_PRIME_FRAME_GAUSSIAN_CONCENTRATION.md",
+      "parent_git_blob": "21ba6aafb6e072482803bc644be75282ef3df738",
+      "sha256": "494c845960d7d0e319091babf2453dcf3cc33dc90a78e91009a2cc0b3dd216a2",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_SHARP_LOEWNER_DIRICHLET_REPRESENTATION.md",
+      "parent_git_blob": "e31d0657649f3e8168012a477344f28d8fd6d815",
+      "sha256": "91bca88286e36885e11bb73ac70dfc9d52d718c3e48c3526eed0a361783d454b",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_BERNOULLI_GAUSSIAN_INVARIANCE.md",
+      "parent_git_blob": "d059b6251f0c960b19d677621e16396598e9da58",
+      "sha256": "5f9370bd92a655ed7e368aa419c28e5b5a3c40eaeb683a3f602914c6c33bf9b3",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_EXACT_FRONTIER_RANK6_CHRISTOFFEL_CAYLEY.md",
+      "parent_git_blob": "9634b5e60c4a4884a4a1992a5584c3ee892a2cac",
+      "sha256": "3b85e91286d491b0305e08ee624f39ab57831af4ae9c5191db09c01af958575b",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_SHIFTED_K2_GRAM_CANCELLATION.md",
+      "parent_git_blob": "78e3fe5e127d937853f5508ae10e7e164215a00b",
+      "sha256": "e9f3382ee478f2dcfae2559acf662d6144fe5465f8f09b25678261e3d13453a7",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_SHIFTED_THREE_CHANNEL_GRAM.md",
+      "parent_git_blob": "0a79ba3aa794a8a40a9fb2400751ea75fb2d74ae",
+      "sha256": "9a691d1200f3641e020412ac7c6a8b9073886a631ef484ad7f463a7a61c08cda",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_R2_COMOVING_GAUSSIAN_HEAT_FLOW.md",
+      "parent_git_blob": "ce7aba52a850274d4de51041efc2729e44204db6",
+      "sha256": "19c9370e18bf10434478c1981a225004aa5e182ea33d661aac0714f2f4b0fbb3",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_BR_RANK3_SCALAR_D1.md",
+      "parent_git_blob": "7fb14e7cd5ff577629a1367ec2931142f6af3cd8",
+      "sha256": "a9adcb563ac927c79e3e835af33019a0d929710b484df4798d5b0b2864e19f1c",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_FOUR_POLE_INEQUALITY_KILL_GATE.md",
+      "parent_git_blob": "1f071c7b341d86871fc9e52de7b20bdb1044fb52",
+      "sha256": "2f992c0ccc1765143a071a5aa4281aee66325bf1bcb93c6426bf6be1af9da4a5",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_RESONANT_D2_EXPLICIT_FUNCTIONAL.md",
+      "parent_git_blob": "086833e025963adb45330de7d1403b8602815ef2",
+      "sha256": "bd8e91985a066338a7defcf97d4e5709d4509653e74990d643512a19034dd3e1",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "notes/WP84_RESONANT_SCALAR_COVARIANCE.md",
+      "parent_git_blob": "db0da333b441902d2b592f4257aa5b11a850c578",
+      "sha256": "49f9305dfdadde5cf598d18cc0af9520483d2313d7f0b86eff1b52e01dc2654d",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_characteristic_heatflow_equivalence.py",
+      "parent_git_blob": "5572e81f61ff1884500f71e2972a2d312b9f9bdc",
+      "sha256": "ef4667fce14a167c4c16085c730219690e7c6ec27b7e64cf00a685bf5cf58842",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_integrated_cross_error_stein_chaos.py",
+      "parent_git_blob": "ac0d704555e4635467fa1e0e3a351720519794d7",
+      "sha256": "ebb95e6c46affc7bbb75b3b01bd932e152f494a32c3a92c8e54b1bdb614dc34d",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_actual_state_signed_dual_flux.py",
+      "parent_git_blob": "6081b8a299a651ceab0ee96afecde08b9c3039cd",
+      "sha256": "871ce80d04ae81cf6feb614b284e6c2e1eee2f7a5d162f104cadd7d3d5696f2c",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_cross_repository_hermite_adjoint.py",
+      "parent_git_blob": "acf64ce893d5ca0d9456033850784e415a97a207",
+      "sha256": "a2bfd7e348a04a9b1a1ec73a63e6e75d3e24c1eeac2b73ad03c855990bab052c",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_tail_capped_exact_frontier_consumer.py",
+      "parent_git_blob": "4d56ef82264996f3ab592f3f37bc8f66a64e23d9",
+      "sha256": "64da3055bbcd6a669f7c2fa01a93725a073c837203a0e830c4257ed63103ad01",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_tail_capped_finite_u_curvature.py",
+      "parent_git_blob": "36f374a116361db877a0487f38a6b9ccab32d461",
+      "sha256": "e6c10dfe2424c3afc651bb12f2183afc6f5d92696964850481214ed0da9475c4",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_gaussian_quadrature_bridge_gate.py",
+      "parent_git_blob": "4fc0cba2af1f8e6a8a75541125af2bf33ca90e4d",
+      "sha256": "32ba480bb81bb84f19c4ab43ac42f4bf89134b354bc25f8a54cd22c3bf6dd21b",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_gaussian_covariance_hadamard_gate.py",
+      "parent_git_blob": "572b5a92d39a3f85436f42a40109e3fa28716a67",
+      "sha256": "d21f610cb07b12d1212c19c1cd85729f1af9b942c0d57136c71cd302dfcd18e2",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_resonant_d2_bv_derivative_gate.py",
+      "parent_git_blob": "9b68870dcc3ca99f78b897848d1c7fc378a6c2c5",
+      "sha256": "fd13946a1dac7bee8c7d2c884fdbde513ae2893f0a41abd262b9e01c7086bf4b",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_shifted_heat_tail_polynomial_gate.py",
+      "parent_git_blob": "83c3fb738f43a873dfb5330cf166c5d97c09db86",
+      "sha256": "c8915ecba60b33c81663f49509c4e4c887fb4589790417bbaffd5f1c5a1079ff",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_resonant_d2_explicit_gate.py",
+      "parent_git_blob": "414a102860da695fbeb29a35298518833f64f677",
+      "sha256": "0ebca6a43eb43242b0d113a39c59d335e07bcf8decf7d8c6bf0f5e72b424fc6f",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_bernoulli_gaussian_invariance_gate.py",
+      "parent_git_blob": "ee16d92cf0726e67d7fb803c8b20eef0d80784e5",
+      "sha256": "ef93cedc20a18eff98152448c54372a8a584a687450958dc80583e76865b09f8",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_r2_comoving_heat_flow_gate.py",
+      "parent_git_blob": "c491887c8a88c78d33e20ab9591bfde7ba1b8a8d",
+      "sha256": "c3a5866e748f8973ec70a2851ced666193f2b853f09540e3207a15bad24ca187",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_shifted_resolvent_wedge_gate.py",
+      "parent_git_blob": "5b8035a3db2a2dd4f51b6aa2d9ccc3896ade10f0",
+      "sha256": "ba54418c69fa323902f1c0c52c797ee930094242f61994b453e1ef258f294ae5",
+      "read_scope": "complete text during this audit"
+    },
+    {
+      "path": "src/wp84_resonant_scalar_covariance.py",
+      "parent_git_blob": "bcb9c67b9412083694b17e3408897f35defe739f",
+      "sha256": "c6015371d8b6de5567bd36f3a2cc3cb327c1a882abc82ec19388553182608576",
+      "read_scope": "complete text during this audit"
+    }
+  ],
+  "scope": "Directly load-bearing local lineage; no external historical theorem or certificate imported."
+}
