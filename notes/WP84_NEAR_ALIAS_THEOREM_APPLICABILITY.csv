@@ -1,0 +1,8 @@
+method,coefficient_hypothesis,actual_coefficients,dilation_and_shift,window_and_average,first_unverified_requirement,status
+Affine binary divisor,unrestricted divisor functions,prime products with Mobius and log weights,rational affine clearing only when X^m rational,sharp block masks and one sampled root average,coefficient replacement with explicit signed remainder,NOT_APPLIED
+Shifted d2-d3,divisor d2 and d3,restricted coprime prime products with repeated powers,dilated relation A-X^m B instead of ordinary fixed shift,shrinking residual window with path masks,coefficient and dilation hypotheses,NOT_APPLIED
+Voronoi,transformable divisor or automorphic coefficients,arbitrary Mobius convolution pieces,variable integer shift after rational clearing,sharp distinctness and block restrictions,valid transformed coefficient formula,NOT_APPLIED
+Kuznetsov and spectral sieve,automorphic spectral or Kloosterman representation,no such representation established,alias-dependent ranges,one root average not independent block averages,exact representation and norm control,NOT_APPLIED
+Hilbert or mean value,Dirichlet coefficient l2 norms,available soft norms,near alias retains coherent sampled phase,vector signed primitive required,soft norms do not control coherent rows,FALSIFIED_AS_SOFT_ROUTE
+Vaughan Heath-Brown,exact convolution identities,identities apply per distinct block,same dilated shift retained,same windows and average retained,estimate for every resulting tagged signed sum,IDENTITY_ONLY
+Sieve majorization,divisor envelope inequality,sign-sensitive original array,coherent mass can grow X^(1/10),discarding signs loses cancellation,explicit small transference remainder,UNPAID

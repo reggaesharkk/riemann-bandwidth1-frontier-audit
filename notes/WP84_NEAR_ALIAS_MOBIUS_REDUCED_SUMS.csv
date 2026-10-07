@@ -1,0 +1,225 @@
+degree,positive_exponents,negative_exponents,m,coefficient_sum,scope
+5,(),"(1,)",-2,-10,formal scalar sum; original signed path weights remain distinct
+5,(),"(1,)",-1,30,formal scalar sum; original signed path weights remain distinct
+5,(),"(1,)",1,-10,formal scalar sum; original signed path weights remain distinct
+5,(),"(1, 1, 1)",-3,10,formal scalar sum; original signed path weights remain distinct
+5,(),"(1, 1, 1)",-1,10,formal scalar sum; original signed path weights remain distinct
+5,(),"(1, 1, 1, 1, 1)",-4,1,formal scalar sum; original signed path weights remain distinct
+5,(),"(1, 1, 1, 1, 1)",-3,1,formal scalar sum; original signed path weights remain distinct
+5,(),"(1, 1, 1, 1, 1)",-2,1,formal scalar sum; original signed path weights remain distinct
+5,(),"(2, 1)",-3,-20,formal scalar sum; original signed path weights remain distinct
+5,(),"(2, 1)",-2,-30,formal scalar sum; original signed path weights remain distinct
+5,(),"(2, 1)",-1,-20,formal scalar sum; original signed path weights remain distinct
+5,(),"(3,)",-3,5,formal scalar sum; original signed path weights remain distinct
+5,(),"(3,)",-2,25,formal scalar sum; original signed path weights remain distinct
+5,(),"(3,)",-1,5,formal scalar sum; original signed path weights remain distinct
+5,(),"(3, 2)",-4,-10,formal scalar sum; original signed path weights remain distinct
+5,(),"(3, 2)",-3,-10,formal scalar sum; original signed path weights remain distinct
+5,(),"(3, 2)",-2,-10,formal scalar sum; original signed path weights remain distinct
+5,(),"(5,)",-4,9,formal scalar sum; original signed path weights remain distinct
+5,(),"(5,)",-3,9,formal scalar sum; original signed path weights remain distinct
+5,(),"(5,)",-2,9,formal scalar sum; original signed path weights remain distinct
+5,"(1,)",(),-1,-10,formal scalar sum; original signed path weights remain distinct
+5,"(1,)",(),1,30,formal scalar sum; original signed path weights remain distinct
+5,"(1,)",(),2,-10,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(1, 1)",-2,30,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(1, 1)",1,30,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(1, 1, 1, 1)",-3,5,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(1, 1, 1, 1)",-2,5,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(1, 1, 1, 1)",-1,5,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(2,)",-2,-20,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(2,)",-1,-30,formal scalar sum; original signed path weights remain distinct
+5,"(1,)","(2,)",1,-20,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1)","(1,)",-1,30,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1)","(1,)",2,30,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1)","(1, 1, 1)",-2,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1)","(1, 1, 1)",-1,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1)","(1, 1, 1)",1,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1)",(),1,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1)",(),3,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1)","(1, 1)",-1,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1)","(1, 1)",1,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1)","(1, 1)",2,10,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1, 1)","(1,)",1,5,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1, 1)","(1,)",2,5,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1, 1)","(1,)",3,5,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1, 1, 1)",(),2,1,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1, 1, 1)",(),3,1,formal scalar sum; original signed path weights remain distinct
+5,"(1, 1, 1, 1, 1)",(),4,1,formal scalar sum; original signed path weights remain distinct
+5,"(2,)","(1,)",-1,-20,formal scalar sum; original signed path weights remain distinct
+5,"(2,)","(1,)",1,-30,formal scalar sum; original signed path weights remain distinct
+5,"(2,)","(1,)",2,-20,formal scalar sum; original signed path weights remain distinct
+5,"(2,)","(3,)",-2,-10,formal scalar sum; original signed path weights remain distinct
+5,"(2,)","(3,)",-1,-10,formal scalar sum; original signed path weights remain distinct
+5,"(2,)","(3,)",1,-10,formal scalar sum; original signed path weights remain distinct
+5,"(2, 1)",(),1,-20,formal scalar sum; original signed path weights remain distinct
+5,"(2, 1)",(),2,-30,formal scalar sum; original signed path weights remain distinct
+5,"(2, 1)",(),3,-20,formal scalar sum; original signed path weights remain distinct
+5,"(3,)",(),1,5,formal scalar sum; original signed path weights remain distinct
+5,"(3,)",(),2,25,formal scalar sum; original signed path weights remain distinct
+5,"(3,)",(),3,5,formal scalar sum; original signed path weights remain distinct
+5,"(3,)","(2,)",-1,-10,formal scalar sum; original signed path weights remain distinct
+5,"(3,)","(2,)",1,-10,formal scalar sum; original signed path weights remain distinct
+5,"(3,)","(2,)",2,-10,formal scalar sum; original signed path weights remain distinct
+5,"(3, 2)",(),2,-10,formal scalar sum; original signed path weights remain distinct
+5,"(3, 2)",(),3,-10,formal scalar sum; original signed path weights remain distinct
+5,"(3, 2)",(),4,-10,formal scalar sum; original signed path weights remain distinct
+5,"(5,)",(),2,9,formal scalar sum; original signed path weights remain distinct
+5,"(5,)",(),3,9,formal scalar sum; original signed path weights remain distinct
+5,"(5,)",(),4,9,formal scalar sum; original signed path weights remain distinct
+6,(),(),-2,-180,formal scalar sum; original signed path weights remain distinct
+6,(),(),-1,60,formal scalar sum; original signed path weights remain distinct
+6,(),(),1,60,formal scalar sum; original signed path weights remain distinct
+6,(),(),2,-180,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1)",-3,60,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1)",-2,-60,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1)",-1,-60,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1)",1,60,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1, 1, 1)",-4,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1, 1, 1)",-1,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1, 1, 1, 1, 1)",-5,1,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1, 1, 1, 1, 1)",-4,1,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1, 1, 1, 1, 1)",-3,1,formal scalar sum; original signed path weights remain distinct
+6,(),"(1, 1, 1, 1, 1, 1)",-2,1,formal scalar sum; original signed path weights remain distinct
+6,(),"(2,)",-3,-90,formal scalar sum; original signed path weights remain distinct
+6,(),"(2,)",-2,120,formal scalar sum; original signed path weights remain distinct
+6,(),"(2,)",-1,120,formal scalar sum; original signed path weights remain distinct
+6,(),"(2,)",1,-90,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 1, 1)",-4,-60,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 1, 1)",-1,-60,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 2)",-3,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 2)",-2,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 2, 2)",-5,-15,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 2, 2)",-4,-15,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 2, 2)",-3,-15,formal scalar sum; original signed path weights remain distinct
+6,(),"(2, 2, 2)",-2,-15,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 1)",-4,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 1)",-3,-60,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 1)",-2,-60,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 1)",-1,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 3)",-5,-10,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 3)",-4,-10,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 3)",-3,-10,formal scalar sum; original signed path weights remain distinct
+6,(),"(3, 3)",-2,-10,formal scalar sum; original signed path weights remain distinct
+6,(),"(4,)",-4,-6,formal scalar sum; original signed path weights remain distinct
+6,(),"(4,)",-3,24,formal scalar sum; original signed path weights remain distinct
+6,(),"(4,)",-2,24,formal scalar sum; original signed path weights remain distinct
+6,(),"(4,)",-1,-6,formal scalar sum; original signed path weights remain distinct
+6,(),"(4, 2)",-5,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(4, 2)",-4,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(4, 2)",-3,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(4, 2)",-2,30,formal scalar sum; original signed path weights remain distinct
+6,(),"(6,)",-5,-6,formal scalar sum; original signed path weights remain distinct
+6,(),"(6,)",-4,-6,formal scalar sum; original signed path weights remain distinct
+6,(),"(6,)",-3,-6,formal scalar sum; original signed path weights remain distinct
+6,(),"(6,)",-2,-6,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1,)",-2,120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1,)",-1,-120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1,)",1,-120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1,)",2,120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1, 1, 1)",-3,120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1, 1, 1)",1,120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1, 1, 1, 1, 1)",-4,6,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1, 1, 1, 1, 1)",-3,6,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1, 1, 1, 1, 1)",-2,6,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(1, 1, 1, 1, 1)",-1,6,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(2, 1)",-3,-120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(2, 1)",1,-120,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(3,)",-3,30,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(3,)",-2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(3,)",-1,-60,formal scalar sum; original signed path weights remain distinct
+6,"(1,)","(3,)",1,30,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)",(),-1,60,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)",(),1,-60,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)",(),2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)",(),3,60,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(1, 1)",-2,180,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(1, 1)",2,180,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(1, 1, 1, 1)",-3,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(1, 1, 1, 1)",-2,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(1, 1, 1, 1)",-1,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(1, 1, 1, 1)",1,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(2,)",-2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1)","(2,)",2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1)","(1,)",-1,120,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1)","(1,)",3,120,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1)","(1, 1, 1)",-2,20,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1)","(1, 1, 1)",-1,20,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1)","(1, 1, 1)",1,20,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1)","(1, 1, 1)",2,20,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1)",(),1,30,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1)",(),4,30,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1)","(1, 1)",-1,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1)","(1, 1)",1,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1)","(1, 1)",2,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1)","(1, 1)",3,15,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1)","(1,)",1,6,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1)","(1,)",2,6,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1)","(1,)",3,6,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1)","(1,)",4,6,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1, 1)",(),2,1,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1, 1)",(),3,1,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1, 1)",(),4,1,formal scalar sum; original signed path weights remain distinct
+6,"(1, 1, 1, 1, 1, 1)",(),5,1,formal scalar sum; original signed path weights remain distinct
+6,"(2,)",(),-1,-90,formal scalar sum; original signed path weights remain distinct
+6,"(2,)",(),1,120,formal scalar sum; original signed path weights remain distinct
+6,"(2,)",(),2,120,formal scalar sum; original signed path weights remain distinct
+6,"(2,)",(),3,-90,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(1, 1)",-2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(1, 1)",2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(2,)",-1,60,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(2,)",1,60,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(2, 2)",-3,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(2, 2)",-2,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(2, 2)",-1,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(2, 2)",1,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(4,)",-3,30,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(4,)",-2,30,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(4,)",-1,30,formal scalar sum; original signed path weights remain distinct
+6,"(2,)","(4,)",1,30,formal scalar sum; original signed path weights remain distinct
+6,"(2, 1)","(1,)",-1,-120,formal scalar sum; original signed path weights remain distinct
+6,"(2, 1)","(1,)",3,-120,formal scalar sum; original signed path weights remain distinct
+6,"(2, 1, 1)",(),1,-60,formal scalar sum; original signed path weights remain distinct
+6,"(2, 1, 1)",(),4,-60,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2)",(),2,30,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2)",(),3,30,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2)","(2,)",-1,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2)","(2,)",1,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2)","(2,)",2,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2)","(2,)",3,-45,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2, 2)",(),2,-15,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2, 2)",(),3,-15,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2, 2)",(),4,-15,formal scalar sum; original signed path weights remain distinct
+6,"(2, 2, 2)",(),5,-15,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(1,)",-1,30,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(1,)",1,-60,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(1,)",2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(1,)",3,30,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(3,)",-2,-20,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(3,)",-1,-20,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(3,)",1,-20,formal scalar sum; original signed path weights remain distinct
+6,"(3,)","(3,)",2,-20,formal scalar sum; original signed path weights remain distinct
+6,"(3, 1)",(),1,30,formal scalar sum; original signed path weights remain distinct
+6,"(3, 1)",(),2,-60,formal scalar sum; original signed path weights remain distinct
+6,"(3, 1)",(),3,-60,formal scalar sum; original signed path weights remain distinct
+6,"(3, 1)",(),4,30,formal scalar sum; original signed path weights remain distinct
+6,"(3, 3)",(),2,-10,formal scalar sum; original signed path weights remain distinct
+6,"(3, 3)",(),3,-10,formal scalar sum; original signed path weights remain distinct
+6,"(3, 3)",(),4,-10,formal scalar sum; original signed path weights remain distinct
+6,"(3, 3)",(),5,-10,formal scalar sum; original signed path weights remain distinct
+6,"(4,)",(),1,-6,formal scalar sum; original signed path weights remain distinct
+6,"(4,)",(),2,24,formal scalar sum; original signed path weights remain distinct
+6,"(4,)",(),3,24,formal scalar sum; original signed path weights remain distinct
+6,"(4,)",(),4,-6,formal scalar sum; original signed path weights remain distinct
+6,"(4,)","(2,)",-1,30,formal scalar sum; original signed path weights remain distinct
+6,"(4,)","(2,)",1,30,formal scalar sum; original signed path weights remain distinct
+6,"(4,)","(2,)",2,30,formal scalar sum; original signed path weights remain distinct
+6,"(4,)","(2,)",3,30,formal scalar sum; original signed path weights remain distinct
+6,"(4, 2)",(),2,30,formal scalar sum; original signed path weights remain distinct
+6,"(4, 2)",(),3,30,formal scalar sum; original signed path weights remain distinct
+6,"(4, 2)",(),4,30,formal scalar sum; original signed path weights remain distinct
+6,"(4, 2)",(),5,30,formal scalar sum; original signed path weights remain distinct
+6,"(6,)",(),2,-6,formal scalar sum; original signed path weights remain distinct
+6,"(6,)",(),3,-6,formal scalar sum; original signed path weights remain distinct
+6,"(6,)",(),4,-6,formal scalar sum; original signed path weights remain distinct
+6,"(6,)",(),5,-6,formal scalar sum; original signed path weights remain distinct
