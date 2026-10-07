@@ -1,0 +1,80 @@
+{
+  "decision": "F",
+  "prime_identities": {
+    "N": 250,
+    "HB_k": 3,
+    "HB_z": 7,
+    "Vaughan_U": 5,
+    "Vaughan_V": 7,
+    "exact_formal_log_identity": true,
+    "proper_power_compensation_retained": true
+  },
+  "A": "11501/12500",
+  "B": "137641/250000",
+  "Jstar": "64788151489666079/572357731837500000",
+  "ideal_joint_allowance": "27704610381502/17886179119921875",
+  "relaxed_joint_allowance": "52897896569489/572357731837500000",
+  "cell_counts": {
+    "(5, 2)": {
+      "fixed_gap_mean_value_short": 15,
+      "resonance_boundary": 190,
+      "central_resonance_support_empty": 378,
+      "critical_or_length_transition": 297,
+      "supercritical_long": 144
+    },
+    "(6, 2)": {
+      "fixed_gap_mean_value_short": 7,
+      "resonance_boundary": 567,
+      "central_resonance_support_empty": 2345,
+      "critical_or_length_transition": 652,
+      "supercritical_long": 525
+    },
+    "(6, 3)": {
+      "fixed_gap_mean_value_short": 7,
+      "critical_or_length_transition": 1141,
+      "resonance_boundary": 672,
+      "central_resonance_support_empty": 840,
+      "supercritical_long": 1436
+    }
+  },
+  "cell_scope": "rational exponent geometry, not existence of prime tuples",
+  "hard_cell": {
+    "positive_exponents": [
+      "3/5",
+      "3/5"
+    ],
+    "negative_exponents": [
+      "2/5",
+      "2/5",
+      "2/5"
+    ],
+    "product_exponent": "6/5",
+    "central_shift_exponent_in_Ncell": "1/6",
+    "generic_MV_loss_exponent_in_X": "1/5"
+  },
+  "vaughan_balanced_piece": {
+    "U_V_exponent": "1/10",
+    "positive_bilinear_lengths": [
+      "X^(3/10)",
+      "X^(3/10)"
+    ],
+    "negative_bilinear_lengths": [
+      "X^(1/5)",
+      "X^(1/5)"
+    ],
+    "grouped_factors": "four-vs-six factor variables; original two-vs-three products",
+    "dominance": "NOT CERTIFIED"
+  },
+  "soft_l2_counterexample": {
+    "m": 1000,
+    "T": 1000000000000000,
+    "Ncell": 1000000000000000000,
+    "cluster_length": 10,
+    "each_coefficient_l2_squared": 1,
+    "nonexact_real_correlation_lower": "44991/5000",
+    "scope": "generic arrays only, not prime-compatible or PNT/BV counterexample"
+  },
+  "new_uniform_twist_gain": "NONE CERTIFIED",
+  "mu7_mu8": "NOT COMPUTED",
+  "strict_gt79": "OPEN"
+}
