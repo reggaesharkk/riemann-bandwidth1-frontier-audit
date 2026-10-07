@@ -1,0 +1,93 @@
+{
+  "parent": "95458d6cf49466f406fa0c8444aeef5230cd816e",
+  "decision": "D",
+  "eta_partition_admissible": "0<eta<5/6, not a proven theorem feasibility interval",
+  "optional_linearization_eta": "0<eta<5/12, aggregate error still unproved",
+  "shift_scale": "H=N_cell^eta; Q=O(N_cell^(1/6+eta))",
+  "BBMZ_relative_exponents": [
+    "eta - 5/6",
+    "-eta/2"
+  ],
+  "BBMZ_actual_1_over_N_error_exponents": [
+    "-2/3+2*eta",
+    "1/6+eta/2"
+  ],
+  "BBMZ_second_mean_requires": "eta>1/6 plus a fixed epsilon gap",
+  "pointwise_d3_d2_sharp_summed_exponent": "1/18+eta",
+  "pointwise_d3_d2_smooth_summed_exponent": "7/192+eta",
+  "fixed_translation_new_zeros": true,
+  "averaged_translation_multiplier": "-2*a*sin(l/a)/l + 2",
+  "averaged_noncentral_multiplier_lower_bound": "19/60",
+  "averaged_inverse_upper_bound": "60/19",
+  "bridge_tail_saving_proved": false,
+  "mesoscopic_cell_counts": {
+    "fifth": "ceil(2/delta)^4",
+    "sixth": "ceil(2/delta)^5"
+  },
+  "fifth_model_Riemann_error_upper": "38400*delta",
+  "sixth_connected_model_Riemann_error_upper": "692480*delta",
+  "C5_total": "1/36",
+  "C6_connected_total": "-1/126",
+  "C6_42_total": "-23/420",
+  "C6_pairs_total": "131/420",
+  "sixth_sign_boxes": [
+    {
+      "center": [
+        "-699999/1000000",
+        "800003/1000000",
+        "-699991/1000000",
+        "600027/1000000",
+        "-399919/1000000"
+      ],
+      "radius": "1/200000",
+      "C6": "39971/100000",
+      "outer": "199997/1000000",
+      "exact_signed_mass": "7994080087/1000000000000000000000000000000000000",
+      "status": "dangerous"
+    },
+    {
+      "center": [
+        "-99999/1000000",
+        "300003/1000000",
+        "-199991/1000000",
+        "-299973/1000000",
+        "800081/1000000"
+      ],
+      "radius": "13/6000000",
+      "C6": "-99999/1000000",
+      "outer": "199919/1000000",
+      "exact_signed_mass": "-824753144241637/27000000000000000000000000000000000000000000",
+      "status": "favorable"
+    }
+  ],
+  "joint_density_requires_coupling": true,
+  "ledger": {
+    "coefficients": [
+      "364848201/34410250000",
+      "-18356061/344102500",
+      "-26060119/430128125",
+      "21981971/46375000",
+      "0",
+      "-11501/12500",
+      "137641/250000"
+    ],
+    "signed_target": "64788151489666079/572357731837500000",
+    "band": "128952763/92407500000",
+    "variance": "26060119/12734908593750",
+    "ideal_slack": "27704610381502/17886179119921875",
+    "conservative_slack": "52897896569489/572357731837500000",
+    "illustrative_half_ideal_cell_allowance": "13852305190751/17886179119921875",
+    "illustrative_half_conservative_cell_allowance": "52897896569489/1144715463675000000",
+    "fifth_fraction_model_sixth": "6870822093743843/7314095859847875",
+    "fifth_fraction_relaxed_sixth": "14575293823126261/14628191719695750",
+    "sixth_6_fraction_full_fifth_with_42": "1614401374707661/2500948906915725"
+  },
+  "loss_central": "OPEN oriented restricted weighted correlation",
+  "loss_transition": "OPEN oriented primitive bound",
+  "loss_far": "OPEN oriented primitive bound",
+  "loss_near_alias": "OPEN dilated correlation",
+  "first_feasible_eta": null,
+  "strict_gt79": false,
+  "density_one_implies_RH": false,
+  "Weil_completeness_proved": false
+}
