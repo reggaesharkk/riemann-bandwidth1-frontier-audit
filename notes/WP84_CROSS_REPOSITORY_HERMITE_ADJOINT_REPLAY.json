@@ -1,0 +1,95 @@
+{
+  "U": "2",
+  "actual_prime_bound_available": false,
+  "algebra_status": "PASS",
+  "arithmetic": "exact rational symbolic polynomial replay",
+  "blocks": [
+    {
+      "K": 0,
+      "certified_polynomial_lower_bound": "1268/25",
+      "cross_goal_difference": "0",
+      "direct_total_integral": "7652/15",
+      "initial_dual_form": "0",
+      "initial_layer": "233/24",
+      "quadratic_goal_remainder": "0",
+      "rejected_mutations": [],
+      "retained_multi_indices": 1,
+      "signed_dual_flux": "1821/40",
+      "tail_initial": "677/150",
+      "tail_terminal": "34456/75"
+    },
+    {
+      "K": 1,
+      "certified_polynomial_lower_bound": "1268/25",
+      "cross_goal_difference": "0",
+      "direct_total_integral": "7652/15",
+      "initial_dual_form": "0",
+      "initial_layer": "233/24",
+      "quadratic_goal_remainder": "0",
+      "rejected_mutations": [],
+      "retained_multi_indices": 3,
+      "signed_dual_flux": "1821/40",
+      "tail_initial": "677/150",
+      "tail_terminal": "34456/75"
+    },
+    {
+      "K": 2,
+      "certified_polynomial_lower_bound": "6652/25",
+      "cross_goal_difference": "3753/200",
+      "direct_total_integral": "7652/15",
+      "initial_dual_form": "2004/25",
+      "initial_layer": "233/24",
+      "quadratic_goal_remainder": "1539/200",
+      "rejected_mutations": [
+        "reverse sign",
+        "boundary normalization",
+        "weighted adjoint",
+        "terminal endpoint",
+        "signed flux",
+        "channel scalarization",
+        "algebra-to-theorem promotion"
+      ],
+      "retained_multi_indices": 6,
+      "signed_dual_flux": "35433/200",
+      "tail_initial": "143/150",
+      "tail_terminal": "18304/75"
+    },
+    {
+      "K": 3,
+      "certified_polynomial_lower_bound": "6652/25",
+      "cross_goal_difference": "3753/200",
+      "direct_total_integral": "7652/15",
+      "initial_dual_form": "2004/25",
+      "initial_layer": "233/24",
+      "quadratic_goal_remainder": "1539/200",
+      "rejected_mutations": [],
+      "retained_multi_indices": 10,
+      "signed_dual_flux": "35433/200",
+      "tail_initial": "143/150",
+      "tail_terminal": "18304/75"
+    }
+  ],
+  "constants": {
+    "E_inf": "7761139416076220170204368647089/1680256283972002400160000000000",
+    "K1_rational_upper": "3225060445671/327500000000",
+    "K2_rational_upper": "7908641999521/107256250000",
+    "model_cushion": "8711/2778200",
+    "rank_zero_witness_C_minus_D_over_energy": "16/5",
+    "sqrt_Einf_upper": "2149190827101/1000000000000",
+    "target": "7584712506259159918187568647089/1680256283972002400160000000000"
+  },
+  "consumer_certified": false,
+  "decision": "B: uniform actual-state signed dual-flux lemma remains OPEN",
+  "delta": "1/2",
+  "schema": "wp84-cross-repository-hermite-adjoint-v1",
+  "spatial_and_flux_obstructions": {
+    "individual_resolvent_displacement_ranks": [
+      2,
+      2
+    ],
+    "scalar_polynomial_signed_boundary_flux": "-5/16",
+    "scope": "Generic algebra obstruction; not a counterexample to the actual prime-state inequality",
+    "sum_displacement_rank": 4
+  },
+  "starting_commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1"
+}

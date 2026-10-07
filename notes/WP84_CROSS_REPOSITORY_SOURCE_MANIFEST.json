@@ -1,0 +1,680 @@
+{
+  "local_refs_searched": [
+    "refs/heads/codex/c5-c6-attack-20261006",
+    "refs/heads/codex/c5-c6-attack-audit-20261006",
+    "refs/heads/main",
+    "refs/heads/research/frontier-7962-hostile-audit-v0.1",
+    "refs/remotes/origin/HEAD",
+    "refs/remotes/origin/main",
+    "refs/remotes/origin/research/70pct-support-escape-v0.1",
+    "refs/remotes/origin/research/bandwidth1-v0.1",
+    "refs/remotes/origin/research/bandwidth1-v0.2",
+    "refs/remotes/origin/research/frontier-6735-v0.1",
+    "refs/remotes/origin/research/frontier-7962-hostile-audit-v0.1"
+  ],
+  "repository_pins": [
+    {
+      "commit": "c02507e2aedfae9ea526feec5a9d195d9eb2bced",
+      "repository": "intentseal"
+    },
+    {
+      "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+      "repository": "lrsc-odd-ring-spectral-rank"
+    },
+    {
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "repository": "navier-stokes-bridge-audit"
+    },
+    {
+      "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+      "repository": "physics-v1-dynamical-sector"
+    },
+    {
+      "commit": "8a309b7f9c4b5fe9558e8b8a538dc777474e69db",
+      "repository": "psi-self-modeling-benchmark"
+    },
+    {
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "repository": "Reggae-shark-universe-"
+    },
+    {
+      "commit": "cfae263ff84d3bb08d4decfbdeef2f420364e4b0",
+      "repository": "self-referential-processing-designlab"
+    }
+  ],
+  "schema": "wp84-cross-repository-source-manifest-v1",
+  "scope": "Referenced source bytes; reading coverage and section limits are stated in the audit. No claim that every source was independently executed.",
+  "sources": [
+    {
+      "bytes": 21635,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "40567ba916033f3d01b6a5d3ebcc21da2b8e1445",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/README.md",
+      "path": "README.md",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "0412a04db9e005a441659e378c3dc39e13cf35d35bddafea02521547b0588fd1",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 9586,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "c44787dfe8801cb44068a17240309ed3e7565423",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/lrsc/structural-mechanism/interval-audit-candidate-v0.1/interval_certificate.py",
+      "path": "lrsc/structural-mechanism/interval-audit-candidate-v0.1/interval_certificate.py",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "ac9e3a6c9b9983b91d737735e8fd10373301fa897e60059e751a68b04f9f8b1c",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 6577,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "d8064a456c8686da4c84d591ef3a7080b0a7efab",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/lrsc/structural-mechanism/v1.1.1-reproducibility/source/audit_k1_to_k10.py",
+      "path": "lrsc/structural-mechanism/v1.1.1-reproducibility/source/audit_k1_to_k10.py",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "a176e9bbc4c4dd49cfe55b5b9bb792f28413026b95f8110a30d978248a690381",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 1930,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "d5248a6e11bd311f9b3884581925c881fb9cd8b1",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/lrsc/structural-mechanism/v1.1/FINAL_CERTIFICATE_v1_1.json",
+      "path": "lrsc/structural-mechanism/v1.1/FINAL_CERTIFICATE_v1_1.json",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "b177c016cb4fa5192ba51aebeaf3609367a6c88a462f8c405c998062dea3b700",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 1944,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "abceb13f25e252bcf72dc3a381b626ba2cf22a27",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/lrsc/structural-mechanism/v1.1/README.md",
+      "path": "lrsc/structural-mechanism/v1.1/README.md",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "b191029bddf0c2921ed0508800b01bd5f35d098a4f190f6582d83b5a51f2ab0f",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 982,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "7b76b69b2e7c4a4db079fd835438a2cf069d206c",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/lrsc/structural-mechanism/v1.1/REPRODUCIBILITY_BOUNDARY.md",
+      "path": "lrsc/structural-mechanism/v1.1/REPRODUCIBILITY_BOUNDARY.md",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "0faf01d0735abac4d8a10d90807860a40ea9e764ee5af7505bcc88a035990857",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 5080,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "a7112d417fc79467fe94a97ab37ec43d13e726fc",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/papers/navier-stokes/WP16_036_PHASE_UNIFORM_TAIL_AND_SIGNED_GAP_2026_09_26.md",
+      "path": "papers/navier-stokes/WP16_036_PHASE_UNIFORM_TAIL_AND_SIGNED_GAP_2026_09_26.md",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "31862c96f656dd526638b7f96ac1821569c9f4d81873b696ed937c42e9c21936",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3975,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "b7d6ab4937d1ef1872a9d09bca314edeeb9dcd05",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/papers/navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md",
+      "path": "papers/navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "861258f4dd2483fecc0a8f357bdb8d516b57ec334feda7e1e5f0b6b447801e24",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 5739,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "7778cdc2beaeb9f914f9f1e087e1b5027ba4555a",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/verifiable-research-kernel/VRK_v0_3_1_FINAL_2026_09_28.md",
+      "path": "verifiable-research-kernel/VRK_v0_3_1_FINAL_2026_09_28.md",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "9724b985eb3b707645028deb136c968fb454fb08a4da73c58261de233484f005",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 934,
+      "commit": "f97be3256a427214af6c47e81115fb1836b7d0f3",
+      "git_blob_sha1": "1bcbde75aa06cf7894fc14c879d226ed56cd63a6",
+      "immutable_url": "https://github.com/reggaesharkk/Reggae-shark-universe-/blob/f97be3256a427214af6c47e81115fb1836b7d0f3/verifiable-research-kernel/src/intentseal_vrk/types.py",
+      "path": "verifiable-research-kernel/src/intentseal_vrk/types.py",
+      "repository": "Reggae-shark-universe-",
+      "sha256": "856db304d432b848b504293e1c4bc5f8e921aa6f7cfab52f418bf717e0ef8583",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3453,
+      "commit": "c02507e2aedfae9ea526feec5a9d195d9eb2bced",
+      "git_blob_sha1": "5c52fd291b4f40cfeb44884c51d5de198060db80",
+      "immutable_url": "https://github.com/reggaesharkk/intentseal/blob/c02507e2aedfae9ea526feec5a9d195d9eb2bced/README.md",
+      "path": "README.md",
+      "repository": "intentseal",
+      "sha256": "d14981855b38602101f637f0fb1e940eb58091dfa78e3768b0ad33440ce948ae",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 4017,
+      "commit": "c02507e2aedfae9ea526feec5a9d195d9eb2bced",
+      "git_blob_sha1": "9bab078896c891f58fb57f20c88994a31c480399",
+      "immutable_url": "https://github.com/reggaesharkk/intentseal/blob/c02507e2aedfae9ea526feec5a9d195d9eb2bced/verifiable-research-kernel/VRK_v0_3_1_FINAL_2026_09_28.md",
+      "path": "verifiable-research-kernel/VRK_v0_3_1_FINAL_2026_09_28.md",
+      "repository": "intentseal",
+      "sha256": "3c2f7b1be3ba9423d7d382dc3fafd892e1f47ea47b9dad4b2bf1dc55bc981694",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 4162,
+      "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+      "git_blob_sha1": "4c29fcfd8ab845206f1d2ec8ce8ea3fbf9d317df",
+      "immutable_url": "https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/blob/96cdd83ceadfff766d98ffdf2249a9de43fe74de/README.md",
+      "path": "README.md",
+      "repository": "lrsc-odd-ring-spectral-rank",
+      "sha256": "ccc5f608813bc09623127825fb9c608eaf9a10ce953fe1e8ef36f61f8bfe369c",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 5987,
+      "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+      "git_blob_sha1": "bbaf09bfef916e3d19177cfaa6f4a223bd9c7e8d",
+      "immutable_url": "https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/blob/96cdd83ceadfff766d98ffdf2249a9de43fe74de/finite-benchmark/k001-certificate/CERTIFICATE.md",
+      "path": "finite-benchmark/k001-certificate/CERTIFICATE.md",
+      "repository": "lrsc-odd-ring-spectral-rank",
+      "sha256": "24b855b0e674e0eac5701ac92d24a69a1650f44eadd7f2962fe75e5746d71b54",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 762,
+      "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+      "git_blob_sha1": "d52e2e1c31797c060e6289826a837fdadd719bdb",
+      "immutable_url": "https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/blob/96cdd83ceadfff766d98ffdf2249a9de43fe74de/finite-benchmark/theta07-rank14/verify_witness.py",
+      "path": "finite-benchmark/theta07-rank14/verify_witness.py",
+      "repository": "lrsc-odd-ring-spectral-rank",
+      "sha256": "6833aa8735863b2b5597120384d02d26e08f807f68f845da1bf5cce56910e311",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 7058,
+      "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+      "git_blob_sha1": "3316e2f0b8ff356d06d253a310234fafe9623d14",
+      "immutable_url": "https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/blob/96cdd83ceadfff766d98ffdf2249a9de43fe74de/odd-ring-rank-theorem/v1.2/THEOREM_v1_2.md",
+      "path": "odd-ring-rank-theorem/v1.2/THEOREM_v1_2.md",
+      "repository": "lrsc-odd-ring-spectral-rank",
+      "sha256": "f778792dfa9b0acd7e3b40c43c6bdc21f24656ffcc698bff12a6295e3ea924e5",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 58499,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "fa89f510f9332cde4cd3b17de628d4e4af4c4753",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/README.md",
+      "path": "README.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "6e634ee4c643e63cfea215857429830a82867f4e622be4ed53b912eed6a56c93",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 6376,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "4e8d3c8b0154bc19f6a804844d99743d076e08f2",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/WP3_PROOF.md",
+      "path": "WP3_PROOF.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "571a7b7ce9b65f782c4003ad516012311e93fd8dbe74c61cba04501639317a46",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3509,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "2920e99f17104ef1663fd9659e91a3609222b6c0",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP11_PR27_REVIEW_GATE_2026_09_25.md",
+      "path": "notes/WP11_PR27_REVIEW_GATE_2026_09_25.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "c0f310f9afd49530355ebb9e1d5833605d13dcd6202e6542d0f25373057999d7",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 4939,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "1baa4f469f2a7e83ed129226795264dfec04a763",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md",
+      "path": "notes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "bef0805fbe943fab5a3f967d81f6c0d0ccc6b0d711ee99147a7f438183e25877",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 2395,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "149a8b0b3b0d27ecc97d083cd489bb3f1dbfca5f",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_19_BOUNDARY_ANNULUS_DIRECT_SHELL_THEOREM.md",
+      "path": "notes/WP19_v0_19_BOUNDARY_ANNULUS_DIRECT_SHELL_THEOREM.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "ad5b4faceccfc4df99acb5a8bfee8d74927cffd520fdd941cb55ac2fd1e8ca6f",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 4259,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "ac55b3f2b3076e4d1062e5f4c8f56b80c9eb27ba",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_24_HERMITE_GOAL_REMAINDER_BUDGET.md",
+      "path": "notes/WP19_v0_24_HERMITE_GOAL_REMAINDER_BUDGET.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "5632b8accf562c29085a51925963637d40b6b64342d23e7bfa4f397872e70ce2",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 4392,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "e58f63c0c48a995c226c23628b75d3db3b701b3b",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_26_SIGNED_C500_NUMERATOR_GOAL_ADJOINT.md",
+      "path": "notes/WP19_v0_26_SIGNED_C500_NUMERATOR_GOAL_ADJOINT.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "825d0f8e0866b6a756dfb3eb05dcb325ad18c227420c4ec3f4300e15c830ae24",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3078,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "1f6739c5360c7c600fee71b6ca4e5e982a858132",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_27b_ENDPOINT_GRADIENT_BALL_ARB.md",
+      "path": "notes/WP19_v0_27b_ENDPOINT_GRADIENT_BALL_ARB.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "ae597204b4cbdff690da82dd9cc64ce0dd688bb19f410e3cc61eebb245d9201b",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 5265,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "33990cbbef20827e03e4310b72c50556bff44577",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_28_LOGNORM_ADJOINT_RESIDUAL_GATE.md",
+      "path": "notes/WP19_v0_28_LOGNORM_ADJOINT_RESIDUAL_GATE.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "f2fed5295d1330d211853afd28b1c03fecf8d294ff4a77aa9131f8919b60ab08",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 2772,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "03c062ccde04f41af674062e4928b9f7305ab60d",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_28_OUTPUT_BOUND_AUDIT_2026_10_01.md",
+      "path": "notes/WP19_v0_28_OUTPUT_BOUND_AUDIT_2026_10_01.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "0f5ce55173d0d90809132888226e632afccc9b8037eb06e8a0b04263ef3faaea",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 8567,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "9df00e9dd997900ff867beeb00e5e5ebb13a1203",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md",
+      "path": "notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "09e3710a8bc58f736a0e15aaa2e85ac2bfcec52f36faae05bcd5c6055eaac03c",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3537,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "04e761cdfaef809b43adb13ee9229cf5945c67b1",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_28_ROUTE_CONDITIONING_AUDIT_2026_10_01.md",
+      "path": "notes/WP19_v0_28_ROUTE_CONDITIONING_AUDIT_2026_10_01.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "b3f25fc2a0b8811dadf91593417fce714055e8292a28e8ee81ef52c93517b488",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3568,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "0edf75d1afa4c65465eace7ecdc48da49d5487a9",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_28_STRUCTURED_UNCERTAINTY_AB_2026_10_01.md",
+      "path": "notes/WP19_v0_28_STRUCTURED_UNCERTAINTY_AB_2026_10_01.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "9d9edb82cc6894ff0c1af704bcfa288be3dae6eb8461088bf61d55717ca8de66",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 6788,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "b5f4a23d64500be3c9c7ea74834606d0c73f01a5",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/notes/WP19_v0_6_DUAL_WEIGHTED_RESIDUAL_BRIDGE.md",
+      "path": "notes/WP19_v0_6_DUAL_WEIGHTED_RESIDUAL_BRIDGE.md",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "84802aeacd74f7051405e849afbeae01fdef9a57c1c11f31a0bc688c4eeaf083",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 13760,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "4f0d977c8e97057c0b5df45160f2d46b912cedb9",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/src/wp19_v0_23_rk4_goal_adjoint.py",
+      "path": "src/wp19_v0_23_rk4_goal_adjoint.py",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "0ba7cd0464076271a80864118d930d384d2cce6a1974650f278f8e02a7756e01",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 21471,
+      "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+      "git_blob_sha1": "3b87a5fabffb023ba38ce9997abc10c4a1a995e8",
+      "immutable_url": "https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f/src/wp19_v0_26_signed_goal_adjoint.py",
+      "path": "src/wp19_v0_26_signed_goal_adjoint.py",
+      "repository": "navier-stokes-bridge-audit",
+      "sha256": "0d186c4fc65e631f128643c8205492db6a4e8ed13b6e9baa4555b185fe710c68",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 6105,
+      "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+      "git_blob_sha1": "a5942606b45c738bc33825d7a1b4ed0f7919f414",
+      "immutable_url": "https://github.com/reggaesharkk/physics-v1-dynamical-sector/blob/d409fd30bcd7c071ef92558f3fe8c1adff3f3022/README.md",
+      "path": "README.md",
+      "repository": "physics-v1-dynamical-sector",
+      "sha256": "3026dda102f8ca3a5f39c95d3efcdd5c4eecd0438379b216931080d2043febbc",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 4386,
+      "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+      "git_blob_sha1": "d802c36291ec7df98ee0a70ab8b8cd076f73bc17",
+      "immutable_url": "https://github.com/reggaesharkk/physics-v1-dynamical-sector/blob/d409fd30bcd7c071ef92558f3fe8c1adff3f3022/analysis/physics_v1_0_ode_analysis.py",
+      "path": "analysis/physics_v1_0_ode_analysis.py",
+      "repository": "physics-v1-dynamical-sector",
+      "sha256": "0e45362953809a6f610b386e284da992a86a1527b16bffc07404cd936c75e221",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 2592,
+      "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+      "git_blob_sha1": "618f4233ac8a217f6cd12fcb66ab400adda61dd8",
+      "immutable_url": "https://github.com/reggaesharkk/physics-v1-dynamical-sector/blob/d409fd30bcd7c071ef92558f3fe8c1adff3f3022/appendix/v1.4.1/PROOF_AUDIT.md",
+      "path": "appendix/v1.4.1/PROOF_AUDIT.md",
+      "repository": "physics-v1-dynamical-sector",
+      "sha256": "706bf36281a74aa8721db6445edba25a2899051441d4f2e3861c721c1c7e79b4",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 578,
+      "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+      "git_blob_sha1": "cedd96a50e8805a6b77d3ecea057747ab8e406e9",
+      "immutable_url": "https://github.com/reggaesharkk/physics-v1-dynamical-sector/blob/d409fd30bcd7c071ef92558f3fe8c1adff3f3022/appendix/v1.4/THEOREM.md",
+      "path": "appendix/v1.4/THEOREM.md",
+      "repository": "physics-v1-dynamical-sector",
+      "sha256": "d7a8d6b5063624f7ce57c326a12a5fff800531655a55b6d993ac42e5b7ace3dc",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3736,
+      "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+      "git_blob_sha1": "b52827c8773241803d47d5b1d1b14ed61b25519a",
+      "immutable_url": "https://github.com/reggaesharkk/physics-v1-dynamical-sector/blob/d409fd30bcd7c071ef92558f3fe8c1adff3f3022/exploratory/recursive_cosmology_sandbox/REPORT.md",
+      "path": "exploratory/recursive_cosmology_sandbox/REPORT.md",
+      "repository": "physics-v1-dynamical-sector",
+      "sha256": "265617cb6684858f3cb83a2ae3d32f83ea14d2e940fc513be6e5c5c4924ef11e",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 3590,
+      "commit": "8a309b7f9c4b5fe9558e8b8a538dc777474e69db",
+      "git_blob_sha1": "616fd20aa9e352628c0acb673964b5c6868d93b0",
+      "immutable_url": "https://github.com/reggaesharkk/psi-self-modeling-benchmark/blob/8a309b7f9c4b5fe9558e8b8a538dc777474e69db/README.md",
+      "path": "README.md",
+      "repository": "psi-self-modeling-benchmark",
+      "sha256": "c147cfbf4ee1ce6e95d3c294650ab9c8374c09e435f084806b4212abbe50cf77",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 2460,
+      "commit": "8a309b7f9c4b5fe9558e8b8a538dc777474e69db",
+      "git_blob_sha1": "416df057e0ddc263231bdeff148ba414911ea4d9",
+      "immutable_url": "https://github.com/reggaesharkk/psi-self-modeling-benchmark/blob/8a309b7f9c4b5fe9558e8b8a538dc777474e69db/provenance/README_OSF_ARCHIVE.md",
+      "path": "provenance/README_OSF_ARCHIVE.md",
+      "repository": "psi-self-modeling-benchmark",
+      "sha256": "b287004cffc12ee44775d4b1bd83a35256bf1620227ed5a3fd94fb60108bd4db",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 158,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "62e3416a5359c05f1af3be1f362cdbd076d79a49",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/README.md",
+      "path": "README.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "e325069c1c5aaa84af643bb191907e6eeeeb63bd19867d6b9271b40ac0d839ff",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 9082,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "0b6ef8017f0e59e2f8ed094ca66e6957fa918c4e",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_CHRISTOFFEL_SYMMETRIC_LINEARIZATION.md",
+      "path": "notes/WP84_CHRISTOFFEL_SYMMETRIC_LINEARIZATION.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "79080991e628f69d0458ca6bdd855291160d169a22677a8ab0112c5b36117bd2",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 3342,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "04aaff61ae031fed4a3eccb06aae07153649cb56",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_COVARIANCE_ONLY_MOMENT_FALSIFIER.md",
+      "path": "notes/WP84_COVARIANCE_ONLY_MOMENT_FALSIFIER.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "09d959e4ff61c45d276a5db06d1af1d4b94c169ac25a14d76e8ed6da20b42a8e",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 4710,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "dda38d04a887e8f389ddab7c515b01266ef61af5",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_DETUNING_COMMUTATOR_ENDPOINT.md",
+      "path": "notes/WP84_DETUNING_COMMUTATOR_ENDPOINT.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "d9784ef2cc35e221a93ed59f2dda2720412caaf0e8d1546c26ca4d934774075c",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 5379,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "ce05ba814bbf0b2b9c891ad8333ae880c92d68a8",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_DETUNING_FEATURE_MAXIMAL_REDUCTION.md",
+      "path": "notes/WP84_DETUNING_FEATURE_MAXIMAL_REDUCTION.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "6221f2e4d6f1ff147ef832acc0dc25656a6ad0461fed7f779ce01e97fffe8ea6",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 8238,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "250421bab164695a2afe27f8b404324b73db0565",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_EXACT_FRONTIER_ONE_POINT_HEAT_FLOW.md",
+      "path": "notes/WP84_EXACT_FRONTIER_ONE_POINT_HEAT_FLOW.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "6c92153d647bd6e5804b407ea3cc9c13fcea4b01e64e75a5d3d2da33fc74880e",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 3832,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "8916541594376660dd56d8e5e988b6f73e80a894",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_EXACT_FRONTIER_RANK6_HP_AUDIT.md",
+      "path": "notes/WP84_EXACT_FRONTIER_RANK6_HP_AUDIT.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "5f7e94a1a01b7d2801722c3a4d9ece67c45497ee767babc6c5528fc3fb200d20",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 18777,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "44ab0153ee6960141de3b217cfc6afd97b9650e2",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_FILTERED_CONNECTED_OPERATOR_NORM.md",
+      "path": "notes/WP84_FILTERED_CONNECTED_OPERATOR_NORM.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "4fe696cd9e61d0b543dc15be0a8ef6a2d31ce31f8725a38377ef49f71f17046d",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 4383,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "f76f1e8e8c85a868e565bd1ccdf8a2b4bb7765d8",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md",
+      "path": "notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "4bf5279133622b9f0e0c7bfd3177cc2168ba3345c12b61efcb3c29e154a40e4b",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 15214,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "7c5ee016d2a034ef19121a40e370ca92401d32b5",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_INTEGRATED_CROSS_ERROR_STEIN_CHAOS.md",
+      "path": "notes/WP84_INTEGRATED_CROSS_ERROR_STEIN_CHAOS.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "a91414d271c92c07fe8bf374602c11f6236abdedd3edaceb24deb81e401ee1ee",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 5546,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "e3907ba38f8f7ea3e3baeeb3d25e8c0b1c2fc337",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md",
+      "path": "notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "2b348d665ad51cd98a61fa9e4fc6eaef3e3b3464055d84c0ad5da37db16f4453",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 23890,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "594a8e5e050de3b62173fe83752448159139ab6e",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_R400_FILTERED_SHARP_REPAIR.md",
+      "path": "notes/WP84_R400_FILTERED_SHARP_REPAIR.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "11cdc2c705e9bb33837e9e6d5b469eb52661d3f9aa12edeaf6f0be7ad3f3c7bd",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 3641,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "78e3fe5e127d937853f5508ae10e7e164215a00b",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_SHIFTED_K2_GRAM_CANCELLATION.md",
+      "path": "notes/WP84_SHIFTED_K2_GRAM_CANCELLATION.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "e9f3382ee478f2dcfae2559acf662d6144fe5465f8f09b25678261e3d13453a7",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 4043,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "577f3f21184c869e6ec0bfb2ee2b3ec0ea586003",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_SHIFTED_RESOLVENT_SIX_VECTOR_WEDGE.md",
+      "path": "notes/WP84_SHIFTED_RESOLVENT_SIX_VECTOR_WEDGE.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "ce7cecbc0ecff8d433905f727c17fffc3890f7c5d0e56326970d23ba6e8a72e8",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 2540,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "0a79ba3aa794a8a40a9fb2400751ea75fb2d74ae",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_SHIFTED_THREE_CHANNEL_GRAM.md",
+      "path": "notes/WP84_SHIFTED_THREE_CHANNEL_GRAM.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "9a691d1200f3641e020412ac7c6a8b9073886a631ef484ad7f463a7a61c08cda",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 3958,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "9201774fd42d0a50b5dc763873df5af12de99306",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_SINE_SCALAR_K2_WEDGE.md",
+      "path": "notes/WP84_SINE_SCALAR_K2_WEDGE.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "9655551aacd4749480c40778be7086b95c81cdac8ba354e71c87b42d1cdecbfc",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 5792,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "f2c6304fc66f163668a17170bfc188d8a18fb5d8",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_SINE_WEDGE_CANONICAL_FRAME.md",
+      "path": "notes/WP84_SINE_WEDGE_CANONICAL_FRAME.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "1a9585239fd149659a4c0e34ca72adc2262648392ae891e3c6924366196ccc1d",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 14516,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "459dd327507a1a471ec7a8ab1022dd84a619160f",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/notes/WP84_TAIL_CAPPED_FINITE_U_CURVATURE.md",
+      "path": "notes/WP84_TAIL_CAPPED_FINITE_U_CURVATURE.md",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "f7a7c1bde489476f86a6d332b6a2e9dba1df00657aa54632ae9ad44ef5b3be40",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 1431,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "323950b357acd6ab5b85883568d9c65394feb5c5",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/src/wp84_covariance_only_moment_falsifier.py",
+      "path": "src/wp84_covariance_only_moment_falsifier.py",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "add600ff427550c1c03af66a81ad701c4196c8a04b5e32264368ce65c49886ac",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 7374,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "ac0d704555e4635467fa1e0e3a351720519794d7",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/src/wp84_integrated_cross_error_stein_chaos.py",
+      "path": "src/wp84_integrated_cross_error_stein_chaos.py",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "ebb95e6c46affc7bbb75b3b01bd932e152f494a32c3a92c8e54b1bdb614dc34d",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 6180,
+      "commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1",
+      "git_blob_sha1": "5b8035a3db2a2dd4f51b6aa2d9ccc3896ade10f0",
+      "immutable_url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/blob/6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1/src/wp84_shifted_resolvent_wedge_gate.py",
+      "path": "src/wp84_shifted_resolvent_wedge_gate.py",
+      "repository": "riemann-bandwidth1-frontier-audit",
+      "sha256": "ba54418c69fa323902f1c0c52c797ee930094242f61994b453e1ef258f294ae5",
+      "sha256_representation": "unchanged working-tree bytes; Git blob uses repository line-ending normalization"
+    },
+    {
+      "bytes": 2853,
+      "commit": "cfae263ff84d3bb08d4decfbdeef2f420364e4b0",
+      "git_blob_sha1": "185d3b5536ac4565541c9a2bdb5d4640c7a07e72",
+      "immutable_url": "https://github.com/reggaesharkk/self-referential-processing-designlab/blob/cfae263ff84d3bb08d4decfbdeef2f420364e4b0/README.md",
+      "path": "README.md",
+      "repository": "self-referential-processing-designlab",
+      "sha256": "a612e2f557f04eed13b471236ff75c85ed3e9a37b6d5aa0340912e1779706cf2",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 663,
+      "commit": "cfae263ff84d3bb08d4decfbdeef2f420364e4b0",
+      "git_blob_sha1": "811298ba155188c6a439ac0b0ad72255c62e8d7a",
+      "immutable_url": "https://github.com/reggaesharkk/self-referential-processing-designlab/blob/cfae263ff84d3bb08d4decfbdeef2f420364e4b0/research/phase7/final_release/README.md",
+      "path": "research/phase7/final_release/README.md",
+      "repository": "self-referential-processing-designlab",
+      "sha256": "6078bad466a317aefe8e5ab1429687a57a961fd7ea18cb10ba580969f82f287d",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    },
+    {
+      "bytes": 16084,
+      "commit": "cfae263ff84d3bb08d4decfbdeef2f420364e4b0",
+      "git_blob_sha1": "366222f0945534c12e2f35a489239c92310cf064",
+      "immutable_url": "https://github.com/reggaesharkk/self-referential-processing-designlab/blob/cfae263ff84d3bb08d4decfbdeef2f420364e4b0/research/phase7/phase7_inferential_validation_runner.py",
+      "path": "research/phase7/phase7_inferential_validation_runner.py",
+      "repository": "self-referential-processing-designlab",
+      "sha256": "1f9192b4e1f0d9bf21b90191165f2b83c7c0a8286856dd7e6d105a2f737717fe",
+      "sha256_representation": "pinned GitHub commit-archive bytes"
+    }
+  ],
+  "starting_commit": "6ab4622cea3833e847e005eb30f0a2e1c7bf5cf1"
+}
