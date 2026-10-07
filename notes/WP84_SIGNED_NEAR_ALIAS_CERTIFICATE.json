@@ -1,0 +1,481 @@
+{
+  "decision": "C",
+  "parent": "72b4775f2833f105b4513f97bd4350ee8a0f8ecf",
+  "A": "11501/12500",
+  "B": "137641/250000",
+  "Jstar": "64788151489666079/572357731837500000",
+  "ideal_allowance": "27704610381502/17886179119921875",
+  "relaxed_allowance": "52897896569489/572357731837500000",
+  "exact_alias_atoms": [
+    {
+      "degree": 6,
+      "omega": "137641/250000",
+      "section": [
+        0,
+        260
+      ],
+      "prefix_displacements": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "equality_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "slot_weights": [
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        }
+      ],
+      "primes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_count": 261,
+      "dprime": 261,
+      "i_min": 0,
+      "product_ratio": "64",
+      "m": 1,
+      "sector": "NearAlias",
+      "removed": false,
+      "exact_kernel": "exp(i*T*lambda)*exp(2*pi*i*i_min*lambda/L)/dprime * sum_{k=0}^{M-1}exp(2*pi*i*k*lambda/L)",
+      "normalization": "1/dprime; every original cp, filter, path phase and tuple mask retained",
+      "net_block_exponents": [
+        6
+      ],
+      "new_alias_status": "closed_one_active_block"
+    },
+    {
+      "degree": 6,
+      "omega": "137641/250000",
+      "section": [
+        0,
+        1153
+      ],
+      "prefix_displacements": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "equality_labels": [
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      "slot_weights": [
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 3,
+          "cp": "-log(3)/(a_phi*L*sqrt(3))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(3)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 3,
+          "cp": "-log(3)/(a_phi*L*sqrt(3))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(3)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 3,
+          "cp": "-log(3)/(a_phi*L*sqrt(3))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(3)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        }
+      ],
+      "primes": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_count": 1154,
+      "dprime": 1154,
+      "i_min": 0,
+      "product_ratio": "216",
+      "m": 1,
+      "sector": "NearAlias",
+      "removed": false,
+      "exact_kernel": "exp(i*T*lambda)*exp(2*pi*i*i_min*lambda/L)/dprime * sum_{k=0}^{M-1}exp(2*pi*i*k*lambda/L)",
+      "normalization": "1/dprime; every original cp, filter, path phase and tuple mask retained",
+      "net_block_exponents": [
+        3,
+        3
+      ],
+      "new_alias_status": "closed_no_singleton_blocks"
+    },
+    {
+      "degree": 5,
+      "omega": "-11501/12500",
+      "section": [
+        0,
+        2430
+      ],
+      "prefix_displacements": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "equality_labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "slot_weights": [
+        {
+          "prime": 2,
+          "cp": "-log(2)/(a_phi*L*sqrt(2))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(2)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 3,
+          "cp": "-log(3)/(a_phi*L*sqrt(3))",
+          "filter_lag": 0,
+          "filter_sign": 1,
+          "path_phase": "exp(2*pi*i*(0)*log(3)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 11,
+          "cp": "-log(11)/(a_phi*L*sqrt(11))",
+          "filter_lag": 0,
+          "filter_sign": -1,
+          "path_phase": "exp(2*pi*i*(0)*log(11)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 13,
+          "cp": "-log(13)/(a_phi*L*sqrt(13))",
+          "filter_lag": 0,
+          "filter_sign": -1,
+          "path_phase": "exp(2*pi*i*(0)*log(13)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        },
+        {
+          "prime": 17,
+          "cp": "-log(17)/(a_phi*L*sqrt(17))",
+          "filter_lag": 0,
+          "filter_sign": -1,
+          "path_phase": "exp(2*pi*i*(0)*log(17)/L)",
+          "window": "full natural ordinary-prime cutoff; no window discarded"
+        }
+      ],
+      "primes": [
+        2,
+        3,
+        11,
+        13,
+        17
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_count": 2431,
+      "dprime": 2431,
+      "i_min": 0,
+      "product_ratio": "6/2431",
+      "m": -1,
+      "sector": "NearAlias",
+      "removed": false,
+      "exact_kernel": "exp(i*T*lambda)*exp(2*pi*i*i_min*lambda/L)/dprime * sum_{k=0}^{M-1}exp(2*pi*i*k*lambda/L)",
+      "normalization": "1/dprime; every original cp, filter, path phase and tuple mask retained",
+      "net_block_exponents": [
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "new_alias_status": "remaining_signed_dilated_product"
+    }
+  ],
+  "pattern_counts": {
+    "5": {
+      "patterns": 1664,
+      "support_alias_slots": 2726,
+      "closed_one_active_block": 108,
+      "closed_one_side_first_alias": 342,
+      "closed_no_singleton_blocks": 320,
+      "remaining_signed_dilated_product": 1956
+    },
+    "6": {
+      "patterns": 12992,
+      "support_alias_slots": 26932,
+      "closed_one_active_block": 1036,
+      "closed_one_side_first_alias": 3024,
+      "closed_no_singleton_blocks": 3240,
+      "remaining_signed_dilated_product": 19632
+    }
+  },
+  "total_patterns": 14656,
+  "finite_example": {
+    "X": 1000,
+    "N": 72,
+    "H": 10,
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71
+    ],
+    "scope": "exact extrema; interval support possibility does not assert actual near-resonant tuples"
+  },
+  "matching_window_example": {
+    "net_e": [
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "min_ratio": "4/5",
+    "max_ratio": "25/3"
+  },
+  "energy_regression": {
+    "prime_list": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "r": 3,
+    "ordered_tuples": 64,
+    "max_representation_count": 6,
+    "weighted_energy": "19387985326669/85766121000000",
+    "energy_bound": "6423446070469/14294353500000",
+    "scope": "exact rational regression a(p)=1/p; theorem norm inequality proved in note"
+  },
+  "exact_uniform_slab_volume_checks": 864,
+  "H_requirements": [
+    {
+      "H": "1/100",
+      "primitive_multiplier": "201/200",
+      "ideal_full_allocation_requirement": "221636883052016/143804880124171875",
+      "relaxed_full_allocation_requirement": "52897896569489/575219520496687500"
+    },
+    {
+      "H": "1",
+      "primitive_multiplier": "3/2",
+      "ideal_full_allocation_requirement": "55409220763004/53658537359765625",
+      "relaxed_full_allocation_requirement": "52897896569489/858536597756250000"
+    },
+    {
+      "H": "10",
+      "primitive_multiplier": "6",
+      "ideal_full_allocation_requirement": "13852305190751/53658537359765625",
+      "relaxed_full_allocation_requirement": "52897896569489/3434146391025000000"
+    },
+    {
+      "H": "100",
+      "primitive_multiplier": "51",
+      "ideal_full_allocation_requirement": "27704610381502/912195135116015625",
+      "relaxed_full_allocation_requirement": "52897896569489/29190244323712500000"
+    },
+    {
+      "H": "400",
+      "primitive_multiplier": "201",
+      "ideal_full_allocation_requirement": "27704610381502/3595122003104296875",
+      "relaxed_full_allocation_requirement": "52897896569489/115043904099337500000"
+    },
+    {
+      "H": "1000",
+      "primitive_multiplier": "501",
+      "ideal_full_allocation_requirement": "27704610381502/8960975739080859375",
+      "relaxed_full_allocation_requirement": "52897896569489/286751223650587500000"
+    }
+  ],
+  "H_optimization": {
+    "near_requirement_only": "strictly decreasing in H; supremum allowance as H->0; no positive attained optimizer",
+    "if_H_ge_1": "H=1 maximizes permitted primitive error in this conditional surrogate",
+    "full_tradeoff": "UNDETERMINED: signed primitive and central/tail charge functions not proved",
+    "conditional_surrogate_optimum": "H*=sqrt(2K/E0) for E0*(1+H/2)+K/H; not a feasible arithmetic choice"
+  },
+  "improved_soft_norm_counterexample": {
+    "z": 10000000000,
+    "X": 100000000000000000000000000000000000000000000000000,
+    "U": 100000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "V": 1000000000000000000000000000000,
+    "K": 100000000000000000000000000,
+    "H": "1/100",
+    "coefficient_envelope": "|a(n)|<=n^(-1/2), |b(v)|<=v^(-1/2)",
+    "each_l2_squared_upper": "1",
+    "removed_exact_aliases": true,
+    "rotated_nonexact_near_alias_lower_squared": "24990001/4000000",
+    "scope": "generic arrays satisfy pointwise envelope and l2 bounds; NOT prime-factor/PNT/BV-compatible"
+  },
+  "new_closed_families_limiting_charge": "0",
+  "remaining_near_alias_charge": null,
+  "remaining_ideal_budget": null,
+  "remaining_relaxed_budget": null,
+  "obtained_primitive_bound": null,
+  "minimal_new_lemma": "one-sided weighted sampled nonexact alias correlation over surviving equality-pattern/m pairs at fixed R and one declared admissible H",
+  "strict_gt79": "OPEN",
+  "frozen_sha256": {
+    "notes/WP84_DIRECT_CORRELATION_EXPONENT_CELLS.csv": "4b266e9b1fc79d943b43d34d3e02610be89c22b76ed80dd8a1c7a1915344d735",
+    "notes/WP84_DIRECT_SIGNED_RESTRICTED_CORRELATION_ATTACK.md": "75d746bb0f2702f81f2bc4aa367b84bd84ace8ddcf38cf8bf6fd8becceb6fc66",
+    "notes/WP84_NEAR_ALIAS_AND_LONG_TAIL_DISCHARGE.md": "7d2aa30d8182166401d786c0757aa326abaf368219c3b5ae488505c230b33eea"
+  }
+}
