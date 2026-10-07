@@ -1,0 +1,396 @@
+{
+  "parent": "40684faa2fc278d319b89df2550e82eb874ae0c7",
+  "decision": "D",
+  "decision_scope": "audited number-theory theorems do not cover the specified resolved cell",
+  "strict_gt79": false,
+  "arithmetic_theorem_proved": false,
+  "R_band": 6000,
+  "pole_height": "221/200",
+  "ledger": {
+    "coefficients": [
+      "364848201/34410250000",
+      "-18356061/344102500",
+      "-26060119/430128125",
+      "21981971/46375000",
+      "0",
+      "-11501/12500",
+      "137641/250000"
+    ],
+    "signed_target": "64788151489666079/572357731837500000",
+    "band": "128952763/92407500000",
+    "variance": "26060119/12734908593750",
+    "ideal_slack": "27704610381502/17886179119921875",
+    "conservative_slack": "52897896569489/572357731837500000",
+    "illustrative_half_ideal_cell_allowance": "13852305190751/17886179119921875",
+    "illustrative_half_conservative_cell_allowance": "52897896569489/1144715463675000000",
+    "fifth_fraction_model_sixth": "6870822093743843/7314095859847875",
+    "fifth_fraction_relaxed_sixth": "14575293823126261/14628191719695750",
+    "sixth_6_fraction_full_fifth_with_42": "1614401374707661/2500948906915725"
+  },
+  "alias_support": [
+    {
+      "b": 5,
+      "positive_slots": 0,
+      "negative_slots": 5,
+      "nearest_bins": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "resonance_support": [
+        -4,
+        -3,
+        -2,
+        -1
+      ]
+    },
+    {
+      "b": 5,
+      "positive_slots": 1,
+      "negative_slots": 4,
+      "nearest_bins": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "resonance_support": [
+        -3,
+        -2,
+        -1,
+        0
+      ]
+    },
+    {
+      "b": 5,
+      "positive_slots": 2,
+      "negative_slots": 3,
+      "nearest_bins": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "resonance_support": [
+        -2,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "b": 5,
+      "positive_slots": 3,
+      "negative_slots": 2,
+      "nearest_bins": [
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "resonance_support": [
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "b": 5,
+      "positive_slots": 4,
+      "negative_slots": 1,
+      "nearest_bins": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "resonance_support": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "b": 5,
+      "positive_slots": 5,
+      "negative_slots": 0,
+      "nearest_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "resonance_support": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 0,
+      "negative_slots": 6,
+      "nearest_bins": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ],
+      "resonance_support": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 1,
+      "negative_slots": 5,
+      "nearest_bins": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "resonance_support": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 2,
+      "negative_slots": 4,
+      "nearest_bins": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "resonance_support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 3,
+      "negative_slots": 3,
+      "nearest_bins": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "resonance_support": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 4,
+      "negative_slots": 2,
+      "nearest_bins": [
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "resonance_support": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 5,
+      "negative_slots": 1,
+      "nearest_bins": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "resonance_support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "b": 6,
+      "positive_slots": 6,
+      "negative_slots": 0,
+      "nearest_bins": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "resonance_support": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "model_cell": {
+    "free_center": [
+      "603/1000",
+      "-397/1000",
+      "299/500",
+      "-203/500"
+    ],
+    "delta": "49/1500",
+    "orientation": [
+      1,
+      -1,
+      1,
+      -1,
+      -1
+    ],
+    "prime_exponent_intervals": [
+      [
+        "1711/3000",
+        "1907/3000"
+      ],
+      [
+        "1093/3000",
+        "1289/3000"
+      ],
+      [
+        "212/375",
+        "473/750"
+      ],
+      [
+        "28/75",
+        "329/750"
+      ],
+      [
+        "401/1500",
+        "793/1500"
+      ]
+    ],
+    "C5_center": "201/1000",
+    "outer_center": "49/250",
+    "C5_gradient": [
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    "outer_gradient": [
+      "-1",
+      "-1",
+      "-1",
+      "0"
+    ],
+    "exact_model_cell_mass": "1505310601921/2135742187500000000",
+    "exact_total_complement_mass": "59324666564398079/2135742187500000000",
+    "exact_subcritical_model_mass": "0",
+    "exact_small_factor_boundary_mass": "0",
+    "fraction_of_total_model_mass": "1505310601921/59326171875000000",
+    "arithmetic_fraction_certified": "0"
+  },
+  "finite_gates": {
+    "hard_window_Gram_determinant": "-1",
+    "local_completion_determinant": "-132273001/625000000",
+    "radial_count_counterexample": "weights i at +x and -i at -x: A_abs=0, contribution=-2 sin(tau*x)",
+    "Abel_test": "PASS",
+    "proper_power_first_mass_limit": "1/2",
+    "proper_power_coefficient_mass_orders": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "proper_power_high_moment_deletion_proved": false,
+    "proper_power_bounded_signed_gate_equivalence_proved": true,
+    "proper_power_Schatten6_norm_order": "O_R(L^(-1/3))",
+    "coercive_radius": "1240/371"
+  },
+  "coverage": {
+    "grid": "quarter-log intervals; natural cutoff intersects each box at 1-1/sqrt(L)",
+    "row_count": 9216,
+    "counts": {
+      "5:2:SHORT_PRODUCT_BOUND_CLOSED": 21,
+      "5:2:CENTRAL_SUPPORT_EMPTY": 378,
+      "5:2:UNCONTROLLED_OR_BOUNDARY_SPLIT_REQUIRED": 625,
+      "6:2:SHORT_PRODUCT_BOUND_CLOSED": 7,
+      "6:2:UNCONTROLLED_OR_BOUNDARY_SPLIT_REQUIRED": 1744,
+      "6:2:CENTRAL_SUPPORT_EMPTY": 2345,
+      "6:3:SHORT_PRODUCT_BOUND_CLOSED": 7,
+      "6:3:UNCONTROLLED_OR_BOUNDARY_SPLIT_REQUIRED": 3249,
+      "6:3:CENTRAL_SUPPORT_EMPTY": 840
+    },
+    "closed_arithmetic_model_C5_mass": "0",
+    "uncovered_polytope": "0<=alpha_i<=1-1/sqrt(L); sum_plus alpha=sum_minus alpha=gamma; gamma>=1",
+    "all_but_one_cell_closed": false
+  },
+  "continuation_replay": "WP84_RESTRICTED_SHIFTED_CONVOLUTION_REPLAY.json",
+  "restricted_shift_kernel": "K_T(n,h), not an h-only weight",
+  "H_optimized": false,
+  "remaining_open": [
+    "near aliases",
+    "long-product far and transition terms",
+    "supercritical central cells",
+    "cell-model identification"
+  ]
+}

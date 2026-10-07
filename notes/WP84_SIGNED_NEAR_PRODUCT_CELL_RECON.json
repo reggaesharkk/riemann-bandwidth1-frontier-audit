@@ -1,0 +1,867 @@
+{
+  "regressions": "PASS: direct R=1 lag replay and preserved diagnostic sign flip",
+  "evidence": "NUMERICAL RECONNAISSANCE ONLY; no rigorous arithmetic error or asymptotic theorem",
+  "sampling": "lexicographic first eight resolved tuples; all label multiplicities retained in counts",
+  "rows": [
+    {
+      "T": 100000,
+      "H_diagnostic_only": 1,
+      "R_band": 6000,
+      "L": 9.675048398560882,
+      "N": 709,
+      "candidate_section": [
+        24752,
+        129230
+      ],
+      "candidate_section_theorem_certified": false,
+      "a_phi_diagnostic": 1,
+      "high_prime_dyadic_range": [
+        256,
+        512
+      ],
+      "low_prime_dyadic_range": [
+        32,
+        64
+      ],
+      "prime_counts": [
+        43,
+        7
+      ],
+      "cells": [
+        {
+          "degree": 5,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        },
+        {
+          "degree": 6,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        }
+      ]
+    },
+    {
+      "T": 100000,
+      "H_diagnostic_only": 4,
+      "R_band": 6000,
+      "L": 9.675048398560882,
+      "N": 709,
+      "candidate_section": [
+        24752,
+        129230
+      ],
+      "candidate_section_theorem_certified": false,
+      "a_phi_diagnostic": 1,
+      "high_prime_dyadic_range": [
+        256,
+        512
+      ],
+      "low_prime_dyadic_range": [
+        32,
+        64
+      ],
+      "prime_counts": [
+        43,
+        7
+      ],
+      "cells": [
+        {
+          "degree": 5,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        },
+        {
+          "degree": 6,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        }
+      ]
+    },
+    {
+      "T": 1000000,
+      "H_diagnostic_only": 1,
+      "R_band": 6000,
+      "L": 11.97763349155493,
+      "N": 4997,
+      "candidate_section": [
+        275407,
+        1630891
+      ],
+      "candidate_section_theorem_certified": false,
+      "a_phi_diagnostic": 1,
+      "high_prime_dyadic_range": [
+        1024,
+        2048
+      ],
+      "low_prime_dyadic_range": [
+        64,
+        128
+      ],
+      "prime_counts": [
+        137,
+        13
+      ],
+      "cells": [
+        {
+          "degree": 5,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        },
+        {
+          "degree": 6,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        }
+      ]
+    },
+    {
+      "T": 1000000,
+      "H_diagnostic_only": 4,
+      "R_band": 6000,
+      "L": 11.97763349155493,
+      "N": 4997,
+      "candidate_section": [
+        275407,
+        1630891
+      ],
+      "candidate_section_theorem_certified": false,
+      "a_phi_diagnostic": 1,
+      "high_prime_dyadic_range": [
+        1024,
+        2048
+      ],
+      "low_prime_dyadic_range": [
+        64,
+        128
+      ],
+      "prime_counts": [
+        137,
+        13
+      ],
+      "cells": [
+        {
+          "degree": 5,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        },
+        {
+          "degree": 6,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 0,
+          "zero_lag_complete_cell_real": 0.0,
+          "full_R_sample_count": 0,
+          "full_R_sample_real_sum": 0.0,
+          "full_R_sample_is_complete_cell": true,
+          "samples": []
+        }
+      ]
+    },
+    {
+      "T": 10000000,
+      "H_diagnostic_only": 1,
+      "R_band": 6000,
+      "L": 14.280218584548974,
+      "N": 36362,
+      "candidate_section": [
+        3007167,
+        19720505
+      ],
+      "candidate_section_theorem_certified": false,
+      "a_phi_diagnostic": 1,
+      "high_prime_dyadic_range": [
+        4096,
+        8192
+      ],
+      "low_prime_dyadic_range": [
+        256,
+        512
+      ],
+      "prime_counts": [
+        464,
+        43
+      ],
+      "cells": [
+        {
+          "degree": 5,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 756,
+          "zero_lag_complete_cell_real": 6.9895820082357104e-09,
+          "full_R_sample_count": 8,
+          "full_R_sample_real_sum": 5.448998483876109e-10,
+          "full_R_sample_is_complete_cell": false,
+          "samples": [
+            {
+              "labels": [
+                4327,
+                263,
+                6491,
+                269,
+                397
+              ],
+              "A": 28086557,
+              "B": 28086559,
+              "T_lambda": -0.7120844070676089,
+              "Gamma_real": 0.18916586632364182,
+              "Gamma_imag": 1.5059914072893263e-17,
+              "signed_real_contribution": 6.814167069317484e-11
+            },
+            {
+              "labels": [
+                4327,
+                263,
+                6491,
+                397,
+                269
+              ],
+              "A": 28086557,
+              "B": 28086559,
+              "T_lambda": -0.7120844070676089,
+              "Gamma_real": 0.18916586639862923,
+              "Gamma_imag": 2.3385430756931556e-17,
+              "signed_real_contribution": 6.814167072018695e-11
+            },
+            {
+              "labels": [
+                4327,
+                269,
+                6491,
+                263,
+                397
+              ],
+              "A": 28086557,
+              "B": 28086559,
+              "T_lambda": -0.7120844070676089,
+              "Gamma_real": 0.19074546972671041,
+              "Gamma_imag": 4.254775993789412e-17,
+              "signed_real_contribution": 6.871067828957474e-11
+            },
+            {
+              "labels": [
+                4327,
+                269,
+                6491,
+                397,
+                263
+              ],
+              "A": 28086557,
+              "B": 28086559,
+              "T_lambda": -0.7120844070676089,
+              "Gamma_real": 0.19074546975299206,
+              "Gamma_imag": 3.905525077296542e-17,
+              "signed_real_contribution": 6.871067829904196e-11
+            },
+            {
+              "labels": [
+                4327,
+                397,
+                6491,
+                263,
+                269
+              ],
+              "A": 28086557,
+              "B": 28086559,
+              "T_lambda": -0.7120844070676089,
+              "Gamma_real": 0.21800171423087641,
+              "Gamma_imag": 2.703018520751533e-18,
+              "signed_real_contribution": 7.852897200942546e-11
+            },
+            {
+              "labels": [
+                4327,
+                397,
+                6491,
+                269,
+                263
+              ],
+              "A": 28086557,
+              "B": 28086559,
+              "T_lambda": -0.7120844070676089,
+              "Gamma_real": 0.21800171419924455,
+              "Gamma_imag": 1.1322621770246553e-17,
+              "signed_real_contribution": 7.852897199803097e-11
+            },
+            {
+              "labels": [
+                4373,
+                271,
+                5647,
+                293,
+                311
+              ],
+              "A": 24694331,
+              "B": 24694333,
+              "T_lambda": -0.8099024504894488,
+              "Gamma_real": 0.20027789770714527,
+              "Gamma_imag": 3.408814717841172e-18,
+              "signed_real_contribution": 5.706860317976773e-11
+            },
+            {
+              "labels": [
+                4373,
+                271,
+                5647,
+                311,
+                293
+              ],
+              "A": 24694331,
+              "B": 24694333,
+              "T_lambda": -0.8099024504894488,
+              "Gamma_real": 0.2002778977725624,
+              "Gamma_imag": 1.2719995356426154e-17,
+              "signed_real_contribution": 5.706860319840816e-11
+            }
+          ]
+        },
+        {
+          "degree": 6,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 504,
+          "zero_lag_complete_cell_real": 6.123703649868923e-10,
+          "full_R_sample_count": 8,
+          "full_R_sample_real_sum": 2.1051488978622054e-10,
+          "full_R_sample_is_complete_cell": false,
+          "samples": [
+            {
+              "labels": [
+                263,
+                307,
+                311,
+                313,
+                457,
+                389
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5710893835201717,
+              "Gamma_imag": -1.9182096792084066e-17,
+              "signed_real_contribution": 2.632478224920997e-11
+            },
+            {
+              "labels": [
+                263,
+                307,
+                311,
+                389,
+                457,
+                313
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.571090426600239,
+              "Gamma_imag": -4.5838652956057757e-17,
+              "signed_real_contribution": 2.632483033074753e-11
+            },
+            {
+              "labels": [
+                263,
+                313,
+                311,
+                307,
+                457,
+                389
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5701833314194514,
+              "Gamma_imag": -5.62472828120812e-17,
+              "signed_real_contribution": 2.6283017115859258e-11
+            },
+            {
+              "labels": [
+                263,
+                313,
+                311,
+                389,
+                457,
+                307
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5710904387558474,
+              "Gamma_imag": 8.095881971509641e-18,
+              "signed_real_contribution": 2.6324830891069173e-11
+            },
+            {
+              "labels": [
+                263,
+                389,
+                311,
+                307,
+                457,
+                313
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5701833752436096,
+              "Gamma_imag": -4.5865770804647926e-17,
+              "signed_real_contribution": 2.6283019135965832e-11
+            },
+            {
+              "labels": [
+                263,
+                389,
+                311,
+                313,
+                457,
+                307
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5710895426915783,
+              "Gamma_imag": -5.088001995905963e-17,
+              "signed_real_contribution": 2.6324789586332215e-11
+            },
+            {
+              "labels": [
+                263,
+                307,
+                457,
+                313,
+                311,
+                389
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5710895426869604,
+              "Gamma_imag": -1.4539212846607003e-17,
+              "signed_real_contribution": 2.6324789586119355e-11
+            },
+            {
+              "labels": [
+                263,
+                307,
+                457,
+                389,
+                311,
+                313
+              ],
+              "A": 37379401,
+              "B": 37379399,
+              "T_lambda": 0.535054067213492,
+              "Gamma_real": 0.5710904387525505,
+              "Gamma_imag": -1.1379381402180222e-17,
+              "signed_real_contribution": 2.6324830890917198e-11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "T": 10000000,
+      "H_diagnostic_only": 4,
+      "R_band": 6000,
+      "L": 14.280218584548974,
+      "N": 36362,
+      "candidate_section": [
+        3007167,
+        19720505
+      ],
+      "candidate_section_theorem_certified": false,
+      "a_phi_diagnostic": 1,
+      "high_prime_dyadic_range": [
+        4096,
+        8192
+      ],
+      "low_prime_dyadic_range": [
+        256,
+        512
+      ],
+      "prime_counts": [
+        464,
+        43
+      ],
+      "cells": [
+        {
+          "degree": 5,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 5868,
+          "zero_lag_complete_cell_real": -1.5451200801869324e-08,
+          "full_R_sample_count": 8,
+          "full_R_sample_real_sum": 7.338320240700635e-10,
+          "full_R_sample_is_complete_cell": false,
+          "samples": [
+            {
+              "labels": [
+                4099,
+                257,
+                5279,
+                269,
+                313
+              ],
+              "A": 21638621,
+              "B": 21638629,
+              "T_lambda": -3.6970925832857175,
+              "Gamma_real": 0.20581360755892583,
+              "Gamma_imag": 1.1751837586728661e-17,
+              "signed_real_contribution": 9.978396201879443e-11
+            },
+            {
+              "labels": [
+                4099,
+                257,
+                5279,
+                313,
+                269
+              ],
+              "A": 21638621,
+              "B": 21638629,
+              "T_lambda": -3.6970925832857175,
+              "Gamma_real": 0.20581360737201426,
+              "Gamma_imag": 7.582901866234045e-18,
+              "signed_real_contribution": 9.978396192817466e-11
+            },
+            {
+              "labels": [
+                4099,
+                269,
+                5279,
+                257,
+                313
+              ],
+              "A": 21638621,
+              "B": 21638629,
+              "T_lambda": -3.6970925832857175,
+              "Gamma_real": 0.20900928249680154,
+              "Gamma_imag": 4.6332506067238934e-18,
+              "signed_real_contribution": 1.0133331101669343e-10
+            },
+            {
+              "labels": [
+                4099,
+                269,
+                5279,
+                313,
+                257
+              ],
+              "A": 21638621,
+              "B": 21638629,
+              "T_lambda": -3.6970925832857175,
+              "Gamma_real": 0.20900928234201074,
+              "Gamma_imag": 7.538742641389521e-18,
+              "signed_real_contribution": 1.0133331094164669e-10
+            },
+            {
+              "labels": [
+                4099,
+                313,
+                5279,
+                257,
+                269
+              ],
+              "A": 21638621,
+              "B": 21638629,
+              "T_lambda": -3.6970925832857175,
+              "Gamma_real": 0.21961782402207575,
+              "Gamma_imag": -1.0001024026699375e-17,
+              "signed_real_contribution": 1.0647661673485247e-10
+            },
+            {
+              "labels": [
+                4099,
+                313,
+                5279,
+                269,
+                257
+              ],
+              "A": 21638621,
+              "B": 21638629,
+              "T_lambda": -3.6970925832857175,
+              "Gamma_real": 0.21961782404983402,
+              "Gamma_imag": -3.469042351725981e-17,
+              "signed_real_contribution": 1.0647661674831044e-10
+            },
+            {
+              "labels": [
+                4099,
+                269,
+                8053,
+                277,
+                443
+              ],
+              "A": 33009247,
+              "B": 33009259,
+              "T_lambda": -3.6353443078521446,
+              "Gamma_real": 0.17943635269092478,
+              "Gamma_imag": 2.7061975225400784e-17,
+              "signed_real_contribution": 5.932212238698574e-11
+            },
+            {
+              "labels": [
+                4099,
+                269,
+                8053,
+                443,
+                277
+              ],
+              "A": 33009247,
+              "B": 33009259,
+              "T_lambda": -3.6353443078521446,
+              "Gamma_real": 0.17943635241149528,
+              "Gamma_imag": 3.628316121335367e-17,
+              "signed_real_contribution": 5.932212229460563e-11
+            }
+          ]
+        },
+        {
+          "degree": 6,
+          "signs": [
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "distinct_nonexact_tuple_count": 2520,
+          "zero_lag_complete_cell_real": 1.0105113555836358e-10,
+          "full_R_sample_count": 8,
+          "full_R_sample_real_sum": 7.705969785195103e-11,
+          "full_R_sample_is_complete_cell": false,
+          "samples": [
+            {
+              "labels": [
+                257,
+                307,
+                367,
+                353,
+                509,
+                443
+              ],
+              "A": 48008371,
+              "B": 48008353,
+              "T_lambda": 3.749346832537259,
+              "Gamma_real": 0.5608201192031663,
+              "Gamma_imag": -9.16766315784028e-18,
+              "signed_real_contribution": 1.7848146066524202e-11
+            },
+            {
+              "labels": [
+                257,
+                307,
+                367,
+                443,
+                509,
+                353
+              ],
+              "A": 48008371,
+              "B": 48008353,
+              "T_lambda": 3.749346832537259,
+              "Gamma_real": 0.563543882346507,
+              "Gamma_imag": -7.315364782381051e-17,
+              "signed_real_contribution": 1.7934830050868473e-11
+            },
+            {
+              "labels": [
+                257,
+                353,
+                367,
+                307,
+                509,
+                443
+              ],
+              "A": 48008371,
+              "B": 48008353,
+              "T_lambda": 3.749346832537259,
+              "Gamma_real": 0.551043076577555,
+              "Gamma_imag": -3.894301274315226e-17,
+              "signed_real_contribution": 1.753699088698378e-11
+            },
+            {
+              "labels": [
+                257,
+                353,
+                367,
+                443,
+                509,
+                307
+              ],
+              "A": 48008371,
+              "B": 48008353,
+              "T_lambda": 3.749346832537259,
+              "Gamma_real": 0.5635438083327122,
+              "Gamma_imag": -7.677828786307767e-17,
+              "signed_real_contribution": 1.7934827695373412e-11
+            },
+            {
+              "labels": [
+                257,
+                443,
+                367,
+                307,
+                509,
+                353
+              ],
+              "A": 48008371,
+              "B": 48008353,
+              "T_lambda": 3.749346832537259,
+              "Gamma_real": 0.5510430980693112,
+              "Gamma_imag": -3.505812805746825e-19,
+              "signed_real_contribution": 1.7536991570960678e-11
+            },
+            {
+              "labels": [
+                257,
+                443,
+                367,
+                353,
+                509,
+                307
+              ],
+              "A": 48008371,
+              "B": 48008353,
+              "T_lambda": 3.749346832537259,
+              "Gamma_real": 0.5608201255505767,
+              "Gamma_imag": -3.0177589644950526e-17,
+              "signed_real_contribution": 1.784814626853106e-11
+            },
+            {
+              "labels": [
+                257,
+                271,
+                383,
+                317,
+                439,
+                503
+              ],
+              "A": 43211209,
+              "B": 43211221,
+              "T_lambda": -2.7770568358237733,
+              "Gamma_real": 0.5606597889259671,
+              "Gamma_imag": -1.0228293754564124e-16,
+              "signed_real_contribution": -1.4741286004981816e-11
+            },
+            {
+              "labels": [
+                257,
+                271,
+                383,
+                503,
+                439,
+                317
+              ],
+              "A": 43211209,
+              "B": 43211221,
+              "T_lambda": -2.7770568358237733,
+              "Gamma_real": 0.5643742230694715,
+              "Gamma_imag": 3.2065531373796476e-18,
+              "signed_real_contribution": -1.483894868230876e-11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

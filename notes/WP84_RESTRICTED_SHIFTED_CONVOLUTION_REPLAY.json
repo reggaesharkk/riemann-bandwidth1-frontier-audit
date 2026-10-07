@@ -1,0 +1,17 @@
+{
+  "regressions": "PASS",
+  "proper_power_status": "CLOSED bounded signed-gate equivalence",
+  "HS_counterexample": "dimension m^4, eigenvalue m: HS^2=m^-2, sixth mass=m^2",
+  "coefficient_L2_counterexample": "q coefficients 1/q: L2^2=1/q, coherent sample=1",
+  "restricted_shift_grouping": "PASS including gcd(n,h)=1",
+  "kernel_h_only_factorization": false,
+  "balanced_neighborhood_delta": "1/100",
+  "balanced_neighborhood_mass_polynomial": "-d**4*(526*d**2 - 69)/180",
+  "balanced_neighborhood_mass": "344737/90000000000000",
+  "balanced_neighborhood_fraction_total": "344737/2500000000000",
+  "point_mass": "0",
+  "fixed_dyadic_cell_limiting_model_mass": "0",
+  "BBMZ_first_average_threshold": "Q >= N^(1/6+epsilon)",
+  "BBMZ_second_average_threshold": "Q >= N^(1/3+epsilon)",
+  "arithmetic_theorem_proved": false
+}
