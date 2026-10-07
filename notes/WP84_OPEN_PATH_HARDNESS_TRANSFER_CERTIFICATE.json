@@ -1,0 +1,198 @@
+{
+  "decision": "E",
+  "parent": "cb3c859958ce9ae75d976ec911193465a39a03be",
+  "same_carrier_states": {
+    "M": [
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        5,
+        -1,
+        1
+      ],
+      [
+        379,
+        1,
+        -1
+      ],
+      [
+        401,
+        1,
+        0
+      ],
+      [
+        47,
+        -1,
+        -1
+      ],
+      [
+        53,
+        -1,
+        0
+      ],
+      [
+        61,
+        -1,
+        0
+      ]
+    ],
+    "non_M": [
+      [
+        5,
+        1,
+        -1
+      ],
+      [
+        5,
+        -1,
+        -1
+      ],
+      [
+        379,
+        1,
+        1
+      ],
+      [
+        401,
+        1,
+        0
+      ],
+      [
+        47,
+        -1,
+        1
+      ],
+      [
+        53,
+        -1,
+        0
+      ],
+      [
+        61,
+        -1,
+        0
+      ]
+    ],
+    "root": 5,
+    "section": [
+      0,
+      30
+    ]
+  },
+  "kernel_dual_certificate": {
+    "aggregation": [
+      1,
+      1
+    ],
+    "mask": [
+      1,
+      0
+    ],
+    "vector": [
+      1,
+      -1
+    ],
+    "aggregated_mass": 0,
+    "masked_mass": 1,
+    "scope": "free resolved amplitude space; not a realizable arithmetic cancellation asserted"
+  },
+  "population_ledger": [
+    {
+      "lower_order": 5,
+      "R": 0,
+      "closed_lags": 1,
+      "closed_delete_lags_per_position": 1,
+      "open_delete_lags_per_position": 0,
+      "leaf_arrangements": 5040,
+      "open_resolved_channels_before_root_mask": 0,
+      "pair_multiplicity": 1,
+      "raw_cumulant_coefficient": 1,
+      "coefficient_phase": "complex; real sign cannot be assigned before path/carrier summation"
+    },
+    {
+      "lower_order": 5,
+      "R": 1,
+      "closed_lags": 393,
+      "closed_delete_lags_per_position": 153,
+      "open_delete_lags_per_position": 240,
+      "leaf_arrangements": 5040,
+      "open_resolved_channels_before_root_mask": 1209600,
+      "pair_multiplicity": 1,
+      "raw_cumulant_coefficient": 1,
+      "coefficient_phase": "complex; real sign cannot be assigned before path/carrier summation"
+    },
+    {
+      "lower_order": 5,
+      "R": 2,
+      "closed_lags": 8135,
+      "closed_delete_lags_per_position": 1905,
+      "open_delete_lags_per_position": 6230,
+      "leaf_arrangements": 5040,
+      "open_resolved_channels_before_root_mask": 31399200,
+      "pair_multiplicity": 1,
+      "raw_cumulant_coefficient": 1,
+      "coefficient_phase": "complex; real sign cannot be assigned before path/carrier summation"
+    },
+    {
+      "lower_order": 6,
+      "R": 0,
+      "closed_lags": 1,
+      "closed_delete_lags_per_position": 1,
+      "open_delete_lags_per_position": 0,
+      "leaf_arrangements": 40320,
+      "open_resolved_channels_before_root_mask": 0,
+      "pair_multiplicity": 1,
+      "raw_cumulant_coefficient": 1,
+      "coefficient_phase": "complex; real sign cannot be assigned before path/carrier summation"
+    },
+    {
+      "lower_order": 6,
+      "R": 1,
+      "closed_lags": 1107,
+      "closed_delete_lags_per_position": 423,
+      "open_delete_lags_per_position": 684,
+      "leaf_arrangements": 40320,
+      "open_resolved_channels_before_root_mask": 27578880,
+      "pair_multiplicity": 1,
+      "raw_cumulant_coefficient": 1,
+      "coefficient_phase": "complex; real sign cannot be assigned before path/carrier summation"
+    },
+    {
+      "lower_order": 6,
+      "R": 2,
+      "closed_lags": 38165,
+      "closed_delete_lags_per_position": 8755,
+      "open_delete_lags_per_position": 29410,
+      "leaf_arrangements": 40320,
+      "open_resolved_channels_before_root_mask": 1185811200,
+      "pair_multiplicity": 1,
+      "raw_cumulant_coefficient": 1,
+      "coefficient_phase": "complex; real sign cannot be assigned before path/carrier summation"
+    }
+  ],
+  "pair_limit_lower": "343/8921088",
+  "filter_multiplier_lower": "2401/14157",
+  "eventual_resolved_TV_inverse_bound": "252591685632/823543",
+  "projection_on_resolved_TV": "bounded",
+  "projection_on_aggregated_carrier_primitive": "does not factor on free resolved space",
+  "actual_prime_weight_restricted_bound": "UNCERTIFIED",
+  "R1_open_diagonal": [
+    "0",
+    "0",
+    "373/36",
+    "-1293/4",
+    "36130/9"
+  ],
+  "R6000_diagonal": "same exact fixed-R covariance formula; not evaluated",
+  "paid_budget": "UNCERTIFIED",
+  "mu7_mu8": "NOT COMPUTED",
+  "strict_gt79": "OPEN",
+  "source_blobs": {
+    "src/wp84_repaired_open_signed_arithmetic.py": "b4653cd4e825d4008bdfeddf5e4b67bbb8050d7c",
+    "src/wp84_repaired_open_diagonal.py": "7dff747592b1d5305cd438ccc6cbff2b02f42997",
+    "notes/WP84_REPAIRED_OPEN_PATH_SIGNED_ARITHMETIC.md": "613e22042a3cefa5acb82baf3e089d232b5132e0"
+  }
+}
