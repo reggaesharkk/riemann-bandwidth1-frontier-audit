@@ -223,4 +223,3 @@ Final decision D. No strict >79 theorem. Previous closed gates are not reopened.
     python src/wp84_mehler_weak_dual_certificate.py notes/WP84_REFERENCE_MEHLER_MEASUREMENT_CERTIFICATE.json
 
 The certificate supplies the standalone verifier's native witnesses field as well as the frozen provenance copy. The exact output contains the complete frozen witnesses, benchmark ledgers, baseline tests, rational derivative caps, conservative intervals and robust margin.
-
