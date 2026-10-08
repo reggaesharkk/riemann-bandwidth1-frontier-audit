@@ -1,0 +1,112 @@
+[
+  {
+    "ids": [
+      41,
+      45,
+      58,
+      67
+    ],
+    "basis": [
+      "F41",
+      "F58-F41",
+      "F67-F41",
+      "F45-F41"
+    ],
+    "orders": [
+      5,
+      9,
+      9,
+      10
+    ],
+    "ratio": "(a+b)/(2*b)",
+    "legal_cells": "p large prime; q in [p^k,2*p^k], k=6/5 or3/2; negative primes fixed at2 (and3); alias2; X0=p*sqrt(q/(r*s)) or p*sqrt(q)/r",
+    "ratio_limits": [
+      "11/12",
+      "5/6"
+    ],
+    "normalized_minor": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "star",
+        "1",
+        "r_6/5",
+        "0"
+      ],
+      [
+        "star",
+        "1",
+        "r_3/2",
+        "0"
+      ],
+      [
+        "star",
+        "star",
+        "star",
+        "1"
+      ]
+    ],
+    "determinant": "r_3/2-r_6/5 -> -1/12",
+    "rank": 4,
+    "universal_symbolic_check": true
+  },
+  {
+    "ids": [
+      40,
+      44,
+      57,
+      66
+    ],
+    "basis": [
+      "F40",
+      "F57-F40",
+      "F66-F40",
+      "F44-F40"
+    ],
+    "orders": [
+      5,
+      9,
+      9,
+      10
+    ],
+    "ratio": "(a+b)/(2*b)",
+    "legal_cells": "p large prime; q in [p^k,2*p^k], k=6/5 or3/2; negative primes fixed at2 (and3); alias2; X0=p*sqrt(q/(r*s)) or p*sqrt(q)/r",
+    "ratio_limits": [
+      "11/12",
+      "5/6"
+    ],
+    "normalized_minor": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "star",
+        "1",
+        "r_6/5",
+        "0"
+      ],
+      [
+        "star",
+        "1",
+        "r_3/2",
+        "0"
+      ],
+      [
+        "star",
+        "star",
+        "star",
+        "1"
+      ]
+    ],
+    "determinant": "r_3/2-r_6/5 -> -1/12",
+    "rank": 4,
+    "universal_symbolic_check": true
+  }
+]

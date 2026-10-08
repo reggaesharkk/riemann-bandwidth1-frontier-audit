@@ -1,0 +1,33 @@
+{
+  "log_error_bound": "1/100",
+  "condition": "p>=2^100; q,r in [p^k,2p^k]; existence for sufficiently large p by PNT",
+  "block18_ratio_intervals": [
+    [
+      "-20401/40000",
+      "-1990000/4080501"
+    ],
+    [
+      "-60601/180000",
+      "-5990000/18210801"
+    ]
+  ],
+  "block18_normalized_determinant_interval": [
+    "1369352579/9067780000",
+    "131918551201/728432040000"
+  ],
+  "blocks40_41_ratio_intervals": [
+    [
+      "221/242",
+      "11/12"
+    ],
+    [
+      "251/302",
+      "5/6"
+    ]
+  ],
+  "blocks40_41_normalized_determinant_interval": [
+    "-155/1812",
+    "-29/363"
+  ],
+  "exact_nonzero": true
+}

@@ -1,0 +1,18 @@
+{
+  "independent_scalar_path_replay": true,
+  "blocks": 7,
+  "corruptions_rejected": [
+    "jet coefficient",
+    "exact minor entry",
+    "force determinant zero",
+    "repeated-prime location",
+    "delete singleton assignment",
+    "displacement"
+  ],
+  "finite_model_kernel_vectors_broken": 32,
+  "actual_analytic_bounds": [
+    38,
+    72
+  ],
+  "formal_minors_do_not_promote_four_larger_blocks": true
+}
