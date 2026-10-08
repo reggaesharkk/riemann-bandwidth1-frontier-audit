@@ -1,0 +1,694 @@
+{
+  "input_head": "8a36b35d103850c4a8b37e2e1334364483b0b500",
+  "R": 6000,
+  "curvature": {
+    "bound": "137721/5000",
+    "a": "221/200",
+    "P": [
+      "1",
+      "-594893/185500",
+      "1423/500",
+      "-371/500"
+    ],
+    "numerator": [
+      "129293839982466986451788739074774249/1761804800000000000000000000000000",
+      "-21980613616138033032088451854731/339200000000000000000000000000",
+      "-75418179843376550113055579568337811/176180480000000000000000000000000",
+      "174914247696577104008706828828257/237440000000000000000000000000",
+      "-81381404947808120652427243470316757/352360960000000000000000000000000",
+      "-11106048478229611415604518501/59360000000000000000000000",
+      "37895567625550534233506991/320000000000000000000000",
+      "-61508119833541237493/4000000000000000000"
+    ],
+    "denominator": [
+      "277921878692682183940201/102400000000000000000000",
+      "0",
+      "5690339646868044961/512000000000000000",
+      "0",
+      "116507435287321/6400000000000",
+      "0",
+      "2385443281/160000000",
+      "0",
+      "48841/8000",
+      "0",
+      "1"
+    ],
+    "sturm_gates": [
+      [
+        [
+          "261001408504194804914153299615483274",
+          "-114167307122220943568667418933472814",
+          "-214849808827787660945610522078378110",
+          "1297863717908602111744604669905666940",
+          "476501569853171415631736182648416215",
+          "-329627518833854866815142109109680000",
+          "932136901798193711153365429929240000",
+          "-27091325190427038303276841600000000",
+          "296266476467008320000000000000000000",
+          "0",
+          "48527503772160000000000000000000000"
+        ],
+        [
+          "-57083653561110471784333709466736407",
+          "-214849808827787660945610522078378110",
+          "1946795576862903167616907004858500410",
+          "953003139706342831263472365296832430",
+          "-824068797084637167037855272774200000",
+          "2796410705394581133460096289787720000",
+          "-94819638166494634061468945600000000",
+          "1185065905868033280000000000000000000",
+          "0",
+          "242637518860800000000000000000000000"
+        ],
+        [
+          "-26719498833377163132834432097570",
+          "10518885404680376037734759427543",
+          "17595856663687284121587233846840",
+          "-93006347386009856290946465974690",
+          "-29268538923435520298421583258845",
+          "16872480028759385906059566200000",
+          "-38170262762768727550761263280000",
+          "832026121202279999486400000000",
+          "-6065937971520000000000000000000"
+        ],
+        [
+          "19598877327965208036155675745711422810",
+          "117961704180764402747660418741988941381",
+          "-237102780088535107840621702107813781720",
+          "-110325086896890083245028461754633984230",
+          "452721125696566954338571924714591817385",
+          "-165334636202812840724093436162664600000",
+          "-35665773898569272116407953992799760000",
+          "32444507412875826487063146388800000000"
+        ],
+        [
+          "90407672811979509211190535050858594580081976533119769741863584418791",
+          "-137994181515541504581540583057564731666967195108802668894731457369570",
+          "11693850157584309041483131636797574297554831385017404023261760829670",
+          "612675205308271590047693697561828171562179096986369005631383532383410",
+          "-122942924960735103002846053363113245193270294611677203133855935400000",
+          "-279767458507441684194904738861767466756758645049027672598579420360000",
+          "294280411865099637019716999357185773000031243891351478159492800000000"
+        ],
+        [
+          "-17186704670865776202398051088601285572548373238402640346375937284888838131172966729448121989811147453833270503",
+          "-86205088118761280545027434754722140483795280280428555870794141332966085802704037399058513036345556828747036190",
+          "180751140601462846343734511886317354766388683651985633294711870371188153069558641211711975969452572400747572890",
+          "82816025330856880553182846079852945041407083509119482918074332061161312248219616158550435272560998303232443470",
+          "-312392060802456887304884192735107653836928610271125001466999114770520756356056836680870822360252785060551600000",
+          "127484261830618244747222800280600839461119949365004472272398218158352841479292051360225931298662961078855880000"
+        ],
+        [
+          "-139164036248956290189330940709546812444707999808795526676414159645835427124805720930397429553446473220463603530699624107354865803465402084969012544220747765692",
+          "-185777055577442881146694770344823434836997795932956857426235916046269513157794543316885167253882058040511344585157899466201078473675234964415189791736087230705",
+          "385322554793822430164992374265621519023014749501759099472545801727834692281512834413608120286395097593706052998452088107418589767378267256070648545304157298000",
+          "84730762694520598347812219197261947090521977397171099214820148703696362443993477437035681026228319681479625807152449686770717265788122867454746640773582761170",
+          "-712385187585141084716980760094463421907329286288222793510198840024039243342387179097047943000760453600720412746318626913573045308124415991785834992839647013135"
+        ],
+        [
+          "-81690936064722854125488245785250282420170050840665150239975003613597793510150799956525574930323693335555290539029780429598901616434456397661189742406255118798462005101070141201740843859592681440965916668243362043657",
+          "67142694013075486321571954313387544777719704060483622195931550863703761567216023240496113578629523526252285163872637935721031350363509925614461174299489051137701090523596155173056467957643625359625591390822396515390",
+          "26505484526391274564618064191018701328899325455073420830662183385944589175046923622840004335777595848067845449631171857780534319597128388514400930627182794368621684699595039720190649341771422421020973911715273267910",
+          "-232658893105654449571740076131306060228821693349028110797540095506142526628314953066522374654668641876694419596139735063311265176591083657978045925558118689630191961463780570798753554425951972353644322750481032105070"
+        ],
+        [
+          "3139314812734020314407618029225494368695766714165077210368022996496768491614922746171853881691333757701236960842935175857765153554423888220307819488818431009187942960517129702986910796281417040470016971440289853883545148264149002448455716261927022769717577482017",
+          "-1461822934245149703043131019635205092093882967363784787814605748304715451863278411261801473862722880746385962386890633421217460364478253552818796461909846629085533515009225245139783545131474118974041353684971376013735230905547960012073706880301788210481428997677",
+          "-4027437006294386570008102548412702972264975929172153399801700424367279497597911489685893642205662619742672402297802879936615169393501271051718142763093470149894305419498014549326850714266482796341179022189669303928245730575533504494486435881500810675105709451000"
+        ],
+        [
+          "-294170970803419824637988606610311279847991365093158595393364504736509583917388124358839805434001060976599824378162434210520453621199397573343477226003488714815716860129849021320073553700053213361798601735670347031375729272683872619900326522666961959792735732958531129121999317665081124142181048498332407",
+          "9477937620034200809162597164100825443200894251158215083530025814303430337414636512439367533411566720999610259381220257133376628874092480959401047684131654116886000652359399666755765310316763275214201985154656217202316642328931076494443619059478488771256596373511745268996694612624231540600136210770101267"
+        ],
+        [
+          "-1"
+        ]
+      ],
+      [
+        [
+          "2413728539260832010575821465934776",
+          "114167307122220943568667418933472814",
+          "1293513788039743341315501069288378110",
+          "-1297863717908602111744604669905666940",
+          "1290315619331252622156008617351583785",
+          "329627518833854866815142109109680000",
+          "514858195914321624558634570070760000",
+          "27091325190427038303276841600000000",
+          "296266476467008320000000000000000000",
+          "0",
+          "48527503772160000000000000000000000"
+        ],
+        [
+          "57083653561110471784333709466736407",
+          "1293513788039743341315501069288378110",
+          "-1946795576862903167616907004858500410",
+          "2580631238662505244312017234703167570",
+          "824068797084637167037855272774200000",
+          "1544574587742964873675903710212280000",
+          "94819638166494634061468945600000000",
+          "1185065905868033280000000000000000000",
+          "0",
+          "242637518860800000000000000000000000"
+        ],
+        [
+          "-247100646921728876412831582680",
+          "-10518885404680376037734759427543",
+          "-105936716122908486010974473846840",
+          "93006347386009856290946465974690",
+          "-79256093405003129879978416741155",
+          "-16872480028759385906059566200000",
+          "-21083032530632936449238736720000",
+          "-832026121202279999486400000000",
+          "-6065937971520000000000000000000"
+        ],
+        [
+          "-5623224736195231262860250921084000440",
+          "-129068237637462652673119268239711058619",
+          "171885858339589243127228002079966218280",
+          "208527326885966766167524942997466015770",
+          "-479111205296684387167791968485408182615",
+          "147519558204766782965005946237335400000",
+          "44686686616711416720008046007200240000",
+          "-33323015505365193061000853611200000000"
+        ],
+        [
+          "-5205557939151761880123513841345215021829179979807030127795775581209",
+          "-103759502773543496292283786521870987660120278150449760052176367369570",
+          "529163411911806149755864130428681681210905728314821027097017360829670",
+          "-23053983834310229178594402769455503562949895201070086679778867616590",
+          "-48124069902291585786170009615967801087669121683815257626747335400000",
+          "-126018537087235592626573194136533055689581752075136159904979420360000",
+          "246549437482943151597737596022296152817859327850251400645892800000000"
+        ],
+        [
+          "2733842549602993332934771964405047888461159850434625421518061533954500480271769166402008119723054516233290297",
+          "64087466972152591728881559992791994263406818274891984331327022407598578686985040657378650518530905981150747810",
+          "-53440657748303754470794419650348056124772375097394238592695258646821710399008200162875263616099745171967331110",
+          "-153328740098106197954382477906907865911836281986311011896391052911182515663313567507934082408480483399441548530",
+          "258679885909501964513298102039297757785551200581250723396249621319694222211244526898602237037419643086368400000",
+          "-84168961675504454364715835937618891396217628566073537084657059294966506598642642332491929408565227132312120000"
+        ],
+        [
+          "-8827961348585477015290345560142931604906256404821903634416471595555598333590567674438773439742153119770120498745897107938740840433517717290523621033833115142",
+          "-222097364327267785498521596205869476017671935768527012548328296703059699452716421107319468997935431962789447126321511029899197204983356567482301534496503442705",
+          "-182064003903267262602022614818307986772989743535650412571279566869645749432494763087132320390562901367378296837756330600195623827943018993031160861955735502000",
+          "766974046327704185215977139888820303254036264844348556066958154106695015827406190372454717436419962180858220672630401856197511057672924701369085120756060049170",
+          "-832603597307615686549213281302926907790081562149013306278889050880702739423672471494213216923459066104039321023639673884558335540250975461349984128148370977135"
+        ],
+        [
+          "-5092634973731276005940645451041768199462069022241456865988110412902823690097167441893525552161407670970889625115826906605901515005659277730372846359153187441490081584937226861463723261121942626778811699431695228457",
+          "-104329769359572009759058702115155597456963265285011001341484251935214290897004040286347408255528340966469570235718806050958382818599611206871508068876559443245204606236505898069521987072725356745038765438727753188610",
+          "442133239403805718134634270405711181437190838542592549564371027838856627955548397679249293123767639163422931822592704105953565470973702659437940187151266936562375060121070657181474052226757055214358335174294361291910",
+          "-200046160980463794747116676429776012095692773821840270521614875548005527664442832468170732462551977140853055970572107056001803084004187429387555287179466782906616813588787153252682228164656475500734840013226096353070"
+        ],
+        [
+          "-223765762909721144958599879276280214005064964484193967024914262715946300913887023690598581512628429668069005880656861379330536140710576977939295807723604258425439340928992871936222778819799844517914973914928001218324570152106436241704648675975047401968341587883",
+          "-4341570670943726321293494507393064575476947262134309783317829220018650163268838992198702241382304098037736272151587890282580168985357208175922015032341614353549675738022285672707401057318923232538017784408929000625291575917191451194275518368986168790263803510477",
+          "25649531178844638481262531320541559658742847571174704363076066590426471835678180882952877177862159582229735477301951362236993219859220240202257639769826971575240230451211755774592707898055035692075484900167535043992634016462689789129027401621455017272614739349000"
+        ],
+        [
+          "5152933895597548616525033167946115434029809331919426281609184839382117194512259231387101581483463632870924085914155452645263385902163504711049394560162570034901492574201364692266826961519509410117569842532364062032524990527403465449799124380938048807837166018577777802860687701917283722303616015524070493",
+          "124436554031891733761643503742496291455528927766594885442473259132366083461097849497861285433008355925676417748644648568122803020727730323016746945029412354008365038711686120467641968052996098498587933907757113381895353794184501748724726246716526264327521408681468617327249120009348239036577662168726690067"
+        ],
+        [
+          "-1"
+        ]
+      ]
+    ]
+  },
+  "budget": {
+    "band": "128952763/92407500000",
+    "variance": "26060119/12734908593750",
+    "Jstar": "64788151489666079/572357731837500000",
+    "reference_margin": "52897896569489/572357731837500000",
+    "curvature_error_allowance": "52897896569489/28997517675000",
+    "third_moment_adverse_allowance": "52897896569489/271300292460974700",
+    "third_coefficient": "21981971/46375000",
+    "sixth_ceiling_slack": "1/378",
+    "required_saving_lower": "43770221409581023769108432686241/21264421581420459982848000000000000"
+  },
+  "foundation_status": {
+    "sampling_cell": "proved deterministic; continuous mean square has stated separation hypothesis",
+    "C_ab_replacement": "proved bounded-gate implication; not unconditional sixth control",
+    "Pair6_lower": "proved via exact covariance, Wick and Schatten pinching",
+    "curvature": "proved by independent rational Sturm certificate",
+    "functional_band": "proved for Loewner matrices; source identification conditional",
+    "same_section_centered_mu3": "not proved by cited source; keep original third coefficient",
+    "zero_side": "counting implication proved; analytic block/tail/normalization transfer not newly proved",
+    "GUE_dictionary": "not established at finite R; STOP, no model moment computation"
+  },
+  "finite_R_multiplicativity": false,
+  "GUE_fifth_sixth_computed": false,
+  "strict_gt79_proved": false,
+  "third_claim_search_inventory": [
+    {
+      "path": "notes/STAGE_A_711640_PROOF_LEDGER.md",
+      "line": 98,
+      "text": "The unavailable third-moment archive memo is also no longer needed for its two"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 11,
+      "text": "(\\mu_1,\\mu_2,\\mu_3,\\mu_4)"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 24,
+      "text": "\\mu_3=r,\\qquad"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 98,
+      "text": "### If the third moment is exact"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 118,
+      "text": "If \\(q\\le13/4\\), the third moment only needs to be slightly below 2."
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 129,
+      "text": "\\boxed{\\mu_3\\ge1.995,\\qquad \\mu_4\\le3.25}"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 136,
+      "text": "The exact budget lets us trade a weaker third-moment estimate against a weaker"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 150,
+      "text": "\\liminf \\mu_3(T)\\ge 2-\\delta_3,"
+    },
+    {
+      "path": "notes/WP70_1B_ROBUST_MOMENT_REGION.md",
+      "line": 176,
+      "text": "> prove \\(\\mu_3\\ge1.995-o(1)\\) and \\(\\mu_4\\le3.25+o(1)\\),"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 27,
+      "text": "\\mu_3=2,\\quad"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 60,
+      "text": "\\mu_3\\ge2-\\delta_3,"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 65,
+      "text": "Expanding \\(P^2\\) shows that the coefficient of \\(\\mu_3\\) is \\(-7/3\\) and"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 95,
+      "text": "\\mu_3\\ge1.996,\\qquad"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 130,
+      "text": "Therefore we do **not** need to prove the exact sine-process third moment to"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 133,
+      "text": "We can lose four thousandths in the third moment and still cross the line,"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 142,
+      "text": "\\liminf \\mu_3(T)\\ge1.996,"
+    },
+    {
+      "path": "notes/WP70_1C_EXPLICIT_POLYNOMIAL_WITNESS.md",
+      "line": 154,
+      "text": "> separate lower estimate keeps \\(\\mu_3\\ge1.996-o(1)\\)?"
+    },
+    {
+      "path": "notes/WP71_JOINT_MAJOR_DENOMINATOR.md",
+      "line": 32,
+      "text": "For the third bound put g=gcd(b1,b2). Prime by prime,"
+    },
+    {
+      "path": "notes/WP71_M3_ARCHIVE_RECONSTRUCTION.md",
+      "line": 11,
+      "text": "\\mu_3\\to2"
+    },
+    {
+      "path": "notes/WP71_M3_ARCHIVE_RECONSTRUCTION.md",
+      "line": 98,
+      "text": "After division by the third-moment normalization"
+    },
+    {
+      "path": "notes/WP71_M3_ARCHIVE_RECONSTRUCTION.md",
+      "line": 273,
+      "text": "\\boxed{\\mu_3\\to2}."
+    },
+    {
+      "path": "notes/WP71_UNIFORM_GAMMA_TAIL_THEOREM.md",
+      "line": 299,
+      "text": "4. the third-moment input used by the degree-two consumer."
+    },
+    {
+      "path": "notes/WP83_RS_BARRIER_MATCH.md",
+      "line": 46,
+      "text": "For lambda in (1/2,1), this permits at most k=3; C26 explicitly remarks that the odd third moment does not improve the positive-index bound."
+    },
+    {
+      "path": "notes/WP84_CENTERED_M4_SCALAR_GATE.md",
+      "line": 34,
+      "text": "    tau(P_R^3)=o(1)."
+    },
+    {
+      "path": "notes/WP84_CENTERED_M4_SCALAR_GATE.md",
+      "line": 42,
+      "text": "    mu3=1+3v_R+o(1),"
+    },
+    {
+      "path": "notes/WP84_DIRECT_SIGNED_RESTRICTED_CORRELATION_ATTACK.md",
+      "line": 107,
+      "text": "All moments use the SAME section. The inherited lower inputs are mu1,mu3=o(1),"
+    },
+    {
+      "path": "notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md",
+      "line": 72,
+      "text": "        +81188760 mu_3^c"
+    },
+    {
+      "path": "notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md",
+      "line": 98,
+      "text": "    mu_3^c=0,"
+    },
+    {
+      "path": "notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md",
+      "line": 171,
+      "text": "    mu_3^c=o(1)."
+    },
+    {
+      "path": "notes/WP84_FIXED_BAND_CHRISTOFFEL_CENTERED_LEDGER.md",
+      "line": 269,
+      "text": "together with the already-developed controls on mu2, mu3 and the quantitative"
+    },
+    {
+      "path": "notes/WP84_FIXED_BAND_LOWER_MOMENT_COLLAPSE.md",
+      "line": 14,
+      "text": "The fixed-band degree-three sign-balance / unique-factorization gate removes the P_R^3 term, equivalently preserving the local identity O3(0,+u,-u)=O2(+u,-u). Hence"
+    },
+    {
+      "path": "notes/WP84_FIXED_BAND_LOWER_MOMENT_COLLAPSE.md",
+      "line": 17,
+      "text": "    mu3(H_R)=1+3v_R+o(1)."
+    },
+    {
+      "path": "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md",
+      "line": 55,
+      "text": "| Lower centered gates | center at 1, full prime-pair variance near 1/3, aggregate third moment removal | Center at 1 is lost when L/log T does not tend to 1; the original aggregate third gate is not a new high-product theorem |"
+    },
+    {
+      "path": "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md",
+      "line": 214,
+      "text": "close at that long cutoff; previously claimed aggregate third-moment gates"
+    },
+    {
+      "path": "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md",
+      "line": 216,
+      "text": "all degrees through six, including centered third PRIME moment, are covered."
+    },
+    {
+      "path": "notes/WP84_JOINT_GAUSSIAN_MEHLER_MASTER_LAW.md",
+      "line": 64,
+      "text": "The extension of Bernoulli invariance to the COMPILED observable is direct: condition on its Mehler noises, replace the shared centered scalar coefficient of each B_p, and match its first two moments. The uniform third directional bound from WP84_COMPILED_MEHLER_PRIME_LINDEBERG yields error at most"
+    },
+    {
+      "path": "notes/WP84_M4_FREE_ROBUST_CUBIC_R6000.md",
+      "line": 95,
+      "text": "    mu3^c(H_R)=o(1),"
+    },
+    {
+      "path": "notes/WP84_M4_FREE_ROBUST_CUBIC_R6000.md",
+      "line": 301,
+      "text": "    mu3^c=o(1)."
+    },
+    {
+      "path": "notes/WP84_M4_FREE_ROBUST_CUBIC_R6000.md",
+      "line": 354,
+      "text": "mu1^c=o(1), mu3^c=o(1), mu2^c>=1/3-2/(pi^2 R)+o(1), and"
+    },
+    {
+      "path": "notes/WP84_MATCHED_QUARTIC_MAJORANT.md",
+      "line": 117,
+      "text": "    mu3=2,"
+    },
+    {
+      "path": "notes/WP84_MATCHED_QUARTIC_MAJORANT.md",
+      "line": 203,
+      "text": "    mu3 >= 2-delta3,"
+    },
+    {
+      "path": "notes/WP84_MATCHED_QUARTIC_MAJORANT.md",
+      "line": 315,
+      "text": "- the mu3 reconstruction is already on the branch;"
+    },
+    {
+      "path": "notes/WP84_MATCHED_QUARTIC_MAJORANT.md",
+      "line": 352,
+      "text": "    mu3(H_R) >= 2-o(1),"
+    },
+    {
+      "path": "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md",
+      "line": 71,
+      "text": "    mu1^c=o(1), mu3^c=o(1),"
+    },
+    {
+      "path": "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md",
+      "line": 76,
+      "text": "source interface. In particular a scalar third-moment gate is not a tensor"
+    },
+    {
+      "path": "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md",
+      "line": 158,
+      "text": "    mu2=1/3, mu3=0, mu4=1/4, mu5=1/36,"
+    },
+    {
+      "path": "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md",
+      "line": 322,
+      "text": "| 5: {3,2} | 10 | mixed connected triple and pair; not erased by scalar mu3=o(1) |"
+    },
+    {
+      "path": "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md",
+      "line": 446,
+      "text": "5. selected-section first/third moment gates used by the centered quartic."
+    },
+    {
+      "path": "notes/WP84_R400_FILTERED_SHARP_REPAIR.md",
+      "line": 108,
+      "text": "| Same \u00a7\u00a78\u20139 and FIRST_RECORD_ASSEMBLY \u00a7\u00a72\u20135 | Full centered quartic trace | w400<=0.266329, v400<=1/3, first/third moments o(1) | Fourth 593/2000; variance 213/1000; see complete polynomial below |"
+    },
+    {
+      "path": "notes/WP84_R400_FILTERED_SHARP_REPAIR.md",
+      "line": 350,
+      "text": "third-moment gates. They are not automatically implied by the fourth bound."
+    },
+    {
+      "path": "notes/WP84_R400_FILTERED_SHARP_REPAIR.md",
+      "line": 423,
+      "text": "with Pair4,T,400 <=0.266329+o(1), the first/third moment gates, and the"
+    },
+    {
+      "path": "notes/WP84_RESOLVENT_KILL_GATE_2026_10_05.md",
+      "line": 3594,
+      "text": "    mu1>=1-d1, mu2<=4/3+d2, mu3>=2-d3, mu4<=13/4+d4,"
+    },
+    {
+      "path": "notes/WP84_RESOLVENT_KILL_GATE_2026_10_05.md",
+      "line": 3616,
+      "text": "    mu3=1+3v_R+o(1)."
+    },
+    {
+      "path": "notes/WP84_RESOLVENT_KILL_GATE_2026_10_05.md",
+      "line": 3639,
+      "text": "Thus the remaining first-strike fallback no longer needs separate mu1/mu2/mu3 estimates; it needs one one-sided fixed-band fourth-moment bound."
+    },
+    {
+      "path": "notes/WP84_ROBUST_CUBIC_HS_SQUARE_TRANSPORT.md",
+      "line": 58,
+      "text": "    ell_T=c1 mu1+c3 mu3+c2(mu2-1/3)."
+    },
+    {
+      "path": "notes/WP84_ROBUST_CUBIC_HS_SQUARE_TRANSPORT.md",
+      "line": 63,
+      "text": "mu1,mu3=o(1), mu2>=1/3-2/(pi^2 R)+o(1), hence"
+    },
+    {
+      "path": "notes/WP84_ROBUST_CUBIC_HS_SQUARE_TRANSPORT.md",
+      "line": 456,
+      "text": "at each of +/-t and remaining mass at 0 has mu2=1/3, mu1=mu3=mu5=0,"
+    },
+    {
+      "path": "notes/WP84_SHARED_CARRIER_JET_RANK_AND_MIXED_DEGREE_INTERSECTION.md",
+      "line": 106,
+      "text": "      +(2*pi*i*lambda)^3*mu3/6."
+    },
+    {
+      "path": "notes/WP84_SIGNED_NEAR_PRODUCT_CELL_DECOMPOSITION.md",
+      "line": 37,
+      "text": "Thus c4=0. Using the frozen SAME-section lower inputs mu1,mu3=o(1),"
+    },
+    {
+      "path": "notes/WP84_STRICT79_HOSTILE_AUDIT_AND_BALANCED_PAIR_REDUCTION.md",
+      "line": 277,
+      "text": "does not provide that bound. The inherited scalar third-moment aggregate,"
+    },
+    {
+      "path": "notes/WP84_STRICT79_HOSTILE_AUDIT_AND_BALANCED_PAIR_REDUCTION.md",
+      "line": 279,
+      "text": "separate conditional consumers. In particular scalar mu3=o(1) does not"
+    },
+    {
+      "path": "notes/WP84_STRICT79_SIGNED_ARITHMETIC_THEOREM_OR_OBSTRUCTION.md",
+      "line": 275,
+      "text": "inequality (11) for the source. Scalar third-moment, full-to-band,"
+    },
+    {
+      "path": "notes/WP84_STRICT79_SOURCE_MATCHED_ARITHMETIC_REDUCTION.md",
+      "line": 264,
+      "text": "triple correlation. Nor does scalar mu3=o(1) erase these differently weighted"
+    },
+    {
+      "path": "notes/WP84_STRICT79_SOURCE_MATCHED_ARITHMETIC_REDUCTION.md",
+      "line": 284,
+      "text": "does not itself bound an aggregate prime-weighted third moment. Summing it"
+    },
+    {
+      "path": "notes/WP84_STRICT79_SOURCE_MATCHED_ARITHMETIC_REDUCTION.md",
+      "line": 286,
+      "text": "audit already treats scalar mu3 as an inherited conditional input at the"
+    },
+    {
+      "path": "notes/WP84_STRICT79_SOURCE_MATCHED_ARITHMETIC_REDUCTION.md",
+      "line": 290,
+      "text": "above needs more than a scalar third-moment statement even if that scalar"
+    },
+    {
+      "path": "notes/WP84_THEOREM_AWARE_DEGREE6_CONSUMER_DESIGN.md",
+      "line": 234,
+      "text": "Frozen moments are mu0=1, mu1=mu3=0, mu2=1/3, mu4=1/4, mu5=1/36,"
+    },
+    {
+      "path": "src/wp70_explicit_polynomial_witness.py",
+      "line": 11,
+      "text": "(mu0,mu1,mu2,mu3,mu4)=(1,1,4/3,2,13/4),"
+    },
+    {
+      "path": "src/wp70_explicit_polynomial_witness.py",
+      "line": 19,
+      "text": "If mu3 >= 2-d3 and mu4 <= 13/4+d4, then because the mu3 coefficient is"
+    },
+    {
+      "path": "src/wp70_explicit_polynomial_witness.py",
+      "line": 37,
+      "text": "mu3 = F(2)"
+    },
+    {
+      "path": "src/wp70_explicit_polynomial_witness.py",
+      "line": 44,
+      "text": "    + 2*a*b*mu3"
+    },
+    {
+      "path": "src/wp70_explicit_polynomial_witness.py",
+      "line": 57,
+      "text": "# mu3 >= 1.996 = 499/250, mu4 <= 13/4."
+    },
+    {
+      "path": "src/wp70_explicit_polynomial_witness.py",
+      "line": 69,
+      "text": "print(\"example_mu3_lower =\", F(499,250))"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 9,
+      "text": "  mu3 = r"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 59,
+      "text": "    (F(0), F(1,100), \"exact-mu3, mu4=3.26\"),"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 60,
+      "text": "    (F(1,1000), F(1,100), \"mu3>=1.999, mu4<=3.26\"),"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 61,
+      "text": "    (F(4,1000), F(0), \"mu3>=1.996, mu4<=3.25\"),"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 67,
+      "text": "print(\"q_threshold_if_mu3_exact =\", dec(Q70_AT_R2))"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 68,
+      "text": "print(\"allowed_mu4_excess_if_mu3_exact =\", dec(Q_SLACK_AT_SINE))"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 69,
+      "text": "print(\"safe_example_mu3_lower =\", dec(R0-D3_SAFE))"
+    },
+    {
+      "path": "src/wp70_moment_region_exact.py",
+      "line": 88,
+      "text": "print(\"critical_mu3_lower ~\", Decimal(2)-dcrit)"
+    },
+    {
+      "path": "src/wp84_shared_carrier_jet_rank.py",
+      "line": 48,
+      "text": "    minimal={'degree':5,'support':[5,[],[2,1,1,1]],'functional_ids':[5,7],'through_u_order':8,'normalized_rows':[['1','1'],['-S1+2*pi*i*lambda*mu1']*2,['(1+S2)*e2-2*pi*i*lambda*mu1*S1-2*pi^2*lambda^2*mu2']*2,['-(1+3*S2+S3)*e3+(1+S2)*e2*2*pi*i*lambda*mu1+2*pi^2*lambda^2*mu2*S1+(2*pi*i*lambda)^3*mu3/6']*2],'S3':'K*(K-1)*(3-2*(K+1)/dprime)','S1':'sum_slot log p','e2':'sum_(slot i<j)log p_i log p_j','mu1':'mean_(k in I)k','mu2':'mean_(k in I)k^2','S2':'2*K-K*(K+1)/dprime, K=min(R,dprime-1)','common_nonzero_factor':'6*(-1)^5/2 * prod_slot log p/sqrt(prod_slot p), per reduced carrier p^2*q*r*s; reciprocal orientation conjugates','jet_rank':1,'jet_nullity':1,'jet_kernel_vector':[1,-1],'nonzero_minor':{'row':0,'column':0,'value':'1'},'analytic_rank_bounds':[1,2],'global_kernel_claim':False}"
+    }
+  ],
+  "inventory_scope": "all tracked markdown/Python candidate mentions at input HEAD; model/conditional mentions are not theorem promotions",
+  "source_pins": {
+    "notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md": {
+      "sha256": "000a5210e26c84c116f3b561618eb6d20a43c008d859545afa54855facc6d96f",
+      "git_blob": "8c18880bfb4569d7fa4e52ed582b91ca59899864"
+    },
+    "src/wp84_m4_free_robust_cubic_r6000.py": {
+      "sha256": "2c293cb7e63120e598cd02cfbb55aa5bb29b6abf724c456f0997a08d0f4d4bb1",
+      "git_blob": "1981d41514aece1a61d1aa73db6fc7330561d3de"
+    },
+    "notes/WP71_M3_ARCHIVE_RECONSTRUCTION.md": {
+      "sha256": "c50d0690cf8dee18a970b938f70e24e034c454a70c2581e36950c40113562a14",
+      "git_blob": "f054f4c486ad85690fc1b2ee4f9662f2b1f429c1"
+    },
+    "notes/WP84_FIXED_BAND_LOWER_MOMENT_COLLAPSE.md": {
+      "sha256": "c3d8b4e044dafe69c6b9ee2bd9a0ce879999e9cc6a0193773b506b754fa38552",
+      "git_blob": "c1bc652442c8af381aa1570f2f804a9e5793f713"
+    },
+    "notes/WP84_SIGN_BALANCE_NEAR_RESONANCE_GATE.md": {
+      "sha256": "da6014b9e3d1080ab5fc5223330ad69f49f171b4fb078c810fbcd0967083e54a",
+      "git_blob": "6d4067227623641d565076122c0f5c58b4250ff1"
+    },
+    "notes/WP84_TWO_SCALE_FILTERED_TO_SHARP_MOMENT_BRIDGE.md": {
+      "sha256": "701bb4dbb5c0d8ef0f8364160b5db29f689915852a424da8630105054246f001",
+      "git_blob": "6d2b32c89aded123f7ce0cb110ce4fd7f6b533d1"
+    },
+    "notes/WP84_STRICT79_HOSTILE_AUDIT_AND_BALANCED_PAIR_REDUCTION.md": {
+      "sha256": "58f24f93ed0c15a9a77b15475b3cecddfec233792ea9f9827b84a768ee32c95c",
+      "git_blob": "b6994688bdd545dafd45142861c2c4b06a154994"
+    }
+  },
+  "packet_sha256": {
+    "notebooklm_packet/00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": "3722f58798b83af2217bbce767952e91a0a78cb48d3dae8e0ae760a1a647e322",
+    "notebooklm_packet/01_ARITHMETIC_B_TO_C_SOURCES.pdf": "d992b7df5864327ea1bc4311cf389f40bb0eebb04875374cee83f02ab5554400",
+    "notebooklm_packet/02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": "0739f2b0cbdd33eccccf52be697cb12cc9d84e4aaac8e349a8da812b0620b6bf",
+    "notebooklm_packet/03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": "63c17f88feb7371996603d237c875af0bd369be2317f604d00e81123eca94991",
+    "notebooklm_packet/04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": "59e98fad78f2ce38bae01f09b893fa7945a027c4cc69e378719c39b2deabbcd8",
+    "notebooklm_packet/MANIFEST.txt": "d9fae2f7dba4ee55661c118fdd3ce0db379ad8a075a2f9cd9294304eb0f3a5a3"
+  }
+}
