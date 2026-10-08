@@ -1,0 +1,4905 @@
+{
+  "input_head": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+  "R": 6000,
+  "status": "GLOBAL_COLLISION_REDUCTION_AND_ONE_SIDED_SECTION_TRANSFER; SIGNED_ESTIMATE_OPEN",
+  "contract": {
+    "cutoff": "N=floor(exp(L-sqrt(L))), L=log(T/(2*pi))",
+    "prime_pool": "all retained prime powers initially; complete ordinary pool after signed-gate equivalence",
+    "kernel": "exp(i*T*lambda+2*pi*i*i_min*lambda/L)/dprime * sum_(r=0)^(rho-1) exp(2*pi*i*r*lambda/L)",
+    "path": "every ordered closed displacement word, |ell_j|<=6000",
+    "aliases": "all aliases and tails retained in the full grid average",
+    "proper_powers": "complete signed-gate equivalence only; no per-mask disposal",
+    "closure_scope": "global unmasked sums; no independent near/far zero assertion",
+    "historical_P_required": false,
+    "historical_unique_selector_required": false,
+    "selection": "existential common good section; no invented row data",
+    "continuum": "only exact three-pair diagonal after reduction; no sharp substitution"
+  },
+  "constants": {
+    "A": "11501/12500",
+    "B": "137641/250000",
+    "signed_cap": "64788151489666079/572357731837500000",
+    "band_payment": "128952763/92407500000",
+    "variance_payment": "26060119/12734908593750",
+    "coercive_scale": "3100/1113",
+    "coercive_constant": "355001472400000/13810937718249",
+    "coercive_polynomial": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      -6,
+      5
+    ],
+    "coercive_factor_1": [
+      1,
+      -2,
+      1
+    ],
+    "coercive_factor_2": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "section_transfer": {
+    "assumption": "limsup J(Y_full)<=signed_cap-eta, eta>0",
+    "sixth_mass_bound": "tau|Y_full|^6 <= 2*(J(Y_full)+C)/B",
+    "rank_bound": "rank(Y_full-P*Y_full*P)<=2*r",
+    "fifth_error": "10*||Y_full||_(6,d)^5*(2*r/d)^(1/6)",
+    "one_sided_gate": "J(Y_I)<=d/dprime * (J(Y_full)+A*fifth_error)",
+    "lower_moment_error": "2*b*||Y_full||_(6,d)^b*(2*r/d)^((6-b)/6), b=1,...,5",
+    "rate_for_r_over_d_L_minus_half": "O(L^(-1/12)) for the fifth gate term",
+    "arithmetic_assumption_proved": false
+  },
+  "census": [
+    {
+      "degree": 5,
+      "partition_count": 52,
+      "ordered_class_count": 1664,
+      "classification_counts": {
+        "closed_absolute_with_linear_L2": 832,
+        "closed_oscillatory_pair_field": 360,
+        "closed_single_linear_mean": 120,
+        "open_signed_arithmetic": 352
+      },
+      "shape_counts": {
+        "1,1,1,1,1": {
+          "open_signed_arithmetic": 32
+        },
+        "2,1,1,1": {
+          "open_signed_arithmetic": 320
+        },
+        "2,2,1": {
+          "closed_oscillatory_pair_field": 360,
+          "closed_single_linear_mean": 120
+        },
+        "3,1,1": {
+          "closed_absolute_with_linear_L2": 320
+        },
+        "3,2": {
+          "closed_absolute_with_linear_L2": 320
+        },
+        "4,1": {
+          "closed_absolute_with_linear_L2": 160
+        },
+        "5": {
+          "closed_absolute_with_linear_L2": 32
+        }
+      },
+      "per_partition": [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            5
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 24,
+            "closed_single_linear_mean": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 32
+          }
+        }
+      ],
+      "ordered_classification_sha256": "85eaee8db4ffd02c9131c63810cfba65b7169b1611bb086a547839df795eee4a"
+    },
+    {
+      "degree": 6,
+      "partition_count": 203,
+      "ordered_class_count": 12992,
+      "classification_counts": {
+        "closed_absolute_with_linear_L2": 6848,
+        "closed_oscillatory_pair_field": 840,
+        "exact_three_pair_main": 120,
+        "open_signed_arithmetic": 5184
+      },
+      "shape_counts": {
+        "1,1,1,1,1,1": {
+          "open_signed_arithmetic": 64
+        },
+        "2,1,1,1,1": {
+          "open_signed_arithmetic": 960
+        },
+        "2,2,1,1": {
+          "open_signed_arithmetic": 2880
+        },
+        "2,2,2": {
+          "closed_oscillatory_pair_field": 840,
+          "exact_three_pair_main": 120
+        },
+        "3,1,1,1": {
+          "open_signed_arithmetic": 1280
+        },
+        "3,2,1": {
+          "closed_absolute_with_linear_L2": 3840
+        },
+        "3,3": {
+          "closed_absolute_with_linear_L2": 640
+        },
+        "4,1,1": {
+          "closed_absolute_with_linear_L2": 960
+        },
+        "4,2": {
+          "closed_absolute_with_linear_L2": 960
+        },
+        "5,1": {
+          "closed_absolute_with_linear_L2": 384
+        },
+        "6": {
+          "closed_absolute_with_linear_L2": 64
+        }
+      },
+      "per_partition": [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            6
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            5,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            5,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            5,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            5,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            3
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            3
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            5,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            3
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            3
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3,
+            4
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            5
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            4
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            3
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3,
+            4
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            2,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            3
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            3,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            4,
+            1
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3,
+            4
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            2
+          ],
+          "labels": {
+            "closed_oscillatory_pair_field": 56,
+            "exact_three_pair_main": 8
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            2
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            3
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            4
+          ],
+          "labels": {
+            "closed_absolute_with_linear_L2": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            3,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            3,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            4
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            4
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1,
+            4
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            3,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            4
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            4
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            2,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            4
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            1,
+            2
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        },
+        {
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "multiplicities": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "labels": {
+            "open_signed_arithmetic": 64
+          }
+        }
+      ],
+      "ordered_classification_sha256": "feb2a787f8156563e11b6a9e7bb82bcd497d01cb8a37f31312bc297af1c912df"
+    }
+  ],
+  "globally_small_ordered_classes": {
+    "5": 1312,
+    "6": 7688
+  },
+  "noncentral_globally_small_ordered_classes": {
+    "5": 1312,
+    "6": 7488
+  },
+  "already_closed_lower_exact_classes": {
+    "5": 0,
+    "6": 200
+  },
+  "remaining_ordered_classes": {
+    "5": 352,
+    "6": 5184
+  },
+  "remaining_shapes": {
+    "5": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "6": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "first_missing_higher_arithmetic_estimate": "limsup Re[-A*S5_full+B*S6_full] <= signed_cap-B*Pair6_6000-eta",
+  "lower_third_aggregate": "inherited conditional source input; no weighted triple theorem newly proved",
+  "arithmetic_inequality_12_proved": false,
+  "strict_gt79_proved": false,
+  "rank_promoted": false,
+  "new_consumer": false,
+  "cutoff_shortened": false,
+  "source_pins": {
+    "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "1d9060495ff176c650ba0c5c85aad48834879af7",
+      "sha256": "167f7122a53d34ffb57a8a9ebdbff1453f7914f67dec6256fccac7e869afba43"
+    },
+    "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE_CERTIFICATE.json": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "5fb7afd37cfe46eabe7a45433312ab1a3b3212c0",
+      "sha256": "3b963002a1934dd0599e6a02a1695c720be6c6858a5b2c51427890005a66691f"
+    },
+    "notes/WP84_FIXED_BAND_WEIGHTED_REPROJECTION.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "4f13886dfe0e0b0573b61226e96a727337f2e602",
+      "sha256": "51daaa95ab2fe51c5f557da2a8c2c2329ac64d532626dfe1f7fcfceca61b5b04"
+    },
+    "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "3c8165b952c3e62b1f61073a26ee64673fd23346",
+      "sha256": "198ec5f110906aabeecd7ba8d698381fe288685dc62dacd97565b6a064bbb532"
+    },
+    "notes/WP84_DIRECT_SIGNED_RESTRICTED_CORRELATION_ATTACK.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "a1f99ba4075fd7e05d407549722dc620f70c834b",
+      "sha256": "75d746bb0f2702f81f2bc4aa367b84bd84ace8ddcf38cf8bf6fd8becceb6fc66"
+    },
+    "notes/WP84_CARRIER_AWARE_DEGREE6_CONSUMER.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "abf0933a62f949eec4abc2eb02545b2ee85758e3",
+      "sha256": "9dcb4fe2ba2fa5dea0104c1de3c759a24800c45b4c02a0d336b35365c749e8a6"
+    },
+    "notes/WP84_SIGNED_NEAR_ALIAS_ATTACK.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "ff89aca71d787d3a50e0d916b76c950a8fde6432",
+      "sha256": "c7ae6d9b5bd5d01ece59a1cd6fb3d504dbc4f5476654edfc775b717c9e1bac42"
+    },
+    "notes/WP84_SIGN_BALANCE_NEAR_RESONANCE_GATE.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "6d4067227623641d565076122c0f5c58b4250ff1",
+      "sha256": "da6014b9e3d1080ab5fc5223330ad69f49f171b4fb078c810fbcd0967083e54a"
+    },
+    "notes/WP84_FIXED_BAND_LOWER_MOMENT_COLLAPSE.md": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "c1bc652442c8af381aa1570f2f804a9e5793f713",
+      "sha256": "c3d8b4e044dafe69c6b9ee2bd9a0ce879999e9cc6a0193773b506b754fa38552"
+    },
+    "notes/WP84_SOURCE_JET_INTERTWINING_CERTIFICATE.json": {
+      "commit": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+      "blob": "d0cdb3712d8f5c7428a01c97ac3ec96aa0201456",
+      "sha256": "9e9dfd815dcb84e463a5e1f370ea42a7cc7dd350861a8a16ce8a58d1b04292ab"
+    }
+  },
+  "packet_sha256": {
+    "notebooklm_packet/00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": "3722f58798b83af2217bbce767952e91a0a78cb48d3dae8e0ae760a1a647e322",
+    "notebooklm_packet/01_ARITHMETIC_B_TO_C_SOURCES.pdf": "d992b7df5864327ea1bc4311cf389f40bb0eebb04875374cee83f02ab5554400",
+    "notebooklm_packet/02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": "0739f2b0cbdd33eccccf52be697cb12cc9d84e4aaac8e349a8da812b0620b6bf",
+    "notebooklm_packet/03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": "63c17f88feb7371996603d237c875af0bd369be2317f604d00e81123eca94991",
+    "notebooklm_packet/04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": "59e98fad78f2ce38bae01f09b893fa7945a027c4cc69e378719c39b2deabbcd8",
+    "notebooklm_packet/MANIFEST.txt": "d9fae2f7dba4ee55661c118fdd3ce0db379ad8a075a2f9cd9294304eb0f3a5a3"
+  }
+}
