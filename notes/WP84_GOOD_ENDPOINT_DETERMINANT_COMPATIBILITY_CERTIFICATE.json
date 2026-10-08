@@ -1,0 +1,40 @@
+{
+  "decision": "C",
+  "label": "GOOD-ENDPOINT THEOREM IS A DIFFERENT OBJECT",
+  "first_incompatibility": "The pinned endpoint score's generic feature coefficients are not identified with, nor shown to dominate, the current source-masked full-pool R=6000 determinant atoms and their a_phi(T)^-5 / root normalization. The current iterator requires an external exact source_mask callback; the four pinned sources do not define it.",
+  "pinned_source_commit": "908f6c2b5b4c1dbf9d35461b5701b5a475fe96c5",
+  "local_head_audited": "a07e52b4365c1094b3a82c045038ffc217fe8a4a",
+  "pinned_sources": {
+    "notes/WP84_GOOD_ENDPOINT_TRIMMING.md": {
+      "blob": "936f500f644c99ec00bdb0b98bac12161296fff5",
+      "sha256": "7d5fa7cdcc1d26cf64ae595decc800058c20964e11ca344f50d2a38062641336"
+    },
+    "notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md": {
+      "blob": "ac87e8a1731cd22bea8f769fee7eba1cbb0f4d5d",
+      "sha256": "dc473ea6fe4e62df2fe81715f1ce37066265818408ee52ab2355a13d0f796e06"
+    },
+    "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+      "blob": "c0c0e061239366ec956daa573095d5b3a99a2b2e",
+      "sha256": "03358be9e45af7d6204282c91662e716c4bb47008d30d1a82e5f2f4885ba7153"
+    },
+    "src/wp84_r400_first_record_assembly.py": {
+      "blob": "0992647ebc0f8e169f03f0dd90fe2aa0dda529c6",
+      "sha256": "84eb37ba973e9c1809c744f4b0ea8e5c9bda21c21b82f37ab4587caaec2d607d"
+    }
+  },
+  "current_source_sha256": {
+    "src/wp84_fifth_full_pool_amplitude.py": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1",
+    "src/wp84_exact_determinant_coefficient_builder.py": "7651b564aba186dfc7c30228f5c9d8c9180bb2a99aa465c3f368b494f57afe09",
+    "notes/WP84_FIFTH_FULL_POOL_LIFT_CERTIFICATE.json": "be42893eb550d2254ad8c4743275fdc0d0588f41889b84f4f306e189ecc13ded"
+  },
+  "compatible_geometry": {
+    "Fourier_grid": "tau_k=T+(2pi/L)k",
+    "section": "contiguous inclusive integer interval [k_-,k_+]",
+    "dimension": "both allow d'/d -> 1; trimming has o(d) loss"
+  },
+  "failed_identity": "good-endpoint feature score <-> exact source_mask determinant atoms",
+  "routes_A_B_entered": false,
+  "determinant_computed": false,
+  "strict_gt79": "OPEN",
+  "notebooklm_packet_touched": false
+}
