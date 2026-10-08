@@ -1,0 +1,100 @@
+{
+  "input_head": "06e51fbdb4150d2dbbbb4ddda6097575d9d2dcfa",
+  "R": 6000,
+  "cutoff": "floor(exp(L-sqrt(L))), L=log(T/(2*pi))",
+  "original_masks": true,
+  "alias_carrier_retained": true,
+  "proper_powers_retained_before_gate_reduction": true,
+  "scope": "complete orientation-summed populations; never individual sign or frequency masks",
+  "census": [
+    {
+      "degree": 5,
+      "counts": {
+        "new_orientation_summed_self_bound": 160,
+        "prior_closed": 1312,
+        "surviving_all_distinct": 32,
+        "surviving_balanced_pair": 160
+      },
+      "class_count": 1664,
+      "sha256": "ff3d4b44fc3bd34fe984819846505e013088bbe553098bc255485105b2627ee4"
+    },
+    {
+      "degree": 6,
+      "counts": {
+        "exact_pair_main": 120,
+        "new_orientation_summed_self_bound": 3920,
+        "new_unconditional_degree_two": 720,
+        "prior_closed": 7688,
+        "surviving_all_distinct": 64,
+        "surviving_balanced_pair": 480
+      },
+      "class_count": 12992,
+      "sha256": "63ed6494c7dbe53729a05655d1ec02676d3a0490d54b7d7c88005aab9f1a6e63"
+    }
+  ],
+  "constants": {
+    "A": "11501/12500",
+    "B": "137641/250000",
+    "Jstar": "64788151489666079/572357731837500000",
+    "frozen_reference_margin": "52897896569489/572357731837500000"
+  },
+  "gaussian_pinching": {
+    "block_size": 9,
+    "purpose": "lower bound on exact Pair6_6000 only; no prime-row model",
+    "x": "1/pi^2",
+    "coefficients": [
+      "5/72",
+      "288223/403200",
+      "3189863194981/663828480000",
+      "2749260640878247123/156132458496000000"
+    ],
+    "pi_lower": "333/106",
+    "pi_upper": "22/7",
+    "lower": "31498340500050746323/150466924118016000000",
+    "required_negative_residual_at_least": "43770221409581023769108432686241/21264421581420459982848000000000000",
+    "upper_bound_on_full_Pair6": false
+  },
+  "self_bound": {
+    "error": "e_T*(1+(J_full+C)^(2/3)), e_T -> 0",
+    "young": "e*U^(2/3) <= U/2 + 16*e^3/27",
+    "sixth_bound_unconditional": false,
+    "bounded_gate_equivalence_proved": true
+  },
+  "arithmetic_inequality_12_proved": false,
+  "strict_gt79_proved": false,
+  "new_signed_saving_proved": false,
+  "source_pins": {
+    "notes/WP84_STRICT79_SOURCE_MATCHED_ARITHMETIC_REDUCTION.md": {
+      "sha256": "fbd33981c349abb8ad8b3c697fd707401b59a5adf6315db9fababfe30c9182da",
+      "git_blob": "c04afff6a44c25f5e009cad3047afb6feea04b1a"
+    },
+    "notes/WP84_STRICT79_SOURCE_MATCHED_REDUCTION_CERTIFICATE.json": {
+      "sha256": "68cb254036f007c0647b6acfe6e6db14be7ac4e6796903a6a7eb8704da7abbb3",
+      "git_blob": "c87c7f9aa09c1de01820b45bf3f46aa8b43ad429"
+    },
+    "notes/WP84_NON_GAUSSIAN_C5_C6_FIRST_STRIKE.md": {
+      "sha256": "167f7122a53d34ffb57a8a9ebdbff1453f7914f67dec6256fccac7e869afba43",
+      "git_blob": "1d9060495ff176c650ba0c5c85aad48834879af7"
+    },
+    "notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md": {
+      "sha256": "2b348d665ad51cd98a61fa9e4fc6eaef3e3b3464055d84c0ad5da37db16f4453",
+      "git_blob": "e3907ba38f8f7ea3e3baeeb3d25e8c0b1c2fc337"
+    },
+    "notes/WP84_GOOD_ENDPOINT_TRIMMING.md": {
+      "sha256": "e1f99e231e565787d385e0a4b6c8d8e75e6f730a3d2150492b2bcdaf7da36694",
+      "git_blob": "936f500f644c99ec00bdb0b98bac12161296fff5"
+    },
+    "src/wp84_repaired_open_diagonal.py": {
+      "sha256": "d175766a8be47df97ffb39d55edef9405e36c9b87bea4eec9f378658773a2a85",
+      "git_blob": "7dff747592b1d5305cd438ccc6cbff2b02f42997"
+    }
+  },
+  "packet_sha256": {
+    "notebooklm_packet/00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": "3722f58798b83af2217bbce767952e91a0a78cb48d3dae8e0ae760a1a647e322",
+    "notebooklm_packet/01_ARITHMETIC_B_TO_C_SOURCES.pdf": "d992b7df5864327ea1bc4311cf389f40bb0eebb04875374cee83f02ab5554400",
+    "notebooklm_packet/02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": "0739f2b0cbdd33eccccf52be697cb12cc9d84e4aaac8e349a8da812b0620b6bf",
+    "notebooklm_packet/03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": "63c17f88feb7371996603d237c875af0bd369be2317f604d00e81123eca94991",
+    "notebooklm_packet/04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": "59e98fad78f2ce38bae01f09b893fa7945a027c4cc69e378719c39b2deabbcd8",
+    "notebooklm_packet/MANIFEST.txt": "d9fae2f7dba4ee55661c118fdd3ce0db379ad8a075a2f9cd9294304eb0f3a5a3"
+  }
+}
