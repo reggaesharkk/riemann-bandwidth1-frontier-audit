@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "n": 2,
+      "R": 1,
+      "normalized_first_order": 6,
+      "rational_c1_first_coefficient": "432",
+      "Z": "8"
+    },
+    {
+      "n": 3,
+      "R": 1,
+      "normalized_first_order": 6,
+      "rational_c1_first_coefficient": "1296",
+      "Z": "24"
+    },
+    {
+      "n": 3,
+      "R": 2,
+      "normalized_first_order": 6,
+      "rational_c1_first_coefficient": "5832",
+      "Z": "108"
+    }
+  ],
+  "trace_identity": true,
+  "corruption_detected": true,
+  "scope": "exact rational verification of universal algebra; analytic/legal-cell proof in theorem note"
+}

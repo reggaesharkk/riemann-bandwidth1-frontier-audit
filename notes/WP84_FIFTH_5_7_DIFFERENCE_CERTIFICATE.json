@@ -1,0 +1,204 @@
+{
+  "decision": "B",
+  "parent": "10aabac9aaab51470c9324ab0f927d299a17899b",
+  "pair": [
+    5,
+    7
+  ],
+  "exact_trace_identity": true,
+  "difference": "-Re sum_(p and unordered distinct singleton triple {q,r,s}) cp^2*cq*cr*cs exp(i*T*log(p^2*q*r*s))/dprime * sum_(perms qrs)Tr([E_p,E_q][E_p,E_r]E_s) * original alias/window mask",
+  "matrix": "E_p(i,j)=1_(|i-j|<=R)*f_(j-i)^+(log p*u)*exp(2*pi*i*i*log p*u), i,j in actual selected section",
+  "first_nonzero_jet": {
+    "amplitude_order": 11,
+    "positive_carrier_coefficient": "pi^2*Z(dprime,R)/dprime * a^4*b*c*d*S/(p*sqrt(q*r*s))",
+    "S": "b*c*(b-a)*(c-a)+b*d*(b-a)*(d-a)+c*d*(c-a)*(d-a)",
+    "logs": "a=log p,b=log q,c=log r,d=log s",
+    "Z": "sum_(i,j in section-relative indices) (i-j)^2*(J_R^2)_(i,j)^2; J_R(i,j)=1_(|i-j|<=R)",
+    "normalization": "coefficient of u^11 in a_phi(T)^5 times D after grouping the positive carrier; negative carrier coefficient is conjugate; exp(i*T*lambda) stays external",
+    "positivity": "strictly positive when p<min(q,r,s), dprime>=2,R>=1",
+    "full_band_reduction": "Z=dprime^4*(dprime^2-1)/6 when R>=dprime-1"
+  },
+  "vanishing_orders_through": 10,
+  "pair_analytic_rank": 2,
+  "new_global_kernel": null,
+  "fifth_rank_bounds": [
+    20,
+    72
+  ],
+  "strict_gt79": "OPEN",
+  "slot_defect": {
+    "slot_permutation": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ],
+    "old_lags": [
+      1,
+      -1,
+      0,
+      0,
+      0
+    ],
+    "new_lags": [
+      1,
+      0,
+      -1,
+      0,
+      0
+    ],
+    "old_prefix": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "new_prefix": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "old_phase_log_coefficients": {
+      "2": 1,
+      "3": 0,
+      "5": 0,
+      "7": 0
+    },
+    "new_phase_log_coefficients": {
+      "2": 1,
+      "3": 1,
+      "5": 0,
+      "7": 0
+    },
+    "old_root_count": 4,
+    "new_root_count": 4,
+    "scope": "one raw admitted algebraic path; shows permutation is not a termwise symmetry"
+  },
+  "band_square_checks": [
+    {
+      "dprime": 2,
+      "R": 1,
+      "Z": 8
+    },
+    {
+      "dprime": 2,
+      "R": 2,
+      "Z": 8
+    },
+    {
+      "dprime": 2,
+      "R": 6,
+      "Z": 8
+    },
+    {
+      "dprime": 3,
+      "R": 1,
+      "Z": 24
+    },
+    {
+      "dprime": 3,
+      "R": 2,
+      "Z": 108
+    },
+    {
+      "dprime": 3,
+      "R": 6,
+      "Z": 108
+    },
+    {
+      "dprime": 4,
+      "R": 1,
+      "Z": 40
+    },
+    {
+      "dprime": 4,
+      "R": 2,
+      "Z": 284
+    },
+    {
+      "dprime": 4,
+      "R": 6,
+      "Z": 640
+    },
+    {
+      "dprime": 5,
+      "R": 1,
+      "Z": 56
+    },
+    {
+      "dprime": 5,
+      "R": 2,
+      "Z": 492
+    },
+    {
+      "dprime": 5,
+      "R": 6,
+      "Z": 2500
+    },
+    {
+      "dprime": 6,
+      "R": 1,
+      "Z": 72
+    },
+    {
+      "dprime": 6,
+      "R": 2,
+      "Z": 700
+    },
+    {
+      "dprime": 6,
+      "R": 6,
+      "Z": 7560
+    },
+    {
+      "dprime": 7,
+      "R": 1,
+      "Z": 88
+    },
+    {
+      "dprime": 7,
+      "R": 2,
+      "Z": 908
+    },
+    {
+      "dprime": 7,
+      "R": 6,
+      "Z": 19208
+    },
+    {
+      "dprime": 8,
+      "R": 1,
+      "Z": 104
+    },
+    {
+      "dprime": 8,
+      "R": 2,
+      "Z": 1116
+    },
+    {
+      "dprime": 8,
+      "R": 6,
+      "Z": 34804
+    }
+  ],
+  "legal_carrier_witness": "p=2; distinct q<r<s large via Bertrand intervals; X0=(4*q*r*s)^(1/2); perturb into m=2 punctured residual cell, all primes within natural cutoff eventually; works on every dprime>=2 section",
+  "scope": "fixed-cell full-amplitude jet; not a global Taylor series for moving cutoffs or an arithmetic size bound",
+  "reusable_criterion": "same-sign five-slot X^2YZW versus XYXZW, summed over singleton assignments; commutator coefficient nonzero for smallest repeated-prime log and nontrivial band",
+  "applicable_existing_block_ids": [
+    [
+      5,
+      7
+    ]
+  ],
+  "mixed_side_lemma": "common normalization must preserve analytic carrier-germ separation, plus actual selector/boundary extension; not proved here",
+  "source_sha256": {
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
+    "notes/WP84_NEAR_ALIAS_SURVIVOR_PATTERNS.csv": "331604b17f8efbfb6f8bff024b91ab732df521ca79c974f6289154b5a5835368"
+  }
+}
