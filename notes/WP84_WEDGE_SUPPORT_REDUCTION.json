@@ -1,0 +1,174 @@
+{
+  "source_head": "990ccbd8f340eea8abccbc0c05dd6fb939e4022b",
+  "R": 6000,
+  "blocks": [
+    {
+      "ids": [
+        15,
+        20,
+        26,
+        28,
+        31,
+        32
+      ],
+      "size": 6,
+      "variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "exact_expression": "sum_(k=1)^m a_k * sum_(sigma in S_m) sign(sigma) * v_B, sigma(k) * product_(i!=k) r_(i,sigma(i))(S_2,...,S_(h_i+2))",
+      "multilinearity": "each subleading row r_i is affine-linear in its permitted source moments; v_B is affine-linear in S_2; hence total degree <=m",
+      "candidate_support": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "certified_support": null,
+      "cancellations_removed": [],
+      "cancellation_status": "Cannot remove terms without exact source-selected row coefficients; the source row selector is not specified as an executable row tuple. No formal-core determinant coefficient is substituted.",
+      "first_possible_deficit": 5,
+      "identically_zero_status": "undetermined",
+      "exact_source_polynomial": "the displayed permutation expansion with r_i entries given by the exact finite trace/path/root sums in WP84_EXACT_DETERMINANT_COEFFICIENTS.json"
+    },
+    {
+      "ids": [
+        10,
+        12,
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "size": 8,
+      "variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "exact_expression": "sum_(k=1)^m a_k * sum_(sigma in S_m) sign(sigma) * v_B, sigma(k) * product_(i!=k) r_(i,sigma(i))(S_2,...,S_(h_i+2))",
+      "multilinearity": "each subleading row r_i is affine-linear in its permitted source moments; v_B is affine-linear in S_2; hence total degree <=m",
+      "candidate_support": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "certified_support": null,
+      "cancellations_removed": [],
+      "cancellation_status": "Cannot remove terms without exact source-selected row coefficients; the source row selector is not specified as an executable row tuple. No formal-core determinant coefficient is substituted.",
+      "first_possible_deficit": 7,
+      "identically_zero_status": "undetermined",
+      "exact_source_polynomial": "the displayed permutation expansion with r_i entries given by the exact finite trace/path/root sums in WP84_EXACT_DETERMINANT_COEFFICIENTS.json"
+    },
+    {
+      "ids": [
+        36,
+        38,
+        42,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        68,
+        69
+      ],
+      "size": 16,
+      "variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)",
+        "S_9(N)",
+        "S_10(N)"
+      ],
+      "exact_expression": "sum_(k=1)^m a_k * sum_(sigma in S_m) sign(sigma) * v_B, sigma(k) * product_(i!=k) r_(i,sigma(i))(S_2,...,S_(h_i+2))",
+      "multilinearity": "each subleading row r_i is affine-linear in its permitted source moments; v_B is affine-linear in S_2; hence total degree <=m",
+      "candidate_support": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)",
+        "S_9(N)",
+        "S_10(N)"
+      ],
+      "certified_support": null,
+      "cancellations_removed": [],
+      "cancellation_status": "Cannot remove terms without exact source-selected row coefficients; the source row selector is not specified as an executable row tuple. No formal-core determinant coefficient is substituted.",
+      "first_possible_deficit": 15,
+      "identically_zero_status": "undetermined",
+      "exact_source_polynomial": "the displayed permutation expansion with r_i entries given by the exact finite trace/path/root sums in WP84_EXACT_DETERMINANT_COEFFICIENTS.json"
+    },
+    {
+      "ids": [
+        34,
+        37,
+        39,
+        43,
+        53,
+        56,
+        60,
+        63
+      ],
+      "size": 8,
+      "variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "exact_expression": "sum_(k=1)^m a_k * sum_(sigma in S_m) sign(sigma) * v_B, sigma(k) * product_(i!=k) r_(i,sigma(i))(S_2,...,S_(h_i+2))",
+      "multilinearity": "each subleading row r_i is affine-linear in its permitted source moments; v_B is affine-linear in S_2; hence total degree <=m",
+      "candidate_support": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "certified_support": null,
+      "cancellations_removed": [],
+      "cancellation_status": "Cannot remove terms without exact source-selected row coefficients; the source row selector is not specified as an executable row tuple. No formal-core determinant coefficient is substituted.",
+      "first_possible_deficit": 7,
+      "identically_zero_status": "undetermined",
+      "exact_source_polynomial": "the displayed permutation expansion with r_i entries given by the exact finite trace/path/root sums in WP84_EXACT_DETERMINANT_COEFFICIENTS.json"
+    }
+  ],
+  "global_determinant_visible_moment_count": "undetermined; at most 9; source coefficient cancellation not evaluated",
+  "decision": "F"
+}

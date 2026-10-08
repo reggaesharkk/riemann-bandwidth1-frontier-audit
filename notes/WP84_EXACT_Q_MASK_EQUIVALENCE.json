@@ -1,0 +1,347 @@
+{
+  "master_q_domain": "P_N={q ordinary prime:2<=q<=N(T)}",
+  "layout_count": 20,
+  "exact_domain_family": "Q(T;V)=P_N\\V, where V is the set of visible carrier primes in the fixed carrier assignment",
+  "moment_reduction": "sum_(q in Q(T;V))(log q)^j/q = S_j(N)-sum_(p in V, p<=N)(log p)^j/p",
+  "universal_moment_coordinates": [
+    {
+      "name": "S_2",
+      "power": 2,
+      "definition": "sum_(q prime<=N(T))(log q)^2/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_3",
+      "power": 3,
+      "definition": "sum_(q prime<=N(T))(log q)^3/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_4",
+      "power": 4,
+      "definition": "sum_(q prime<=N(T))(log q)^4/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_5",
+      "power": 5,
+      "definition": "sum_(q prime<=N(T))(log q)^5/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_6",
+      "power": 6,
+      "definition": "sum_(q prime<=N(T))(log q)^6/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_7",
+      "power": 7,
+      "definition": "sum_(q prime<=N(T))(log q)^7/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_8",
+      "power": 8,
+      "definition": "sum_(q prime<=N(T))(log q)^8/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_9",
+      "power": 9,
+      "definition": "sum_(q prime<=N(T))(log q)^9/q",
+      "real_positive": true
+    },
+    {
+      "name": "S_10",
+      "power": 10,
+      "definition": "sum_(q prime<=N(T))(log q)^10/q",
+      "real_positive": true
+    }
+  ],
+  "exact_source_distinct_hidden_moment_count": 9,
+  "candidate_73_reduction": "73 pair-slot candidates -> 9 universal scalar prime moments; visible exclusions are explicit finite carrier-prime terms, not new hidden-prime moments",
+  "equivalence_rule": "Distinct visible sets define distinct assignment-level q-domains unless their intersections with P_N agree; all domains reduce exactly to the same nine master moments plus finite exclusions. No heuristic mask clustering.",
+  "layout_masks": [
+    {
+      "layout": 31,
+      "slot_pair": [
+        0,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 32,
+      "slot_pair": [
+        1,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 16,
+      "slot_pair": [
+        2,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 17,
+      "slot_pair": [
+        3,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 21,
+      "slot_pair": [
+        1,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 22,
+      "slot_pair": [
+        3,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 25,
+      "slot_pair": [
+        0,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 29,
+      "slot_pair": [
+        1,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 47,
+      "slot_pair": [
+        0,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 49,
+      "slot_pair": [
+        1,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 50,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 62,
+      "slot_pair": [
+        0,
+        2
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 65,
+      "slot_pair": [
+        1,
+        2
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 69,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 37,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 39,
+      "slot_pair": [
+        2,
+        4
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 43,
+      "slot_pair": [
+        1,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 56,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 60,
+      "slot_pair": [
+        0,
+        2
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    },
+    {
+      "layout": 63,
+      "slot_pair": [
+        1,
+        2
+      ],
+      "family": "P_N minus V_visible",
+      "identical_iff": "visible exclusion sets agree after intersecting [2,N]",
+      "conjugate_relation": "same q domain and real q moments; conjugation acts on path coefficient only",
+      "slot_permutation": "same master support P_N; finite exclusions permute with visible carrier assignment",
+      "carrier_reversal": "same master support; exact domain equal iff visible prime exclusion sets match",
+      "asymptotic_relation": "for fixed-size visible exclusion sets, moment difference is an explicit finite sum O_j(1), hence relative o(1) versus full M_j main",
+      "extra_slot_or_path_window": "none"
+    }
+  ]
+}

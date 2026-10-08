@@ -1,0 +1,74 @@
+{
+  "decision": "F",
+  "hidden_count": 20,
+  "visible_count": 18,
+  "candidate_73_to_exact_master_moments": "73 -> 9",
+  "moment_powers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pair_slot_layouts": {
+    "(0, 2)": [
+      60,
+      62
+    ],
+    "(0, 3)": [
+      47
+    ],
+    "(0, 4)": [
+      25,
+      31
+    ],
+    "(1, 2)": [
+      63,
+      65
+    ],
+    "(1, 3)": [
+      43,
+      49
+    ],
+    "(1, 4)": [
+      21,
+      29,
+      32
+    ],
+    "(2, 3)": [
+      37,
+      50,
+      56,
+      69
+    ],
+    "(2, 4)": [
+      16,
+      39
+    ],
+    "(3, 4)": [
+      17,
+      22
+    ]
+  },
+  "mask_equivalence_rule": "exact set equality after visible exclusions",
+  "corruption_tests_rejected": [
+    "merge different q masks",
+    "split identical q masks",
+    "delete q exclusion",
+    "truncate q range",
+    "forget multiplicity",
+    "change carrier sign",
+    "change log power",
+    "force moments zero",
+    "change R",
+    "use d=2",
+    "delete visible layout",
+    "perturb C_m-1"
+  ],
+  "determinant_visible_moment_count": "unknown; exact source coefficient wedge not evaluated",
+  "certified_rank_increment": 0
+}

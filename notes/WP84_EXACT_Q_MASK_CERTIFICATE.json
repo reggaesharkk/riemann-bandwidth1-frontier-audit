@@ -1,0 +1,375 @@
+{
+  "source": "WP84_FULL_WEIGHT_EVALUATION_MAP_KERNEL.md eqs. for q_B<=N, distinct equality-block primes, alias indicator and root interval; WP84_FIFTH_BLOCK_5_7_EXACT_DIFFERENCE.md exact trace/path equivalence",
+  "source_head": "990ccbd8f340eea8abccbc0c05dd6fb939e4022b",
+  "predicate": "q_mask(layout,block,jet,path,section,q,source_state)",
+  "prime_interval": "ordinary primes 2<=q<=N(T)=floor(exp(L-sqrt(L)))",
+  "extra_slot_windows": "none in the source trace; all five slot primes have the same natural cutoff",
+  "equality_exclusion": "q is repeated exactly in its two hidden-block slots; no other equality block may use q",
+  "coprimality": "all distinct equality-block primes are distinct ordinary primes, hence pairwise coprime; no additional gcd condition",
+  "alias": "lambda=sum e_b log P_b has no q term because e_hidden=0; carrier nearest-alias mask depends only on visible primes",
+  "path": "path closure and |ell_s|<=6000 affect weights; section root veto is rho_I(ell)>0 and does not depend on q",
+  "section": "root interval [k_- - min(prefix), k_+ - max(prefix)]; q-independent",
+  "orientation": "conjugate sign/path has identical q domain",
+  "layouts": [
+    {
+      "layout": 31,
+      "hidden_block": 0,
+      "slot_pair": [
+        0,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 32,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 16,
+      "hidden_block": 1,
+      "slot_pair": [
+        2,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 17,
+      "hidden_block": 2,
+      "slot_pair": [
+        3,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 21,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 22,
+      "hidden_block": 2,
+      "slot_pair": [
+        3,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 25,
+      "hidden_block": 0,
+      "slot_pair": [
+        0,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 29,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 47,
+      "hidden_block": 0,
+      "slot_pair": [
+        0,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 49,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 50,
+      "hidden_block": 2,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 62,
+      "hidden_block": 0,
+      "slot_pair": [
+        0,
+        2
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 65,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        2
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 69,
+      "hidden_block": 2,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 37,
+      "hidden_block": 1,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 39,
+      "hidden_block": 1,
+      "slot_pair": [
+        2,
+        4
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 43,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 56,
+      "hidden_block": 1,
+      "slot_pair": [
+        2,
+        3
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 60,
+      "hidden_block": 0,
+      "slot_pair": [
+        0,
+        2
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    },
+    {
+      "layout": 63,
+      "hidden_block": 1,
+      "slot_pair": [
+        1,
+        2
+      ],
+      "mask": "prime(q) and 2<=q<=N(T) and q notin visible carrier primes and source carrier alias admitted and source root count rho_I(path)>0",
+      "independent_of": [
+        "jet",
+        "Fourier path except zero-root veto",
+        "section endpoints except zero-root veto",
+        "orientation"
+      ],
+      "path_dependence": "only the contribution weight; Boolean root veto uses rho_I(path), independent of q",
+      "carrier_dependence": "visible-prime exclusion and carrier alias indicator; q has net exponent zero",
+      "multiplicity": "one q assignment per equality block; no factor 2; source raw-orbit coefficient remains external"
+    }
+  ]
+}

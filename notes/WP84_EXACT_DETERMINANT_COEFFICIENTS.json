@@ -1,0 +1,446 @@
+{
+  "source_head": "990ccbd8f340eea8abccbc0c05dd6fb939e4022b",
+  "decision": "F",
+  "R": 6000,
+  "global_hidden_moment_basis": [
+    "S_2(N)",
+    "S_3(N)",
+    "S_4(N)",
+    "S_5(N)",
+    "S_6(N)",
+    "S_7(N)",
+    "S_8(N)",
+    "S_9(N)",
+    "S_10(N)"
+  ],
+  "basis_count": 9,
+  "blocks": [
+    {
+      "ids": [
+        15,
+        20,
+        26,
+        28,
+        31,
+        32
+      ],
+      "size": 6,
+      "hmax": 6,
+      "moment_variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "matrix_identity": "M_full=M_visible+sum_(j=2)^(hmax+2) S_j E_(B,j)",
+      "E_entry_rule": {
+        "jet_h=0": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }"
+        },
+        "jet_h=1": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }"
+        },
+        "jet_h=2": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }"
+        },
+        "jet_h=3": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }"
+        },
+        "jet_h=4": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }"
+        },
+        "jet_h=5": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }"
+        },
+        "jet_h=6": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(6)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }",
+          "S_8": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,6)(ell) * (visible log factors) }"
+        }
+      },
+      "visible_correction": "replace each hidden assignment sum by S_j(N)-sum_(p in visible carrier primes, p<=N)(log p)^j/p; the subtracted finite terms are charged to M_visible",
+      "hidden_layout_slots": {
+        "31": [
+          0,
+          4
+        ],
+        "32": [
+          1,
+          4
+        ]
+      },
+      "leading_vector": "v_B(S_2)=exact order-five carrier coefficient vector; source formula is -1/2 times complete visible assignment sum with hidden q weight (log q)^2/q",
+      "first_possible_section_coefficient": "C_(m-1)(S)=sum_(k=1)^m a_k det(r_1(S),...,r_(k-1)(S),v_B(S),r_(k+1)(S),...,r_m(S)); a_k=(c0*lambda_k)^h_k/(h_k+1)!",
+      "coefficient_polynomial_status": "exact multilinear determinant expression specified; evaluated coefficients/support require actual source-selected row cells and complete visible-prime sums",
+      "determinant_visible_support": "not certified; structural candidate powers only",
+      "correction_matrix_span_rank": "unknown, upper bound 6 from at most 7 moment matrices",
+      "common_row_dimension": "unknown",
+      "common_column_dimension": "unknown",
+      "determinant_null_correction_dimension": "unknown"
+    },
+    {
+      "ids": [
+        10,
+        12,
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "size": 8,
+      "hmax": 6,
+      "moment_variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "matrix_identity": "M_full=M_visible+sum_(j=2)^(hmax+2) S_j E_(B,j)",
+      "E_entry_rule": {
+        "jet_h=0": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }"
+        },
+        "jet_h=1": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }"
+        },
+        "jet_h=2": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }"
+        },
+        "jet_h=3": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }"
+        },
+        "jet_h=4": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }"
+        },
+        "jet_h=5": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }"
+        },
+        "jet_h=6": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(6)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }",
+          "S_8": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,6)(ell) * (visible log factors) }"
+        }
+      },
+      "visible_correction": "replace each hidden assignment sum by S_j(N)-sum_(p in visible carrier primes, p<=N)(log p)^j/p; the subtracted finite terms are charged to M_visible",
+      "hidden_layout_slots": {
+        "16": [
+          2,
+          4
+        ],
+        "17": [
+          3,
+          4
+        ],
+        "21": [
+          1,
+          4
+        ],
+        "22": [
+          3,
+          4
+        ],
+        "25": [
+          0,
+          4
+        ],
+        "29": [
+          1,
+          4
+        ]
+      },
+      "leading_vector": "v_B(S_2)=exact order-five carrier coefficient vector; source formula is -1/2 times complete visible assignment sum with hidden q weight (log q)^2/q",
+      "first_possible_section_coefficient": "C_(m-1)(S)=sum_(k=1)^m a_k det(r_1(S),...,r_(k-1)(S),v_B(S),r_(k+1)(S),...,r_m(S)); a_k=(c0*lambda_k)^h_k/(h_k+1)!",
+      "coefficient_polynomial_status": "exact multilinear determinant expression specified; evaluated coefficients/support require actual source-selected row cells and complete visible-prime sums",
+      "determinant_visible_support": "not certified; structural candidate powers only",
+      "correction_matrix_span_rank": "unknown, upper bound 7 from at most 7 moment matrices",
+      "common_row_dimension": "unknown",
+      "common_column_dimension": "unknown",
+      "determinant_null_correction_dimension": "unknown"
+    },
+    {
+      "ids": [
+        36,
+        38,
+        42,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        68,
+        69
+      ],
+      "size": 16,
+      "hmax": 8,
+      "moment_variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)",
+        "S_9(N)",
+        "S_10(N)"
+      ],
+      "matrix_identity": "M_full=M_visible+sum_(j=2)^(hmax+2) S_j E_(B,j)",
+      "E_entry_rule": {
+        "jet_h=0": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }"
+        },
+        "jet_h=1": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }"
+        },
+        "jet_h=2": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }"
+        },
+        "jet_h=3": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }"
+        },
+        "jet_h=4": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }"
+        },
+        "jet_h=5": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }"
+        },
+        "jet_h=6": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(6)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }",
+          "S_8": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,6)(ell) * (visible log factors) }"
+        },
+        "jet_h=7": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(7)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(6)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }",
+          "S_8": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,6)(ell) * (visible log factors) }",
+          "S_9": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,7)(ell) * (visible log factors) }"
+        },
+        "jet_h=8": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(8)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(7)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(6)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }",
+          "S_8": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,6)(ell) * (visible log factors) }",
+          "S_9": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,7)(ell) * (visible log factors) }",
+          "S_10": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,8)(ell) * (visible log factors) }"
+        }
+      },
+      "visible_correction": "replace each hidden assignment sum by S_j(N)-sum_(p in visible carrier primes, p<=N)(log p)^j/p; the subtracted finite terms are charged to M_visible",
+      "hidden_layout_slots": {
+        "47": [
+          0,
+          3
+        ],
+        "49": [
+          1,
+          3
+        ],
+        "50": [
+          2,
+          3
+        ],
+        "62": [
+          0,
+          2
+        ],
+        "65": [
+          1,
+          2
+        ],
+        "69": [
+          2,
+          3
+        ]
+      },
+      "leading_vector": "v_B(S_2)=exact order-five carrier coefficient vector; source formula is -1/2 times complete visible assignment sum with hidden q weight (log q)^2/q",
+      "first_possible_section_coefficient": "C_(m-1)(S)=sum_(k=1)^m a_k det(r_1(S),...,r_(k-1)(S),v_B(S),r_(k+1)(S),...,r_m(S)); a_k=(c0*lambda_k)^h_k/(h_k+1)!",
+      "coefficient_polynomial_status": "exact multilinear determinant expression specified; evaluated coefficients/support require actual source-selected row cells and complete visible-prime sums",
+      "determinant_visible_support": "not certified; structural candidate powers only",
+      "correction_matrix_span_rank": "unknown, upper bound 9 from at most 9 moment matrices",
+      "common_row_dimension": "unknown",
+      "common_column_dimension": "unknown",
+      "determinant_null_correction_dimension": "unknown"
+    },
+    {
+      "ids": [
+        34,
+        37,
+        39,
+        43,
+        53,
+        56,
+        60,
+        63
+      ],
+      "size": 8,
+      "hmax": 6,
+      "moment_variables": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "matrix_identity": "M_full=M_visible+sum_(j=2)^(hmax+2) S_j E_(B,j)",
+      "E_entry_rule": {
+        "jet_h=0": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }"
+        },
+        "jet_h=1": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }"
+        },
+        "jet_h=2": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }"
+        },
+        "jet_h=3": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }"
+        },
+        "jet_h=4": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }"
+        },
+        "jet_h=5": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }"
+        },
+        "jet_h=6": {
+          "S_2": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(6)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,0)(ell) * (visible log factors) }",
+          "S_3": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(5)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,1)(ell) * (visible log factors) }",
+          "S_4": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(4)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,2)(ell) * (visible log factors) }",
+          "S_5": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(3)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,3)(ell) * (visible log factors) }",
+          "S_6": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(2)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,4)(ell) * (visible log factors) }",
+          "S_7": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(1)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,5)(ell) * (visible log factors) }",
+          "S_8": "Re sum_(visible injective carrier assignments tau; closed paths |ell_s|<=6000; roots i in [k_--min(v),k_+-max(v)]) 1_{carrier nearest-alias and 0<|lambda-mL|<=H/T} * exp(i*T*lambda) * [u^(0)]{(visible-slot product and exact prefix phases) * exp(c0*i_min*lambda*u)/n * sum_(r=0)^(n-range(v)-1)exp(c0*r*lambda*u) * kappa_(hidden_pair,6)(ell) * (visible log factors) }"
+        }
+      },
+      "visible_correction": "replace each hidden assignment sum by S_j(N)-sum_(p in visible carrier primes, p<=N)(log p)^j/p; the subtracted finite terms are charged to M_visible",
+      "hidden_layout_slots": {
+        "37": [
+          2,
+          3
+        ],
+        "39": [
+          2,
+          4
+        ],
+        "43": [
+          1,
+          3
+        ],
+        "56": [
+          2,
+          3
+        ],
+        "60": [
+          0,
+          2
+        ],
+        "63": [
+          1,
+          2
+        ]
+      },
+      "leading_vector": "v_B(S_2)=exact order-five carrier coefficient vector; source formula is -1/2 times complete visible assignment sum with hidden q weight (log q)^2/q",
+      "first_possible_section_coefficient": "C_(m-1)(S)=sum_(k=1)^m a_k det(r_1(S),...,r_(k-1)(S),v_B(S),r_(k+1)(S),...,r_m(S)); a_k=(c0*lambda_k)^h_k/(h_k+1)!",
+      "coefficient_polynomial_status": "exact multilinear determinant expression specified; evaluated coefficients/support require actual source-selected row cells and complete visible-prime sums",
+      "determinant_visible_support": "not certified; structural candidate powers only",
+      "correction_matrix_span_rank": "unknown, upper bound 7 from at most 7 moment matrices",
+      "common_row_dimension": "unknown",
+      "common_column_dimension": "unknown",
+      "determinant_null_correction_dimension": "unknown"
+    }
+  ],
+  "section_expansion": "source section coefficients are Laurent polynomials in n_i=dprime_i; first possible total deficit m-1; top row vector is the exact common order-five carrier vector v_B, not ones",
+  "PNT_main_if_full_interval": "S_j(N)~(log N)^j/j, j=2..10; not inserted into determinant without coefficient support proof"
+}
