@@ -1,0 +1,1868 @@
+{
+  "decision": "E",
+  "status": "PHYSICAL_ENDPOINT_BOUND_CLOSED_SOURCE_JET_INTERTWINING_OPEN",
+  "input_head": "307fe32651d0378e439b69f110060d6c94ee1a15",
+  "uniform_old_schema": {
+    "coefficients": "arbitrary finite Hilbert family with finite total energy, fixed as k varies",
+    "frequency_hypotheses": "bounded real frequencies; distinct frequencies collapsed; minimum separation delta",
+    "mean_score_bound": "2*(1+h^2*Omega^2)*(1+2pi/(q*h*delta))*B",
+    "historical_integer_specialization": "m<=T^2, delta>=1/(T^2+1), Omega=O(L), B=O(1)"
+  },
+  "fields": [
+    {
+      "id": 15,
+      "pi": [
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 20,
+      "pi": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 26,
+      "pi": [
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        1,
+        3,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/1250",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 28,
+      "pi": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/1250",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 31,
+      "pi": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "net": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 32,
+      "pi": [
+        0,
+        1,
+        2,
+        3,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 10,
+      "pi": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        4,
+        1
+      ],
+      "net": [
+        2,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 12,
+      "pi": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        4,
+        1
+      ],
+      "net": [
+        2,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 16,
+      "pi": [
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 17,
+      "pi": [
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        1,
+        2
+      ],
+      "net": [
+        2,
+        1,
+        0
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 21,
+      "pi": [
+        0,
+        1,
+        0,
+        2,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 22,
+      "pi": [
+        0,
+        1,
+        0,
+        2,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        1,
+        2
+      ],
+      "net": [
+        2,
+        1,
+        0
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 25,
+      "pi": [
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        0,
+        2,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 29,
+      "pi": [
+        0,
+        1,
+        2,
+        0,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        1
+      ],
+      "aliases": [
+        2
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 36,
+      "pi": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 38,
+      "pi": [
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 42,
+      "pi": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 46,
+      "pi": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        -1,
+        1,
+        1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 47,
+      "pi": [
+        0,
+        1,
+        2,
+        0,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "net": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 48,
+      "pi": [
+        0,
+        1,
+        2,
+        1,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        1,
+        3,
+        1
+      ],
+      "net": [
+        1,
+        -1,
+        1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/1250",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 49,
+      "pi": [
+        0,
+        1,
+        2,
+        1,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 50,
+      "pi": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 54,
+      "pi": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 59,
+      "pi": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 61,
+      "pi": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        3,
+        1,
+        1
+      ],
+      "net": [
+        -1,
+        1,
+        1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 62,
+      "pi": [
+        0,
+        1,
+        0,
+        2,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "net": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 64,
+      "pi": [
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        1,
+        3,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 65,
+      "pi": [
+        0,
+        1,
+        1,
+        2,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "net": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 68,
+      "pi": [
+        0,
+        1,
+        2,
+        2,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        1,
+        1,
+        3
+      ],
+      "net": [
+        1,
+        1,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/1250",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 69,
+      "pi": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "net": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 34,
+      "pi": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        4,
+        1
+      ],
+      "net": [
+        2,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 37,
+      "pi": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 39,
+      "pi": [
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 43,
+      "pi": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 53,
+      "pi": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        4,
+        1
+      ],
+      "net": [
+        2,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": false,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 56,
+      "pi": [
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 60,
+      "pi": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        0,
+        2,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    },
+    {
+      "id": 63,
+      "pi": [
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "nu": [
+        2,
+        2,
+        1
+      ],
+      "net": [
+        2,
+        0,
+        -1
+      ],
+      "aliases": [
+        1
+      ],
+      "independent_canceled_prime": true,
+      "exact_consumer_alpha": "-11501/625",
+      "pool": "all ordinary primes <=N, injective on equality blocks",
+      "source_mask": "exact descriptor, cutoff, distinctness, nearest allowed alias, 0<abs(lambda-mL)<=H/T, positive source root count",
+      "source_mask_callback_status": "externally supplied; not newly implemented",
+      "R": 6000,
+      "prefix_order": "v0=0; v_s=sum_(r=1)^s ell_r; original ordered slots",
+      "root_order": "increasing i from a0-min(v) through b0-max(v), inclusive",
+      "normalization": "slot -log(p)/(a_phi*L*sqrt(p)); positive-carrier factor 1/2; exact root divisor n",
+      "boundary_lower": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-min(v)))*lambda)",
+      "boundary_upper": "(1/2) sum_full_source w(P,ell) exp(i*(T+h*(k-max(v)))*lambda)",
+      "jet_rows": "exact [u^h] source root/filter product, NOT evaluation at u=1/L"
+    }
+  ],
+  "score": {
+    "kind": "physical boundary score; determinant-jet score not substituted",
+    "joint": true,
+    "adjacent_offsets": [
+      0,
+      1
+    ],
+    "candidate_line": "a0=k; b0=k+d-q; k=0,...,q-1; q=floor(d/sqrt(L))",
+    "dimension": "n=d-q+1, independent of k, n/d->1",
+    "pool_truncation": false,
+    "centered_heuristic": false,
+    "selected_endpoint": null,
+    "determinant_selector_certified": false
+  },
+  "physical_bound": {
+    "W2": "925911007/78125",
+    "R": 6000,
+    "P_R_rational_upper": "158171/243",
+    "K": "6*M*P_R/a_phi^3",
+    "energy_one_edge": "W2*K^2*(4pi+8H*(1+a_phi^2*M))/T",
+    "Omega_upper": "3L",
+    "delta_lower": "1/(N^3+1)",
+    "joint_adjacent_mean_score": "8*(1+36pi^2)*(1+2pi*(N^3+1)/(q*h))*B_native",
+    "normalized_endpoint_rate": "O_R,H(exp(-3sqrt(L))/sqrt(L))+o(1)",
+    "determinant_jet_bound": null
+  },
+  "jet_gate": {
+    "root_jet": "(c0*lambda)^h/(n*h!) * sum_(r=0)^(n-span-1) (a0-min(v)+r)^h",
+    "translation": "J_h(a0+s)=sum_(r=0)^h (c0*s*lambda)^(h-r)/(h-r)! * J_r(a0)",
+    "complete_complex_stack_determinant": "1",
+    "complete_realification_invertible": true,
+    "frozen_real_row_stencil_closed": null,
+    "alias_reduction_commutes_with_jet": false,
+    "remaining_lemma": "source-legal real row space invariant under the nilpotent realified jet-translation generator, yielding column- and S-independent invertible U_B(s)",
+    "finite_test": "ker(P_B restricted to the actual coefficient-column Krylov space V_jet) is invariant under every G_x",
+    "generator_subdiagonal": "2pi*lambda_x * [[0,-1],[1,0]]",
+    "ambient_dimension_upper": "18 times the number of frozen source cells",
+    "intertwining_matrices_H_x": null
+  },
+  "linear_transfer": {
+    "old_support": "even ordinary-semiprime carrier degree 2",
+    "native_support": "odd reduced carrier degree 3",
+    "endpoint_independent_support_transfer_rank": 0,
+    "residual": "D on disjoint native carrier support; actual rank unknown",
+    "sharp_Score_det_to_Score_trim_constant": null
+  },
+  "budget": {
+    "joint_cushion": "52897896569489/572357731837500000",
+    "retained_l1_mass": "163444421/31250",
+    "paid_bulk_arithmetic_charge": null,
+    "strict_gt79": "OPEN"
+  },
+  "determinant_visible_K": null,
+  "correction_ranks": null,
+  "source_legal_minors": null,
+  "fifth_rank_bounds": [
+    38,
+    72
+  ],
+  "source_pins": {
+    "notes/WP84_GOOD_ENDPOINT_TRIMMING.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "936f500f644c99ec00bdb0b98bac12161296fff5",
+      "sha256": "e1f99e231e565787d385e0a4b6c8d8e75e6f730a3d2150492b2bcdaf7da36694"
+    },
+    "notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "ac87e8a1731cd22bea8f769fee7eba1cbb0f4d5d",
+      "sha256": "7945c3eda0dcfbf4dda160a71d98cb127fc09689e0cf639c962f393a56b3fdd6"
+    },
+    "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "c0c0e061239366ec956daa573095d5b3a99a2b2e",
+      "sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+    },
+    "notes/WP84_R400_SAME_NORMALIZATION_REPLAY.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "2ef652e3661023dec56ca415ee9653bdcc70552a",
+      "sha256": "14347fb7cea407222293a118504e5e175ccfcf9cfa3715bea2be92b3d9aa72a3"
+    },
+    "notes/WP84_BALANCED_PRODUCT_SECOND_MASS.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "fce2a0ae56c4e06d265d9adf05e6ee26d0967b85",
+      "sha256": "42afa7a0413a532d24626049af97d07ae26d17e164aeeb6316743d263af61708"
+    },
+    "notes/WP84_DETUNING_FEATURE_MAXIMAL_REDUCTION.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "ce05ba814bbf0b2b9c891ad8333ae880c92d68a8",
+      "sha256": "6221f2e4d6f1ff147ef832acc0dc25656a6ad0461fed7f779ce01e97fffe8ea6"
+    },
+    "notes/WP84_DETUNING_COMMUTATOR_ENDPOINT.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "dda38d04a887e8f389ddab7c515b01266ef61af5",
+      "sha256": "d9784ef2cc35e221a93ed59f2dda2720412caaf0e8d1546c26ca4d934774075c"
+    },
+    "notes/WP84_EXACT_Q_MASK_AND_DETERMINANT_VISIBLE_MOMENT_BASIS.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "b9b4076633b8a30e2974ea45b00881251a7c9a14",
+      "sha256": "6b8a83456b4fb5e69510ce30361e5a4a1c5990ae47a4861be0b0d8a5ab825c17"
+    },
+    "notes/WP84_FULL_WEIGHT_EVALUATION_MAP_KERNEL.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "8cbb866dd5c273de8d24243a7dc60c1621585e76",
+      "sha256": "1013d330d704caa39caeb40ef4c04085e59321b7537619a7b46c1ad08cdbae96"
+    },
+    "notes/WP84_FIFTH_LEGAL_STENCIL_AND_PRIME_REALIZATION.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "b9483cb23d97a0881c88a40d135bca065022d602",
+      "sha256": "27ac39c7c9338afd6518243d1543d388742af241a7c578cbea7b53ecda392dce"
+    },
+    "notes/WP84_FIFTH_FULL_POOL_LARGE_SECTION_LIFT.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "edcef2f38ad67c5fc70e806cde7d62ba28953dc3",
+      "sha256": "b5168c4119da1c53282ecc2f08165eac142fc289f71a11c792bc4f082f2f1e20"
+    },
+    "notes/WP84_LRSC_PHASE_NETWORK_FUNCTIONAL_RANK_TRANSPLANT.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "87418b7367cb6734968c26f293c2deee470cf29b",
+      "sha256": "de945cfa8250f3d6ce89a02e0ba75cc8bd637259e52322d5415f9e07e6d78ee3"
+    },
+    "notes/WP84_LRSC_DISPLACEMENT_RANK_CLOSURE.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "b48c52723d4fe456e50b63fc82337dad7974faf6",
+      "sha256": "3945aa0ed3991e77cc503fbddf166dfffb205f0e2a0f4053c466108fe315797e"
+    },
+    "notes/WP84_NEAR_ALIAS_SURVIVOR_ORBIT_COMPRESSION.md": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "51c461765adf7164244c08037daac24203dc1884",
+      "sha256": "c5ff95a00ea9c5fea26be36a614826c12881b11fe9ab4f53949d1a3c254d25be"
+    },
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "27c27e7c20257c59ccff9f72909a03634cfce989",
+      "sha256": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a"
+    },
+    "src/wp84_r400_first_record_assembly.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "0992647ebc0f8e169f03f0dd90fe2aa0dda529c6",
+      "sha256": "ded28dc77845d6c594fca5ebe6989d0725db669d392e5603466eceafff84368e"
+    },
+    "src/wp84_r400_same_normalization_replay.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "3d0f7666d7c261933d4bd486b09f8c32dd4a4834",
+      "sha256": "624eb712e880b74505b20c158f91e680531c82d597eaf17987392c1fc68e0c90"
+    },
+    "src/wp84_r400_pair_layer_exact.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "3423ec96f79f2b28f134a66ac7f29e67d527ffa7",
+      "sha256": "f185a9cde28b6b3d3a4e0ab2633d167c3fa6e44051330e15a48f4ee5c23e924f"
+    },
+    "src/wp84_detuning_commutator_endpoint.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "e6ac27939b11007923cf2b01642fca28e444ada9",
+      "sha256": "75723590a2d5e8b34204805a5b1bc1be80997a3f656a3920836ae15b7d29a374"
+    },
+    "src/wp84_cross_scale_sharp_detuning.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "3464b0a7a81299a0e53522aee140a864fa93f429",
+      "sha256": "111f4e962d31a07a52846cf004f14c4dc81d37cae311aed506b8eced470be437"
+    },
+    "src/wp84_fifth_full_pool_amplitude.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "dab1000ec7297f276197b8ecca7a8a0cd07fbd69",
+      "sha256": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1"
+    },
+    "src/wp84_fifth_full_pool_replay.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "7091876256185f57bf0e49855c2375d48458334c",
+      "sha256": "c72ad1441f5a46676cff6fb3ee76cf1e765638de792273884a27c66b8b1c8cf9"
+    },
+    "src/wp84_source_q_mask_extractor.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "dd89f3204d66425f2cd2c82e22679995066df4b9",
+      "sha256": "903566a67c809e397f18efc1fcbfeddcd6bc24ec6b561c93ab0b1cf9bf724152"
+    },
+    "src/wp84_exact_q_mask_replay.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "bfc1328712e7c5f104573135534326998616c99e",
+      "sha256": "1c6185bf8e01b74e36582faeb8d0e9fe1e62da7899c2b8386b374f168b4e5576"
+    },
+    "src/wp84_exact_determinant_coefficient_builder.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "b7bdc17bb9df9a0da32af3d23a1a7224e32b7a54",
+      "sha256": "7651b564aba186dfc7c30228f5c9d8c9180bb2a99aa465c3f368b494f57afe09"
+    },
+    "src/wp84_wedge_support_reducer.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "ae34ebbf6734caaa51084c8065b832a3bb1d7ed8",
+      "sha256": "ff0411155eee27c54b86b91a73618e539e36577b986b4aee18aa3155f64b2b0b"
+    },
+    "src/wp84_visible_prime_minor_builder.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "8aac3dd13158db1008ffd9b646ecb7cb300b575a",
+      "sha256": "e23f0bfa3362b40fe326eb3abd183bbead54f57ba6ae6cb375611b799278f63b"
+    },
+    "src/wp84_full_weight_evaluation_map.py": {
+      "commit": "307fe32651d0378e439b69f110060d6c94ee1a15",
+      "blob": "3bc03d12f0ef8f68eb15e4aa24ad921739adbb55",
+      "sha256": "40019b7dfa54d4402d25c7e30935afba6a0d54aea6c36371e3de985ebb3b51fa"
+    }
+  },
+  "packet_sha256": {
+    "notebooklm_packet/00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": "3722f58798b83af2217bbce767952e91a0a78cb48d3dae8e0ae760a1a647e322",
+    "notebooklm_packet/01_ARITHMETIC_B_TO_C_SOURCES.pdf": "d992b7df5864327ea1bc4311cf389f40bb0eebb04875374cee83f02ab5554400",
+    "notebooklm_packet/02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": "0739f2b0cbdd33eccccf52be697cb12cc9d84e4aaac8e349a8da812b0620b6bf",
+    "notebooklm_packet/03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": "63c17f88feb7371996603d237c875af0bd369be2317f604d00e81123eca94991",
+    "notebooklm_packet/04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": "59e98fad78f2ce38bae01f09b893fa7945a027c4cc69e378719c39b2deabbcd8",
+    "notebooklm_packet/MANIFEST.txt": "d9fae2f7dba4ee55661c118fdd3ce0db379ad8a075a2f9cd9294304eb0f3a5a3"
+  },
+  "packet_read_only_semantic_hits": {
+    "00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": {
+      "commutator": 3,
+      "rank-two": 1,
+      "wedge": 0,
+      "gauge": 0,
+      "principal section": 5,
+      "lrsc": 0
+    },
+    "01_ARITHMETIC_B_TO_C_SOURCES.pdf": {
+      "commutator": 26,
+      "rank-two": 13,
+      "wedge": 0,
+      "gauge": 2,
+      "principal section": 9,
+      "lrsc": 12
+    },
+    "02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": {
+      "commutator": 18,
+      "rank-two": 11,
+      "wedge": 0,
+      "gauge": 0,
+      "principal section": 5,
+      "lrsc": 0
+    },
+    "03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": {
+      "commutator": 2,
+      "rank-two": 0,
+      "wedge": 0,
+      "gauge": 0,
+      "principal section": 0,
+      "lrsc": 3
+    },
+    "04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": {
+      "commutator": 0,
+      "rank-two": 0,
+      "wedge": 0,
+      "gauge": 0,
+      "principal section": 0,
+      "lrsc": 0
+    }
+  }
+}
