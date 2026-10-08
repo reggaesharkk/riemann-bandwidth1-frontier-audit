@@ -1,0 +1,226 @@
+[
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "finite-benchmark/mask-transition/REPORT.md",
+    "git_blob": "26854c7d5e15afe65a9631629be3d73a9be3db4a",
+    "sha256": "e41e98fecbc32dabd99a2efcef3e694fc40f8bcdb301b09e93961c4261a6855f",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\finite-benchmark\\mask-transition\\REPORT.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/ERRATA.md",
+    "git_blob": "ea7bd98d16406cacf0c13c0df4b9c57ef6e55529",
+    "sha256": "fcee933fde16b9a22401fe7b32f02e98f66895573220b8d3eff649d20d10bb5b",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\ERRATA.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/README.md",
+    "git_blob": "7e1cea12710e8709fe211bbc02a1cb19567e3ef1",
+    "sha256": "18dd2c6fdd965eb23d3feb1e70b6c7276da97692c09789e71d0c90905d1bdd97",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\README.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/SHA256SUMS.txt",
+    "git_blob": "52a5a54053f6082aa1c5e50a5b7a460c2e873e00",
+    "sha256": "eefac47e982aba75d0eb6b8c98ee70f5ddbdc6063cc5fded617f747209276ae9",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\SHA256SUMS.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/output/bnb_decisive_even.txt",
+    "git_blob": "7c2bd5b11ae478c7c2cc855d8eba3b07143481ee",
+    "sha256": "0338e82604d53d309326a11d6277b9f093453126b4c2871d4b76acdbf92e37c4",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\output\\bnb_decisive_even.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/output/bnb_decisive_pca.txt",
+    "git_blob": "e82d753a5b2f96f523771894c598e75b1c5fb61f",
+    "sha256": "6379999e03a18012e5fceef122318f273cdd313dfffe164bbf18d61dd5733de3",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\output\\bnb_decisive_pca.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/output/part1_output.txt",
+    "git_blob": "212026b14fe2b6a79e14836a08678db81b4811f0",
+    "sha256": "7941db70ba43efa97ebcea9a03a078deeee54171e4f851bb85940cec6db6f487",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\output\\part1_output.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/output/part2_output.txt",
+    "git_blob": "7be66da8f215f76fb1e9762ed5e527278154e4dd",
+    "sha256": "31f98772ec5320d838c086afa723f2b63d56357d2e0c2b90ab6274e0521bd738",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\output\\part2_output.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/source/part1_theorem.py",
+    "git_blob": "ab44b1ee7015d52e06e7b5c3e4249f8322bb5196",
+    "sha256": "3750ff8609e2d6262ec80a8a212c7d15e2caba594f9b5561b16c762eb3c5aa15",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\source\\part1_theorem.py"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/source/part2_build.py",
+    "git_blob": "23da34516abf3a4b93fcd1a18976d8e95b24b264",
+    "sha256": "ff4c718c782d3bb6b5e9ec40b3b8c2cf68e376f9bc70867624a90c1b8e369042",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\source\\part2_build.py"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2.2-supplement/source/run_bnb.py",
+    "git_blob": "4fdb1b2ec99d6f5b117a30d569b2e8cb07ce882e",
+    "sha256": "9f80e14a2cd6a66e4179de9c5cab8116395d4ac5b8ae90ac5304ed3270a10cc0",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2.2-supplement\\source\\run_bnb.py"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/ENVIRONMENT.txt",
+    "git_blob": "fccc155e1cde0bde721c72f2c0457b3d503c95f5",
+    "sha256": "9ffc1deec7c763f578d0c153ed0cb7ef73e2a6a39cb40fbab8172fa55a097df7",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\ENVIRONMENT.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/LRSC_Odd_Ring_Rank_Theorem_v1_2.tex",
+    "git_blob": "be0299c09973bfd66225bc0aba06ffae0114d0eb",
+    "sha256": "4d5806b6ba9b7ba6ca2f9a6aa42f6f7754a8c4e36f888f45edc858e8f51bf89a",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\LRSC_Odd_Ring_Rank_Theorem_v1_2.tex"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/OSF_DEPOSIT_METADATA.md",
+    "git_blob": "fd66f941da6d9884c97de45021113584cdac3564",
+    "sha256": "3f4efdd06a614bd43e13027637a42554de6c1d29a7f9e91c59c7bd4f80de5e51",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\OSF_DEPOSIT_METADATA.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/PROOF_LEDGER.md",
+    "git_blob": "ab6077ca0d3fb6bd65dce376d9395cc4e4eea69c",
+    "sha256": "f3e5da9a2e03685238cd8d3ee17c5e7930ab978b534e2a37731a24bf9b896443",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\PROOF_LEDGER.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/README.md",
+    "git_blob": "5c2c83365e327cd7de49119406e2c4b9664cd3ec",
+    "sha256": "4221eab3d363d5cc0cd4e63c937d85a05cd67aa89cef302b0232d0cd89220c68",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\README.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/SHA256SUMS.txt",
+    "git_blob": "824032df7ca65a938c59fe1e8ff275859dd333b8",
+    "sha256": "34ae66710299570e48d49bb00ba68e2f6eee51bd0c39ddeb2519c88406118f65",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\SHA256SUMS.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/THEOREM_v1_2.md",
+    "git_blob": "3316e2f0b8ff356d06d253a310234fafe9623d14",
+    "sha256": "f778792dfa9b0acd7e3b40c43c6bdc21f24656ffcc698bff12a6295e3ea924e5",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\THEOREM_v1_2.md"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/VERIFICATION_OUTPUT.txt",
+    "git_blob": "0b00eaa6acc22a28baf6f02a41d50825e7f6bc2c",
+    "sha256": "15f7df58db9b81a0f5c108540d6db28cd961acc232e159138a2be4c7602f47e1",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\VERIFICATION_OUTPUT.txt"
+  },
+  {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "96cdd83ceadfff766d98ffdf2249a9de43fe74de",
+    "path": "odd-ring-rank-theorem/v1.2/verify_lrsc_odd_ring_rank_v1_2.py",
+    "git_blob": "6cc221d96b07e0d94ab98a17c25f43a88c770108",
+    "sha256": "9a7a379dc3aefa97f15f2ae4ea653043856b7094602059ff787e1bbb1f7b29b9",
+    "local_cache": ".cache\\rank_transplant_sources\\lrsc-odd-ring-spectral-rank\\odd-ring-rank-theorem\\v1.2\\verify_lrsc_odd_ring_rank_v1_2.py"
+  },
+  {
+    "repository": "reggaesharkk/physics-v1-dynamical-sector",
+    "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+    "path": "appendix/v1.4.1/CHANGES.md",
+    "git_blob": "66b5fab560fecc23ae5ba2dce4facc19b18cee1f",
+    "sha256": "11952098b52edb3b6e0f2cefad1cf56250fedf6105da4ea5e55fea2675754940",
+    "local_cache": ".cache\\rank_transplant_sources\\physics-v1-dynamical-sector\\appendix\\v1.4.1\\CHANGES.md"
+  },
+  {
+    "repository": "reggaesharkk/physics-v1-dynamical-sector",
+    "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+    "path": "appendix/v1.4.1/PROOF_AUDIT.md",
+    "git_blob": "618f4233ac8a217f6cd12fcb66ab400adda61dd8",
+    "sha256": "706bf36281a74aa8721db6445edba25a2899051441d4f2e3861c721c1c7e79b4",
+    "local_cache": ".cache\\rank_transplant_sources\\physics-v1-dynamical-sector\\appendix\\v1.4.1\\PROOF_AUDIT.md"
+  },
+  {
+    "repository": "reggaesharkk/physics-v1-dynamical-sector",
+    "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+    "path": "appendix/v1.4.1/README.md",
+    "git_blob": "b43ce3c297d6c8949fd1c076c4b6063917d72596",
+    "sha256": "26ebb6f4436ea60e5fc515e81a27dfa367e5acb416f3660073948b04bb67a594",
+    "local_cache": ".cache\\rank_transplant_sources\\physics-v1-dynamical-sector\\appendix\\v1.4.1\\README.md"
+  },
+  {
+    "repository": "reggaesharkk/physics-v1-dynamical-sector",
+    "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+    "path": "appendix/v1.4/README.md",
+    "git_blob": "43089aec7e9e41c7b0721d36c16a6ea0851b8002",
+    "sha256": "c9ae751d1a402a9b782281968f081e1b06af0b54f5f22f0535ab8170cfc3ddf9",
+    "local_cache": ".cache\\rank_transplant_sources\\physics-v1-dynamical-sector\\appendix\\v1.4\\README.md"
+  },
+  {
+    "repository": "reggaesharkk/physics-v1-dynamical-sector",
+    "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+    "path": "appendix/v1.4/THEOREM.md",
+    "git_blob": "cedd96a50e8805a6b77d3ecea057747ab8e406e9",
+    "sha256": "d7a8d6b5063624f7ce57c326a12a5fff800531655a55b6d993ac42e5b7ace3dc",
+    "local_cache": ".cache\\rank_transplant_sources\\physics-v1-dynamical-sector\\appendix\\v1.4\\THEOREM.md"
+  },
+  {
+    "repository": "reggaesharkk/physics-v1-dynamical-sector",
+    "commit": "d409fd30bcd7c071ef92558f3fe8c1adff3f3022",
+    "path": "appendix/v1.4/THEOREM.txt",
+    "git_blob": "92cffc1e8dc49e244fb4d461e99c097da05449ef",
+    "sha256": "6b2c011a81172f036700d4882098ad340d454339459db6283613eaf676ecaa60",
+    "local_cache": ".cache\\rank_transplant_sources\\physics-v1-dynamical-sector\\appendix\\v1.4\\THEOREM.txt"
+  },
+  {
+    "repository": "reggaesharkk/navier-stokes-bridge-audit",
+    "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+    "path": "notes/WP16_036_LOCAL_PHASE_NETWORK_CERTIFICATE_2026_09_26.md",
+    "git_blob": "48d65784fe5e77fc49de465017dcfa1e6b4218de",
+    "sha256": "c168929499040f337584169b19778eee82519838f142f4c6c5af07624042c081",
+    "local_cache": ".cache\\rank_transplant_sources\\navier-stokes-bridge-audit\\notes\\WP16_036_LOCAL_PHASE_NETWORK_CERTIFICATE_2026_09_26.md"
+  },
+  {
+    "repository": "reggaesharkk/navier-stokes-bridge-audit",
+    "commit": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+    "path": "notes/WP16_CROSS_CUTOFF_ORBIT_RANK_GATE_2026_09_25.md",
+    "git_blob": "10458269fba80ee49f8b94f8104dc47b8a2fbe03",
+    "sha256": "903e35e489acd1a71d47e9e6ac8a9cbc43ec2aa9d351be9ae41419327472a1a2",
+    "local_cache": ".cache\\rank_transplant_sources\\navier-stokes-bridge-audit\\notes\\WP16_CROSS_CUTOFF_ORBIT_RANK_GATE_2026_09_25.md"
+  }
+]

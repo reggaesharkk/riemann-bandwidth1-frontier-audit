@@ -1,0 +1,346 @@
+{
+  "decision": "F",
+  "parent": "7addc6e33f6fd3053145155747e97f2a755f2e77",
+  "phase_graphs": [
+    {
+      "b": 5,
+      "B": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1
+        ]
+      ],
+      "rank_B": 4,
+      "vertex_gauge_image_dimension": 4,
+      "cycle_dimension": 1,
+      "cycle_basis": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "closed_displacement_map": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "closed_displacement_dimension": 4,
+      "root_origin_gauge_dimension": 1,
+      "symbolic_alpha_phase_rank": 4,
+      "phase_rank_scope": "independent alpha slot coefficients after root-origin compensation; not arithmetic functional rank"
+    },
+    {
+      "b": 6,
+      "B": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ]
+      ],
+      "rank_B": 5,
+      "vertex_gauge_image_dimension": 5,
+      "cycle_dimension": 1,
+      "cycle_basis": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "closed_displacement_map": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "closed_displacement_dimension": 5,
+      "root_origin_gauge_dimension": 1,
+      "symbolic_alpha_phase_rank": 5,
+      "phase_rank_scope": "independent alpha slot coefficients after root-origin compensation; not arithmetic functional rank"
+    }
+  ],
+  "orbit_response": {
+    "shape": [
+      453,
+      11
+    ],
+    "rank": 0,
+    "left_nullity": 453,
+    "right_nullity": 11,
+    "row_basis": [],
+    "column_basis": [],
+    "null_basis": "standard coordinate vectors on both sides",
+    "scope": "exact gauge response only; not full elementary-state-transition response"
+  },
+  "formal_update_tests": [
+    {
+      "atom_count": 1,
+      "formal_diagonal_update": [
+        [
+          1
+        ]
+      ],
+      "rank": 1,
+      "determinant": 1,
+      "scope": "symbolic atom-multiplier countermodel; not a measured actual prime transition"
+    },
+    {
+      "atom_count": 2,
+      "formal_diagonal_update": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "rank": 2,
+      "determinant": 2,
+      "scope": "symbolic atom-multiplier countermodel; not a measured actual prime transition"
+    },
+    {
+      "atom_count": 3,
+      "formal_diagonal_update": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "rank": 3,
+      "determinant": 6,
+      "scope": "symbolic atom-multiplier countermodel; not a measured actual prime transition"
+    },
+    {
+      "atom_count": 6,
+      "formal_diagonal_update": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      "rank": 6,
+      "determinant": 720,
+      "scope": "symbolic atom-multiplier countermodel; not a measured actual prime transition"
+    }
+  ],
+  "minimum_state_generator_count": null,
+  "actual_generator_rank": null,
+  "actual_analytic_rank_bound": 453,
+  "analytic_rank_lower_bound": 0,
+  "proved_analytic_rank": null,
+  "proved_small_basis": null,
+  "formal_label_gram": {
+    "formula": "G=I_453 for independently labelled feature coordinates",
+    "rank": 453,
+    "determinant": 1,
+    "analytic_faithfulness": false
+  },
+  "actual_gram_rank": null,
+  "actual_null_relations": null,
+  "new_arithmetic_bound": null,
+  "old_common_bound_unchanged": "1.7670578586835696e-8",
+  "fifth_sixth": "parity separation under certified gauges and dihedral actions; no stronger functional-subspace separation proved",
+  "source_count": 28,
+  "first_missing_step": "injectivity or full-weight kernel characterization of atomic-measure evaluation on the 453-function span",
+  "strict_gt79": "OPEN",
+  "charge": null
+}
