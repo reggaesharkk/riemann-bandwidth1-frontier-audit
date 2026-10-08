@@ -1,0 +1,4458 @@
+{
+  "source_head": "b299cbdb12a525739ac17fc489eb7992e8f316ff",
+  "decision": "F",
+  "R": 6000,
+  "blocks": [
+    {
+      "ids": [
+        15,
+        20,
+        26,
+        28,
+        31,
+        32
+      ],
+      "formal_rank": 6,
+      "hidden_layouts": [
+        31,
+        32
+      ],
+      "visible_layouts": [
+        15,
+        20,
+        26,
+        28
+      ],
+      "hidden_layout_count": 2,
+      "visible_layout_count": 4,
+      "max_h": 6,
+      "hidden_layout_exact_formulas": [
+        {
+          "id": 31,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "net_exponents": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "hidden_slot_pair": [
+            0,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 32,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1
+          ],
+          "net_exponents": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "hidden_slot_pair": [
+            1,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        }
+      ],
+      "pair_signatures": {
+        "(0, 4)": [
+          31
+        ],
+        "(1, 4)": [
+          32
+        ]
+      },
+      "moment_basis": [
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            31
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            32
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        }
+      ],
+      "block_moment_count_if_one_mask_per_slot_pair": 14,
+      "correction_rank": "undetermined without actual source-mask/section coefficient matrices",
+      "certified_analytic_rank": 1
+    },
+    {
+      "ids": [
+        10,
+        12,
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "formal_rank": 8,
+      "hidden_layouts": [
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "visible_layouts": [
+        10,
+        12
+      ],
+      "hidden_layout_count": 6,
+      "visible_layout_count": 2,
+      "max_h": 6,
+      "hidden_layout_exact_formulas": [
+        {
+          "id": 16,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            1
+          ],
+          "hidden_slot_pair": [
+            2,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 17,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2
+          ],
+          "net_exponents": [
+            2,
+            1,
+            0
+          ],
+          "hidden_slot_pair": [
+            3,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 21,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            1
+          ],
+          "hidden_slot_pair": [
+            1,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 22,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          "net_exponents": [
+            2,
+            1,
+            0
+          ],
+          "hidden_slot_pair": [
+            3,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 25,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0
+          ],
+          "net_exponents": [
+            0,
+            2,
+            1
+          ],
+          "hidden_slot_pair": [
+            0,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 29,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            1
+          ],
+          "hidden_slot_pair": [
+            1,
+            4
+          ],
+          "aliases": [
+            2
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        }
+      ],
+      "pair_signatures": {
+        "(0, 4)": [
+          25
+        ],
+        "(1, 4)": [
+          21,
+          29
+        ],
+        "(2, 4)": [
+          16
+        ],
+        "(3, 4)": [
+          17,
+          22
+        ]
+      },
+      "moment_basis": [
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            4
+          ],
+          "layouts": [
+            25
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            4
+          ],
+          "layouts": [
+            21,
+            29
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            16
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            3,
+            4
+          ],
+          "layouts": [
+            17,
+            22
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              3,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        }
+      ],
+      "block_moment_count_if_one_mask_per_slot_pair": 28,
+      "correction_rank": "undetermined without actual source-mask/section coefficient matrices",
+      "certified_analytic_rank": 1
+    },
+    {
+      "ids": [
+        36,
+        38,
+        42,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        68,
+        69
+      ],
+      "formal_rank": 16,
+      "hidden_layouts": [
+        47,
+        49,
+        50,
+        62,
+        65,
+        69
+      ],
+      "visible_layouts": [
+        36,
+        38,
+        42,
+        46,
+        48,
+        54,
+        59,
+        61,
+        64,
+        68
+      ],
+      "hidden_layout_count": 6,
+      "visible_layout_count": 10,
+      "max_h": 8,
+      "hidden_layout_exact_formulas": [
+        {
+          "id": 47,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3
+          ],
+          "net_exponents": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "hidden_slot_pair": [
+            0,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            8
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 49,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3
+          ],
+          "net_exponents": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "hidden_slot_pair": [
+            1,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            8
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 50,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3
+          ],
+          "net_exponents": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            2,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            8
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 62,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3
+          ],
+          "net_exponents": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "hidden_slot_pair": [
+            0,
+            2
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            8
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 65,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3
+          ],
+          "net_exponents": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "hidden_slot_pair": [
+            1,
+            2
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            8
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 69,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3
+          ],
+          "net_exponents": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            2,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            8
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        }
+      ],
+      "pair_signatures": {
+        "(0, 2)": [
+          62
+        ],
+        "(0, 3)": [
+          47
+        ],
+        "(1, 2)": [
+          65
+        ],
+        "(1, 3)": [
+          49
+        ],
+        "(2, 3)": [
+          50,
+          69
+        ]
+      },
+      "moment_basis": [
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 9,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^9/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 7,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            62
+          ],
+          "power": 10,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^10/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 8,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 9,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^9/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 7,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            3
+          ],
+          "layouts": [
+            47
+          ],
+          "power": 10,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^10/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 8,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 9,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^9/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 7,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            65
+          ],
+          "power": 10,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^10/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 8,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 9,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^9/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 7,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            49
+          ],
+          "power": 10,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^10/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 8,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 9,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^9/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 7,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            50,
+            69
+          ],
+          "power": 10,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^10/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 8,
+          "last_used_jet_h": 8,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        }
+      ],
+      "block_moment_count_if_one_mask_per_slot_pair": 45,
+      "correction_rank": "undetermined without actual source-mask/section coefficient matrices",
+      "certified_analytic_rank": 1
+    },
+    {
+      "ids": [
+        34,
+        37,
+        39,
+        43,
+        53,
+        56,
+        60,
+        63
+      ],
+      "formal_rank": 8,
+      "hidden_layouts": [
+        37,
+        39,
+        43,
+        56,
+        60,
+        63
+      ],
+      "visible_layouts": [
+        34,
+        53
+      ],
+      "hidden_layout_count": 6,
+      "visible_layout_count": 2,
+      "max_h": 6,
+      "hidden_layout_exact_formulas": [
+        {
+          "id": 37,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            2,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 39,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            2,
+            4
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 43,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            1,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 56,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            2,
+            3
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 60,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          "net_exponents": [
+            0,
+            2,
+            -1
+          ],
+          "hidden_slot_pair": [
+            0,
+            2
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        },
+        {
+          "id": 63,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "hidden_slot_pair": [
+            1,
+            2
+          ],
+          "aliases": [
+            1
+          ],
+          "used_h": [
+            0,
+            6
+          ],
+          "q_polynomial_at_jet_h": "P_h(x)=sum_(k=0)^h B_(h-k)(T,d,dprime,R;visible,ell,chi) * kappa_(J,k)(ell) * x^(2+k)",
+          "kappa": "sum_(a=0)^k sum_(b=0)^(k-a) g_(ell_s,eps_s)(a) g_(ell_t,eps_t)(b) (c0*A_J)^(k-a-b)/(k-a-b)!",
+          "moment_powers": "j=2,...,2+h",
+          "q_range": "ordinary primes q<=N(T), q not equal to visible carrier primes, original chi_q=1"
+        }
+      ],
+      "pair_signatures": {
+        "(0, 2)": [
+          60
+        ],
+        "(1, 2)": [
+          63
+        ],
+        "(1, 3)": [
+          43
+        ],
+        "(2, 3)": [
+          37,
+          56
+        ],
+        "(2, 4)": [
+          39
+        ]
+      },
+      "moment_basis": [
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            0,
+            2
+          ],
+          "layouts": [
+            60
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              0,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            2
+          ],
+          "layouts": [
+            63
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              2
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            1,
+            3
+          ],
+          "layouts": [
+            43
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              1,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            3
+          ],
+          "layouts": [
+            37,
+            56
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              3
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 2,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^2/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 0,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 3,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^3/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 1,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 4,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^4/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 2,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 5,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^5/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 3,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 6,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^6/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 4,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 7,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^7/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 5,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        },
+        {
+          "slot_pair": [
+            2,
+            4
+          ],
+          "layouts": [
+            39
+          ],
+          "power": 8,
+          "definition": "sum_(q prime<=N(T), q notin visible_carrier, chi_q(pair;source)=1) (log q)^8/q",
+          "is_real_positive": true,
+          "first_possible_jet_h": 6,
+          "last_used_jet_h": 6,
+          "mask_signature": {
+            "slot_pair": [
+              2,
+              4
+            ],
+            "source_mask": "chi_q(fid,slots,lags,T,I,alias); exact equality not executable in repository"
+          }
+        }
+      ],
+      "block_moment_count_if_one_mask_per_slot_pair": 35,
+      "correction_rank": "undetermined without actual source-mask/section coefficient matrices",
+      "certified_analytic_rank": 1
+    }
+  ],
+  "global_pair_slot_signatures": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "global_moment_count_if_masks_merge_by_slot_pair": 73,
+  "global_pair_power_basis": [
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 9,
+      "first_possible_jet_h": 7,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        2
+      ],
+      "power": 10,
+      "first_possible_jet_h": 8,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 9,
+      "first_possible_jet_h": 7,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        3
+      ],
+      "power": 10,
+      "first_possible_jet_h": 8,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        0,
+        4
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 9,
+      "first_possible_jet_h": 7,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        2
+      ],
+      "power": 10,
+      "first_possible_jet_h": 8,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 9,
+      "first_possible_jet_h": 7,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        3
+      ],
+      "power": 10,
+      "first_possible_jet_h": 8,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        1,
+        4
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        15,
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        36,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 9,
+      "first_possible_jet_h": 7,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        3
+      ],
+      "power": 10,
+      "first_possible_jet_h": 8,
+      "blocks_using": [
+        36
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        2,
+        4
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        10,
+        34
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 2,
+      "first_possible_jet_h": 0,
+      "blocks_using": [
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 3,
+      "first_possible_jet_h": 1,
+      "blocks_using": [
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 4,
+      "first_possible_jet_h": 2,
+      "blocks_using": [
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 5,
+      "first_possible_jet_h": 3,
+      "blocks_using": [
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 6,
+      "first_possible_jet_h": 4,
+      "blocks_using": [
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 7,
+      "first_possible_jet_h": 5,
+      "blocks_using": [
+        10
+      ]
+    },
+    {
+      "slot_pair": [
+        3,
+        4
+      ],
+      "power": 8,
+      "first_possible_jet_h": 6,
+      "blocks_using": [
+        10
+      ]
+    }
+  ],
+  "mask_merge_status": "NOT CERTIFIED: source q-window/alias predicate chi is not implemented as an executable predicate; preserve each exact mask signature rather than silently merging",
+  "pair_jet_formula": "P_{J,h}(x)=x^2 sum_{k=0}^h kappa_{J,k}(c0;lags,signs,prefixes) x^k; the full h-jet is sum_{k=0}^h A_{h-k}*kappa_{J,k}*M_{J,2+k}",
+  "filter_coefficient": "g_{l,eps}(0)=1 if l=0 else 0; g(1)=-1; for l!=0,a>=1: g(a)=- (eps*l)^(a-1)c0^(a-1)/a!; for l=0,a>=2:0",
+  "pair_phase": "A=eps_s*prefix_(s-1)+eps_t*prefix_(t-1)",
+  "moment_weight": "1/q; q ordinary prime <=N(T), excluded if it equals a visible carrier prime, and retained iff the original q-dependent source mask chi is 1",
+  "exactness_boundary": "Exact coefficient algebra; full numerical moment basis requires source chi_q and selector cells. No finite q truncation is substituted."
+}
