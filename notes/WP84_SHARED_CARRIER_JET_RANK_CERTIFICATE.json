@@ -1,0 +1,84 @@
+{
+  "decision": "F",
+  "parent": "9d637dafa2bcedcf81ba6aad700903de0654041e",
+  "fifth_block_sizes": {
+    "6": 1,
+    "1": 4,
+    "8": 2,
+    "2": 6,
+    "3": 2,
+    "16": 1,
+    "4": 3
+  },
+  "sixth_block_sizes": {
+    "9": 2,
+    "1": 4,
+    "38": 2,
+    "3": 9,
+    "8": 2,
+    "13": 2,
+    "6": 8,
+    "32": 1,
+    "72": 1,
+    "28": 1,
+    "11": 2,
+    "12": 1
+  },
+  "fifth_rank_bounds": [
+    19,
+    72
+  ],
+  "sixth_rank_bounds": [
+    35,
+    381
+  ],
+  "total_rank_bounds": [
+    35,
+    453
+  ],
+  "analytic_intersection_bounds": [
+    0,
+    72
+  ],
+  "ordinary_reduced_common_carriers": 0,
+  "common_carrier_proof": "sum absolute net prime valuations has parity b; coprime exact rational valuations cannot have both parities",
+  "mixed_physical_intersection": null,
+  "normalization": "a_phi^6*(fifth+sixth)=a_phi H5(u)+H6(u), H_b=a_phi^b F_b",
+  "fixed_profile_conditional": "If translated boundary profiles are fixed, a_phi=1-c*u, analytic and nonzero at u=0; germ uniqueness proves fixed-section cell intersection zero. Global intersection also needs selector/boundary extension faithfulness. Neither condition is promoted from a_phi->1 alone.",
+  "unconditional_mixed_germ_theorem": false,
+  "smallest_unresolved_block": {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      5,
+      7
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  "new_strict_lower_bound": false,
+  "global_kernel": null,
+  "compression_closed": false,
+  "strict_gt79": "OPEN",
+  "source_sha256": {
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a"
+  }
+}

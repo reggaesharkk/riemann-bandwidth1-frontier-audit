@@ -1,0 +1,59 @@
+{
+  "degree": 5,
+  "support": [
+    5,
+    [],
+    [
+      2,
+      1,
+      1,
+      1
+    ]
+  ],
+  "functional_ids": [
+    5,
+    7
+  ],
+  "through_u_order": 8,
+  "normalized_rows": [
+    [
+      "1",
+      "1"
+    ],
+    [
+      "-S1+2*pi*i*lambda*mu1",
+      "-S1+2*pi*i*lambda*mu1"
+    ],
+    [
+      "(1+S2)*e2-2*pi*i*lambda*mu1*S1-2*pi^2*lambda^2*mu2",
+      "(1+S2)*e2-2*pi*i*lambda*mu1*S1-2*pi^2*lambda^2*mu2"
+    ],
+    [
+      "-(1+3*S2+S3)*e3+(1+S2)*e2*2*pi*i*lambda*mu1+2*pi^2*lambda^2*mu2*S1+(2*pi*i*lambda)^3*mu3/6",
+      "-(1+3*S2+S3)*e3+(1+S2)*e2*2*pi*i*lambda*mu1+2*pi^2*lambda^2*mu2*S1+(2*pi*i*lambda)^3*mu3/6"
+    ]
+  ],
+  "S3": "K*(K-1)*(3-2*(K+1)/dprime)",
+  "S1": "sum_slot log p",
+  "e2": "sum_(slot i<j)log p_i log p_j",
+  "mu1": "mean_(k in I)k",
+  "mu2": "mean_(k in I)k^2",
+  "S2": "2*K-K*(K+1)/dprime, K=min(R,dprime-1)",
+  "common_nonzero_factor": "6*(-1)^5/2 * prod_slot log p/sqrt(prod_slot p), per reduced carrier p^2*q*r*s; reciprocal orientation conjugates",
+  "jet_rank": 1,
+  "jet_nullity": 1,
+  "jet_kernel_vector": [
+    1,
+    -1
+  ],
+  "nonzero_minor": {
+    "row": 0,
+    "column": 0,
+    "value": "1"
+  },
+  "analytic_rank_bounds": [
+    1,
+    2
+  ],
+  "global_kernel_claim": false
+}

@@ -1,0 +1,567 @@
+[
+  {
+    "support": [
+      5,
+      [],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      15,
+      20,
+      26,
+      28,
+      31,
+      32
+    ],
+    "size": 6,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 6,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 5,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      8
+    ],
+    "size": 1,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 1,
+    "exact_analytic_rank": 1,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 0,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        1
+      ]
+    ],
+    "functional_ids": [
+      10,
+      12,
+      16,
+      17,
+      21,
+      22,
+      25,
+      29
+    ],
+    "size": 8,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 8,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 7,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      5,
+      7
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "functional_ids": [
+      3,
+      4,
+      6
+    ],
+    "size": 3,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 3,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 2,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        3,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      1,
+      2
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        4,
+        1
+      ]
+    ],
+    "functional_ids": [
+      0
+    ],
+    "size": 1,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 1,
+    "exact_analytic_rank": 1,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 0,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      36,
+      38,
+      42,
+      46,
+      47,
+      48,
+      49,
+      50,
+      54,
+      59,
+      61,
+      62,
+      64,
+      65,
+      68,
+      69
+    ],
+    "size": 16,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 16,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 15,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      33
+    ],
+    "size": 1,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 1,
+    "exact_analytic_rank": 1,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 0,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "functional_ids": [
+      34,
+      37,
+      39,
+      43,
+      53,
+      56,
+      60,
+      63
+    ],
+    "size": 8,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 8,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 7,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      18,
+      23,
+      27,
+      30
+    ],
+    "size": 4,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 4,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 3,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "functional_ids": [
+      14,
+      19,
+      24
+    ],
+    "size": 3,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 3,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 2,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "functional_ids": [
+      11,
+      13
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        4
+      ]
+    ],
+    "functional_ids": [
+      9
+    ],
+    "size": 1,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 1,
+    "exact_analytic_rank": 1,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 0,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "functional_ids": [
+      52,
+      71
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "functional_ids": [
+      41,
+      45,
+      58,
+      67
+    ],
+    "size": 4,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 4,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 3,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "functional_ids": [
+      35,
+      55
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "functional_ids": [
+      51,
+      70
+    ],
+    "size": 2,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 2,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 1,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  },
+  {
+    "support": [
+      5,
+      [
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "functional_ids": [
+      40,
+      44,
+      57,
+      66
+    ],
+    "size": 4,
+    "analytic_rank_lower": 1,
+    "analytic_rank_upper": 4,
+    "exact_analytic_rank": null,
+    "analytic_nullity_lower": 0,
+    "analytic_nullity_upper": 3,
+    "leading_u_order": 5,
+    "leading_coefficient": "(-1)^b/2 times sum of positive log-prime/sqrt-prime weights of matching assignments; zero-lag root normalization cancels",
+    "leading_minor": "any active carrier row and one admitted representative column is nonzero by the parent positivity proof",
+    "jet_rows_computed": "leading carrier row only; full higher-jet cell matrix NOT enumerated",
+    "finite_jet_kernel": "not a global functional kernel",
+    "formal_coefficient_field": "Q(i,pi,log p,sqrt p); actual constants, no assumed algebraic independence"
+  }
+]
