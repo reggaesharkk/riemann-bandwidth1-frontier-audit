@@ -1,0 +1,306 @@
+{
+  "decision": "B",
+  "parent": "4ab72a687d6a6801f1d374309d23fa023466c2fe",
+  "old_fifth_lower": 20,
+  "new_dimensions": 9,
+  "new_fifth_lower": 29,
+  "fifth_upper": 72,
+  "witness_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    18,
+    19,
+    24,
+    33,
+    34,
+    35,
+    36,
+    40,
+    41,
+    51,
+    52,
+    55,
+    70,
+    71
+  ],
+  "resolved_blocks": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      14,
+      19,
+      24
+    ],
+    [
+      35,
+      55
+    ],
+    [
+      51,
+      70
+    ],
+    [
+      52,
+      71
+    ]
+  ],
+  "remaining_blocks": [
+    [
+      15,
+      20,
+      26,
+      28,
+      31,
+      32
+    ],
+    [
+      10,
+      12,
+      16,
+      17,
+      21,
+      22,
+      25,
+      29
+    ],
+    [
+      36,
+      38,
+      42,
+      46,
+      47,
+      48,
+      49,
+      50,
+      54,
+      59,
+      61,
+      62,
+      64,
+      65,
+      68,
+      69
+    ],
+    [
+      34,
+      37,
+      39,
+      43,
+      53,
+      56,
+      60,
+      63
+    ],
+    [
+      18,
+      23,
+      27,
+      30
+    ],
+    [
+      41,
+      45,
+      58,
+      67
+    ],
+    [
+      40,
+      44,
+      57,
+      66
+    ]
+  ],
+  "pair_coefficients": [
+    {
+      "ids": [
+        1,
+        2
+      ],
+      "order": 11,
+      "coefficient": "pi^2*Z2/n*a^5*b^2*c^2*(b-a)*(c-a)/(p^(3/2)*sqrt(q*r))",
+      "condition": "repeated prime p<q,r",
+      "identity": "sym Tr(X^3YZ-X^2YXZ)=-2*Tr([X,Y][X,Z]X)"
+    },
+    {
+      "ids": [
+        5,
+        7
+      ],
+      "order": 11,
+      "coefficient": "parent exact coefficient",
+      "condition": "parent smallest repeated-prime criterion",
+      "identity": "parent six-assignment commutator identity"
+    },
+    {
+      "ids": [
+        11,
+        13
+      ],
+      "order": 10,
+      "coefficient": "2*pi^2*Z12/n*a^5*b^2*c^2*(b-a)/(p^(3/2)*sqrt(q*r))",
+      "condition": "p<q; p^3*q/r carrier",
+      "identity": "symmetric matrices: single Tr(X^3YZ-X^2YXZ)=-Tr([X,Y][X,Z]X)"
+    },
+    {
+      "ids": [
+        35,
+        55
+      ],
+      "order": 9,
+      "coefficient": "16*pi^2*Z1/n*a^5*b^2*c^2/(p^(3/2)*sqrt(q*r))",
+      "condition": "all distinct primes, carrier p^3/(q*r)",
+      "identity": "same repeated-cube identity, both singleton signs negative"
+    },
+    {
+      "ids": [
+        51,
+        70
+      ],
+      "order": 9,
+      "coefficient": "16*pi^2*Z1/n*w^4*a*b*c*(a*b+a*c+b*c)/(s*sqrt(p*q*r))",
+      "condition": "all distinct primes, carrier p*q*r/s^2",
+      "identity": "cyclic six-assignment commutator identity, repeated matrix is negative branch"
+    },
+    {
+      "ids": [
+        52,
+        71
+      ],
+      "order": 9,
+      "coefficient": "32*pi^2*Z1/n*a*b*c*v^2*w^2*(a*b+a*c+b*c)/sqrt(p*q*r*s*t)",
+      "condition": "all distinct primes, carrier p*q*r/(s*t)",
+      "identity": "polarization in the two negative matrices of the six-assignment commutator identity"
+    }
+  ],
+  "triple_minors": [
+    {
+      "ids": [
+        3,
+        4,
+        6
+      ],
+      "basis": [
+        "F6",
+        "F3-F4",
+        "F4-F6"
+      ],
+      "orders": [
+        5,
+        11,
+        11
+      ],
+      "differences": {
+        "F3-F4": "pi^2*Z2/(2*n)*a^3*b^3*c^2*(b-a)^2*(a+b-c)/(p*q*sqrt(r))",
+        "F4-F6": "pi^2*Z2/(2*n)*a^4*b^4*c*(b-a)^2/(p*q*sqrt(r))"
+      },
+      "minor": "(log 2-log 3)*(log p+log q-log 2-log 3)/(log p*log q)",
+      "rows": "leading row plus two order-11 carrier cells with singleton r=2 and r=3, fixed p,q large",
+      "normalized_matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "star1",
+          "R(log 2)",
+          "1"
+        ],
+        [
+          "star2",
+          "R(log 3)",
+          "1"
+        ]
+      ],
+      "R": "c*(a+b-c)/(a*b)",
+      "nonzero": "p,q distinct large, p*q>6; both carrier cells legal at m=2"
+    },
+    {
+      "ids": [
+        14,
+        19,
+        24
+      ],
+      "basis": [
+        "F19",
+        "F14-F24",
+        "F24-F19"
+      ],
+      "orders": [
+        5,
+        10,
+        11
+      ],
+      "differences": {
+        "F14-F24": "-2*pi^2*Z12/n*a^3*b^3*c^2*(b-a)^2/(p*q*sqrt(r))",
+        "F24-F19": "pi^2*Z2/(2*n)*a^4*b^4*c*(b-a)^2/(p*q*sqrt(r))"
+      },
+      "minor": "nonzero leading coefficient times displayed order-10 coefficient times displayed order-11 coefficient",
+      "normalized_matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "star1",
+          "1",
+          "0"
+        ],
+        [
+          "star2",
+          "star3",
+          "1"
+        ]
+      ],
+      "nonzero": "p!=q, all primes distinct, n>=2,R>=1, legal p^2*q^2/r alias cell"
+    }
+  ],
+  "section_invariants": {
+    "Z1": "sum (i-j)^2 J_ij^2",
+    "Z12": "sum (i-j)^2 J_ij*(J^2)_ij",
+    "Z2": "sum (i-j)^2*(J^2)_ij^2",
+    "positivity": "Z1>=2*(n-1),Z12>=4*(n-1),Z2>=8*(n-1) for n>=2,R>=1"
+  },
+  "coefficient_field": "actual constants Q(i,pi,log p,sqrt p); no formal algebraic independence assumed",
+  "global_kernel_vectors": [],
+  "mixed_intersection": null,
+  "total_453_family_rank_bounds": [
+    35,
+    453
+  ],
+  "strict_gt79": "OPEN",
+  "source_sha256": {
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
+    "notes/WP84_SHARED_CARRIER_DEGREE5_BLOCKS.json": "a227d14f204e1c9d5969a53fc6800c7c9354d9a1c2bd4858b94843116276f7b0",
+    "notes/WP84_FIFTH_5_7_DIFFERENCE_CERTIFICATE.json": "a43f9ceee14dee599feb2e8b6bae59254ac4e8e4cb5eba2b70a74b06bf6f3030"
+  }
+}

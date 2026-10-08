@@ -1,0 +1,1202 @@
+[
+  {
+    "support": [
+      5,
+      [],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      15,
+      20,
+      26,
+      28,
+      31,
+      32
+    ],
+    "size": 6,
+    "layouts": [
+      {
+        "id": 15,
+        "signs": "++++-",
+        "pi": "0,0,1,2,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 20,
+        "signs": "++++-",
+        "pi": "0,1,0,2,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 26,
+        "signs": "++++-",
+        "pi": "0,1,1,2,1",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 28,
+        "signs": "++++-",
+        "pi": "0,1,2,0,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 31,
+        "signs": "++++-",
+        "pi": "0,1,2,3,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 32,
+        "signs": "++++-",
+        "pi": "0,1,2,3,1",
+        "aliases": [
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 6,
+    "unresolved_dimensions": 5,
+    "complete": false,
+    "witness_ids": [
+      15
+    ]
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      8
+    ],
+    "size": 1,
+    "layouts": [
+      {
+        "id": 8,
+        "signs": "+++++",
+        "pi": "0,1,2,3,4",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 1,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      8
+    ]
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        1
+      ]
+    ],
+    "ids": [
+      10,
+      12,
+      16,
+      17,
+      21,
+      22,
+      25,
+      29
+    ],
+    "size": 8,
+    "layouts": [
+      {
+        "id": 10,
+        "signs": "++++-",
+        "pi": "0,0,0,1,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 12,
+        "signs": "++++-",
+        "pi": "0,0,1,0,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 16,
+        "signs": "++++-",
+        "pi": "0,0,1,2,1",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 17,
+        "signs": "++++-",
+        "pi": "0,0,1,2,2",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 21,
+        "signs": "++++-",
+        "pi": "0,1,0,2,1",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 22,
+        "signs": "++++-",
+        "pi": "0,1,0,2,2",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 25,
+        "signs": "++++-",
+        "pi": "0,1,1,2,0",
+        "aliases": [
+          2
+        ]
+      },
+      {
+        "id": 29,
+        "signs": "++++-",
+        "pi": "0,1,2,0,1",
+        "aliases": [
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 8,
+    "unresolved_dimensions": 7,
+    "complete": false,
+    "witness_ids": [
+      10
+    ]
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      5,
+      7
+    ],
+    "size": 2,
+    "layouts": [
+      {
+        "id": 5,
+        "signs": "+++++",
+        "pi": "0,0,1,2,3",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "signs": "+++++",
+        "pi": "0,1,0,2,3",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "old_lower": 2,
+    "new_lower": 2,
+    "upper": 2,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      5,
+      7
+    ]
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "ids": [
+      3,
+      4,
+      6
+    ],
+    "size": 3,
+    "layouts": [
+      {
+        "id": 3,
+        "signs": "+++++",
+        "pi": "0,0,1,1,2",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "signs": "+++++",
+        "pi": "0,0,1,2,1",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "signs": "+++++",
+        "pi": "0,1,0,1,2",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 3,
+    "upper": 3,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      3,
+      4,
+      6
+    ]
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        3,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      1,
+      2
+    ],
+    "size": 2,
+    "layouts": [
+      {
+        "id": 1,
+        "signs": "+++++",
+        "pi": "0,0,0,1,2",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "signs": "+++++",
+        "pi": "0,0,1,0,2",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 2,
+    "upper": 2,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "support": [
+      5,
+      [],
+      [
+        4,
+        1
+      ]
+    ],
+    "ids": [
+      0
+    ],
+    "size": 1,
+    "layouts": [
+      {
+        "id": 0,
+        "signs": "+++++",
+        "pi": "0,0,0,0,1",
+        "aliases": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 1,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      0
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      36,
+      38,
+      42,
+      46,
+      47,
+      48,
+      49,
+      50,
+      54,
+      59,
+      61,
+      62,
+      64,
+      65,
+      68,
+      69
+    ],
+    "size": 16,
+    "layouts": [
+      {
+        "id": 36,
+        "signs": "+++--",
+        "pi": "0,0,1,0,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 38,
+        "signs": "+++--",
+        "pi": "0,0,1,2,0",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 42,
+        "signs": "+++--",
+        "pi": "0,1,0,0,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 46,
+        "signs": "+++--",
+        "pi": "0,1,2,0,0",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 47,
+        "signs": "+++--",
+        "pi": "0,1,2,0,3",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 48,
+        "signs": "+++--",
+        "pi": "0,1,2,1,1",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 49,
+        "signs": "+++--",
+        "pi": "0,1,2,1,3",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 50,
+        "signs": "+++--",
+        "pi": "0,1,2,2,3",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 54,
+        "signs": "++-+-",
+        "pi": "0,0,0,1,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 59,
+        "signs": "++-+-",
+        "pi": "0,1,0,0,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 61,
+        "signs": "++-+-",
+        "pi": "0,1,0,2,0",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 62,
+        "signs": "++-+-",
+        "pi": "0,1,0,2,3",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 64,
+        "signs": "++-+-",
+        "pi": "0,1,1,1,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 65,
+        "signs": "++-+-",
+        "pi": "0,1,1,2,3",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 68,
+        "signs": "++-+-",
+        "pi": "0,1,2,2,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 69,
+        "signs": "++-+-",
+        "pi": "0,1,2,2,3",
+        "aliases": [
+          1
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 16,
+    "unresolved_dimensions": 15,
+    "complete": false,
+    "witness_ids": [
+      36
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      33
+    ],
+    "size": 1,
+    "layouts": [
+      {
+        "id": 33,
+        "signs": "++++-",
+        "pi": "0,1,2,3,4",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 1,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      33
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "ids": [
+      34,
+      37,
+      39,
+      43,
+      53,
+      56,
+      60,
+      63
+    ],
+    "size": 8,
+    "layouts": [
+      {
+        "id": 34,
+        "signs": "+++--",
+        "pi": "0,0,0,0,1",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 37,
+        "signs": "+++--",
+        "pi": "0,0,1,1,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 39,
+        "signs": "+++--",
+        "pi": "0,0,1,2,1",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 43,
+        "signs": "+++--",
+        "pi": "0,1,0,1,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 53,
+        "signs": "++-+-",
+        "pi": "0,0,0,0,1",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 56,
+        "signs": "++-+-",
+        "pi": "0,0,1,1,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 60,
+        "signs": "++-+-",
+        "pi": "0,1,0,1,2",
+        "aliases": [
+          1
+        ]
+      },
+      {
+        "id": 63,
+        "signs": "++-+-",
+        "pi": "0,1,1,0,2",
+        "aliases": [
+          1
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 8,
+    "unresolved_dimensions": 7,
+    "complete": false,
+    "witness_ids": [
+      34
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      18,
+      23,
+      27,
+      30
+    ],
+    "size": 4,
+    "layouts": [
+      {
+        "id": 18,
+        "signs": "++++-",
+        "pi": "0,0,1,2,3",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 23,
+        "signs": "++++-",
+        "pi": "0,1,0,2,3",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 27,
+        "signs": "++++-",
+        "pi": "0,1,1,2,3",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 30,
+        "signs": "++++-",
+        "pi": "0,1,2,0,3",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 4,
+    "unresolved_dimensions": 3,
+    "complete": false,
+    "witness_ids": [
+      18
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "ids": [
+      14,
+      19,
+      24
+    ],
+    "size": 3,
+    "layouts": [
+      {
+        "id": 14,
+        "signs": "++++-",
+        "pi": "0,0,1,1,2",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 19,
+        "signs": "++++-",
+        "pi": "0,1,0,1,2",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 24,
+        "signs": "++++-",
+        "pi": "0,1,1,0,2",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 3,
+    "upper": 3,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      14,
+      19,
+      24
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "ids": [
+      11,
+      13
+    ],
+    "size": 2,
+    "layouts": [
+      {
+        "id": 11,
+        "signs": "++++-",
+        "pi": "0,0,0,1,2",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 13,
+        "signs": "++++-",
+        "pi": "0,0,1,0,2",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 2,
+    "upper": 2,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      11,
+      13
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1
+      ],
+      [
+        4
+      ]
+    ],
+    "ids": [
+      9
+    ],
+    "size": 1,
+    "layouts": [
+      {
+        "id": 9,
+        "signs": "++++-",
+        "pi": "0,0,0,0,1",
+        "aliases": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 1,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      9
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "ids": [
+      52,
+      71
+    ],
+    "size": 2,
+    "layouts": [
+      {
+        "id": 52,
+        "signs": "+++--",
+        "pi": "0,1,2,3,4",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 71,
+        "signs": "++-+-",
+        "pi": "0,1,2,3,4",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 2,
+    "upper": 2,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      52,
+      71
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "ids": [
+      41,
+      45,
+      58,
+      67
+    ],
+    "size": 4,
+    "layouts": [
+      {
+        "id": 41,
+        "signs": "+++--",
+        "pi": "0,0,1,2,3",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 45,
+        "signs": "+++--",
+        "pi": "0,1,0,2,3",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 58,
+        "signs": "++-+-",
+        "pi": "0,0,1,2,3",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 67,
+        "signs": "++-+-",
+        "pi": "0,1,2,0,3",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 4,
+    "unresolved_dimensions": 3,
+    "complete": false,
+    "witness_ids": [
+      41
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "ids": [
+      35,
+      55
+    ],
+    "size": 2,
+    "layouts": [
+      {
+        "id": 35,
+        "signs": "+++--",
+        "pi": "0,0,0,1,2",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 55,
+        "signs": "++-+-",
+        "pi": "0,0,1,0,2",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 2,
+    "upper": 2,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      35,
+      55
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "ids": [
+      51,
+      70
+    ],
+    "size": 2,
+    "layouts": [
+      {
+        "id": 51,
+        "signs": "+++--",
+        "pi": "0,1,2,3,3",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 70,
+        "signs": "++-+-",
+        "pi": "0,1,2,3,2",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 2,
+    "upper": 2,
+    "unresolved_dimensions": 0,
+    "complete": true,
+    "witness_ids": [
+      51,
+      70
+    ]
+  },
+  {
+    "support": [
+      5,
+      [
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "ids": [
+      40,
+      44,
+      57,
+      66
+    ],
+    "size": 4,
+    "layouts": [
+      {
+        "id": 40,
+        "signs": "+++--",
+        "pi": "0,0,1,2,2",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 44,
+        "signs": "+++--",
+        "pi": "0,1,0,2,2",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 57,
+        "signs": "++-+-",
+        "pi": "0,0,1,2,1",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      },
+      {
+        "id": 66,
+        "signs": "++-+-",
+        "pi": "0,1,2,0,2",
+        "aliases": [
+          -1,
+          1,
+          2
+        ]
+      }
+    ],
+    "old_lower": 1,
+    "new_lower": 1,
+    "upper": 4,
+    "unresolved_dimensions": 3,
+    "complete": false,
+    "witness_ids": [
+      40
+    ]
+  }
+]

@@ -1,0 +1,283 @@
+{
+  "checks": [
+    {
+      "ids": [
+        1,
+        2
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "-720"
+    },
+    {
+      "ids": [
+        11,
+        13
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 5,
+      "coefficient_c1": "720"
+    },
+    {
+      "ids": [
+        35,
+        55
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 4,
+      "coefficient_c1": "1440"
+    },
+    {
+      "ids": [
+        51,
+        70
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 4,
+      "coefficient_c1": "24304"
+    },
+    {
+      "ids": [
+        52,
+        71
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 4,
+      "coefficient_c1": "76384"
+    },
+    {
+      "ids": [
+        3,
+        4
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "1440"
+    },
+    {
+      "ids": [
+        4,
+        6
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "1800"
+    },
+    {
+      "ids": [
+        14,
+        24
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 5,
+      "coefficient_c1": "-480"
+    },
+    {
+      "ids": [
+        24,
+        19
+      ],
+      "n": 2,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "1800"
+    },
+    {
+      "ids": [
+        1,
+        2
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "-2160"
+    },
+    {
+      "ids": [
+        11,
+        13
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 5,
+      "coefficient_c1": "1440"
+    },
+    {
+      "ids": [
+        35,
+        55
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 4,
+      "coefficient_c1": "2880"
+    },
+    {
+      "ids": [
+        51,
+        70
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 4,
+      "coefficient_c1": "48608"
+    },
+    {
+      "ids": [
+        52,
+        71
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 4,
+      "coefficient_c1": "152768"
+    },
+    {
+      "ids": [
+        3,
+        4
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "4320"
+    },
+    {
+      "ids": [
+        4,
+        6
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "5400"
+    },
+    {
+      "ids": [
+        14,
+        24
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 5,
+      "coefficient_c1": "-960"
+    },
+    {
+      "ids": [
+        24,
+        19
+      ],
+      "n": 3,
+      "R": 1,
+      "trace_order": 6,
+      "coefficient_c1": "5400"
+    },
+    {
+      "ids": [
+        1,
+        2
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 6,
+      "coefficient_c1": "-9720"
+    },
+    {
+      "ids": [
+        11,
+        13
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 5,
+      "coefficient_c1": "6480"
+    },
+    {
+      "ids": [
+        35,
+        55
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 4,
+      "coefficient_c1": "8640"
+    },
+    {
+      "ids": [
+        51,
+        70
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 4,
+      "coefficient_c1": "145824"
+    },
+    {
+      "ids": [
+        52,
+        71
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 4,
+      "coefficient_c1": "458304"
+    },
+    {
+      "ids": [
+        3,
+        4
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 6,
+      "coefficient_c1": "19440"
+    },
+    {
+      "ids": [
+        4,
+        6
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 6,
+      "coefficient_c1": "24300"
+    },
+    {
+      "ids": [
+        14,
+        24
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 5,
+      "coefficient_c1": "-4320"
+    },
+    {
+      "ids": [
+        24,
+        19
+      ],
+      "n": 3,
+      "R": 2,
+      "trace_order": 6,
+      "coefficient_c1": "24300"
+    }
+  ],
+  "failure_tests": [
+    "displacement",
+    "root index",
+    "missing singleton assignment",
+    "prime-log exponent",
+    "forced parent coefficient zero"
+  ],
+  "exact_arithmetic": true,
+  "scope": "finite rational realizations verify algebra; universal proof and legal-cell arguments in note"
+}
