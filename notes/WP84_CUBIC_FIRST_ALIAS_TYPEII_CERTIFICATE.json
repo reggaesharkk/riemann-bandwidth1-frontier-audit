@@ -1,0 +1,197 @@
+{
+  "input_head": "9203b8e5d2c1466ad2c1e038ab945fdb86362602",
+  "R": 6000,
+  "budget": {
+    "band": "128952763/92407500000",
+    "old_variance": "26060119/12734908593750",
+    "new_variance": "208480952/203775517378125",
+    "earned_variance_saving": "156386774119/152831638033593750",
+    "old_Jstar": "64788151489666079/572357731837500000",
+    "new_Jstar": "51835308978310574561/457924342652122500000",
+    "old_reference_margin": "52897896569489/572357731837500000",
+    "new_reference_margin": "8558084052085891/91584868530424500000",
+    "old_third_ceiling": "52897896569489/271300292460974700",
+    "new_third_ceiling": "8558084052085891/43411664130988764996",
+    "new_necessary_saving_lower": "15909857470864664470267332031322977/7733161315109907280429056000000000000"
+  },
+  "coefficients": [
+    "364848201/34410250000",
+    "-18356061/344102500",
+    "-26060119/430128125",
+    "21981971/46375000",
+    "0",
+    "-11501/12500",
+    "137641/250000"
+  ],
+  "prime_ranges": [
+    {
+      "p": "13/20",
+      "q": "19/20",
+      "r": "3/5",
+      "q_core_interval_exponent": "-1/20",
+      "baseline_loss": "1/10"
+    },
+    {
+      "p": "7/10",
+      "q": "9/10",
+      "r": "3/5",
+      "q_core_interval_exponent": "-1/10",
+      "baseline_loss": "1/10"
+    },
+    {
+      "p": "3/4",
+      "q": "17/20",
+      "r": "3/5",
+      "q_core_interval_exponent": "-3/20",
+      "baseline_loss": "1/10"
+    },
+    {
+      "p": "4/5",
+      "q": "4/5",
+      "r": "3/5",
+      "q_core_interval_exponent": "-1/5",
+      "baseline_loss": "1/10"
+    },
+    {
+      "p": "17/20",
+      "q": "3/4",
+      "r": "3/5",
+      "q_core_interval_exponent": "-1/4",
+      "baseline_loss": "1/10"
+    },
+    {
+      "p": "9/10",
+      "q": "7/10",
+      "r": "3/5",
+      "q_core_interval_exponent": "-3/10",
+      "baseline_loss": "1/10"
+    },
+    {
+      "p": "19/20",
+      "q": "13/20",
+      "r": "3/5",
+      "q_core_interval_exponent": "-7/20",
+      "baseline_loss": "1/10"
+    }
+  ],
+  "denominator_typeii_blocks": [
+    {
+      "a": "1/5",
+      "b": "2/5",
+      "inner_core_interval_exponent": "-3/5"
+    },
+    {
+      "a": "1/4",
+      "b": "7/20",
+      "inner_core_interval_exponent": "-13/20"
+    },
+    {
+      "a": "3/10",
+      "b": "3/10",
+      "inner_core_interval_exponent": "-7/10"
+    },
+    {
+      "a": "7/20",
+      "b": "1/4",
+      "inner_core_interval_exponent": "-3/4"
+    },
+    {
+      "a": "2/5",
+      "b": "1/5",
+      "inner_core_interval_exponent": "-4/5"
+    }
+  ],
+  "linearization": {
+    "pointwise_error_constant_pi": 16,
+    "mass_constants": [
+      32,
+      96
+    ],
+    "aggregate_error_constants_pi": [
+      512,
+      3072
+    ],
+    "H_exponents": [
+      {
+        "h": "0",
+        "error_power": "9/10"
+      },
+      {
+        "h": "1/10",
+        "error_power": "3/5"
+      },
+      {
+        "h": "1/5",
+        "error_power": "3/10"
+      },
+      {
+        "h": "1/4",
+        "error_power": "3/20"
+      },
+      {
+        "h": "3/10",
+        "error_power": "0"
+      }
+    ],
+    "fixed_H_accuracy_power": "9/10",
+    "source_magnitude_saving": "0"
+  },
+  "rectangular_dft": {
+    "constant": 1,
+    "relative_gain": "3/10",
+    "full_rectangle_after_denominator_sum_exponent": "4/5",
+    "illegally_subtracted_strip_exponent": "-1/5",
+    "exact_strip_transfer_proved": false
+  },
+  "vaughan": {
+    "limit": 192,
+    "U": 5,
+    "V": 7,
+    "prime_only_formal_log_sha256": "cbe38884a2ecf027616961553a6273321c2378974711423545f9be782413ec0f",
+    "proper_power_compensation_retained": true,
+    "prime_indicator_kept_on_typeii_factors": false
+  },
+  "mask_completion": {
+    "example_modulus": 1009,
+    "positive_residues": [
+      1
+    ],
+    "cancelled_frequency_index": 1008,
+    "zero_frequency_coefficient_nonzero": true
+  },
+  "toy_envelope": {
+    "M": 16,
+    "X": 1048576,
+    "U": 4294967296,
+    "V": 4096,
+    "cosine_lower": "4999/5000",
+    "absolute_growth_exponent": "1/10",
+    "lower_prefactor": "4999/20000000",
+    "scope": "integer coefficient-envelope falsifier, NOT source prime data"
+  },
+  "carrier_retained": true,
+  "source_masks_retained": true,
+  "window_covariance_substitution": false,
+  "power_saving_on_actual_window": "0",
+  "constant_signed_saving": "0",
+  "strict_gt79_proved": false,
+  "verdict": "NO-GO for denominator Vaughan plus rectangular DFT transfer; signed strip estimate remains open",
+  "source_pins": {
+    "notes/WP84_HIGH_PRODUCT_SIGNED_FEASIBILITY.md": {
+      "sha256": "cc2f4ade5378fd4f41c432eef035280b22041e1f101611c8db53193f0f3c5e04",
+      "git_blob": "d0d366586791e06d24b3bf3f22b22e5a7e449f8e"
+    },
+    "notes/WP84_HIGH_PRODUCT_FEASIBILITY_CERTIFICATE.json": {
+      "sha256": "f40b1762598b41da11bfb72f2ce72c3897d363e5359f84254ef1b5c583e404be",
+      "git_blob": "563c48cb988712f2ad77987efe6d64c9fd4c5b37"
+    },
+    "notes/WP84_DIRECT_SIGNED_RESTRICTED_CORRELATION_ATTACK.md": {
+      "sha256": "75d746bb0f2702f81f2bc4aa367b84bd84ace8ddcf38cf8bf6fd8becceb6fc66",
+      "git_blob": "a1f99ba4075fd7e05d407549722dc620f70c834b"
+    },
+    "notes/WP84_JOINT_THIRD_FIFTH_SIXTH_ARITHMETIC_OBSTRUCTION.md": {
+      "sha256": "a228cd95028958c8492ff81c91dbbec1a6898c2d466a9f2be3e533eb99d04249",
+      "git_blob": "2fb198c9d7fae422d631fac8a50d2cd11dc0e7af"
+    }
+  }
+}
