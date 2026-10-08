@@ -1,0 +1,2855 @@
+{
+  "source_head": "fc04f3b3440adb2862a47e73e1a02db3f0deb0e3",
+  "decision": "F",
+  "four_blocks": [
+    {
+      "ids": [
+        15,
+        20,
+        26,
+        28,
+        31,
+        32
+      ],
+      "descriptors": [
+        {
+          "id": 15,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 20,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 26,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 28,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 31,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            0
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "net_exponents": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 32,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            3,
+            1
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        }
+      ],
+      "visible_block_indices": [
+        0,
+        1,
+        2
+      ],
+      "excess_pair_block_indices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "every_layout_has_one_excess_pair": true,
+      "hidden_pair_ids": [
+        31,
+        32
+      ],
+      "visible_excess_pair_ids": [
+        15,
+        20,
+        26,
+        28
+      ],
+      "core_pool": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "source_prime_cutoff": "N(T)=floor(exp(L-sqrt(L)))",
+      "source_section": "I(T)=[k_-(T),k_+(T)] chosen by source; d'=|I|, d=floor(TL/(2pi)), d'/d->1",
+      "moment_decomposition": [
+        {
+          "id": 15,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 20,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            2,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 26,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            2,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 28,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 31,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 32,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        }
+      ],
+      "source_matrix_schema": {
+        "formula": "A_j(T)=Re sum_{p_blocks injective, carrier v} sum_{l in [-6000,6000]^5, sum l=0} chi_j(p,l,T) * product_slot[-log p/(a_phi L sqrt p)*f_l^eps(log p/L)] * exp(2*pi*i*sum eps*prefix_before*log p/L) * exp(i*T*lambda+2*pi*i*i_min*lambda/L)/n * sum_(k=0)^(max(0,n-range(prefix))-1) exp(2*pi*i*k*lambda/L)",
+        "section": "actual I(T)=[k_-(T),k_+(T)] only",
+        "root_count": "max(0,n-range(prefix))",
+        "masks": "the exact source slot-window/equality/alias masks chi_j; no finite pool restriction",
+        "core_decomposition": "for hidden-pair layouts, fix all visible carrier primes and sum the excess net-zero block over q in K; omitted q is every source-admissible prime <=N outside K and visible carrier primes. For visible-excess layouts the repeated prime is fixed by the carrier and there is no canceled-prime tail."
+      },
+      "leading_omitted_moment": "for hidden-pair columns, positive S_(2,eta) times a column-specific visible coefficient; visible-excess columns have E_h=0 for the independent balanced-prime omission."
+    },
+    {
+      "ids": [
+        10,
+        12,
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "descriptors": [
+        {
+          "id": 10,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "net_exponents": [
+            2,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 12,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "net_exponents": [
+            2,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 16,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 17,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2
+          ],
+          "net_exponents": [
+            2,
+            1,
+            0
+          ],
+          "excess_pair_block": 2,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 21,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 22,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ],
+          "multiplicities": [
+            2,
+            1,
+            2
+          ],
+          "net_exponents": [
+            2,
+            1,
+            0
+          ],
+          "excess_pair_block": 2,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 25,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            0,
+            2,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        },
+        {
+          "id": 29,
+          "signs": [
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            2
+          ]
+        }
+      ],
+      "visible_block_indices": [
+        0,
+        1
+      ],
+      "excess_pair_block_indices": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "every_layout_has_one_excess_pair": true,
+      "hidden_pair_ids": [
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "visible_excess_pair_ids": [
+        10,
+        12
+      ],
+      "core_pool": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "source_prime_cutoff": "N(T)=floor(exp(L-sqrt(L)))",
+      "source_section": "I(T)=[k_-(T),k_+(T)] chosen by source; d'=|I|, d=floor(TL/(2pi)), d'/d->1",
+      "moment_decomposition": [
+        {
+          "id": 10,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 12,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 16,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            2,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 17,
+          "excess_pair_block": 2,
+          "excess_pair_slot_positions": [
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 21,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 22,
+          "excess_pair_block": 2,
+          "excess_pair_slot_positions": [
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 25,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 29,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        }
+      ],
+      "source_matrix_schema": {
+        "formula": "A_j(T)=Re sum_{p_blocks injective, carrier v} sum_{l in [-6000,6000]^5, sum l=0} chi_j(p,l,T) * product_slot[-log p/(a_phi L sqrt p)*f_l^eps(log p/L)] * exp(2*pi*i*sum eps*prefix_before*log p/L) * exp(i*T*lambda+2*pi*i*i_min*lambda/L)/n * sum_(k=0)^(max(0,n-range(prefix))-1) exp(2*pi*i*k*lambda/L)",
+        "section": "actual I(T)=[k_-(T),k_+(T)] only",
+        "root_count": "max(0,n-range(prefix))",
+        "masks": "the exact source slot-window/equality/alias masks chi_j; no finite pool restriction",
+        "core_decomposition": "for hidden-pair layouts, fix all visible carrier primes and sum the excess net-zero block over q in K; omitted q is every source-admissible prime <=N outside K and visible carrier primes. For visible-excess layouts the repeated prime is fixed by the carrier and there is no canceled-prime tail."
+      },
+      "leading_omitted_moment": "for hidden-pair columns, positive S_(2,eta) times a column-specific visible coefficient; visible-excess columns have E_h=0 for the independent balanced-prime omission."
+    },
+    {
+      "ids": [
+        36,
+        38,
+        42,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        68,
+        69
+      ],
+      "descriptors": [
+        {
+          "id": 36,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 38,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 42,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 46,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            -1,
+            1,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 47,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            0,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "net_exponents": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 48,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1
+          ],
+          "net_exponents": [
+            1,
+            -1,
+            1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 49,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            1,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 50,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "excess_pair_block": 2,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 54,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 59,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 61,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          "multiplicities": [
+            3,
+            1,
+            1
+          ],
+          "net_exponents": [
+            -1,
+            1,
+            1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 62,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            2,
+            3
+          ],
+          "multiplicities": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "net_exponents": [
+            0,
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 64,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            1,
+            3,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 65,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "net_exponents": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 68,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            2
+          ],
+          "multiplicities": [
+            1,
+            1,
+            3
+          ],
+          "net_exponents": [
+            1,
+            1,
+            -1
+          ],
+          "excess_pair_block": 2,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 69,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            2,
+            2,
+            3
+          ],
+          "multiplicities": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "net_exponents": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "excess_pair_block": 2,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        }
+      ],
+      "visible_block_indices": [
+        0,
+        1,
+        2
+      ],
+      "excess_pair_block_indices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "every_layout_has_one_excess_pair": true,
+      "hidden_pair_ids": [
+        47,
+        49,
+        50,
+        62,
+        65,
+        69
+      ],
+      "visible_excess_pair_ids": [
+        36,
+        38,
+        42,
+        46,
+        48,
+        54,
+        59,
+        61,
+        64,
+        68
+      ],
+      "core_pool": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "source_prime_cutoff": "N(T)=floor(exp(L-sqrt(L)))",
+      "source_section": "I(T)=[k_-(T),k_+(T)] chosen by source; d'=|I|, d=floor(TL/(2pi)), d'/d->1",
+      "moment_decomposition": [
+        {
+          "id": 36,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            3
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 38,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 42,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 46,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 47,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 48,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 49,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 50,
+          "excess_pair_block": 2,
+          "excess_pair_slot_positions": [
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 54,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            2
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 59,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 61,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            2,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 62,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            2
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 64,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 65,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            2
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 68,
+          "excess_pair_block": 2,
+          "excess_pair_slot_positions": [
+            2,
+            3,
+            4
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 69,
+          "excess_pair_block": 2,
+          "excess_pair_slot_positions": [
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        }
+      ],
+      "source_matrix_schema": {
+        "formula": "A_j(T)=Re sum_{p_blocks injective, carrier v} sum_{l in [-6000,6000]^5, sum l=0} chi_j(p,l,T) * product_slot[-log p/(a_phi L sqrt p)*f_l^eps(log p/L)] * exp(2*pi*i*sum eps*prefix_before*log p/L) * exp(i*T*lambda+2*pi*i*i_min*lambda/L)/n * sum_(k=0)^(max(0,n-range(prefix))-1) exp(2*pi*i*k*lambda/L)",
+        "section": "actual I(T)=[k_-(T),k_+(T)] only",
+        "root_count": "max(0,n-range(prefix))",
+        "masks": "the exact source slot-window/equality/alias masks chi_j; no finite pool restriction",
+        "core_decomposition": "for hidden-pair layouts, fix all visible carrier primes and sum the excess net-zero block over q in K; omitted q is every source-admissible prime <=N outside K and visible carrier primes. For visible-excess layouts the repeated prime is fixed by the carrier and there is no canceled-prime tail."
+      },
+      "leading_omitted_moment": "for hidden-pair columns, positive S_(2,eta) times a column-specific visible coefficient; visible-excess columns have E_h=0 for the independent balanced-prime omission."
+    },
+    {
+      "ids": [
+        34,
+        37,
+        39,
+        43,
+        53,
+        56,
+        60,
+        63
+      ],
+      "descriptors": [
+        {
+          "id": 34,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "net_exponents": [
+            2,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 37,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 39,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            2,
+            1
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 43,
+          "signs": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 53,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicities": [
+            4,
+            1
+          ],
+          "net_exponents": [
+            2,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": false,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 56,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 60,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            0,
+            2,
+            -1
+          ],
+          "excess_pair_block": 0,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        },
+        {
+          "id": 63,
+          "signs": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "partition": [
+            0,
+            1,
+            1,
+            0,
+            2
+          ],
+          "multiplicities": [
+            2,
+            2,
+            1
+          ],
+          "net_exponents": [
+            2,
+            0,
+            -1
+          ],
+          "excess_pair_block": 1,
+          "hidden_canceled_prime": true,
+          "aliases": [
+            1
+          ]
+        }
+      ],
+      "visible_block_indices": [
+        0,
+        1
+      ],
+      "excess_pair_block_indices": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "every_layout_has_one_excess_pair": true,
+      "hidden_pair_ids": [
+        37,
+        39,
+        43,
+        56,
+        60,
+        63
+      ],
+      "visible_excess_pair_ids": [
+        34,
+        53
+      ],
+      "core_pool": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "source_prime_cutoff": "N(T)=floor(exp(L-sqrt(L)))",
+      "source_section": "I(T)=[k_-(T),k_+(T)] chosen by source; d'=|I|, d=floor(TL/(2pi)), d'/d->1",
+      "moment_decomposition": [
+        {
+          "id": 34,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 37,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 39,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            2,
+            4
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 43,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 53,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": false,
+          "balanced_slot_window_signature": "not applicable: excess pair is attached to the visible carrier prime",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "empty: excess occurrences belong to a visible carrier prime",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=1": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=2": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=3": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=4": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=5": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=6": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=7": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks",
+            "h=8": "E_h=0 for the independent canceled-prime omission; all five occurrences belong to visible carrier blocks"
+          },
+          "order5": "E_0=0 for independent canceled-prime omission; repeated occurrences are fixed by visible carrier primes",
+          "exactness": "No independent canceled-prime variable exists in this layout; the repeated prime is fixed by the carrier."
+        },
+        {
+          "id": 56,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            2,
+            3
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 60,
+          "excess_pair_block": 0,
+          "excess_pair_slot_positions": [
+            0,
+            2
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        },
+        {
+          "id": 63,
+          "excess_pair_block": 1,
+          "excess_pair_slot_positions": [
+            1,
+            2
+          ],
+          "excess_pair_is_hidden": true,
+          "balanced_slot_window_signature": "intersection of chi over the two slots",
+          "balanced_multiplicity": 2,
+          "carrier_visible_primes": "prime factors with nonzero net valuation",
+          "selected_core": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13
+          ],
+          "omitted_set": "{q prime: q<=N, q not a carrier-visible prime, q not in selected core}",
+          "moment_definition": "S_(r,eta)(N;A,K)=sum_{q<=N prime, q notin A union K, balanced-pair source-window signature eta}(log q)^r/q",
+          "jet_formula": {
+            "h=0": "E_0=sum_eta sum_(r=2)^2 C_{0,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=1": "E_1=sum_eta sum_(r=2)^3 C_{1,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=2": "E_2=sum_eta sum_(r=2)^4 C_{2,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=3": "E_3=sum_eta sum_(r=2)^5 C_{3,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=4": "E_4=sum_eta sum_(r=2)^6 C_{4,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=5": "E_5=sum_eta sum_(r=2)^7 C_{5,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=6": "E_6=sum_eta sum_(r=2)^8 C_{6,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=7": "E_7=sum_eta sum_(r=2)^9 C_{7,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)",
+            "h=8": "E_8=sum_eta sum_(r=2)^10 C_{8,r,eta}(visible primes;R=6000;I(T);chi) * S_(r,eta)(N;A,K)"
+          },
+          "order5": "E_0=sum_eta C_(0,2,eta)*S_(2,eta); each term is nonpositive in the normalized positive carrier amplitude; S2 is common only when all columns have identical pair-window signatures",
+          "exactness": "Taylor coefficients of the two hidden balanced-slot factors and all other slot factors are polynomials in log q. Every extra log q power is counted in r. No prime q is dropped."
+        }
+      ],
+      "source_matrix_schema": {
+        "formula": "A_j(T)=Re sum_{p_blocks injective, carrier v} sum_{l in [-6000,6000]^5, sum l=0} chi_j(p,l,T) * product_slot[-log p/(a_phi L sqrt p)*f_l^eps(log p/L)] * exp(2*pi*i*sum eps*prefix_before*log p/L) * exp(i*T*lambda+2*pi*i*i_min*lambda/L)/n * sum_(k=0)^(max(0,n-range(prefix))-1) exp(2*pi*i*k*lambda/L)",
+        "section": "actual I(T)=[k_-(T),k_+(T)] only",
+        "root_count": "max(0,n-range(prefix))",
+        "masks": "the exact source slot-window/equality/alias masks chi_j; no finite pool restriction",
+        "core_decomposition": "for hidden-pair layouts, fix all visible carrier primes and sum the excess net-zero block over q in K; omitted q is every source-admissible prime <=N outside K and visible carrier primes. For visible-excess layouts the repeated prime is fixed by the carrier and there is no canceled-prime tail."
+      },
+      "leading_omitted_moment": "for hidden-pair columns, positive S_(2,eta) times a column-specific visible coefficient; visible-excess columns have E_h=0 for the independent balanced-prime omission."
+    }
+  ],
+  "matrix_difference": "M_source-M_formal=(M_full(T,N,R,I,logs,a_phi)-M_core(T,N,R,I,logs,a_phi))+(M_core(T,N,R,I,logs,a_phi)-M_core(T,n0,R0,I0,z,1)); first term is exact omitted-prime sum; second is section+band+prime-coordinate+normalization difference",
+  "section_root_identity": "after common translation, coefficient u^h is c0^h*lambda^h/n * sum_(j=0)^h (-minprefix)^(h-j)*S_j(n-span)/((h-j)!*j!), S_j(M)=sum_(r=0)^(M-1)r^j",
+  "R": 6000,
+  "diagnostic_R_values": [
+    1,
+    2
+  ],
+  "large_section": "source d prime-scale with dprime/d->1; n is source-selected; higher root jets grow polynomially in n and fixed-cell expansion is not uniform in n",
+  "no_rank_claim_beyond38": true
+}

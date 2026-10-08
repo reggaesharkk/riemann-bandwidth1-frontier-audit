@@ -1,0 +1,10 @@
+{
+  "R": 6000,
+  "max_closed_five_step_prefix_range": 12000,
+  "all_paths_have_roots_if_n_at_least": 12001,
+  "verified_orders": "0..13",
+  "section_jet_formula": "c0^h*lambda^h/n sum_(j=0)^h (-minprefix)^(h-j)S_j(n-span)/((h-j)!j!)",
+  "fixed_jet_laurent_range_in_n": "-1..h; after multiplication by n the degree is <=h+1",
+  "leading_coefficient": "(c0*lambda)^h/(h+1)!",
+  "small_to_large_affine_claim": false
+}
