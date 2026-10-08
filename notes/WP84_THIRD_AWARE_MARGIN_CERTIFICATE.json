@@ -1,0 +1,114 @@
+{
+  "input_head": "7d0dd111138b2812d798f644c1bed11c8da9dacf",
+  "R": 6000,
+  "cutoff": "floor(exp(L-sqrt(L))), L=log(T/(2*pi))",
+  "consumer_changed": false,
+  "coefficients": [
+    "364848201/34410250000",
+    "-18356061/344102500",
+    "-26060119/430128125",
+    "21981971/46375000",
+    "0",
+    "-11501/12500",
+    "137641/250000"
+  ],
+  "first_second_source_scope": "actual prime matrix, same contiguous section n/d->1; Weil identification separate",
+  "variance_formula": "1/6+(1/pi^2)*sum_(r=1)^6000 1/r^2+o_T(1)",
+  "harmonic_square_sum_sha256": "18048e47c3577b812564426fe940015da8f2068dea2fff1c71756594a9dfa2c0",
+  "tail_majorant": "1/(6000+1/2)",
+  "budget": {
+    "band": "128952763/92407500000",
+    "old_variance": "26060119/12734908593750",
+    "new_variance": "208480952/203775517378125",
+    "earned_variance_saving": "156386774119/152831638033593750",
+    "old_Jstar": "64788151489666079/572357731837500000",
+    "new_Jstar": "51835308978310574561/457924342652122500000",
+    "old_reference_margin": "52897896569489/572357731837500000",
+    "new_reference_margin": "8558084052085891/91584868530424500000",
+    "old_third_ceiling": "52897896569489/271300292460974700",
+    "new_third_ceiling": "8558084052085891/43411664130988764996",
+    "new_necessary_saving_lower": "15909857470864664470267332031322977/7733161315109907280429056000000000000"
+  },
+  "tradeoff_rows": [
+    {
+      "fifth_sixth_signed_debit": "-1/10000",
+      "third_strict_ceiling_at_eta_zero": "17716570905128341/43411664130988764996"
+    },
+    {
+      "fifth_sixth_signed_debit": "0",
+      "third_strict_ceiling_at_eta_zero": "8558084052085891/43411664130988764996"
+    },
+    {
+      "fifth_sixth_signed_debit": "1/100000",
+      "third_strict_ceiling_at_eta_zero": "3821117683390823/21705832065494382498"
+    },
+    {
+      "fifth_sixth_signed_debit": "1/20000",
+      "third_strict_ceiling_at_eta_zero": "1989420312782333/21705832065494382498"
+    },
+    {
+      "fifth_sixth_signed_debit": "1/10000",
+      "third_strict_ceiling_at_eta_zero": "-20703544860571/1496953935551336724"
+    }
+  ],
+  "joint_gate": "limsup(c3*mu3-A*mu5+B*mu6) < new_Jstar; eta>0",
+  "third_central_error_constant": "2433429520896/7",
+  "third_remaining_scope": "all-distinct third nonzero aliases and far tails; original kernel and carrier",
+  "conditional_holder_fourth_power": "34/3645",
+  "moment_law_example": {
+    "purpose": "no universal necessity for mu3=0; not zeta/prime evidence",
+    "atoms": [
+      "1",
+      "-1/3"
+    ],
+    "weights": [
+      "1/4",
+      "3/4"
+    ],
+    "moments": [
+      "1",
+      "0",
+      "1/3",
+      "2/9",
+      "7/27",
+      "20/81",
+      "61/243"
+    ],
+    "square_expectation": "14149731073/2090422687500"
+  },
+  "mu3_o1_proved": false,
+  "small_one_sided_third_proved": false,
+  "positive_third_fifth_sixth_signed_saving_proved": false,
+  "strict_gt79_proved": false,
+  "zero_side_transfer": "separate inherited analytic obligation; no new certification",
+  "source_pins": {
+    "notes/WP84_INDEPENDENT_REFEREE_RESPONSE_FOUNDATIONS_AND_GUE.md": {
+      "sha256": "0361e4596003075ae0f7d7ec001a2862df69034f7cd1d2ee48197e630501ce3a",
+      "git_blob": "15340f6ce927854395fe98cc50f07e405591cb15"
+    },
+    "notes/WP84_REFEREE_FOUNDATIONS_CERTIFICATE.json": {
+      "sha256": "4673f207695fa14c10996b6d75db8722d6819d528180481bfa80985c4475b70e",
+      "git_blob": "1031f381de77c17e33148abcde78e3463530bb64"
+    },
+    "notes/WP84_STRICT79_SIGNED_ARITHMETIC_THEOREM_OR_OBSTRUCTION.md": {
+      "sha256": "66c4562cc6a70ca1e5ec1de113abbefd0b4cfff80ca9bf1f214eb1c47fd2a015",
+      "git_blob": "7ab11a4efb56e2c754bfc35b97e6a908184a2809"
+    },
+    "notes/WP84_PNT_PRIME_SQUARE_MEASURE_UPGRADE.md": {
+      "sha256": "2b348d665ad51cd98a61fa9e4fc6eaef3e3b3464055d84c0ad5da37db16f4453",
+      "git_blob": "e3907ba38f8f7ea3e3baeeb3d25e8c0b1c2fc337"
+    },
+    "notes/WP84_FUNCTIONAL_BAND_THEOREM_DELTA80.md": {
+      "sha256": "000a5210e26c84c116f3b561618eb6d20a43c008d859545afa54855facc6d96f",
+      "git_blob": "8c18880bfb4569d7fa4e52ed582b91ca59899864"
+    }
+  },
+  "packet_sha256": {
+    "notebooklm_packet/00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": "3722f58798b83af2217bbce767952e91a0a78cb48d3dae8e0ae760a1a647e322",
+    "notebooklm_packet/01_ARITHMETIC_B_TO_C_SOURCES.pdf": "d992b7df5864327ea1bc4311cf389f40bb0eebb04875374cee83f02ab5554400",
+    "notebooklm_packet/02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": "0739f2b0cbdd33eccccf52be697cb12cc9d84e4aaac8e349a8da812b0620b6bf",
+    "notebooklm_packet/03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": "63c17f88feb7371996603d237c875af0bd369be2317f604d00e81123eca94991",
+    "notebooklm_packet/04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": "59e98fad78f2ce38bae01f09b893fa7945a027c4cc69e378719c39b2deabbcd8",
+    "notebooklm_packet/MANIFEST.txt": "d9fae2f7dba4ee55661c118fdd3ce0db379ad8a075a2f9cd9294304eb0f3a5a3"
+  }
+}
