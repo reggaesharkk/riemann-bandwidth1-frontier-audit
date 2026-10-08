@@ -1,0 +1,2354 @@
+{
+  "input_head": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+  "status": "ACTUAL_INTERTWINING_UNDECIDED_NOT_AN_A_TO_E_CERTIFICATE",
+  "R": 6000,
+  "contract": {
+    "real_imag_coupling": true,
+    "rows": "actual source-legal rows only",
+    "source_mask": "unchanged exact source mask, frozen on one cell",
+    "prime_pool": "all ordinary primes <= N(T), including every cancelled q",
+    "moments": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "root_order": "i_min+r, r=0,...,n-span-1",
+    "Fourier_order": "original ordered five slots; all closed paths",
+    "parameter_test": "all polynomial coefficients; no sampled translations",
+    "kernel_test": "whole kernel; all independent cell generators",
+    "H_scope": "one induced map per cell, independent of column and moments"
+  },
+  "blocks": [
+    {
+      "ids": [
+        15,
+        20,
+        26,
+        28,
+        31,
+        32
+      ],
+      "size": 6,
+      "hmax": 6,
+      "carrier": "p*q*r",
+      "aliases": [
+        2
+      ],
+      "hidden_pair_ids": [
+        31,
+        32
+      ],
+      "visible_excess_ids": [
+        15,
+        20,
+        26,
+        28
+      ],
+      "master_moment_labels": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "ambient_dimension_per_cell": 14,
+      "operator": {
+        "coordinates": [
+          [
+            0,
+            "Re"
+          ],
+          [
+            0,
+            "Im"
+          ],
+          [
+            1,
+            "Re"
+          ],
+          [
+            1,
+            "Im"
+          ],
+          [
+            2,
+            "Re"
+          ],
+          [
+            2,
+            "Im"
+          ],
+          [
+            3,
+            "Re"
+          ],
+          [
+            3,
+            "Im"
+          ],
+          [
+            4,
+            "Re"
+          ],
+          [
+            4,
+            "Im"
+          ],
+          [
+            5,
+            "Re"
+          ],
+          [
+            5,
+            "Im"
+          ],
+          [
+            6,
+            "Re"
+          ],
+          [
+            6,
+            "Im"
+          ]
+        ],
+        "eta": "2*pi*lambda_x, lambda_x=sum e_b log(p_b), NOT alias residual",
+        "N0_entries": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            -1
+          ],
+          [
+            5,
+            2,
+            1
+          ],
+          [
+            4,
+            3,
+            -1
+          ],
+          [
+            7,
+            4,
+            1
+          ],
+          [
+            6,
+            5,
+            -1
+          ],
+          [
+            9,
+            6,
+            1
+          ],
+          [
+            8,
+            7,
+            -1
+          ],
+          [
+            11,
+            8,
+            1
+          ],
+          [
+            10,
+            9,
+            -1
+          ],
+          [
+            13,
+            10,
+            1
+          ],
+          [
+            12,
+            11,
+            -1
+          ]
+        ],
+        "infinitesimal_generator": "N_x=eta_x*N0 on cell x; zero elsewhere",
+        "translation": "T_x(s)=exp(s*N_x)",
+        "translation_coefficients": [
+          {
+            "degree_in_eta_s": 0,
+            "entries": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                1,
+                1,
+                "1"
+              ],
+              [
+                2,
+                2,
+                "1"
+              ],
+              [
+                3,
+                3,
+                "1"
+              ],
+              [
+                4,
+                4,
+                "1"
+              ],
+              [
+                5,
+                5,
+                "1"
+              ],
+              [
+                6,
+                6,
+                "1"
+              ],
+              [
+                7,
+                7,
+                "1"
+              ],
+              [
+                8,
+                8,
+                "1"
+              ],
+              [
+                9,
+                9,
+                "1"
+              ],
+              [
+                10,
+                10,
+                "1"
+              ],
+              [
+                11,
+                11,
+                "1"
+              ],
+              [
+                12,
+                12,
+                "1"
+              ],
+              [
+                13,
+                13,
+                "1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 1,
+            "entries": [
+              [
+                3,
+                0,
+                "1"
+              ],
+              [
+                2,
+                1,
+                "-1"
+              ],
+              [
+                5,
+                2,
+                "1"
+              ],
+              [
+                4,
+                3,
+                "-1"
+              ],
+              [
+                7,
+                4,
+                "1"
+              ],
+              [
+                6,
+                5,
+                "-1"
+              ],
+              [
+                9,
+                6,
+                "1"
+              ],
+              [
+                8,
+                7,
+                "-1"
+              ],
+              [
+                11,
+                8,
+                "1"
+              ],
+              [
+                10,
+                9,
+                "-1"
+              ],
+              [
+                13,
+                10,
+                "1"
+              ],
+              [
+                12,
+                11,
+                "-1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 2,
+            "entries": [
+              [
+                4,
+                0,
+                "-1/2"
+              ],
+              [
+                5,
+                1,
+                "-1/2"
+              ],
+              [
+                6,
+                2,
+                "-1/2"
+              ],
+              [
+                7,
+                3,
+                "-1/2"
+              ],
+              [
+                8,
+                4,
+                "-1/2"
+              ],
+              [
+                9,
+                5,
+                "-1/2"
+              ],
+              [
+                10,
+                6,
+                "-1/2"
+              ],
+              [
+                11,
+                7,
+                "-1/2"
+              ],
+              [
+                12,
+                8,
+                "-1/2"
+              ],
+              [
+                13,
+                9,
+                "-1/2"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 3,
+            "entries": [
+              [
+                7,
+                0,
+                "-1/6"
+              ],
+              [
+                6,
+                1,
+                "1/6"
+              ],
+              [
+                9,
+                2,
+                "-1/6"
+              ],
+              [
+                8,
+                3,
+                "1/6"
+              ],
+              [
+                11,
+                4,
+                "-1/6"
+              ],
+              [
+                10,
+                5,
+                "1/6"
+              ],
+              [
+                13,
+                6,
+                "-1/6"
+              ],
+              [
+                12,
+                7,
+                "1/6"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 4,
+            "entries": [
+              [
+                8,
+                0,
+                "1/24"
+              ],
+              [
+                9,
+                1,
+                "1/24"
+              ],
+              [
+                10,
+                2,
+                "1/24"
+              ],
+              [
+                11,
+                3,
+                "1/24"
+              ],
+              [
+                12,
+                4,
+                "1/24"
+              ],
+              [
+                13,
+                5,
+                "1/24"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 5,
+            "entries": [
+              [
+                11,
+                0,
+                "1/120"
+              ],
+              [
+                10,
+                1,
+                "-1/120"
+              ],
+              [
+                13,
+                2,
+                "1/120"
+              ],
+              [
+                12,
+                3,
+                "-1/120"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 6,
+            "entries": [
+              [
+                12,
+                0,
+                "-1/720"
+              ],
+              [
+                13,
+                1,
+                "-1/720"
+              ]
+            ]
+          }
+        ],
+        "nilpotence_index_ambient": 7,
+        "translation_degree": 6,
+        "translation_determinant": "1",
+        "translation_inverse": "T_x(-s)",
+        "leading_real_projection_generator": "0",
+        "first_real_row_companion": "-eta_x * evaluation(Im, h-1), h>0"
+      },
+      "wedge_translation_total_degree_bound": 36,
+      "actual_source_cells": null,
+      "actual_real_row_projection": null,
+      "actual_coefficient_columns": null,
+      "actual_V_basis": null,
+      "dim_V": null,
+      "rank_P": null,
+      "dim_kernel": null,
+      "kernel_basis": null,
+      "kernel_residual_rank": null,
+      "first_actual_nonzero_residual": null,
+      "H": null,
+      "actual_determinant_subspace": null,
+      "wedge_test": null
+    },
+    {
+      "ids": [
+        10,
+        12,
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "size": 8,
+      "hmax": 6,
+      "carrier": "p^2*q",
+      "aliases": [
+        2
+      ],
+      "hidden_pair_ids": [
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "visible_excess_ids": [
+        10,
+        12
+      ],
+      "master_moment_labels": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "ambient_dimension_per_cell": 14,
+      "operator": {
+        "coordinates": [
+          [
+            0,
+            "Re"
+          ],
+          [
+            0,
+            "Im"
+          ],
+          [
+            1,
+            "Re"
+          ],
+          [
+            1,
+            "Im"
+          ],
+          [
+            2,
+            "Re"
+          ],
+          [
+            2,
+            "Im"
+          ],
+          [
+            3,
+            "Re"
+          ],
+          [
+            3,
+            "Im"
+          ],
+          [
+            4,
+            "Re"
+          ],
+          [
+            4,
+            "Im"
+          ],
+          [
+            5,
+            "Re"
+          ],
+          [
+            5,
+            "Im"
+          ],
+          [
+            6,
+            "Re"
+          ],
+          [
+            6,
+            "Im"
+          ]
+        ],
+        "eta": "2*pi*lambda_x, lambda_x=sum e_b log(p_b), NOT alias residual",
+        "N0_entries": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            -1
+          ],
+          [
+            5,
+            2,
+            1
+          ],
+          [
+            4,
+            3,
+            -1
+          ],
+          [
+            7,
+            4,
+            1
+          ],
+          [
+            6,
+            5,
+            -1
+          ],
+          [
+            9,
+            6,
+            1
+          ],
+          [
+            8,
+            7,
+            -1
+          ],
+          [
+            11,
+            8,
+            1
+          ],
+          [
+            10,
+            9,
+            -1
+          ],
+          [
+            13,
+            10,
+            1
+          ],
+          [
+            12,
+            11,
+            -1
+          ]
+        ],
+        "infinitesimal_generator": "N_x=eta_x*N0 on cell x; zero elsewhere",
+        "translation": "T_x(s)=exp(s*N_x)",
+        "translation_coefficients": [
+          {
+            "degree_in_eta_s": 0,
+            "entries": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                1,
+                1,
+                "1"
+              ],
+              [
+                2,
+                2,
+                "1"
+              ],
+              [
+                3,
+                3,
+                "1"
+              ],
+              [
+                4,
+                4,
+                "1"
+              ],
+              [
+                5,
+                5,
+                "1"
+              ],
+              [
+                6,
+                6,
+                "1"
+              ],
+              [
+                7,
+                7,
+                "1"
+              ],
+              [
+                8,
+                8,
+                "1"
+              ],
+              [
+                9,
+                9,
+                "1"
+              ],
+              [
+                10,
+                10,
+                "1"
+              ],
+              [
+                11,
+                11,
+                "1"
+              ],
+              [
+                12,
+                12,
+                "1"
+              ],
+              [
+                13,
+                13,
+                "1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 1,
+            "entries": [
+              [
+                3,
+                0,
+                "1"
+              ],
+              [
+                2,
+                1,
+                "-1"
+              ],
+              [
+                5,
+                2,
+                "1"
+              ],
+              [
+                4,
+                3,
+                "-1"
+              ],
+              [
+                7,
+                4,
+                "1"
+              ],
+              [
+                6,
+                5,
+                "-1"
+              ],
+              [
+                9,
+                6,
+                "1"
+              ],
+              [
+                8,
+                7,
+                "-1"
+              ],
+              [
+                11,
+                8,
+                "1"
+              ],
+              [
+                10,
+                9,
+                "-1"
+              ],
+              [
+                13,
+                10,
+                "1"
+              ],
+              [
+                12,
+                11,
+                "-1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 2,
+            "entries": [
+              [
+                4,
+                0,
+                "-1/2"
+              ],
+              [
+                5,
+                1,
+                "-1/2"
+              ],
+              [
+                6,
+                2,
+                "-1/2"
+              ],
+              [
+                7,
+                3,
+                "-1/2"
+              ],
+              [
+                8,
+                4,
+                "-1/2"
+              ],
+              [
+                9,
+                5,
+                "-1/2"
+              ],
+              [
+                10,
+                6,
+                "-1/2"
+              ],
+              [
+                11,
+                7,
+                "-1/2"
+              ],
+              [
+                12,
+                8,
+                "-1/2"
+              ],
+              [
+                13,
+                9,
+                "-1/2"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 3,
+            "entries": [
+              [
+                7,
+                0,
+                "-1/6"
+              ],
+              [
+                6,
+                1,
+                "1/6"
+              ],
+              [
+                9,
+                2,
+                "-1/6"
+              ],
+              [
+                8,
+                3,
+                "1/6"
+              ],
+              [
+                11,
+                4,
+                "-1/6"
+              ],
+              [
+                10,
+                5,
+                "1/6"
+              ],
+              [
+                13,
+                6,
+                "-1/6"
+              ],
+              [
+                12,
+                7,
+                "1/6"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 4,
+            "entries": [
+              [
+                8,
+                0,
+                "1/24"
+              ],
+              [
+                9,
+                1,
+                "1/24"
+              ],
+              [
+                10,
+                2,
+                "1/24"
+              ],
+              [
+                11,
+                3,
+                "1/24"
+              ],
+              [
+                12,
+                4,
+                "1/24"
+              ],
+              [
+                13,
+                5,
+                "1/24"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 5,
+            "entries": [
+              [
+                11,
+                0,
+                "1/120"
+              ],
+              [
+                10,
+                1,
+                "-1/120"
+              ],
+              [
+                13,
+                2,
+                "1/120"
+              ],
+              [
+                12,
+                3,
+                "-1/120"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 6,
+            "entries": [
+              [
+                12,
+                0,
+                "-1/720"
+              ],
+              [
+                13,
+                1,
+                "-1/720"
+              ]
+            ]
+          }
+        ],
+        "nilpotence_index_ambient": 7,
+        "translation_degree": 6,
+        "translation_determinant": "1",
+        "translation_inverse": "T_x(-s)",
+        "leading_real_projection_generator": "0",
+        "first_real_row_companion": "-eta_x * evaluation(Im, h-1), h>0"
+      },
+      "wedge_translation_total_degree_bound": 48,
+      "actual_source_cells": null,
+      "actual_real_row_projection": null,
+      "actual_coefficient_columns": null,
+      "actual_V_basis": null,
+      "dim_V": null,
+      "rank_P": null,
+      "dim_kernel": null,
+      "kernel_basis": null,
+      "kernel_residual_rank": null,
+      "first_actual_nonzero_residual": null,
+      "H": null,
+      "actual_determinant_subspace": null,
+      "wedge_test": null
+    },
+    {
+      "ids": [
+        36,
+        38,
+        42,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        68,
+        69
+      ],
+      "size": 16,
+      "hmax": 8,
+      "carrier": "p*q/r",
+      "aliases": [
+        1
+      ],
+      "hidden_pair_ids": [
+        47,
+        49,
+        50,
+        62,
+        65,
+        69
+      ],
+      "visible_excess_ids": [
+        36,
+        38,
+        42,
+        46,
+        48,
+        54,
+        59,
+        61,
+        64,
+        68
+      ],
+      "master_moment_labels": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)",
+        "S_9(N)",
+        "S_10(N)"
+      ],
+      "ambient_dimension_per_cell": 18,
+      "operator": {
+        "coordinates": [
+          [
+            0,
+            "Re"
+          ],
+          [
+            0,
+            "Im"
+          ],
+          [
+            1,
+            "Re"
+          ],
+          [
+            1,
+            "Im"
+          ],
+          [
+            2,
+            "Re"
+          ],
+          [
+            2,
+            "Im"
+          ],
+          [
+            3,
+            "Re"
+          ],
+          [
+            3,
+            "Im"
+          ],
+          [
+            4,
+            "Re"
+          ],
+          [
+            4,
+            "Im"
+          ],
+          [
+            5,
+            "Re"
+          ],
+          [
+            5,
+            "Im"
+          ],
+          [
+            6,
+            "Re"
+          ],
+          [
+            6,
+            "Im"
+          ],
+          [
+            7,
+            "Re"
+          ],
+          [
+            7,
+            "Im"
+          ],
+          [
+            8,
+            "Re"
+          ],
+          [
+            8,
+            "Im"
+          ]
+        ],
+        "eta": "2*pi*lambda_x, lambda_x=sum e_b log(p_b), NOT alias residual",
+        "N0_entries": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            -1
+          ],
+          [
+            5,
+            2,
+            1
+          ],
+          [
+            4,
+            3,
+            -1
+          ],
+          [
+            7,
+            4,
+            1
+          ],
+          [
+            6,
+            5,
+            -1
+          ],
+          [
+            9,
+            6,
+            1
+          ],
+          [
+            8,
+            7,
+            -1
+          ],
+          [
+            11,
+            8,
+            1
+          ],
+          [
+            10,
+            9,
+            -1
+          ],
+          [
+            13,
+            10,
+            1
+          ],
+          [
+            12,
+            11,
+            -1
+          ],
+          [
+            15,
+            12,
+            1
+          ],
+          [
+            14,
+            13,
+            -1
+          ],
+          [
+            17,
+            14,
+            1
+          ],
+          [
+            16,
+            15,
+            -1
+          ]
+        ],
+        "infinitesimal_generator": "N_x=eta_x*N0 on cell x; zero elsewhere",
+        "translation": "T_x(s)=exp(s*N_x)",
+        "translation_coefficients": [
+          {
+            "degree_in_eta_s": 0,
+            "entries": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                1,
+                1,
+                "1"
+              ],
+              [
+                2,
+                2,
+                "1"
+              ],
+              [
+                3,
+                3,
+                "1"
+              ],
+              [
+                4,
+                4,
+                "1"
+              ],
+              [
+                5,
+                5,
+                "1"
+              ],
+              [
+                6,
+                6,
+                "1"
+              ],
+              [
+                7,
+                7,
+                "1"
+              ],
+              [
+                8,
+                8,
+                "1"
+              ],
+              [
+                9,
+                9,
+                "1"
+              ],
+              [
+                10,
+                10,
+                "1"
+              ],
+              [
+                11,
+                11,
+                "1"
+              ],
+              [
+                12,
+                12,
+                "1"
+              ],
+              [
+                13,
+                13,
+                "1"
+              ],
+              [
+                14,
+                14,
+                "1"
+              ],
+              [
+                15,
+                15,
+                "1"
+              ],
+              [
+                16,
+                16,
+                "1"
+              ],
+              [
+                17,
+                17,
+                "1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 1,
+            "entries": [
+              [
+                3,
+                0,
+                "1"
+              ],
+              [
+                2,
+                1,
+                "-1"
+              ],
+              [
+                5,
+                2,
+                "1"
+              ],
+              [
+                4,
+                3,
+                "-1"
+              ],
+              [
+                7,
+                4,
+                "1"
+              ],
+              [
+                6,
+                5,
+                "-1"
+              ],
+              [
+                9,
+                6,
+                "1"
+              ],
+              [
+                8,
+                7,
+                "-1"
+              ],
+              [
+                11,
+                8,
+                "1"
+              ],
+              [
+                10,
+                9,
+                "-1"
+              ],
+              [
+                13,
+                10,
+                "1"
+              ],
+              [
+                12,
+                11,
+                "-1"
+              ],
+              [
+                15,
+                12,
+                "1"
+              ],
+              [
+                14,
+                13,
+                "-1"
+              ],
+              [
+                17,
+                14,
+                "1"
+              ],
+              [
+                16,
+                15,
+                "-1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 2,
+            "entries": [
+              [
+                4,
+                0,
+                "-1/2"
+              ],
+              [
+                5,
+                1,
+                "-1/2"
+              ],
+              [
+                6,
+                2,
+                "-1/2"
+              ],
+              [
+                7,
+                3,
+                "-1/2"
+              ],
+              [
+                8,
+                4,
+                "-1/2"
+              ],
+              [
+                9,
+                5,
+                "-1/2"
+              ],
+              [
+                10,
+                6,
+                "-1/2"
+              ],
+              [
+                11,
+                7,
+                "-1/2"
+              ],
+              [
+                12,
+                8,
+                "-1/2"
+              ],
+              [
+                13,
+                9,
+                "-1/2"
+              ],
+              [
+                14,
+                10,
+                "-1/2"
+              ],
+              [
+                15,
+                11,
+                "-1/2"
+              ],
+              [
+                16,
+                12,
+                "-1/2"
+              ],
+              [
+                17,
+                13,
+                "-1/2"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 3,
+            "entries": [
+              [
+                7,
+                0,
+                "-1/6"
+              ],
+              [
+                6,
+                1,
+                "1/6"
+              ],
+              [
+                9,
+                2,
+                "-1/6"
+              ],
+              [
+                8,
+                3,
+                "1/6"
+              ],
+              [
+                11,
+                4,
+                "-1/6"
+              ],
+              [
+                10,
+                5,
+                "1/6"
+              ],
+              [
+                13,
+                6,
+                "-1/6"
+              ],
+              [
+                12,
+                7,
+                "1/6"
+              ],
+              [
+                15,
+                8,
+                "-1/6"
+              ],
+              [
+                14,
+                9,
+                "1/6"
+              ],
+              [
+                17,
+                10,
+                "-1/6"
+              ],
+              [
+                16,
+                11,
+                "1/6"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 4,
+            "entries": [
+              [
+                8,
+                0,
+                "1/24"
+              ],
+              [
+                9,
+                1,
+                "1/24"
+              ],
+              [
+                10,
+                2,
+                "1/24"
+              ],
+              [
+                11,
+                3,
+                "1/24"
+              ],
+              [
+                12,
+                4,
+                "1/24"
+              ],
+              [
+                13,
+                5,
+                "1/24"
+              ],
+              [
+                14,
+                6,
+                "1/24"
+              ],
+              [
+                15,
+                7,
+                "1/24"
+              ],
+              [
+                16,
+                8,
+                "1/24"
+              ],
+              [
+                17,
+                9,
+                "1/24"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 5,
+            "entries": [
+              [
+                11,
+                0,
+                "1/120"
+              ],
+              [
+                10,
+                1,
+                "-1/120"
+              ],
+              [
+                13,
+                2,
+                "1/120"
+              ],
+              [
+                12,
+                3,
+                "-1/120"
+              ],
+              [
+                15,
+                4,
+                "1/120"
+              ],
+              [
+                14,
+                5,
+                "-1/120"
+              ],
+              [
+                17,
+                6,
+                "1/120"
+              ],
+              [
+                16,
+                7,
+                "-1/120"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 6,
+            "entries": [
+              [
+                12,
+                0,
+                "-1/720"
+              ],
+              [
+                13,
+                1,
+                "-1/720"
+              ],
+              [
+                14,
+                2,
+                "-1/720"
+              ],
+              [
+                15,
+                3,
+                "-1/720"
+              ],
+              [
+                16,
+                4,
+                "-1/720"
+              ],
+              [
+                17,
+                5,
+                "-1/720"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 7,
+            "entries": [
+              [
+                15,
+                0,
+                "-1/5040"
+              ],
+              [
+                14,
+                1,
+                "1/5040"
+              ],
+              [
+                17,
+                2,
+                "-1/5040"
+              ],
+              [
+                16,
+                3,
+                "1/5040"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 8,
+            "entries": [
+              [
+                16,
+                0,
+                "1/40320"
+              ],
+              [
+                17,
+                1,
+                "1/40320"
+              ]
+            ]
+          }
+        ],
+        "nilpotence_index_ambient": 9,
+        "translation_degree": 8,
+        "translation_determinant": "1",
+        "translation_inverse": "T_x(-s)",
+        "leading_real_projection_generator": "0",
+        "first_real_row_companion": "-eta_x * evaluation(Im, h-1), h>0"
+      },
+      "wedge_translation_total_degree_bound": 128,
+      "actual_source_cells": null,
+      "actual_real_row_projection": null,
+      "actual_coefficient_columns": null,
+      "actual_V_basis": null,
+      "dim_V": null,
+      "rank_P": null,
+      "dim_kernel": null,
+      "kernel_basis": null,
+      "kernel_residual_rank": null,
+      "first_actual_nonzero_residual": null,
+      "H": null,
+      "actual_determinant_subspace": null,
+      "wedge_test": null
+    },
+    {
+      "ids": [
+        34,
+        37,
+        39,
+        43,
+        53,
+        56,
+        60,
+        63
+      ],
+      "size": 8,
+      "hmax": 6,
+      "carrier": "p^2/r",
+      "aliases": [
+        1
+      ],
+      "hidden_pair_ids": [
+        37,
+        39,
+        43,
+        56,
+        60,
+        63
+      ],
+      "visible_excess_ids": [
+        34,
+        53
+      ],
+      "master_moment_labels": [
+        "S_2(N)",
+        "S_3(N)",
+        "S_4(N)",
+        "S_5(N)",
+        "S_6(N)",
+        "S_7(N)",
+        "S_8(N)"
+      ],
+      "ambient_dimension_per_cell": 14,
+      "operator": {
+        "coordinates": [
+          [
+            0,
+            "Re"
+          ],
+          [
+            0,
+            "Im"
+          ],
+          [
+            1,
+            "Re"
+          ],
+          [
+            1,
+            "Im"
+          ],
+          [
+            2,
+            "Re"
+          ],
+          [
+            2,
+            "Im"
+          ],
+          [
+            3,
+            "Re"
+          ],
+          [
+            3,
+            "Im"
+          ],
+          [
+            4,
+            "Re"
+          ],
+          [
+            4,
+            "Im"
+          ],
+          [
+            5,
+            "Re"
+          ],
+          [
+            5,
+            "Im"
+          ],
+          [
+            6,
+            "Re"
+          ],
+          [
+            6,
+            "Im"
+          ]
+        ],
+        "eta": "2*pi*lambda_x, lambda_x=sum e_b log(p_b), NOT alias residual",
+        "N0_entries": [
+          [
+            3,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            -1
+          ],
+          [
+            5,
+            2,
+            1
+          ],
+          [
+            4,
+            3,
+            -1
+          ],
+          [
+            7,
+            4,
+            1
+          ],
+          [
+            6,
+            5,
+            -1
+          ],
+          [
+            9,
+            6,
+            1
+          ],
+          [
+            8,
+            7,
+            -1
+          ],
+          [
+            11,
+            8,
+            1
+          ],
+          [
+            10,
+            9,
+            -1
+          ],
+          [
+            13,
+            10,
+            1
+          ],
+          [
+            12,
+            11,
+            -1
+          ]
+        ],
+        "infinitesimal_generator": "N_x=eta_x*N0 on cell x; zero elsewhere",
+        "translation": "T_x(s)=exp(s*N_x)",
+        "translation_coefficients": [
+          {
+            "degree_in_eta_s": 0,
+            "entries": [
+              [
+                0,
+                0,
+                "1"
+              ],
+              [
+                1,
+                1,
+                "1"
+              ],
+              [
+                2,
+                2,
+                "1"
+              ],
+              [
+                3,
+                3,
+                "1"
+              ],
+              [
+                4,
+                4,
+                "1"
+              ],
+              [
+                5,
+                5,
+                "1"
+              ],
+              [
+                6,
+                6,
+                "1"
+              ],
+              [
+                7,
+                7,
+                "1"
+              ],
+              [
+                8,
+                8,
+                "1"
+              ],
+              [
+                9,
+                9,
+                "1"
+              ],
+              [
+                10,
+                10,
+                "1"
+              ],
+              [
+                11,
+                11,
+                "1"
+              ],
+              [
+                12,
+                12,
+                "1"
+              ],
+              [
+                13,
+                13,
+                "1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 1,
+            "entries": [
+              [
+                3,
+                0,
+                "1"
+              ],
+              [
+                2,
+                1,
+                "-1"
+              ],
+              [
+                5,
+                2,
+                "1"
+              ],
+              [
+                4,
+                3,
+                "-1"
+              ],
+              [
+                7,
+                4,
+                "1"
+              ],
+              [
+                6,
+                5,
+                "-1"
+              ],
+              [
+                9,
+                6,
+                "1"
+              ],
+              [
+                8,
+                7,
+                "-1"
+              ],
+              [
+                11,
+                8,
+                "1"
+              ],
+              [
+                10,
+                9,
+                "-1"
+              ],
+              [
+                13,
+                10,
+                "1"
+              ],
+              [
+                12,
+                11,
+                "-1"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 2,
+            "entries": [
+              [
+                4,
+                0,
+                "-1/2"
+              ],
+              [
+                5,
+                1,
+                "-1/2"
+              ],
+              [
+                6,
+                2,
+                "-1/2"
+              ],
+              [
+                7,
+                3,
+                "-1/2"
+              ],
+              [
+                8,
+                4,
+                "-1/2"
+              ],
+              [
+                9,
+                5,
+                "-1/2"
+              ],
+              [
+                10,
+                6,
+                "-1/2"
+              ],
+              [
+                11,
+                7,
+                "-1/2"
+              ],
+              [
+                12,
+                8,
+                "-1/2"
+              ],
+              [
+                13,
+                9,
+                "-1/2"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 3,
+            "entries": [
+              [
+                7,
+                0,
+                "-1/6"
+              ],
+              [
+                6,
+                1,
+                "1/6"
+              ],
+              [
+                9,
+                2,
+                "-1/6"
+              ],
+              [
+                8,
+                3,
+                "1/6"
+              ],
+              [
+                11,
+                4,
+                "-1/6"
+              ],
+              [
+                10,
+                5,
+                "1/6"
+              ],
+              [
+                13,
+                6,
+                "-1/6"
+              ],
+              [
+                12,
+                7,
+                "1/6"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 4,
+            "entries": [
+              [
+                8,
+                0,
+                "1/24"
+              ],
+              [
+                9,
+                1,
+                "1/24"
+              ],
+              [
+                10,
+                2,
+                "1/24"
+              ],
+              [
+                11,
+                3,
+                "1/24"
+              ],
+              [
+                12,
+                4,
+                "1/24"
+              ],
+              [
+                13,
+                5,
+                "1/24"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 5,
+            "entries": [
+              [
+                11,
+                0,
+                "1/120"
+              ],
+              [
+                10,
+                1,
+                "-1/120"
+              ],
+              [
+                13,
+                2,
+                "1/120"
+              ],
+              [
+                12,
+                3,
+                "-1/120"
+              ]
+            ]
+          },
+          {
+            "degree_in_eta_s": 6,
+            "entries": [
+              [
+                12,
+                0,
+                "-1/720"
+              ],
+              [
+                13,
+                1,
+                "-1/720"
+              ]
+            ]
+          }
+        ],
+        "nilpotence_index_ambient": 7,
+        "translation_degree": 6,
+        "translation_determinant": "1",
+        "translation_inverse": "T_x(-s)",
+        "leading_real_projection_generator": "0",
+        "first_real_row_companion": "-eta_x * evaluation(Im, h-1), h>0"
+      },
+      "wedge_translation_total_degree_bound": 48,
+      "actual_source_cells": null,
+      "actual_real_row_projection": null,
+      "actual_coefficient_columns": null,
+      "actual_V_basis": null,
+      "dim_V": null,
+      "rank_P": null,
+      "dim_kernel": null,
+      "kernel_basis": null,
+      "kernel_residual_rank": null,
+      "first_actual_nonzero_residual": null,
+      "H": null,
+      "actual_determinant_subspace": null,
+      "wedge_test": null
+    }
+  ],
+  "proved": [
+    "exact source root-translation formula at fixed n and masks",
+    "complete realified source-jet generator and polynomial action",
+    "generator/kernel equivalence, conditional on actual V and P",
+    "zeroth real jet is fixed under root translation",
+    "finite exterior degree bounds, not actual wedge intertwining"
+  ],
+  "actual_kernel_test_executed": false,
+  "actual_wedge_test_executed": false,
+  "determinant_visible_K": null,
+  "correction_ranks": null,
+  "source_legal_minors": null,
+  "fifth_rank_bounds": [
+    38,
+    72
+  ],
+  "strict_gt79": "OPEN_UNCHANGED",
+  "source_pins": {
+    "src/wp84_fifth_full_pool_amplitude.py": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "dab1000ec7297f276197b8ecca7a8a0cd07fbd69",
+      "sha256": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1"
+    },
+    "src/wp84_source_q_mask_extractor.py": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "dd89f3204d66425f2cd2c82e22679995066df4b9",
+      "sha256": "903566a67c809e397f18efc1fcbfeddcd6bc24ec6b561c93ab0b1cf9bf724152"
+    },
+    "src/wp84_exact_determinant_coefficient_builder.py": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "b7bdc17bb9df9a0da32af3d23a1a7224e32b7a54",
+      "sha256": "7651b564aba186dfc7c30228f5c9d8c9180bb2a99aa465c3f368b494f57afe09"
+    },
+    "src/wp84_wedge_support_reducer.py": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "ae34ebbf6734caaa51084c8065b832a3bb1d7ed8",
+      "sha256": "ff0411155eee27c54b86b91a73618e539e36577b986b4aee18aa3155f64b2b0b"
+    },
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "27c27e7c20257c59ccff9f72909a03634cfce989",
+      "sha256": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a"
+    },
+    "notes/WP84_FIFTH_LEGAL_STENCIL_AND_PRIME_REALIZATION.md": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "b9483cb23d97a0881c88a40d135bca065022d602",
+      "sha256": "27ac39c7c9338afd6518243d1543d388742af241a7c578cbea7b53ecda392dce"
+    },
+    "notes/WP84_EXACT_Q_MASK_AND_DETERMINANT_VISIBLE_MOMENT_BASIS.md": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "b9b4076633b8a30e2974ea45b00881251a7c9a14",
+      "sha256": "6b8a83456b4fb5e69510ce30361e5a4a1c5990ae47a4861be0b0d8a5ab825c17"
+    },
+    "notes/WP84_DETERMINANT_NATIVE_ENDPOINT_CERTIFICATE.json": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "c6f263dd2156315edead72e69a571663d6959c48",
+      "sha256": "848b8bd589b62f767f990d2e933a4f4ff8053bd66d235199aef1aebd22654f40"
+    },
+    "notes/WP84_DETERMINANT_NATIVE_ENDPOINT_REINSTANTIATION.md": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "a459a2ecb77b1e3eecb847509c780cd00eee864d",
+      "sha256": "d27ec2437294fc6d15bbcbd5fed0cb26771e1419b12333bbe847685f9dd066f9"
+    },
+    "notes/WP84_LRSC_PHASE_NETWORK_FUNCTIONAL_RANK_TRANSPLANT.md": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "87418b7367cb6734968c26f293c2deee470cf29b",
+      "sha256": "de945cfa8250f3d6ce89a02e0ba75cc8bd637259e52322d5415f9e07e6d78ee3"
+    },
+    "notes/WP84_LRSC_DISPLACEMENT_RANK_CLOSURE.md": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "b48c52723d4fe456e50b63fc82337dad7974faf6",
+      "sha256": "3945aa0ed3991e77cc503fbddf166dfffb205f0e2a0f4053c466108fe315797e"
+    },
+    "notes/WP84_DETUNING_COMMUTATOR_ENDPOINT.md": {
+      "commit": "0de8810580164ca442e37043b59d88f2dd9f3f64",
+      "blob": "dda38d04a887e8f389ddab7c515b01266ef61af5",
+      "sha256": "d9784ef2cc35e221a93ed59f2dda2720412caaf0e8d1546c26ca4d934774075c"
+    }
+  },
+  "packet_sha256": {
+    "notebooklm_packet/00_CURRENT_STATE_AND_DEPENDENCY_CHAIN.pdf": "3722f58798b83af2217bbce767952e91a0a78cb48d3dae8e0ae760a1a647e322",
+    "notebooklm_packet/01_ARITHMETIC_B_TO_C_SOURCES.pdf": "d992b7df5864327ea1bc4311cf389f40bb0eebb04875374cee83f02ab5554400",
+    "notebooklm_packet/02_COMPRESSION_AND_GEOMETRY_SOURCES.pdf": "0739f2b0cbdd33eccccf52be697cb12cc9d84e4aaac8e349a8da812b0620b6bf",
+    "notebooklm_packet/03_VERIFIERS_AND_EXACT_CONSTANTS.pdf": "63c17f88feb7371996603d237c875af0bd369be2317f604d00e81123eca94991",
+    "notebooklm_packet/04_PUBLIC_07947_ARITHMETIC_BRIDGE.pdf": "59e98fad78f2ce38bae01f09b893fa7945a027c4cc69e378719c39b2deabbcd8",
+    "notebooklm_packet/MANIFEST.txt": "d9fae2f7dba4ee55661c118fdd3ce0db379ad8a075a2f9cd9294304eb0f3a5a3"
+  }
+}
