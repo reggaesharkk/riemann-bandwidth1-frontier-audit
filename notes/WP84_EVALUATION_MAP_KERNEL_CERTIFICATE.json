@@ -1,0 +1,38 @@
+{
+  "decision": "F",
+  "parent": "f7391edb664b5cf695778970face063faadd3ad4",
+  "functional_count": 453,
+  "formal_tagged_rank": 453,
+  "formal_tagged_nullity": 0,
+  "formal_fifth_rank": 72,
+  "formal_sixth_rank": 381,
+  "formal_cross_intersection": 0,
+  "analytic_rank_lower_bound": 0,
+  "analytic_rank_upper_bound": 453,
+  "analytic_rank": null,
+  "analytic_nullity": null,
+  "analytic_fifth_rank": null,
+  "analytic_sixth_rank": null,
+  "analytic_intersection_dimension": null,
+  "analytic_kernel_basis": null,
+  "faithful_normal_form": false,
+  "specialization_rank_witness": null,
+  "zero_filter_example": {
+    "X": 121,
+    "prime": 11,
+    "alpha": "1/2",
+    "lag": 2,
+    "sign": -1,
+    "z": "-1",
+    "filter_value": "0",
+    "scope": "evaluation ring has relations; single-height zero is NOT a global kernel vector on the 453-span"
+  },
+  "corruption_checks": 2265,
+  "first_missing_step": "kernel characterization of actual prime/path evaluation; no legal exact specialization minor or faithful atom-independence theorem established",
+  "new_budget": null,
+  "strict_gt79": "OPEN",
+  "source_sha256": {
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
+    "notes/WP84_LRSC_FULL_WEIGHT_FEATURES.json": "0b6a2d56136149059c0f19595389b14ab56756625782c7aa45d4a2c725d48d62"
+  }
+}
