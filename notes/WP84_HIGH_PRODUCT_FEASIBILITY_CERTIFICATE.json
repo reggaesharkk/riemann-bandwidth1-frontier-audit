@@ -1,0 +1,174 @@
+{
+  "input_head": "d8b2746e437ae7e8f9e681ef172fc286e11a6698",
+  "R": 6000,
+  "coefficients": [
+    "364848201/34410250000",
+    "-18356061/344102500",
+    "-26060119/430128125",
+    "21981971/46375000",
+    "0",
+    "-11501/12500",
+    "137641/250000"
+  ],
+  "budget": {
+    "band": "128952763/92407500000",
+    "old_variance": "26060119/12734908593750",
+    "new_variance": "208480952/203775517378125",
+    "earned_variance_saving": "156386774119/152831638033593750",
+    "old_Jstar": "64788151489666079/572357731837500000",
+    "new_Jstar": "51835308978310574561/457924342652122500000",
+    "old_reference_margin": "52897896569489/572357731837500000",
+    "new_reference_margin": "8558084052085891/91584868530424500000",
+    "old_third_ceiling": "52897896569489/271300292460974700",
+    "new_third_ceiling": "8558084052085891/43411664130988764996",
+    "new_necessary_saving_lower": "15909857470864664470267332031322977/7733161315109907280429056000000000000"
+  },
+  "exact_kernel": "exp(i*T*m*L)*exp(i*(T+h*i_min)*delta)*sum_j exp(i*h*j*delta)/n",
+  "real_offset": "u-X^m*v; not assumed integer",
+  "dyadic_partition": "half-open prime intervals intersected with ALL original masks; half-open product intervals; no smoothing",
+  "cubic_mixed_per_path_bound": {
+    "formula": "96*X^(-1/2)*H_Z+192*X^(-1/2)*Z*(1+log(3*X*Z+2))",
+    "coefficients": [
+      96,
+      192
+    ],
+    "eventual_L_bound_coefficients": [
+      96,
+      48,
+      192,
+      384
+    ],
+    "Z": "floor(sqrt(X)/L^3)",
+    "rate": "O(L^(-2))+O(L/sqrt(X))",
+    "scope": "entire abs(log(u/(X*v)))<=1, v<=Z"
+  },
+  "joint_multiplier": "53104400022577809084780513/23187500",
+  "same_sign_second_alias": {
+    "unit_window": "288/X+576*(1+log(3*X^2+2))",
+    "coefficients": [
+      288,
+      576,
+      288,
+      96
+    ],
+    "core_abs_delta_le_1_over_X": "288+96/X",
+    "scope": "one path and one same-sign orientation; upper bounds only"
+  },
+  "ranges": [
+    {
+      "name": "cubic mixed hard",
+      "positive": [
+        "4/5",
+        "4/5"
+      ],
+      "negative": [
+        "3/5"
+      ],
+      "alpha": "8/5",
+      "beta": "3/5",
+      "alias": 1,
+      "core_width_exponent": "3/5",
+      "divisor_bulk_exponent": "1/10"
+    },
+    {
+      "name": "cubic same-sign second alias",
+      "positive": [
+        "2/3",
+        "2/3",
+        "2/3"
+      ],
+      "negative": [],
+      "alpha": "2",
+      "beta": "0",
+      "alias": 2,
+      "core_width_exponent": "1",
+      "divisor_bulk_exponent": "0"
+    },
+    {
+      "name": "fifth central 2:3",
+      "positive": [
+        "3/5",
+        "3/5"
+      ],
+      "negative": [
+        "2/5",
+        "2/5",
+        "2/5"
+      ],
+      "alpha": "6/5",
+      "beta": "6/5",
+      "alias": 0,
+      "core_width_exponent": "1/5",
+      "divisor_bulk_exponent": "1/5"
+    },
+    {
+      "name": "sixth central 3:3",
+      "positive": [
+        "2/5",
+        "2/5",
+        "2/5"
+      ],
+      "negative": [
+        "2/5",
+        "2/5",
+        "2/5"
+      ],
+      "alpha": "6/5",
+      "beta": "6/5",
+      "alias": 0,
+      "core_width_exponent": "1/5",
+      "divisor_bulk_exponent": "1/5"
+    },
+    {
+      "name": "sixth single-pair central 2:2",
+      "positive": [
+        "3/5",
+        "3/5"
+      ],
+      "negative": [
+        "3/5",
+        "3/5"
+      ],
+      "alpha": "6/5",
+      "beta": "6/5",
+      "alias": 0,
+      "core_width_exponent": "1/5",
+      "divisor_bulk_exponent": "1/5"
+    }
+  ],
+  "gram_cross_examples": [
+    "1/2",
+    "-1/2"
+  ],
+  "gram_determinant": "3/4",
+  "new_constant_signed_saving": "0",
+  "third_moment_retained": true,
+  "strict_gt79_proved": false,
+  "tails_retained": true,
+  "carrier_retained": true,
+  "proper_power_disposal_unconditional": false,
+  "verdict": "NO-GO for closure with the audited estimates; stop speculative regrouping",
+  "primary_sources": [
+    "https://personal.science.psu.edu/rcv4/personal/Publications/s2-8-1-73.pdf",
+    "https://arxiv.org/pdf/2102.12297",
+    "https://arxiv.org/abs/1510.06005"
+  ],
+  "source_pins": {
+    "notes/WP84_JOINT_THIRD_FIFTH_SIXTH_ARITHMETIC_OBSTRUCTION.md": {
+      "sha256": "a228cd95028958c8492ff81c91dbbec1a6898c2d466a9f2be3e533eb99d04249",
+      "git_blob": "2fb198c9d7fae422d631fac8a50d2cd11dc0e7af"
+    },
+    "notes/WP84_JOINT_CUBIC_ALIAS_CERTIFICATE.json": {
+      "sha256": "df92815626df8633bb17bc3174719da4322fa8f815783cc19ffe05354df7fc97",
+      "git_blob": "c15496a7566d88d004a56354ce8d60ab07211534"
+    },
+    "notes/WP84_SIGNED_NEAR_ALIAS_ATTACK.md": {
+      "sha256": "c7ae6d9b5bd5d01ece59a1cd6fb3d504dbc4f5476654edfc775b717c9e1bac42",
+      "git_blob": "ff89aca71d787d3a50e0d916b76c950a8fde6432"
+    },
+    "notes/WP84_DIRECT_SIGNED_RESTRICTED_CORRELATION_ATTACK.md": {
+      "sha256": "75d746bb0f2702f81f2bc4aa367b84bd84ace8ddcf38cf8bf6fd8becceb6fc66",
+      "git_blob": "a1f99ba4075fd7e05d407549722dc620f70c834b"
+    }
+  }
+}
