@@ -1,0 +1,2539 @@
+[
+  {
+    "functional_id": 15,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/3",
+      "2/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 8,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "2/5",
+      "2/5",
+      "2/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 10,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 5,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "2/5",
+      "2/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 3,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      2,
+      2,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "2/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 1,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        3,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      3,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "2/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 0,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [],
+      [
+        4,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      4,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 36,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/3",
+      "2/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 33,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "2/5",
+      "2/5",
+      "3/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 34,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 18,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "2/5",
+      "3/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 14,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      2,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "3/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 11,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "2/5",
+      "3/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 9,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1
+      ],
+      [
+        4
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      4,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "2/5",
+      "3/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 52,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/5",
+      "1/5",
+      "1/5",
+      "4/5",
+      "4/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 41,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/5",
+      "1/5",
+      "4/5",
+      "4/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 35,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1,
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/5",
+      "4/5",
+      "4/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 51,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      -2
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/5",
+      "1/5",
+      "1/5",
+      "4/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 40,
+    "b": 5,
+    "reciprocal_carrier_support": [
+      5,
+      [
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      -2
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/5",
+      "1/5",
+      "4/5"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 127,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      0
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 96,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 103,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 87,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 83,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        2,
+        2,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 98,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        3,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/2",
+      "1/2"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 77,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        3,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      3,
+      1,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 75,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        3,
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      3,
+      2,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 73,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        4,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      4,
+      1,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 72,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [],
+      [
+        5,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "block_exponents": [
+      5,
+      1
+    ],
+    "m": 2,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 206,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      0,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 188,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 191,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 131,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 117,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      2,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 189,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/2",
+      "1/2"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 106,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        3,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      1,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 102,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      2,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 99,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      4,
+      1,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 97,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1
+      ],
+      [
+        5
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "block_exponents": [
+      5,
+      -1
+    ],
+    "m": 1,
+    "rational_prime_growth_exponents": [
+      "1/3",
+      "2/3"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 324,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/4",
+      "1/4",
+      "3/4",
+      "3/4"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 251,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 318,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/4",
+      "3/4",
+      "3/4"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 215,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 205,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      2,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 196,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      1,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 190,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1
+      ],
+      [
+        4
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      4,
+      -1,
+      -1
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 348,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "m": -2,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 336,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "m": -2,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 322,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      -1,
+      -1,
+      -1
+    ],
+    "m": -2,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "5/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 250,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "equality_partition": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      4
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      1,
+      1,
+      1,
+      1,
+      -2
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "1/6",
+      "1/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 214,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        2
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      1,
+      -2
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "1/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 195,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        2
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      2,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      1,
+      -2
+    ],
+    "m": -1,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 331,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      1,
+      2,
+      2,
+      3
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      2,
+      1,
+      -2,
+      -1
+    ],
+    "m": -2,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  },
+  {
+    "functional_id": 320,
+    "b": 6,
+    "reciprocal_carrier_support": [
+      6,
+      [
+        2,
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "equality_partition": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "block_exponents": [
+      3,
+      -2,
+      -1
+    ],
+    "m": -2,
+    "rational_prime_growth_exponents": [
+      "1/6",
+      "5/6",
+      "5/6"
+    ],
+    "prime_constructor": "q_B in [C_B Y^gamma_B, 2 C_B Y^gamma_B], C_B=3^B; Bertrand guarantees primes for large Y; equal gamma intervals disjoint",
+    "center": "X_Y=(prod_B q_B^e_B)^(1/m), so log X_Y=log Y+O(1)",
+    "cell_witness": "perturb center on one side within H/(2pi X_Y), avoid finite combinatorial boundaries; retain known tuple",
+    "leading_carrier_coefficient": "(-1)^b/2 * sum_matching_assignments prod_B (log q_B)^nu_B/q_B^(nu_B/2), nonzero, zero-lag root count cancels dprime",
+    "scope": "symbolic global independence within each degree; no finite-height interval minor"
+  }
+]

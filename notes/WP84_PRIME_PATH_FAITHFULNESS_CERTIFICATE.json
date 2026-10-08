@@ -1,0 +1,39 @@
+{
+  "decision": "F",
+  "parent": "73802f59532c2eb10db8f9689c886fc8ac901b64",
+  "K_formal_on_labelled_span": "{0}, formal incidence only",
+  "K_global": "UNKNOWN",
+  "K_T": "kernel of one Q-linear real evaluation; no inference to global kernel",
+  "fifth_lower": 19,
+  "fifth_upper": 72,
+  "sixth_lower": 35,
+  "sixth_upper": 381,
+  "total_lower": 35,
+  "total_upper": 453,
+  "normalized_joint_carrier_support_witness_count": 54,
+  "normalized_joint_scope": "degree-dependent normalization removes a_phi; not a proved common scaling of original mixed family",
+  "analytic_nullity_bounds": [
+    0,
+    418
+  ],
+  "global_kernel_basis": null,
+  "intersection_dimension": null,
+  "interval_rank_witness": null,
+  "interval_engines": {
+    "python_flint": false,
+    "sage": false,
+    "mpmath": "available; ordinary values not rank certificates"
+  },
+  "cell_normal_form_faithfulness": "PROVED within one degree after combining actual constant-field coefficients indexed by lambda,rho,z-power; full matrix rank not computed",
+  "within_degree_carrier_uniqueness": "PROVED for analytic germs in 1/log(T/2pi), common nonzero degree normalization removed",
+  "free_carrier_diagonal_implication": "PROVED for actual fixed-cell same-degree lifts via germ lemma; FALSE for unrestricted analytic lifts, counterexample exp(i*t*lambda)-exp(i*2pi*X*lambda)",
+  "general_analytic_amplitude_uniqueness": "FALSE; a1(T)=1,a2(T)=-exp(i*T*(lambda1-lambda2))",
+  "remaining_obstruction_symbolic": "rank of combined lambda,rho,power coefficient matrices inside same-carrier supports; mixed-degree normalization and intersection",
+  "remaining_obstruction_interval": "complete actual fixed-R outward-rounded evaluations with certified admissible endpoints and taper not constructed; ordinary zero-lag diagnostics insufficient",
+  "compression_closed": false,
+  "strict_gt79": "OPEN",
+  "source_sha256": {
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
+    "notes/WP84_EVALUATION_MAP_KERNEL_CERTIFICATE.json": "e7f66d586890effcdc47d336a8edba7f733cb8149645633be1621fa304fea88e"
+  }
+}
