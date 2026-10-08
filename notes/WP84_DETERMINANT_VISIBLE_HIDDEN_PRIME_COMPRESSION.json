@@ -1,0 +1,215 @@
+{
+  "status": "BLOCKED_ON_MISSING_SOURCE_MATRIX_DATA",
+  "source_head": "990ccbd8f340eea8abccbc0c05dd6fb939e4022b",
+  "source_sha256": {
+    "src/wp84_fifth_full_pool_amplitude.py": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1",
+    "src/wp84_exact_determinant_coefficient_builder.py": "7651b564aba186dfc7c30228f5c9d8c9180bb2a99aa465c3f368b494f57afe09",
+    "src/wp84_source_q_mask_extractor.py": "903566a67c809e397f18efc1fcbfeddcd6bc24ec6b561c93ab0b1cf9bf724152",
+    "src/wp84_wedge_support_reducer.py": "ff0411155eee27c54b86b91a73618e539e36577b986b4aee18aa3155f64b2b0b",
+    "src/wp84_visible_prime_minor_builder.py": "e23f0bfa3362b40fe326eb3abd183bbead54f57ba6ae6cb375611b799278f63b",
+    "notes/WP84_EXACT_DETERMINANT_COEFFICIENTS.json": "1cdacdb147b7efa5b4cc0472d53a36ce4955fad6fdb81881d8047f434d3d6470",
+    "notes/WP84_EXACT_Q_MASK_CERTIFICATE.json": "0b891fb14c40e5fe77394e03623fc637f78614d4b793ea8243499425d6fa6ebf",
+    "notes/WP84_WEDGE_SUPPORT_REDUCTION.json": "38dadfe3808418b3d7d9b47b1f8c49fd9c323d2f332fed75470c1887a87c7ea3",
+    "notes/WP84_VISIBLE_PRIME_SUBSYSTEM.json": "39a42c1044427d7b1e38750bb514ba346e29fc6bc4f5c6cdeee989a7780d422c",
+    "notes/WP84_FIFTH_FULL_POOL_SECTION_REPLAY.json": "4a4c274e725da19614b6c7f8e7e980c4a1dca0c02e44f07066ae486469d8e0ef"
+  },
+  "R": 6000,
+  "frozen_basis": {
+    "candidate_coordinates": 73,
+    "master_moments": [
+      "S_2",
+      "S_3",
+      "S_4",
+      "S_5",
+      "S_6",
+      "S_7",
+      "S_8",
+      "S_9",
+      "S_10"
+    ],
+    "J": 9
+  },
+  "blocks": [
+    {
+      "name": "B6",
+      "layout_ids": [
+        15,
+        20,
+        26,
+        28,
+        31,
+        32
+      ],
+      "size": 6,
+      "master_moments": [
+        "S_2",
+        "S_3",
+        "S_4",
+        "S_5",
+        "S_6",
+        "S_7",
+        "S_8"
+      ],
+      "candidate_moment_count": 7,
+      "determinant_visible_K": null,
+      "K_status": "not determined: evaluated source coefficient entries are absent",
+      "formal_first_possible_deficit": 5,
+      "first_nonzero_deficit": null,
+      "C_m_minus_1": "formal cofactor expression only; source entries unevaluated",
+      "correction_span_rank": null,
+      "correction_span_rank_upper_bound": 6,
+      "visible_only_rank_lower_bound": 0,
+      "visible_only_minor": null,
+      "promotion": 0
+    },
+    {
+      "name": "B8a",
+      "layout_ids": [
+        10,
+        12,
+        16,
+        17,
+        21,
+        22,
+        25,
+        29
+      ],
+      "size": 8,
+      "master_moments": [
+        "S_2",
+        "S_3",
+        "S_4",
+        "S_5",
+        "S_6",
+        "S_7",
+        "S_8"
+      ],
+      "candidate_moment_count": 7,
+      "determinant_visible_K": null,
+      "K_status": "not determined: evaluated source coefficient entries are absent",
+      "formal_first_possible_deficit": 7,
+      "first_nonzero_deficit": null,
+      "C_m_minus_1": "formal cofactor expression only; source entries unevaluated",
+      "correction_span_rank": null,
+      "correction_span_rank_upper_bound": 7,
+      "visible_only_rank_lower_bound": 0,
+      "visible_only_minor": null,
+      "promotion": 0
+    },
+    {
+      "name": "B16",
+      "layout_ids": [
+        36,
+        38,
+        42,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        59,
+        61,
+        62,
+        64,
+        65,
+        68,
+        69
+      ],
+      "size": 16,
+      "master_moments": [
+        "S_2",
+        "S_3",
+        "S_4",
+        "S_5",
+        "S_6",
+        "S_7",
+        "S_8",
+        "S_9",
+        "S_10"
+      ],
+      "candidate_moment_count": 9,
+      "determinant_visible_K": null,
+      "K_status": "not determined: evaluated source coefficient entries are absent",
+      "formal_first_possible_deficit": 15,
+      "first_nonzero_deficit": null,
+      "C_m_minus_1": "formal cofactor expression only; source entries unevaluated",
+      "correction_span_rank": null,
+      "correction_span_rank_upper_bound": 9,
+      "visible_only_rank_lower_bound": 0,
+      "visible_only_minor": null,
+      "promotion": 0
+    },
+    {
+      "name": "B8b",
+      "layout_ids": [
+        34,
+        37,
+        39,
+        43,
+        53,
+        56,
+        60,
+        63
+      ],
+      "size": 8,
+      "master_moments": [
+        "S_2",
+        "S_3",
+        "S_4",
+        "S_5",
+        "S_6",
+        "S_7",
+        "S_8"
+      ],
+      "candidate_moment_count": 7,
+      "determinant_visible_K": null,
+      "K_status": "not determined: evaluated source coefficient entries are absent",
+      "formal_first_possible_deficit": 7,
+      "first_nonzero_deficit": null,
+      "C_m_minus_1": "formal cofactor expression only; source entries unevaluated",
+      "correction_span_rank": null,
+      "correction_span_rank_upper_bound": 7,
+      "visible_only_rank_lower_bound": 0,
+      "visible_only_minor": null,
+      "promotion": 0
+    }
+  ],
+  "global_K": null,
+  "global_K_status": "undetermined; cannot remove any S_r as determinant-invisible",
+  "correction_ranks": "not determined; only displayed upper bounds follow from number of candidate moment matrices",
+  "first_possible_deficit": "m-1 for each block, as structurally replayed",
+  "first_nonzero_coefficient": null,
+  "visible_only_rank_lower_bounds": {
+    "B6": 0,
+    "B8a": 0,
+    "B16": 0,
+    "B8b": 0
+  },
+  "new_fifth_analytic_rank": 0,
+  "existing_fifth_rank_bounds": [
+    38,
+    72
+  ],
+  "source_input_audit": {
+    "source_mask_implemented": false,
+    "source_row_selector_implemented": false,
+    "selected_section_rule_implemented": false,
+    "missing_inputs": [
+      "executable source_mask predicate (the atom generator requires it as an argument)",
+      "source-selected row identities/order and the coefficient-jet selector",
+      "executable source section endpoint rule k_-(T), k_+(T), beyond d'/d -> 1",
+      "evaluated carrier/alias-cell assignments and exact source-state values for each selected row",
+      "exact finite source sums for the visible-prime entries and each E_r entry",
+      "a coefficient field/equality certificate for the resulting log-prime and phase sums"
+    ],
+    "evidence": {
+      "amplitude_constructor": "src/wp84_fifth_full_pool_amplitude.py:iter_source_atoms takes source_mask as an external required argument and source_amplitude_entry returns only a summand schema",
+      "section_replay": "c0^h*lambda^h/n sum_(j=0)^h (-minprefix)^(h-j)S_j(n-span)/((h-j)!j!)",
+      "visible_certificate": 18,
+      "qmask_source_head": "990ccbd8f340eea8abccbc0c05dd6fb939e4022b"
+    }
+  },
+  "decision": "F",
+  "decision_qualification": "no compression or nonvanishing can be certified from the currently executable source data; this is an evidence boundary, not a proof that the true source determinant is full-dimensional"
+}
