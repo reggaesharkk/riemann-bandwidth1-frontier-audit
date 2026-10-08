@@ -1,0 +1,31 @@
+{
+  "input_head": "0ff4b44d2f7a8eb6b4c700dac7991cd7e102225f",
+  "R": 6000,
+  "exact_original_phase": true,
+  "real_X_quotient_partition": true,
+  "source_masks_retained": true,
+  "joint_fifth_path_retained": true,
+  "zero_is_evaluated_main_term": false,
+  "zero_sign_controlled": false,
+  "nonzero_rectangular_transfer": false,
+  "actual_magnitude_saving": "0",
+  "signed_constant": "0",
+  "strip_loss": "1/10",
+  "quotient_length_relative_product": "3/8",
+  "balanced_inner_interval_exponent": "-1/5",
+  "completion_error": 0,
+  "verdict": "NO-GO",
+  "c3": "21981971/46375000",
+  "A": "11501/12500",
+  "B": "137641/250000",
+  "independent_completion_checks": [
+    1170,
+    18000,
+    "074bd77dd8b151f3280b89b5f95f681ef8a9f491ac7903803951a8d8bb8eed72"
+  ],
+  "source_sha256": {
+    "notes/WP84_CUBIC_FIRST_ALIAS_TYPEII_FEASIBILITY.md": "68f950b170d5730072b303582602892fd60ae11507a56cd3f6b11a6bf7f69394",
+    "notes/WP84_CUBIC_FIRST_ALIAS_TYPEII_CERTIFICATE.json": "d40aed971062df6a6f9e51275bd0bc8ce33cf6c20ed26c7669f8fcdff8420434",
+    "notes/WP84_HIGH_PRODUCT_SIGNED_FEASIBILITY.md": "cc2f4ade5378fd4f41c432eef035280b22041e1f101611c8db53193f0f3c5e04"
+  }
+}
