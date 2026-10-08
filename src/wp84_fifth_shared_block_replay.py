@@ -78,6 +78,3 @@ def main():
  (ROOT/'notes/WP84_FIFTH_SHARED_INDEPENDENT_REPLAY.json').write_text(json.dumps({'checks':checks,'failure_tests':['displacement','root index','missing singleton assignment','prime-log exponent','forced parent coefficient zero'],'exact_arithmetic':True,'scope':'finite rational realizations verify algebra; universal proof and legal-cell arguments in note'},indent=2)+'\n')
  print('PASS 27 exact signed full-path coefficient checks; lower jets vanish; all five mutation detectors reject')
 if __name__=='__main__':main()
-
-
-
