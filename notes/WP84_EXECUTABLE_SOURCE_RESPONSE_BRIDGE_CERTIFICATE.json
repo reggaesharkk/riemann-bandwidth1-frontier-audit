@@ -1,0 +1,63 @@
+{
+  "all_formula_piece_checks_pass": true,
+  "decision": "C_SOURCE_INSUFFICIENT_FOR_EXECUTABLE_BRIDGE",
+  "executable_k1_k2_contractor_names_found": [],
+  "expected_starting_head": "a0dc9a4d604e13f21df57468523d74b489c1b7d1",
+  "formula_piece_checks": {
+    "A1_A2_formulas_in_prose": true,
+    "determinant_iterator_takes_external_source_mask": true,
+    "dual_mass_definitions_only_as_json_strings": true,
+    "ordinary_prime_vector_formula_in_prose": true,
+    "prime_adic_alias_equation_in_prose": true,
+    "prior_audit_records_missing_constructor": true,
+    "q_mask_helper_is_separate_reconstruction": true,
+    "trace_grid_kernel_formula_in_prose": true
+  },
+  "input_source_sha256": {
+    "notes/WP84_DEPENDENT_PHASE_PRIME_ADIC_FIREWALL.md": "3338ebdfb8bf2d42addcebc8afe1141f2a34f338ac5ce3e5106f718f0d2604e0",
+    "notes/WP84_LOCALIZE_FIRST_HERMITE_PROJECTION.md": "d7ca7e1e0cf2a77fe44b2cac0c10085c6a45ca6bbcb2f8c1ab3feb7d2f359e23",
+    "notes/WP84_PRIME_BASE_GROUPED_LINDEBERG.md": "5db122d68e05b3af4c70551d31012b0ab3cce89a7f6b8eff1fe79a82e1313eb5",
+    "notes/WP84_SOURCE_CONTRACTED_DUAL_MASS_AUDIT.md": "6faa86c35ca469ee6ae2f2fd7c341714119123eddbaa5f7065ec5fcba53d8592",
+    "notes/WP84_SOURCE_CONTRACTED_DUAL_MASS_AUDIT_CERTIFICATE.json": "41072d4cdbcf106c98af97615086345afa18d06bc9dd049003b608b9eeddc006",
+    "src/wp84_compiled_mehler_prime_lindeberg.py": "751197679ad04282245fbd9d5773f3751dd195334149019048e3a8b73e752efe",
+    "src/wp84_contour_mixture_prime_mass.py": "3e89cca10fc8b22ca284040a88b88c5eeeff8d2bbcc0be97fa4d659d5316d012",
+    "src/wp84_fifth_full_pool_amplitude.py": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1",
+    "src/wp84_source_q_mask_extractor.py": "903566a67c809e397f18efc1fcbfeddcd6bc24ec6b561c93ab0b1cf9bf724152"
+  },
+  "minimum_missing_specification": [
+    "For every prime base p and p^a<=N, an exact realified fixed-R coordinate tensor with normalization and a single explicit carrier-placement convention.",
+    "The fixed-R source masks/window gates and their row dependence, including all lag, root/path and alias factors; do not substitute determinant source_mask or q_mask.",
+    "Either (i) the actual allowable trace index set I(T), its endpoints/order and d' plus root-count data for a replayable instance, or (ii) a proof uniform over a mathematically specified admissible section class that avoids selecting one historical section.",
+    "An executable construction of the p-excluded first/second response Fourier coefficients, or a direct exact contraction that computes the same K1/K2 without materializing them.",
+    "A source-backed test fixture with full prime/power cutoff and R=6000 against which an independent replay can compare the instantiated A1/A2 and D1/D2 objects."
+  ],
+  "no_claims": [
+    "No A1/A2 estimate is newly proved.",
+    "No source-legal counterexample is produced.",
+    "No synthetic rows, finite prime core, or determinant-mask substitution is used.",
+    "Strict >79% is not proved."
+  ],
+  "object_status": {
+    "K1_K2_D1_D2": "SYMBOLIC_ONLY_NOT_INSTANTIATED",
+    "determinant_source_mask": "EXTERNAL_CALLBACK_FOR_DIFFERENT_OBJECT; NOT TRANSFERRED",
+    "exact_prime_power_coordinate_tensor": "MISSING_EXECUTABLE_SOURCE",
+    "fixed_R_masks_and_row_gates": "MISSING_EXECUTABLE_SOURCE",
+    "ordinary_prime_formula_and_alias_skeleton": "PARTIALLY_RECOVERED_IN_PROSE",
+    "q_mask_extractor": "SEPARATE_RECONSTRUCTED_DETERMINANT_HELPER; NOT TRANSFERRED",
+    "response_fourier_arrays_or_direct_contraction": "MISSING_EXECUTABLE_SOURCE",
+    "section_input_or_uniform_section_certificate": "MISSING_FOR_REPLAY; existential section need not be historically unique"
+  },
+  "observed_branch": "codex/c5-c6-attack-20261006",
+  "observed_head_at_inspection": "a0dc9a4d604e13f21df57468523d74b489c1b7d1",
+  "recovery_extent": "PARTIAL_FORMULA_RECOVERY; no executable fixed-R source-to-response constructor recovered",
+  "schema": "wp84-executable-source-response-bridge-v1",
+  "scope": {
+    "R": 6000,
+    "prime_cutoff": "N=floor(X*exp(-sqrt(log X)))",
+    "quantifiers": "fixed R then T->infinity",
+    "strict_gt79": "OPEN"
+  },
+  "starting_state_matches_task": true,
+  "still_open_analytic_statement": "For the actual fixed-R source and each admissible section, prove A1_T,R + A2_T,R -> 0 (or a justified sufficient pair D1_T=o(1), D2_T=o(L^4)), retaining all periodic and near aliases and the natural cutoff.",
+  "working_tree_short_at_inspection": "?? notebooklm_packet/\n?? notes/WP84_EXECUTABLE_SOURCE_RESPONSE_BRIDGE_AUDIT.md\n?? notes/WP84_EXECUTABLE_SOURCE_RESPONSE_BRIDGE_CERTIFICATE.json\n?? src/wp84_executable_source_response_bridge_inspector.py\n?? src/wp84_executable_source_response_bridge_replay.py"
+}
