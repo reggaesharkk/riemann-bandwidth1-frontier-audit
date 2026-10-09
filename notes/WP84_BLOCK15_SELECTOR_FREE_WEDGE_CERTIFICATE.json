@@ -1,0 +1,110 @@
+{
+  "decision": "E_SOURCE_INPUT_STILL_MISSING",
+  "block_ids": [
+    15,
+    20,
+    26,
+    28,
+    31,
+    32
+  ],
+  "R": 6000,
+  "source_jet_orders": "h=0,...,6; real and imaginary coordinates retained",
+  "ambient_real_dimension": 14,
+  "sixth_exterior_dimension": 3003,
+  "N_over_eta_entries": [
+    [
+      2,
+      1,
+      -1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      4,
+      3,
+      -1
+    ],
+    [
+      5,
+      2,
+      1
+    ],
+    [
+      6,
+      5,
+      -1
+    ],
+    [
+      7,
+      4,
+      1
+    ],
+    [
+      8,
+      7,
+      -1
+    ],
+    [
+      9,
+      6,
+      1
+    ],
+    [
+      10,
+      9,
+      -1
+    ],
+    [
+      11,
+      8,
+      1
+    ],
+    [
+      12,
+      11,
+      -1
+    ],
+    [
+      13,
+      10,
+      1
+    ]
+  ],
+  "N_over_eta_sha256": "294dd4c9502506026758614a35b36500b7c5f25dfed4f848dfc2c7f579f7ee06",
+  "exterior_generator_nonzero_entries": 9504,
+  "exterior_grade_min": 6,
+  "exterior_grade_max": 30,
+  "exact_exterior_identity": "dGamma(N0)=sum_{r=1}^6 I wedge ... wedge N0 wedge ... wedge I",
+  "nilpotence_proof": "each nonzero entry raises sum(h_j) by 1; grades on 6-subsets range 6..30; hence dGamma(N0)^25=0",
+  "wedge_polynomial_degree_bound": 24,
+  "conditional_section_statement": "For fixed source cell, fixed length n, and fixed linear projection P, each coordinate of W(s)=(wedge^6 P) exp(eta*s*dGamma(N0)) v is a polynomial of degree <=24. If W is not identically zero, its common zero set on the one-parameter translation line has at most 24 points. This controls endpoint translations only; it does not compare different lengths or different masks/cells.",
+  "source_object": {
+    "constructor": "src/wp84_fifth_full_pool_amplitude.py",
+    "historical_selector_required_for_this_audit": false,
+    "first_unavailable_input": "The exact full-pool source-masked coefficient-column map for these six canonical functionals: the atom iterator requires a source_mask callback but no implementation is present, and source_amplitude_entry returns only a schema. Therefore the actual projected jet columns cannot be instantiated.",
+    "iterator_requires_external_source_mask": true,
+    "source_mask_implementation_present": false,
+    "source_amplitude_entry_is_evaluated_matrix": false,
+    "actual_P_B": null,
+    "actual_V_B": null,
+    "actual_projected_wedge": null,
+    "actual_wedge_nonzero_seed": null
+  },
+  "moment_support_K_B": null,
+  "block_rank_certified": false,
+  "old_fifth_rank_bounds": [
+    38,
+    72
+  ],
+  "new_fifth_rank_bounds": [
+    38,
+    72
+  ],
+  "rank_promotion": 0,
+  "strict_gt79": "OPEN",
+  "not_a_source_rank_certificate": true
+}
