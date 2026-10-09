@@ -37,7 +37,7 @@ For the frozen *near-alias survivor census*, the CSV gives exactly:
 
 These are support possibilities from the frozen pattern census; the counts do not assert that each prime/window assignment is occupied. The historical 453 is the unmasked origin-functional catalogue and cannot be used as a mask-component count. The formal 1,148 alias-resolved components and size histogram `{2:7,4:10,6:44,10:79,12:290,20:58,24:660}` are only conditional on the extra full dihedral/conjugation covariance. No nontrivial equality of callback bits is proved.
 
-For any degree-b pattern, \(|\lambda|<bL\), because every slot prime is at most \(N(T)<e^L\). In the nearest residual cell \(\lambda-mL\in[-L/2,L/2)\), this gives the exact outer candidate envelope \(|m|\le b\). Thus the long-tail aliases are contained in \(\{\pm1,\ldots,\pm5\}\) at degree 5 and \(\{\pm1,\ldots,\pm6\}\) at degree 6. The full active tail occupancy is **not** determined: it depends on the exact prime/window gates, and no tail-support occupancy certificate is present. Candidate pair-count ceilings from this envelope are 11,320 (degree 5) and 91,296 (degree 6), not observed counts.
+The full pattern-support CSV lists every sign/equality pattern's asymptotic candidate aliases. Across its 14,656 pattern rows, the exact union is \(\{-4,-3,-2,-1,1,2,3,4\}\) at degree 5 and \(\{-5,-4,-3,-2,-1,1,2,3,4,5\}\) at degree 6. Its candidate pattern/alias counts are 2,726 and 26,932 respectively. These are the exact possible labels in that support census, not active prime/window occupancy counts. The simpler universal envelope \(|m|\le b\) follows directly from \(|\lambda|<bL\) and the nearest residual cell. The long-tail piece uses those noncentral labels with \(|\delta|>H/T\), while the near-survivor CSV records the 21,588 surviving origin/alias pairs with \(0<|\delta|\le H/T\). The actual height-dependent occupancy remains conditional on the executable source windows and callback.
 
 If two windows both hold,
 
@@ -98,11 +98,11 @@ The exact filter and root estimates used are \(|f_\ell^\epsilon(\alpha)|\le1\) o
 S_1(T)=\sum_{p\le N(T)}{\log p\over a_\phi(T)L\sqrt p}.
 \]
 
-There are at most \((2R+1)^4=12001^4\) closed paths, because four displacements determine the fifth. The candidate alias ceilings give the explicit, valid but intentionally weak majorant
+There are at most \((2R+1)^4=12001^4\) closed paths, because four displacements determine the fifth. The full pattern-support candidate pair counts give the explicit, valid but intentionally weak majorant
 
 \[
-B_{L1}(T)=12001^4\left({11501\over12500}\,11320\,S_1(T)^5
- +{137641\over250000}\,91296\,S_1(T)^6\right).
+B_{L1}(T)=12001^4\left({11501\over12500}\,2726\,S_1(T)^5
+ +{137641\over250000}\,26932\,S_1(T)^6\right).
 \]
 
 PNT partial summation gives \(\sum_{p\le N}\log p/\sqrt p\sim2\sqrt N\); with the inherited `a_phi(T)→1`, \(N\sim e^{L-\sqrt L}\), hence
@@ -111,7 +111,7 @@ PNT partial summation gives \(\sum_{p\le N}\log p/\sqrt p\sim2\sqrt N\); with th
 S_1(T)\sim {2e^{(L-\sqrt L)/2}\over L}.
 \]
 
-So this absolute-value ceiling grows like its degree-six term, of order \(e^{3L-3\sqrt L}/L^6\), up to the displayed fixed constant. Its ratio to the relaxed budget tends to infinity. This says the triangle estimate is useless; it is **not** a lower bound on P and does not show P diverges.
+So this absolute-value ceiling grows like its degree-six term, of order \\(e^{3L-3\\sqrt L}/L^6\\), up to the displayed fixed constant. More exactly its leading coefficient is `307571548634896980602893648/15625`; the leading coefficient of its ratio to the relaxed budget is `11266621053082685133974364266145031564800/52897896569489`. The ratio of this upper ceiling to budget tends to infinity. This says the triangle estimate is useless; it is **not** a lower bound on P and does not show P diverges.
 
 At atom level, the square-weight prime mass is
 
@@ -182,4 +182,4 @@ python src/wp84_alias_resolved_positive_part.py
 python src/wp84_alias_resolved_positive_part_replay.py
 ```
 
-The replay reconstructs the CSV census independently, checks the rational budget and disjointness condition, and rejects 18 hostile mutations, including dropping `m`, using 453 as the mask count, changing R or either consumer coefficient, truncating primes, deleting the tail, taking positive parts in the wrong order, assuming covariance/equidistribution, or fabricating a selector. It does not claim a source selector or a theorem-side bound.
+The replay reconstructs both the 21,588-row survivor census and the 14,656-pattern support census independently, checks the rational budget and disjointness condition, and rejects 18 hostile mutations, including dropping `m`, using 453 as the mask count, changing R or either consumer coefficient, truncating primes, deleting the tail, taking positive parts in the wrong order, assuming covariance/equidistribution, or fabricating a selector. It does not claim a source selector or a theorem-side bound.

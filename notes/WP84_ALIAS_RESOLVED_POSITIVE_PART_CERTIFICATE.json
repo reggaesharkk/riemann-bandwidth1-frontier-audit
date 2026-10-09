@@ -12,6 +12,10 @@
       ]
     },
     "exact_formula": "K_{T,I}=disjoint_union_m K_{T,I,m}; P=sum_m P_m; P_m=sum_{k in K_{T,I,m}}[a_k(T,I)]_+ after full callback-key aggregation",
+    "full_pattern_support_pairs_beyond_near_survivor_csv": {
+      "5": 770,
+      "6": 7300
+    },
     "near_alias_exact_csv_sets": {
       "5": [
         -4,
@@ -64,8 +68,20 @@
         "5": 162
       }
     },
-    "tail_candidate_alias_sets": {
+    "near_survivors_are_subset_of_full_pattern_support": true,
+    "tail_candidate_status": "candidate-support enumeration only; no actual-prime/window occupancy count is asserted",
+    "tail_full_pattern_candidate_alias_sets": {
       "5": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "6": [
         -5,
         -4,
         -3,
@@ -76,29 +92,18 @@
         3,
         4,
         5
-      ],
-      "6": [
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
       ]
     },
-    "tail_candidate_origin_alias_pair_ceilings": {
-      "5": 11320,
-      "6": 91296,
-      "total": 102616
+    "tail_full_pattern_candidate_origin_alias_pairs": {
+      "5": 2726,
+      "6": 26932
     },
-    "tail_candidate_status": "rigorous outer support only: |lambda|<bL and nearest-cell condition imply |m|<=b; actual occupancy/slot-window support is not determined without executable source mask",
-    "tail_nearest_cell": "delta=lambda-mL in [-L/2,L/2), m!=0, |delta|>H/T"
+    "tail_full_pattern_support_csv_rows": {
+      "5": 1344,
+      "6": 11112
+    },
+    "tail_nearest_cell": "delta=lambda-mL in [-L/2,L/2), m!=0, |delta|>H/T",
+    "tail_status": "source support CSV enumerates asymptotic candidate m for the full sign/equality pattern census; it determines possible alias labels, not occupancy after actual prime-window and source-mask gates"
   },
   "branch": "codex/c5-c6-attack-20261006",
   "budget": {
@@ -158,7 +163,7 @@
     "signed_saving_earned": "none"
   },
   "quantitative_bounds": {
-    "L1_ceiling_leading_order": "(1042627807224549039845602944/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 38192389561199941407668333582428961894400/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
+    "L1_ceiling_leading_order": "(307571548634896980602893648/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 11266621053082685133974364266145031564800/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
     "PNT_status": "marginal prime mass does not bound the signed, window-intersected product correlations or their positive-part support function",
     "S1_PNT_asymptotic_under_inherited_a_phi_to_1": "S1(T)~2*exp((L-sqrt(L))/2)/L",
     "atom_level_square_mass": "S2=sum_p log(p)^2/(a_phi(T)^2*L^2*p)~1/2 under inherited a_phi(T)->1; not the coefficient L2 energy after carrier/key aggregation",
@@ -169,7 +174,7 @@
     "mean_value_status": "FAIL/REQUIRES LEMMA: section averages are over roots of near-integer aliases; no independent frequency spacing after folding, and mask keys depend on slots, lag, T and section",
     "near_bound_status": "unbounded by present proofs; exact sum retained",
     "root_bound": "|K_l(lambda)|<=M/d'<=1",
-    "separable_L1_majorant": "12001^4*((11501/12500)*11320*S1(T)^5+(137641/250000)*91296*S1(T)^6), S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
+    "separable_L1_majorant": "12001^4*((11501/12500)*2726*S1(T)^5+(137641/250000)*26932*S1(T)^6), S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
     "tail_bound_status": "unbounded by present proofs; exact tail retained",
     "universal_positive_part": "0<=P_near+P_tail<=sum_k |a_k|<=sum_over_all_retained_atoms |omega_b|*product_j(log(p_j)/(a_phi(T)*L*sqrt(p_j)))*1_{all source gates}; exact, but unevaluated"
   },
@@ -211,7 +216,8 @@
   "source_hashes": {
     "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
     "notes/WP84_NEAR_ALIAS_SURVIVOR_PATTERNS.csv": "331604b17f8efbfb6f8bff024b91ab732df521ca79c974f6289154b5a5835368",
-    "notes/WP84_SIGNED_AGGREGATE_MASK_UNIFORM_CERTIFICATE.json": "2dbe32c86b67ae2098e421140ac3307b04d2fb43847fdca8527c0e152163aa2b"
+    "notes/WP84_SIGNED_AGGREGATE_MASK_UNIFORM_CERTIFICATE.json": "2dbe32c86b67ae2098e421140ac3307b04d2fb43847fdca8527c0e152163aa2b",
+    "notes/WP84_SIGNED_NEAR_ALIAS_SUPPORT.csv": "42eeccac565c0347db5c26c104acff32442cd8117b9d68903cb966261bc35981"
   },
   "starting_head": "96960fb563aac5144045e5bf7be9cdc528bd9f7f",
   "strict_gt_79": "OPEN"

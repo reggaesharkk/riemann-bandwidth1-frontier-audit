@@ -14,6 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CSV = ROOT / "notes/WP84_NEAR_ALIAS_SURVIVOR_PATTERNS.csv"
+SUPPORT_CSV = ROOT / "notes/WP84_SIGNED_NEAR_ALIAS_SUPPORT.csv"
 MASK_CERT = ROOT / "notes/WP84_SIGNED_AGGREGATE_MASK_UNIFORM_CERTIFICATE.json"
 FUNCTIONALS = ROOT / "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json"
 OUT = ROOT / "notes/WP84_ALIAS_RESOLVED_POSITIVE_PART_CERTIFICATE.json"
@@ -32,6 +33,8 @@ def load_rows():
 
 def build():
     rows = load_rows()
+    with SUPPORT_CSV.open(newline="", encoding="utf-8") as f:
+        support_rows = list(csv.DictReader(f))
     budget_src = json.loads(MASK_CERT.read_text(encoding="utf-8"))
     func_src = json.loads(FUNCTIONALS.read_text(encoding="utf-8"))
     by_degree_alias = defaultdict(Counter)
@@ -56,6 +59,16 @@ def build():
     near_aliases = {str(b): sorted(by_degree_alias[b]) for b in (5, 6)}
     near_counts = {str(b): {str(m): by_degree_alias[b][m] for m in sorted(by_degree_alias[b])}
                    for b in (5, 6)}
+    tail_candidate_aliases = defaultdict(set)
+    tail_candidate_pairs = Counter()
+    tail_pattern_rows = Counter()
+    for row in support_rows:
+        b = int(row["degree"])
+        aliases = [int(m) for m in row["asymptotic_support_alias_m"].split(",") if m]
+        if aliases:
+            tail_pattern_rows[b] += 1
+            tail_candidate_pairs[b] += len(aliases)
+            tail_candidate_aliases[b].update(aliases)
 
     # One independent Boolean bit per exact (fid,slots,lag,T,section,m) tuple.
     # No function in this repo fixes the callback bit values, so no grouping
@@ -81,6 +94,7 @@ def build():
         "branch": "codex/c5-c6-attack-20261006",
         "source_hashes": {
             str(CSV.relative_to(ROOT)).replace("\\", "/"): sha(CSV),
+            str(SUPPORT_CSV.relative_to(ROOT)).replace("\\", "/"): sha(SUPPORT_CSV),
             str(MASK_CERT.relative_to(ROOT)).replace("\\", "/"): sha(MASK_CERT),
             str(FUNCTIONALS.relative_to(ROOT)).replace("\\", "/"): sha(FUNCTIONALS),
         },
@@ -103,9 +117,13 @@ def build():
             "near_alias_origin_alias_pair_counts": {str(b): sum(near_counts[str(b)].values()) for b in (5, 6)},
             "near_alias_pair_count_by_m": near_counts,
             "tail_nearest_cell": "delta=lambda-mL in [-L/2,L/2), m!=0, |delta|>H/T",
-            "tail_candidate_alias_sets": {"5": list(range(-5, 0)) + list(range(1, 6)), "6": list(range(-6, 0)) + list(range(1, 7))},
-            "tail_candidate_origin_alias_pair_ceilings": {"5": 11320, "6": 91296, "total": 102616},
-            "tail_candidate_status": "rigorous outer support only: |lambda|<bL and nearest-cell condition imply |m|<=b; actual occupancy/slot-window support is not determined without executable source mask",
+            "tail_full_pattern_support_csv_rows": {str(b): tail_pattern_rows[b] for b in (5, 6)},
+            "tail_full_pattern_candidate_alias_sets": {str(b): sorted(tail_candidate_aliases[b]) for b in (5, 6)},
+            "tail_full_pattern_candidate_origin_alias_pairs": {str(b): tail_candidate_pairs[b] for b in (5, 6)},
+            "tail_status": "source support CSV enumerates asymptotic candidate m for the full sign/equality pattern census; it determines possible alias labels, not occupancy after actual prime-window and source-mask gates",
+            "near_survivors_are_subset_of_full_pattern_support": True,
+            "full_pattern_support_pairs_beyond_near_survivor_csv": {str(b): tail_candidate_pairs[b] - len(alias_pairs[b]) for b in (5, 6)},
+            "tail_candidate_status": "candidate-support enumeration only; no actual-prime/window occupancy count is asserted",
             "disjointness": {
                 "premises": ["|lambda-mL|<=H/T", "|lambda-m'L|<=H/T"],
                 "contradiction_if": "2H/T < |m-m'| L",
@@ -137,9 +155,9 @@ def build():
             "filter_bound": "|f_l^epsilon(alpha)|<=1 for 0<=alpha<=1",
             "root_bound": "|K_l(lambda)|<=M/d'<=1",
             "closed_path_count_upper": str(path_upper),
-            "separable_L1_majorant": "12001^4*((11501/12500)*11320*S1(T)^5+(137641/250000)*91296*S1(T)^6), S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
+            "separable_L1_majorant": "12001^4*((11501/12500)*2726*S1(T)^5+(137641/250000)*26932*S1(T)^6), S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
             "S1_PNT_asymptotic_under_inherited_a_phi_to_1": "S1(T)~2*exp((L-sqrt(L))/2)/L",
-            "L1_ceiling_leading_order": "(1042627807224549039845602944/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 38192389561199941407668333582428961894400/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
+            "L1_ceiling_leading_order": "(307571548634896980602893648/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 11266621053082685133974364266145031564800/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
             "atom_level_square_mass": "S2=sum_p log(p)^2/(a_phi(T)^2*L^2*p)~1/2 under inherited a_phi(T)->1; not the coefficient L2 energy after carrier/key aggregation",
             "mean_value_status": "FAIL/REQUIRES LEMMA: section averages are over roots of near-integer aliases; no independent frequency spacing after folding, and mask keys depend on slots, lag, T and section",
             "PNT_status": "marginal prime mass does not bound the signed, window-intersected product correlations or their positive-part support function",

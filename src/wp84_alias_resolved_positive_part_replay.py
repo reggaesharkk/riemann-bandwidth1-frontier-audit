@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CERT = ROOT / "notes/WP84_ALIAS_RESOLVED_POSITIVE_PART_CERTIFICATE.json"
 CSV = ROOT / "notes/WP84_NEAR_ALIAS_SURVIVOR_PATTERNS.csv"
+SUPPORT_CSV = ROOT / "notes/WP84_SIGNED_NEAR_ALIAS_SUPPORT.csv"
 MASK = ROOT / "notes/WP84_SIGNED_AGGREGATE_MASK_UNIFORM_CERTIFICATE.json"
 FUNCTIONALS = ROOT / "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json"
 
@@ -29,6 +30,8 @@ def replay():
     certificate = json.loads(CERT.read_text(encoding="utf-8"))
     with CSV.open(newline="", encoding="utf-8") as stream:
         rows = list(csv.DictReader(stream))
+    with SUPPORT_CSV.open(newline="", encoding="utf-8") as stream:
+        support_rows = list(csv.DictReader(stream))
     origins = defaultdict(set)
     pairs = defaultdict(set)
     aliases = defaultdict(set)
@@ -48,6 +51,17 @@ def replay():
     expected_aliases = {5: set(range(-4, 0)) | set(range(1, 5)),
                         6: set(range(-5, 0)) | set(range(1, 6))}
     require(aliases == expected_aliases, "near-alias set changed")
+    tail_aliases = defaultdict(set)
+    tail_pair_counts = Counter()
+    for row in support_rows:
+        b = int(row["degree"])
+        for raw_m in row["asymptotic_support_alias_m"].split(","):
+            if raw_m:
+                tail_aliases[b].add(int(raw_m))
+                tail_pair_counts[b] += 1
+    require(len(support_rows) == 14656, "full support-pattern census changed")
+    require(tail_aliases[5] == expected_aliases[5] and tail_aliases[6] == expected_aliases[6], "tail possible-alias union changed")
+    require(tail_pair_counts[5] == 2726 and tail_pair_counts[6] == 26932, "tail candidate origin-alias counts changed")
 
     frozen = json.loads(MASK.read_text(encoding="utf-8"))
     budgets = frozen["exact_frozen_budget_replay"]
@@ -55,8 +69,8 @@ def replay():
     delta400 = Fraction(budgets["relaxed_H400_primitive_scale_if_multiplier_201"])
     require(delta == Fraction(52897896569489, 572357731837500000), "relaxed budget changed")
     require(delta / 201 == delta400, "H=400 primitive reference scale mismatch")
-    l1_leading = Fraction(137641, 250000) * 91296 * 12001**4 * 64
-    require(l1_leading == Fraction(1042627807224549039845602944, 15625), "L1 leading constant mismatch")
+    l1_leading = Fraction(137641, 250000) * 26932 * 12001**4 * 64
+    require(l1_leading == Fraction(307571548634896980602893648, 15625), "L1 leading constant mismatch")
     require(Fraction(certificate["source_census"]["formal_alias_resolved_components_if_full_D_b_x_C2_covariance_were_supplied"]) == 1148, "conditional alias component total mismatch")
     require(sum(certificate["source_census"]["formal_component_size_histogram_conditional"].values()) == 1148, "conditional histogram does not sum to 1,148")
     require(certificate["quantitative_bounds"]["closed_path_count_upper"] == str(12001**4), "closed path ceiling mismatch")
@@ -66,8 +80,12 @@ def replay():
     require(certificate["source_census"]["total_origin_alias_pairs"] == sum(map(len, pairs.values())), "certificate pair total mismatch")
     require(certificate["alias_decomposition"]["near_alias_exact_csv_sets"] == {
         "5": sorted(expected_aliases[5]), "6": sorted(expected_aliases[6])}, "certificate alias sets mismatch")
+    require(certificate["alias_decomposition"]["tail_full_pattern_candidate_alias_sets"] == {
+        "5": sorted(expected_aliases[5]), "6": sorted(expected_aliases[6])}, "certificate tail candidate alias sets mismatch")
+    require(certificate["alias_decomposition"]["tail_full_pattern_candidate_origin_alias_pairs"] == {"5": 2726, "6": 26932}, "certificate tail candidate counts mismatch")
     require(certificate["budget"]["Delta_relaxed_exact"] == str(delta), "certificate budget mismatch")
     require(certificate["source_hashes"][str(CSV.relative_to(ROOT)).replace("\\", "/")] == digest(CSV), "CSV hash mismatch")
+    require(certificate["source_hashes"][str(SUPPORT_CSV.relative_to(ROOT)).replace("\\", "/")] == digest(SUPPORT_CSV), "support-pattern CSV hash mismatch")
     require(certificate["source_hashes"][str(MASK.relative_to(ROOT)).replace("\\", "/")] == digest(MASK), "budget source hash mismatch")
 
     # Exact support disjointness derivation: if both windows hold, triangle
