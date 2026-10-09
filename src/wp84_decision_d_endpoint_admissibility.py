@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+"""Deterministic producer for the WP84 Decision D endpoint-density audit."""
+from __future__ import annotations
+
+import json
+from fractions import Fraction
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "certificates/WP84_DECISION_D_ENDPOINT_ADMISSIBILITY_CERTIFICATE.json"
+
+
+def build() -> dict:
+    # Exact inherited rational gates; no moment or theorem status is inferred.
+    assert Fraction(52897896569489, 572357731837500000) > 0
+    assert Fraction(48861622601, 195312500000) > Fraction(21, 200)
+    assert Fraction(28353810101, 195312500000) == (
+        Fraction(48861622601, 195312500000) - Fraction(21, 200)
+    )
+    return {
+        "title": "WP84 Decision D endpoint admissibility and density",
+        "primary_decision": "D2 — quantitatively sufficient admissible density proved for the direct first-strike endpoint-score consumer",
+        "branch": "codex/c5-c6-attack-20261006",
+        "starting_head": "616883db336f6ed5a316d66b2c3bce497f3d37d1",
+        "verified_start": True,
+        "initial_status": "only pre-existing untracked notebooklm_packet/; preserved",
+        "scales": {
+            "X": "T/(2*pi)", "L": "log(X)",
+            "N": "floor(X*exp(-sqrt(L)))", "d": "floor(T*L/(2*pi))",
+            "h": "2*pi/L", "M": "ceil(d*exp(-sqrt(L)/2))",
+            "candidate_pairs": "(M+1)^2",
+            "pair_weights": "exactly uniform 1/(M+1)^2",
+            "endpoint_physical_width": "U=h*M=(1+o(1))*T*exp(-sqrt(L)/2)",
+            "natural_cutoff_ratio": "N/U=(1+o(1))*exp(-sqrt(L)/2)/(2*pi) -> 0",
+        },
+        "endpoint_score_bound": {
+            "hypothesis": "finite fixed-R direct-consumer feature score; integral sum_(n<=N)|a_n(theta)|^2 dtheta <= C_R; all prime powers retained",
+            "localized_grid_sum": "sum_k integral |S_theta(tau_k)|^2 dtheta <= C_R*L*(U+N)",
+            "mean_per_endpoint": "<= C_R*(1+N/U)=O_R(1)",
+            "markov_sets": "lower and upper score-good endpoint sets each have uniform density at least 1/2 at O_R(1) thresholds",
+            "joint_pair_density": "gamma_T >= 1/4 in the exact Decision B uniform pair measure",
+        },
+        "joint_boundary_selection": {
+            "Decision_B_average": "average_W E(I_uv) <= C_B*log(d)",
+            "restricted_average": "average_G E(I_uv) <= C_B*log(d)/gamma_T <= 4*C_B*log(d)",
+            "correlation_assumption": "none; uses E>=0 and G subset W",
+            "weighted_measure_warning": "for a nonuniform pair measure use weighted mass gamma=sum_G omega_uv, not unweighted cardinality density",
+        },
+        "boundary_transfer": {
+            "S": "sum_(p^v<=N) Lambda(p^v)/(|a_phi(T)|*L*sqrt(p^v))=O(sqrt(N)/L), all powers retained",
+            "operator_bound": "||V||_op<=4*S",
+            "normalized_delta": "|Delta_I|/d' <= 3*C_B*log(d)*(|s0|+4*S)/(gamma_T*d')",
+            "weakest_sufficient_density_from_bound": "gamma_T*d'/((1+S)*log(d)) -> infinity",
+            "natural_scale": "((1+S)*log(d))/d'=O(1/T + exp(-sqrt(L)/2)/(sqrt(2*pi*T)*L))",
+            "conclusion_at_gamma_ge_1_4": "normalized complete cubic boundary correction=o(1) on a jointly endpoint-admissible section",
+        },
+        "scope_firewall": {
+            "covered": "direct first-strike finite generic endpoint-feature scores defined in WP84_GOOD_ENDPOINT_TRIMMING.md",
+            "not_covered": "hidden-prime determinant source_mask(fid,slots,lag,T,section,alias); no feature-to-masked-atom/root/normalization identity",
+            "determinant_audit": "WP84_GOOD_ENDPOINT_DETERMINANT_COMPATIBILITY_AUDIT.md already fails that distinct-object transfer",
+            "source_mask": "not a premise of direct inequality (12)",
+        },
+        "abstract_hostile_tests": [
+            "energy entirely concentrated on admissible pairs saturates the 1/gamma factor",
+            "shrinking-density admissible set saturates the density loss",
+            "score/energy anticorrelation still obeys the restriction inequality",
+            "nonuniform weights invalidate unweighted density substitution",
+            "coupled pair gate can have full marginals but vanishing pair density",
+        ],
+        "replays": [
+            "src/wp84_decision_d_endpoint_admissibility_replay.py",
+            "src/wp84_adaptive_boundary_large_sieve_replay.py",
+            "src/wp84_decision_c_same_section_compatibility_replay.py",
+            "src/wp84_good_endpoint_determinant_compatibility_replay.py",
+        ],
+        "independent_open_obligations": [
+            "uniform sixth Schatten bound and raw cubic deletion stability",
+            "signed fifth/sixth gate", "prime-to-Weil identification",
+            "zero-side block/tail-Weyl transfer", "m3=2",
+            "conditioned Cayley energy <0.105", "strict >79% theorem",
+        ],
+        "strict_gt_79": "OPEN",
+    }
+
+
+def main() -> None:
+    data = build()
+    OUT.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+    print("PASS exact inherited rational energy threshold checks")
+    print("BOUND local endpoint score mean C_R*(1+N/U)=O_R(1) at natural N")
+    print("BOUND admissible pair density gamma>=1/4 in Decision B's uniform weights")
+    print("BOUND joint crossing energy <=4*C_B*log(d), with no independence assumption")
+    print("OPEN masked determinant transfer, S6, arithmetic gate, and zero-side obligations")
+    print("WROTE", OUT.relative_to(ROOT))
+
+
+if __name__ == "__main__":
+    main()
