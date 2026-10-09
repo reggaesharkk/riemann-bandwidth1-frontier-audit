@@ -84,9 +84,8 @@ def build():
 
     # Any individual full-band root average has modulus at most one:
     # M<=d' and the root is a sum of M unit phases divided by d'.
-    # For each Fourier displacement coordinate, four entries determine the
-    # fifth under sum(l_j)=0; hence the exact closed-path count is <=(2R+1)^4.
-    path_upper = (2 * R + 1) ** 4
+    # For b displacement coordinates, b-1 entries determine the final one.
+    path_upper = {5: (2 * R + 1) ** 4, 6: (2 * R + 1) ** 5}
     cert = {
         "decision": "E",
         "decision_text": "ONE PRECISE ANALYTIC LEMMA REMAINS",
@@ -155,10 +154,10 @@ def build():
             "universal_positive_part": "0<=P_near+P_tail<=sum_k |a_k|<=sum_over_all_retained_atoms |omega_b|*product_j(log(p_j)/(a_phi(T)*L*sqrt(p_j)))*1_{all source gates}; exact, but unevaluated",
             "filter_bound": "|f_l^epsilon(alpha)|<=1 for 0<=alpha<=1",
             "root_bound": "|K_l(lambda)|<=M/d'<=1",
-            "closed_path_count_upper": str(path_upper),
-            "separable_L1_majorant": "12001^4*((11501/12500)*2726*S1(T)^5+(137641/250000)*26932*S1(T)^6), S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
+            "closed_path_count_upper_by_degree": {str(b): str(path_upper[b]) for b in (5, 6)},
+            "separable_L1_majorant": "(11501/12500)*2726*12001^4*S1(T)^5+(137641/250000)*26932*12001^5*S1(T)^6, S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
             "S1_PNT_asymptotic_under_inherited_a_phi_to_1": "S1(T)~2*exp((L-sqrt(L))/2)/L",
-            "L1_ceiling_leading_order": "(307571548634896980602893648/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 11266621053082685133974364266145031564800/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
+            "L1_ceiling_leading_order": "(3691166155167398664215326669648/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 135210719258045304292826345558006523809164800/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
             "atom_level_square_mass": "S2=sum_p log(p)^2/(a_phi(T)^2*L^2*p)~1/2 under inherited a_phi(T)->1; not the coefficient L2 energy after carrier/key aggregation",
             "mean_value_status": "FAIL/REQUIRES LEMMA: section averages are over roots of near-integer aliases; no independent frequency spacing after folding, and mask keys depend on slots, lag, T and section",
             "PNT_status": "marginal prime mass does not bound the signed, window-intersected product correlations or their positive-part support function",

@@ -106,11 +106,11 @@ The exact filter and root estimates used are \(|f_\ell^\epsilon(\alpha)|\le1\) o
 S_1(T)=\sum_{p\le N(T)}{\log p\over a_\phi(T)L\sqrt p}.
 \]
 
-There are at most \((2R+1)^4=12001^4\) closed paths, because four displacements determine the fifth. The full pattern-support candidate pair counts give the explicit, valid but intentionally weak majorant
+There are at most \(12001^{b-1}\) closed paths for b slots, since b-1 displacements determine the last. In particular the fifth-order ceiling is \(12001^4\), while the sixth-order ceiling is \(12001^5\). The full pattern-support candidate pair counts give the explicit, valid but intentionally weak majorant
 
 \[
-B_{L1}(T)=12001^4\left({11501\over12500}\,2726\,S_1(T)^5
- +{137641\over250000}\,26932\,S_1(T)^6\right).
+B_{L1}(T)=({11501\over12500})2726\,12001^4S_1(T)^5
++({137641\over250000})26932\,12001^5S_1(T)^6.
 \]
 
 PNT partial summation gives \(\sum_{p\le N}\log p/\sqrt p\sim2\sqrt N\); with the inherited `a_phi(T)→1`, \(N\sim e^{L-\sqrt L}\), hence
@@ -119,7 +119,7 @@ PNT partial summation gives \(\sum_{p\le N}\log p/\sqrt p\sim2\sqrt N\); with th
 S_1(T)\sim {2e^{(L-\sqrt L)/2}\over L}.
 \]
 
-So this absolute-value ceiling grows like its degree-six term, of order \\(e^{3L-3\\sqrt L}/L^6\\), up to the displayed fixed constant. More exactly its leading coefficient is `307571548634896980602893648/15625`; the leading coefficient of its ratio to the relaxed budget is `11266621053082685133974364266145031564800/52897896569489`. The ratio of this upper ceiling to budget tends to infinity. This says the triangle estimate is useless; it is **not** a lower bound on P and does not show P diverges.
+So this absolute-value ceiling grows like its degree-six term, of order \(e^{3L-3\sqrt L}/L^6\). Its exact leading coefficient is `3691166155167398664215326669648/15625`; the leading coefficient of its ratio to the relaxed budget is `135210719258045304292826345558006523809164800/52897896569489`. The upper-ceiling/budget ratio tends to infinity. This says the triangle estimate is useless; it is **not** a lower bound on P and does not show P diverges.
 
 At atom level, the square-weight prime mass is
 

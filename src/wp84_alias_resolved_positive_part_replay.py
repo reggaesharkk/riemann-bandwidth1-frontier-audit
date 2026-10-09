@@ -69,11 +69,11 @@ def replay():
     delta400 = Fraction(budgets["relaxed_H400_primitive_scale_if_multiplier_201"])
     require(delta == Fraction(52897896569489, 572357731837500000), "relaxed budget changed")
     require(delta / 201 == delta400, "H=400 primitive reference scale mismatch")
-    l1_leading = Fraction(137641, 250000) * 26932 * 12001**4 * 64
-    require(l1_leading == Fraction(307571548634896980602893648, 15625), "L1 leading constant mismatch")
+    l1_leading = Fraction(137641, 250000) * 26932 * 12001**5 * 64
+    require(l1_leading == Fraction(3691166155167398664215326669648, 15625), "L1 leading constant mismatch")
     require(Fraction(certificate["source_census"]["formal_alias_resolved_components_if_full_D_b_x_C2_covariance_were_supplied"]) == 1148, "conditional alias component total mismatch")
     require(sum(certificate["source_census"]["formal_component_size_histogram_conditional"].values()) == 1148, "conditional histogram does not sum to 1,148")
-    require(certificate["quantitative_bounds"]["closed_path_count_upper"] == str(12001**4), "closed path ceiling mismatch")
+    require(certificate["quantitative_bounds"]["closed_path_count_upper_by_degree"] == {"5": str(12001**4), "6": str(12001**5)}, "closed path ceilings mismatch")
 
     # Independently verify listed numeric/hardening claims against recomputation.
     require(certificate["source_census"]["total_raw_origins"] == sum(map(len, origins.values())), "certificate origin total mismatch")
