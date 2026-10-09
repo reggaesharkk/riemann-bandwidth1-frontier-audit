@@ -59,6 +59,14 @@ so the integer alias disappears from the section-root factor while the carrier r
 2\operatorname{Re}\sum_{m<m'} F_m\overline{F_{m'}}.
 \]
 
+For a common lag and root interval \(j_0,\ldots,j_0+M-1\), let the residuals be \(\delta_m,\delta_{m'}\) and put \(D=\delta_m-\delta_{m'}\). The normalized section-root-character cross average is exactly
+
+\[
+c_m\overline{c_{m'}}\,\frac{e^{2\pi i j_0D/L}(1-e^{2\pi i MD/L})}{d'(1-e^{2\pi i D/L})}.
+\]
+
+The integer \(m-m'\) contributes a factor one at integer root indices. This quotient is generally nonzero, so alias-window disjointness does not diagonalize the actual root average.
+
 The finite-average identity \(A^{-1}\int_0^A e^{i(\xi-\eta)t}\,dt=(e^{i(\xi-\eta)A}-1)/(i(\xi-\eta)A)\) is generally nonzero; hence disjoint labels alone do not imply norm additivity.
 
 ## Exact coefficient grouping and positive parts

@@ -97,6 +97,7 @@ def replay():
     # Cross-alias finite average is nonzero in general; choose xi-eta=1, A=pi.
     # Its exact value is (exp(i*pi)-1)/(i*pi)=2i/pi, nonzero.
     require(certificate["norm_additivity"]["result"] == "not implied by alias-window disjointness", "false orthogonality claim")
+    require("1-exp(2*pi*i*M*D/L)" in certificate["norm_additivity"]["same_path_finite_root_cross_average"], "exact cross-alias geometric factor missing")
 
     # Hostile mutations: each invalid claim/value must be rejected by the
     # corresponding explicit invariant below.  These are mutations of the

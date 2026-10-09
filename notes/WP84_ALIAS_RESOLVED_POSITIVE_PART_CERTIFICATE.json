@@ -154,7 +154,8 @@
     "cross_term": "2*Re(sum_{m<m'} F_m*conj(F_m'))",
     "finite_average_counterexample": "for u(t)=exp(i*xi*t), v(t)=exp(i*eta*t), average_[0,A] u*conj(v)= (exp(i*(xi-eta)*A)-1)/(i*(xi-eta)*A), generally nonzero",
     "reason": "integer m factors disappear on section-index roots, while carrier phases exp(i*T*m*L) remain; no orthogonal projection or averaging theorem is supplied",
-    "result": "not implied by alias-window disjointness"
+    "result": "not implied by alias-window disjointness",
+    "same_path_finite_root_cross_average": "for common lag/root interval j0..j0+M-1 and residuals delta_m,delta_m', the normalized root-character cross term is c_m*conj(c_m')*exp(2*pi*i*j0*D/L)*(1-exp(2*pi*i*M*D/L))/(d'*(1-exp(2*pi*i*D/L))), D=delta_m-delta_m'; the integer (m-m') phase is 1; generally nonzero"
   },
   "phase_pilot": {
     "actual_source_transfer": "NOT established: B, prime windows, section/root factor and admissibility vary with T; no single source-legal nonzero carrier has a certified outer-gate inclusion and nonzero limiting amplitude",

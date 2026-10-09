@@ -147,6 +147,7 @@ def build():
             "result": "not implied by alias-window disjointness",
             "actual_root_phase": "exp(2*pi*i*k*(m+delta/L))=exp(2*pi*i*k*delta/L) for integer k",
             "cross_term": "2*Re(sum_{m<m'} F_m*conj(F_m'))",
+            "same_path_finite_root_cross_average": "for common lag/root interval j0..j0+M-1 and residuals delta_m,delta_m', the normalized root-character cross term is c_m*conj(c_m')*exp(2*pi*i*j0*D/L)*(1-exp(2*pi*i*M*D/L))/(d'*(1-exp(2*pi*i*D/L))), D=delta_m-delta_m'; the integer (m-m') phase is 1; generally nonzero",
             "reason": "integer m factors disappear on section-index roots, while carrier phases exp(i*T*m*L) remain; no orthogonal projection or averaging theorem is supplied",
             "finite_average_counterexample": "for u(t)=exp(i*xi*t), v(t)=exp(i*eta*t), average_[0,A] u*conj(v)= (exp(i*(xi-eta)*A)-1)/(i*(xi-eta)*A), generally nonzero",
         },
