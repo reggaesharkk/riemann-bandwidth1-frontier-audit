@@ -1,0 +1,139 @@
+{
+  "block_identity": {
+    "definitions": "A=PHP on P-space; B=PHQ:Q->P; C=QHP=B*:P->Q; D=QHQ on Q-space",
+    "remaining_signed_cubic": "2*Tr_P(V_PP*B*B*)+Tr_P(B*V_QQ*B*)",
+    "scalar_background_exact": "3*s0*||PVQ||_HS^2",
+    "source_split": "B=PVQ; A=s0*P+V_PP; D=s0*Q+V_QQ",
+    "statement": "Tr_P(PH^3P)-Tr_P((PHP)^3)=2*Tr_P(A*B*C)+Tr_P(B*D*C)",
+    "trace_class_basis": "B is Hilbert-Schmidt; B*B and B V_QQ B* are trace class; traces are on the finite P-space"
+  },
+  "claim_boundary": "No m3=2, 0.105 conditioned-energy conclusion, prime-to-Weil transfer, or strict >79 theorem is claimed.",
+  "crossing_pair_count_samples": [
+    {
+      "d": 1,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..3"
+    },
+    {
+      "d": 2,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..6"
+    },
+    {
+      "d": 3,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..9"
+    },
+    {
+      "d": 4,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..12"
+    },
+    {
+      "d": 5,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..15"
+    },
+    {
+      "d": 6,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..18"
+    },
+    {
+      "d": 7,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..21"
+    },
+    {
+      "d": 8,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..24"
+    },
+    {
+      "d": 9,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..27"
+    },
+    {
+      "d": 10,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..30"
+    },
+    {
+      "d": 11,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..33"
+    },
+    {
+      "d": 12,
+      "pairs_at_abs_displacement_r": "2*min(r,d)",
+      "verified_displacements": "1..36"
+    }
+  ],
+  "decision": "B \u2014 scalar-background boundary sector is source-valid o(1); signed V-cubic boundary transfer remains open",
+  "independent_exact_replay": {
+    "alpha": "1/3",
+    "complement_dimension": 5,
+    "diagnostic_only": true,
+    "exact_lhs_minus_rhs": "0",
+    "finite_dimension": 8,
+    "hermiticity_residual": "0",
+    "index_set": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "s0": "3/5",
+    "scalar_boundary_contribution": "27*(1132*sqrt(3) + 5531)/(4000*pi**2)",
+    "scalar_cross_energy": "3*(1132*sqrt(3) + 5531)/(800*pi**2)",
+    "scalar_difference_identity_residual": "0",
+    "section": [
+      0,
+      1,
+      2
+    ],
+    "section_dimension": 3,
+    "z": "2+i (algebra regression only; not the natural prime pool)"
+  },
+  "remaining_terms": {
+    "aliases": "actual phases exp(i*T*sum epsilon_j log(n_j)) and section endpoint kernel remain; no exact or near-alias cancellation is certified here",
+    "best_inherited_absolute_bound": "|R|/d'=O(S^3*(H_d'+1)/d')=O(N^(3/2)/(T*L^3))=O(T^(1/2)*exp(-3*sqrt(L)/2)/L^3), not a useful vanishing majorant",
+    "decomposition": "R=2 Tr_P((diag(beta)_P+O_PP)*B*B*)+Tr_P(B*(diag(beta)_Q+O_QQ)*B*) where O=[diag(A),J]",
+    "first_unresolved_sum": "uniform source-weighted signed bound for R/d' at natural N, over the original admissible contiguous sections, with all prime powers and carrier phases",
+    "repeated_vs_distinct": "the finite n1,n2,n3 expansion permits exact grouping by repeated base/proper power/all-distinct; previously proved full-section moment removals do not transfer to these boundary weights",
+    "sign": "no positivity follows: diagonal beta is signed and the commutator blocks are Hermitian but indefinite"
+  },
+  "scalar_sector_bound": {
+    "crossing_count": "number of ordered (i in I,j notin I) with |j-i|=r is 2*min(r,d')",
+    "field_bound": "|A_i|<=S, S=sum_{p^v<=N}|c_{p^v}|",
+    "hilbert_schmidt": "||PVQ||_HS^2<=8*S^2/pi^2*(H_d'+1)",
+    "natural_cutoff": "d'~T*L, H_d'=O(L), N~(T/(2*pi))*exp(-sqrt(L)); normalized scalar sector=O(exp(-sqrt(L))/L^2)=o(1)",
+    "normalized_scalar": "|3*s0|*||PVQ||_HS^2/d'<=24*|s0|*S^2*(H_d'+1)/(pi^2*d')",
+    "prime_power_mass": "PNT/Chebyshev with a_phi bounded away from zero gives S=O(sqrt(N)/L), including all prime powers",
+    "scope": "only the exact scalar-background summand is shown o(1); this is not the complete boundary correction"
+  },
+  "source": {
+    "carrier": "z_n=c_n*exp(i*T*log(n))",
+    "coefficient": "c_n=-Lambda(n)/(a_phi(T)*L*sqrt(n))",
+    "fields": "A_n(k)=Im(z_n*exp(2*pi*i*k*alpha_n)); beta_n(k)=2*(1-alpha_n)*Re(z_n*exp(2*pi*i*k*alpha_n))",
+    "frequency": "alpha_n=log(n)/L",
+    "inherited_gates": "a_phi(T)->1, s0(T)->1, d'~T*L, full natural prime-power cutoff",
+    "operator": "H=s0(T)I+V; V=diag(beta)+[diag(A),J], J_ij=1/(pi*(j-i)) for i!=j, J_ii=0",
+    "prime_powers": "all n=p^v<=N",
+    "scale": "L=log X, X=T/(2*pi), N=floor(X*exp(-sqrt(L))), d=floor(T*L/(2*pi)); d'/d->1",
+    "section": "I=[k_-,k_-+d'-1], P=P_I, Q=I-P"
+  },
+  "source_expansion": {
+    "all_signs_and_aliases": "retained in z_n and conjugation implicit in real/imaginary fields; no frequency/alias class is discarded",
+    "entry": "v_ij=delta_ij*beta_i+(1-delta_ij)*(A_i-A_j)/(pi*(j-i)); A_i=sum_n Im(z_n exp(2*pi*i*i*alpha_n)); beta_i=sum_n 2*(1-alpha_n) Re(z_n exp(2*pi*i*i*alpha_n))",
+    "exact_finite_prime_power_triple_expansion": "R= sum_{n1,n2,n3<=N prime powers} [2 Tr_P(Vn1_PP Vn2_PQ Vn3_QP)+Tr_P(Vn1_PQ Vn2_QQ Vn3_QP)]",
+    "index_trace_interpretation": "for each fixed T,N, the index sums are the trace-class pairings of the displayed blocks; no rearrangement into unsigned nonconvergent sums is assumed",
+    "scalar_cross_energy": "||PVQ||_HS^2=pi^-2*sum_{i in I,j notin I}(A_i-A_j)^2/(j-i)^2"
+  },
+  "title": "Finite-section cubic block identity and scalar boundary sector"
+}
