@@ -1,0 +1,218 @@
+{
+  "alias_decomposition": {
+    "disjointness": {
+      "H_400_sufficient_for_T_ge_1000": "true: 800/1000 < log(1000/(2*pi)); both sides thereafter move in the favorable direction",
+      "contradiction_if": "2H/T < |m-m'| L",
+      "fixed_H_eventual": "true since T*log(T/(2*pi)) -> infinity",
+      "integer_alias_sufficient_condition": "2H/T < L",
+      "meaning": "support disjointness in lambda; not callback-bit equality and not norm orthogonality",
+      "premises": [
+        "|lambda-mL|<=H/T",
+        "|lambda-m'L|<=H/T"
+      ]
+    },
+    "exact_formula": "K_{T,I}=disjoint_union_m K_{T,I,m}; P=sum_m P_m; P_m=sum_{k in K_{T,I,m}}[a_k(T,I)]_+ after full callback-key aggregation",
+    "near_alias_exact_csv_sets": {
+      "5": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "6": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "near_alias_origin_alias_pair_counts": {
+      "5": 1956,
+      "6": 19632
+    },
+    "near_alias_pair_count_by_m": {
+      "5": {
+        "-1": 485,
+        "-2": 336,
+        "-3": 116,
+        "-4": 41,
+        "1": 485,
+        "2": 336,
+        "3": 116,
+        "4": 41
+      },
+      "6": {
+        "-1": 4302,
+        "-2": 3354,
+        "-3": 1524,
+        "-4": 474,
+        "-5": 162,
+        "1": 4302,
+        "2": 3354,
+        "3": 1524,
+        "4": 474,
+        "5": 162
+      }
+    },
+    "tail_candidate_alias_sets": {
+      "5": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "6": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "tail_candidate_origin_alias_pair_ceilings": {
+      "5": 11320,
+      "6": 91296,
+      "total": 102616
+    },
+    "tail_candidate_status": "rigorous outer support only: |lambda|<bL and nearest-cell condition imply |m|<=b; actual occupancy/slot-window support is not determined without executable source mask",
+    "tail_nearest_cell": "delta=lambda-mL in [-L/2,L/2), m!=0, |delta|>H/T"
+  },
+  "branch": "codex/c5-c6-attack-20261006",
+  "budget": {
+    "Delta_relaxed_decimal": "9.242103954753147e-05",
+    "Delta_relaxed_exact": "52897896569489/572357731837500000",
+    "H400_reference_primitive_scale_decimal": "4.598061669031416e-07",
+    "H400_reference_primitive_scale_exact": "52897896569489/115043904099337500000",
+    "H_dependence": {
+      "alias_separation_condition": "2H(T)/T<L(T)",
+      "available_budget(H)": "only frozen reference value at H=400 supplied",
+      "near_charge(H)": "not bounded",
+      "tail_charge(H)": "not bounded"
+    },
+    "H_optimization": "not justified: near(H), tail(H), and available_budget(H) are not bounded functions in the source artifacts",
+    "actual_lower_bound_over_Delta": "0",
+    "actual_upper_bound_over_Delta": null,
+    "ratio_of_reference_scales": "201",
+    "unpaid_status": "no positive-part estimate, near charge, tail charge or transfer payment certified; the reference allowance is not a result for P"
+  },
+  "canonicalization": {
+    "consumer_coefficients_per_raw_origin": {
+      "5": "-11501/12500",
+      "6": "137641/250000"
+    },
+    "finite_template_catalogue": "5: omega_5=-11501/12500; 6: omega_6=137641/250000; each raw real atom is Re(omega_b * phase * path/filter/root/prime weight) under its own exact callback key",
+    "functional_coefficient_sign_census": {
+      "5:negative": 72,
+      "6:positive": 381
+    },
+    "identically_zero_full_key_templates_proved": 0,
+    "only_legal_key": [
+      "fid",
+      "slots",
+      "lag",
+      "T",
+      "section",
+      "m"
+    ],
+    "pair_simplification": "[x]_+ + [-x]_+=|x| only when the exact same scalar x occurs at two distinct keys; no such key identity is certified; independent bits prohibit cancellation across keys",
+    "positive_part_order": "aggregate exact duplicate full keys first, then apply [x]_+",
+    "reason_no_more_zero_claims": "root/path/carrier sums and source masks are executable only as a lazy schema; no exact duplicate-key expansion or source_mask implementation is present"
+  },
+  "decision": "E",
+  "decision_text": "ONE PRECISE ANALYTIC LEMMA REMAINS",
+  "final_status": "E",
+  "norm_additivity": {
+    "actual_root_phase": "exp(2*pi*i*k*(m+delta/L))=exp(2*pi*i*k*delta/L) for integer k",
+    "cross_term": "2*Re(sum_{m<m'} F_m*conj(F_m'))",
+    "finite_average_counterexample": "for u(t)=exp(i*xi*t), v(t)=exp(i*eta*t), average_[0,A] u*conj(v)= (exp(i*(xi-eta)*A)-1)/(i*(xi-eta)*A), generally nonzero",
+    "reason": "integer m factors disappear on section-index roots, while carrier phases exp(i*T*m*L) remain; no orthogonal projection or averaging theorem is supplied",
+    "result": "not implied by alias-window disjointness"
+  },
+  "phase_pilot": {
+    "actual_source_transfer": "NOT established: B, prime windows, section/root factor and admissibility vary with T; no single source-legal nonzero carrier has a certified outer-gate inclusion and nonzero limiting amplitude",
+    "fixed_frequency_time_average": "for fixed B and fixed nonzero lambda, long interval average of [Re(B*e^(i*lambda*t))]_+ tends |B|/pi",
+    "identity": "(1/(2*pi))*integral_0^(2*pi) [Re(e^(i*theta)B)]_+ dtheta=|B|/pi for fixed B",
+    "signed_saving_earned": "none"
+  },
+  "quantitative_bounds": {
+    "L1_ceiling_leading_order": "(1042627807224549039845602944/15625)*exp(3L-3sqrt(L))/L^6*(1+o(1)); its ratio to Delta_relaxed has leading coefficient 38192389561199941407668333582428961894400/52897896569489 and diverges; this is an upper bound, not a lower bound for P",
+    "PNT_status": "marginal prime mass does not bound the signed, window-intersected product correlations or their positive-part support function",
+    "S1_PNT_asymptotic_under_inherited_a_phi_to_1": "S1(T)~2*exp((L-sqrt(L))/2)/L",
+    "atom_level_square_mass": "S2=sum_p log(p)^2/(a_phi(T)^2*L^2*p)~1/2 under inherited a_phi(T)->1; not the coefficient L2 energy after carrier/key aggregation",
+    "best_numeric_lower_bound": "0 (tautological); no positive asymptotic lower bound source-certified",
+    "best_numeric_upper_bound": null,
+    "closed_path_count_upper": "20742912864048001",
+    "filter_bound": "|f_l^epsilon(alpha)|<=1 for 0<=alpha<=1",
+    "mean_value_status": "FAIL/REQUIRES LEMMA: section averages are over roots of near-integer aliases; no independent frequency spacing after folding, and mask keys depend on slots, lag, T and section",
+    "near_bound_status": "unbounded by present proofs; exact sum retained",
+    "root_bound": "|K_l(lambda)|<=M/d'<=1",
+    "separable_L1_majorant": "12001^4*((11501/12500)*11320*S1(T)^5+(137641/250000)*91296*S1(T)^6), S1=sum_{p<=N}log(p)/(a_phi(T)*L*sqrt(p)); full pool only, all omitted gates enlarged to 1",
+    "tail_bound_status": "unbounded by present proofs; exact tail retained",
+    "universal_positive_part": "0<=P_near+P_tail<=sum_k |a_k|<=sum_over_all_retained_atoms |omega_b|*product_j(log(p_j)/(a_phi(T)*L*sqrt(p_j)))*1_{all source gates}; exact, but unevaluated"
+  },
+  "single_remaining_lemma": "For the exact source-defined callback tuple (fid,slots,lag,T,section,m), complete prime pool p<=N(T), all closed R=6000 paths and root sums, prove uniformly over every admissible section and executable Boolean mask that limsup_{T->infty} sum_k [a_k(T,I(T))]_+ <= 52897896569489/572357731837500000, with near and retained long-tail terms both included.",
+  "source_census": {
+    "R": 6000,
+    "callback_tuple": [
+      "fid",
+      "slots",
+      "lag",
+      "T",
+      "section",
+      "m"
+    ],
+    "complete_prime_pool": "ordinary primes p<=N(T)=floor(exp(L-sqrt(L))) subject to the actual source window indicators; no finite core",
+    "formal_alias_resolved_components_if_full_D_b_x_C2_covariance_were_supplied": 1148,
+    "formal_component_size_histogram_conditional": {
+      "10": 79,
+      "12": 290,
+      "2": 7,
+      "20": 58,
+      "24": 660,
+      "4": 10,
+      "6": 44
+    },
+    "historical_unmasked_functionals": 453,
+    "origin_alias_pair_counts": {
+      "5": 1956,
+      "6": 19632
+    },
+    "proved_nontrivial_callback_bit_equalities": 0,
+    "raw_origin_counts": {
+      "5": 1132,
+      "6": 7608
+    },
+    "total_origin_alias_pairs": 21588,
+    "total_raw_origins": 8740
+  },
+  "source_hashes": {
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
+    "notes/WP84_NEAR_ALIAS_SURVIVOR_PATTERNS.csv": "331604b17f8efbfb6f8bff024b91ab732df521ca79c974f6289154b5a5835368",
+    "notes/WP84_SIGNED_AGGREGATE_MASK_UNIFORM_CERTIFICATE.json": "2dbe32c86b67ae2098e421140ac3307b04d2fb43847fdca8527c0e152163aa2b"
+  },
+  "starting_head": "96960fb563aac5144045e5bf7be9cdc528bd9f7f",
+  "strict_gt_79": "OPEN"
+}
