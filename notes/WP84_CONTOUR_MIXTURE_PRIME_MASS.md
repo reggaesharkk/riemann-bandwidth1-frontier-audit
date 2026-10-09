@@ -255,12 +255,13 @@ exponentially in (L_y), because \(|S_y|=o(L_y)\).
 For this **single** Fourier label, the optimized common measure is a point
 mass at the solution \(\rho_q^*\) to the finite KKT system
 \[
-1=\mu B_q'(\rho_q^*)\quad(q\in S_y),\qquad
+1=\mu B_q'(\rho_q^*)\quad(q\in A),\qquad
+\rho_q^*=0,\quad 1\le\mu B_q'(0)\quad(q\notin A),\qquad
 \sum_{q\in S_y}B_q(\rho_q^*)=131/400.
 \tag{15}
 \]
-Strict convexity of each (B_q) makes the maximizing radii unique. Its
-weight is \(\exp(2\sum_q\rho_q^*)\). This is an exact implicit optimizer
+Strict convexity of the feasible cost and the active-set KKT conditions make
+the maximizing radii unique. Its weight is \(\exp(2\sum_q\rho_q^*)\). This is an exact implicit optimizer
 for that one-label truncation, not a shared optimizer for the full response
 and not evidence that the corresponding response coefficient is nonzero.
 

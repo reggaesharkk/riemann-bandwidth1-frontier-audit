@@ -39,6 +39,7 @@ def validate(c):
     assert "m!=0" in c["alias_falsification"]["periodic"] and "possible" in c["alias_falsification"]["periodic"]
     assert "does not bound the full alias family or prove a nonzero response coefficient" in c["alias_falsification"]["primorial_test"]["interpretation"]
     assert "1=mu*B_q'(rho_q)" in c["alias_falsification"]["primorial_test"]["optimized_single_label_mixture"]
+    assert "1<=mu*B_q'(0)" in c["alias_falsification"]["primorial_test"]["optimized_single_label_mixture"]
     assert "alpha>1/2" in c["radius_schedule_tests"]["power_decay"]
     assert "beta>1" in c["radius_schedule_tests"]["log_weighted_power_decay"]
     assert "strict >79 remains OPEN" in c["first_unproved_lemma"] or c["strict_gt79"] == "OPEN"

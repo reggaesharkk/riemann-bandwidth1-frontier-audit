@@ -97,7 +97,7 @@ def build():
                 "one_contour": "For rho_q=(log q)/4, feasible once 32|S_y|/L_y<=131/400; this holds eventually because |S_y|/L_y~1/log y.",
                 "random_sign": "W=product_{q in S_y}cosh((log q)/2), exactly.",
                 "lower_bound": "W>=2^(-|S_y|)*exp((1/2)*sum_{q in S_y}log q)=2^(-|S_y|)*(X_y/2)^(1/2).",
-                "optimized_single_label_mixture": "For this positive index, minimize the one-label dual term by maximizing 2*sum_q rho_q subject to sum B_q(rho_q)<=131/400. The unique optimizer has 1=mu*B_q'(rho_q) for every q in S_y and sum B_q(rho_q)=131/400; the point mass at that single feasible contour is an explicit common measure for this one-label truncation. This is not a common optimizer for other labels.",
+                "optimized_single_label_mixture": "For this positive index, minimize the one-label dual term by maximizing 2*sum_q rho_q subject to sum B_q(rho_q)<=131/400. The unique optimizer has active set A: 1=mu*B_q'(rho_q) for q in A; inactive q have rho_q=0 and 1<=mu*B_q'(0); sum B_q(rho_q)=131/400. The point mass at that single feasible contour is an explicit common measure for this one-label truncation. This is not a common optimizer for other labels.",
                 "optimized_weight": "W_opt=exp(2*sum_{q in S_y}rho_q^*) with rho_q^* defined by the preceding finite strictly-convex KKT system; no decimal optimizer is claimed.",
                 "interpretation": "The exact alias kernel factor is one; under this mixture its individual reciprocal weight decays exponentially in L_y. This is a single-label statement and does not bound the full alias family or prove a nonzero response coefficient."
             }
