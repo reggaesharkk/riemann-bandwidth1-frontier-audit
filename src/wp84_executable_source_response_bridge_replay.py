@@ -3,12 +3,45 @@
 from __future__ import annotations
 
 import copy
+import ast
 import hashlib
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CERT = ROOT / "notes/WP84_EXECUTABLE_SOURCE_RESPONSE_BRIDGE_CERTIFICATE.json"
+
+
+def source_facts() -> tuple[dict[str, bool], list[str]]:
+    localize = (ROOT / "notes/WP84_LOCALIZE_FIRST_HERMITE_PROJECTION.md").read_text(encoding="utf-8")
+    firewall = (ROOT / "notes/WP84_DEPENDENT_PHASE_PRIME_ADIC_FIREWALL.md").read_text(encoding="utf-8")
+    dual = (ROOT / "notes/WP84_SOURCE_CONTRACTED_DUAL_MASS_AUDIT.md").read_text(encoding="utf-8")
+    mixture = (ROOT / "src/wp84_contour_mixture_prime_mass.py").read_text(encoding="utf-8")
+    determinant = (ROOT / "src/wp84_fifth_full_pool_amplitude.py").read_text(encoding="utf-8")
+    qmask = (ROOT / "src/wp84_source_q_mask_extractor.py").read_text(encoding="utf-8")
+    formulas = {
+        "ordinary_prime_vector_formula_in_prose": all(x in localize for x in (
+            "V_p(K)", "c_p=-\\frac{\\log p}{a_\\phi L\\sqrt p}", "s_p=\\frac{\\log p}{L}")),
+        "trace_grid_kernel_formula_in_prose": "mathcal K_I(\\omega)" in firewall and "d'" in firewall,
+        "prime_adic_alias_equation_in_prose": "p^r\\prod_{q\\ne p}q^{\\nu_q}=X^m" in firewall,
+        "A1_A2_formulas_in_prose": "A_{1,T,R}" in localize and "A_{2,T,R}" in localize,
+        "dual_mass_definitions_only_as_json_strings": '"exact_grouped_kernel_definition"' in mixture,
+        "determinant_iterator_takes_external_source_mask": "source_mask" in determinant and "def source_mask(" not in determinant,
+        "q_mask_helper_is_separate_reconstruction": "q_mask" in qmask,
+        "prior_audit_records_missing_constructor": "no routine constructs the contracted tensors" in dual,
+    }
+    names: set[str] = set()
+    for path in (ROOT / "src").glob("*.py"):
+        try:
+            tree = ast.parse(path.read_text(encoding="utf-8"))
+        except (SyntaxError, UnicodeDecodeError):
+            continue
+        for node in ast.walk(tree):
+            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
+                names.add(node.name)
+    contractors = sorted(n for n in names if re.search(r"(contract|build|compute).*(k1|k2)|(k1|k2).*(contract|build|compute)", n, re.I))
+    return formulas, contractors
 
 
 def require(ok: bool, label: str) -> None:
@@ -26,6 +59,9 @@ def main() -> None:
     require(cert["scope"]["strict_gt79"] == "OPEN", "theorem status")
     require(cert["all_formula_piece_checks_pass"] is True, "recoverable formulas independently present")
     require(not cert["executable_k1_k2_contractor_names_found"], "no executable contractor claimed")
+    formulas, contractors = source_facts()
+    require(formulas == cert["formula_piece_checks"], "independently reconstructed formula inventory")
+    require(not contractors, "source tree has no executable K1/K2 contractor")
     for rel, expected in cert["input_source_sha256"].items():
         actual = hashlib.sha256((ROOT / rel).read_bytes()).hexdigest()
         require(actual == expected, f"source hash {rel}")

@@ -95,10 +95,9 @@ def inspect() -> dict:
     return {
         "schema": "wp84-executable-source-response-bridge-v1",
         "expected_starting_head": EXPECTED_START,
-        "observed_branch": git("branch", "--show-current"),
-        "observed_head_at_inspection": git("rev-parse", "HEAD"),
-        "working_tree_short_at_inspection": git("status", "--short"),
-        "starting_state_matches_task": git("rev-parse", "HEAD") == EXPECTED_START and git("branch", "--show-current") == EXPECTED_BRANCH,
+        "starting_branch": EXPECTED_BRANCH,
+        "starting_worktree_record": "HEAD=a0dc9a4d604e13f21df57468523d74b489c1b7d1; only pre-existing untracked notebooklm_packet/",
+        "reproduction_note": "This is a source inspector; rerunning after the audit commit leaves the recorded starting-state provenance unchanged.",
         "decision": "C_SOURCE_INSUFFICIENT_FOR_EXECUTABLE_BRIDGE",
         "recovery_extent": "PARTIAL_FORMULA_RECOVERY; no executable fixed-R source-to-response constructor recovered",
         "scope": {"R": 6000, "prime_cutoff": "N=floor(X*exp(-sqrt(log X)))", "quantifiers": "fixed R then T->infinity", "strict_gt79": "OPEN"},

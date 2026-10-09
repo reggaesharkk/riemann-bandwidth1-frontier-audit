@@ -47,9 +47,8 @@
     "response_fourier_arrays_or_direct_contraction": "MISSING_EXECUTABLE_SOURCE",
     "section_input_or_uniform_section_certificate": "MISSING_FOR_REPLAY; existential section need not be historically unique"
   },
-  "observed_branch": "codex/c5-c6-attack-20261006",
-  "observed_head_at_inspection": "a0dc9a4d604e13f21df57468523d74b489c1b7d1",
   "recovery_extent": "PARTIAL_FORMULA_RECOVERY; no executable fixed-R source-to-response constructor recovered",
+  "reproduction_note": "This is a source inspector; rerunning after the audit commit leaves the recorded starting-state provenance unchanged.",
   "schema": "wp84-executable-source-response-bridge-v1",
   "scope": {
     "R": 6000,
@@ -57,7 +56,7 @@
     "quantifiers": "fixed R then T->infinity",
     "strict_gt79": "OPEN"
   },
-  "starting_state_matches_task": true,
-  "still_open_analytic_statement": "For the actual fixed-R source and each admissible section, prove A1_T,R + A2_T,R -> 0 (or a justified sufficient pair D1_T=o(1), D2_T=o(L^4)), retaining all periodic and near aliases and the natural cutoff.",
-  "working_tree_short_at_inspection": "?? notebooklm_packet/\n?? notes/WP84_EXECUTABLE_SOURCE_RESPONSE_BRIDGE_AUDIT.md\n?? notes/WP84_EXECUTABLE_SOURCE_RESPONSE_BRIDGE_CERTIFICATE.json\n?? src/wp84_executable_source_response_bridge_inspector.py\n?? src/wp84_executable_source_response_bridge_replay.py"
+  "starting_branch": "codex/c5-c6-attack-20261006",
+  "starting_worktree_record": "HEAD=a0dc9a4d604e13f21df57468523d74b489c1b7d1; only pre-existing untracked notebooklm_packet/",
+  "still_open_analytic_statement": "For the actual fixed-R source and each admissible section, prove A1_T,R + A2_T,R -> 0 (or a justified sufficient pair D1_T=o(1), D2_T=o(L^4)), retaining all periodic and near aliases and the natural cutoff."
 }
