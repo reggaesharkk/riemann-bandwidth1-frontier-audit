@@ -1,0 +1,288 @@
+{
+  "title": "WP84 source-matched signed residual attack certificate",
+  "status": "audit reduction only; no new signed saving",
+  "start_head": "78b056687dfaacf5493334125eaa3120811c1969",
+  "branch": "codex/c5-c6-attack-20261006",
+  "push": false,
+  "parameters": {
+    "X": "T/(2*pi)",
+    "L": "log X",
+    "N": "floor(exp(L-sqrt(L)))",
+    "R": 6000,
+    "h": "2*pi/L",
+    "d": "floor(T*L/(2*pi))",
+    "section": "I0={0,...,d-1}",
+    "section_selection": "canonical full section; no historical selector or synthetic row tuple",
+    "prime_coefficient": "c_m=-Lambda(m)/(a_phi(T)*L*sqrt(m)); a_phi(T)->1",
+    "kernel": "K_ell(lambda)=exp(i*(T+h*i_min)*lambda)/d * sum_{r=0}^{rho-1} exp(i*h*r*lambda), with original path roots and carrier"
+  },
+  "exact_reduced_residual": {
+    "A": "11501/12500",
+    "B": "137641/250000",
+    "D5": "sum over original ordered closed R-paths, all signs, pairwise-distinct ordinary primes p_1..p_5<=N of (prod_j c_{p_j} f_(ell_j)^(eps_j)(log p_j/L) exp(2*pi*i*sum_j eps_j*q_(j-1)*log(p_j)/L))*K_ell(sum_j eps_j*log(p_j)); retain original windows, root range, and carrier",
+    "Q3": "sum over original degree-5 paths, each of the 10 slot pairs (a,b), all signs and distinct visible ordinary primes p_j<=N (j not a,b), k_ab times their original filtered product and K_ell(sum_visible eps_j log(p_j)); retain visible prime exclusions/windows, root range, and carrier",
+    "D6": "same all-distinct definition at degree 6",
+    "Q4": "same one-balanced-pair definition at degree 6, sum over all 15 slot pairs",
+    "pair_kernel": "phi_ab(s)=2*Re[f_(ell_a)^+(s) f_(ell_b)^-(s) exp(2*pi*i*(q_(a-1)-q_(b-1))*s)]; k_ab=integral_0^1 s*phi_ab(s) ds",
+    "F_T": "-A*(D5+Q3)+B*(D6+Q4)",
+    "split": {
+      "F_pair": "-A*Q3+B*Q4",
+      "F_distinct": "-A*D5+B*D6",
+      "identity": "F_T=F_pair+F_distinct exactly"
+    },
+    "bounded_gate_transfer": "J_full=B*Pair6_6000+Re(F_T)+o(1)",
+    "evidence_scope": "signed, unsplit full root sums; no near-alias masking before factorization; prime powers only removed by the previously proved bounded-gate aggregate equivalence",
+    "collision_corrections": "distinctness restoration/inclusion-exclusion and previously closed collision classes are retained in the aggregate reduction; no correction is omitted"
+  },
+  "retained_class_census": {
+    "degree5": {
+      "total": 192,
+      "all_distinct": 32,
+      "balanced_one_pair": 160
+    },
+    "degree6": {
+      "total": 544,
+      "all_distinct": 64,
+      "balanced_one_pair": 480
+    },
+    "interpretation": "orientation/sign/equality summands; not separately estimated or masked populations"
+  },
+  "k_ab_census": {
+    "degree5": {
+      "scope": "ell_a=ell_b=0 subfamily, all feasible integer d, R=6000",
+      "formula": "k_ab=2*integral_0^1 s*(1-s)^2*cos(2*pi*d*s) ds = 1/6 (d=0), -1/(2*pi^2*d^2) (d!=0)",
+      "placements": [
+        {
+          "intervening_increment_count": 0,
+          "slot_pair_placements": 4,
+          "max_abs_relative_prefix_difference": 0,
+          "d_values": [
+            0,
+            0
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 0,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 1,
+          "slot_pair_placements": 3,
+          "max_abs_relative_prefix_difference": 6000,
+          "d_values": [
+            -6000,
+            6000
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 12000,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 2,
+          "slot_pair_placements": 2,
+          "max_abs_relative_prefix_difference": 6000,
+          "d_values": [
+            -6000,
+            6000
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 12000,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 3,
+          "slot_pair_placements": 1,
+          "max_abs_relative_prefix_difference": 0,
+          "d_values": [
+            0,
+            0
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 0,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        }
+      ],
+      "weighted_parameter_tuple_sign_counts": {
+        "positive": 10,
+        "negative": 60000,
+        "zero": 0
+      },
+      "full_R6000_path_sign_census": "not computed or claimed; general k_ab depends on (ell_a,ell_b,q_(a-1)-q_(b-1))",
+      "exact_symmetries": [
+        "k(a,b,q)=k(b,a,-q)",
+        "k(-a,-b,-q)=k(a,b,q)"
+      ],
+      "general_exact_formula": "k(a,b,q)=2*Re integral_0^1 s*f_a^+(s)*f_b^-(s)*exp(2*pi*i*q*s) ds",
+      "finite_closed_form": "Expand f_a^+*f_b^-*exp(2*pi*i*q*s)=sum_n P_n(s)exp(2*pi*i*n*s), deg(P_n)<=2, with n in {q,q+a,q-b,q+a-b} after omitting duplicate/zero-frequency terms. Then k=2*Re sum_n sum_j P_(n,j)*J_(j+1)(n), where J_0(0)=1, J_j(0)=1/(j+1), J_0(n)=0 for n!=0, and J_j(n)=1/(2*pi*i*n)-j*J_(j-1)(n)/(2*pi*i*n) for n!=0. Coefficients of f are exact rational multiples of (pi*i)^-1; thus this is a finite exact rational/pi expression for every feasible (a,b,q), including zero-lag polynomial factors."
+    },
+    "degree6": {
+      "scope": "ell_a=ell_b=0 subfamily, all feasible integer d, R=6000",
+      "formula": "k_ab=2*integral_0^1 s*(1-s)^2*cos(2*pi*d*s) ds = 1/6 (d=0), -1/(2*pi^2*d^2) (d!=0)",
+      "placements": [
+        {
+          "intervening_increment_count": 0,
+          "slot_pair_placements": 5,
+          "max_abs_relative_prefix_difference": 0,
+          "d_values": [
+            0,
+            0
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 0,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 1,
+          "slot_pair_placements": 4,
+          "max_abs_relative_prefix_difference": 6000,
+          "d_values": [
+            -6000,
+            6000
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 12000,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 2,
+          "slot_pair_placements": 3,
+          "max_abs_relative_prefix_difference": 12000,
+          "d_values": [
+            -12000,
+            12000
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 24000,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 3,
+          "slot_pair_placements": 2,
+          "max_abs_relative_prefix_difference": 6000,
+          "d_values": [
+            -6000,
+            6000
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 12000,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        },
+        {
+          "intervening_increment_count": 4,
+          "slot_pair_placements": 1,
+          "max_abs_relative_prefix_difference": 0,
+          "d_values": [
+            0,
+            0
+          ],
+          "positive_d_zero_count": 1,
+          "negative_d_nonzero_count": 0,
+          "zero_coefficient_count": 0,
+          "coefficient": "1/6 if d=0; -1/(2*pi^2*d^2) if d!=0",
+          "multiplicity_scope": "(slot-pair placement,d) parameter tuples only; not full closed paths"
+        }
+      ],
+      "weighted_parameter_tuple_sign_counts": {
+        "positive": 15,
+        "negative": 144000,
+        "zero": 0
+      },
+      "full_R6000_path_sign_census": "not computed or claimed; general k_ab depends on (ell_a,ell_b,q_(a-1)-q_(b-1))",
+      "exact_symmetries": [
+        "k(a,b,q)=k(b,a,-q)",
+        "k(-a,-b,-q)=k(a,b,q)"
+      ],
+      "general_exact_formula": "k(a,b,q)=2*Re integral_0^1 s*f_a^+(s)*f_b^-(s)*exp(2*pi*i*q*s) ds",
+      "finite_closed_form": "Expand f_a^+*f_b^-*exp(2*pi*i*q*s)=sum_n P_n(s)exp(2*pi*i*n*s), deg(P_n)<=2, with n in {q,q+a,q-b,q+a-b} after omitting duplicate/zero-frequency terms. Then k=2*Re sum_n sum_j P_(n,j)*J_(j+1)(n), where J_0(0)=1, J_j(0)=1/(j+1), J_0(n)=0 for n!=0, and J_j(n)=1/(2*pi*i*n)-j*J_(j-1)(n)/(2*pi*i*n) for n!=0. Coefficients of f are exact rational multiples of (pi*i)^-1; thus this is a finite exact rational/pi expression for every feasible (a,b,q), including zero-lag polynomial factors."
+    }
+  },
+  "operator_identities": {
+    "complete_F_T_finite_R_trace_identity": "not established; no exact source derivation was found that expresses all D5,Q3,D6,Q4 as a finite combination of tau(DY^3), tau(V(Y)Y^2), tau(DY^4), tau(V(Y)Y^3), or analogous operators",
+    "existing_conditional_cubic_identity": "under the inherited bounded-gate/source reduction, Q3=5*tau(D*Y^3)+5*tau(V(Y)*Y^2)+o(1); this does not represent Q4 or the whole F_T and gives no sign",
+    "Y_law": "no Gaussian law for Y; auxiliary Gaussian W encodes only certified prime-square covariance",
+    "cumulant": "partition-lattice inclusion/exclusion for prime equality is exact; no source-matched M\u00f6bius cumulant identity with a signed positivity conclusion for F_T was obtained"
+  },
+  "signed_budget": {
+    "Jstar": "64788151489666079/572357731837500000",
+    "B": "137641/250000",
+    "Pair6_6000_lower_bound": "31498340500050746323/150466924118016000000",
+    "required_negative_saving_g9": "43770221409581023769108432686241/21264421581420459982848000000000000",
+    "proved_negative_saving": "0",
+    "saving_over_g9": "0",
+    "remaining_deficit_at_least": "43770221409581023769108432686241/21264421581420459982848000000000000",
+    "eta": "additional strict positive slack required",
+    "strict_gt79": "OPEN",
+    "o1_is_sufficient": false
+  },
+  "falsifiers": {
+    "exact_filter_pair_signs": "for ell_a=ell_b=0, k_ab=1/6 at q=0 and -1/(2*pi^2*q^2) for every nonzero integer q; both signs occur on R=6000 closed paths",
+    "matrix_scalar_shortcut": "B*x^6-A*x^5 is negative at x=1 and positive at x=-1; falsifies a universal scalar sign claim only, not a source-compatible arithmetic inequality",
+    "alias_warning": "the root kernel retains exp(i*T*m*L); no periodicity or independent alias cancellation is asserted",
+    "counterexample_scope": "algebraic sign shortcuts falsified; no source-compatible arithmetic counterexample to the target is claimed",
+    "453_use": "not used as mask components, arithmetic compression, or an estimate",
+    "cubic_covariance_sign": "D>=I/6 alone does not determine the sign of the path-weighted cubic correlation"
+  },
+  "first_remaining_theorem": {
+    "statement": "For the exact source sums D5,Q3,D6,Q4 defined above, with the natural full prime cutoff, R=6000 original filters and closed paths, original full-section root kernel/carrier, and all retained orientations/windows, prove limsup_{T->infinity} Re[-(11501/12500)(D5+Q3)+(137641/250000)(D6+Q4)] <= 64788151489666079/572357731837500000-(137641/250000)*Pair6_6000-eta for some eta>0.",
+    "status": "unproved; existing absolute mean-value bounds establish no positive-magnitude negative saving",
+    "current_best": "the closed o(1) collision removals and central one-prime-side cells; zero signed constant saving"
+  },
+  "source_sha256": {
+    "notes/WP84_STRICT79_SOURCE_MATCHED_ARITHMETIC_REDUCTION.md": {
+      "sha256": "fbd33981c349abb8ad8b3c697fd707401b59a5adf6315db9fababfe30c9182da"
+    },
+    "notes/WP84_STRICT79_HOSTILE_AUDIT_AND_BALANCED_PAIR_REDUCTION.md": {
+      "sha256": "58f24f93ed0c15a9a77b15475b3cecddfec233792ea9f9827b84a768ee32c95c"
+    },
+    "notes/WP84_JOINT_THIRD_FIFTH_SIXTH_ARITHMETIC_OBSTRUCTION.md": {
+      "sha256": "a228cd95028958c8492ff81c91dbbec1a6898c2d466a9f2be3e533eb99d04249"
+    },
+    "notes/WP84_THIRD_AWARE_SAME_SECTION_THEOREM_OR_OBSTRUCTION.md": {
+      "sha256": "c6e3fa9525f7c7f57c581100dea631c9e6548a472a699b8291087e7fa8d85a41"
+    },
+    "notes/WP84_STRICT79_SIGNED_ARITHMETIC_THEOREM_OR_OBSTRUCTION.md": {
+      "sha256": "66c4562cc6a70ca1e5ec1de113abbefd0b4cfff80ca9bf1f214eb1c47fd2a015"
+    },
+    "notes/WP84_STRICT79_SIGNED_LEDGER_CERTIFICATE.json": {
+      "sha256": "9ecb92bd60a39afb2dd95103fb8ec3682721aed71558c813672b8552b2f03d46"
+    }
+  },
+  "hostile_mutations_required": [
+    "change_A",
+    "change_B",
+    "change_R",
+    "omit_D_all_distinct",
+    "omit_Q_balanced_pair",
+    "change_Pair6",
+    "drop_root_phases",
+    "sharp_overlap_kernel",
+    "split_aliases_early",
+    "finite_prime_core",
+    "Gaussian_law_for_Y",
+    "promote_W_covariance_to_Y_law",
+    "claim_D_ge_I_over_6_cubic_sign",
+    "omit_collision_corrections",
+    "fake_section_selector",
+    "453_as_arithmetic_bound",
+    "claim_o1_suffices",
+    "alter_g9",
+    "promote_toy_matrix_to_source_arithmetic",
+    "claim_strict_gt79_without_full_replay"
+  ],
+  "decision": "E"
+}
