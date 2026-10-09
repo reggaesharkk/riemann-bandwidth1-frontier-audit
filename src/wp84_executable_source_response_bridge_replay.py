@@ -49,8 +49,7 @@ def require(ok: bool, label: str) -> None:
         raise AssertionError(label)
 
 
-def main() -> None:
-    cert = json.loads(CERT.read_text(encoding="utf-8"))
+def validate(cert: dict) -> None:
     require(cert["schema"] == "wp84-executable-source-response-bridge-v1", "schema")
     require(cert["decision"] == "C_SOURCE_INSUFFICIENT_FOR_EXECUTABLE_BRIDGE", "decision")
     require(cert["recovery_extent"].startswith("PARTIAL_FORMULA_RECOVERY"), "partial recovery boundary")
@@ -70,21 +69,41 @@ def main() -> None:
         require(needle in missing, f"minimum spec contains {needle}")
     require("DIFFERENT_OBJECT" in cert["object_status"]["determinant_source_mask"], "determinant callback kept separate")
     require("NOT TRANSFERRED" in cert["object_status"]["q_mask_extractor"], "q-mask helper kept separate")
+    require(cert["object_status"] == {
+        "exact_prime_power_coordinate_tensor": "MISSING_EXECUTABLE_SOURCE",
+        "fixed_R_masks_and_row_gates": "MISSING_EXECUTABLE_SOURCE",
+        "section_input_or_uniform_section_certificate": "MISSING_FOR_REPLAY; existential section need not be historically unique",
+        "response_fourier_arrays_or_direct_contraction": "MISSING_EXECUTABLE_SOURCE",
+        "K1_K2_D1_D2": "SYMBOLIC_ONLY_NOT_INSTANTIATED",
+        "ordinary_prime_formula_and_alias_skeleton": "PARTIALLY_RECOVERED_IN_PROSE",
+        "determinant_source_mask": "EXTERNAL_CALLBACK_FOR_DIFFERENT_OBJECT; NOT TRANSFERRED",
+        "q_mask_extractor": "SEPARATE_RECONSTRUCTED_DETERMINANT_HELPER; NOT TRANSFERRED",
+    }, "exact object classifications")
 
-    # Hostile certificate mutations: each must be rejected by the same
-    # semantic invariants an independent reviewer would apply.
+def main() -> None:
+    cert = json.loads(CERT.read_text(encoding="utf-8"))
+    validate(cert)
+
+    # Run every mutation through the full semantic and source-integrity
+    # validator and require an actual rejection.
     mutations = []
-    m = copy.deepcopy(cert); m["decision"] = "A_BRIDGE_RECOVERED"; mutations.append((m["decision"] != cert["decision"], "promote recovered decision"))
-    m = copy.deepcopy(cert); m["scope"]["R"] = 1; mutations.append((m["scope"]["R"] != 6000, "shorten R"))
-    m = copy.deepcopy(cert); m["scope"]["prime_cutoff"] = "finite diagnostic core"; mutations.append((m["scope"]["prime_cutoff"] != cert["scope"]["prime_cutoff"], "replace cutoff"))
-    m = copy.deepcopy(cert); m["object_status"]["determinant_source_mask"] = "fixed-R Lindeberg callback"; mutations.append((m["object_status"]["determinant_source_mask"] != cert["object_status"]["determinant_source_mask"], "transfer determinant mask"))
-    m = copy.deepcopy(cert); m["object_status"]["section_input_or_uniform_section_certificate"] = "unique historical selector recovered"; mutations.append((m["object_status"]["section_input_or_uniform_section_certificate"] != cert["object_status"]["section_input_or_uniform_section_certificate"], "invent historical selector"))
-    m = copy.deepcopy(cert); m["executable_k1_k2_contractor_names_found"] = ["contract_k1" ]; mutations.append((bool(m["executable_k1_k2_contractor_names_found"]), "fabricate contractor"))
-    m = copy.deepcopy(cert); m["scope"]["strict_gt79"] = "PROVED"; mutations.append((m["scope"]["strict_gt79"] != "OPEN", "promote theorem status"))
-    m = copy.deepcopy(cert); m["minimum_missing_specification"] = []; mutations.append((not m["minimum_missing_specification"], "erase missing inputs"))
-    m = copy.deepcopy(cert); m["input_source_sha256"][next(iter(m["input_source_sha256"]))] = "0" * 64; mutations.append((m["input_source_sha256"][next(iter(m["input_source_sha256"]))] != cert["input_source_sha256"][next(iter(cert["input_source_sha256"]))], "alter source hash"))
-    require(all(rejected for rejected, _ in mutations), "hostile mutation cases")
-    print(f"PASS: source-response evidence replay; {len(cert['input_source_sha256'])} input hashes, {len(mutations)} hostile mutations.")
+    m = copy.deepcopy(cert); m["decision"] = "A_BRIDGE_RECOVERED"; mutations.append((m, "promote recovered decision"))
+    m = copy.deepcopy(cert); m["scope"]["R"] = 1; mutations.append((m, "shorten R"))
+    m = copy.deepcopy(cert); m["scope"]["prime_cutoff"] = "finite diagnostic core"; mutations.append((m, "replace cutoff"))
+    m = copy.deepcopy(cert); m["object_status"]["determinant_source_mask"] = "fixed-R Lindeberg callback"; mutations.append((m, "transfer determinant mask"))
+    m = copy.deepcopy(cert); m["object_status"]["section_input_or_uniform_section_certificate"] = "unique historical selector recovered"; mutations.append((m, "invent historical selector"))
+    m = copy.deepcopy(cert); m["executable_k1_k2_contractor_names_found"] = ["contract_k1"]; mutations.append((m, "fabricate contractor"))
+    m = copy.deepcopy(cert); m["scope"]["strict_gt79"] = "PROVED"; mutations.append((m, "promote theorem status"))
+    m = copy.deepcopy(cert); m["minimum_missing_specification"] = []; mutations.append((m, "erase missing inputs"))
+    m = copy.deepcopy(cert); m["input_source_sha256"][next(iter(m["input_source_sha256"]))] = "0" * 64; mutations.append((m, "alter source hash"))
+    rejected = []
+    for mutated, label in mutations:
+        try:
+            validate(mutated)
+        except (AssertionError, KeyError, TypeError):
+            rejected.append(label)
+    require(len(rejected) == len(mutations), "every hostile mutation must fail semantic validation")
+    print(f"PASS: source-response evidence replay; {len(cert['input_source_sha256'])} input hashes, {len(rejected)} hostile mutations rejected by validator.")
     print("PARTIAL FORMULA RECOVERY only; executable bridge and strict >79% remain open.")
 
 
