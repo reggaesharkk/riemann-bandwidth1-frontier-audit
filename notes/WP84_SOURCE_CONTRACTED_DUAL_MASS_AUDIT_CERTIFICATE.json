@@ -1,0 +1,123 @@
+{
+  "branch": "codex/c5-c6-attack-20261006",
+  "countermodel_boundary": {
+    "abstract_L2_atom": "The earlier 2/3/5 near-alias atom is a countermodel to a norm-only response lemma, not an actual coefficient and not a counterexample to D1/D2.",
+    "source_legal_counterexample": "NONE ESTABLISHED",
+    "uniform_from_documented_constraints": "UNKNOWN: pointwise grouped-power envelopes and response Parseval/strip bounds do not instantiate the contracted kernels; the admissible row-mask/section class is not specified sufficiently to quantify a supremum or test an actual cancellation."
+  },
+  "decision": "E",
+  "falsification_matrix": {
+    "exact_m0": "CLOSED: p-adic valuation excludes lambda_nu+r log(p)=0 for r!=0.",
+    "generic_reciprocal_weight_test": {
+      "optimized_arbitrary_measure": "UNKNOWN; this calculation is only for the stated explicit sign mixture and trivial |K|<=1 majorant.",
+      "proof": "Take all s=pi(N)-1 response primes, rho_q=eta log(q), eta=min(1/4,131L/(51200s)). The certified cost is feasible. Since s~N/log N, eta*log N->0. For large T rho_q<=1, and the sign-mixture weight obeys sum_{nu in Z^S}1/W(nu)=product_q sum_n sech(2rho_q n)>= (1+2/cosh(2))^s, which diverges. Thus |K|<=1 alone gives no uniform summable majorant. This does not show the actual K-weighted dual mass diverges or that another measure fails.",
+      "status": "CRUDE_MAJORANT_FAILS_UNIFORMLY_FOR_THIS_SCHEDULE"
+    },
+    "infinite_limit_order": "Parseval mixtures pass to all Fourier indices by monotone convergence. The source pairing limit follows only if the dual mass is finite for the truncations; no uniform-in-T dual bound permits exchange with T->infinity.",
+    "intermediate_far": "Pointwise geometric decay is known; source-weighted summation is UNKNOWN.",
+    "near_alias": "UNKNOWN aggregate: a single sampled kernel can be order one in an O(1/T) window; no count or actual coefficient list is present.",
+    "nonzero_periodic_alias": "POSSIBLE: the exact m=1 primorial frequency label is retained; its response coefficient and source-contracted contribution are UNKNOWN.",
+    "row_dependent_masks": "UNKNOWN: no fixed-R row-gate value table/implementation is supplied, so a cancellation test cannot be run.",
+    "support_multiplicity": "Known obstacle to the crude lower bound on W: 2^(-support) remains. Whether the actual alias family's multiplicity overcomes optimized mixture decay is UNKNOWN."
+  },
+  "first_missing_exact_input": [
+    "an executable fixed-R current-power tensor constructor for every p^a<=N, including the exact coordinate normalization and one-time carrier convention",
+    "the actual row-dependent mask/source-gate and root/path summation maps for each allowed section, with selected row identities/order and d'",
+    "the concrete selected-section endpoint/root-count object used in K_I",
+    "a reproducible construction of the p-excluded response Fourier coefficients or an executable exact contraction that avoids materializing them"
+  ],
+  "first_unproved_analytic_lemma_after_source_recovery": "For those actual source tensors and each fixed R, prove D1_T=o(1) and D2_T=o(L^4) uniformly over the allowed sections, retaining nonzero periodic, near, intermediate and far frequencies.",
+  "frozen": {
+    "K": 32,
+    "cutoff": "N=floor(X*exp(-sqrt(log X)))",
+    "delta": "1/100000",
+    "quantifiers": "fixed R, then T->infinity",
+    "strict_gt79": "OPEN"
+  },
+  "mathematical_results_rechecked": {
+    "conditional_dual_estimates": {
+      "A1": "If the instantiated source-contracted D1_T=o(1) holds, then |A1|<=M1_R*sqrt(8+o(1))*sqrt(D1_T)=o(1); M1_R=43212226464/16375.",
+      "A2": "If the instantiated D2_T=o(L^4) holds after deleting only Sigma_p's opposite/equal-power diagonal, then |A2|<=M2_R/2*sqrt(C4)*L^-2*sqrt(D2_T)=o(1), where M2_R=166449403229184/429025 and C4=256*sum_p log^4(p)/(sqrt(p)-1)^4<infinity.",
+      "M1_R": "43212226464/16375",
+      "M2_R": "166449403229184/429025",
+      "extra_hypotheses": "These are sufficient conditions, not proved estimates; they require the actual K arrays, common source section, and the stated limits."
+    },
+    "finite_dual_optimization": "For finite F, D_mu is convex and an optimizer can be represented on at most |F|+1 contours by Caratheodory. This does not supply a uniform infinite-F limit.",
+    "mixture": "Integrating each finite Parseval sum against a probability measure preserves M_j,R^2; monotone convergence extends the nonnegative sum. Independent contour signs give product cosh and cosh(x)>=exp(|x|)/2, hence the 2^(-support) pointwise penalty.",
+    "prime_masses": "g_p=4 log(p)/(L*(sqrt(p)-1)); max g_p=O(L^-1), sum g_p^2=8+o(1), sum g_p^3=O(L^-3), sum g_p^4=O(L^-4), using the documented grouped-block bound and PNT for the square mass."
+  },
+  "prior_replays": {
+    "analytic_response": "PASS: exact rational replay; 22 mutated certificates rejected; 10 source hashes verified; aggregate response mass OPEN.",
+    "contour_mixture": "PASS: exact contour identities and mass checks; 12 hostile mutations rejected; 9 source hashes verified; dual targets explicitly OPEN.",
+    "prime_adic_firewall": "PASS: independent rational replay, source hashes, 21 hostile-inference evidence checks; actual trace-grid transfer OPEN.",
+    "scope": "These replays validate their stated finite identities, hashes and evidence fields; none proves D1=o(1) or D2=o(L^4)."
+  },
+  "schema": "wp84-source-contracted-dual-mass-audit-v1",
+  "source_object_inventory": {
+    "Gamma_source_tensors": {
+      "evidence": "The prior producer stores K1/K2 definitions as strings in JSON; it does not define an executable Gamma constructor. The dependent-phase certificate describes gamma_{p,a} and its factors in prose.",
+      "exact_missing": [
+        "coordinate-level realification for every retained p^a",
+        "mask/source-gate value at each selected row",
+        "root/path summation order and divisor",
+        "one-time carrier placement verified against the row gates"
+      ],
+      "status": "SYMBOLIC_PLACEHOLDER"
+    },
+    "K1_K2": {
+      "covariance_diagonal": "The existing justified deletion is only opposite-sign equal powers a=b; other pairs remain symbolically.",
+      "evidence": "src/wp84_contour_mixture_prime_mass.py lines 76-87 writes the K1/K2 formulas as JSON string values. Its executable work is certificate construction, not contraction of source tensors or dual-mass evaluation.",
+      "status": "FORMAL_DEFINITIONS_ONLY"
+    },
+    "ordinary_prime_vector": {
+      "boundary": "A source formula is present; no executable vector evaluator tied to the full original masks/section is supplied by this audit's inputs.",
+      "definition": "V_p(K)=c_p exp(i*T*log p) exp(2*pi*i*K*log(p)/L) times the lag vector (exp(2*pi*i*r*log(p)/L), i*log(p)/L*exp(...)) for |r|<=R.",
+      "location": "notes/WP84_LOCALIZE_FIRST_HERMITE_PROJECTION.md:144-153",
+      "status": "PROSE_FORMULA_ONLY"
+    },
+    "proper_power_vectors": {
+      "boundary": "The full coordinate tensors/gates for every a and lag are not enumerated as executable arrays in the governing notes or scripts.",
+      "definition": "All p^a<=N share base phase z_p^a; ||B_(p^a)||<=4 log(p)/(L*p^(a/2)).",
+      "status": "GROUPED_SYMBOLIC_WITH_NORM_ENVELOPE"
+    },
+    "response_coefficients": {
+      "boundary": "Analytic coefficient upper bounds do not identify which alias coefficients are present or nonzero.",
+      "evidence": "The polystrip artifacts provide M1_R/M2_R and Parseval/pointwise bounds, but do not generate the actual c1_(p,nu) or c2_(p,nu) arrays for the full prime pool and section.",
+      "status": "BOUNDED_BUT_NOT_INSTANTIATED"
+    },
+    "section_kernel": {
+      "boundary": "The finite geometric sum is evaluable when I, d', T and L are supplied. No executable selected-section endpoint/root selector is part of the current dual-mass artifacts.",
+      "definition": "K_I(omega)=d'^-1 sum_{k in I} exp(i(T+2pi k/L)omega)=exp(i(T+2pi k_-/L)omega) D_{d'}(omega/L)",
+      "status": "FORMULA_EXECUTABLE_GIVEN_I"
+    },
+    "selected_section": {
+      "dprime": "d' appears symbolically; no selected-section input object is serialized.",
+      "evidence": "The K_I formula is recorded for a supplied contiguous I, but the dual-mass scripts contain no executable selected I, endpoint gate, or root-count map.",
+      "status": "NOT_INSTANTIATED_FOR_DUAL_MASS"
+    },
+    "source_mask_callback": {
+      "evidence": "src/wp84_fifth_full_pool_amplitude.py requires source_mask(...) in iter_source_atoms; no def source_mask implementation is checked in.",
+      "scope_warning": "That atom-iterator callback belongs to the separate determinant/near-alias source population. It is not silently identified with the fixed-R Lindeberg V_p masks.",
+      "status": "EXTERNAL_IN_SEPARATE_FULL_POOL_ATOM_ITERATOR"
+    }
+  },
+  "source_sha256": {
+    "notes/WP84_ANALYTIC_RESPONSE_TRACE_GRID_TRANSFER.md": "f9c09fb91d63c0eead4fa4ade5a091d4e5b202b2c56a5e0b25cc14ce7ac19576",
+    "notes/WP84_ANALYTIC_RESPONSE_TRACE_GRID_TRANSFER_CERTIFICATE.json": "3b953d61c1be399e1edbaad38e8bc44fcae9fcea06d35ed05dfaad62d57087b2",
+    "notes/WP84_CONTOUR_MIXTURE_PRIME_MASS.md": "77a9ac090c4f5676283b4c1ee665ebb1d1931fdc5df1fbd84e1e4a638ddb2bec",
+    "notes/WP84_CONTOUR_MIXTURE_PRIME_MASS_CERTIFICATE.json": "8e7c569ddb5630a6994dc721d015b54af9769001b1c8fe615b7f6fad9a8baf71",
+    "notes/WP84_DEPENDENT_PHASE_PRIME_ADIC_FIREWALL.md": "3338ebdfb8bf2d42addcebc8afe1141f2a34f338ac5ce3e5106f718f0d2604e0",
+    "notes/WP84_DEPENDENT_PHASE_PRIME_ADIC_FIREWALL_CERTIFICATE.json": "cdc04e119bdbf879c6f20c90e894a89b39e28fc4fb36d09c515afcfa5e4e2347",
+    "notes/WP84_LOCALIZE_FIRST_HERMITE_PROJECTION.md": "d7ca7e1e0cf2a77fe44b2cac0c10085c6a45ca6bbcb2f8c1ab3feb7d2f359e23",
+    "notes/WP84_PRIME_BASE_GROUPED_LINDEBERG.md": "5db122d68e05b3af4c70551d31012b0ab3cce89a7f6b8eff1fe79a82e1313eb5",
+    "src/wp84_analytic_response_trace_grid_transfer.py": "b9708d2fa73a98fc373a7847fc1948a3086a39152d67905c29af5f6f648da25d",
+    "src/wp84_analytic_response_trace_grid_transfer_replay.py": "014338698e3da070c10b8c53178658d3590308b692fe4a690863ebb7dfd73353",
+    "src/wp84_contour_mixture_prime_mass.py": "3e89cca10fc8b22ca284040a88b88c5eeeff8d2bbcc0be97fa4d659d5316d012",
+    "src/wp84_contour_mixture_prime_mass_replay.py": "d68495e8823a0b94bdfb2a4d78dc1dabb59b4769debbfc0a4a8f682e27aed77b",
+    "src/wp84_dependent_phase_prime_adic_firewall.py": "762f547b1d4d8f0a8ff08f8488054687a71fc9aee42d714ed6ecf98b14d5573a",
+    "src/wp84_dependent_phase_prime_adic_firewall_replay.py": "d8dd65439ba8afa16cb73c1189b7ef5a2c263f4ecac4925fdbb575104f21b3ff",
+    "src/wp84_fifth_full_pool_amplitude.py": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1"
+  },
+  "starting_head": "93959b4e429d7bc02aaec8fd535acf2075bd877b",
+  "strict_gt79": "OPEN"
+}
