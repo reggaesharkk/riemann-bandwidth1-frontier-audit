@@ -1,0 +1,730 @@
+{
+  "alias_separation": {
+    "consequence": "Different alias values cannot be silently summed into one callback bit. An alias-constant mask would be incompatible with a key admitted at one alias and rejected at another.",
+    "disjointness": "For m != m', the intervals |lambda-mL|<=H/T and |lambda-m'L|<=H/T are disjoint whenever 2H/T < |m-m'|L; in particular the nearest-residual condition admits at most one alias for fixed lambda.",
+    "frozen_source": "notes/WP84_NEAR_ALIAS_SURVIVOR_LEMMA.md states H fixed positive (or explicitly declared H=X^o(1)), H/T<L/2, and uniqueness of the nearest alias.",
+    "proof_scope": "exact interval geometry; it does not assert existence of an admitted prime tuple for a given alias",
+    "source_statement": "Each callback is called separately for a listed alias m, and the exact source condition includes 0<|lambda-mL|<=H/T with H/T<L/2 eventually."
+  },
+  "alternative_subgroup_counts": {
+    "conjugation_plus_cyclic_rotation": {
+      "origin_alias_components": 1874,
+      "origin_alias_histogram": {
+        "2": 7,
+        "4": 10,
+        "6": 60,
+        "10": 195,
+        "12": 1602
+      },
+      "origin_components": 763,
+      "origin_histogram": {
+        "2": 3,
+        "4": 2,
+        "6": 24,
+        "10": 113,
+        "12": 621
+      }
+    },
+    "cyclic_rotation_only": {
+      "origin_alias_components": 3748,
+      "origin_alias_histogram": {
+        "1": 14,
+        "2": 20,
+        "3": 120,
+        "5": 390,
+        "6": 3204
+      },
+      "origin_components": 1516,
+      "origin_histogram": {
+        "1": 4,
+        "2": 5,
+        "3": 30,
+        "5": 226,
+        "6": 1251
+      }
+    },
+    "dihedral_without_conjugation": {
+      "origin_alias_components": 2296,
+      "origin_alias_histogram": {
+        "1": 14,
+        "2": 20,
+        "3": 88,
+        "5": 158,
+        "6": 580,
+        "10": 116,
+        "12": 1320
+      },
+      "origin_components": 887,
+      "origin_histogram": {
+        "1": 4,
+        "2": 5,
+        "3": 22,
+        "5": 58,
+        "6": 173,
+        "10": 84,
+        "12": 541
+      }
+    },
+    "reversal_only": {
+      "origin_alias_components": 11060,
+      "origin_alias_histogram": {
+        "1": 532,
+        "2": 10528
+      },
+      "origin_components": 4446,
+      "origin_histogram": {
+        "1": 152,
+        "2": 4294
+      }
+    }
+  },
+  "branch": "codex/c5-c6-attack-20261006",
+  "budget_and_theorem_state": {
+    "fifth_analytic_rank": "38-72",
+    "relaxed_H400_scale": "52897896569489/115043904099337500000",
+    "relaxed_allowance": "52897896569489/572357731837500000",
+    "relaxed_budget": "UNPAID; this audit does not estimate coefficients",
+    "strict_gt_79": "OPEN"
+  },
+  "callback_distinguishing_witnesses": {
+    "conjugation": {
+      "base_key_schema": "(35, ('p_0', 'p_1', 'p_2', 'p_3', 'p_4'), ('ell_0', 'ell_1', 'ell_2', 'ell_3', 'ell_4'), 'T', 'I', -1)",
+      "callback_values": [
+        1,
+        0
+      ],
+      "scope": "truthiness callback distinguishes distinct API tuples; this schema witness does not claim the missing iterator generates both keys or is a source-authentic window implementation",
+      "transformed_key_schema": "(35, ('p_0', 'p_1', 'p_2', 'p_3', 'p_4'), ('ell_0', 'ell_1', 'ell_2', 'ell_3', 'ell_4'), 'T', 'I', 1)"
+    },
+    "reversal": {
+      "base_key_schema": "(35, ('p_0', 'p_1', 'p_2', 'p_3', 'p_4'), ('ell_0', 'ell_1', 'ell_2', 'ell_3', 'ell_4'), 'T', 'I', -1)",
+      "callback_values": [
+        1,
+        0
+      ],
+      "scope": "truthiness callback distinguishes distinct API tuples; this schema witness does not claim the missing iterator generates both keys or is a source-authentic window implementation",
+      "transformed_key_schema": "(35, ('p_4', 'p_3', 'p_2', 'p_1', 'p_0'), ('-ell_4', '-ell_3', '-ell_2', '-ell_1', '-ell_0'), 'T', 'I', -1)"
+    },
+    "rotation": {
+      "base_key_schema": "(35, ('p_0', 'p_1', 'p_2', 'p_3', 'p_4'), ('ell_0', 'ell_1', 'ell_2', 'ell_3', 'ell_4'), 'T', 'I', -1)",
+      "callback_values": [
+        1,
+        0
+      ],
+      "scope": "truthiness callback distinguishes distinct API tuples; this schema witness does not claim the missing iterator generates both keys or is a source-authentic window implementation",
+      "transformed_key_schema": "(35, ('p_1', 'p_2', 'p_3', 'p_4', 'p_0'), ('ell_1', 'ell_2', 'ell_3', 'ell_4', 'ell_0'), 'T', 'I', -1)"
+    }
+  },
+  "component_counts": {
+    "453_requires_alias_mask_aggregation": true,
+    "actual_callback_key_components": "|K_T|; exact key set not enumerated in current source",
+    "actual_mask_component_warning": "m is an explicit callback-key coordinate, so a class-alias pair cannot be treated as one Boolean bit; 21588 is the finite raw (origin,m) lower-level node set before the unenumerated slot/path/T/section expansion.",
+    "full_covariant_origin_alias_components": 1148,
+    "full_covariant_origin_alias_histogram": {
+      "2": 7,
+      "4": 10,
+      "6": 44,
+      "10": 79,
+      "12": 290,
+      "20": 58,
+      "24": 660
+    },
+    "full_covariant_origin_histogram": {
+      "2": 3,
+      "4": 2,
+      "6": 16,
+      "10": 29,
+      "12": 97,
+      "20": 42,
+      "24": 264
+    },
+    "full_covariant_origin_reference": 453,
+    "proved_origin_alias_histogram": {
+      "1": 21588
+    },
+    "proved_origin_alias_refinement": 21588,
+    "proved_origin_histogram": {
+      "1": 8740
+    },
+    "proved_origin_refinement": 8740,
+    "why_453_is_not_a_mask_component_count": "The 453 functionals sum each representative's aliases inside one C_j, but source_mask is called with m and can return a different bit for each alias. Full D_b x C2 covariance on (raw origin,m) yields 1148 components, not 453."
+  },
+  "conditional_covariance_ladder": [
+    {
+      "added_properties": [],
+      "components": 21588,
+      "histogram": {
+        "1": 21588
+      },
+      "level": 0,
+      "name": "executable_callback_product_class",
+      "origin_only_components": 8740,
+      "proved": true
+    },
+    {
+      "added_properties": [
+        "consistent renaming of nonphysical equality-block variables"
+      ],
+      "components": 21588,
+      "histogram": {
+        "1": 21588
+      },
+      "level": 1,
+      "name": "dummy_label_gauge_only",
+      "origin_only_components": 8740,
+      "proved": true
+    },
+    {
+      "added_properties": [
+        "C: exact source-admission invariance under simultaneous sign-word conjugation and m -> -m"
+      ],
+      "components": 10794,
+      "histogram": {
+        "2": 10794
+      },
+      "level": 2,
+      "name": "conditional_conjugation",
+      "origin_only_components": 4370,
+      "proved": false
+    },
+    {
+      "added_properties": [
+        "level 2",
+        "R: exact source-admission invariance under reversed slots and negative reversed lag"
+      ],
+      "components": 5530,
+      "histogram": {
+        "2": 266,
+        "4": 5264
+      },
+      "level": 3,
+      "name": "conditional_conjugation_plus_reversal",
+      "origin_only_components": 2237,
+      "proved": false
+    },
+    {
+      "added_properties": [
+        "level 3",
+        "Cyc: exact source-admission invariance under cyclic slot/lag rotation"
+      ],
+      "components": 1148,
+      "histogram": {
+        "2": 7,
+        "4": 10,
+        "6": 44,
+        "10": 79,
+        "12": 290,
+        "20": 58,
+        "24": 660
+      },
+      "level": 4,
+      "name": "conditional_full_dihedral_conjugation",
+      "origin_only_components": 453,
+      "proved": false
+    }
+  ],
+  "consumer_coefficients": {
+    "omega5": "-11501/12500",
+    "omega6": "137641/250000",
+    "sign_convention": "raw degree-5 coefficient is negative; raw degree-6 coefficient is positive"
+  },
+  "decision": "F. PRIOR 453 MASK-COMPONENT COLLAPSE OMITS THE CALLBACK ALIAS INDEX",
+  "group_generators": [
+    {
+      "action": {
+        "K": "fixed",
+        "Real": "fixed",
+        "T": "fixed",
+        "W": "fixed",
+        "alias": "fixed",
+        "callback_key": "fixed",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "fixed",
+        "partition": "fixed",
+        "section": "fixed",
+        "sign_word": "fixed",
+        "slots": "fixed"
+      },
+      "classification": "A",
+      "component_effect_on_8740_origin_refinement": "identity only; does not identify distinct raw origins",
+      "functional_status": "identity",
+      "hostile_distinguishing_callback": null,
+      "mask_claim": "Equal complete tuples (fid,slots,lag,T,section,m) are one bit by definition.",
+      "name": "literal_same_callback_key",
+      "proved_callback_equality": true
+    },
+    {
+      "action": {
+        "K": "fixed",
+        "Real": "fixed",
+        "T": "fixed",
+        "W": "fixed",
+        "alias": "fixed",
+        "callback_key": "identical after canonicalization",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "fixed",
+        "partition": "same set partition after canonical normalization",
+        "section": "fixed",
+        "sign_word": "fixed",
+        "slots": "identical after reindexing dummy assignment variables"
+      },
+      "classification": "A",
+      "component_effect_on_8740_origin_refinement": "none; this bookkeeping quotient is already applied in equality_labels",
+      "functional_status": "coordinate gauge; no physical slot permutation",
+      "hostile_distinguishing_callback": "not applicable: semantic callback tuple is identical",
+      "mask_claim": "A pure renaming of temporary equality-block variables, followed by consistent renaming of their assigned primes, leaves the physical slot tuple unchanged; canonical restricted-growth partition labels normalize to the same partition.",
+      "name": "dummy_equality_block_label_renaming",
+      "proved_callback_equality": true
+    },
+    {
+      "action": {
+        "K": "fixed",
+        "Real": "fixed",
+        "T": "fixed",
+        "W": "fixed",
+        "alias": "fixed",
+        "callback_key": "identical",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "fixed",
+        "partition": "same set partition",
+        "section": "fixed",
+        "sign_word": "fixed",
+        "slots": "identical"
+      },
+      "classification": "A",
+      "component_effect_on_8740_origin_refinement": "none; no distinct node is identified",
+      "functional_status": "coordinate gauge when all block data are relabeled together",
+      "hostile_distinguishing_callback": "not applicable: it is not a physical reassignment of primes among slots",
+      "mask_claim": "A simultaneous renaming of block variables and their prime assignment is dummy-variable renaming only; it leaves each physical slot prime unchanged.",
+      "name": "dummy_prime_block_relabeling",
+      "proved_callback_equality": true
+    },
+    {
+      "action": {
+        "K": "compensating root phase; M unchanged",
+        "Real": "unchanged after W*K compensation",
+        "T": "fixed",
+        "W": "multiplied by exp(-2*pi*i*u_s*lambda/L)",
+        "alias": "fixed",
+        "callback_key": "raw fid/origin mapping is not specified; under the canonical 453 interface the fid is fixed while slots/lag generally change",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "cyclic left rotation",
+        "partition": "same rotation then canonicalize labels",
+        "section": "fixed endpoints",
+        "sign_word": "cyclic left rotation",
+        "slots": "cyclic left rotation"
+      },
+      "classification": "D",
+      "conditional_property": "For every source admission factor, rotating its indexed slot-window family and all slot data must preserve the Boolean conjunction exactly.",
+      "functional_status": "C: complete unmasked path sum is invariant after rotating signs, partition, physical slots, and closed lag path together; root-start phase is compensated by K.",
+      "hostile_distinguishing_callback": "indicator of the first transformed six-tuple; 1 on k and 0 on rotate(k), whenever the tuples differ",
+      "mask_claim": "Mask covariance is not forced; the arbitrary callback can distinguish the rotated fid/slots/lag key.",
+      "name": "cyclic_slot_rotation",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "same",
+        "Real": "same",
+        "T": "fixed",
+        "W": "same after slotwise phase cancellation",
+        "alias": "fixed",
+        "callback_key": "raw fid/origin mapping is not specified; under the canonical 453 interface fid is fixed while slots/lag generally change",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "reverse order and negate each entry",
+        "partition": "reverse then canonicalize labels",
+        "section": "fixed endpoints",
+        "sign_word": "reverse",
+        "slots": "reverse"
+      },
+      "classification": "D",
+      "conditional_property": "The source admission/window predicate must be invariant under reversing the physical slot-window list together with the slots and reversing-negating the lag vector.",
+      "functional_status": "C: complete unmasked path sum is invariant; f_{-l}^epsilon phase is canceled by the reversed slot-start phase and the root extrema are unchanged.",
+      "hostile_distinguishing_callback": "indicator of the first transformed six-tuple; 1 on k and 0 on reverse(k), whenever the tuples differ",
+      "mask_claim": "Mask covariance is not forced; reversed slots/lag give a distinguishable key.",
+      "name": "path_reversal_with_negative_reversed_lags",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "conjugate",
+        "Real": "unchanged",
+        "T": "fixed",
+        "W": "conjugate",
+        "alias": "m -> -m",
+        "callback_key": "raw fid/origin mapping is not specified; canonical 453 interface keeps fid fixed and m changes sign",
+        "carrier_lambda": "lambda -> -lambda",
+        "degree": "fixed",
+        "lag": "fixed",
+        "partition": "fixed",
+        "section": "fixed",
+        "sign_word": "flip every +/\u2212 within the full-covariant origin orbit",
+        "slots": "fixed"
+      },
+      "classification": "D",
+      "conditional_property": "The complete original source admission predicate, including slot-window membership and orientation/section conditions, must be invariant under (fid,slots,lag,T,I,m) -> (conj(fid),slots,lag,T,I,-m).",
+      "functional_status": "C: sign word and lambda change sign, m maps to -m, W and K conjugate, and the complete real functional is unchanged.",
+      "hostile_distinguishing_callback": "indicator of m=m0 for a nonzero alias pair; it is truthy on one key and false on its conjugate key",
+      "mask_claim": "Mask covariance is not forced; fid and m change, while a callback may distinguish them.",
+      "name": "simultaneous_conjugation_sign_reversal_and_alias_inversion",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "fixed",
+        "Real": "fixed",
+        "T": "fixed",
+        "W": "fixed",
+        "alias": "m -> -m",
+        "callback_key": "m changes",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "fixed",
+        "partition": "fixed",
+        "section": "fixed",
+        "sign_word": "fixed",
+        "slots": "fixed"
+      },
+      "classification": "D",
+      "functional_status": "not a complete correlation symmetry by itself; delta window is centered on a different alias",
+      "hostile_distinguishing_callback": "indicator of the original alias value m0",
+      "mask_claim": "Changing only m changes a callback argument and no contract equality links the two bits.",
+      "name": "alias_sign_exchange_alone",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "not generally fixed",
+        "Real": "not generally fixed",
+        "T": "fixed",
+        "W": "not generally fixed",
+        "alias": "not generally fixed",
+        "callback_key": "slots and possibly fid/lag change",
+        "carrier_lambda": "may change if signs not permuted with slots",
+        "degree": "fixed",
+        "lag": "not generally a symmetry unless cyclic/reversal rule",
+        "partition": "same permutation only if explicitly applied",
+        "section": "fixed",
+        "sign_word": "same permutation only if explicitly applied",
+        "slots": "permuted"
+      },
+      "classification": "D",
+      "conditional_property": "All permuted physical slot-window functions must be identical after the same permutation, with every path and root factor transformed by an independently proved symmetry.",
+      "functional_status": "not a general symmetry; only the certified cyclic/reversal transformations are justified for the complete path sum",
+      "hostile_distinguishing_callback": "indicator of a selected ordered slots tuple",
+      "mask_claim": "An arbitrary physical permutation changes slots and generally the path order; no general source-window equality is in the API.",
+      "name": "physical_slot_permutation_not_generated_by_D_b",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "generally changed",
+        "Real": "not known invariant",
+        "T": "fixed",
+        "W": "generally changed",
+        "alias": "fixed",
+        "callback_key": "lag changes",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "-lag",
+        "partition": "fixed",
+        "section": "fixed",
+        "sign_word": "fixed",
+        "slots": "fixed"
+      },
+      "classification": "D",
+      "functional_status": "not invariant alone; reversal requires simultaneous slot/sign/partition transformation",
+      "hostile_distinguishing_callback": "indicator of the original lag tuple",
+      "mask_claim": "Negating lag alone changes a callback argument; the original root/path weights do not supply a mask identity.",
+      "name": "Fourier_displacement_negation_alone",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "same sum after valid dummy reindexing",
+        "Real": "fixed",
+        "T": "fixed",
+        "W": "fixed",
+        "alias": "fixed",
+        "callback_key": "identical",
+        "carrier_lambda": "fixed",
+        "degree": "fixed",
+        "lag": "fixed",
+        "partition": "fixed",
+        "section": "fixed",
+        "sign_word": "fixed",
+        "slots": "fixed"
+      },
+      "classification": "A",
+      "component_effect_on_8740_origin_refinement": "none; root summation indices do not label origin bits",
+      "functional_status": "reindexing only when the endpoints and phase compensation are preserved",
+      "hostile_distinguishing_callback": null,
+      "mask_claim": "A change of dummy root summation index is not a distinct callback key: root indices are computed after callback and are not callback arguments.",
+      "name": "root_summation_index_translation",
+      "proved_callback_equality": true
+    },
+    {
+      "action": {
+        "K": "not generally fixed",
+        "Real": "not generally fixed",
+        "T": "fixed",
+        "W": "not generally fixed",
+        "alias": "not necessarily changed",
+        "callback_key": "fid and/or lag generally change",
+        "carrier_lambda": "fixed only under simultaneous sign/slot permutation",
+        "degree": "fixed",
+        "lag": "coordinates swap",
+        "partition": "permuted",
+        "section": "fixed",
+        "sign_word": "permuted",
+        "slots": "may be numerically unchanged at equal-prime positions"
+      },
+      "classification": "D",
+      "conditional_property": "The two physical slot-window tests must be identical functions and the full trace/path expression must be invariant under their swap.",
+      "functional_status": "depends on the exact pair of window functions and path transformation; not a universal physical permutation theorem",
+      "hostile_distinguishing_callback": "indicator of the original lag coordinate order",
+      "mask_claim": "Even when the swapped slot-prime entries are numerically equal, swapping lag coordinates changes the lag tuple; no source equality of the callback bits is defined.",
+      "name": "repeated_equal_prime_slot_swap_with_lag_swap",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "not asserted without a functional symmetry",
+        "Real": "not asserted",
+        "T": "fixed",
+        "W": "not asserted without a functional symmetry",
+        "alias": "fixed only if carrier and detuning are preserved",
+        "callback_key": "changes unless the swapped data happen to coincide",
+        "carrier_lambda": "fixed only under simultaneous sign permutation",
+        "degree": "fixed",
+        "lag": "swap according to an independently valid path symmetry",
+        "partition": "swap positions and normalize",
+        "section": "fixed",
+        "sign_word": "swap the two designated positions",
+        "slots": "swap designated entries"
+      },
+      "classification": "B",
+      "conditional_property": "P_swap: the entire original admission predicate satisfies chi(swap(k))=chi(k) for every admissible input; a sufficient window-level version requires identical window functions plus invariance of the remaining alias/orientation/section gates.",
+      "functional_status": "the full path-weighted functional still needs its own permitted slot/path symmetry; identical windows alone do not establish a functional identity",
+      "hostile_distinguishing_callback": "indicator of the ordered slots tuple when P_swap is not assumed",
+      "mask_claim": "Conditional only: if the two complete indexed source-window/admission functions are identical after the physical slot swap, the corresponding callback values agree.",
+      "name": "slot_window_swap_under_explicit_identical_window_hypothesis",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "not enough data",
+        "Real": "not enough data",
+        "T": "fixed",
+        "W": "not enough data",
+        "alias": "unspecified",
+        "callback_key": "not enough data",
+        "carrier_lambda": "not enough data",
+        "degree": "unspecified",
+        "lag": "depends on the missing window rule",
+        "partition": "unspecified",
+        "section": "fixed",
+        "sign_word": "unspecified",
+        "slots": "depends on the missing window rule"
+      },
+      "classification": "E",
+      "evidence_boundary": "The task does not reconstruct or guess this missing predicate; the callback API itself allows distinguishing values, while whether the intended source mask has this symmetry is not decidable here.",
+      "functional_status": "no particular intersection symmetry is certified",
+      "hostile_distinguishing_callback": "interface-level table separates any two distinct keys; it does not decide the absent authentic source predicate",
+      "mask_claim": "The actual source-window relation is undecidable from the checked-in source because its predicate is an absent caller-supplied implementation.",
+      "name": "unspecified_slot_window_intersection_symmetry",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "conjugate",
+        "Real": "equal scalar coefficients",
+        "T": "fixed",
+        "W": "conjugate",
+        "alias": "m -> -m",
+        "callback_key": "same fid/slots/lag/T/section; m generally changes",
+        "carrier_lambda": "sign reversed",
+        "degree": "fixed",
+        "lag": "same",
+        "partition": "same",
+        "section": "fixed",
+        "sign_word": "conjugate pair within one canonical fid orbit",
+        "slots": "same"
+      },
+      "classification": "C",
+      "exact_algebra": "independent bits x,y remain: x*a+y*a; sup over x,y is 2*[a]_+, equal to [2a]_+ but not because x=y",
+      "functional_status": "For z and conjugate(z), Re(x*z+y*conjugate(z))=(x+y)*Re(z) for x,y in {0,1}.",
+      "hostile_distinguishing_callback": "x=1,y=0 is allowed by the product Boolean interface",
+      "mask_claim": "Real-part linearity gives coefficient identities but does not equate independent mask bits.",
+      "name": "real_part_conjugate_pairing",
+      "proved_callback_equality": false
+    },
+    {
+      "action": {
+        "K": "summed",
+        "Real": "linearity",
+        "T": "same",
+        "W": "summed",
+        "alias": "same",
+        "callback_key": "identical",
+        "carrier_lambda": "may vary inside summed coefficient",
+        "degree": "fixed",
+        "lag": "same",
+        "partition": "may differ outside key",
+        "section": "same",
+        "sign_word": "may differ outside key; key identity controls",
+        "slots": "same"
+      },
+      "classification": "A",
+      "component_effect_on_8740_origin_refinement": "already represented by coefficient a_k; not a new cross-key relation",
+      "functional_status": "exact linear coefficient aggregation",
+      "hostile_distinguishing_callback": null,
+      "mask_claim": "Contributions with exactly the same six callback arguments multiply the same Boolean bit; they are already summed into a_k before support maximization.",
+      "name": "identical_key_atom_aggregation",
+      "proved_callback_equality": true
+    }
+  ],
+  "hostile_mutation_rejection_cases": [
+    "promote cyclic rotation",
+    "promote reversal",
+    "promote conjugation",
+    "change equality partition",
+    "change slot order",
+    "change alias",
+    "change R",
+    "delete a raw origin",
+    "replace complete prime pool by finite core",
+    "merge independent bits",
+    "split proved-equal bit",
+    "use floating coefficient equality",
+    "use diagnostic rows",
+    "invent historical selector",
+    "claim unconditional 453",
+    "alter component count",
+    "alter fifth/sixth signs",
+    "omit long-tail compatibility"
+  ],
+  "mask_constraint_graph": {
+    "actual_callback_key_graph": "not enumerated; nodes are exact six-tuples arising from all admitted prime assignments, paths, aliases and supplied (T,section)",
+    "identity_loops_omitted": true,
+    "origin_alias_component_histogram": {
+      "1": 21588
+    },
+    "origin_alias_components": 21588,
+    "origin_alias_refinement_nodes": 21588,
+    "origin_component_histogram": {
+      "1": 8740
+    },
+    "origin_components": 8740,
+    "origin_refinement_nodes": 8740,
+    "proved_nontrivial_edges": []
+  },
+  "minimal_missing_source_properties": [
+    {
+      "leverage": "alias-expanded components 21588 -> 10794",
+      "name": "P_conj",
+      "proved": false,
+      "statement": "On raw class-alias nodes, simultaneous sign conjugation and m -> -m preserves the complete source admission bit.",
+      "window_identity_needed": "The complete sign/orientation-specific window and admission predicate is invariant under conjugation. This only gives 21588 -> 10794 pair components."
+    },
+    {
+      "leverage": "alias-expanded components 10794 -> 5530",
+      "name": "P_rev",
+      "proved": false,
+      "statement": "Reversing signs/partition/slots and negative-reversing lag preserves the complete source admission bit at fixed m.",
+      "window_identity_needed": "The physical slot-window family and every endpoint/section admission factor are invariant under reversal. This gives 10794 -> 5530 pair components after P_conj."
+    },
+    {
+      "leverage": "alias-expanded components 5530 -> 1148",
+      "name": "P_cyc",
+      "proved": false,
+      "statement": "Cyclically rotating signs/partition/slots and lag preserves the complete source admission bit at fixed m.",
+      "window_identity_needed": "The source slot-window list is cyclically covariant and source-section/root eligibility is unchanged. This gives 5530 -> 1148 pair components, not 453."
+    },
+    {
+      "leverage": "would formally merge 1148 alias-expanded orbits into 453 origin functionals, but is not source-legal and is false whenever a nonzero alias is admitted",
+      "name": "P_alias_merge",
+      "proved": false,
+      "statement": "To recover 453 support components one would also have to identify different m values aggregated in each canonical functional.",
+      "window_identity_needed": "No such property is compatible in general with the exact per-alias condition 0<|lambda-mL|<=H/T: for distinct m,m', the alias windows are disjoint once 2H/T < |m-m'|L. A tuple admitted at m is rejected at m'."
+    }
+  ],
+  "origin_census": {
+    "alias_values_nonzero": true,
+    "class_alias_pair_nodes": 21588,
+    "class_alias_pairs": 21588,
+    "fifth": 1132,
+    "fifth_class_alias_pairs": 1956,
+    "full_covariant_reference": 453,
+    "raw_survivor_classes": 8740,
+    "sixth": 7608,
+    "sixth_class_alias_pairs": 19632
+  },
+  "proved_equality_constraints": [
+    {
+      "kind": "variable identity",
+      "nontrivial_cross_key_edge": false,
+      "relation": "chi(k)=chi(k') iff k==k' as full six-field callback tuple"
+    },
+    {
+      "kind": "representation gauge",
+      "nontrivial_semantic_edge": false,
+      "relation": "dummy equality-block or prime-variable renaming"
+    }
+  ],
+  "real_part_and_coefficient_algebra": {
+    "coefficient_relation": "conjugate raw terms have equal real scalar coefficients after full-sum reindexing, not opposite coefficients",
+    "conjugate_pair_identity": "Re(x*z+y*conj(z))=(x+y)*Re(z), x,y in {0,1}.",
+    "exact_key_pair_enumeration": "not available: source callback membership and finite key set K_T are absent",
+    "independent_bits_opposite_coefficient": "no such relation is proved for the listed full symmetries",
+    "independent_bits_same_coefficient": "the conjugation identity gives this at the formal complete-origin level, conditional on the origin-to-key map; the map is not executable",
+    "same_bit_opposite_coefficient": "possible only after exact same-key signed atom summation; no additional pair census is defined by current source",
+    "same_bit_same_coefficient": "all atoms with the same exact six-field key are already combined in a_k",
+    "support_relation": "[a]_+ + [a]_+ = [2a]_+ exactly; the independent bits remain independent, and this identity earns no reduction in the positive-part support bound"
+  },
+  "schema": "wp84-mask-equivariance-ladder-v1",
+  "source_conditions": {
+    "R": 6000,
+    "complete_prime_pool": true,
+    "diagnostic_core": false,
+    "long_tail_retained": true,
+    "long_tail_transforms": "|delta| and nearest residual cell are preserved by conjugation; lambda and |delta| are preserved by the simultaneous path reindexings; R and complete prime pool are unchanged",
+    "prime_cutoff": "N(T)=floor(exp(L-sqrt(L)))",
+    "selector_reconstructed": false
+  },
+  "source_hashes": {
+    "notes/WP84_BLOCK15_SOURCE_MASK_IDENTIFIABILITY_CERTIFICATE.json": "efc1770d0a5a4293a71df4d136b10b3e17f0044bc7841bc5772f655f02128a75",
+    "notes/WP84_NEAR_ALIAS_CANONICAL_FUNCTIONALS.json": "9bc93585cbb8161ad9889c55c0077af198b06733d851ea915651a15e58afc67a",
+    "notes/WP84_NEAR_ALIAS_SURVIVOR_PATTERNS.csv": "331604b17f8efbfb6f8bff024b91ab732df521ca79c974f6289154b5a5835368",
+    "src/wp84_fifth_full_pool_amplitude.py": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1"
+  },
+  "source_semantics": {
+    "callback_key": [
+      "fid",
+      "slots",
+      "lag",
+      "T",
+      "section",
+      "m"
+    ],
+    "callback_return_use": "truthiness filter; not a weight or rewritten atom",
+    "canonical_fid_mapping_limit": "The callback receives one of 453 canonical functional IDs, but the raw 8740 origin table has no executable mapping from each transformed origin to a separate source-mask argument. The formal origin/alias action is certified; its embedding into actual source callback keys is not.",
+    "origin_model_limit": "The callback key includes alias m. Therefore the 21588 (raw origin,m) rows, not just the 8740 raw origins, are the smallest finite symbolic Boolean-node census. The actual per-(T,I) key set K_T also ranges over prime assignments, lags, and supplied sections and is not enumerated; with no proved cross-key equalities its component count is exactly |K_T|.",
+    "selected_section_and_window_rule": "not executable here; this audit does not reconstruct it",
+    "source_mask_implementation": "absent from the iterator source; required caller input",
+    "unconditional_equality_relation": "only literal equality of the complete callback tuple; dummy labels are canonicalized before the tuple is formed"
+  },
+  "starting_commit": "0a4aade6900d2e4ed11cb534508461d0aeab0fad",
+  "support_function": {
+    "actual_executable_key_form": "sup_{chi in {0,1}^{K_T}} sum_k chi_k a_k = sum_k [a_k]_+; only identical full callback tuples are pre-summed",
+    "conditional_components_form": "if a source property proves chi constant on components C, sup = sum_C [sum_(r,m in C) a_(r,m)]_+",
+    "full_covariant_alias_form": "1148 components after P_conj, P_rev, and P_cyc on (raw origin,m)",
+    "historical_453_form": "453 sums alias lists inside each functional; it additionally assumes away the callback m-index and is not the support function for the stated callback key",
+    "origin_refinement_form": "sum_{(r,m) in 21588 raw class-alias pairs} chi_(r,m) a_(r,m); with no proved off-diagonal equality its support is sum_(r,m) [a_(r,m)]_+"
+  }
+}
