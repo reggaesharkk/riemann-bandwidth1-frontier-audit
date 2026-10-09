@@ -1,0 +1,274 @@
+{
+  "Bg": "9",
+  "C0": "2500529/2500000",
+  "Cg": "12",
+  "M2": "31",
+  "augmented_heat_identity": {
+    "combined_asymptotic": "E_(u,sigma)'=Re E[A*Xi_z+B*Xi_zz+C*Xi_zzz]+(sigma^2/2)E tau p''(H_(u,sigma))+o_T(1)",
+    "cross_term": "0 by independence and E xi=0",
+    "exact_finite_dimension": "d/du E tau p(H_1+sqrt(u)W+sigma*sqrt(u)*xi*I)=(1/2)E D^2F_H[W,W]+(sigma^2/2)E tau p''(H), F(H)=tau p(H); cross covariance is zero",
+    "scalar_dimension_check": "for d=1, derivative is (sigma^2/2) E p''(h+sqrt(u)w+sigma*sqrt(u)*xi)",
+    "wp84_source_stencil": "(1/2)E D^2F_H[W,W]=Re E[A*Xi_z+B*Xi_zz+C*Xi_zzz]+o_T(1), at the regularized state; same inherited source normalization error retained"
+  },
+  "branch": "codex/c5-c6-attack-20261006",
+  "consumer": "frozen conditioned rank-six cubic; no polynomial or threshold optimization",
+  "fourier_smoothing": {
+    "branch_status": "STOP after this no-contraction finding",
+    "identity": "xi-averaging is the scalar heat semigroup exp((sigma^2*u/2)*partial_s^2) acting on the real scalar translate s of each resolvent statistic",
+    "strict_contraction_for_T12_or_S4_channel": "none proved; heat-semigroup L-infinity contraction has factor 1 only and yields no multiplicative factor below 1 for the grouped channel"
+  },
+  "g_asymptotic": "g(x)=(-20715928/3125000)/x+O(x^-2); coefficient same at +infinity and -infinity",
+  "g_denominator": "3125000*(x**2 + 1)**3",
+  "g_numerator": "-20715928*x**5 + 45959989*x**4 - 75874104*x**3 + 46641300*x**2 - 21007136*x - 161",
+  "g_numerator_degree": 5,
+  "g_rational": "-(20715928*x**5 - 45959989*x**4 + 75874104*x**3 - 46641300*x**2 + 21007136*x + 161)/(3125000*(x**2 + 1)**3)",
+  "generic_overhead": {
+    "decision": "GENERIC PAYMENT KILLED: infimum 9 exceeds the frozen model cushion by the recorded exact factor",
+    "formula": "9*min(1,c*K/y)+12/K+(31/2)*y^2; y=sigma*sqrt(U), c=sqrt(2/pi), K>=2",
+    "infimum": "9",
+    "model_cushion": "34148687712345924132945804854399/12442212289373925054228673142500000",
+    "over_cushion": "111979910604365325488058058282500000/34148687712345924132945804854399",
+    "over_cushion_decimal": "3279.186349637698",
+    "proof": "if y<=cK, first term is 9; if y>cK>=2c, curvature payment>(31/2)*(2c)^2=124/pi>31>9 using pi<4; inf<=9 along K=n,y=n^-2"
+  },
+  "hostile_mutations_required": [
+    "omit_sigma_shift",
+    "variance_sigma_not_sigma2",
+    "drop_heat_half",
+    "invent_cross_covariance",
+    "alter_C0",
+    "assume_C0_one",
+    "reuse_other_consumer_tail_constants",
+    "omit_source_conditioning",
+    "dimension_dependent_tail",
+    "assume_p2_nonnegative",
+    "assume_smoothing_monotone",
+    "omit_Xi_source_curvature",
+    "evaluate_Xi_unregularized",
+    "S2_instead_of_S4",
+    "alter_threshold",
+    "alter_model_cushion",
+    "promote_model_endpoint",
+    "uncertified_numeric_optimization",
+    "reopen_source_mask",
+    "claim_gt79_from_tail_only"
+  ],
+  "p2_numerator": "-20715928*x**7 + 137879967*x**6 - 185937560*x**5 - 222986835*x**4 + 615845240*x**3 - 330580347*x**2 - 38558088*x + 46641783",
+  "p2_rational": "-(20715928*x**7 - 137879967*x**6 + 185937560*x**5 + 222986835*x**4 - 615845240*x**3 + 330580347*x**2 + 38558088*x - 46641783)/(1562500*(x**2 + 1)**5)",
+  "p2_witnesses": {
+    "isolating_intervals": [
+      {
+        "left": "-397/250",
+        "right": "-793/500"
+      },
+      {
+        "left": "-329/1000",
+        "right": "-41/125"
+      },
+      {
+        "left": "3/5",
+        "right": "601/1000"
+      },
+      {
+        "left": "109/125",
+        "right": "873/1000"
+      },
+      {
+        "left": "627/500",
+        "right": "251/200"
+      },
+      {
+        "left": "379/250",
+        "right": "1517/1000"
+      },
+      {
+        "left": "4327/1000",
+        "right": "541/125"
+      }
+    ],
+    "negative_x_minus_2_3": "-15547254589917/580145312500",
+    "positive_x0": "46641783/1562500",
+    "signs_across_roots": [
+      "+",
+      "-",
+      "+",
+      "-",
+      "+",
+      "-",
+      "+",
+      "-"
+    ]
+  },
+  "p_rational": "(12502645*x**6 - 82863712*x**5 + 221347891*x**4 - 303496416*x**3 + 224073135*x**2 - 84028544*x + 12502001)/(12500000*(x**2 + 1)**3)",
+  "q_ascending": [
+    "(44+2205i)/5000",
+    "(-5695+169i)/5000",
+    "(-192-5495i)/5000",
+    "1936/5000"
+  ],
+  "scalar_tail": {
+    "fixed_K_bound": "9*min(1,sqrt(2/pi)*K/y)+12/K; y=sigma*sqrt(u), K>=2",
+    "large_u_rate": "2*sqrt(108*sqrt(2/pi)/sigma)*u^(-1/4) once sigma*sqrt(u)>=16*sqrt(2/pi)/3",
+    "large_y_exact_regime": "y>=16*c/3: Tail=2*sqrt(108*c/y)",
+    "optimized_K": "min(9, min_{2<=K<=y/c}(9*c*K/y+12/K)); c=sqrt(2/pi); if y/c<2, value=9",
+    "piecewise_clamp": "for h=y/c>=2: K*=clamp(sqrt(12*y/(9*c)),2,h), Tail=min(9,9*c*K*/y+12/K*); for h<2: Tail=9",
+    "uniformity": [
+      "dimension",
+      "deterministic H_1",
+      "realization of W",
+      "T"
+    ]
+  },
+  "schema": "WP84-conditioned-scalar-regularized-heat-bridge-v1",
+  "signed_scalar_attempt": {
+    "one_attempt": "At fixed source variance u, scalar-variance interpolation integrates (1/2)E tau p'' exactly to an endpoint difference. Along the required diagonal path both source variance and scalar variance vary with u; chain rule adds the source derivative, so this is a redistribution and gives no standalone one-sided saving.",
+    "p2_sign": "both signs; exact rational witnesses above",
+    "signed_improvement": "none"
+  },
+  "source_gaussian": "W is the original circular-prime sharp-Loewner source; scalar xi is independent standard real Gaussian; its covariance changes the state law only, not the source covariance tensor",
+  "source_sha256": {
+    "notes/WP84_CIRCULAR_GAUSSIAN_Q_FIELD.md": "2c68c9faef16bd12281552c7d722501055ce752c63c1a86948cbffb5c8e2e410",
+    "notes/WP84_CONDITIONED_RANK6_79_CONSUMER.md": "f00a8997fbd0357b730a8cb8df3530e0250990017d9cab5a5c964cf29d8f7ce5",
+    "notes/WP84_CONDITIONED_RANK6_HEAT_CURVATURE_ATTACK.md": "3a24b3964967bbb735585c53ee39183c095abc4394487c5a31f72a4caa77437d",
+    "notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md": "4bf5279133622b9f0e0c7bfd3177cc2168ba3345c12b61efcb3c29e154a40e4b",
+    "notes/WP84_RESONANT_D2_EXPLICIT_FUNCTIONAL.md": "bd8e91985a066338a7defcf97d4e5709d4509653e74990d643512a19034dd3e1",
+    "notes/WP84_SCALAR_HEAT_TAIL_AND_TWO_SIDED_SMALL_BALL_AUDIT_2026_10_06.md": "058d8b47b4935ec5bc065eb175dcdf69cba1a146fef9c8871a9e6c9fc2b8fc11",
+    "src/wp84_conditioned_rank6_79_consumer.py": "e9c81e33d75310e6ddb9f523ad93a1cf23e6ab82d27f9ff9d507f0184f25bf90",
+    "src/wp84_conditioned_rank6_heat_curvature.py": "abf90af8f9f333463aa8ed33948eb09623b1bbfc47dd7bcc97956d9ea2726b0a",
+    "src/wp84_conditioned_rank6_heat_curvature_replay.py": "5f49b56fa1ec8a979e5057b39e507bde7ee4f8ca326d142a901bb8fa04b0444d",
+    "src/wp84_gaussian_covariance_hadamard_gate.py": "d21f610cb07b12d1212c19c1cd85729f1af9b942c0d57136c71cd302dfcd18e2",
+    "src/wp84_resonant_d2_explicit_gate.py": "0ebca6a43eb43242b0d113a39c59d335e07bcf8decf7d8c6bf0f5e72b424fc6f"
+  },
+  "start_head": "fb16bc83a6b26c51faec17b99ac2555e869ff033",
+  "sturm_certificates": {
+    "Bg_square": {
+      "degree": 12,
+      "intervals": [
+        {
+          "distinct_roots": 0,
+          "left": "-inf",
+          "name": "all-real",
+          "right": "+inf",
+          "variation_left": 6,
+          "variation_right": 6
+        }
+      ],
+      "sturm_sequence_length": 13
+    },
+    "Cg_square": {
+      "degree": 12,
+      "intervals": [
+        {
+          "distinct_roots": 0,
+          "left": "-inf",
+          "name": "left-tail",
+          "right": "-2",
+          "variation_left": 6,
+          "variation_right": 6
+        },
+        {
+          "distinct_roots": 0,
+          "left": "2",
+          "name": "right-tail",
+          "right": "+inf",
+          "variation_left": 6,
+          "variation_right": 6
+        }
+      ],
+      "sturm_sequence_length": 13
+    },
+    "M2_square": {
+      "degree": 20,
+      "intervals": [
+        {
+          "distinct_roots": 0,
+          "left": "-inf",
+          "name": "all-real",
+          "right": "+inf",
+          "variation_left": 9,
+          "variation_right": 9
+        }
+      ],
+      "sturm_sequence_length": 19
+    },
+    "p2_roots": {
+      "degree": 7,
+      "intervals": [
+        {
+          "distinct_roots": 1,
+          "left": "-397/250",
+          "name": "r1",
+          "right": "-793/500",
+          "variation_left": 7,
+          "variation_right": 6
+        },
+        {
+          "distinct_roots": 1,
+          "left": "-329/1000",
+          "name": "r2",
+          "right": "-41/125",
+          "variation_left": 6,
+          "variation_right": 5
+        },
+        {
+          "distinct_roots": 1,
+          "left": "3/5",
+          "name": "r3",
+          "right": "601/1000",
+          "variation_left": 5,
+          "variation_right": 4
+        },
+        {
+          "distinct_roots": 1,
+          "left": "109/125",
+          "name": "r4",
+          "right": "873/1000",
+          "variation_left": 4,
+          "variation_right": 3
+        },
+        {
+          "distinct_roots": 1,
+          "left": "627/500",
+          "name": "r5",
+          "right": "251/200",
+          "variation_left": 3,
+          "variation_right": 2
+        },
+        {
+          "distinct_roots": 1,
+          "left": "379/250",
+          "name": "r6",
+          "right": "1517/1000",
+          "variation_left": 2,
+          "variation_right": 1
+        },
+        {
+          "distinct_roots": 1,
+          "left": "4327/1000",
+          "name": "r7",
+          "right": "541/125",
+          "variation_left": 1,
+          "variation_right": 0
+        },
+        {
+          "distinct_roots": 7,
+          "left": "-inf",
+          "name": "all-real",
+          "right": "+inf",
+          "variation_left": 7,
+          "variation_right": 0
+        }
+      ],
+      "sturm_sequence_length": 8
+    }
+  },
+  "theorem_target": {
+    "actual_zeta_energy_upper_bound": "none",
+    "model_cushion": "34148687712345924132945804854399/12442212289373925054228673142500000",
+    "model_energy": "1272283602671916206561064875108101/12442212289373925054228673142500000",
+    "remaining_source_law": "integral_0^U [G_source(u,sigma)+G_scalar(u,sigma)]du > 2238029/2500000 + Tail_sigma(U) + eta; no such source-side lower bound proved",
+    "required_total_integral": "2238029/2500000",
+    "strict_gt79": "OPEN",
+    "threshold": "21/200"
+  }
+}
