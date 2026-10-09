@@ -1,0 +1,276 @@
+{
+  "branch": "codex/c5-c6-attack-20261006",
+  "chaos_representation": {
+    "arbitrary_nonorthogonal_change": "not invariant unless whitened and reduced to the induced orthogonal/isometric map",
+    "orthogonal_coordinate_change": "invariant: total-degree Hermite subspaces are preserved by second quantization of an orthogonal map",
+    "redundant_coordinates": "invariant after embedding: unused independent coordinates are degree zero; isometric Gaussian-factor changes preserve chaos degree",
+    "singular_covariance": "valid using common ambient PSD square root; continuity handles rank changes"
+  },
+  "consumer": {
+    "E_inf": "7761139416076220170204368647089/1680256283972002400160000000000",
+    "K": 32,
+    "a": "131/200",
+    "c": "3142/2415",
+    "cap": "0 <= f <= E_inf and 1-f <= 1_{x>0}; large-u tail is removed for this one-sided capped consumer",
+    "delta": "1/100000",
+    "epsilon": "8711/2778200",
+    "w0": "1415/13891"
+  },
+  "decision": "C",
+  "fixed_R_covariance_transfer": {
+    "2K_plus_2_derivative_debt": "REMOVED after fixed-R localization; no differentiation of P_{<=K} or covariance projector",
+    "argument": "C_T,R -> C_ref,R in operator norm; canonical positive PSD roots satisfy ||C_T,R^(1/2)-C_ref,R^(1/2)||_op <= ||C_T,R-C_ref,R||_op^(1/2), including singular limits. Couple both fields using the same finite standard Gaussian g. Fixed-pole Q is bounded/Lipschitz; dominated/L2 convergence gives S_K,T,R(u)->S_K,ref,R(u).",
+    "quantifier_warning": "does not justify interchanging R and T limits",
+    "status": "CLOSED at fixed R under the existing covariance convergence"
+  },
+  "hostile_mutations": [
+    "expansive_projection",
+    "insert_Lambda_U",
+    "omit_delta_layer",
+    "model_energy_as_actual_endpoint",
+    "vary_K",
+    "uncoupled_coordinate_spaces",
+    "false_sqrt_lipschitz_at_singular_covariance",
+    "arbitrary_nonorthogonal_chaos_invariance",
+    "interchange_R_T_limits",
+    "choose_R_of_T",
+    "omit_physical_edge_term",
+    "assume_A1_zero_from_mean",
+    "assume_A2_zero_from_covariance",
+    "assume_prime_phase_independence",
+    "use_453_as_dimension",
+    "reopen_raw_moments",
+    "reopen_source_mask",
+    "alter_epsilon",
+    "synthetic_benchmark_as_actual_gaussian",
+    "claim_gt79_without_prime_law"
+  ],
+  "local_cylinder": {
+    "commutation": "P is x-independent bounded linear projection, hence D_x^j(PF)=P D_x^jF for j=1,2,3",
+    "consumer norm": "||Q_cons||op<=43/20; ||Q_cons||_{L2(HS_tau)}<=sqrt(E_inf)",
+    "definition": "Psi_R(x)=s_{K,R,U}(x)-s_{K,R,delta}(x); s=||P_{<=K} Q_cons(M_R(x)+sqrt(u)L_ref,R g)||_{L2(g;HS_tau)}^2",
+    "derivatives": {
+      "Psi_derivative_bounds_C1_C2_C3": [
+        "5203190992411521/10234375000000",
+        "61724201821495911/1675878906250",
+        "2710080021962816136/878160546875"
+      ],
+      "Psi_derivative_bounds_decimal": [
+        508.40339467837765,
+        36830.9438058457,
+        3086087.198527466
+      ],
+      "Q_derivative_bounds_C1_C2_C3": [
+        "6456/655",
+        "1266560/17161",
+        "1453440000/2248091"
+      ],
+      "Q_derivative_bounds_decimal": [
+        9.856488549618321,
+        73.80455684400675,
+        646.5218712231845
+      ],
+      "pole_imaginary_part": "131/200",
+      "q_coefficient_modulus_upper": {
+        "q1": "221/500",
+        "q2": "221/500",
+        "q3": "317/500"
+      },
+      "resolvent_direction_bounds": {
+        "u1": "400/131",
+        "u2": "160000/17161",
+        "u3": "96000000/2248091"
+      },
+      "sample_map_operator_norm": "<=6",
+      "sampled_consumer_derivative_bounds_D1_D2_D3": [
+        "38736/655",
+        "45596160/17161",
+        "313943040000/2248091"
+      ],
+      "scope": "fixed R; bounds are crude valid cylinder derivative envelopes, not a prime Lindeberg closure"
+    }
+  },
+  "localization": {
+    "Lambda_U": "505188015348196189693235774226141659495879806382496275807827042414664568918197834015309/16107689666801183743028326831779334846580946960663900516250658618048401530900000000",
+    "Lambda_total_with_initial_upper_witness": "505204123037862990876978802552973438830726387329456939708343293073282617319728734015309/16107689666801183743028326831779334846580946960663900516250658618048401530900000000",
+    "R_table": [
+      {
+        "R": 953368280616,
+        "U": 1,
+        "ceil_log2_m": 40,
+        "coefficient_reduction_ratio_old_over_new": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+        "e_pair_squared_upper": "91531326295055162858576329867396119728726664396981/148963793846406250000000000000000000000000000000000000000",
+        "h_upper": "112/2860104841851",
+        "m": 953368280617,
+        "ratio_to_target_squared": "17661873829666015113626508440629501042716849443568390519261/17661873829680854115478515625000000000000000000000000000000",
+        "sqrt_Einf_upper": "2149190827101/1000000000000",
+        "sqrt_U_marginal_upper": "3/2",
+        "sqrt_delta_marginal_upper": "1414214446257/1000000000000",
+        "strictly_below_epsilon_over_4": true,
+        "target_epsilon_over_4_squared": "75881521/123494323840000",
+        "threshold_status": "certified sufficient; not claimed globally minimal"
+      },
+      {
+        "R": 1007195524155,
+        "U": 2,
+        "ceil_log2_m": 40,
+        "coefficient_reduction_ratio_old_over_new": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+        "e_pair_squared_upper": "24174797934533160430284643165192161277370338294029/39343575162343750000000000000000000000000000000000000000",
+        "h_upper": "28/755396643117",
+        "m": 1007195524156,
+        "ratio_to_target_squared": "4664766132646564427181633541282942782214188470145578850549/4664766132650727616943359375000000000000000000000000000000",
+        "sqrt_Einf_upper": "2149190827101/1000000000000",
+        "sqrt_U_marginal_upper": "316227766017/200000000000",
+        "sqrt_delta_marginal_upper": "1414214446257/1000000000000",
+        "strictly_below_epsilon_over_4": true,
+        "target_epsilon_over_4_squared": "75881521/123494323840000",
+        "threshold_status": "certified sufficient; not claimed globally minimal"
+      },
+      {
+        "R": 1137699372206,
+        "U": 4,
+        "ceil_log2_m": 41,
+        "coefficient_reduction_ratio_old_over_new": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+        "e_pair_squared_upper": "18204775387856938413011885450383325003361114084921/29627587817890625000000000000000000000000000000000000000",
+        "h_upper": "344/10239294349863",
+        "m": 1137699372207,
+        "ratio_to_target_squared": "3512791292472603681199102268091597797032885173853780054401/3512791292472830682250976562500000000000000000000000000000",
+        "sqrt_Einf_upper": "2149190827101/1000000000000",
+        "sqrt_U_marginal_upper": "1732050807569/1000000000000",
+        "sqrt_delta_marginal_upper": "1414214446257/1000000000000",
+        "strictly_below_epsilon_over_4": true,
+        "target_epsilon_over_4_squared": "75881521/123494323840000",
+        "threshold_status": "certified sufficient; not claimed globally minimal"
+      },
+      {
+        "R": 1339733575173,
+        "U": 8,
+        "ceil_log2_m": 41,
+        "coefficient_reduction_ratio_old_over_new": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+        "e_pair_squared_upper": "257251250143026722983143898469887925202583169955723/418666742241875000000000000000000000000000000000000000000",
+        "h_upper": "172/6028801088283",
+        "m": 1339733575174,
+        "ratio_to_target_squared": "49639170614699669446647411654625656130427349367259085348963/49639170614731913893554687500000000000000000000000000000000",
+        "sqrt_Einf_upper": "2149190827101/1000000000000",
+        "sqrt_U_marginal_upper": "2",
+        "sqrt_delta_marginal_upper": "1414214446257/1000000000000",
+        "strictly_below_epsilon_over_4": true,
+        "target_epsilon_over_4_squared": "75881521/123494323840000",
+        "threshold_status": "certified sufficient; not claimed globally minimal"
+      },
+      {
+        "R": 1715712785959,
+        "U": 16,
+        "ceil_log2_m": 41,
+        "coefficient_reduction_ratio_old_over_new": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+        "e_pair_squared_upper": "329445545930643731961713002286897069727753500094987/536160245612500000000000000000000000000000000000000000000",
+        "h_upper": "43/1930176884205",
+        "m": 1715712785960,
+        "ratio_to_target_squared": "63569773338757048772728037477432386433916017775662180216547/63569773338765744707031250000000000000000000000000000000000",
+        "sqrt_Einf_upper": "2149190827101/1000000000000",
+        "sqrt_U_marginal_upper": "38273277231/15625000000",
+        "sqrt_delta_marginal_upper": "1414214446257/1000000000000",
+        "strictly_below_epsilon_over_4": true,
+        "target_epsilon_over_4_squared": "75881521/123494323840000",
+        "threshold_status": "certified sufficient; not claimed globally minimal"
+      },
+      {
+        "R": 2463125307050,
+        "U": 32,
+        "ceil_log2_m": 42,
+        "coefficient_reduction_ratio_old_over_new": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+        "e_pair_squared_upper": "9853359345717186863293137874722152631210948557217/16035972051113281250000000000000000000000000000000000000",
+        "h_upper": "352/22168127763459",
+        "m": 2463125307051,
+        "ratio_to_target_squared": "1901303046799826236795807152422979479782301519497714011177/1901303046799946132110595703125000000000000000000000000000",
+        "sqrt_Einf_upper": "2149190827101/1000000000000",
+        "sqrt_U_marginal_upper": "3162277660169/1000000000000",
+        "sqrt_delta_marginal_upper": "1414214446257/1000000000000",
+        "strictly_below_epsilon_over_4": true,
+        "target_epsilon_over_4_squared": "75881521/123494323840000",
+        "threshold_status": "certified sufficient; not claimed globally minimal"
+      }
+    ],
+    "coefficient_reduction_factor": "10861542329986218078404569145862045679161415837223669929868281411915288231741253431329143500/346184988776786671896049247860639795504429363403370604625935338867594377326459256089209",
+    "coefficient_reduction_factor_decimal": 31374.966223591888,
+    "consumer_Lipschitz": "C1<=10 in normalized Schatten-2 L2",
+    "cut_HS_square": "E ||H-H_cut||_{2,tau}^2 <= h_m (C_* + u/(4 a_phi^2)); h_m=8(H_m+1)/(pi^2 m)",
+    "edge_term": "|e_edge|<=4 E_inf R/d for the two-layer projected-energy cylinder: at most 2R edge sites, each projected diagonal energy lies in [0,E_inf], so the pair-cylinder value lies in [-E_inf,E_inf]; tends to zero only after T->infinity at fixed R",
+    "eventual_envelope": "C_*=2, a_phi -> 1; h_m <= 8(ceil(log_2 m)+2)/(9m), using pi>3 and H_m<=1+ceil(log_2 m)",
+    "new_pair": "e_proj(U,R)+e_proj(delta,R)=20 sqrt(E_inf) sqrt(h_m)[sqrt(C_*+U/(4a_phi^2))+sqrt(C_*+delta/(4a_phi^2))]",
+    "new_single_layer": "e_proj(u,R)=20 sqrt(E_inf) sqrt(h_m) sqrt(C_*+u/(4 a_phi^2))",
+    "new_sqrt_h_coefficient": "2149190827101/50000000000",
+    "new_sqrt_h_coefficient_decimal": 42.98381654202,
+    "old_sqrt_h_coefficient": "21723084659972436156809138291724091358322831674447339859736562823830576463482506862658287/16107689666801183743028326831779334846580946960663900516250658618048401530900000000",
+    "old_weak_dual_pair": "43 sqrt(h_m)[Lambda_U sqrt(C_*+U/(4a_phi^2))+sqrt(C_*+delta/(4a_phi^2))]",
+    "order_of_limits": "fixed R -> T->infinity -> R->infinity; no R(T)"
+  },
+  "optional_multiplier_norm": {
+    "Lambda_U": "505188015348196189693235774226141659495879806382496275807827042414664568918197834015309/16107689666801183743028326831779334846580946960663900516250658618048401530900000000",
+    "M_q_lower_bound_from_limit_enclosure_1e-12": [
+      "635112861592037/200000000000",
+      "1587782153980093/500000000000"
+    ],
+    "M_q_upper_bound_enclosure_1e-12": [
+      "635114861592037/200000000000",
+      "1587787153980093/500000000000"
+    ],
+    "finite_scan_argmax": 2047,
+    "finite_scan_n": "0..2047",
+    "finite_scan_sup_enclosure_1e-12": [
+      "3175563094042243/1000000000000",
+      "793890773510561/250000000000"
+    ],
+    "operator_identity": "T_q=lambda0 I+sum lambda_j P_rho_j; chaos-n eigenvalue q_lambda(n); ||T_q||=sup_n |q_lambda(n)|",
+    "q_lambda_definition": "lambda0 + sum_j lambda_j rho_j^n",
+    "status": "certified interval for M_q; not used in the localize-first bound",
+    "tail_bound_n_ge_2048": "2416298616581946581220866217814634546977348741653481829804286701231025778534103775962368472421/503767952647259722076750055153420327355812301393552642795067403308443893179582844082585600000000",
+    "tail_bound_simple_upper": "<1/100"
+  },
+  "prime_smooth_comparison": {
+    "A1": "sum_p E[D Psi_R(Y_p) . V_p(K)]",
+    "A2": "(1/2) sum_p E[D^2 Psi_R(Y_p):(V_p(K)V_p(K)^T-Sigma_p)]",
+    "exact_identity": "E Psi_R(X_(T,R))-E Psi_R(G_R)=A1+A2+O_R(L^-3)",
+    "remainder": "O_R(L^-3), from the grouped prime-base cubic mass; proper-power deletion stays at its prior source-qualified scope",
+    "status": "A1 and A2 remain OPEN; Y_p depends on the same trace index K as V_p(K). No independence or mean-zero cancellation is available. The obstruction is unchanged in kind, with improved finite-cylinder derivative constants.",
+    "vector": "X_(T,R)=(Re xi_(K+r), Im xi_(K+r), Re chi_(K+r), Im chi_(K+r))_{|r|<=R}; ordinary-prime complex contribution V_p(K)=c_p exp(iT log p) exp(i2pi K s_p)(exp(i2pi r s_p), i s_p exp(i2pi r s_p))_{|r|<=R}, c_p=-log(p)/(a_phi L sqrt(p)), s_p=log(p)/L; realify coordinates and group p^v at the prime-base step"
+  },
+  "projection_contraction": {
+    "bounded_consumer_result": "|S_K(F)-S_K(G)| <= 2 sqrt(E_inf) ||F-G||_2",
+    "exact_multiplier_squared": "7761139416076220170204368647089/420064070993000600040000000000",
+    "finite_basis_replay": "replay script checks projection contraction on exact rational finite Hermite-coordinate vectors and rejects an expansive map",
+    "independent_of": [
+      "K",
+      "weak-dual rho count",
+      "Lambda_U",
+      "453"
+    ],
+    "proof": "P is orthogonal in L2(standard Gaussian; normalized HS); Pythagoras. Difference of squared norms <= (||F||+||G||)||F-G||.",
+    "statement": "||P_{<=K}(F-G)||_2 <= ||F-G||_2"
+  },
+  "remaining_theorem": "For each fixed R and the explicit Psi_R, prove A1_T,R + A2_T,R -> 0 (or directly E Psi_R(X_(T,R))-E Psi_R(G_R)->0), while retaining same-index dependence, full prime cutoff, original masks and proper powers; this is the first missing source-dependent prime law.",
+  "schema": "wp84-localize-first-hermite-projection-v1",
+  "source_sha256": {
+    "notes/WP84_DIRECT_MPRIME_TAIL_O1_OVER_R.md": "079b5694d5a5963b714cdfb8dd63a669c16c273ce7b86b09f42c13c1ebab2515",
+    "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW.md": "3a8cc3db925435dbce3c1d3fa8f8fa0f7003dd41160fa2997ec58616cfd89714",
+    "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md": "198ec5f110906aabeecd7ba8d698381fe288685dc62dacd97565b6a064bbb532",
+    "notes/WP84_MEHLER_WEAK_DUAL_CHAOS_CUTOFF.md": "3cb74c6e76fd3b5f508ab90de12573772b93ab0cfd68dfb2e3bab18a9a2ac37e",
+    "notes/WP84_MEHLER_WEAK_DUAL_CHAOS_CUTOFF_CERTIFICATE.json": "e71f010a0aca2cfdbee4b61d53223e739b13a403a5753f6c747bd06a0122f222",
+    "notes/WP84_R2_DISPLACEMENT_TAIL_TRUNCATION.md": "15c6a62e02a3fe6b75eeb485996ec2f5b668398f86f6a99d14a12b668cb15206",
+    "notes/WP84_TAIL_CAPPED_EXACT_FRONTIER_CONSUMER.md": "db1f810d41fe238509e9cfac6a1a5d5e404d66eef47b19917fc428d8977eea0e",
+    "notes/WP84_TAIL_CAPPED_FINITE_U_CURVATURE.md": "f7a7c1bde489476f86a6d332b6a2e9dba1df00657aa54632ae9ad44ef5b3be40"
+  },
+  "starting_head": "be51f8b9b6ca516ef92f2b2957897986d2c2b99e",
+  "strict_gt79": false,
+  "two_stage_localization": {
+    "decision": "does not improve the certified projected-energy rate",
+    "hostile_example": "For standard Gaussian g partitioned into d equal-probability intervals, Delta(g)=e_j e_j^T on interval j has rank one pointwise, but its degree-zero Hermite projection E Delta=I/d has rank d. Thus pointwise rank/boundary support does not pass through P_{<=K}.",
+    "no_optimized_r_m": true,
+    "reason": "existing O(1/r) resolvent estimates control scalar one-point traces; transferring them to the projected-energy cylinder by the available Schatten-2 Lipschitz bound yields at best the square-root Hilbert-tail scale. A bandwidth-r boundary rank estimate is not preserved by Hermite projection."
+  },
+  "unclosed_other_obligations": [
+    "fixed-U signed curvature lower bound",
+    "prime dependent-phase A1+A2 law",
+    "separate zero-side transfers"
+  ]
+}
