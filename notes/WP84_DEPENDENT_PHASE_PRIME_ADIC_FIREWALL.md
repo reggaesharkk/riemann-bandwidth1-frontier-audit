@@ -125,8 +125,9 @@ estimate. No sufficiency claim is made.
 
 - Haar A1: closed, exact zero.
 - Haar A2: closed, exact zero after exact grouped covariance subtraction.
-- Actual A1: open. Every current power remains in the first-order mean; its
-  absolute prime l1 bound is O(1), not o(1).
+- Actual A1: open. Every current power remains in the first-order mean. The
+  source coefficient l1 envelope sum_(p<=N) log(p)/(L sqrt(p)) diverges like
+  2 sqrt(N)/L by PNT, so a triangle estimate supplies no bounded A1 estimate.
 - Actual A2: open after removing the equal-power diagonal. Unequal
   opposite-sign, same-sign, periodic and near-alias response correlations
   remain.
@@ -159,8 +160,15 @@ Run these commands from the repository root:
     python src/wp84_dependent_phase_prime_adic_firewall.py
     python src/wp84_dependent_phase_prime_adic_firewall_replay.py
 
+Count reconciliation: the certificate lists 20 named hostile-mutation
+scenarios. The independent replay has 21 hostile-inference evidence checks;
+these check that the recorded evidence rejects the listed invalid moves, but
+the replay does not mutate the artifacts at runtime. Separately, it runs
+eight rational arithmetic assertion statements, checks six source hashes, and
+makes seven certificate/schema/field consistency assertions. The earlier
+sentence saying 19 was a count typo. The certificate records an open theorem,
+not a proof of the trace-grid transfer.
+
 The replay does not import the producer. It independently verifies the
-rational frequency enclosure and cutoff/kernel bounds, checks the recorded
-source SHA-256 values, and rejects 19 hostile mutations or invalid
-inferences. The certificate records an open theorem, not a proof of the
-trace-grid transfer.
+rational frequency enclosure, cutoff and kernel bounds, then checks the
+recorded source SHA-256 values.

@@ -112,7 +112,7 @@ def main():
     assert atom["natural_cutoff_lower_bound_N"] == replayed["N_lower"]
     verify_input_hashes(cert)
     count = reject_hostile_mutations(cert)
-    print(f"PASS: independent rational replay, source hashes, {count} hostile mutations.")
+    print(f"PASS: independent rational replay, source hashes, {count} hostile-inference evidence checks.")
     print("PASS: Haar cancellations are separated from the actual trace-grid theorem.")
     print("OPEN: actual A1/A2 trace-grid transfer; strict >79 remains OPEN.")
 

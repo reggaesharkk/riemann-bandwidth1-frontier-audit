@@ -7,7 +7,7 @@
     "remainder": "O_R(L^-3) from prime-base cube mass"
   },
   "A1_A2_status": {
-    "A1_actual": "OPEN; all current powers stay in first-order mean; absolute prime l1 bound is O(1), not o(1)",
+    "A1_actual": "OPEN; all current powers stay in first-order mean; the source coefficient l1 envelope sum_{p<=N} log(p)/(L sqrt(p)) diverges like 2 sqrt(N)/L by PNT, so triangle gives no bounded A1 estimate",
     "A1_exact_resonance": "none at m=0 by p-adic valuation",
     "A1_haar": "CLOSED zero",
     "A1_proper_power_current": "retained; prime-base cube mass only pays the Taylor remainder and does not imply first-order mean cancellation",

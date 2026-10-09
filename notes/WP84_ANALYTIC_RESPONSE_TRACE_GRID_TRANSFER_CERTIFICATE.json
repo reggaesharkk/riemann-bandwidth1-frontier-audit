@@ -1,0 +1,178 @@
+{
+  "A1_weighted_dual_mass": {
+    "exact_source_form": "sum_p sum_{a>=1} sum_{epsilon=+/-} gamma_(p,a,epsilon) sum_nu <c1_(p,nu),.> K_I(lambda_nu+epsilon*a*log(p)); current coefficients retain masks, carrier and proper powers.",
+    "status": "OPEN after summing over p, a, all sign orthants, masks and aliases; no o(1) bound.",
+    "valid_fixed_contour_bound": "For each fixed feasible signed contour and each sign orthant, Cauchy gives M1_R times [sum_{nu in orthant}|K_I(lambda_nu+epsilon*a log p)|^2 exp(-2 sum_q rho_q|nu_q|)]^(1/2), multiplied by |gamma_(p,a)|."
+  },
+  "A2_weighted_dual_mass": {
+    "exact_source_form": "(1/2)sum_p sum_{a,b,epsilon,epsilon'}' gamma_(p,a,epsilon)gamma_(p,b,epsilon') sum_nu c2_(p,nu)[.] K_I(lambda_nu+(epsilon*a+epsilon'*b)log(p)); prime denotes removal of opposite equal powers by Sigma_p.",
+    "status": "OPEN after p,a,b and all aliases are summed.",
+    "valid_fixed_contour_bound": "For each feasible signed contour and sign orthant, Cauchy uses M2_R and the corresponding squared-kernel sum; multiply by |gamma_(p,a)gamma_(p,b)|/2."
+  },
+  "alias_split": {
+    "far": "use |K_I(omega)|<=min(1,C/[T dist(omega,L Z)]); no source-matched aggregate estimate after response expansion is proved",
+    "m0": "exact current-base resonance impossible for nonzero current p-adic exponent r by unique factorization; covariance diagonal already removed in A2",
+    "m_nonzero": "not excluded. The explicit primorial family is an exact m=1 alias; its individual coefficient upper bound decays, but total family mass is not bounded.",
+    "near": "the kernel can have modulus 1 in the O(1/T) window; analytic pointwise decay is available but no count/weighted-l2 summation theorem closes the full family"
+  },
+  "branch": "codex/c5-c6-attack-20261006",
+  "complex_resolvent_domain": {
+    "base_hermitian_resolvent": "||R(H,z)||<=1/a",
+    "complexified": "||R(H+Delta,z)||<=1/[a(1-theta)]=400/131",
+    "consumer_bounds": {
+      "Cayley_U_norm_upper": "5",
+      "D2_Q_input_norm_upper": "9561369600/17161",
+      "D2_U_input_norm_upper": "103680000/17161",
+      "D_Q_input_norm_upper": "3773664/655",
+      "D_U_input_norm_upper": "14400/131",
+      "M1_R1_upper": "43212226464/16375",
+      "M1_decimal": "2.638914593221e+06",
+      "M2_R2_upper": "166449403229184/429025",
+      "M2_decimal": "3.879713378689e+08",
+      "Q_sup_upper": "11451/100",
+      "certified_simple_upper": "M1_R1<10^7; M2_R2<10^9",
+      "complex_input_map_upper": "9",
+      "q0_abs_upper": "22",
+      "q123_abs_upper": [
+        "221/500",
+        "221/500",
+        "317/500"
+      ],
+      "resolvent_norm_upper": "400/131",
+      "scope": "fixed R, uniform over Gaussian variables and states in the complex resolvent domain; scalar norm-square is continued by its real-analytic bilinear polarization"
+    },
+    "pole": "z=3142/2415 + i*131/200 and conjugate",
+    "proof": "R(H+Delta)=(I+R(H)Delta)^(-1)R(H); ||R(H)Delta||<=theta<1, so Neumann series converges",
+    "theta": "1/2",
+    "warning": "After complexification the Hermitian 1/a bound is not used; both conjugate pole branches use the Neumann bound."
+  },
+  "consistency": "Even if this one fixed-R cylinder comparison closed, it would establish only E Psi_R(X)-E Psi_R(G) for the selected bounded cylinder; it would not imply full-vector Gaussian convergence or settle prior fifth-moment/nonexact-correlation audits.",
+  "decision": "C",
+  "dependent_phase_law": "OPEN",
+  "first_remaining_theorem": "For each fixed R prove a source-matched p-summed signed or weighted-l2 estimate for A1 and A2 on the common trace-index path, with the actual response coefficients, the exact grouped current weights, all sign orthants, near aliases, and m!=0 periodic aliases. Fixed-contour Parseval and pointwise Cauchy decay alone do not imply the required total o(1).",
+  "frozen": {
+    "K": 32,
+    "a": "131/200",
+    "cutoff": "N=floor(X exp(-sqrt(log X)))",
+    "delta": "1/100000",
+    "quantifiers": "fixed R, then T->infinity",
+    "theta": "1/2"
+  },
+  "low_degree_reuse": {
+    "closed_existing_degree_1_2": [
+      "exact grouped covariance diagonal",
+      "ordinary unweighted covariance normalization in its previously proved scope"
+    ],
+    "closed_new_analytic_weight": [
+      "individual high-height response coefficient bounds from Gamma"
+    ],
+    "still_open": [
+      "p-excluded response coefficients paired with the trace grid, including the multi-support alias family; generic degree-1/2 transfer does not apply to the unbounded response degree"
+    ]
+  },
+  "many_small_exponent_exact_alias": {
+    "Gamma": "Gamma_T(nu)>=min(1/4,131*L_y/(51200*(pi(y)-1)))*(L_y-log 2); since (pi(y)-1)/L_y->0, Gamma>= (L_y-log 2)/4 eventually.",
+    "alias": "lambda_nu+log(2)=log(X_y)=L_y; exact m=1 periodic alias.",
+    "asymptotic_cutoff": "PNT gives L_y=log X_y~y and log N_y=L_y-sqrt(L_y)+o(1)~y, so all q<=y are retained for large y.",
+    "coefficient_status": "The kernel is exactly modulus one, but any actual response coefficient at this index is bounded by M_j,R*exp(-Gamma). Its existence and the sum over the full alias family are not inferred.",
+    "explicit_X": "200560490130",
+    "explicit_cutoff_check": "X_31>1323*32 and X_31<2^38; e<3, e^3<21 imply e^7<1323, log(X_31)<38, hence X_31 exp(-sqrt(log X_31))>32 and N_31>=32.",
+    "explicit_support_primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31
+    ],
+    "explicit_support_size": 10,
+    "explicit_y": 31,
+    "exponent_bound": "max_q |nu_q|=1",
+    "family": "For y>=3, X_y=2*product_{3<=q<=y, q prime} q; T_y=2*pi*X_y; p=2,r=1, nu_q=+1 on every odd prime q<=y."
+  },
+  "multi_index_optimization": {
+    "B_q_prime": "8 log(q)/L * sum_{j<=J_q} j*q^(-j/2)*exp(j*rho)",
+    "Gamma_definition": "sup_{rho_q>=0, sum B_q(rho_q)<=theta*a} sum_(q in S)|nu_q|rho_q",
+    "exact_optimizer": "For nonzero nu_q, the unique optimizer satisfies |nu_q|=mu*B_q'(rho_q), sum B_q(rho_q)=theta*a, mu>0; B_q is strictly convex and increasing.",
+    "feasible_constraint": "sum_(q in S) B_q(rho_q)<=theta*a",
+    "global_weight_caveat": "Gamma pointwise Cauchy does not itself prove sum_nu exp(2 Gamma_T(nu)) E||c_nu||^2<infinity.",
+    "height": "h(nu)=sum_q |nu_q| log(q)",
+    "proof_cost": "At rho_q=eta log(q), B_q<=128 eta/L, so the total is <=128 eta |S|/L<=131/400.",
+    "rigorous_lower_bound": "Gamma_T(nu)>=eta_T(S)*h(nu), eta_T(S)=min(1/4,131*L/(51200*|S|))",
+    "support_condition": "This bound is valid for every finite support S subset of the retained primes; it uses a simultaneous perturbation budget, not a product of separate strips."
+  },
+  "old_adversarial_atom": {
+    "Gamma_lower": "167889207/51200",
+    "R1_coefficient_upper": "1350382077/611486836695539372484309887430171020692508556622022511770318635050997485147007915180373446273173572367132106070065735926030900607764125639789433516283751103382907640827191657095502156137964925768391451426881048172670089307849565378303382326682966298139644681002757118604791614246056727563352351936767666825592052409310188171567033204653103553942003170578687630126447728382210745957224037105089306483752981006660767936088078507527063825913206009719064365371640157329191188024502414278634731713622353282325512244852892299944847651175407696759887507589729714779953295426283231434418963170202028366857036493450134589949515356245813346193714561331634982132630862870346947951790412356574324429726828324224427508383296472807938069703052954761791941769124057817624012502858777813777450119608832097905460576401186892596422149684005923637419058014136096523946406339713071993718910192131494736733315895050372435197365148039509545668607866680227750803666326480035409906270668522608186558936239833088000",
+    "R2_coefficient_upper": "162548245341/500654847544472861221528720333452523191991380734280931511948382448004190964112730553930759136160862375589411844866321289437799872606877867577598691457321215894755630927263169246942390337958782972870500855758858191373635620801831653485894279971678656601834082571007390857673134163958945692494738148228527213453492910122716565470508436309728534790015095911300497166029077612935048252477180379791869683572753199203503747672114278037783507466437420457483949148030378813275285195061351690632186590528301749904013150473305570579844014399865051722157896839091203976086760630269395736930526095602910725364198629012297695521165697926259677196103797090276141621091518975096563635528400116945228126838840690458750022488823987111499294569374606711217152323470322338179660236715624335030287285429731280160095846928471768313320635053779849978136853749073929028981120190640077694857357719807661315700402389072492431317842714957348440516172690844436470970501804805528991860759109852885452745129046363340800",
+    "T": 7800,
+    "certified_decimal_upper": "R1 coefficient<10^-974; R2 coefficient<10^-972, since 2^3279>10^981",
+    "frequency_interval": [
+      "1286529/1000000000000",
+      "1286530/1000000000000"
+    ],
+    "interpretation": "Analyticity crushes this hypothetical coefficient. No claim that it occurs in the actual response.",
+    "p": 2,
+    "prior_l2_only_lemma": "FALSE for L2 coefficient control alone",
+    "r": 1,
+    "response_character": "z_3^253891 z_5^-173308",
+    "support_size": 2
+  },
+  "one_variable_fourier": {
+    "M1_R": "43212226464/16375",
+    "M2_R": "166449403229184/429025",
+    "coefficient_bound": "||c_(j,p,nu)||_(L2_g, response norm) <= M_(j,R)*exp(-rho_q*|nu_q|), j=1,2; other torus variables remain on unit circles",
+    "cost_bound": "B_q(eta log q)<=128*eta/L",
+    "proof": "q^(-j(1/2-eta))-q^(-j/2)<=eta*j*log(q)*q^(-j/4); sum_j j q^(-j/4)=q^(-1/4)/(1-q^(-1/4))^2 and (log q)^2 q^(-1/4)/(1-q^(-1/4))^2<=16",
+    "single_variable_eventual_strip": "if L>=100, eta=1/4 gives B_q<=32/L<=8/25<131/400=theta*a",
+    "strip_choice": "rho_q=eta*log(q), 0<eta<=1/4"
+  },
+  "prior_count_reconciliation": {
+    "additional_math_correction": "The prior certificate's claimed O(1) direct coefficient l1 bound for A1 was false. The source envelope sum_{p<=N} log(p)/(L sqrt(p)) is asymptotic to 2 sqrt(N)/L by PNT and diverges; this does not prove the signed A1 diverges.",
+    "certificate_named_hostile_scenarios": 20,
+    "certificate_schema_field_consistency_assertions": 7,
+    "corrected_prior_note": "The previous note's 19 count was a typo. The prior replay's 21 describes hostile-inference checks, not named mutation scenarios.",
+    "distinction": "The replay checks that the evidence rejects invalid inferences; it does not mutate the source files at runtime.",
+    "ordinary_rational_arithmetic_assert_statements": 8,
+    "prior_replay_hostile_inference_evidence_checks": 21,
+    "source_hash_comparisons": 6
+  },
+  "prior_source_hashes": {
+    "notes/WP84_COMPILED_MEHLER_PRIME_LINDEBERG.md": "443529d6c30664ab1b1d6affaef5676e1f7e370a10b80fa0c6dd4352ad2a9e21",
+    "notes/WP84_DEPENDENT_PHASE_PRIME_ADIC_FIREWALL.md": "3338ebdfb8bf2d42addcebc8afe1141f2a34f338ac5ce3e5106f718f0d2604e0",
+    "notes/WP84_DEPENDENT_PHASE_PRIME_ADIC_FIREWALL_CERTIFICATE.json": "cdc04e119bdbf879c6f20c90e894a89b39e28fc4fb36d09c515afcfa5e4e2347",
+    "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md": "198ec5f110906aabeecd7ba8d698381fe288685dc62dacd97565b6a064bbb532",
+    "notes/WP84_LOCALIZE_FIRST_HERMITE_PROJECTION.md": "d7ca7e1e0cf2a77fe44b2cac0c10085c6a45ca6bbcb2f8c1ab3feb7d2f359e23",
+    "notes/WP84_LOCALIZE_FIRST_HERMITE_PROJECTION_CERTIFICATE.json": "557e4adb831b6284c21d1396d22872baba4eac4989a63b8a4a57511205ef1f59",
+    "notes/WP84_POSITIVE_LAG_GAUSSIAN_VIABILITY_AND_PHASE_RESPONSE.md": "6eab68d8a07df5ca61e94a770838c3736a442807eda27d1883f8128c1a977e8c",
+    "notes/WP84_PRIME_BASE_GROUPED_LINDEBERG.md": "5db122d68e05b3af4c70551d31012b0ab3cce89a7f6b8eff1fe79a82e1313eb5",
+    "src/wp84_dependent_phase_prime_adic_firewall.py": "762f547b1d4d8f0a8ff08f8488054687a71fc9aee42d714ed6ecf98b14d5573a",
+    "src/wp84_dependent_phase_prime_adic_firewall_replay.py": "d8dd65439ba8afa16cb73c1189b7ef5a2c263f4ecac4925fdbb575104f21b3ff"
+  },
+  "schema": "wp84-analytic-response-trace-grid-transfer-v1",
+  "signed_cancellation_audit": {
+    "U_minus_delta": "Psi is a difference, but no fixed sign or exact cancellation identity for A1/A2 is established",
+    "conjugation": "pairs conjugates into 2*Re(term); not identically zero",
+    "current_power_pairing": "only equal opposite powers are exact and are subtracted; other pairings retain p-adic frequencies",
+    "translation_or_carrier": "common K path and carrier phases remain in K_I; no exact sign reversal identity found"
+  },
+  "source_grouped_block": {
+    "B_q_rho": "8 log(q)/L * sum_{j=1}^{J_q} q^(-j/2)*(exp(j*rho)-1), valid for |s|<=rho",
+    "J_q": "max{j>=1:q^j<=N}",
+    "coefficient_bound": "||A_(q,+/-j)||op <= 4 log(q)/(L q^(j/2)) by Fourier coefficient extraction from the real-phase block",
+    "complex_radial_difference": "Delta_q(s)=sum_{j<=J_q}[(e^{js}-1)A_(q,j)+(e^{-js}-1)A_(q,-j)]",
+    "one_power_bound": "||B_(q^j)||op <= 4 log(q)/(L q^(j/2))",
+    "same_phase": "all q^j use z_q^j from one base z_q"
+  },
+  "starting_head": "59856c2c4f2e5cbf1191f7ea84d3dc8b479a9654",
+  "strict_gt79": "OPEN",
+  "valid_weighted_l2": {
+    "not_proved": "No single global weight exp(2*Gamma_T(nu)) has a proved finite weighted l2 norm. Splitting by all sign orthants costs 2^|S| and does not yield a useful uniform bound when the retained prime support grows.",
+    "proof": "Shift the selected finite torus coordinates to z_q=exp(i theta_q+s_q), apply Parseval on that shifted torus, and use the uniform response bound M_(j,R).",
+    "statement": "For every fixed finite signed shift vector s with sum_q B_q(|s_q|)<=theta*a, sum_nu exp(2*sum_q s_q*nu_q) E_g||c_(j,p,nu,g)||^2 <= M_(j,R)^2, j=1,2."
+  }
+}

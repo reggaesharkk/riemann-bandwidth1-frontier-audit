@@ -157,7 +157,7 @@ def build():
         "A1_A2_status": {
             "A1_haar": "CLOSED zero",
             "A2_haar_after_covariance": "CLOSED zero",
-            "A1_actual": "OPEN; all current powers stay in first-order mean; absolute prime l1 bound is O(1), not o(1)",
+            "A1_actual": "OPEN; all current powers stay in first-order mean; the source coefficient l1 envelope sum_{p<=N} log(p)/(L sqrt(p)) diverges like 2 sqrt(N)/L by PNT, so triangle gives no bounded A1 estimate",
             "A2_actual": "OPEN after exact equal-power covariance subtraction; unequal opposite-sign, same-sign and periodic/near-alias response correlations remain",
             "A2_proper_power_current": "CLOSED O_R(L^-1) absolute bound: proper-power group square mass O(L^-2), ordinary-base square mass O(1), Cauchy for cross terms",
             "A1_proper_power_current": "retained; prime-base cube mass only pays the Taylor remainder and does not imply first-order mean cancellation",
