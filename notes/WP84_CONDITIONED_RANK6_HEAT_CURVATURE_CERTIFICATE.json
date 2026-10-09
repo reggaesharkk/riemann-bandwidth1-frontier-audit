@@ -1,0 +1,214 @@
+{
+  "title": "WP84 conditioned rank-six heat-curvature audit certificate",
+  "start_head": "97d52cfb784feb300197984a78e0d36ea4387dbb",
+  "branch": "codex/c5-c6-attack-20261006",
+  "consumer": "conditioned rank-six cubic at z=i; frozen q and threshold unchanged",
+  "source_scope": "canonical source section and inherited Gaussian ensemble only; no selector is reconstructed or fabricated",
+  "q_coefficients_ascending": [
+    {
+      "re": "11/1250",
+      "im": "441/1000"
+    },
+    {
+      "re": "-1139/1000",
+      "im": "169/5000"
+    },
+    {
+      "re": "-24/625",
+      "im": "-1099/1000"
+    },
+    {
+      "re": "242/625",
+      "im": "0"
+    }
+  ],
+  "unit_circle_energy_fourier": {
+    "identity": "|q(u)|^2=c0+sum_{k=1}^3(c_k*u^k+conjugate(c_k)*u^(-k))",
+    "c0": {
+      "re": "17826383/6250000",
+      "im": "0"
+    },
+    "c1": {
+      "re": "-42431/12500000",
+      "im": "6816213/3125000"
+    },
+    "c2": {
+      "re": "-23150443/25000000",
+      "im": "-36401/6250000"
+    },
+    "c3": {
+      "re": "1331/390625",
+      "im": "-53361/312500"
+    }
+  },
+  "resolvent_trace_form": {
+    "definition": "U=I+2iR, R=(H-iI)^(-1), m(z)=tau((H-zI)^(-1)); m_z=tau(R^2), m_zz=2*tau(R^3) at z=i",
+    "C0": "2500529/2500000",
+    "A": {
+      "re": "-2589491/781250",
+      "im": "-11532549/3125000"
+    },
+    "B": {
+      "re": "22894891/6250000",
+      "im": "3238061/1562500"
+    },
+    "C": {
+      "re": "-53361/78125",
+      "im": "-5324/390625"
+    },
+    "formula": "E(H)=tau(Q*Q)=C0+2*Re[A*m(i)+B*m_z(i)+C*m_zz(i)]",
+    "q_at_one": {
+      "re": "-3907/5000",
+      "im": "-3121/5000"
+    },
+    "E_infinity_abs_q1_squared": "2500529/2500000",
+    "exact_energy_identity": "C0=|q(1)|^2=2500529/2500000, not 1"
+  },
+  "heat_flow": {
+    "bridge": "H_u=H_1+sqrt(u)*W; m_u(z)=E tau((H_u-zI)^(-1)); E_u=E tau(q(U_u)^*q(U_u))",
+    "source_gaussian_ensemble": "At conditioned scale a=1, W=diag(h)+[diag(alpha),J], alpha=Im Z_L, h=2*Re Z_L-2*Im(Z_L'/L); Z_L(tau)=sum_{p<=X} gamma_p*(-log(p)/(L*sqrt(p)))*exp(i*tau*log(p)), independent standard circular complex gamma_p (E|gamma_p|^2=1, E gamma_p^2=0); grid covariance K_L(r)=L^(-2)*sum_{p<=X}(log p)^2/p*exp(i*2*pi*r*log(p)/L)",
+    "derivative": "E_u'=2*Re[A*C_u(i)+B*partial_z C_u(i)+C*partial_z^2 C_u(i)]",
+    "covariance_normalization": "C_u(z)=partial_u m_u(z)=(1/2)*E Xi_z(R_u(z))+o(1); partial_z C_u=(1/2)*E Xi_zz+o(1); partial_z^2 C_u=(1/2)*E Xi_zzz+o(1)",
+    "conditioned_stencil": "E_u'=Re E[A*Xi_z+B*Xi_zz+C*Xi_zzz]+o(1), evaluated at z=i",
+    "Xi_z": "<r1,r2>/(3d)-T12/pi^2+<h1,h2>/d-(<r2,q1>+<r1,q2>)/(2d)",
+    "Xi_zz": "(<r2,r2>+2<r1,r3>)/(3d)-(T22+2*T13)/pi^2+(<h2,h2>+2<h1,h3>)/d-(<r3,q1>+<r2,q2>+<r1,q3>)/d",
+    "Xi_zzz": "2*(<r2,r3>+<r1,r4>)/d-6*(T23+T14)/pi^2+6*(<h2,h3>+<h1,h4>)/d-3*(<r4,q1>+<r3,q2>+<r2,q3>+<r1,q4>)/d",
+    "state_definitions": "r_k=diag(R^k), h_k=diag(JR^k), q_k=diag(JR^kJ), T_ab=d^(-1)*sum_(i!=j)(R^a)_ij(R^b)_ij/(i-j)^2"
+  },
+  "fourier_channel": {
+    "grouped": "-(1/pi^2)*Re E[A*T12+B*partial_z(T12)+C*partial_z^2(T12)]",
+    "derivatives": "partial_z T12=T22+2*T13; partial_z^2 T12=6*(T23+T14)",
+    "kernel": "S4(t)=sum_(r!=0)e^(irt)/r^4=pi^4/45-pi^2*t^2/6+pi*t^3/6-t^4/24, 0<=t<=2*pi",
+    "state_width": "base 2x4; differentiated representation through second derivative at most 2x8",
+    "coefficient_kernel_audit": "actual A,B,C inserted into grouped linear channel; no PSD matrix completion derived",
+    "S2_rejected": "using S2 after both commutators would lose two displacement powers; S4 is required"
+  },
+  "sign_audit": {
+    "pointwise_curvature": "FALSIFIED even on exact rank-two sharp-Loewner 2x2 states; this is a statewise Xi functional, not a Gaussian expectation or zeta counterexample",
+    "sharp_state_positive": {
+      "a": [
+        1,
+        0
+      ],
+      "h": [
+        0,
+        0
+      ],
+      "H": "[[0,1/pi],[1/pi,0]]",
+      "curvature": "pi^2*(3+pi^2)*(46641783*pi^6-142650593*pi^4-135154723*pi^2+45959989)/(18750000*(1+pi^2)^5)",
+      "sign_proof": "with x=pi^2>9, P(9)=21276729256>0, P'(9)=8631087872>0 and P''(x)>0 for x>=9, hence P(x)>0"
+    },
+    "sharp_state_negative": {
+      "a": [
+        1,
+        0
+      ],
+      "h": [
+        1,
+        -1
+      ],
+      "H": "[[1,1/pi],[1/pi,-1]]",
+      "curvature": "-pi^2*(-137879967+221624213*pi^2+1018618526*pi^4+183157196*pi^6+369045432*pi^8)/(18750000*(1+2*pi^2)^5)",
+      "sign_proof": "for x=pi^2>9, -137879967+221624213*x>0; all remaining terms are positive, and the denominator is positive"
+    },
+    "source_compatibility": "Neither 2x2 state is asserted to be a sampled zeta matrix or the conditioned Gaussian law; no actual-source counterexample is claimed",
+    "F61_shortcut": "not used; the old F61 Hessian-kernel positivity shortcut remains rejected"
+  },
+  "finite_u_bound": {
+    "hypotheses": "H Hermitian, ||R||<=1, J finite compression of the discrete Hilbert transform with ||J||<=1",
+    "bounds": "|<r_a,r_b>/d|, |<h_a,h_b>/d|, |<r_a,q_b>/d|<=1; |T_ab|<=2*sum_(r>=1)r^(-2)=pi^2/3",
+    "Xi_bounds": {
+      "Xi_z": "8/3",
+      "Xi_zz": "8",
+      "Xi_zzz": "32"
+    },
+    "curvature_envelope": "|E_u'|<=M=(8/3)|A|+8|B|+32|C|",
+    "coefficient_norm_squares": {
+      "|A|^2": "240287104662697/9765625000000",
+      "|B|^2": "691936658537417/39062500000000",
+      "|C|^2": "71213253001/152587890625"
+    },
+    "coefficient_norms_decimal": {
+      "|A|": "4.960383001085719872721643909",
+      "|B|": "4.208750225251894797930964056",
+      "|C|": "0.6831567718081652742243470273",
+      "sum": "9.852290... (diagnostic)"
+    },
+    "M_decimal": "68.7587065027717",
+    "U0": "1",
+    "proved_integral_lower_bound": "integral_0^1 curvature du >= -M (deterministic bound only)",
+    "required_finite_integral_with_tail_budget": "4462194845986506963257044060880661/4976884915749570021691469257000000",
+    "tail_allowance": "34148687712345924132945804854399/24884424578747850108457346285000000",
+    "gap_from_current_bound_decimal": "69.65529039440756"
+  },
+  "large_u_tail": {
+    "fixed_d": "E_u->|q(1)|^2 as u->infinity for each fixed finite d, per existing Gaussian invertibility argument",
+    "uniform_d_status": "OPEN; no dimension-uniform tail theorem in the cited sources",
+    "deterministic_reduction": "|E_u-E_infinity|<=K*E[tau((I+H_u^2)^(-1/2))], K=4*S0*S1=22665741/390625, S0=1967/625, S1=11523/2500",
+    "small_ball_form": "For H_u=sqrt(u)*(W+H_1/sqrt(u)), any delta>0: tail <= K*(omega_u(delta)+1/(sqrt(u)*delta)), omega_u(delta)=E tau(1_{|W+H_1/sqrt(u)|<=delta})",
+    "missing_hypothesis": "a source-uniform, dimension-uniform expected empirical small-ball bound omega_u(delta)->0 with a quantitative rate for the actual sharp-Loewner Gaussian W and allowed deterministic H_1"
+  },
+  "theorem_target": {
+    "threshold": "21/200=0.105",
+    "model_energy": "1272283602671916206561064875108101/12442212289373925054228673142500000",
+    "model_energy_decimal": "0.10225541672830079650120326193763",
+    "model_cushion": "34148687712345924132945804854399/12442212289373925054228673142500000",
+    "model_cushion_decimal": "0.0027445832716992034987967380623722",
+    "required_total_integrated_curvature": "C0-21/200=2238029/2500000",
+    "required_total_decimal": "0.8952116",
+    "U0": "1",
+    "tail_allowance_exact": "34148687712345924132945804854399/24884424578747850108457346285000000",
+    "finite_interval_required": "integral_0^1 curvature du >= 4462194845986506963257044060880661/4976884915749570021691469257000000",
+    "finite_interval_required_decimal": "0.89658389163584960174939836903119",
+    "rigorous_zeta_side_energy_upper_bound": "none",
+    "distance_to_threshold": "unknown; model cushion is not a zeta-side bound",
+    "raw_high_moment_expansion": "not used; retain bounded Cayley/resolvent consumer",
+    "shifted_Bernoulli_warning": "no finite dilation-jet closure is invoked; its prior obstruction remains in force",
+    "strict_gt79": "OPEN"
+  },
+  "conditioned_vs_frontier_diagnostic": {
+    "conditioned_proxy": "|A|+|B|+|C| = sqrt(|A|^2)+sqrt(|B|^2)+sqrt(|C|^2) ~=9.85229",
+    "frontier_exact_scale": "a_*^3=13891/9660; A_*=2*i*a_*(c1+2*c2+3*c3), B_*=(2*i*a_*)^2*(c2+3*c3), C_*=((2*i*a_*)^3/2)*c3 from the exact-frontier note",
+    "frontier_proxy": "|A_*|+|B_*|+|C_*| ~=13.0088825022, inherited/replayed from WP84_EXACT_FRONTIER_ONE_POINT_HEAT_FLOW.md",
+    "frontier_deterministic_envelope": "M_*=(8/3)|A_*|/a_*^3+8|B_*|/a_*^4+32|C_*|/a_*^5 ~=59.7168133840; strictly smaller than the conditioned M~=68.7587065028 but still far too large to prove the integrated target",
+    "comparison_scope": "finite scalar envelopes compared; no exact finite kernel eigen-signature or positive completion established for either consumer"
+  },
+  "source_sha256": {
+    "notes/WP84_CONDITIONED_RANK6_79_CONSUMER.md": "f00a8997fbd0357b730a8cb8df3530e0250990017d9cab5a5c964cf29d8f7ce5",
+    "notes/WP84_EXACT_FRONTIER_ONE_POINT_HEAT_FLOW.md": "6c92153d647bd6e5804b407ea3cc9c13fcea4b01e64e75a5d3d2da33fc74880e",
+    "notes/WP84_DIRECT_DEGREE2_HEAT_CURVATURE_STENCIL.md": "5004fd4db46f9318e39c028ae917189a651fd358964a18163e864adf6e003b78",
+    "notes/WP84_GAUSSIAN_COVARIANCE_HADAMARD.md": "4bf5279133622b9f0e0c7bfd3177cc2168ba3345c12b61efcb3c29e154a40e4b",
+    "notes/WP84_GAUSSIAN_DRIFT_ELIMINATION.md": "165af3acf087f764c50089c29b36e6a5b6761970ada4d1ee78fea7e805c6c56d",
+    "notes/WP84_CIRCULAR_GAUSSIAN_Q_FIELD.md": "2c68c9faef16bd12281552c7d722501055ce752c63c1a86948cbffb5c8e2e410",
+    "notes/WP84_RESONANT_D2_EXPLICIT_FUNCTIONAL.md": "bd8e91985a066338a7defcf97d4e5709d4509653e74990d643512a19034dd3e1",
+    "src/wp84_conditioned_rank6_79_consumer.py": "e9c81e33d75310e6ddb9f523ad93a1cf23e6ab82d27f9ff9d507f0184f25bf90",
+    "src/wp84_exact_frontier_one_point_heat_flow.py": "11e668f0f0340b969aae079d8945f61c6596c4210ab15eda1095a84c58b9e666",
+    "src/wp84_direct_heat_curvature_stencil.py": "852f826eae23cb1d94fbc10849f35e4e57959936c9b8bb574a1d1d87eafed9b5",
+    "src/wp84_gaussian_covariance_hadamard_gate.py": "d21f610cb07b12d1212c19c1cd85729f1af9b942c0d57136c71cd302dfcd18e2",
+    "src/wp84_resonant_d2_explicit_gate.py": "0ebca6a43eb43242b0d113a39c59d335e07bcf8decf7d8c6bf0f5e72b424fc6f",
+    "src/wp84_heat_s4_kernel_gate.py": "e259824c3125eaf69018f43dabf2771b7a2c888d90b3c5c8cef3c9721b2fed26"
+  },
+  "hostile_mutations_required": [
+    "alter_q",
+    "alter_pole",
+    "omit_conjugate_fourier",
+    "alter_C0",
+    "drop_mzz",
+    "confuse_Xi_with_Xiz",
+    "omit_Xizzz",
+    "alter_T12_derivative_factor",
+    "use_S2_instead_of_S4",
+    "assert_F61_Hessian_positive",
+    "energy_positive_implies_curvature_positive",
+    "model_endpoint_as_zeta_endpoint",
+    "omit_large_u_tail",
+    "swap_limits_without_bound",
+    "reopen_raw_H6",
+    "use_shifted_Bernoulli_finite_closure",
+    "alter_threshold",
+    "alter_model_energy",
+    "claim_79_5489_from_model",
+    "fabricate_source_selector"
+  ],
+  "decision": "E"
+}
