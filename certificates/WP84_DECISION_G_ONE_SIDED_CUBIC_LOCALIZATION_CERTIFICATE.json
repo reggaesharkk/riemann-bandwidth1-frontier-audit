@@ -1,0 +1,95 @@
+{
+  "arithmetic_boundary": {
+    "endpoint_phase_warning": "Cubic products from h edges assign frequencies to distinct endpoint indices; an Omega/L integer test alone does not collapse all endpoint-dependent phases. Keep the exact finite endpoint sums and classify near aliases only after their actual phase forms are written.",
+    "exact_resonance": "Omega=sum sigma_t log(n_t)=0 iff products on + and - sign sides agree; for 2-vs-1 prime-power triples, the two terms must be powers of the same prime and exponents add",
+    "example_exact": "2*4=8",
+    "example_nonzero": "2*3/5=6/5, so Omega=log(6/5) is nonzero although all entries are prime powers",
+    "no_new_estimate": "No deterministic three-frequency estimate for the centered one-sided increments is proved; no Gaussian/random-phase or imported moment bound is used",
+    "signed_variables": "u_{n,sigma}(k)=c_n exp(i*sigma*(T log n+2*pi*k*alpha_n)); every n=p^v<=N retained"
+  },
+  "classification": "G2 \u2014 exact one-sided localization proved; source arithmetic estimate unresolved",
+  "decision": "G2 \u2014 the two-endpoint interaction and mixed-boundary self-normalization are o(1); full deletion reduces to one-sided centered cubic estimates, which remain open",
+  "exact_replay": {
+    "abstract_L2_L3_spike": {
+      "M": 10000,
+      "absolute_cubic_mass": "1000000.0",
+      "square_mass": "10000"
+    },
+    "admissible_density": "1/4",
+    "cross_hilbert_schmidt_square": "65/36",
+    "cross_trace_correction": "-379/12",
+    "cubic_good_admissible_intersection_hostile": true,
+    "one_row_formula": "669/32",
+    "one_row_increment": "669/32",
+    "orientation_edge": "-5/2",
+    "rational_source_form_dimension": 8,
+    "scope": "exact rational algebra and abstract hostile arrays; not prime-source asymptotics",
+    "self_normalization_F": "-12571/24",
+    "self_normalization_G": "-4105139/12000",
+    "self_normalization_lhs": "-12571/192",
+    "self_normalization_mT": "-426403/19200",
+    "self_normalization_rhs": "-12571/192",
+    "separated_block_gap": 5,
+    "separated_cube_identity_lhs": "-539047/3000",
+    "separated_cube_identity_rhs": "-539047/3000"
+  },
+  "independent_replay": "src/wp84_decision_g_one_sided_cubic_localization_replay.py",
+  "one_sided_reduction": {
+    "ZL": "Z_L(u)=Tr(D_L(u)^3)-u*mT",
+    "ZR": "Z_R(v)=Tr(D_R(v)^3)-v*mT",
+    "cancellation_note": "separate one-sided absolute bounds are sufficient, not necessary; cancellation between Z_L and Z_R is possible but unproved",
+    "epsilon_T": "24*C_A*K_T*M*(M+N*L)/(pi^2*(d-2M)*(d-2M+1)^2) + 12*K_T*C_B*M*log(d)/(d*(d-2M)) = o(1)",
+    "identity": "Tr(D^3)-r*mT=Z_L(u)+Z_R(v)+J_sep(u,v), J_sep=3Tr(D_L*C*C*)+3Tr(D_R*Cstar*C)",
+    "inequality": "E_{u,v}|F(I)|/d <= (E_u|Z_L(u)|+E_v|Z_R(v)|)/(d-2M)+epsilon_T",
+    "single_remaining_estimate": "(E_u|Z_L(u)|+E_v|Z_R(v)|)/(d-2M)=o(1), or an equally strong direct bound on the joint admissible pairs"
+  },
+  "preservation": "notebooklm_packet/ untouched",
+  "push": "NO",
+  "row_increments": {
+    "current_control": "local S2 plus ||D_old||op<=K_T bounds cumulative absolute increments by O(K_T*(M+N*L)), whose /d bound O(K_T*M/d) is nonclosing; it does not bound centered sums because mT is unknown",
+    "first_new_three_frequency_term": "beta_k^3 inside a^3; beta*A^2 occurs in a*||h||^2; h*D_old*h also contains signed beta*A^2 and A^3 terms",
+    "identity": "Tr([[D_old,h],[h*,a]]^3)-Tr(D_old^3)=a^3+3*a*||h||^2+3*h*D_old*h",
+    "source_values": "a=s0+beta_k; h_j=(A_j-A_k)/(pi*(k-j))=H_{j,k} for old j and new endpoint k",
+    "telescoping": "Z_side(q)=sum_{t=0}^{q-1}(increment_t-mT), for both left growth k=b+t and right growth k=b+d-1-t"
+  },
+  "same_section_selection": {
+    "admissible_density": "gamma>=1/4 under exact uniform pair weights, for direct first-strike consumer only",
+    "crossing_average": "E E(I_uv)<=C_B*log(d)",
+    "determinant_scope": "not transferred to source_mask determinant consumer",
+    "joint_selection": "Markov: energy-bad weight<=1/8 at threshold 8*C_B log(d); cubic-bad weight<=sqrt(a_T) at threshold sqrt(a_T), where a_T=E|F|/d. Since admissible weight>=1/4, intersection is positive eventually",
+    "sufficient_input": "one-sided average bound above tends to zero, hence E|F|/d=o(1)"
+  },
+  "self_normalization": {
+    "G": "3Tr_P(A*B*B*)+3Tr_Q(D*B*B*), where A=PHP, B=PHQ, D=QHQ",
+    "actual_weight_average": "E_{uniform (u,v)}|r*G/(d*d')| <= 12*K_T*C_B*M*log(d)/(d*(d-2M))",
+    "cross_bound": "|G(I)|<=6*K_T*E(I), E=||PHQ||HS^2",
+    "exact_identity": "F(I)/d=(Tr(D^3)-r*mT)/d' + r*G(I)/(d*d')",
+    "mT": "Tr(H^3)/d; unknown finite-source quantity, no boundedness or value assumed",
+    "natural_rate": "O((1+S)*M*log(d)/d^2)=O(exp(-sqrt(L)/2)/T+exp(-sqrt(L))/(sqrt(T)*L))=o(1)"
+  },
+  "separation": {
+    "block_matrix": "D=[[D_L,C],[C*,D_R]] with rows QL then QR",
+    "cross_HS_bound": "||C||HS^2 <= 4*C_A*M*(M+N*L)/(pi^2*(d-2M+1)^2)",
+    "cross_cube_bound": "|Tr(D^3)-Tr(D_L^3)-Tr(D_R^3)|/d <= 24*C_A*K_T*M*(M+N*L)/(pi^2*d*(d-2M)*(d-2M+1)^2)",
+    "exact_identity": "Tr(D^3)=Tr(D_L^3)+Tr(D_R^3)+3Tr(D_L*C*C*)+3Tr(D_R*Cstar*C)",
+    "independence_firewall": "C is small in normalized HS contribution but not identically zero; no exact independence is claimed",
+    "kernel": "C_ij=(A_i-A_j)/(pi*(j-i)); i in QL, j in QR",
+    "local_square_input": "sum_{QL} A_i^2, sum_{QR} A_j^2 <= C_A*(M+N*L) and beta-square mass <=4*C_A*(M+N*L), from the uniform source prime-power local large sieve",
+    "minimum_distance": "min(j-i)=d-u-v+1>=d-2M+1",
+    "natural_rate": "O((1+S)*M*(M+N*L)/d^3)=O(exp(-sqrt(L))/(T*L)+exp(-3*sqrt(L)/2)/(sqrt(T)*L^2))=o(1)",
+    "operator_bound": "||D_L||op,||D_R||op<=K_T=|s0|+4S"
+  },
+  "source": {
+    "consumer_scope": "R=6000 direct first-strike endpoint score is the Decision D2 admissibility gate; no transfer to source-masked determinant consumer",
+    "fields": "A_k=sum Im(z_n exp(2*pi*i*k*alpha_n)); beta_k=sum 2*(1-alpha_n) Re(z_n exp(2*pi*i*k*alpha_n))",
+    "matrix": "H=s0 I+diag(beta)+[diag(A),J], J_ij=1/(pi*(j-i)); 0<alpha_n<=1-1/sqrt(L); prior partial-translation/no-wrap identities are fixed-cutoff, not growing-pool estimates",
+    "prime_pool": "all p^v<=N; c_n=-Lambda(n)/(a_phi(T)*L*sqrt(n)); z_n=c_n*exp(i*T*log(n)); alpha_n=log(n)/L",
+    "scale": "X=T/(2*pi), L=log(X), N=floor(X*exp(-sqrt(L))), d=floor(T*L/(2*pi))",
+    "trim": "I(u,v)=[b+u,b+d-1-v], 0<=u,v<=M=ceil(d*exp(-sqrt(L)/2)); QL=[b,b+u-1], QR=[b+d-v,b+d-1], r=u+v"
+  },
+  "start_branch": "codex/c5-c6-attack-20261006",
+  "start_head": "3e7672d63ef611917bbb51c0b6c4a4eb3441e803",
+  "strict_gt_79": "OPEN",
+  "title": "WP84 Decision G one-sided cubic localization",
+  "verified_start_head": true
+}
