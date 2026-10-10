@@ -1,0 +1,72 @@
+{
+  "cauchy_dispersion": {
+    "absolute_bound": "O(X^(3/10)*exp(-sqrt(L)/2))",
+    "exact_cross_phase": "exp(2*pi*i*(h/B-h_prime/B_prime)); h=n1*nu_B(n1)-X*B",
+    "power_exponent_before_subpower": "3/10",
+    "requires_source_theorem": true,
+    "unresolved_piece": "signed B!=B' prime-power correlation, including shared-prime/proper-power gcd strata"
+  },
+  "classification": "O4",
+  "decision": {
+    "counterexample_to_target": false,
+    "result": "O4: tested Fourier completion and one Cauchy dispersion estimate do not meet the required exponent",
+    "signed_saving_earned": false,
+    "smallest_unresolved_estimate": "a source-matched signed bound for the displayed off-diagonal B!=B' correlation strong enough to make the full normalized block o(1)",
+    "strict_gt_79": "OPEN"
+  },
+  "exact_fourier_completion": {
+    "completion": "exp(2*pi*i*A/B)*exp(2*pi*i*r*A/Q)=exp(2*pi*i*(Q+rB)*A/(BQ))",
+    "interval_coefficients": "Q^-1 sum_{a in I_B} exp(-2*pi*i*r*a/Q)",
+    "matrix_norm": "sqrt(B*Q*gcd(r,Q))",
+    "normalized_bound": "O(L*X^(7/5)*exp(-sqrt(L)/2))",
+    "odd_prime_power_B": "gcd(B,Q)=1",
+    "period": "power of two Q with 5*X^(8/5)<Q<=10*X^(8/5)",
+    "power_gap_over_baseline": "321/250-o(1)",
+    "status": "exact completion; bound is much worse than baseline",
+    "weighted_fourier_l1": "O(log(Q)+m_B/sqrt(Q))=O(L)"
+  },
+  "existing_absolute_baseline": {
+    "decimal": 0.116,
+    "epsilon": "1/100",
+    "exponent": "29/250",
+    "formula": "O_epsilon(X^(1/10+8*epsilon/5))",
+    "target": "o(1), hence a negative exponent is required"
+  },
+  "finite_checks_are_diagnostics_only": true,
+  "isolated_subfamily": {
+    "conclusion": "this subfamily alone is o(1); full odd-modulus block remains open",
+    "epsilon": "1/10",
+    "normalized_exponent": "-17/50",
+    "per_dyadic_block_count": "at most 2",
+    "singleton_modulus": "B=2^v"
+  },
+  "source_scales": {
+    "H": "exp(sqrt(L)/2)",
+    "L": "log(X)",
+    "M": "ceil(d*exp(-sqrt(L)/2))",
+    "N": "floor(X*exp(-sqrt(L)))",
+    "X": "T/(2*pi)",
+    "coefficient": "c_n=-Lambda(n)/(a_phi(T)*L*sqrt(n)); all prime powers n<=N retained",
+    "d": "floor(X*L)",
+    "kernel": "exact finite-J path/root sum, endpoint choices and centering retained",
+    "representative_block": "B~X^(3/5), n1,n2~X^(4/5), |n1*n2-X*B|<=4*B*H"
+  },
+  "starting_state": {
+    "branch": "codex/c5-c6-attack-20261006",
+    "head": "3fab3a406dcb710cbc7a085626246571c82ed570",
+    "preexisting_untracked_preserved": [
+      "notebooklm_packet/"
+    ]
+  },
+  "thin_strip": {
+    "conclusion": "for sufficiently large X, at most one integer n2 for fixed B,n1",
+    "does_not_imply": [
+      "prime-power occupancy",
+      "cancellation",
+      "signed saving"
+    ],
+    "log_length": "log(16)-L/5+sqrt(L)/2 -> -infinity",
+    "n2_interval_length_upper": "16*X^(-1/5)*exp(sqrt(L)/2)"
+  },
+  "title": "WP84 Decision O: critical signed dispersion feasibility"
+}
