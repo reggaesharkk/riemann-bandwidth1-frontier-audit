@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Deterministic Decision K certificate producer; no source data are fabricated."""
+from __future__ import annotations
+
+import json
+import math
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "certificates" / "WP84_DECISION_K_CENTRAL_LOW_PRODUCT_CERTIFICATE.json"
+
+
+def prime_powers(limit: int) -> list[int]:
+    out: set[int] = set()
+    for p in range(2, limit + 1):
+        if all(p % q for q in range(2, math.isqrt(p) + 1)):
+            x = p
+            while x <= limit:
+                out.add(x)
+                x *= p
+    return sorted(out)
+
+
+def divisor3(m: int) -> int:
+    return sum(1 for a in range(1, m + 1) for b in range(1, m // a + 1)
+               if m % (a * b) == 0)
+
+
+def finite_regression() -> dict:
+    pool = prime_powers(64)
+    checks = 0
+    for y in range(1, 65):
+        direct: dict[int, int] = {}
+        for a in pool:
+            for b in pool:
+                for c in pool:
+                    m = a * b * c
+                    if m <= y:
+                        direct[m] = direct.get(m, 0) + 1
+        for m, count in direct.items():
+            assert count <= divisor3(m)
+            checks += 1
+    ratios = 0
+    for y in range(1, 257):
+        for a in range(1, y + 1):
+            for b in range(1, y + 1):
+                if a != b:
+                    assert max(a, b) * y >= min(a, b) * (y + 1)
+                    ratios += 1
+    return {"prime_power_pool_limit": 64, "ordered_divisor_dominance_checks": checks,
+            "integer_ratio_checks": ratios,
+            "scope": "finite exact diagnostics only; not an asymptotic prime-source computation"}
+
+
+def main() -> None:
+    cert = {
+        "title": "WP84 Decision K: central alias exclusion and low-product cubic discharge",
+        "start": {"branch": "codex/c5-c6-attack-20261006",
+                  "head": "8f6b508569e4b4c481ff77b1afb3d305709dc3dd"},
+        "frozen_source": {
+            "X": "T/(2*pi)", "L": "log(X)", "N": "floor(X*exp(-sqrt(L)))",
+            "d": "floor(X*L)", "M": "ceil(d*exp(-sqrt(L)/2))",
+            "pool": "all prime powers p^v<=N",
+            "c_n": "-Lambda(n)/(a_phi(T)*L*sqrt(n))",
+            "alpha_n": "log(n)/L",
+            "J": "finite original section compression; no lag cutoff"},
+        "central_exclusion": {
+            "same_orientation": "|Omega|>=3*log(2)",
+            "mixed": "if |Omega|<=1, distinct integer products A,B satisfy |Omega|>=log(1+1/(e*N))",
+            "scale": "M/(N*L)~exp(sqrt(L)/2)->infinity; L/M~exp(sqrt(L)/2)/X=o(1/N)",
+            "conclusion": "for sufficiently large T, 0<|Omega|<=L/M is impossible",
+            "eventual_conditions": ["L/M<1", "M/(N*L)>e eventually", "a_phi(T) bounded away from 0"]},
+        "low_product": {
+            "range": "fixed 0<theta<2/3; Y=X^theta; n1*n2*n3<=Y; Omega!=0",
+            "frequency": "log(1+1/Y)/L<=|Omega|/L<=theta<1; no integer alias",
+            "center_kernel": "|K_center|<=4*theta/sin(pi*theta)*L*Y for Y>=1",
+            "coefficient_mass": "sum_product<=Y |c1*c2*c3| <= log(Y)^3/(|a_phi|^3*L^3) * sum_{m<=Y} d3(m)/sqrt(m)",
+            "divisor_sum": "sum_{m<=Y} d3(m)/sqrt(m)=O(sqrt(Y)*(1+log(Y))^2)",
+            "lag_mass": "W3=(1+2*zeta(3/2)/pi^(3/2))^2",
+            "endpoint_bound": "O_theta(Y^(3/2)*log(Y)^5/L^2)=O_theta(L*Y^(3/2)*log(Y)^2)",
+            "normalized_rate": "O_theta(X^(3*theta/2-1)*L^2)=o(1)",
+            "meaning": "absolute negligibility of this complete nonzero-carrier source sector; not a signed cancellation theorem"},
+        "partition": {
+            "zero_carrier": "Omega=0; Decision I sector",
+            "low_nonzero": "Omega!=0 and product<=X^theta",
+            "residual": "Omega!=0 and product>X^theta",
+            "boundary": "equality belongs to low sector; residual is strict >",
+            "all_fixed_theta": "for every fixed 0<epsilon<2/3, residual tuples obey product>X^(2/3-epsilon)"},
+        "alias_support": {
+            "three_same_sign": "one-sided product 8<=P<=N^3; signed m=1,2 may approach; |m|=3 excluded; m=0 excluded centrally",
+            "two_plus_one_minus": "A/B, 4<=A<=N^2, 2<=B<=N; A/B<=N^2/2 excludes m=2; A/B>=4/N excludes m=-1; m=1 may be supported",
+            "one_plus_two_minus": "reciprocal case; m=-1 may be supported; m=2 and m=+1 excluded",
+            "mixed_m2_log_gap": "2*L-log(N^2/2)>=2*sqrt(L)+log(2)",
+            "all_same_m3_log_gap": "3*L-log(N^3)>=3*sqrt(L)",
+            "occupancy": "arithmetically possible alias intervals are not asserted to contain prime-power triples"},
+        "high_product": {
+            "dyadic_blocks": "D_j={ordered tuples: 2^j < n1*n2*n3 <= 2^(j+1), Omega!=0, n_i=p_i^v_i<=N}; retain all signs, finite lags, filters, displacements, K_center and carrier",
+            "global_absolute_envelope": "O((M/d)*N^(3/2)/L^3)=O(X^(3/2)*exp(-2*sqrt(L))/L^3), which grows",
+            "fixed_gap_envelope": "O_delta(N^(3/2)/(X*L^4))=O_delta(X^(1/2)*exp(-3*sqrt(L)/2)/L^4), which grows",
+            "verdict": "existing bounds do not prove the high-product endpoint discrepancy is o(d); no lower bound/counterexample is proved",
+            "needed": "source-weighted signed multilinear estimate for exact dyadic/alias sums, uniform in T and endpoint position, yielding total endpoint averages o(d); no random-phase or R=6000 transfer"},
+        "decision": "K2",
+        "strict_gt79": "OPEN",
+        "other_frozen_gates": "m3=2, Cayley energy<0.105, signed fifth/sixth, prime-to-Weil, zero-side, determinant compatibility all OPEN",
+        "finite_regression": finite_regression()}
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps(cert, indent=2) + "\n", encoding="utf-8")
+    print("WROTE", OUT.relative_to(ROOT))
+    print("DECISION K2; central coherent nonzero support is empty and low-product nonzero sector is o(d); high-product residual remains OPEN")
+
+
+if __name__ == "__main__":
+    main()
