@@ -1,16 +1,19 @@
 # WP84 Consolidated Hostile Proof Audit: Decisions B–O
 
-**Audit snapshot:** branch `codex/c5-c6-attack-20261006`, HEAD `8d1163d3396291ccfcdc4f8ff5a4e21d6bf616a2`  
-**Scope:** independent algebraic, exponent, source-scope, and replay audit of Decisions B–O.  
+**Original B–O audit snapshot:** branch `codex/c5-c6-attack-20261006`, HEAD `8d1163d3396291ccfcdc4f8ff5a4e21d6bf616a2`
+
+**F1 reconciliation update:** branch `codex/c5-c6-attack-20261006`, HEAD `179f9959c4dabb675d1955646f212ddf6d3c51f5`; reconciles F1, F1B, and F1C without changing historical certificates.
+
+**Scope:** independent algebraic, exponent, source-scope, and replay audit of Decisions B–O, with the subsequent F1 endpoint-source correction.
 **Disposition:** strict (>79\%\) remains **OPEN**. This report is not a proof of a zero-proportion theorem and does not alter any frozen source note or certificate.
 
 ## Executive verdict
 
-The audit confirms a collection of exact finite-matrix identities and several source-specific estimates with deliberately limited scopes. The strongest completed pieces are: (i) the finite-section block formula and scalar-background payment for arbitrary sections, together with a complete boundary correction o(1) for an existential adaptively trimmed section; (ii) the same-window endpoint-density selection for the *direct* first-strike consumer; (iii) exact cubic block and zero-carrier decompositions; (iv) exact finite-frequency/path and product-separation reductions; and (v) the carrier linearization and Fourier-completion bookkeeping in the critical block.
+The audit confirms a collection of exact finite-matrix identities and source-specific estimates with deliberately limited scopes. The strongest completed pieces are: (i) the finite-section block formula and scalar-background payment for arbitrary sections, together with a complete boundary correction o(1) for an existential adaptively trimmed section; (ii) a same-window endpoint-density selection for the direct first-strike consumer, now sourced to F1C's one-prime prime-power neighborhood score; (iii) exact cubic block and zero-carrier decompositions; (iv) exact finite-frequency/path and product-separation reductions; and (v) the carrier linearization and Fourier-completion bookkeeping in the critical block. Decision D's different fourth-order product-feature mean remains conditional and is not the source of item (ii).
 
 None of these supplies the missing full source-weighted signed cubic correlation, the signed fifth/sixth arithmetic gate, or the remaining prime-to-Weil and zero-side transfers. Decision O rules out only the tested completion and Cauchy-dispersion bounds at their displayed exponents. It is neither a counterexample to the arithmetic target nor a no-go theorem for all methods. The masked determinant consumer remains a distinct, source-incomplete route.
 
-**Primary decision-level count (14 decisions):** 11 contain at least one in-scope exact identity or limited analytic estimate that survives this audit (B, D, G, H, I, J, K, L, M, N, O); 3 are primarily conditional reductions toward their stated cubic-transfer target (C, E, F). One displayed exponent formula in M is false as printed and is corrected below; its qualitative small-singleton theorem survives. No source-legal counterexample to the WP84 arithmetic inequality was found. Finite and abstract counterexamples remain stress tests only.
+**Primary decision-level count (14 decisions):** 11 contain at least one in-scope exact identity, limited analytic estimate, or valid conditional implication that survives (B, D, G, H, I, J, K, L, M, N, O); 3 are primarily conditional reductions toward their stated cubic-transfer target (C, E, F). This is a count of surviving components, not of unconditional source conclusions: D contributes only its correct Markov/weighted-energy implication conditional on valid endpoint-score means and consumer identification. D's original source-specific product-feature premise is unsupported; the separate direct first-strike endpoint conclusion is proved by F1C. One displayed exponent formula in M is false as printed and is corrected below; its qualitative small-singleton theorem survives. No source-legal counterexample to the WP84 arithmetic inequality was found. Finite and abstract counterexamples remain stress tests only.
 
 These counts describe each decision’s surviving *component*, not closure of every requested scope. In particular, Decision B's arbitrary-section uniform claim, Decision E–H's raw-cubic transfer claims, and Decisions J–O's full-residual claims remain open. Replays are computational checks of stated algebra and finite bookkeeping; they are not by themselves proofs of asymptotic estimates.
 
@@ -61,15 +64,19 @@ At the natural cutoff, the scalar payment for every admissible section is (O(N/(
 
 This adaptive result does not transfer the raw cubic trace from the full interval to the trimmed interval. That is the separate deletion/UI question in Decision E. Nor does it prove the unpaid high-product signed fifth/sixth arithmetic estimate.
 
+For the direct first-strike endpoint consumer, F1C independently proves bounded means for the one-prime prime-power neighborhood score on these same Decision B endpoint windows. The separate endpoint-good sets and Decision B's nonnegative crossing-energy average therefore select a common interval; see the corrected Decision D scope below. This common-section refinement does not strengthen the boundary theorem to arbitrary sections and does not supply raw cubic deletion.
+
 ### C — same-section compatibility and raw-cubic deletion
 
 **Survives (A/C):** empirical-CDF interlacing gives bounded-observable deletion stability with an (O(r/d)) loss when deleting (r) rows. The conditioned two-atomic witness and the sixth-moment spike stress test replay exactly. These show why first two moments or small rank alone do not control raw cubic deletion.
 
-**Conditional (C/E):** transfer for the unbounded cubic observable needs uniform integrability, e.g. an actual-source sixth Schatten bound or another explicit tail estimate. No such bound follows from a fourth-moment estimate alone. The moment-only conditioned-Cayley obstruction is abstract; it is not an actual zeta-source spectral law. Decision D later resolves endpoint selection for the direct consumer only; it does not repair this raw-cubic implication or the determinant route.
+**Conditional (C/E):** transfer for the unbounded cubic observable needs uniform integrability, e.g. an actual-source sixth Schatten bound or another explicit tail estimate. No such bound follows from a fourth-moment estimate alone. The moment-only conditioned-Cayley obstruction is abstract; it is not an actual zeta-source spectral law. The later F1C one-prime endpoint result and Decision B's boundary-energy selection do not repair this raw-cubic implication or the determinant route.
 
 ### D — endpoint admissibility and density
 
-**Survives (B, in exact scope):** on Decision B’s equally weighted endpoint-pair window, the existing endpoint score estimates can be reapplied at the natural cutoff using their finite Dirichlet-polynomial mean-value and sampling steps. Markov gives at least half of each endpoint window good, hence the Cartesian product of separately admissible endpoints has weighted density
+**Historical claim and correction:** the original Decision D note/certificate labels its direct-consumer endpoint-score input source-certified and concludes D2. F1 found that its displayed product-frequency feature can have support through (pq), or (N^2) if both source factors run to the natural cutoff; no executable gate proving (pq\le N) was supplied. Its Montgomery–Vaughan argument therefore cannot use the one-prime length (N) for that pair feature. The original source-specific product-feature (O_R(1)) premise is **not established**. This provenance is retained; the old note and certificate are not silently rewritten.
+
+**Survives conditionally (C):** Decision D's finite Markov, equal-weight density, and nonnegative-energy restriction argument is valid if its two endpoint-score means and their consumer identity are source-proved. Under those hypotheses, each good endpoint set has density at least one half and the Cartesian product has density
 
 \[
 \gamma_T\ge {1\over4}.
@@ -81,13 +88,24 @@ Since crossing energy (E(I)\ge0), the adaptive theorem's endpoint averaging boun
 \mathbb E_{(u,v)\in G} E(I_{u,v})\le {C_B\log d\over\gamma_T}\le 4C_B\log d.
 \]
 
-Thus a common pair meets the direct endpoint-score gates and has (E(I)=O(log d)); the same interval is covered by Decision B's complete adaptive finite-section boundary estimate. Equivalently, the conditional mean of nonnegative E on the admissible Cartesian subset is at most four times the full-window mean. This does not assume independence or favorable correlation. For a general weighted window, the relevant density is weighted mass, not unweighted cardinality. The density loss inserted into the boundary estimate gives the sufficient condition
+The restriction bound for nonnegative (E(I)) then costs at most a factor four, and the sufficient density condition propagated through the boundary estimate is
 
 \[
 {\gamma_Td'\over(1+S)\log d}\longrightarrow\infty.
 \]
 
-A fixed (1/4) density satisfies this scale. The inherited constants (C_B,C_R) are (O_R(1)), not explicit numerical constants.
+A fixed (1/4) density satisfies this scale. The inherited constants (C_B,C_R) are (O_R(1)), not explicit numerical constants. For general nonuniform pair weights, the needed density is weighted mass, not unweighted cardinality. These are conditional implications only; the generic D feature-score premise is not source-authenticated.
+
+**F1B alternative payment (C, not a source closure):** under its explicit fixed-coefficient, two-factor support (D\le N^2), coefficient-mass, interval/prefix-truncation maximal-estimate, and consumer-identification hypotheses, F1B obtains a polylogarithmic product-score majorant of size (O_R(L^4(1+N^2/U_T))). The score need not be (O_R(1)): the generic majorant grows. For the specific normalized rank-two endpoint payment in F1B, the degree-two rate is (O_R(L^3/X+L^3e^{-3\sqrt L/2})=o(1)). The authentic fixed-(R) source feature generator, its complete gates, and the consumer identity have not been verified; the broader documented (X^2) pool does not satisfy that same vanishing degree-two conclusion. Thus this is a genuine conditional generic payment result, not proof of Decision D's claimed bounded score or its source application.
+
+**Independent direct first-strike result (B; F1C):** this endpoint consumer has a different, explicitly source-defined statistic. With (X=T/(2\pi)), (L=\log X), (N=\lfloor Xe^{-\sqrt L}\rfloor), and all (p^v\le N), F1C uses
+
+\[
+Q(t)=\sum_{p^v\le N}-\frac{\Lambda(p^v)}{a_\phi(T)L\sqrt{p^v}}e^{it\log(p^v)},\quad
+\alpha_k=\Im Q(T+hk),\quad
+\beta_k=2\Re\sum_{p^v\le N}c_{p^v}\Bigl(1-\frac{\log(p^v)}L\Bigr)e^{i(T+hk)\log(p^v)},
+\]
+and (S_R(k)=\sum_{|t|\le12R}(|\alpha_{k+t}|^2+|\beta_{k+t}|^2)). The prime-power coefficient square mass is (O(1)); the circular log-frequency gap is at least (1/((N+1)L)); and on Decision B's exact endpoint window (U_T\sim T e^{-\sqrt L/2}), so (N/U_T\to0). The discrete large-sieve and cell-sampling estimate therefore gives a uniform (O_R(1)) mean for (S_R) on each endpoint window, separately. Markov gives good endpoint sets of density at least (1/2) each and a common pair set of density at least (1/4). Restricting Decision B's nonnegative crossing-energy average to this same Cartesian set yields a selected pair with (E(I)=O(\log d)). The local row bound (K_R=O_R(1)) gives the fixed-(R), (b=5,6) weighted reprojection payment (4bRK_R^b/d'=o(1)) on that section. This is the source-authentic direct first-strike result; it does **not** prove Decision D's separate pair-feature mean or identify that feature with (S_R).
 
 **Scope boundary (G):** these endpoint features belong to the direct first-strike consumer. They have no proved identity with the hidden-prime determinant callback `source_mask(fid,slots,lag,T,section,alias)`, its selected rows, root sums, or normalization. D is not an admissibility theorem for the masked determinant route.
 
@@ -180,7 +198,7 @@ Exact sharp interval Fourier completion is valid, but costs (O(LX^{7/5}e^{-\sqrt
 
 The independent replays exercise exact signs, dimensions, proper powers, repeated bases, exact versus near integer centers, endpoint orientation, all stated finite (J) and (R) boundaries, root centering, and selected omitted-term mutations. The full commands and their scope are listed below. These checks do not prove uniform asymptotics in (T), endpoint position, or a source mask.
 
-The endpoint mean-value invocation is the classical Hilbert/Montgomery–Vaughan mean-value framework for finite Dirichlet polynomials with integer frequencies. Its use is appropriate only for the finite endpoint feature polynomial and the length/weight bounds recorded in Decision D; it gives no theorem for the coupled signed multi-prime product in Decisions N–O. The reference is H. L. Montgomery and R. C. Vaughan, “Hilbert’s Inequality,” *Journal of the London Mathematical Society* (2) 8 (1974), 73–82, [DOI](https://doi.org/10.1112/jlms/s2-8.1.73), [author-hosted paper](https://personal.science.psu.edu/rcv4/personal/Publications/s2-8-1-73.pdf). No stronger literature result is imported here.
+The Hilbert/Montgomery–Vaughan mean-value framework is source-matched for F1C's one-prime prime-power polynomial of length (N), together with its stated coefficient square mass and sampling step. It does **not** establish a bounded mean for a product-frequency endpoint polynomial of length as large as (N^2) or (X^2). F1B proves a different, conditional generic (o(1)) normalized payment for degree two with (N^2) support and a maximal-truncation hypothesis; neither that support/gate map nor its consumer identity is source-authenticated, and the (X^2) pool is outside that vanishing degree-two conclusion. No such theorem controls the coupled signed multi-prime product in Decisions N–O. The reference is H. L. Montgomery and R. C. Vaughan, “Hilbert’s Inequality,” *Journal of the London Mathematical Society* (2) 8 (1974), 73–82, [DOI](https://doi.org/10.1112/jlms/s2-8.1.73), [author-hosted paper](https://personal.science.psu.edu/rcv4/personal/Publications/s2-8.1-73.pdf). No stronger literature result is imported here.
 
 Specific checks:
 
@@ -196,21 +214,24 @@ Specific checks:
 
 ### Direct first-strike consumer
 
-The relevant chain is
+The direct first-strike chain, after the F1 reconciliation, is
 
 \[
-\text{prime-source matrix and fixed-}R\text{ filtered moments}
-\longrightarrow \text{same-section cubic/endpoint transfer}
+\text{one-prime prime-power field}
+\longrightarrow \text{F1C endpoint score + Decision B energy selection}
+\longrightarrow \text{fixed-}R,\ b=5,6\text{ weighted reprojection}
 \longrightarrow \text{signed fifth/sixth gate (12)}
 \longrightarrow \text{prime-to-Weil identification}
 \longrightarrow \text{zero-side block/tail transfer}.
 \]
 
-Decision D establishes same-window endpoint admissibility and crossing-energy averaging for the direct first-strike consumer. Its good-endpoint product set uses the same endpoint-pair weights as Decision B's adaptive averaging, so restricting the nonnegative energy average to that set costs at most a factor four. Consequently D and the adaptive B theorem select a common direct-consumer section on which endpoint gates hold and the complete normalized finite-section boundary correction is o(1). This does not establish Decision E's full-to-trimmed raw-cubic trace transfer/UI condition, the signed fifth/sixth gate, the prime-to-Weil identification, or the zero-side transfer. For arbitrary sections the complete boundary correction is not shown uniformly o(1); for the existential adaptive section it is proved o(1). These boundary statements concern the difference between the full compression trace and the compressed-cube trace. They do not identify that trace with the original raw cubic on the selected section. Decisions I–M remove named arithmetic subpopulations only. Decision O leaves a critical high-product mixed-sign correlation. Thus gate (12) remains open. The exact first-strike note gives the signed target and frozen coefficients; its condition includes all non-exact products and aliases, not just model closures.
+Decision D's separate fourth-order pair-feature path is conditional: it needs its own authentic feature generator, support/truncation bound, and consumer identity. It is not an input to the one-prime F1C chain above.
+
+F1C's one-prime prime-power neighborhood score supplies the direct first-strike endpoint gates on Decision B's exact pair window. The separate equal-weight Decision B average has nonnegative (E(I)) and mean (O(\log d)); restricting it to F1C's endpoint-good Cartesian set costs at most a factor four. Hence F1C and B select one common section with endpoint gates, (E(I)=O(\log d)), normalized compression-versus-compressed-cube boundary correction (o(1)), and fixed-(R), fifth/sixth weighted reprojection payments (4bRK_R^b/d'=o(1)). This chain does not use Decision D's unsupported product-feature identification. It also does not establish Decision E's full-to-trimmed raw-cubic trace transfer/UI condition, the signed fifth/sixth gate, the prime-to-Weil identification, or the zero-side transfer. For arbitrary sections the complete boundary correction is not shown uniformly (o(1)); for the existential adaptive section it is proved (o(1)). The boundary statement compares the full compression trace with the compressed-cube trace; it does not identify that trace with the original raw cubic on the selected section. Decisions I–M remove named arithmetic subpopulations only. Decision O leaves a critical high-product mixed-sign correlation. Thus gate (12) remains open and still includes non-exact products and aliases.
 
 ### Source-masked determinant consumer
 
-This is a separate route. The exact callback interface includes `source_mask(fid,slots,lag,T,section,alias)`. Current executable evidence does not authenticate the row-membership rule and its exact mapping to the original endpoint-score features, roots, and normalization. Therefore its source-to-consumer bridge is **UNDEFINED** on the audited evidence. Decision D’s endpoint-density theorem cannot be transferred to it.
+This is a separate route. The exact callback interface includes `source_mask(fid,slots,lag,T,section,alias)`. Current executable evidence does not authenticate the row-membership rule and its exact mapping to either the Decision D product-feature score or F1C's one-prime endpoint statistic, roots, and normalization. Therefore its source-to-consumer bridge is **UNDEFINED** on the audited evidence. Neither Decision D's conditional density arithmetic nor F1C's direct first-strike endpoint theorem can be transferred to it.
 
 ### Status table
 
@@ -221,7 +242,11 @@ This is a separate route. The exact callback interface includes `source_mask(fid
 | Complete normalized finite-section boundary correction, arbitrary section uniformly | **OPEN** | Existing absolute remainder estimate does not decay uniformly over sections. |
 | Complete normalized finite-section boundary correction, existential adaptive trim | **PROVED** | Local large-sieve endpoint averaging gives (E(I)=O(log d)), hence the block remainder is (o(1)) on that selected section under source hypotheses. |
 | Full-to-trimmed raw cubic trace transfer | **OPEN** | Adaptive boundary control does not imply deletion stability for the unbounded cubic; needs source UI/deleted-block cubic or direct estimate. |
-| Direct endpoint admissibility with averaged crossing energy | **PROVED** | Density (≥1/4) on the specified equally weighted window; inherited (O_R(1)) constants. |
+| Decision D Markov/weighted-energy restriction | **CONDITIONAL, VALID** | Correct under source-proved endpoint-score means and the score-to-consumer identity; those assumptions are not supplied for D's product features. |
+| Decision D source-specific product-feature mean (O_R(1)) | **OPEN / UNSUPPORTED** | Product frequencies can reach (pq); no source gate (pq\le N), exact feature generator, or sufficient short-window bound is established. |
+| F1B two-factor normalized endpoint payment | **CONDITIONAL** | The generic degree-two (N^2)-support payment is (o(1)) under its coefficient, maximal-truncation, and consumer-identification hypotheses; authentic source matching is missing. |
+| Direct first-strike one-prime endpoint admissibility with averaged crossing energy | **PROVED IN STATED SCOPE** | F1C proves bounded local score means from the actual prime-power field on Decision B's exact windows; good-pair density is at least (1/4). |
+| Fixed-(R), (b=5,6) weighted reprojection on the selected section | **PROVED IN STATED SCOPE** | Local row bound (K_R=O_R(1)) gives (4bRK_R^b/d'=o(1)); this is not raw cubic deletion. |
 | Named zero-carrier, low-product, same-sign, and small-singleton sectors | **PROVED** | Only exact sectors and ranges stated in I–M. |
 | Full cubic endpoint discrepancy | **CONDITIONAL / OPEN** | High-product signed sectors remain. |
 | Signed fifth/sixth gate (12), including (m_3) and fixed-(R) arithmetic | **OPEN** | No positive signed saving at required scale proved. |
@@ -266,16 +291,17 @@ under the frozen initial upper payment, with further paid costs increasing the r
 These are candidates for an external mathematical referee, not novelty claims:
 
 1. **Finite-section block identity and adaptive boundary theorem.** The block identity/scalar correction are exact; the adaptive large-sieve argument proves complete normalized boundary correction (o(1)) on an existential trimmed section. The same bound is not uniform over arbitrary sections, and it does not transfer the full raw cubic trace to the trim.
-2. **Endpoint-pair selection lemma.** A nonnegative energy with mean bound (C_B\log d), combined with two endpoint-good sets each of density at least (1/2), has an endpoint-admissible pair with energy at most (4C_B\log d), for the specified identical finite weights. This is a standard averaging argument with a source-specific endpoint application.
-3. **Exact zero-carrier prime-power classification.** UFD closure and the factor-48 count are proved for the named carrier-zero sector; no conclusion for near/nonzero carriers is included.
-4. **Source-sector product reductions.** K–M provide named low-product, same-sign first-alias, and small-singleton bounds with full path/power handling in their stated ranges. The Decision M exponent correction must accompany any reuse.
-5. **Critical-block feasibility ledger.** O’s finite interval/DFT/Cauchy calculations are reproducible computational certificates explaining why those specific estimates fail. This is a method audit, not an arithmetic theorem.
+2. **Direct first-strike one-prime endpoint theorem.** Under the source normalization and natural prime-power cutoff, the fixed-(R) local score means are (O_R(1)) on both Decision B endpoint windows; separate good sets have density at least one half and yield a common section with (E(I)=O(\log d)). The fixed-(R), (b=5,6) reprojection payment is (o(1)). The adjacent generic Markov restriction is conditional unless its score premises are independently sourced.
+3. **Endpoint-pair selection lemma.** A nonnegative energy with mean bound (C_B\log d), combined with two endpoint-good sets each of density at least (1/2), has an endpoint-admissible pair with energy at most (4C_B\log d), for the specified identical finite weights. This is a standard averaging argument with a source-specific F1C endpoint application.
+4. **Exact zero-carrier prime-power classification.** UFD closure and the factor-48 count are proved for the named carrier-zero sector; no conclusion for near/nonzero carriers is included.
+5. **Source-sector product reductions.** K–M provide named low-product, same-sign first-alias, and small-singleton bounds with full path/power handling in their stated ranges. The Decision M exponent correction must accompany any reuse.
+6. **Critical-block feasibility ledger.** O’s finite interval/DFT/Cauchy calculations are reproducible computational certificates explaining why those specific estimates fail. This is a method audit, not an arithmetic theorem.
 
 No global literature/priority audit was performed in this run. The matrix algebra, Markov selection, Hilbert/Montgomery–Vaughan mean-value method, divisor estimates, and Fourier orthogonality are established tools. Repository presence does not establish historical novelty. Any publication claim needs a separate literature review and self-contained proofs of each asymptotic hypothesis.
 
 ## Research recommendation
 
-Keep the theorem claim frozen. The next justified target is the one explicit signed high-product off-diagonal estimate stated above, together with a source-authentic coefficient/weight theorem that can actually be applied to it. Do not reopen broad rank, model optimization, or generic Cauchy iterations. Independently, do not use the direct endpoint theorem to populate the masked determinant callback until the source selector is authenticated. The remaining prime-to-Weil and zero-side obligations must be solved after the arithmetic gate, not inferred from its model analogue.
+Keep the theorem claim frozen. The direct first-strike one-prime endpoint selection is now sourced and should not be reopened as a product-feature problem. The next justified arithmetic target remains the one explicit signed high-product off-diagonal estimate stated above, with source-authentic coefficients and weights; the independent raw-cubic deletion/UI obligation also remains. Do not reopen broad rank, model optimization, or generic Cauchy iterations. Do not use F1C's one-prime endpoint theorem to populate Decision D's pair-frequency feature score or the masked determinant callback; the latter still lacks its authentic selector. The remaining prime-to-Weil and zero-side obligations must be solved after the arithmetic gate, not inferred from its model analogue.
 
 ## Reproduction, integrity, and provenance
 
@@ -283,10 +309,11 @@ Keep the theorem claim frozen. The next justified target is the one explicit sig
 
 - Worktree root: `C:/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit`
 - Branch: `codex/c5-c6-attack-20261006`
-- HEAD: `8d1163d3396291ccfcdc4f8ff5a4e21d6bf616a2`
-- Tracked working-tree changes: none at audit start.
-- Untracked `notebooklm_packet/`: present before this report; preserved and not read for report content or modified.
-- Linked Git index: `C:/Users/Asus/Downloads/riemann-bandwidth1-frontier-audit/.git/worktrees/riemann-bandwidth1-frontier-audit/index`, outside this worktree’s writable root. No index write was attempted; this report is left uncommitted.
+- Original B–O snapshot HEAD: `8d1163d3396291ccfcdc4f8ff5a4e21d6bf616a2`.
+- F1 reconciliation starting HEAD: `179f9959c4dabb675d1955646f212ddf6d3c51f5`.
+- The reconciliation edits this ledger and adds the dated Decision D scope erratum and manuscript amendment plan; the F1, F1B, and F1C notes are preserved.
+- Untracked `notebooklm_packet/`: present before this reconciliation; not opened or modified.
+- Linked Git index: `C:/Users/Asus/Downloads/riemann-bandwidth1-frontier-audit/.git/worktrees/riemann-bandwidth1-frontier-audit/index`, outside this worktree's writable root. No index write was attempted; the ledger and two new notes remain uncommitted for manual commit.
 
 Decision O’s four tracked files match their recorded artifact hashes at the audited HEAD:
 
@@ -319,7 +346,19 @@ python src/wp84_decision_o_critical_signed_dispersion_replay.py
 python src/wp84_cubic_first_alias_typeii_replay.py
 ```
 
-All 15 commands exited 0 in this audit. The displayed output explicitly marks finite diagnostics as such and leaves the corresponding asymptotic prime-source claims open. JSON parsing succeeded for the 13 C–O decision certificates and the connected-kernel manifests.
+All 15 commands exited 0 in the original B–O audit at the snapshot HEAD recorded above. In the F1 reconciliation at HEAD `179f9959c4dabb675d1955646f212ddf6d3c51f5`, the relevant B/D/F1C/fixed-band replays listed below were rerun and passed. The displayed output explicitly marks finite diagnostics as such and leaves the corresponding asymptotic prime-source claims open. JSON parsing succeeded for the 13 C–O decision certificates and the connected-kernel manifests in the original audit.
+
+F1 reconciliation replay commands:
+
+```powershell
+python src/wp84_adaptive_boundary_large_sieve_replay.py
+python src/wp84_decision_d_endpoint_admissibility_replay.py
+python src/wp84_finite_section_boundary_cubic_replay.py
+python src/wp84_fourier_reprojection_bridge.py
+python src/wp84_non_gaussian_c5_c6_first_strike_replay.py
+```
+
+These independently check finite algebra, source-score bookkeeping, fixed-band finite diagnostics, and the exact consumer ledger. In particular, the Decision D replay is conditional bookkeeping and does not prove its product-feature source premise; the F1C asymptotic one-prime bound rests on its written large-sieve/sampling proof, not on replay success.
 
 ### Manifest qualifications
 
@@ -331,6 +370,6 @@ All 15 commands exited 0 in this audit. The displayed output explicitly marks fi
 
 ### Reproduction limits and external assumptions
 
-The analytic D endpoint argument depends on the endpoint feature polynomial definition, its source coefficient square-mass bound, and the stated uniform short-interval mean-value/sampling estimates in the cited source notes. The replays check the density/weight arithmetic and hostile substitutions, not those asymptotic analytic hypotheses from first principles. Likewise, I–N use their written source coefficient and divisor bounds; O’s replay verifies exact exponent arithmetic and finite Fourier identities, not the missing signed correlation. A reader seeking a theorem proof should inspect each linked decision note and its cited definitions rather than treating this summary or a passing script as an asymptotic proof.
+Decision D's Markov endpoint argument is conditional: the authentic product-feature polynomial, its source coefficient square-mass bound, and a sufficient short-window mean are not established. F1C's distinct one-prime endpoint mean is supported by its explicit prime-power source field, coefficient square mass, frequency separation, and sampling proof; its replay does not prove the asymptotic estimate. The replays check finite density/weight arithmetic and hostile substitutions, not those analytic hypotheses from first principles. Likewise, I–N use their written source coefficient and divisor bounds; O's replay verifies exact exponent arithmetic and finite Fourier identities, not the missing signed correlation. A reader seeking a theorem proof should inspect each linked decision note and its cited definitions rather than treating this summary or a passing script as an asymptotic proof.
 
 **Final theorem status: strict (>79\%\) remains OPEN.**
