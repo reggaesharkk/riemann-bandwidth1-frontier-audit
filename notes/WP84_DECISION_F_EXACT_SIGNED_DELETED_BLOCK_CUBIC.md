@@ -27,7 +27,7 @@ J_{ij}=\frac1{\pi(j-i)}\ (i\ne j),\quad J_{ii}=0.
 \]
 
 Use the same trimmed section from Decision B/D2:
-\(I_{u,v}=[b+u,b+d-1-v]\), (0\le u,v\le M=\lceil d e^{-\sqrt L/2}\rceil\), and (Q=I-P_I\) restricted to deleted rows of (I_0\), with (r=u+v\le2M=o(d)\). Decision D2 supplies consumer-admissible endpoint-pair density \(\gamma_T\ge1/4\); Decision B supplies the uniform pair-average crossing estimate \(\mathbb E E(I_{u,v})\le C_B\log d\). Decision E's local prime-power large sieve supplies
+\(I_{u,v}=[b+u,b+d-1-v]\), (0\le u,v\le M=\lceil d e^{-\sqrt L/2}\rceil\), and (Q=I_0\setminus I_{u,v}=[b,b+u-1]\cup[b+d-v,b+d-1]\) (empty endpoint intervals are omitted), with (r=u+v\le2M=o(d)\). Decision D2 supplies consumer-admissible endpoint-pair density \(\gamma_T\ge1/4\); Decision B supplies the uniform pair-average crossing estimate \(\mathbb E E(I_{u,v})\le C_B\log d\). Decision E's local prime-power large sieve supplies
 \[
 \sum_{i\in Q}\beta_i^2+\sum_{i\in Q}A_i^2=O(M+NL),\quad
 \|W\|_{HS}^2=O(M+NL),\quad \|W\|_{op}\le4S,
@@ -101,11 +101,11 @@ A_k=\sum_n\frac1{2i}\sum_\sigma\sigma u_{n,\sigma}(k).
 The three terms above are therefore the following finite, exact sums over (n_t=p_t^{v_t}\le N), with no prime truncation:
 
 \[
-C_1=\sum_{i\in Q}\sum_{n_0,n_1,n_2\in\mathcal P(N)}
+C_1=\sum_{k\in Q}\sum_{n_0,n_1,n_2\in\mathcal P(N)}
 \prod_{t=0}^2(1-\alpha_{n_t})c_{n_t}
 \sum_{\sigma_0,\sigma_1,\sigma_2=\pm1}
 e^{iT\sum_t\sigma_t\log n_t}
-e^{2\pi i i\sum_t\sigma_t\alpha_{n_t}}.
+e^{2\pi i k\sum_t\sigma_t\alpha_{n_t}}.
 \]
 For (C_2), with \(\Delta_{n,\sigma}(i,j)=u_{n,\sigma}(i)-u_{n,\sigma}(j)\),
 \[
