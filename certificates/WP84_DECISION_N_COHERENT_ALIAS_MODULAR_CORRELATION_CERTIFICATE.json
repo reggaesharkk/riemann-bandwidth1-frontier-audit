@@ -1,0 +1,154 @@
+{
+  "title": "WP84 Decision N: coherent alias to modular correlation",
+  "decision": "N4",
+  "start": {
+    "branch": "codex/c5-c6-attack-20261006",
+    "head": "4edcde030b352ada0ca0bd23faeec077f10b5e1f",
+    "preexisting_untracked_preserved": [
+      "notebooklm_packet/"
+    ]
+  },
+  "source": {
+    "X": "T/(2*pi)",
+    "L": "log(X)",
+    "N": "floor(X*exp(-sqrt(L)))",
+    "d": "floor(X*L)",
+    "M": "ceil(d*exp(-sqrt(L)/2))",
+    "pool": "all prime powers p^v<=N, including proper and repeated-base powers",
+    "coefficient": "c_n=-Lambda(n)/(a_phi(T)*L*sqrt(n)); alpha_n=log(n)/L; a_phi(T)->1",
+    "operator": "original finite-J compressed source; all closed lag paths, finite roots, endpoint intersections, global centering",
+    "lag_mass": "W3 <= (1+2*zeta(3/2)/pi^(3/2))^2 < infinity",
+    "transfer_prohibited": [
+      "fixed-R ordinary-prime consumers",
+      "Gaussian/model moments",
+      "unmasked selector claims"
+    ]
+  },
+  "prerequisites": {
+    "decision_i_replay": "PASS",
+    "decision_j_replay": "PASS",
+    "decision_k_replay": "PASS",
+    "decision_l_replay": "PASS",
+    "decision_m_replay": "PASS",
+    "scope": "replay suites validate prior algebra and finite checks; they are not asymptotic signed estimates for Decision N"
+  },
+  "population": {
+    "orientation": "A=n1*n2; B=n3; delta=log(A/(X*B)); Omega=log(A/B)=L+delta",
+    "coherence_window": "abs(delta)<=L/M",
+    "reflected_orientation": "exact source conjugation/reflection, treated with inherited signs and filters",
+    "unchanged_factors": [
+      "c_n source weights",
+      "finite-J filters",
+      "displacement phases",
+      "closed lags",
+      "finite root intersections",
+      "global centering",
+      "both endpoints"
+    ]
+  },
+  "carrier_reduction": {
+    "h": "A-X*B is real, not assumed integral",
+    "identity": "A/B=X+h/B exactly, even when X*B is nonintegral",
+    "pointwise": "abs(exp(i*T*delta)-exp(2*pi*i*h/B)) <= 32*pi*exp(sqrt(L))/X for all sufficiently large X in abs(delta)<=L/M",
+    "full_carrier": "exp(i*T*log(A/B)) = exp(i*T*L-2*pi*i*X)*exp(2*pi*i*A/B) + error",
+    "window_width": "abs(A-X*B)<=4*B*exp(sqrt(L)/2)",
+    "aggregate_normalized_error": "O_epsilon(X^(-1/2+2*epsilon)*exp(-epsilon*sqrt(L))) + smaller ceiling terms; o(1) for fixed 0<epsilon<1/4",
+    "uniformity": "all admissible endpoints; complete singleton prime-power pool B<=N; all ordered prime-power factorizations; finite lag mass included",
+    "kernel_filters_roots_changed": false
+  },
+  "exact_modular_form": {
+    "character": "exp(2*pi*i*A/B)=exp(2*pi*i*n1*n2/B)",
+    "residue_weight": "W_B(a,b) sums exact source weights over n1=a mod B, n2=b mod B and abs(n1*n2-XB)<=4*B*exp(sqrt(L)/2)",
+    "couplings": [
+      "thin product window",
+      "K_center(E,ell,log(n1*n2/B))",
+      "global centering",
+      "original prime-power restrictions"
+    ],
+    "separability": "not established; complete-DFT square-root bilinear bound cannot be applied to W_B",
+    "DFT_identity": "sum_(y mod B)e((a-a')y/B)=B*1_(a=a' mod B), valid for every integer B",
+    "noncoprime": "for B=p^v and s=min(v,v_p(n1*n2))<v, phase conductor p^(v-s); if s>=v, phase is 1; all such terms retained",
+    "general_matrix_bound": "abs(sum_ab W_ab e(ab/B))<=B*||W||_F; no square-root bilinear saving follows"
+  },
+  "theorem_hypothesis_audit": [
+    {
+      "method": "complete additive DFT bilinear inequality",
+      "needed_form": "W_B(a,b)=u_B(a)*v_B(b), or a proved low-rank decomposition with paid coefficient norms",
+      "source_status": "FAIL/OPEN: the sharp product window and K_center depend on n1*n2; no such decomposition is proved"
+    },
+    {
+      "method": "additive large sieve over moduli/frequencies",
+      "needed_form": "a source-preserving average over a separated frequency/modulus family with coefficients independent of the averaged frequency, plus paid completion and endpoint uniformity",
+      "source_status": "NOT ESTABLISHED: B is a prime-power source variable coupled to the product window and source weights; no admissible large-sieve transform or uniform endpoint conclusion is derived"
+    },
+    {
+      "method": "Type I/II or dispersion for bilinear prime sums",
+      "needed_form": "factorized coefficient sequences on controlled intervals and a decomposition retaining the thin n1*n2 window, prime-power terms, finite-J factors and endpoint kernel",
+      "source_status": "NOT ESTABLISHED: no source-matched decomposition with a paid error is available in this audit"
+    }
+  ],
+  "absolute_dyadic_bound": {
+    "B_scale": "B approximately X^beta",
+    "bound": "O_epsilon(X^(beta-1/2+epsilon*(1+beta))) + smaller exp(-sqrt(L)/2) term",
+    "uniformity": "for each endpoint, after complete lag mass and original source weights are bounded absolutely",
+    "signed_saving_required": "sigma > beta-1/2+epsilon*(1+beta), plus room for logarithmic/subpower losses",
+    "no_signed_saving_claimed": true
+  },
+  "critical_block": {
+    "singleton": "B in [X^(3/5),2*X^(3/5)]",
+    "pair_factors": "n1,n2 in [X^(4/5),2*X^(4/5)]",
+    "window": "abs(n1*n2-X*B)<=4*B*exp(sqrt(L)/2)",
+    "cutoff": "all three ranges lie below N for sufficiently large X",
+    "absolute_baseline": "O_epsilon(X^(1/10+8*epsilon/5))",
+    "required_cancellation": "relative saving X^(-1/10-8*epsilon/5) with strictly greater power and losses paid",
+    "prime_pairs_in_each_window_asserted": false
+  },
+  "attempted_method": {
+    "method": "complete finite DFT bilinear inequality for separable residue weights",
+    "valid_hypothesis": "weight W_B(a,b)=u(a)*v(b), or a separately proved controlled low-rank decomposition",
+    "actual_status": "FAIL: coupled source weight has product-window and endpoint-dependent centered kernel; no such decomposition or paid completion is available",
+    "classification_scope": "bounded no-go for this attempted route, not a counterexample and not a survey proving every method impossible"
+  },
+  "outcome": {
+    "classification": "N4",
+    "proved": [
+      "uniform carrier linearization",
+      "negligible aggregate source-weighted replacement error",
+      "exact modular residue formulation",
+      "dyadic absolute exponent"
+    ],
+    "unproved": [
+      "uniform signed modular correlation estimate for the original coupled prime-power weight",
+      "all remaining alias fringes/tails and other high-product sectors"
+    ],
+    "remaining_populations": [
+      "mixed first-alias outer fringes and larger-singleton tails",
+      "mixed inaccessible-center alias fringes",
+      "same-sign second-alias core and tails",
+      "same-sign cutoff fringes",
+      "high-product fixed-gap complement"
+    ],
+    "signed_constant_saving": "none",
+    "source_counterexample": "none",
+    "strict_gt79": "OPEN",
+    "frozen_gates": {
+      "m3=2": "OPEN",
+      "conditioned_Cayley_energy_lt_0.105": "OPEN",
+      "signed_fifth_sixth_gate": "OPEN",
+      "prime_to_Weil": "OPEN",
+      "zero_side_transfer": "OPEN",
+      "determinant_compatibility": "OPEN"
+    }
+  },
+  "hostile_checks": [
+    "wrong T=pi*X factor",
+    "noninteger X*B",
+    "wrong additive-character sign",
+    "exact and near aliases",
+    "prime-power noncoprime conductor",
+    "coupled-weight false separability",
+    "omit filters or root centering",
+    "replace full pool by ordinary primes/fixed R",
+    "average in T or endpoint index instead of uniform endpoint bound"
+  ]
+}
