@@ -1,0 +1,89 @@
+{
+  "centered_endpoint_formula": {
+    "alias_coherence": "|Omega/L-m|<=1/M; m=0,\u00b11,\u00b12 are distinct classes, with exact Omega=0 already discharged only by Decision I.",
+    "kernel": "K_center(E,ell,Omega)=sum_(k in E intersect K_ell) exp(2*pi*i*k*Omega/L) - (|E|/d)*sum_(k in K_ell) exp(2*pi*i*k*Omega/L)",
+    "normalization": "The global centering is u/d (or v/d) times the full K_ell sum; it is retained and is not replaced by a signed mean estimate.",
+    "sum": "Y_E_nonzero=sum_(n1,n2,n3 in P(N), sigmas, Omega!=0) (c_n1*c_n2*c_n3*exp(i*T*Omega))*product_j f_(ell_j)^sigma_j(alpha_j)*exp(2*pi*i*(sigma2*q1*alpha2+sigma3*q2*alpha3))*K_center"
+  },
+  "classification": "J2 \u2014 exact finite-section full-frequency path representation established and the fixed-gap far-alias sector has a stronger source-valid absolute bound; near aliases and full transfer remain open",
+  "comparison": {
+    "decision_g_h": "Prior diagonal-score and one-sided endpoint expansions retain root/finite-path dependence but did not expose one common endpoint phase in every cubic path summand.",
+    "decision_i": "Exact zero-carrier UFD sector bound O(L^-3) remains valid and separate.",
+    "infinite_no_wrap": "The older infinite partial-translation formula already has a full displacement frequency with continuum overlap weight; the present formula adds the exact finite-J discrete root set and exact endpoint centering. It is an exact organization, not a new asymptotic saving."
+  },
+  "decision": "J2",
+  "entry_formula": {
+    "U_entry": "U_(n,sigma)(i,j)=exp(2*pi*i*sigma*i*alpha_n)*f_(j-i)^sigma(alpha_n)",
+    "adjoint": "U_(n,sigma)^*=U_(n,-sigma); J_ij=1/(pi*(j-i)) is used with the stated (j-i) orientation",
+    "f_nonzero": "f_ell^sigma(alpha)=sigma*(1-exp(2*pi*i*sigma*ell*alpha))/(2*pi*i*ell), ell!=0",
+    "f_zero": "f_0^sigma(alpha)=1-alpha",
+    "finite_lag_scope": "No R=6000 truncation; all integer lags are retained, with root set empty outside the actual finite section."
+  },
+  "finite_regression": {
+    "dimension": 7,
+    "expanded_paths_in_centered_test": 26670,
+    "full_relative_lag_diagonal_max_error": 2.4702472531160814e-15,
+    "full_relative_lag_terms": 74088,
+    "lag_root_patterns_checked": 169,
+    "nonzero_centered_path_max_error": 3.6776958152739844e-16,
+    "omitted_displacement_mutation_detected": true,
+    "s0": "omitted; this tests V^3 only, as required for R_nonzero",
+    "signed_reconstruction_max_error": 1.4127587988355117e-14,
+    "source_subset": [
+      {
+        "alpha": 0.13862943611198905,
+        "c": -0.09802581434685471,
+        "n": 2
+      },
+      {
+        "alpha": 0.21972245773362195,
+        "c": -0.12685682011951283,
+        "n": 3
+      },
+      {
+        "alpha": 0.2772588722239781,
+        "c": -0.06931471805599453,
+        "n": 4
+      }
+    ]
+  },
+  "lag_summability": {
+    "centered_kernel_bound": "|K_center|<=2*|E|<=2*M; both endpoint sides together therefore have absolute lag-tail bound <=32*M*S(T)^3*tail(R)",
+    "full_bound": "sum_(ell1+ell2+ell3=0) product_j w_ellj <= ||w||_(3/2)^3=(1+2*zeta(3/2)/pi^(3/2))^2",
+    "normalized_natural_scale": "O((M/d)*N^(3/2)/L^3*R^(-1/3))=O(exp(3L/2-2*sqrt(L))*R^(-1/3)/L^3); this does not tend to zero for fixed R and does not justify deleting long lags",
+    "prime_mass": "S(T)=sum_(n in P(N))|c_n|=O(sqrt(N)/L); summing the triple coefficient mass contributes S(T)^3 and all eight sign vectors",
+    "scope": "The lag-only summability is valid, but after coefficient and endpoint weights it is not a negligible tail estimate. All lags remain in the exact formula.",
+    "tail_bound": "sum_(sum ell=0, max_j|ell_j|>R) product_j w_ellj <= 3*||w*1_(|ell|>R)||_(3/2)*||w||_(3/2)^2 <= 3*4^(2/3)/pi*(1+2*zeta(3/2)/pi^(3/2))^(4/3)*R^(-1/3), R>=1",
+    "weights": "w_0=1; w_ell=1/(pi*|ell|), ell!=0"
+  },
+  "quantitative_gate": {
+    "alias_neighborhoods": "The complementary fixed neighborhoods of m=0,+-1,+-2 retain the O(M) coherent endpoint kernel; the exact zero-carrier part alone is controlled by Decision I. No bound closes the remaining nonzero near aliases.",
+    "decisive_obstruction": "The exact phase reunification does not bound the signed weighted sum over source triples near Omega/L=m; coefficient L1 mass times the full lag norm gives a growing natural-cutoff upper envelope.",
+    "far_sector": "For fixed delta in (0,1/2), dist(Omega/L,Z)>=delta implies |K_center|<=2/sin(pi*delta). Summing all lags and the full prime-power coefficient mass gives E_u|Y_far,L|+E_v|Y_far,R|<=32*||w||_(3/2)^3*S(T)^3/sin(pi*delta). After division by d this is O_delta(N^(3/2)/(T*L^4))=O_delta(exp(L/2-3*sqrt(L)/2)/L^4), a genuine improvement over the inherited O(K_T*M/d)=O(exp(L/2-sqrt(L))/L) envelope by factor O_delta(exp(-sqrt(L)/2)/L^3), but it still diverges.",
+    "first_missing_estimate": "A uniform source-weighted centered endpoint estimate for the exact K_center sum above, retaining m=0 nonzero near aliases and m=\u00b11,\u00b12 aliases, full P(N), and all finite-section paths, with total o(d).",
+    "new_saving": "No signed or positive constant saving is certified; the far-sector upper bound is absolute, source-valid, stronger than the inherited global envelope, and insufficient because it grows.",
+    "target": "E_u|Y_L_nonzero(u)|+E_v|Y_R_nonzero(v)|=o(d)"
+  },
+  "relative_lag_identity": {
+    "carrier": "product_j c_(n_j)*exp(i*T*Omega); all prime powers n_j=p^v<=N retained",
+    "endpoint_intersection": "For either contiguous endpoint interval E_u or E_v, E intersect K_ell is contiguous or empty",
+    "indices": "k, k+q1, k+q2",
+    "lags": "ell1+ell2+ell3=0; q0=0, q1=ell1, q2=ell1+ell2",
+    "path_weight": "product_j f_(ell_j)^sigma_j(alpha_j)",
+    "phase": "exp(2*pi*i*k*Omega/L)*exp(2*pi*i*(sigma2*q1*alpha2+sigma3*q2*alpha3)); Omega=sum sigma_j*log(n_j)",
+    "root_count": "|K_ell|=max(0,d-(max(q)-min(q)))",
+    "root_set": "K_ell={k in I0:k+q0,k+q1,k+q2 all in I0}; for I0=[b,b+d-1], this is [b-min(q), b+d-1-max(q)] intersected with integers, empty if max(q)-min(q)>d-1"
+  },
+  "start_state": {
+    "branch": "codex/c5-c6-attack-20261006",
+    "head": "fd5dc616f0780dc33e40278647d1826ec5bc85f2",
+    "merge": "NO",
+    "notebooklm_packet": "untouched",
+    "preexisting_untracked": [
+      "notebooklm_packet/"
+    ],
+    "push": "NO"
+  },
+  "theorem_boundary": "m3=2, conditioned Cayley energy<0.105, signed fifth/sixth gate, prime-to-Weil identification, zero-side transfer, determinant compatibility, and strict >79% remain OPEN.",
+  "title": "WP84 Decision J: full-frequency cubic path reduction"
+}
