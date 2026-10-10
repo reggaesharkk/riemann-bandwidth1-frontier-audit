@@ -74,7 +74,9 @@ For (+++) let P=n1*n2*n3 and Omega=log(P); for (---), Omega=-log(P). Group exact
 
     (c_n1*c_n2*c_n3) * exp(+- i*T*log(P))
     * product_j f_{l_j}^{sigma_j}(alpha_nj)
-    * exp(displacement phase) * K_center(E,l,+-log(P)).
+    * exp(2*pi*i*(sigma_2*l_1*alpha_n2
+                   +sigma_3*(l_1+l_2)*alpha_n3))
+    * K_center(E,l,+-log(P)).
 
 Thus the grouping retains the common carrier and kernel but does not identify or cancel factorization-dependent filters or displacement phases. For an upper bound, use Lambda(n)<=log(n), multiplicity at most d3(P), and the full lag mass W3. Repeated prime bases and proper powers are included.
 

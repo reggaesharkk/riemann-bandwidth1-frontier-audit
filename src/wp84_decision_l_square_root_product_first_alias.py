@@ -78,7 +78,7 @@ def main() -> None:
         "candidate_B": {
             "signs": "+++ and ---",
             "first_bin": "X^(1/2)<=P=n1*n2*n3<=X^(3/2)",
-            "exact_group": "sum ordered p_i^v_i factorizations at P; keep coefficient signs, exp(+-i*T*log(P)), all f filters, displacement, finite K_center",
+            "exact_group": "sum ordered p_i^v_i factorizations at P; keep coefficient signs, exp(+-i*T*log(P)), all f filters, exact displacement exp(2*pi*i*(sigma2*l1*alpha2+sigma3*(l1+l2)*alpha3)), finite K_center",
             "kernel_near": "X/e<=P<=eX: for P!=X, O(min(M,L*X/|P-X|)); exact P=X charged by O(M)",
             "nearest_integers": "at most two P with |P-X|<1 charged separately by O(M), including noninteger X arbitrarily close to an integer",
             "harmonic_sum": "sum_{X/e<=P<=eX, |P-X|>=1} 1/|P-X|=O(log(X+2))",

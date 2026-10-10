@@ -66,6 +66,7 @@ def main() -> None:
     assert cert["decision"] == "L2"
     assert cert["candidate_A"]["decision"].endswith("not theta=1")
     assert cert["candidate_B"]["conclusion"].endswith("o(d)")
+    assert "exact displacement exp(2*pi*i*(sigma2*l1*alpha2+sigma3*(l1+l2)*alpha3))" in cert["candidate_B"]["exact_group"]
     assert cert["strict_gt79"] == "OPEN"
     assert "every finite path lag retained" in cert["source"]["operator"]
     assert "none" in cert["source"]["fixed_R_consumer_transfer"]
