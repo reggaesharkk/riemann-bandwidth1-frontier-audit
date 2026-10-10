@@ -1,0 +1,123 @@
+{
+  "classification": "E3 \u2014 conditional theorem; actual-source deleted-block cubic estimate is absent",
+  "exact_full_trace_deletion": {
+    "cross_bound": "|cross|<=6*(|s0|+4*S)*E",
+    "cross_normalized_scale": "O((1+S)*log(d)/d)=O(1/T+exp(-sqrt(L)/2)/(sqrt(2*pi*T)*L))=o(1)",
+    "definitions": "A=PHP on P; B=PHQ:Q->P; D=QHQ on Q",
+    "exact_remaining_signed_condition": "Tr(D^3)/d-(r/d)*tau_d'(A^3)=o(1); no cancellation is assumed",
+    "identity": "Tr(H^3)-Tr(A^3)=Tr(D^3)+3*Tr_P(A*B*B*)+3*Tr_Q(D*B*B*)",
+    "normalized_identity": "tau_d(H^3)-tau_d'(A^3)=Tr(D^3)/d + cross/d - (r/d)*tau_d'(A^3)",
+    "separate_sufficient_conditions": [
+      "|Tr(D^3)|/d -> 0",
+      "(r/d)*|tau_d'(A^3)| -> 0"
+    ],
+    "stronger_sufficient_deleted_block_bound": "||D||_S3^3/d -> 0"
+  },
+  "hostile_checks": {
+    "abstract_diagonal_spike": [
+      {
+        "compressed_tau3": "0",
+        "d": 8,
+        "deleted_rows": 1,
+        "full_tau3": "1",
+        "r_over_d": "1/8",
+        "tau6": "8"
+      },
+      {
+        "compressed_tau3": "0",
+        "d": 27,
+        "deleted_rows": 1,
+        "full_tau3": "1",
+        "r_over_d": "1/27",
+        "tau6": "27"
+      },
+      {
+        "compressed_tau3": "0",
+        "d": 64,
+        "deleted_rows": 1,
+        "full_tau3": "1",
+        "r_over_d": "1/64",
+        "tau6": "64"
+      },
+      {
+        "compressed_tau3": "0",
+        "d": 125,
+        "deleted_rows": 1,
+        "full_tau3": "1",
+        "r_over_d": "1/125",
+        "tau6": "125"
+      },
+      {
+        "compressed_tau3": "0",
+        "d": 512,
+        "deleted_rows": 1,
+        "full_tau3": "1",
+        "r_over_d": "1/512",
+        "tau6": "512"
+      }
+    ],
+    "finite_rational_block_identity": {
+      "PH3P_minus_A3": "48",
+      "Tr_D3": "72",
+      "Tr_H3_minus_Tr_A3": "162",
+      "compression_identity_rhs": "48",
+      "confusing_two_trace_identities_rejected": true,
+      "crossing_energy_Tr_BBstar": "9",
+      "deleted_dimension": 2,
+      "dimension": 4,
+      "full_trace_identity_rhs": "162",
+      "kept_dimension": 2,
+      "omitting_Tr_D3_mutation_rejected": true,
+      "scope": "exact rational symmetric algebra diagnostic, not prime-source data"
+    },
+    "source_legal_counterexample": false
+  },
+  "independent_replay": "src/wp84_decision_e_prime_source_cubic_deletion_replay.py",
+  "moment_routes": {
+    "elementary_bound": "tau_d(H^6)<=||H||op^4*tau_d(H^2)=O((1+S)^4) with bounded m2; diverges and is insufficient",
+    "first_missing_sixth_estimate": "uniform bound on total signed sixfold prime-power trace correlation; equality-pattern partitions are bookkeeping only",
+    "resolvent_route": "bounded resolvent comparisons do not control the raw cubic tail without a source-uniform weighted resolvent/tail estimate; none is certified",
+    "sixth_expansion": "tau_d(H^6)=sum_{j=0}^6 binom(6,j)*s0^(6-j)/d * sum_{n_1,...,n_j in P(N)} Tr(V_n1...V_nj), V=sum_n V_n",
+    "uniform_fourth_suffices": "sup_T tau_d(|H|^4)<infinity implies cubic-tail UI; tau_d'(|A|^4)<=(d/d')*tau_d(|H|^4); no actual-source uniform fourth theorem certified",
+    "uniform_sixth": "sup_T tau_d(|H|^6)<=C6^6 implies Decision C bound 6*C6^3*sqrt(2*r/d)+C6^3*(r/d)*sqrt(d/d')=o(1); not established",
+    "weaker_route": "uniform integrability of cubic spectral tails for H and its principal compressions suffices by bounded-variation truncation and interlacing",
+    "word_entry": "(V_n)_ij=delta_ij*2*(1-alpha_n)*Re(w_n(i))+(1-delta_ij)*(Im(w_n(i))-Im(w_n(j)))/(pi*(j-i))"
+  },
+  "preservation": "notebooklm_packet/ preserved; no push or merge",
+  "scope_firewall": [
+    "Decision D2 endpoint result applies to direct first-strike generic endpoint scores only",
+    "no source_mask determinant compatibility is inferred",
+    "no m3=2, conditioned Cayley energy <0.105, signed fifth/sixth saving, prime-to-Weil transfer, zero-side identification, or strict >79% theorem"
+  ],
+  "selected_section": {
+    "M": "ceil(d*exp(-sqrt(L)/2))",
+    "boundary_error": "selected compression identity error O((1+S)*E/d')=o(1); does not include Tr((QHQ)^3)",
+    "d_prime": "d-r~d~T*L/(2*pi)",
+    "decision_b_d2": "direct first-strike endpoint-admissible pair with weighted density >=1/4 and crossing energy E=||PHQ||HS^2=O(log(d))",
+    "r": "u+v<=2*M; r/d=O(exp(-sqrt(L)/2))"
+  },
+  "source_localized_deleted_block_estimate": {
+    "W": "W=Q V Q; ||W||HS^2=O(M+N*L), ||W||op<=4*S",
+    "input": "Decision B local prime-power large sieve, uniform on each deleted endpoint interval of length <=M",
+    "local_square_mass": "sum_Q |A_k|^2 + sum_Q |beta_k|^2 = O(M+N*L); beta coefficients 2*(1-alpha_n)c_n retain all prime powers",
+    "natural_scale": "M>>N*L, r<=2M; bound reduces O(M/d+S*M/d), S*M/d=O(sqrt(T)*exp(-sqrt(L))/L)",
+    "trace_bound": "|Tr(D^3)|/d=O(r/d + sqrt(r*(M+N*L))/d + (M+N*L)/d + S*(M+N*L)/d)",
+    "verdict": "source-specific boundary-localized HS estimate; final majorant grows and does not prove Tr(D^3)=o(d)"
+  },
+  "source_matrix": {
+    "carrier": "z_n=c_n*exp(i*T*log(n)); alpha_n=log(n)/L; w_n(k)=z_n*exp(2*pi*i*k*alpha_n)",
+    "coefficient": "c_n=-Lambda(n)/(a_phi(T)*L*sqrt(n))",
+    "fields": "A_k=sum_n Im(w_n(k)); beta_k=sum_n 2*(1-alpha_n)*Re(w_n(k))",
+    "fourier_no_wrap": "j(x)=i*(1-2*x) for 0<x<1; partial translations z_n*S_alpha^+ + conjugate(z_n)*S_alpha^-; exact at fixed T,N, not uniform in the growing pool",
+    "kernel": "J_ij=1/(pi*(j-i)) for i!=j, J_ii=0; J*= -J",
+    "matrix": "H=s0(T)I+diag(beta)+[diag(A),J]",
+    "natural_frequency_margin": "alpha_n<=1-1/sqrt(L)+o(L^(-1/2))",
+    "operator_bound": "||H||op<=|s0|+4*S, S=sum_{p^v<=N}|c_{p^v}|=O(sqrt(N)/L)",
+    "prime_pool": "all n=p^v<=N, v>=1",
+    "scale": "X=T/(2*pi), L=log(X), N=floor(X*exp(-sqrt(L))), d=floor(T*L/(2*pi))"
+  },
+  "start_branch": "codex/c5-c6-attack-20261006",
+  "start_head": "aba8d321270332829d5c8f21fc6c111f449081a1",
+  "title": "WP84 Decision E prime-source cubic deletion stability",
+  "verified_start_head": true
+}
