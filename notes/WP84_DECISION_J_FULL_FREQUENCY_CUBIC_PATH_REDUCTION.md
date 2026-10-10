@@ -164,7 +164,7 @@ Decision I has already bounded the exact equality (P_+=P_-) (the same-prime expo
 
 These are full-frequency classes in relative-lag coordinates. They include both exact prime and proper-prime-power inputs. The coherence windows have width (1/M); exact nonzero zero-alias products remain distinct from Decision I's (P_+=P_-) class. Integer-product spacing for a distinct mixed product only gives (|\Omega|\ge1/(N^2+1)), which is much smaller than (L/M) at this cutoff. It does not rule out central near aliases. Near-nonzero-integer aliases likewise require estimates around the noninteger centers (X^m), not UFD equality. No phase randomness or independence is assumed.
 
-For a complete fixed-gap far-frequency sector 
+For a complete fixed-gap far-frequency sector
 \[
 \operatorname{dist}(\Omega/L,\mathbb Z)\ge\delta,\qquad 0<\delta<1/2,
 \]
