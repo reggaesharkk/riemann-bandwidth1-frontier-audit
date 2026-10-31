@@ -1,2 +1,2 @@
 # riemann-bandwidth1-frontier-audit
-Reproducible audit of bandwidth-one Weil-form certificates for unconditional simple zeros of the Riemann zeta function.
+I use this private repository for a reproducible audit of bandwidth-one Weil-form certificates related to simple zeros of the Riemann zeta function.
