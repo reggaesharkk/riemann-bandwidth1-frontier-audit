@@ -33,6 +33,7 @@ class SourceWeightConeTests(unittest.TestCase):
             self.assertGreater(lower, Q(0))
             self.assertLessEqual(tail, Q(241, 625))
         self.assertEqual(audit.actual_weight_bound(10), (Q(384, 625), Q(241, 625)))
+        self.assertEqual(Q(799, 4000) * Q(384, 625), Q(9588, 78125))
 
     def test_exact_denominator_five_vector_and_cone_violation(self):
         vector = audit.exact_grid_term_vector(audit.WITNESS, 10)

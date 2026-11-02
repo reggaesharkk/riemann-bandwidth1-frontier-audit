@@ -325,6 +325,6 @@
       ]
     }
   ],
-  "positive_cumulant_bound": "For every m>=10 and each source/conjugate vector, kappa_m(v)>=384/625. Hence every listed source atom has Omega_4,400(v)*kappa_m(v)>0.",
+  "positive_cumulant_bound": "For every m>=10 and each source/conjugate vector, kappa_m(v)>=384/625. Every overlap exceeds 799/4000, so Phi_4,400,m(v)>9588/78125.",
   "aggregate_warning": "These 24 unique legal prime-power tuples do not determine the sign of the complete signed arithmetic sum."
 }

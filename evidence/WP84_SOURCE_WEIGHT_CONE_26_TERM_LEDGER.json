@@ -709,6 +709,7 @@
     "orders_per_orthant": 4,
     "orientation_interval_certificate": "R400 external Omega interval values for source and conjugate families are in WP84_SOURCE_WEIGHT_CONE_ORIENTATION_INTERVALS.json",
     "source_admission_and_carrier_invariance": "The complete prime-power cutoff indicator and closed carrier are unchanged by these permutations and by conjugation",
+    "uniform_filtered_kernel_lower_bound": "every certified overlap exceeds 799/4000; with kappa_m>=384/625 this gives Phi_4,400,m>9588/78125 for all 24 unique orientations and every selected m>=10",
     "unique_vectors_after_equal_negative_shifts": 24
   },
   "orientation_term_ledgers": [

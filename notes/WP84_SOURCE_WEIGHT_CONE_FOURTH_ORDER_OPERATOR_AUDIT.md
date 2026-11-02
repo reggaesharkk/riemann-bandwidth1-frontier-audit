@@ -201,9 +201,11 @@ source family and its conjugate: each has 24 labeled placements, six balanced
 sign orthants, two positive-shift orders, and two negative-shift orders. The
 two equal shifts collapse each family to 12 unique ordered tuples. Across
 both families there are 48 labeled placements and 24 distinct source tuples.
-Every R400 filtered external-overlap interval is strictly positive (the
-smallest lower endpoint is about 0.19975043199909). Conjugation preserves
-the positive source coefficient and real row cumulant on S=0. Thus all 24
+Every R400 filtered external-overlap interval exceeds the exact rational
+bound \(799/4000\) (the smallest certified lower endpoint is about
+0.19975043199909). Together with \(\kappa_m\ge384/625\), this gives the
+uniform kernel bound \(\Phi_{4,400,m}>9588/78125\). Conjugation preserves the
+positive source coefficient and real row cumulant on S=0. Thus all 24
 distinct source tuples have positive atoms for sufficiently large p and every
 selected m>=10; swapping equal prime powers does not add multiplicity in the
 Cartesian pool sum.

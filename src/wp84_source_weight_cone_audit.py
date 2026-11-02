@@ -195,6 +195,7 @@ def build_evidence():
     _require(sum(zero_vector) == 0 and sum(x != 0 for x in zero_vector) == 2,
              "zero-margin witness changed")
     _require(margin == Q(384, 625) and tail == Q(241, 625), "rational margin changed")
+    _require(Q(799, 4000) * margin == Q(9588, 78125), "filtered kernel lower-bound product changed")
     positive_family = orientation_vectors()
     conjugate_family = tuple(tuple(-x for x in v) for v in positive_family)
     orientations = positive_family + conjugate_family
@@ -284,6 +285,7 @@ def build_evidence():
             "conjugation": "The sign-reversed family has the same positive coefficient and real kappa on S=0; both filtered overlaps are interval-certified positive",
             "source_admission_and_carrier_invariance": "The complete prime-power cutoff indicator and closed carrier are unchanged by these permutations and by conjugation",
             "external_overlap_invariance": "Omega_4,400 is order-dependent; all 24 unique values across both conjugate families are separately interval-certified positive",
+            "uniform_filtered_kernel_lower_bound": "every certified overlap exceeds 799/4000; with kappa_m>=384/625 this gives Phi_4,400,m>9588/78125 for all 24 unique orientations and every selected m>=10",
             "orientation_interval_certificate": "R400 external Omega interval values for source and conjugate families are in WP84_SOURCE_WEIGHT_CONE_ORIENTATION_INTERVALS.json",
         },
         "zero_margin_test": {

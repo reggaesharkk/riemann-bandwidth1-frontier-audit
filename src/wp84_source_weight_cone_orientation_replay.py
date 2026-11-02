@@ -50,6 +50,8 @@ def main():
         value = omega_interval(vector, 400, iv, cache)
         if not value > 0:
             raise RuntimeError("nonpositive interval in balanced source orientation")
+        if not value > (iv.mpf(799) / 4000):
+            raise RuntimeError("certified overlap lower bound 799/4000 failed")
         match = re.fullmatch(r"\[([^,]+),\s*([^\]]+)\]", str(value))
         if match is None:
             raise RuntimeError("unexpected interval rendering")
@@ -74,7 +76,7 @@ def main():
             "external_filtered_overlap": "Not invariant under permutation; the certified intervals show distinct positive values for different orderings in both families.",
         },
         "intervals": records,
-        "positive_cumulant_bound": "For every m>=10 and each source/conjugate vector, kappa_m(v)>=384/625. Hence every listed source atom has Omega_4,400(v)*kappa_m(v)>0.",
+        "positive_cumulant_bound": "For every m>=10 and each source/conjugate vector, kappa_m(v)>=384/625. Every overlap exceeds 799/4000, so Phi_4,400,m(v)>9588/78125.",
         "aggregate_warning": "These 24 unique legal prime-power tuples do not determine the sign of the complete signed arithmetic sum.",
     }
     target = ROOT / "evidence" / "WP84_SOURCE_WEIGHT_CONE_ORIENTATION_INTERVALS.json"

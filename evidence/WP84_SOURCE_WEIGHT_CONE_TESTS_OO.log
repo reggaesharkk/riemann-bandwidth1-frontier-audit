@@ -9,6 +9,6 @@ test_supplied_abstract_positive_weight_countermodel (test_wp84_source_weight_con
 test_zero_bracket_has_no_reweighting_margin (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_zero_bracket_has_no_reweighting_margin) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.059s
+Ran 9 tests in 0.061s
 
 OK

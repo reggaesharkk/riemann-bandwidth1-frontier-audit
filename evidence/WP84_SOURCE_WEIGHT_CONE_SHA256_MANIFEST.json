@@ -1,8 +1,8 @@
 {
   "audit_artifacts": {
     "evidence/WP84_SOURCE_WEIGHT_CONE_26_TERM_LEDGER.json": {
-      "bytes": 367226,
-      "sha256": "5d3f93713059420b6aa4a5ffe7f8c2f11ce6f42cf311ced331b3f3e28f5c44b7"
+      "bytes": 367427,
+      "sha256": "4e82dee573c84f12f3c188df695fe7432f26617df6673217a49fc113a70a5089"
     },
     "evidence/WP84_SOURCE_WEIGHT_CONE_BASE_REPLAY.log": {
       "bytes": 538,
@@ -13,8 +13,8 @@
       "sha256": "a5c27887c75769ca43bcec6764dab5dd0283d5c3e754a42ca3a0a555afdaac5c"
     },
     "evidence/WP84_SOURCE_WEIGHT_CONE_ORIENTATION_INTERVALS.json": {
-      "bytes": 7687,
-      "sha256": "b2da59f17c179971e7c8596fd1341b6dc246e1395d2f0d82f3eae4c960d27df8"
+      "bytes": 7685,
+      "sha256": "363b6fc869a3c58f4dbd25f22f3e7ee5f478198374e7ff618f51f0c912c2b965"
     },
     "evidence/WP84_SOURCE_WEIGHT_CONE_ORIENTATION_REPLAY.log": {
       "bytes": 3078,
@@ -22,23 +22,23 @@
     },
     "evidence/WP84_SOURCE_WEIGHT_CONE_TESTS_NORMAL.log": {
       "bytes": 1676,
-      "sha256": "0d9f765474d296f5ad5e53877629fb9b593e354d8fecaa61a65952dc2dac5e6d"
+      "sha256": "b57914fd2b1435642a1fb0805ada5893600d99210a4e7489cc41e8e05870017a"
     },
     "evidence/WP84_SOURCE_WEIGHT_CONE_TESTS_O.log": {
       "bytes": 1676,
-      "sha256": "0d9f765474d296f5ad5e53877629fb9b593e354d8fecaa61a65952dc2dac5e6d"
+      "sha256": "b57914fd2b1435642a1fb0805ada5893600d99210a4e7489cc41e8e05870017a"
     },
     "evidence/WP84_SOURCE_WEIGHT_CONE_TESTS_OO.log": {
       "bytes": 1676,
-      "sha256": "b57914fd2b1435642a1fb0805ada5893600d99210a4e7489cc41e8e05870017a"
+      "sha256": "7dc81e079c9b4360f8d729d87c65fc450262e49c75b39b242e9ea684b883f6ab"
     },
     "notes/WP84_SOURCE_WEIGHT_CONE_FOURTH_ORDER_OPERATOR_AUDIT.md": {
-      "bytes": 14324,
-      "sha256": "37f7e8a858158e78ac9837f66bca6415e5534e50c02fc9224274293bd93e44f1"
+      "bytes": 14464,
+      "sha256": "dd26e63b7f6d9e50c93b8ab2832c9a66c6d2980884e62da20b71a83856f5aadb"
     },
     "src/wp84_source_weight_cone_audit.py": {
-      "bytes": 17553,
-      "sha256": "523d7a632611f2c8f830715c1c8f86fcb696063040f38e32515f1a23d55da3ce"
+      "bytes": 17862,
+      "sha256": "f9172884c0a731bf518f6c97e44021ae3b8b09aee814b08fd37a752b14a29ce9"
     },
     "src/wp84_source_weight_cone_certificate_replay.py": {
       "bytes": 1001,
@@ -49,16 +49,16 @@
       "sha256": "f8d8de2088503ab9ef705c38273c096503a6670b53046c1ffaba563a7dce496c"
     },
     "src/wp84_source_weight_cone_orientation_replay.py": {
-      "bytes": 4610,
-      "sha256": "0740892eda5c0db95805e68cd9f8c8a603cc66f49da7c4445c57969293fb5ca3"
+      "bytes": 4733,
+      "sha256": "41967501ed8da1dfbf534b1a9840c4fa1b7f65c1b052fc4f5c5f081973475e9b"
     },
     "src/wp84_source_weight_cone_run_modes.py": {
       "bytes": 1162,
       "sha256": "fdae4269c5f2dd2e94bce8adf18dd05250ec791f8842a6c98ef9f605f55632ec"
     },
     "tests/test_wp84_source_weight_cone_audit.py": {
-      "bytes": 4378,
-      "sha256": "0e039965b05f591b4ec36690e04437b3c55a4e6b1705f69469feecb6b9f4f4bd"
+      "bytes": 4447,
+      "sha256": "f36a7d91a612396c980421926fef733fad5f7e3bd8c11ec40269a7b682412b9e"
     }
   },
   "audit_branch": "codex/wp84-source-weight-cone-operator-audit-20261103",
