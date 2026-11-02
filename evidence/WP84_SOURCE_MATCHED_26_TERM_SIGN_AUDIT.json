@@ -1,0 +1,1649 @@
+{
+  "captured_date": "2026-11-02",
+  "claim_boundary": {
+    "actual_source_counterexample_found": false,
+    "actual_source_sign_proved": false,
+    "greater_than_79_percent_theorem": "OPEN",
+    "rh_claim": false
+  },
+  "classification": "BLOCKED_SOURCE_SEMANTICS_INCOMPLETE",
+  "formula_level_results": {
+    "abstract_countermodel": {
+      "all_model_weights_strictly_positive": true,
+      "classification": "ABSTRACT_LOGICAL_COUNTERMODEL_NOT_A_SOURCE_COUNTEREXAMPLE",
+      "coefficient_multiplicities_by_block_count": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 6
+      },
+      "first_walk_overlap": "1/12",
+      "interpretation": "per-term positive weights alone do not preserve this model cancellation; source masks and weights are unavailable",
+      "method": "independent restricted-growth partition enumerator and exact Fraction overlaps",
+      "model_term_register": [
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1",
+          "model_positive_weight": "1",
+          "model_reweighted_contribution": "1",
+          "model_term_index": 0,
+          "model_uniform_signed_contribution": "1",
+          "ordered_blocks": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [],
+          "set_partition": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/1200",
+          "model_term_index": 1,
+          "model_uniform_signed_contribution": "-1/12",
+          "ordered_blocks": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/1200",
+          "model_term_index": 2,
+          "model_uniform_signed_contribution": "-1/12",
+          "ordered_blocks": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "1",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/100",
+          "model_term_index": 3,
+          "model_uniform_signed_contribution": "-1",
+          "ordered_blocks": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              1
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/1200",
+          "model_term_index": 4,
+          "model_uniform_signed_contribution": "1/12",
+          "ordered_blocks": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/1200",
+          "model_term_index": 5,
+          "model_uniform_signed_contribution": "1/12",
+          "ordered_blocks": [
+            [
+              0,
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "5/6",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/120",
+          "model_term_index": 6,
+          "model_uniform_signed_contribution": "-5/6",
+          "ordered_blocks": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 7,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 8,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 9,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0,
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "1/4",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/400",
+          "model_term_index": 10,
+          "model_uniform_signed_contribution": "-1/4",
+          "ordered_blocks": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "5/6",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/120",
+          "model_term_index": 11,
+          "model_uniform_signed_contribution": "-5/6",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/1200",
+          "model_term_index": 12,
+          "model_uniform_signed_contribution": "1/12",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/1200",
+          "model_term_index": 13,
+          "model_uniform_signed_contribution": "1/12",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/1200",
+          "model_term_index": 14,
+          "model_uniform_signed_contribution": "1/12",
+          "ordered_blocks": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/1200",
+          "model_term_index": 15,
+          "model_uniform_signed_contribution": "1/12",
+          "ordered_blocks": [
+            [
+              0,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 16,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 17,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "5/6",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/120",
+          "model_term_index": 18,
+          "model_uniform_signed_contribution": "5/6",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": 1,
+          "model_overlap": "5/6",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "1/120",
+          "model_term_index": 19,
+          "model_uniform_signed_contribution": "5/6",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/1200",
+          "model_term_index": 20,
+          "model_uniform_signed_contribution": "-1/12",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 21,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 22,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 23,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "0",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "0",
+          "model_term_index": 24,
+          "model_uniform_signed_contribution": "0",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        },
+        {
+          "cumulant_sign": -1,
+          "model_overlap": "1/12",
+          "model_positive_weight": "1/100",
+          "model_reweighted_contribution": "-1/1200",
+          "model_term_index": 25,
+          "model_uniform_signed_contribution": "-1/12",
+          "ordered_blocks": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "overlap_prefix_label_masks_model_only": [
+            [
+              0
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "set_partition": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "source_carrier_and_complex_phase": null,
+          "source_eligibility": "UNKNOWN_SOURCE_SEMANTICS_INCOMPLETE",
+          "source_mask": null,
+          "source_normalized_weight": null,
+          "source_prime_or_prime_power_coefficient": null,
+          "source_root_endpoints_and_normalization": null
+        }
+      ],
+      "net_detuning_Y": "0",
+      "ordered_term_sign_counts": {
+        "negative": 13,
+        "positive": 13
+      },
+      "positive_nonuniform_weights": "first enumerated term 1; other 25 terms 1/100",
+      "reweighted_bracket": "1187/1200",
+      "reweighted_product": "1187/14400",
+      "shifts": [
+        "1/6",
+        "-1/6",
+        "11/12",
+        "-11/12"
+      ],
+      "term_count": 26,
+      "terms_by_number_of_ordered_blocks": {
+        "1": 1,
+        "2": 7,
+        "3": 12,
+        "4": 6
+      },
+      "uniform_positive_scalar_example": "7/3",
+      "uniformly_scaled_bracket": "-7/36",
+      "uniformly_scaled_product": "-7/432",
+      "unweighted_connected_bracket": "-1/12"
+    },
+    "balanced_nonclosed_overlap_sign": "the pinned exact arrangement theorem proves B4_nc<=0 on the balanced 2-vs-2 sector when the common first overlap is positive; it is a theorem-side model result",
+    "conjugation_replay": {
+      "K_T_Y": [
+        "-1/14",
+        "-1/14"
+      ],
+      "K_T_minus_Y": [
+        "-1/14",
+        "1/14"
+      ],
+      "classification": "EXACT_GAUSSIAN_RATIONAL_FINITE_TRACE_CONTROL",
+      "conjugate_pair_sum": [
+        "-1/7",
+        "0"
+      ],
+      "conjugation_mutation_rejected": true,
+      "incorrect_same_orientation_pair_sum": [
+        "-1/7",
+        "-1/7"
+      ],
+      "parameters": {
+        "L": "7*pi/3",
+        "T": 12,
+        "T_times_Y": "7*pi",
+        "Y_over_L": "1/4",
+        "d": 14
+      },
+      "scope": "checks the finite trace conjugation rule; does not supply a source row orientation map"
+    },
+    "connected_ordered_partition_counts": {
+      "by_blocks": {
+        "1": 1,
+        "2": 7,
+        "3": 12,
+        "4": 6
+      },
+      "signs_by_blocks": {
+        "1": "+",
+        "2": "-",
+        "3": "+",
+        "4": "-"
+      },
+      "terms": 26
+    },
+    "exact_pairing_subtraction": "the 7 two-block terms include exactly 3 two-plus-two pairings and 4 one-plus-three splits; the three pairings alone are the centered fourth-cumulant subtraction only after source centering is established",
+    "finite_trace": "K_T(Y)=exp(i*T*Y)*D_d(Y/L), with Re K_T(Y) used for the real connected sum; at Y=0 K=1",
+    "orientation_replay": {
+      "C24": "-1/2",
+      "C6": "-1/8",
+      "C8": "-1/2",
+      "classification": "EXACT_FIXED_SCALE_ORIENTATION_REPLAY_NOT_SOURCE_MASK_REPLAY",
+      "identities": {
+        "C24_eq_4C6": true,
+        "C24_eq_C8": true,
+        "C6_over_2_eq_C8_over_8": true,
+        "normalized_formula": "-1/16"
+      },
+      "omitted_orientation_negative_control": {
+        "C8_minus_one_over_8": "-7/128",
+        "expected": "-1/16",
+        "rejected": true,
+        "removed_order": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "orientation_counts": {
+        "all_label_permutations": 24,
+        "alternating_label_permutations": 8,
+        "fixed_internal_order_sign_patterns": 6
+      },
+      "pairing_status": "exactly three 2+2 partitions have cumulant coefficient -1; they are the full pairing subtraction only when the four source factors are centered",
+      "rational_parameters": {
+        "s": "3/2",
+        "x": "3/4",
+        "y": "7/8"
+      },
+      "two_two_pairing_subtraction_terms": 3
+    },
+    "outer_shift_range": "the scalar can change sign beyond the safe lobe; fixed common product-scale slices have an exact negative-semidefinite Schur-product sign, while unequal-scale source-selected consumption remains open",
+    "short_shift_range": "the pinned safe-lobe theorem proves |Y|<=pi/(3T) implies Re K_T(Y)>=0 for L>=1,T>=12 and maps |h|<=M/T on M<m,n<=2M into that lobe"
+  },
+  "gates": {
+    "CONNECTED_WEIGHT_FACTORIZATION": "BLOCKED_SOURCE_SEMANTICS_INCOMPLETE",
+    "DIAGONAL_PAIR_MATCH": "EXACT_FORMAL_Y_ZERO_KERNEL; SOURCE_ROW_MATCH_BLOCKED",
+    "FULL_BOUNDED_CONSUMER": "OPEN",
+    "OUTER_LOBE_CONTROL": "EXACT_ON_COMMON_PRODUCT_SCALE; UNEQUAL_SCALE_SOURCE_CONSUMER_OPEN",
+    "SAFE_LOBE_SOURCE_SIGN": "FORMAL_CONDITIONAL_SIGN_PROVED_SOURCE_MATCH_BLOCKED",
+    "SOURCE_MASK_RECONSTRUCTED": "BLOCKED_SOURCE_SEMANTICS_INCOMPLETE",
+    "UNCONDITIONAL_GT79": "OPEN"
+  },
+  "history_search": {
+    "candidate_section_selector_pattern_hits": [],
+    "producer_history": {
+      "src/wp84_fifth_full_pool_amplitude.py": [
+        "b299cbdb12a525739ac17fc489eb7992e8f316ff"
+      ],
+      "src/wp84_source_mask_semantics_replay.py": [
+        "9401b38a8d2b8be8fc9f9597988dd93c1d6c86c1"
+      ],
+      "src/wp84_source_q_mask_extractor.py": [
+        "f654e7a00545a6864b6f29416c080744d8ccfcc9"
+      ]
+    },
+    "reachable_commit_count_before_audit_branch_commit": 871,
+    "source_mask_definition_pattern_hits": []
+  },
+  "minimal_exact_missing_input": [
+    "immutable source-authentic theorem-side matrix-entry producer: repository commit/blob or contemporaneous generator plus its exact inputs",
+    "deterministic source row/section selector giving ordered row IDs and inclusive endpoints (k_-(T),k_+(T)) for every admitted T, with cutoff-transition/tie rules",
+    "executable per-term eligibility predicate covering prime/prime-power domains, all window intersections, equality/distinctness, carrier and alias residual, orientation, path, root endpoints, and row identity",
+    "exact fourth-order word expansion linking each matrix entry to all 26 ordered partitions, including complex phase/conjugation, multiplicity, centering, pairing subtraction, and normalization",
+    "the exact coefficient/weight formula for each retained prime or prime power and proof of completeness of the selected pool"
+  ],
+  "pinned_document_blobs": {
+    "notes/WP84_BALANCED_ORIENTATION_NORMALIZATION.md": "e48bb9871fbc4f9a4f320fa2b796d3a6a188d64f",
+    "notes/WP84_CONTINUOUS_SPREAD_DIRICHLET_TRACE.md": "3f42b46baa727f5c13c244b9b20f18854a0cb030",
+    "notes/WP84_E2_SHIFT_RANGE_SAFE_LOBE.md": "9ff0fd5ba59969ccd58aab28a0f9c3c489992c58",
+    "notes/WP84_PHI4_BALANCED_NONCLOSED_NONPOSITIVITY.md": "5c0fa1e59c7bd398d20677d26d03b03497d7062f",
+    "src/wp84_e2_shift_range_safe_lobe.py": "4741f932c7fade6229d1f2a35447644a5440c7a9",
+    "src/wp84_phi4_balanced_nonclosed_nonpositive.py": "d11a21c4492135e7247c482efe48abe0ef0c3c3b"
+  },
+  "repository": {
+    "audit_branch": "codex/wp84-source-mask-sign-audit-20261102",
+    "no_push_merge_publish_or_provider_calls": true,
+    "source_branch_at_audit_start": "codex/c5-c6-attack-20261006",
+    "source_context_branch": "codex/wp84-source-recovery-20261008",
+    "source_context_head": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1",
+    "source_head": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1",
+    "source_search_scope": "tracked source at pinned HEAD plus reachable local/ref history"
+  },
+  "schema": "wp84.source-matched-26-term-sign-audit.v1",
+  "source_hash_manifest": [
+    {
+      "bytes": 1916,
+      "git_blob": "e48bb9871fbc4f9a4f320fa2b796d3a6a188d64f",
+      "path": "notes/WP84_BALANCED_ORIENTATION_NORMALIZATION.md",
+      "sha256": "33ab0e9150d5131aa25295877db8f47d1fddb366c9768fff80a95200879811d2",
+      "source_revision": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1"
+    },
+    {
+      "bytes": 89858,
+      "git_blob": "78deb3b53acea01f57c65c653020d4d4e0b37511",
+      "path": "notes/WP84_BLOCK15_SOURCE_MASK_IDENTIFIABILITY_CERTIFICATE.json",
+      "sha256": "e553de621f7a95bd4c9b18edbf2a51f1aa9106fd531cd25cf8ca26f5707230f2",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 9361,
+      "git_blob": "9bf2dfb3f279f9e4a145cc86d6fb9623e5b0cac6",
+      "path": "notes/WP84_BLOCK15_SOURCE_MASK_SEMANTIC_RECONSTRUCTION.md",
+      "sha256": "c3eaedfa394bf25d01590334c56dacd1c965d889d6185a659de72ef7f949adcf",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 4409,
+      "git_blob": "3f42b46baa727f5c13c244b9b20f18854a0cb030",
+      "path": "notes/WP84_CONTINUOUS_SPREAD_DIRICHLET_TRACE.md",
+      "sha256": "acd89593dc09bf80bdbf3fe5d3f44fba148d3975b3d9bb039eda77fdfee799f7",
+      "source_revision": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1"
+    },
+    {
+      "bytes": 5154,
+      "git_blob": "9ff0fd5ba59969ccd58aab28a0f9c3c489992c58",
+      "path": "notes/WP84_E2_SHIFT_RANGE_SAFE_LOBE.md",
+      "sha256": "15b91a732ce84b185698bc0a1156fd8b9acc9e6e467c7aa7e235c68c51631c37",
+      "source_revision": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1"
+    },
+    {
+      "bytes": 17895,
+      "git_blob": "edcef2f38ad67c5fc70e806cde7d62ba28953dc3",
+      "path": "notes/WP84_FIFTH_FULL_POOL_LARGE_SECTION_LIFT.md",
+      "sha256": "cbdeab13cb0dfb6a3807bbd61aeca889b14378900c3e76cc9888462281d8faa1",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 5822,
+      "git_blob": "132cf600fad7289eb75e492a6a206a32f04ccb6c",
+      "path": "notes/WP84_FIXED_SCALE_CONNECTED_KERNEL.md",
+      "sha256": "8d0e64dea7edda796b7d2eb396b30a3e2ffbd86f44838052f4e371868538826c",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 5732,
+      "git_blob": "5c0fa1e59c7bd398d20677d26d03b03497d7062f",
+      "path": "notes/WP84_PHI4_BALANCED_NONCLOSED_NONPOSITIVITY.md",
+      "sha256": "c90bb7637419c56c153a82f5ad0cb3b03b47b9bc1200286b7b873c9078649989",
+      "source_revision": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1"
+    },
+    {
+      "bytes": 4314,
+      "git_blob": "5fcc078ff70b965ae807a8b480edfe2c6be11a06",
+      "path": "notes/WP84_PHI4_EQUAL_SCALE_BROWNIAN_KERNEL.md",
+      "sha256": "ff429b93d057b60237bfdddd2e7041bead67316f5ec3d599d80f4637fdc69ec2",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 13213,
+      "git_blob": "a13c384b571295730d308014ccd2ab80c069cea1",
+      "path": "notes/WP84_SOURCE_PROVENANCE_RECOVERY_AUDIT.md",
+      "sha256": "3670ba80159c5c3bd15dadd64a715dc2f46ab467e127ba4f77ea6786cdcbb3eb",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 20917,
+      "git_blob": "4179bb53d6847a07218252023b4a90d1da54cd61",
+      "path": "notes/WP84_SOURCE_PROVENANCE_RECOVERY_CERTIFICATE.json",
+      "sha256": "03fdea092c109695f3ebd0dbcf5e32b24432c4cabd000c4f9f1ead6691653c15",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 2089,
+      "git_blob": "3029eecc78467a8e4238bc4cfcbf26479d521b26",
+      "path": "src/wp84_balanced_orientation_normalization.py",
+      "sha256": "9dd5382f9175d7cefb072e9ef63a266539f4306f6701eecbbf50b9b26a281738",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 1314,
+      "git_blob": "4741f932c7fade6229d1f2a35447644a5440c7a9",
+      "path": "src/wp84_e2_shift_range_safe_lobe.py",
+      "sha256": "e97e148e42ef28862b84fbb17d5faf4cbd1ed66b112950c4c771377724bae7de",
+      "source_revision": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1"
+    },
+    {
+      "bytes": 10909,
+      "git_blob": "dab1000ec7297f276197b8ecca7a8a0cd07fbd69",
+      "path": "src/wp84_fifth_full_pool_amplitude.py",
+      "sha256": "a8820b56d77256273a469835d6b3c61137bbebd76fd1755ade3c400d86810508",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 2324,
+      "git_blob": "cae12cff3f24ed19338f364216515babf5eb1c53",
+      "path": "src/wp84_fifth_full_pool_section_replay.py",
+      "sha256": "d749c1950b92b6f07d1ea9ea79850d63cf95a7a1ff9bf0dffd15923202e9aa82",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 5595,
+      "git_blob": "8fec6d05c3ef61a8e964f9ce14a5080728ebcb38",
+      "path": "src/wp84_fixed_scale_connected_kernel.py",
+      "sha256": "c9573492114cf72e43a6e83b108e935f7e4940086c450791736cc91a867caf04",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 5521,
+      "git_blob": "d11a21c4492135e7247c482efe48abe0ef0c3c3b",
+      "path": "src/wp84_phi4_balanced_nonclosed_nonpositive.py",
+      "sha256": "1e648194fb454cfe06e34b6f57304f1291a9f15571b0e3787f66e2e4304c9fc9",
+      "source_revision": "be82c32cc00fce6d1c880ee5a4fe4a1300a194d1"
+    },
+    {
+      "bytes": 3779,
+      "git_blob": "029ce89c2a76b4c306a403f32f5d0961084a144d",
+      "path": "src/wp84_phi4_equal_scale_brownian_kernel.py",
+      "sha256": "6c95dac3b6869f7ea1d1835a64625d73e777d1d916af604e2ba9d4ae23766ff9",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 7231,
+      "git_blob": "39db07c32c7f876176c088fd4b2defcb4bcb899c",
+      "path": "src/wp84_source_mask_contract_extractor.py",
+      "sha256": "a917f99553b6dcb6b5b6a9cc2f9ba229573ba6823681d0262cfebe3ab0c0d247",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 5132,
+      "git_blob": "b7d2640e13a1fadfe7b5eecb5a637d2d248c4a8f",
+      "path": "src/wp84_source_mask_semantics_replay.py",
+      "sha256": "35eed4ac5752d26665404dacfb86854f989419e508af0456fff64e69c95289c2",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 18021,
+      "git_blob": "4894df8f74901eb2e7cd1741902de75d262aa13f",
+      "path": "src/wp84_source_provenance_recovery_replay.py",
+      "sha256": "d9261d648efbb733db5f328a045aa1d2705b038c7fdac52eede27937d62628a1",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    },
+    {
+      "bytes": 5232,
+      "git_blob": "dd89f3204d66425f2cd2c82e22679995066df4b9",
+      "path": "src/wp84_source_q_mask_extractor.py",
+      "sha256": "903566a67c809e397f18efc1fcbfeddcd6bc24ec6b561c93ab0b1cf9bf724152",
+      "source_revision": "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1"
+    }
+  ],
+  "source_producer_probe": {
+    "callback_argument_arity": 6,
+    "callback_filter_source_order": true,
+    "callback_invocation_count_inside_iterator": 1,
+    "callback_is_required_external_argument": true,
+    "callback_local_definitions": 0,
+    "candidate_not_source_authentic": true,
+    "history_callback_definition_hits_all_refs": [],
+    "history_section_selector_hits_in_candidate_modules": [],
+    "interpretation": "current candidate constructor requires an unprovided callback, section endpoints, and complete prime stream; no source-selected matrix entry is instantiated",
+    "iterator_arguments": [
+      "fid",
+      "carrier",
+      "T",
+      "N",
+      "section",
+      "prime_stream",
+      "source_mask",
+      "core_primes",
+      "R"
+    ],
+    "known_section_selector_names_in_tracked_src": [],
+    "notebooklm_packet_excluded_from_source_search": true,
+    "producer_path": "src/wp84_fifth_full_pool_amplitude.py",
+    "producer_revision_blob": "dab1000ec7297f276197b8ecca7a8a0cd07fbd69",
+    "project_callback_definitions_in_tracked_src": [],
+    "project_iterator_call_sites_in_tracked_src": [],
+    "section_selector_names_in_amplitude_module": [],
+    "source_amplitude_entry_is_symbolic_schema": true
+  },
+  "source_semantics": {
+    "fixed_sections_are_not_substituted_for_source_selected_sections": true,
+    "genuine_source_admissible_quadruples_identified": 0,
+    "source_mask_order_dependence_testable": false,
+    "source_selected_26_term_ledger_available": false,
+    "unknowns": [
+      "source row identities and the theorem-side matrix-entry producer",
+      "actual per-row window/intersection and cutoff-transition predicates",
+      "deterministic source-selected section endpoint rule and row order",
+      "source-admissible prime and prime-power coefficients and carrier factors",
+      "source mapping of each of the 26 ordered partitions to phases, orientations, conjugates, and roots",
+      "exact source normalization and pairing-subtraction/centering rule"
+    ],
+    "zero_or_absent_rows_reinterpreted_as_positive": false
+  },
+  "task_packet_verification": {
+    "files": {
+      "CODEX_TASK.md": "1d95f4c275f27ec2608ad32150f5f09f0924ca8f230d775e5d5c7beb078028cb",
+      "README.md": "585a2882a23e406867949e3a730f0f90c929ddb495b6cf9c457a8acd372022e8",
+      "evidence/tests_O.log": "4c5d847bb488ef08c8bbff7fa0497ad9412346382e4b7919c0fb777aebdc84e0",
+      "evidence/tests_OO.log": "4c5d847bb488ef08c8bbff7fa0497ad9412346382e4b7919c0fb777aebdc84e0",
+      "evidence/tests_normal.log": "4c2605cafb8e8d5f4dacbba5aa5099774691c77cceeeb5f262176a692370ae06",
+      "notes/DECISION.md": "080b61507be0742d762f3d5184b16484d193af89301ac28bdb61492554222a5e",
+      "src/audit.py": "bfac958064e5a3a89feb940da04df7120d04e8d8ef70b6ea79cc4ca7c08d1586",
+      "tests/test_audit.py": "88aaa35a12e8036337f158a85031effc3e83d5eba50ab77f51e0533a12586570",
+      "verify.py": "8c32947982491c403c39a38ab36aef6ea967c3fcabe78458dc808103fa59db35"
+    },
+    "files_verified": 9,
+    "manifest_schema": "wp84.source-weight-mask.sha256.v1",
+    "manifest_sha256": "e8389181a9cbfd40be3e247a36ab07bc03fd29203b09d2263eb95e4f9e57f4a7",
+    "root": "C:\\Users\\Asus\\SHARK_AGENT_LAB\\wp84_source_weight_mask_hostile_20261102",
+    "scope": "exact abstract countermodel; no actual WP84 source masks verified",
+    "status": "PASS"
+  },
+  "test_classification": {
+    "exact_finite_replay": [
+      "26 term enumeration",
+      "rational countermodel",
+      "6/24/8 orientation normalization",
+      "Gaussian-rational conjugation control"
+    ],
+    "floating_checks": [],
+    "model_only": [
+      "nonuniform positive reweighting witness; not a WP84 source counterexample"
+    ],
+    "proof_inputs": [
+      "pinned continuous trace and overlap identities",
+      "pinned safe-lobe and fixed-scale kernel theorems"
+    ]
+  }
+}
