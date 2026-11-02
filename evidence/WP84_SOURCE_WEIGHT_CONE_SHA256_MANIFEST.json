@@ -1,0 +1,242 @@
+{
+  "audit_artifacts": {
+    "evidence/WP84_SOURCE_WEIGHT_CONE_26_TERM_LEDGER.json": {
+      "bytes": 367226,
+      "sha256": "5d3f93713059420b6aa4a5ffe7f8c2f11ce6f42cf311ced331b3f3e28f5c44b7"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_BASE_REPLAY.log": {
+      "bytes": 538,
+      "sha256": "9a57b85465c1425f61aff4fc3ae3dfcc0f499a571d33727fd9efd708ad3580a8"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_KERNEL_CERTIFICATE.log": {
+      "bytes": 2064,
+      "sha256": "a5c27887c75769ca43bcec6764dab5dd0283d5c3e754a42ca3a0a555afdaac5c"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_ORIENTATION_INTERVALS.json": {
+      "bytes": 7687,
+      "sha256": "b2da59f17c179971e7c8596fd1341b6dc246e1395d2f0d82f3eae4c960d27df8"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_ORIENTATION_REPLAY.log": {
+      "bytes": 3078,
+      "sha256": "e2800d97a7c596a32dfb6f864c37671b109c19d6368e7f6e646cbf844ff622c3"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_TESTS_NORMAL.log": {
+      "bytes": 1676,
+      "sha256": "0d9f765474d296f5ad5e53877629fb9b593e354d8fecaa61a65952dc2dac5e6d"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_TESTS_O.log": {
+      "bytes": 1676,
+      "sha256": "0d9f765474d296f5ad5e53877629fb9b593e354d8fecaa61a65952dc2dac5e6d"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_TESTS_OO.log": {
+      "bytes": 1676,
+      "sha256": "b57914fd2b1435642a1fb0805ada5893600d99210a4e7489cc41e8e05870017a"
+    },
+    "notes/WP84_SOURCE_WEIGHT_CONE_FOURTH_ORDER_OPERATOR_AUDIT.md": {
+      "bytes": 14324,
+      "sha256": "37f7e8a858158e78ac9837f66bca6415e5534e50c02fc9224274293bd93e44f1"
+    },
+    "src/wp84_source_weight_cone_audit.py": {
+      "bytes": 17553,
+      "sha256": "523d7a632611f2c8f830715c1c8f86fcb696063040f38e32515f1a23d55da3ce"
+    },
+    "src/wp84_source_weight_cone_certificate_replay.py": {
+      "bytes": 1001,
+      "sha256": "12d2b16eb67e3604a1c63455660e84a802920058290d664e4b8dd2d92521caf3"
+    },
+    "src/wp84_source_weight_cone_manifest.py": {
+      "bytes": 7213,
+      "sha256": "f8d8de2088503ab9ef705c38273c096503a6670b53046c1ffaba563a7dce496c"
+    },
+    "src/wp84_source_weight_cone_orientation_replay.py": {
+      "bytes": 4610,
+      "sha256": "0740892eda5c0db95805e68cd9f8c8a603cc66f49da7c4445c57969293fb5ca3"
+    },
+    "src/wp84_source_weight_cone_run_modes.py": {
+      "bytes": 1162,
+      "sha256": "fdae4269c5f2dd2e94bce8adf18dd05250ec791f8842a6c98ef9f605f55632ec"
+    },
+    "tests/test_wp84_source_weight_cone_audit.py": {
+      "bytes": 4378,
+      "sha256": "0e039965b05f591b4ec36690e04437b3c55a4e6b1705f69469feecb6b9f4f4bd"
+    }
+  },
+  "audit_branch": "codex/wp84-source-weight-cone-operator-audit-20261103",
+  "base_commit": "861bdad5f6f6495c5b755546b4b2fa43367e2901",
+  "base_commit_verified": true,
+  "decision": "LEGAL_SOURCE_COUNTEREXAMPLE",
+  "decision_scope": "pointwise source-admissible balanced fourth-order kernel atom; complete aggregate open",
+  "extracted_task_package": {
+    "files": {
+      "CODEX_TASK.md": {
+        "bytes": 2898,
+        "matches_package_manifest": true,
+        "sha256": "1d95f4c275f27ec2608ad32150f5f09f0924ca8f230d775e5d5c7beb078028cb"
+      },
+      "README.md": {
+        "bytes": 2025,
+        "matches_package_manifest": true,
+        "sha256": "585a2882a23e406867949e3a730f0f90c929ddb495b6cf9c457a8acd372022e8"
+      },
+      "SHA256_MANIFEST.json": {
+        "bytes": 986,
+        "matches_package_manifest": null,
+        "sha256": "e8389181a9cbfd40be3e247a36ab07bc03fd29203b09d2263eb95e4f9e57f4a7"
+      },
+      "SHA256_MANIFEST.sha256": {
+        "bytes": 87,
+        "matches_package_manifest": null,
+        "sha256": "649684cb1cbdec3f4f185af3de1de78d198daaf1b2a00b547a16f8f2b32a52c1"
+      },
+      "evidence/tests_O.log": {
+        "bytes": 783,
+        "matches_package_manifest": true,
+        "sha256": "4c5d847bb488ef08c8bbff7fa0497ad9412346382e4b7919c0fb777aebdc84e0"
+      },
+      "evidence/tests_OO.log": {
+        "bytes": 783,
+        "matches_package_manifest": true,
+        "sha256": "4c5d847bb488ef08c8bbff7fa0497ad9412346382e4b7919c0fb777aebdc84e0"
+      },
+      "evidence/tests_normal.log": {
+        "bytes": 783,
+        "matches_package_manifest": true,
+        "sha256": "4c2605cafb8e8d5f4dacbba5aa5099774691c77cceeeb5f262176a692370ae06"
+      },
+      "notes/DECISION.md": {
+        "bytes": 958,
+        "matches_package_manifest": true,
+        "sha256": "080b61507be0742d762f3d5184b16484d193af89301ac28bdb61492554222a5e"
+      },
+      "src/audit.py": {
+        "bytes": 3839,
+        "matches_package_manifest": true,
+        "sha256": "bfac958064e5a3a89feb940da04df7120d04e8d8ef70b6ea79cc4ca7c08d1586"
+      },
+      "tests/test_audit.py": {
+        "bytes": 1740,
+        "matches_package_manifest": true,
+        "sha256": "88aaa35a12e8036337f158a85031effc3e83d5eba50ab77f51e0533a12586570"
+      },
+      "verify.py": {
+        "bytes": 929,
+        "matches_package_manifest": true,
+        "sha256": "8c32947982491c403c39a38ab36aef6ea967c3fcabe78458dc808103fa59db35"
+      }
+    },
+    "manifest_entries_verified": 9,
+    "manifest_sha256": "e8389181a9cbfd40be3e247a36ab07bc03fd29203b09d2263eb95e4f9e57f4a7",
+    "root": "C:\\Users\\Asus\\SHARK_AGENT_LAB\\wp84_source_weight_mask_hostile_20261102"
+  },
+  "manifest_files_excluded_from_self_hash": [
+    "evidence/WP84_SOURCE_WEIGHT_CONE_SHA256_MANIFEST.json",
+    "evidence/WP84_SOURCE_WEIGHT_CONE_SHA256_MANIFEST.sha256"
+  ],
+  "prior_audit_replay": {
+    "checked_out_worktree_sha256": "8a2b91ec1b15d31a3333f3765e32382c4fc1e5545b5d54875cd2226bb3410c73",
+    "git_blob_byte_match": true,
+    "git_blob_sha256": "b1ee1446feda8871506f422df6c3326593e55b833fab32a561f11a857b922cd1",
+    "worktree_line_ending_normalization": true
+  },
+  "repository_source_files": {
+    "evidence/WP84_SOURCE_MATCHED_26_TERM_SIGN_AUDIT.json": {
+      "bytes_in_git_blob": 48273,
+      "bytes_in_worktree": 49922,
+      "git_blob_sha1": "c14447dadebbc0af5aa400f2742d7f340508a8d3",
+      "git_blob_sha256": "b1ee1446feda8871506f422df6c3326593e55b833fab32a561f11a857b922cd1",
+      "worktree_sha256": "8a2b91ec1b15d31a3333f3765e32382c4fc1e5545b5d54875cd2226bb3410c73"
+    },
+    "notes/WP84_ADAPTIVE_BOUNDARY_LOCAL_LARGE_SIEVE.md": {
+      "bytes_in_git_blob": 9804,
+      "bytes_in_worktree": 9804,
+      "git_blob_sha1": "aacb8e4d57bdbc9d06777872fe11ee2f299f9939",
+      "git_blob_sha256": "31fa1173b48e8773cd316f1b965c8d4f2533b2375d78fcc85eca1fde22c2596a",
+      "worktree_sha256": "31fa1173b48e8773cd316f1b965c8d4f2533b2375d78fcc85eca1fde22c2596a"
+    },
+    "notes/WP84_E2_SHIFT_RANGE_SAFE_LOBE.md": {
+      "bytes_in_git_blob": 5154,
+      "bytes_in_worktree": 5461,
+      "git_blob_sha1": "9ff0fd5ba59969ccd58aab28a0f9c3c489992c58",
+      "git_blob_sha256": "15b91a732ce84b185698bc0a1156fd8b9acc9e6e467c7aa7e235c68c51631c37",
+      "worktree_sha256": "3d0147dce329c6336d8c8750d3093badbcb5d07a38789ab4af662539c6fc68c2"
+    },
+    "notes/WP84_FIXED_BAND_WEIGHTED_REPROJECTION.md": {
+      "bytes_in_git_blob": 9595,
+      "bytes_in_worktree": 9595,
+      "git_blob_sha1": "4f13886dfe0e0b0573b61226e96a727337f2e602",
+      "git_blob_sha256": "51daaa95ab2fe51c5f557da2a8c2c2329ac64d532626dfe1f7fcfceca61b5b04",
+      "worktree_sha256": "51daaa95ab2fe51c5f557da2a8c2c2329ac64d532626dfe1f7fcfceca61b5b04"
+    },
+    "notes/WP84_FOURIER_REPROJECTION_BRIDGE_AUDIT.md": {
+      "bytes_in_git_blob": 11962,
+      "bytes_in_worktree": 11962,
+      "git_blob_sha1": "354095fac19d2ac6642444a95540e8edd8ae32be",
+      "git_blob_sha256": "563451a6193cbf62269fb389f7e58a82f7218557f44da8f1a633692c1fddb715",
+      "worktree_sha256": "563451a6193cbf62269fb389f7e58a82f7218557f44da8f1a633692c1fddb715"
+    },
+    "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+      "bytes_in_git_blob": 22018,
+      "bytes_in_worktree": 22018,
+      "git_blob_sha1": "03dbcf6bb87eddcf8b63f5fbf33e2e44841c15b1",
+      "git_blob_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7",
+      "worktree_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+    },
+    "notes/WP84_R400_FILTERED_SHARP_REPAIR.md": {
+      "bytes_in_git_blob": 23890,
+      "bytes_in_worktree": 23890,
+      "git_blob_sha1": "594a8e5e050de3b62173fe83752448159139ab6e",
+      "git_blob_sha256": "11cdc2c705e9bb33837e9e6d5b469eb52661d3f9aa12edeaf6f0be7ad3f3c7bd",
+      "worktree_sha256": "11cdc2c705e9bb33837e9e6d5b469eb52661d3f9aa12edeaf6f0be7ad3f3c7bd"
+    },
+    "notes/WP84_SOURCE_MATCHED_26_TERM_SIGN_AUDIT.md": {
+      "bytes_in_git_blob": 12729,
+      "bytes_in_worktree": 12729,
+      "git_blob_sha1": "bc91f91b398503ed459b7cf360ab0ea4549b7846",
+      "git_blob_sha256": "19e67648a4894af32158ce59d609bacbdc3043dd3103e7f81dfd044e1e611eeb",
+      "worktree_sha256": "19e67648a4894af32158ce59d609bacbdc3043dd3103e7f81dfd044e1e611eeb"
+    },
+    "src/wp84_adaptive_boundary_large_sieve.py": {
+      "bytes_in_git_blob": 5275,
+      "bytes_in_worktree": 5275,
+      "git_blob_sha1": "88d42a595de1cec276a3a61a58d2254bd58e4e80",
+      "git_blob_sha256": "d6c9b2b68b40d80cd2361fcf47bab816f9f044590e1b7c593c7d7707f714d5b8",
+      "worktree_sha256": "d6c9b2b68b40d80cd2361fcf47bab816f9f044590e1b7c593c7d7707f714d5b8"
+    },
+    "src/wp84_fifth_full_pool_amplitude.py": {
+      "bytes_in_git_blob": 10909,
+      "bytes_in_worktree": 11018,
+      "git_blob_sha1": "dab1000ec7297f276197b8ecca7a8a0cd07fbd69",
+      "git_blob_sha256": "a8820b56d77256273a469835d6b3c61137bbebd76fd1755ade3c400d86810508",
+      "worktree_sha256": "42a761b8d52560373ee28ea71ecfc8fbffd5a6b4058c05ea4dbd32280c5fe4d1"
+    },
+    "src/wp84_r400_filtered_connected_kernel.py": {
+      "bytes_in_git_blob": 11981,
+      "bytes_in_worktree": 11981,
+      "git_blob_sha1": "ac379ffd065845691fbb451a12cdf28e0db8db65",
+      "git_blob_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486",
+      "worktree_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+    },
+    "src/wp84_r400_filtered_sharp_repair.py": {
+      "bytes_in_git_blob": 8255,
+      "bytes_in_worktree": 8255,
+      "git_blob_sha1": "3aa9ce6adacc41c8049da03c06cdf77af3d0a44e",
+      "git_blob_sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d",
+      "worktree_sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d"
+    },
+    "src/wp84_source_matched_26_term_sign_replay.py": {
+      "bytes_in_git_blob": 29106,
+      "bytes_in_worktree": 29106,
+      "git_blob_sha1": "9b046939a48ebce277ab03b01ca83cf9bc2b8cc8",
+      "git_blob_sha256": "7f2528fa943ce9e919d3b53cb8f1ebf9e3b4229014d6a21bccce1c049e99a54b",
+      "worktree_sha256": "7f2528fa943ce9e919d3b53cb8f1ebf9e3b4229014d6a21bccce1c049e99a54b"
+    },
+    "tests/test_wp84_source_matched_26_term_sign.py": {
+      "bytes_in_git_blob": 5701,
+      "bytes_in_worktree": 5701,
+      "git_blob_sha1": "6122c191d400cf05eb94cc66989837d4e767dbdf",
+      "git_blob_sha256": "7612421536a114be16d8f07dbe35d6dabfac7d1e9e6998f128778de3300db3ff",
+      "worktree_sha256": "7612421536a114be16d8f07dbe35d6dabfac7d1e9e6998f128778de3300db3ff"
+    }
+  },
+  "schema": "wp84.source-weight-cone.sha256-manifest.v1"
+}

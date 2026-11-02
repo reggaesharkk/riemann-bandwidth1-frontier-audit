@@ -1,0 +1,330 @@
+{
+  "schema": "wp84.source-weight-cone-orientation-intervals.v1",
+  "method": "Outward-rounded mpmath interval FFT via src/wp84_r400_filtered_connected_kernel.py::omega_interval; R=400; dps=28. Source and conjugate families each cover 6 balanced sign orthants x 2 positive orders x 2 negative orders, with duplicate vectors collapsed because repeated shifts coincide.",
+  "scope": "Filtered external overlap Omega_4,400(v), not the full prime-pool arithmetic aggregate.",
+  "orientation_cases_before_duplicate_collapse": 48,
+  "unique_rational_orderings": 24,
+  "all_intervals_strictly_positive": true,
+  "permutation_invariance": {
+    "row_cumulant": "Invariant under all 48 labeled cases (24 per family); its exact rational-grid value is 1 when 5 divides m, with the same m>=10 positive bound for every ordering.",
+    "conjugation": "The sign-reversed family has the same positive coefficient and real kappa on S=0; both filtered overlaps are interval-certified positive.",
+    "source_admission_and_closed_carrier": "Invariant under these permutations and conjugation.",
+    "external_filtered_overlap": "Not invariant under permutation; the certified intervals show distinct positive values for different orderings in both families."
+  },
+  "intervals": [
+    {
+      "family": "source",
+      "v": [
+        "1/5",
+        "-2/5",
+        "3/5",
+        "-2/5"
+      ],
+      "omega": [
+        "0.399748480847138314545330520897643",
+        "0.399748480847138314545330628403607"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "1/5",
+        "-2/5",
+        "-2/5",
+        "3/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695426631107",
+        "0.19975043199909364161469550151294"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "1/5",
+        "3/5",
+        "-2/5",
+        "-2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695432516009",
+        "0.199750431999093641614695495662747"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "-2/5",
+        "1/5",
+        "3/5",
+        "-2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695431499957",
+        "0.199750431999093641614695496726132"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "-2/5",
+        "1/5",
+        "-2/5",
+        "3/5"
+      ],
+      "omega": [
+        "0.399748480847138314545330487935879",
+        "0.399748480847138314545330661472656"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "-2/5",
+        "3/5",
+        "1/5",
+        "-2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695434633312",
+        "0.199750431999093641614695493539134"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "-2/5",
+        "3/5",
+        "-2/5",
+        "1/5"
+      ],
+      "omega": [
+        "0.39974848084713831454533051191725",
+        "0.399748480847138314545330637371378"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "-2/5",
+        "-2/5",
+        "1/5",
+        "3/5"
+      ],
+      "omega": [
+        "0.19975043199909364161469542345042",
+        "0.199750431999093641614695504687316"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "-2/5",
+        "-2/5",
+        "3/5",
+        "1/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695429811794",
+        "0.199750431999093641614695498338563"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "3/5",
+        "1/5",
+        "-2/5",
+        "-2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695426145169",
+        "0.199750431999093641614695501998878"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "3/5",
+        "-2/5",
+        "1/5",
+        "-2/5"
+      ],
+      "omega": [
+        "0.399748480847138314545330506881162",
+        "0.399748480847138314545330642306492"
+      ]
+    },
+    {
+      "family": "source",
+      "v": [
+        "3/5",
+        "-2/5",
+        "-2/5",
+        "1/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695428502285",
+        "0.199750431999093641614695499676471"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "-1/5",
+        "2/5",
+        "-3/5",
+        "2/5"
+      ],
+      "omega": [
+        "0.399748480847138314545330511904629",
+        "0.399748480847138314545330637371378"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "-1/5",
+        "2/5",
+        "2/5",
+        "-3/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695440474038",
+        "0.199750431999093641614695487666853"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "-1/5",
+        "-3/5",
+        "2/5",
+        "2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695429732908",
+        "0.199750431999093641614695498411139"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "2/5",
+        "-1/5",
+        "-3/5",
+        "2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695434633312",
+        "0.199750431999093641614695493542289"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "2/5",
+        "-1/5",
+        "2/5",
+        "-3/5"
+      ],
+      "omega": [
+        "0.399748480847138314545330531184389",
+        "0.399748480847138314545330618034819"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "2/5",
+        "-3/5",
+        "-1/5",
+        "2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695431496801",
+        "0.199750431999093641614695496726132"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "2/5",
+        "-3/5",
+        "2/5",
+        "-1/5"
+      ],
+      "omega": [
+        "0.399748480847138314545330520897643",
+        "0.399748480847138314545330628403607"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "2/5",
+        "2/5",
+        "-1/5",
+        "-3/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695435589412",
+        "0.199750431999093641614695492560946"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "2/5",
+        "2/5",
+        "-3/5",
+        "-1/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695429455229",
+        "0.199750431999093641614695498720372"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "-3/5",
+        "-1/5",
+        "2/5",
+        "2/5"
+      ],
+      "omega": [
+        "0.199750431999093641614695435867091",
+        "0.199750431999093641614695492273801"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "-3/5",
+        "2/5",
+        "-1/5",
+        "2/5"
+      ],
+      "omega": [
+        "0.39974848084713831454533050636998",
+        "0.399748480847138314545330642880782"
+      ]
+    },
+    {
+      "family": "conjugate",
+      "v": [
+        "-3/5",
+        "2/5",
+        "2/5",
+        "-1/5"
+      ],
+      "omega": [
+        "0.19975043199909364161469543575665",
+        "0.199750431999093641614695492396863"
+      ]
+    }
+  ],
+  "positive_cumulant_bound": "For every m>=10 and each source/conjugate vector, kappa_m(v)>=384/625. Hence every listed source atom has Omega_4,400(v)*kappa_m(v)>0.",
+  "aggregate_warning": "These 24 unique legal prime-power tuples do not determine the sign of the complete signed arithmetic sum."
+}

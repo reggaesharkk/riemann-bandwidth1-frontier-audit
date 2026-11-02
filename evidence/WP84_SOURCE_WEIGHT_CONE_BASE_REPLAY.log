@@ -1,0 +1,7 @@
+git_blob_replay_byte_match=True
+git_blob_sha256=b1ee1446feda8871506f422df6c3326593e55b833fab32a561f11a857b922cd1
+replay_sha256=b1ee1446feda8871506f422df6c3326593e55b833fab32a561f11a857b922cd1
+worktree_crlf_normalization_only=True
+package_manifest_verification=PASS
+prior_orientation_counts={"all_label_permutations": 24, "alternating_label_permutations": 8, "fixed_internal_order_sign_patterns": 6}
+prior_orientation_identities={"C24_eq_4C6": true, "C24_eq_C8": true, "C6_over_2_eq_C8_over_8": true, "normalized_formula": "-1/16"}

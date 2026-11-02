@@ -1,0 +1,14 @@
+test_actual_prime_power_atom_is_balanced_and_cutoff_legal (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_actual_prime_power_atom_is_balanced_and_cutoff_legal) ... ok
+test_all_six_balanced_orthants_24_orders_and_conjugates (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_all_six_balanced_orthants_24_orders_and_conjugates) ... ok
+test_evidence_does_not_promote_aggregate_or_theorem (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_evidence_does_not_promote_aggregate_or_theorem) ... ok
+test_exact_denominator_five_vector_and_cone_violation (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_exact_denominator_five_vector_and_cone_violation) ... ok
+test_independent_partition_enumerator_matches_source_ledger (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_independent_partition_enumerator_matches_source_ledger) ... ok
+test_partition_ledger_has_all_26_ordered_terms (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_partition_ledger_has_all_26_ordered_terms) ... ok
+test_source_cumulant_positive_for_all_selected_m_at_least_ten (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_source_cumulant_positive_for_all_selected_m_at_least_ten) ... ok
+test_supplied_abstract_positive_weight_countermodel (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_supplied_abstract_positive_weight_countermodel) ... ok
+test_zero_bracket_has_no_reweighting_margin (test_wp84_source_weight_cone_audit.SourceWeightConeTests.test_zero_bracket_has_no_reweighting_margin) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.059s
+
+OK
