@@ -19,7 +19,7 @@ CHEBYSHEV_THETA_CONSTANT = 4 * log(2)
 C0 = 1 - 1 / sqrt(2)
 
 
-def circle_distance(x: float, y: float) -> float:
+def circle_distance(x: float | Fraction, y: float | Fraction) -> float | Fraction:
     """Circular distance for representatives in R/Z."""
     d = abs((x - y) % 1)
     return min(d, 1 - d)

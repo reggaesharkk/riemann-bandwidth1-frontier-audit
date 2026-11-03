@@ -9,15 +9,15 @@
     },
     {
       "path": "evidence/WP84_DIRECT_SMOOTH_REPLAY_DOUBLE_OPTIMIZED.txt",
-      "sha256_git_text_normalized": "698d16d7b93c4bd9707d3cfacda6fb1e0fea99ed0cda6e69bedc42772940540a",
-      "sha256_worktree_raw": "9f19866c8af7bd0425354480972b9749c259e92bd47393c4d7e76dcf44f46db3",
+      "sha256_git_text_normalized": "f8f7b0ac7f2b53ac4e96000f166430c488f2c37e059ad5502b09d60f29d363b8",
+      "sha256_worktree_raw": "f2c53ce86fe0aefcf6ae8ae62f4dcef8a139f07b7f842d88dfeaf529d78b5683",
       "size_bytes_git_text": 106,
       "size_bytes_worktree": 111
     },
     {
       "path": "evidence/WP84_DIRECT_SMOOTH_REPLAY_NORMAL.txt",
-      "sha256_git_text_normalized": "698d16d7b93c4bd9707d3cfacda6fb1e0fea99ed0cda6e69bedc42772940540a",
-      "sha256_worktree_raw": "9f19866c8af7bd0425354480972b9749c259e92bd47393c4d7e76dcf44f46db3",
+      "sha256_git_text_normalized": "f8f7b0ac7f2b53ac4e96000f166430c488f2c37e059ad5502b09d60f29d363b8",
+      "sha256_worktree_raw": "f2c53ce86fe0aefcf6ae8ae62f4dcef8a139f07b7f842d88dfeaf529d78b5683",
       "size_bytes_git_text": 106,
       "size_bytes_worktree": 111
     },
@@ -37,10 +37,10 @@
     },
     {
       "path": "notes/WP84_DIRECT_SMOOTH_POWER_ABSORPTION.md",
-      "sha256_git_text_normalized": "e9087792f9b11b4157fb84916600d5efea2427c29cedf855efb0b4a0a9b9faca",
-      "sha256_worktree_raw": "e9087792f9b11b4157fb84916600d5efea2427c29cedf855efb0b4a0a9b9faca",
-      "size_bytes_git_text": 18626,
-      "size_bytes_worktree": 18626
+      "sha256_git_text_normalized": "41fd648a3ca84117dde2db6f8f1e99605a906f64af8427e9a96f3936f71dcb6e",
+      "sha256_worktree_raw": "41fd648a3ca84117dde2db6f8f1e99605a906f64af8427e9a96f3936f71dcb6e",
+      "size_bytes_git_text": 18701,
+      "size_bytes_worktree": 18701
     },
     {
       "path": "src/wp84_direct_smooth_manifest.py",
@@ -51,10 +51,10 @@
     },
     {
       "path": "src/wp84_direct_smooth_power_absorption.py",
-      "sha256_git_text_normalized": "f77ce6f7fabb0f34d2223002b51b8d52e2b4fe2eca4647e3d52860a3a17dddb2",
-      "sha256_worktree_raw": "f77ce6f7fabb0f34d2223002b51b8d52e2b4fe2eca4647e3d52860a3a17dddb2",
-      "size_bytes_git_text": 7280,
-      "size_bytes_worktree": 7280
+      "sha256_git_text_normalized": "38844e82b2a7e753b8bc1b2b0d3e0a42c25b7aab7a376e445ef6474683f9ef1a",
+      "sha256_worktree_raw": "38844e82b2a7e753b8bc1b2b0d3e0a42c25b7aab7a376e445ef6474683f9ef1a",
+      "size_bytes_git_text": 7313,
+      "size_bytes_worktree": 7313
     },
     {
       "path": "tests/test_wp84_direct_smooth_power_absorption.py",
@@ -67,7 +67,7 @@
   "audit": "WP84 direct smooth-taper proper-power absorption",
   "branch": "codex/wp84-direct-smooth-taper-20261103",
   "frozen_reference_commit": "7f3394c5655238b1e9736f91233d0bcc4c49fd43",
-  "generated_utc": "2026-11-03T12:32:04.813239+00:00",
+  "generated_utc": "2026-11-03T12:33:17.270344+00:00",
   "manifest_excludes": [
     "this manifest (hash is recorded in the .sha256 sidecar)",
     "the .sha256 sidecar itself",

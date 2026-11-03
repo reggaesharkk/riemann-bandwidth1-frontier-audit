@@ -65,7 +65,8 @@ explicit eventual hypothesis \(a\ge1/2\). Indeed the limiting integral is
 the stated \(O_\chi(L^{-1})\) error then gives the eventual bound.
 
 The estimates below require only the following source-compatible hypotheses:
-\(\phi_L\) real and even, supported in an interval of length \(L\),
+\(\phi_L\) real and even, supported in \([-L/2,L/2]\) (or translated
+there; a common translation changes Fourier phases but not these bounds),
 \(\|\phi_L\|_\infty\le B\), \(a=L^{-1}\|\phi_L\|_2^2\ge a_0>0\),
 full cutoff \(n\le X=e^L\), and a consecutive section \(I\) of integer
 rows with
