@@ -1,0 +1,4 @@
+PASS source atom admission and all 48 labeled placements
+PASS 24 outward-rounded R400 overlap intervals above 799/4000
+PASS exact source/conjugate multiplicity and m>=10 row-cumulant bound
+WROTE evidence\WP84_R400_SOURCE_INTERVAL_REPLAY.json

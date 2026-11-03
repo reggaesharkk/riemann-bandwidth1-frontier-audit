@@ -1,0 +1,389 @@
+{
+  "pointwise_result": "physical Omega_4,400*kappa_m > 9588/78125 for all 48 labeled source/conjugate placements and every m>=10",
+  "r400_overlap": {
+    "labeled_conjugate_placements": 24,
+    "labeled_source_placements": 24,
+    "method": "outward-rounded mpmath interval FFT using the inherited physical Omega_4,400 routine",
+    "placements": [
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.399748480847138314545330520897643",
+          "0.399748480847138314545330628403607"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "1/5",
+          "-2/5",
+          "3/5",
+          "-2/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695426631107",
+          "0.19975043199909364161469550151294"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "1/5",
+          "-2/5",
+          "-2/5",
+          "3/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695432516009",
+          "0.199750431999093641614695495662747"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "1/5",
+          "3/5",
+          "-2/5",
+          "-2/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695431499957",
+          "0.199750431999093641614695496726132"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-2/5",
+          "1/5",
+          "3/5",
+          "-2/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.399748480847138314545330487935879",
+          "0.399748480847138314545330661472656"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-2/5",
+          "1/5",
+          "-2/5",
+          "3/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695434633312",
+          "0.199750431999093641614695493539134"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-2/5",
+          "3/5",
+          "1/5",
+          "-2/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.39974848084713831454533051191725",
+          "0.399748480847138314545330637371378"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-2/5",
+          "3/5",
+          "-2/5",
+          "1/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.19975043199909364161469542345042",
+          "0.199750431999093641614695504687316"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-2/5",
+          "-2/5",
+          "1/5",
+          "3/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695429811794",
+          "0.199750431999093641614695498338563"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-2/5",
+          "-2/5",
+          "3/5",
+          "1/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695426145169",
+          "0.199750431999093641614695501998878"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "3/5",
+          "1/5",
+          "-2/5",
+          "-2/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.399748480847138314545330506881162",
+          "0.399748480847138314545330642306492"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "3/5",
+          "-2/5",
+          "1/5",
+          "-2/5"
+        ]
+      },
+      {
+        "family": "source",
+        "omega_interval": [
+          "0.199750431999093641614695428502285",
+          "0.199750431999093641614695499676471"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "3/5",
+          "-2/5",
+          "-2/5",
+          "1/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.399748480847138314545330511904629",
+          "0.399748480847138314545330637371378"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-1/5",
+          "2/5",
+          "-3/5",
+          "2/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695440474038",
+          "0.199750431999093641614695487666853"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-1/5",
+          "2/5",
+          "2/5",
+          "-3/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695429732908",
+          "0.199750431999093641614695498411139"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-1/5",
+          "-3/5",
+          "2/5",
+          "2/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695434633312",
+          "0.199750431999093641614695493542289"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "2/5",
+          "-1/5",
+          "-3/5",
+          "2/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.399748480847138314545330531184389",
+          "0.399748480847138314545330618034819"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "2/5",
+          "-1/5",
+          "2/5",
+          "-3/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695431496801",
+          "0.199750431999093641614695496726132"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "2/5",
+          "-3/5",
+          "-1/5",
+          "2/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.399748480847138314545330520897643",
+          "0.399748480847138314545330628403607"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "2/5",
+          "-3/5",
+          "2/5",
+          "-1/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695435589412",
+          "0.199750431999093641614695492560946"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "2/5",
+          "2/5",
+          "-1/5",
+          "-3/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695429455229",
+          "0.199750431999093641614695498720372"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "2/5",
+          "2/5",
+          "-3/5",
+          "-1/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.199750431999093641614695435867091",
+          "0.199750431999093641614695492273801"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-3/5",
+          "-1/5",
+          "2/5",
+          "2/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.39974848084713831454533050636998",
+          "0.399748480847138314545330642880782"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-3/5",
+          "2/5",
+          "-1/5",
+          "2/5"
+        ]
+      },
+      {
+        "family": "conjugate",
+        "omega_interval": [
+          "0.19975043199909364161469543575665",
+          "0.199750431999093641614695492396863"
+        ],
+        "strictly_above_799_over_4000": true,
+        "v": [
+          "-3/5",
+          "2/5",
+          "2/5",
+          "-1/5"
+        ]
+      }
+    ],
+    "total_labeled_placements": 48,
+    "uniform_lower_bound": "every unique source/conjugate placement has Omega_4,400 > 799/4000",
+    "unique_conjugate_vectors": 12,
+    "unique_interval_evaluations": 24,
+    "unique_source_vectors": 12
+  },
+  "row_cumulant": {
+    "exact_grid_replay": "at m=10, the signed 26-term vector is e_1 for every ordering",
+    "exact_rational_m10_lower_bound": "384/625",
+    "reason": "every proper block sum in all 48 placements is a noninteger multiple of 1/5; sin(pi/5)>1/2, so each finite geometric average has modulus <2/m; the full sum is zero and the one-block term is exactly 1",
+    "uniform_m_ge_10_bound": "kappa_m >= 1 - 7*(2/m)^2 - 12*(2/m)^3 - 6*(2/m)^4 >= 384/625"
+  },
+  "schema": "wp84.r400.source-interval-replay.v1",
+  "scope_warning": "this is a pointwise proper-power-containing source atom family, not the ordinary-prime aggregate sign",
+  "source_atom": {
+    "L": "5*log(p)",
+    "T": "2*pi*p^5",
+    "admission_proof": "for every prime p>=5, 2*log(p)>sqrt(5*log(p)), hence p^5*exp(-sqrt(5*log(p)))>p^3; all n_j=p^(1,2,3,2)<=N",
+    "carrier_phase": "exp(i*T*L*S)*exp(2*pi*i*k_minus*S)=1 for every selected section",
+    "coefficient_product": "+(log(p))^4/(a_phi(T)^4*L^4*p^4), positive for all sufficiently large T since a_phi(T)->1",
+    "cutoff": "N=floor(exp(L-sqrt(L)))=floor(p^5*exp(-sqrt(5*log(p))))",
+    "epsilon": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "filters": "R=400; J_v=[max(0,-v),min(1,1-v)] for |v|<1; all four intervals are nonempty",
+    "lambda_n": "Lambda(p^e)=log(p) for e=1,2,3",
+    "n_exponents_of_p": [
+      1,
+      2,
+      3,
+      2
+    ],
+    "physical_closure_S": "0",
+    "selected_section": "I=[k_minus,k_plus], m=|I|>=d-2q, d=floor(TL/(2*pi)), q=floor(d/sqrt(L)); therefore m>=10 for all sufficiently large p, uniformly in the selected endpoints",
+    "v": [
+      "1/5",
+      "-2/5",
+      "3/5",
+      "-2/5"
+    ]
+  }
+}

@@ -1,0 +1,671 @@
+{
+  "decisions": {
+    "ORDINARY_PHYSICAL_CONNECTED_AGGREGATE": "OPEN",
+    "PROPER_POWER_SCHATTEN_ABSORPTION": "PROVED",
+    "R400_CONSUMER": "OPEN"
+  },
+  "matrix_split": {
+    "entry_identity": "(H^S_400)_(ij)=beta^S_i if i=j; (alpha^S_i-alpha^S_j)/(pi*(j-i)) if 0<|j-i|<=400; zero otherwise",
+    "exact_commutator": "H^S_400=M_(beta^S)+[M_(alpha^S),J_400], (J_400)_(ij)=1/(pi*(j-i)) for 0<|i-j|<=400; exact for finite T and before compression",
+    "exact_rational_identity_replay": {
+      "entries_checked": 25,
+      "exact_gaussian_rational_match": true,
+      "radius": 3,
+      "section": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    "finite_T_fields": "F^S_k=sum_(n in S) c_n exp(i*T*log n) exp(2*pi*i*k*log(n)/L); alpha^S_k=Im F^S_k; beta^S_k=2 Re sum_(n in S)c_n(1-log(n)/L)exp(i*T*log n)exp(2*pi*i*k*log(n)/L)",
+    "finite_section": "H^S_400,I=E_I H^S_400 E_I; compression retains exactly the same entries; no wrap-around",
+    "full_source_operator": "H_T,400=s_0(T)*I+P_T,400; this audit splits the prime-source part P=A+Q, while the scalar background is unchanged",
+    "notation": "H_400,I=P_400,I=A_400,I+Q_400,I (projection denoted E_I to avoid collision)",
+    "ordinary_part_A": "sum_(p<=N,epsilon=+-) c_p exp(i*epsilon*T*log p) V_(epsilon*log(p)/L,400)",
+    "power_part_Q": "sum_(p^k<=N,k>=2,epsilon=+-) c_(p^k) exp(i*epsilon*T*log(p^k)) V_(epsilon*k*log(p)/L,400)",
+    "source_coefficients": "c_n=-Lambda(n)/(a_phi(T)*L*sqrt(n)); full cutoff N=floor(exp(L-sqrt(L)))"
+  },
+  "ordinary_prime_exact_source": {
+    "all_26_ordered_partition_terms": [
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 1, 2, 3]) v_j)",
+        "term": 1
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1, 2, 3]) v_j)",
+        "term": 2
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 1]) v_j)*D_m(sum_(j in [2, 3]) v_j)",
+        "term": 3
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 2, 3]) v_j)*D_m(sum_(j in [1]) v_j)",
+        "term": 4
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2, 3]) v_j)",
+        "term": 5
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2, 3]) v_j)*D_m(sum_(j in [1]) v_j)",
+        "term": 6
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 1, 2]) v_j)*D_m(sum_(j in [3]) v_j)",
+        "term": 7
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 3]) v_j)*D_m(sum_(j in [1, 2]) v_j)",
+        "term": 8
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1, 2]) v_j)*D_m(sum_(j in [3]) v_j)",
+        "term": 9
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1, 2]) v_j)",
+        "term": 10
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 2]) v_j)*D_m(sum_(j in [1, 3]) v_j)",
+        "term": 11
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 1, 3]) v_j)*D_m(sum_(j in [2]) v_j)",
+        "term": 12
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1, 3]) v_j)",
+        "term": 13
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1, 3]) v_j)*D_m(sum_(j in [2]) v_j)",
+        "term": 14
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 1]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [3]) v_j)",
+        "term": 15
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            1
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 1]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [2]) v_j)",
+        "term": 16
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            2
+          ],
+          [
+            1
+          ],
+          [
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 2]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [3]) v_j)",
+        "term": 17
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            2
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 2]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1]) v_j)",
+        "term": 18
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 3]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2]) v_j)",
+        "term": 19
+      },
+      {
+        "coefficient": 1,
+        "ordered_blocks_zero_based": [
+          [
+            0,
+            3
+          ],
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0, 3]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1]) v_j)",
+        "term": 20
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [3]) v_j)",
+        "term": 21
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [2]) v_j)",
+        "term": 22
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            2
+          ],
+          [
+            1
+          ],
+          [
+            3
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [3]) v_j)",
+        "term": 23
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1]) v_j)",
+        "term": 24
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2]) v_j)",
+        "term": 25
+      },
+      {
+        "coefficient": -1,
+        "ordered_blocks_zero_based": [
+          [
+            0
+          ],
+          [
+            3
+          ],
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "source_row_factor": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1]) v_j)",
+        "term": 26
+      }
+    ],
+    "all_orientation_words": [
+      "----",
+      "---+",
+      "--+-",
+      "--++",
+      "-+--",
+      "-+-+",
+      "-++-",
+      "-+++",
+      "+---",
+      "+--+",
+      "+-+-",
+      "+-++",
+      "++--",
+      "++-+",
+      "+++-",
+      "++++"
+    ],
+    "closed_lag_path_count": 342615201,
+    "cutoff_orientation_alias_section": "all ordered ordinary primes p<=N; all 16 sign words; all 6 balanced sign words; all 342615201 closed R400 lag paths; full carrier exp(i*T*L*S)exp(2*pi*i*k_minus*S); all integer and near-integer aliases; every selected section retains its actual m and k_minus",
+    "endpoint_brownian_import": "not justified: endpoint/Brownian identities were proved for the public sharp overlap; the physical filtered row cumulant differs term by term and need not be a negative Gram kernel",
+    "exact_product_audit": {
+      "absolute_integer_difference": 24,
+      "all_exact_equalities_are_same_multiset": true,
+      "near_product_slots": {
+        "negative": [
+          97,
+          107
+        ],
+        "positive": [
+          101,
+          103
+        ]
+      },
+      "near_product_values": [
+        10403,
+        10379
+      ],
+      "prime_range": [
+        2,
+        97
+      ],
+      "ratio": "10403/10379",
+      "source_scope": "diagnostic actual-prime summand; its carrier phase and aggregate sign remain unresolved",
+      "unordered_equal_pair_product_comparisons": 325
+    },
+    "kernel": "Phi_ord_4,400,m(v)=Omega_4,400(v)*kappa_m(v), with the same 26 empirical-row cumulant terms and no source_mask callback",
+    "measure": "mu_ord=sum_(p_0,...,p_3<=N; epsilon in {+,-}^4) (prod c_pj) exp(i*T*L*S)exp(2*pi*i*k_minus*S) delta_v",
+    "ordered_partition_counts_by_blocks": {
+      "1": 1,
+      "2": 7,
+      "3": 12,
+      "4": 6
+    },
+    "ordinary_connected_result": "OPEN; exact nonpair products are absent, but near products and physical aliases remain and no signed aggregate bound or source-admissible ordinary-prime aggregate counterexample was established",
+    "pair_subtraction": "retained exactly in kappa via the full partition ledger; when converting raw trace, the 2+2 pair products are the explicit Pair4 layer, and the finite singleton remainder must be carried with its proved source bound",
+    "physical_vs_geometric": "not identified: at the preserved rational witness physical sharp O_A*kappa=2/5 while public O_A*B4_nc=0; R400 filtered physical kernel has a positive certified interval",
+    "six_balanced_orientation_words": [
+      "--++",
+      "-+-+",
+      "-++-",
+      "+--+",
+      "+-+-",
+      "++--"
+    ]
+  },
+  "prior_positive_atom": {
+    "exponents": [
+      1,
+      2,
+      3,
+      2
+    ],
+    "one_base_family_aggregate": "O_R(L^-4)",
+    "physical_kappa_m10": 1,
+    "public_B4": 0,
+    "public_OA": "2/5",
+    "root_intervals_in_slot_order": [
+      [
+        "0",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "1"
+      ],
+      [
+        "0",
+        "2/5"
+      ],
+      [
+        "2/5",
+        "1"
+      ]
+    ],
+    "signs": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "source_scales": "T=2*pi*p^5; L=5*log(p); N=floor(exp(L-sqrt(L))); all p^1,p^2,p^3,p^2<=N for p>=5",
+    "status": "preserved; this is a proper-power-containing atom, not evidence for ordinary-prime aggregate sign",
+    "v": [
+      "1/5",
+      "-2/5",
+      "3/5",
+      "-2/5"
+    ]
+  },
+  "prior_weight_cone_diagnostics": {
+    "abstract_positive_weight_example": {
+      "classification": "exact rational abstract weight example; not source-admissible evidence",
+      "point": [
+        "1/6",
+        "-1/6",
+        "11/12",
+        "-11/12"
+      ],
+      "positive_weights": [
+        "1",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100",
+        "1/100"
+      ],
+      "reweighted_bracket": "1187/1200",
+      "unweighted_bracket": "-1/12"
+    },
+    "source_evidence": "evidence/WP84_SOURCE_WEIGHT_CONE_26_TERM_LEDGER.json; exact parent replay is rerun by the new regression suite",
+    "zero_margin_example": {
+      "classification": "exact rational-grid diagnostic; not source-admissible evidence",
+      "nonzero_signed_term_entries_one_based": [
+        [
+          1,
+          1
+        ],
+        [
+          8,
+          -1
+        ]
+      ],
+      "point": [
+        "-3/4",
+        "-1/2",
+        "1/2",
+        "3/4"
+      ],
+      "row_count": 4,
+      "unweighted_bracket": "0"
+    }
+  },
+  "proper_power_mass_and_transfer": {
+    "circle_separation": "u_n=log(n)/L; distinct n<=N have adjacent gap >=1/((N+1)*L); wrap gap >=1/sqrt(L); hence delta>=1/((N+1)*L) eventually",
+    "coefficient_absolute_mass": "M1pow=1/(|a_phi|*L)*sum_(p<=sqrt(N)) log(p)/(p*(1-p^(-1/2)))=O(1) by dyadic Chebyshev; not o(1)",
+    "coefficient_square_mass": "M2pow<=1/(|a_phi|^2*L^2)*sum_p (log p)^2/[p*(p-1)]<=64/(|a_phi|^2*L^2)",
+    "discrete_large_sieve": "by duality from Montgomery-Vaughan, The Large Sieve, Thm 1: sum_(k in any m-consecutive integer interval)|F_k|^2 <= (m+delta^(-1))*sum_n|a_n|^2",
+    "fourth_trace": "tau_I(Q^4)<=||Q_I||op^2*tau_I(Q^2)=O_400(L^-2)",
+    "invalid_generic_implication_countermodel": {
+      "L": 10,
+      "one_diagonal_entry": 10,
+      "operator_norm": 10,
+      "section_size": 10000,
+      "tau_Q2": "1/100"
+    },
+    "normalized_schatten4": "|tau_I((A+Q)^4)^(1/4)-tau_I(A^4)^(1/4)|<=||Q||_(4,tau)=O_400(L^-1/2), by Schatten norm triangle inequality; no bound on either target fourth moment is assumed",
+    "operator_bound": "||Q_I||op<=||beta^pow||inf+2||alpha^pow||inf||J_400||op<=2*M1pow*(1+2*H_400/pi)=O_400(1)",
+    "proof_status": "PROVED for every permitted contiguous section of length m>=d-2q, using source frequencies and actual finite-band matrix entries",
+    "trace_transfer": "tau_I(Q^2)<= [4+(8/pi^2)*sum_(r=1)^400 r^(-2)]*(1+delta^(-1)/m)*M2pow=O_400(L^-2)",
+    "uniform_section_ratio": "delta^(-1)/m <= (N+1)*L/(d-2q)=O(exp(-sqrt(L))) for every permitted good section; endpoint phase is absorbed in coefficients"
+  },
+  "record_threshold": {
+    "68_820273_route": "separate conditional route requiring the stronger 0.266329+o(1) gate; not promoted",
+    "consumer_status": "OPEN",
+    "quantitative_attempt": "the elementary envelope |D_m|<=1 gives ||Phi||_inf<=26*G_400^4; combined with the tuplewise absolute coefficient-mass bound (2*sum_(p<=N)|c_p|)^4=O(N^2/(a_phi^4*L^4)), this is far above the record allowance; after atoms collide, measure total variation can only be smaller than this pre-collision bound",
+    "required_nonpositive_target": "limsup_(T->infinity) sup_(I in G_T) Re integral Phi_ord dmu_ord <= 0, where G_T is every permitted good-endpoint principal section",
+    "weaker_allowed_connected_budget": "3675673694911/148250000000000 = 0.02479375173633052276559865092748...",
+    "weaker_sufficient_ordinary_pair_plus_connected": "ordinary Pair400<=0.266329+o(1) and limsup Re integral Phi_ord dmu_ord <= the displayed budget would give w400<=0.291122751736330522...; not proved"
+  },
+  "schema": "wp84.r400.schatten-absorption-ordinary-prime.v1",
+  "smallest_unresolved_inequality": "limsup_(T->infinity) sup_(I in G_T) Re integral Phi_ord_4,400,m(v) dmu_ord_(T,I)(v) <= 3675673694911/148250000000000, where G_T is every permitted good-endpoint principal section; nonpositivity is the stronger unresolved gate"
+}

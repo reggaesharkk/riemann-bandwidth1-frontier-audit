@@ -1,0 +1,5 @@
+FINITE MATRIX: exact rational single-prime Fourier-entry/commutator identity replay passed
+PROPER POWERS: source-grid transfer gives tau(Q^2)=O_400(L^-2), ||Q||op=O_400(1)
+SCHATTEN: tau(Q^4)=O_400(L^-2); fourth-root perturbation is O_400(L^-1/2), unconditionally
+ORDINARY PRIME: physical connected aggregate remains OPEN
+WROTE evidence\WP84_R400_SCHATTEN_ORDINARY_LEDGER.json

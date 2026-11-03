@@ -1,0 +1,85 @@
+{
+  "artifacts": {
+    "evidence/WP84_R400_PARENT_ATOM_REPLAY.log": {
+      "bytes": 19570,
+      "sha256": "82d9c3e49f1fa6be12bf1604cb51b3e469912f0611aeaa3f38bf128e43ae8bba"
+    },
+    "evidence/WP84_R400_PARENT_PAIR_CERT_REPLAY.log": {
+      "bytes": 184,
+      "sha256": "42fde6483bb2c858b64fa7d2752a33d9a78ac2af6539352c06be57b6be3afb39"
+    },
+    "evidence/WP84_R400_PARENT_PHYSICAL_ATOM_REPLAY.json": {
+      "bytes": 19330,
+      "sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_R400_PHYSICAL_ATOM_INTERVAL_REPLAY.log": {
+      "bytes": 2064,
+      "sha256": "a5c27887c75769ca43bcec6764dab5dd0283d5c3e754a42ca3a0a555afdaac5c"
+    },
+    "evidence/WP84_R400_SCHATTEN_CHECKER_NORMAL.log": {
+      "bytes": 381,
+      "sha256": "c070f897d875d2a3f471109ac238f53526d13e583ef4c89d6c9fcc4e9b7b0348"
+    },
+    "evidence/WP84_R400_SCHATTEN_ORDINARY_LEDGER.json": {
+      "bytes": 18241,
+      "sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63"
+    },
+    "evidence/WP84_R400_SOURCE_HASHES.json": {
+      "bytes": 13525,
+      "sha256": "7b5a496191cddf007a228e4bd0a156a43ba9b3726c3e60f2c1171b7bfa762990"
+    },
+    "evidence/WP84_R400_SOURCE_INTERVAL_REPLAY.json": {
+      "bytes": 10410,
+      "sha256": "60e40feb5cb00bce04c2a8ec7c7ce5f3e646db609b569bef1c41b6a0e22f4c5b"
+    },
+    "evidence/WP84_R400_SOURCE_INTERVAL_REPLAY.log": {
+      "bytes": 246,
+      "sha256": "5dea9fa7b1077642acaf881a8e44a246265d48d498353d294c385e6d2a808ddc"
+    },
+    "evidence/WP84_R400_TEST_NORMAL.log": {
+      "bytes": 111,
+      "sha256": "58ab7345b4d5e41ecd39dc9483286e1dd78efc45c07ac253c86dc688bcc0b41e"
+    },
+    "evidence/WP84_R400_TEST_O.log": {
+      "bytes": 111,
+      "sha256": "58ab7345b4d5e41ecd39dc9483286e1dd78efc45c07ac253c86dc688bcc0b41e"
+    },
+    "evidence/WP84_R400_TEST_OO.log": {
+      "bytes": 111,
+      "sha256": "58ab7345b4d5e41ecd39dc9483286e1dd78efc45c07ac253c86dc688bcc0b41e"
+    },
+    "notes/WP84_R400_SCHATTEN_ABSORPTION_AND_ORDINARY_AGGREGATE_AUDIT.md": {
+      "bytes": 16532,
+      "sha256": "8334b30e2bf707d7ff9d2cb4dd56bfe012def04b0d751e77232c48aafb69edf5"
+    },
+    "src/wp84_r400_schatten_absorption_audit.py": {
+      "bytes": 16986,
+      "sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2"
+    },
+    "src/wp84_r400_schatten_manifest.py": {
+      "bytes": 8053,
+      "sha256": "05ba79442a8001574bc6c8db9519a4db71c4f0030769edc7cf0b3ba5b482519e"
+    },
+    "src/wp84_r400_source_interval_replay.py": {
+      "bytes": 6275,
+      "sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58"
+    },
+    "tests/test_wp84_r400_schatten_absorption_audit.py": {
+      "bytes": 5511,
+      "sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6"
+    }
+  },
+  "audit_branch": "codex/wp84-r400-schatten-ordinary-aggregate-20261103",
+  "base_commit": "b1ff152df352216aa44c9a2535f04306a39df859",
+  "decisions": {
+    "ORDINARY_PHYSICAL_CONNECTED_AGGREGATE": "OPEN",
+    "PROPER_POWER_SCHATTEN_ABSORPTION": "PROVED",
+    "R400_CONSUMER": "OPEN"
+  },
+  "manifest_self_hash_excluded": [
+    "evidence/WP84_R400_SHA256_MANIFEST.json",
+    "evidence/WP84_R400_SHA256_MANIFEST.sha256"
+  ],
+  "schema": "wp84.r400.schatten.sha256-manifest.v1",
+  "source_hash_file": "evidence/WP84_R400_SOURCE_HASHES.json"
+}
