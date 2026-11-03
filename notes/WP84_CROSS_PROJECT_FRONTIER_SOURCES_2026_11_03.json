@@ -1,0 +1,172 @@
+{
+  "schema": "wp84-cross-project-frontier-source-inventory-v1",
+  "created_utc_date": "2026-11-03",
+  "research_branch": "codex/cross-project-math-frontier-20261103",
+  "audit_base_commit": "8cac9051c8bd94568d3010f5c08a44dc975ee668",
+  "frozen_baseline_commit": "7f3394c5655238b1e9736f91233d0bcc4c49fd43",
+  "frozen_baseline_is_ancestor": true,
+  "replay_environment": {
+    "python": "3.12.10",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "pytest_installed": false,
+    "test_runner": "standard-library unittest"
+  },
+  "repository_access": {
+    "requested_navies_stokes_repository_description": "private NS Bridge repository",
+    "accessible_repository": "reggaesharkk/navier-stokes-bridge-audit",
+    "accessible_repository_observed_visibility": "public",
+    "current_commit": "def4df60b0ebdce8b0c99cea6006eb2905e0e02f",
+    "private_checkout_found": false,
+    "identity_caveat": "No separate private local checkout was found. Conclusions apply to the pinned repository sources listed below; a distinct private repository state was not verified.",
+    "local_archive": {
+      "path": "C:/Users/Asus/.codex/worktrees/dd2a/riemann-bandwidth1-frontier-audit/tmp/navier_v029_review_source/navier-stokes-bridge-audit-v0.29",
+      "version_label": "WP19 v0.29.1 audit correction",
+      "git_metadata_present": false,
+      "use": "Read-only archive provenance; not treated as a current verified checkout."
+    }
+  },
+  "local_wp84_sources": [
+    {
+      "path": "notes/WP84_DIRECT_SMOOTH_POWER_ABSORPTION.md",
+      "sha256": "41fd648a3ca84117dde2db6f8f1e99605a906f64af8427e9a96f3936f71dcb6e"
+    },
+    {
+      "path": "src/wp84_direct_smooth_power_absorption.py",
+      "sha256": "38844e82b2a7e753b8bc1b2b0d3e0a42c25b7aab7a376e445ef6474683f9ef1a"
+    },
+    {
+      "path": "tests/test_wp84_direct_smooth_power_absorption.py",
+      "sha256": "bef1f649bf899304c4c240092d63b83d4a609ca3851692ff11460dfdfdbe96f0"
+    },
+    {
+      "path": "src/wp84_cross_repository_hermite_adjoint.py",
+      "sha256": "a2bfd7e348a04a9b1a1ec73a63e6e75d3e24c1eeac2b73ad03c855990bab052c"
+    },
+    {
+      "path": "notes/WP84_CROSS_REPOSITORY_PROOF_TRANSPLANT_AUDIT.md",
+      "sha256": "1a69948f6653df61901259e5eeea23c63c21d8532b27ed488a1058f3e44d5588"
+    },
+    {
+      "path": "notes/WP84_CROSS_REPOSITORY_HERMITE_ADJOINT_REPLAY.json",
+      "sha256": "482478ecc47c110f3c4e61e13ab9e16c43efbd5dfd9f9e5b8de7d1afa4236f18"
+    },
+    {
+      "path": "notes/WP84_R400_ORDINARY_AGGREGATE_THEOREM_FEASIBILITY_HARD_STOP.md",
+      "sha256": "abec2490ce6743935d25ea929b0694503d7b9a9d54e2af93c3ba1b3badce3cbf"
+    },
+    {
+      "path": "notes/WP84_R400_ENDPOINT_RESTRICTED_ORDINARY_PRIME_THEOREM_ATTACK.md",
+      "sha256": "f8aa448c7f774ee548feea1c24b38d205004aefdd40604a10b8f3520c2314352"
+    },
+    {
+      "path": "notes/WP84_PHYSICAL_KERNEL_PROPER_POWER_AGGREGATE_AUDIT.md",
+      "sha256": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a"
+    },
+    {
+      "path": "evidence/WP84_PHYSICAL_KERNEL_PROPER_POWER_LEDGER.json",
+      "sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    {
+      "path": "src/wp84_physical_kernel_proper_power_reconciliation.py",
+      "sha256": "524af6d95bb73ffcc3a403c0816b15d9e0f8225d82f3675cf31c939bf0a3f830"
+    },
+    {
+      "path": "tests/test_wp84_physical_kernel_reconciliation.py",
+      "sha256": "b22267ed4a33402d9357592d75fef4c93f84cdc2ca713497f2b963d404dc5499"
+    }
+  ],
+  "navier_stokes_sources": {
+    "current_commit": "def4df60b0ebdce8b0c99cea6006eb2905e0e02f",
+    "historical_audit_pin": "4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f",
+    "same_blob_verification": "Each listed current file has the same Git blob SHA-1 as the historical audit pin; the SHA-256 content hash is taken from the prior local source manifest at that pin, and is unchanged because the Git blob is identical.",
+    "files": [
+      {
+        "path": "WP3_PROOF.md",
+        "git_blob_sha1": "4e8d3c8b0154bc19f6a804844d99743d076e08f2",
+        "sha256": "571a7b7ce9b65f782c4003ad516012311e93fd8dbe74c61cba04501639317a46",
+        "topic": "small-data periodic Navier-Stokes energy proposition"
+      },
+      {
+        "path": "notes/WP11_PR27_REVIEW_GATE_2026_09_25.md",
+        "git_blob_sha1": "2920e99f17104ef1663fd9659e91a3609222b6c0",
+        "sha256": "c0f310f9afd49530355ebb9e1d5833605d13dcd6202e6542d0f25373057999d7",
+        "topic": "skew transport, fixed low-advector bound, open high-advector estimate"
+      },
+      {
+        "path": "notes/WP19_v0_19_BOUNDARY_ANNULUS_DIRECT_SHELL_THEOREM.md",
+        "git_blob_sha1": "149a8b0b3b0d27ecc97d083cd489bb3f1dbfca5f",
+        "sha256": "ad5b4faceccfc4df99acb5a8bfee8d74927cffd520fdd941cb55ac2fd1e8ca6f",
+        "topic": "direct cutoff-shell increment and boundary annulus"
+      },
+      {
+        "path": "notes/WP19_v0_24_HERMITE_GOAL_REMAINDER_BUDGET.md",
+        "git_blob_sha1": "ac55b3f2b3076e4d1062e5f4c8f56b80c9eb27ba",
+        "sha256": "5632b8accf562c29085a51925963637d40b6b64342d23e7bfa4f397872e70ce2",
+        "topic": "Hermite goal decomposition; nonlinear and endpoint remainders"
+      },
+      {
+        "path": "notes/WP19_v0_26_SIGNED_C500_NUMERATOR_GOAL_ADJOINT.md",
+        "git_blob_sha1": "e58f63c0c48a995c226c23628b75d3db3b701b3b",
+        "sha256": "825d0f8e0866b6a756dfb3eb05dcb325ad18c227420c4ec3f4300e15c830ae24",
+        "topic": "signed numerator adjoint is a floating pre-interval gate"
+      },
+      {
+        "path": "src/wp19_v0_26_signed_goal_adjoint.py",
+        "git_blob_sha1": "3b87a5fabffb023ba38ce9997abc10c4a1a995e8",
+        "sha256": "0d186c4fc65e631f128643c8205492db6a4e8ed13b6e9baa4555b185fe710c68",
+        "topic": "WP19 floating adjoint implementation"
+      }
+    ],
+    "additional_checked_source": {
+      "path": "notes/WP11_ONE_SIDED_CROSS_FREQUENCY_PROOF_PACKAGE.md",
+      "git_blob_sha1": "e690efe79172b3547e14c53da1a348c96e4de0b7",
+      "commit": "def4df60b0ebdce8b0c99cea6006eb2905e0e02f",
+      "sha256_recorded": false,
+      "reason": "The current fetch returned the immutable Git blob identity; no SHA-256 of downloaded bytes was computed."
+    }
+  },
+  "public_riemann_verification_sources": {
+    "repository": "reggaesharkk/riemann-bandwidth1-verification",
+    "observed_visibility": "public",
+    "commit": "4cec55eb89ddcdfac8f1b06ecec28b06632973d8",
+    "files": [
+      {
+        "path": "RESEARCH_STATUS.md",
+        "git_blob_sha1": "190ed70577c8c944adde534cdbb56c0e21859749"
+      },
+      {
+        "path": "DEPENDENCY_MAP.md",
+        "git_blob_sha1": "28f0015bf24fb25146023eabedd67f748cbc4c85"
+      },
+      {
+        "path": "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md",
+        "git_blob_sha1": "e3e53b7e5864c5c62a967d5215000f51fe57d989"
+      },
+      {
+        "path": "notes/WP84_DIRECT_PRIME_FIELD_STATE_LAW.md",
+        "git_blob_sha1": "868f5413dde58698a56ca0e5e79873615e192175"
+      }
+    ],
+    "use": "Separate public project status and source context only; no public/model result is imported as a private WP84 proof."
+  },
+  "classical_sources": [
+    {
+      "citation": "H. L. Montgomery and R. C. Vaughan, The large sieve, Mathematika 20 (1973), 119-134, Theorem 1.",
+      "doi": "10.1112/S0025579300004708",
+      "source_url": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/152543/mtks0025579300004708.pdf",
+      "hash_status": "DOI and publisher/archive source identified; no local paper bytes included."
+    },
+    {
+      "citation": "Alpöge and Furman, More than two thirds of the zeta zeros are simple and on the critical line, arXiv:2608.13637v2, §§2.1-2.3.",
+      "source_url": "https://arxiv.org/abs/2608.13637v2",
+      "hash_status": "Version-pinned arXiv source identified; no local paper bytes included."
+    }
+  ],
+  "historical_drive_pointer": {
+    "title": "WP84_CROSS_REPOSITORY_PROOF_TRANSPLANT_AUDIT.md",
+    "google_drive_file_id": "1ruIl9jVPeGrq0XfENPX0soU2x_E9dSQt",
+    "size_bytes": 35108,
+    "status": "Historical audit based on NS pin 4790a7edbabdcc8f4bdf1bde1c67b44f0ccc238f; not treated as evidence that the open actual-state lemma is proved."
+  }
+}
