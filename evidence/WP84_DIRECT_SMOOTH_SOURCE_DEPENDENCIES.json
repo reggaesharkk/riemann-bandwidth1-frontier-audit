@@ -1,0 +1,99 @@
+{
+  "all_frozen_local_files_unchanged": true,
+  "external_referee_packet_v2": {
+    "path": "C:\\Users\\Asus\\Downloads\\WP84_SCHATTEN_INDEPENDENT_REFEREE_PACKET_V2_20261103.zip",
+    "preserved_in_place": true,
+    "sha256": "1c365afd03ed3b5694bee8c60587831a11c439b31339eaa91643db4a0087f996",
+    "size_bytes": 321803
+  },
+  "frozen_local_source_files": [
+    {
+      "git_blob_at_frozen_commit": "7d0251ace591a8037614bfdfbe34db6145c1b185",
+      "path": "notes/WP84_BOUNDED_RESOLVENT_CONSUMER.md",
+      "raw_bytes_equal_to_frozen_blob": true,
+      "sha256_at_frozen_commit": "a2ed88d2fcc557d26e4b46484378ceea5179bac444cd4fc3aab315c7d654c676",
+      "sha256_current_worktree_raw": "a2ed88d2fcc557d26e4b46484378ceea5179bac444cd4fc3aab315c7d654c676",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "7d0251ace591a8037614bfdfbe34db6145c1b185"
+    },
+    {
+      "git_blob_at_frozen_commit": "3c8165b952c3e62b1f61073a26ee64673fd23346",
+      "path": "notes/WP84_FIXED_R_ARITHMETIC_FILTERED_MOMENT_TRANSFER.md",
+      "raw_bytes_equal_to_frozen_blob": true,
+      "sha256_at_frozen_commit": "198ec5f110906aabeecd7ba8d698381fe288685dc62dacd97565b6a064bbb532",
+      "sha256_current_worktree_raw": "198ec5f110906aabeecd7ba8d698381fe288685dc62dacd97565b6a064bbb532",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "3c8165b952c3e62b1f61073a26ee64673fd23346"
+    },
+    {
+      "git_blob_at_frozen_commit": "4108bd8d37963107560c42464b652a2fafccc667",
+      "path": "notes/WP84_PHYSICAL_KERNEL_PROPER_POWER_AGGREGATE_AUDIT.md",
+      "raw_bytes_equal_to_frozen_blob": true,
+      "sha256_at_frozen_commit": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a",
+      "sha256_current_worktree_raw": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "4108bd8d37963107560c42464b652a2fafccc667"
+    },
+    {
+      "git_blob_at_frozen_commit": "dcab939bc47d9413dd74055bdeb5feb58b716597",
+      "path": "notes/WP84_R400_SCHATTEN_ABSORPTION_AND_ORDINARY_AGGREGATE_AUDIT.md",
+      "raw_bytes_equal_to_frozen_blob": false,
+      "sha256_at_frozen_commit": "43ac834f2a7370dc0c2f1d97730d1bd1c24f9783881729bbdc9f87e6418c7954",
+      "sha256_current_worktree_raw": "8334b30e2bf707d7ff9d2cb4dd56bfe012def04b0d751e77232c48aafb69edf5",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "dcab939bc47d9413dd74055bdeb5feb58b716597"
+    },
+    {
+      "git_blob_at_frozen_commit": "ae02175e19f1ec9adf10c51239a69bc52269210e",
+      "path": "notes/WP84_SHARP_CARRIER_GAUGE.md",
+      "raw_bytes_equal_to_frozen_blob": false,
+      "sha256_at_frozen_commit": "70007a2ab40d0710a7c93c6b89c741c41fa5fdb9569caa26a7da2a683ecb88c7",
+      "sha256_current_worktree_raw": "b3183ad3a0a647a2b0ee48118a8eac082ea0e7121c52e34e8b380c8a388035af",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "ae02175e19f1ec9adf10c51239a69bc52269210e"
+    },
+    {
+      "git_blob_at_frozen_commit": "aec90017909e822d26b81d1e45670740345fde3b",
+      "path": "src/wp84_r400_schatten_absorption_audit.py",
+      "raw_bytes_equal_to_frozen_blob": true,
+      "sha256_at_frozen_commit": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "sha256_current_worktree_raw": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "aec90017909e822d26b81d1e45670740345fde3b"
+    },
+    {
+      "git_blob_at_frozen_commit": "a69592e14abfda3a2a4afcee2b1c666ffc437585",
+      "path": "tests/test_wp84_r400_schatten_absorption_audit.py",
+      "raw_bytes_equal_to_frozen_blob": true,
+      "sha256_at_frozen_commit": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "sha256_current_worktree_raw": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "unchanged_from_frozen_commit": true,
+      "worktree_normalized_git_blob": "a69592e14abfda3a2a4afcee2b1c666ffc437585"
+    }
+  ],
+  "frozen_parent": [
+    "b93917757a1f6bf8e2254084eba2613cbf25b857"
+  ],
+  "frozen_reference_commit": "7f3394c5655238b1e9736f91233d0bcc4c49fd43",
+  "frozen_tree": "ae4649e115500aa7096d7da26aca2c5b5adbb9df",
+  "mathematical_dependencies": [
+    {
+      "source": "Alp\u00f6ge-Furman, arXiv:2608.13637v2, \u00a7\u00a72.1-2.3, (2.6)-(2.11), Lemma 2.1",
+      "status": "source hypotheses matched; no fixed chi formula assumed",
+      "url": "https://arxiv.org/html/2608.13637v2",
+      "used_for": "actual smooth taper, a_phi normalization, finite Weil/Gabor matrix, source prime polynomial and exact smooth overlap formula"
+    },
+    {
+      "doi": "10.1112/S0025579300004708",
+      "source": "Montgomery-Vaughan, The Large Sieve, Mathematika 20 (1973), 119-134, Theorem 1",
+      "status": "hypotheses and logarithmic-grid mapping verified in proof note",
+      "url": "https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf",
+      "used_for": "separated-point inequality (m + delta^-1) sum |b_j|^2 for m consecutive integers"
+    },
+    {
+      "source": "Elementary Chebyshev bound theta(x) <= 4 log(2) x plus partial summation",
+      "status": "explicitly stated and mapped; no prime number theorem input",
+      "used_for": "proper-power absolute coefficient mass and operator norm"
+    }
+  ]
+}

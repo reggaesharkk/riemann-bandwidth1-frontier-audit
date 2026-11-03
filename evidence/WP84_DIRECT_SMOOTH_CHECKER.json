@@ -1,0 +1,25 @@
+{
+  "base_commit": "7f3394c5655238b1e9736f91233d0bcc4c49fd43",
+  "branch": "codex/wp84-direct-smooth-taper-20261103",
+  "c_infinity_source_step_overlap_ratio_upper_bound": {
+    "denominator": 1000000,
+    "numerator": 1
+  },
+  "entry_normalization_exact": true,
+  "fourth_trace_constant_a0_1_2_eta_1_2": 8258377.615403295,
+  "hard_band_R400_operator_norm_constant": 22747.30267410406,
+  "hard_band_R400_second_trace_constant_eta_1_2": 1025280.0,
+  "mv_factor_eta_1_2": 5.0,
+  "operator_norm_constant_a0_1_2": 56.797260110122494,
+  "second_trace_constant_a0_1_2_eta_1_2": 2560.0,
+  "separate_branches_at_start_row": [
+    "69/7",
+    "-69/7"
+  ],
+  "smooth_overlap_strictly_differs_from_sharp": true,
+  "smoothstep_overlap_ratio_epsilon_over_width_1_10": {
+    "decimal": 6.129536796536797e-07,
+    "denominator": 2310000000000,
+    "numerator": 1415923
+  }
+}

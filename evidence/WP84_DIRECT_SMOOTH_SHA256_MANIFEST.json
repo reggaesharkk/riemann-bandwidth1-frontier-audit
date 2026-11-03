@@ -1,0 +1,58 @@
+{
+  "artifacts": [
+    {
+      "path": "evidence/WP84_DIRECT_SMOOTH_CHECKER.json",
+      "sha256": "5e502c899d1917c9c9e5c58a358bc59e2a15e1f82efbfeeaea940183e60ddff8",
+      "size_bytes": 885
+    },
+    {
+      "path": "evidence/WP84_DIRECT_SMOOTH_REPLAY_DOUBLE_OPTIMIZED.txt",
+      "sha256": "9f19866c8af7bd0425354480972b9749c259e92bd47393c4d7e76dcf44f46db3",
+      "size_bytes": 111
+    },
+    {
+      "path": "evidence/WP84_DIRECT_SMOOTH_REPLAY_NORMAL.txt",
+      "sha256": "9f19866c8af7bd0425354480972b9749c259e92bd47393c4d7e76dcf44f46db3",
+      "size_bytes": 111
+    },
+    {
+      "path": "evidence/WP84_DIRECT_SMOOTH_REPLAY_OPTIMIZED.txt",
+      "sha256": "9f19866c8af7bd0425354480972b9749c259e92bd47393c4d7e76dcf44f46db3",
+      "size_bytes": 111
+    },
+    {
+      "path": "evidence/WP84_DIRECT_SMOOTH_SOURCE_DEPENDENCIES.json",
+      "sha256": "7a8a61392a761e98adb5aaae5ae244adc3efe6ebac0656b2c8bfae91d14a4c77",
+      "size_bytes": 5441
+    },
+    {
+      "path": "notes/WP84_DIRECT_SMOOTH_POWER_ABSORPTION.md",
+      "sha256": "6445e4a65ed5def1feb1f30e42b8ddffc28e29366a3df69ce333f99d7eb9c2a0",
+      "size_bytes": 18473
+    },
+    {
+      "path": "src/wp84_direct_smooth_manifest.py",
+      "sha256": "0cac6b3f83ddcba21a196ab63bf4a96602f1aa51705367b1351baf9d916786b8",
+      "size_bytes": 7222
+    },
+    {
+      "path": "src/wp84_direct_smooth_power_absorption.py",
+      "sha256": "f77ce6f7fabb0f34d2223002b51b8d52e2b4fe2eca4647e3d52860a3a17dddb2",
+      "size_bytes": 7280
+    },
+    {
+      "path": "tests/test_wp84_direct_smooth_power_absorption.py",
+      "sha256": "bef1f649bf899304c4c240092d63b83d4a609ca3851692ff11460dfdfdbe96f0",
+      "size_bytes": 3317
+    }
+  ],
+  "audit": "WP84 direct smooth-taper proper-power absorption",
+  "branch": "codex/wp84-direct-smooth-taper-20261103",
+  "frozen_reference_commit": "7f3394c5655238b1e9736f91233d0bcc4c49fd43",
+  "generated_utc": "2026-11-03T12:30:52.507640+00:00",
+  "manifest_excludes": [
+    "this manifest (hash is recorded in the .sha256 sidecar)",
+    "the .sha256 sidecar itself",
+    "all pre-existing untracked unrelated repository files"
+  ]
+}
