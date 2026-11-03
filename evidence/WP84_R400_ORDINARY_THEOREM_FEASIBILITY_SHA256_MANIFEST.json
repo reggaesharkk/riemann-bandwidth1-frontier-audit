@@ -1,0 +1,65 @@
+{
+  "artifacts": {
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_CHECKS.json": {
+      "bytes": 4206,
+      "sha256": "420d1a8507b1aac47c3a109560ee5649c5d9392a0d04a812a4ced1157e3be740"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_PARENT_MANIFEST_REPLAY.log": {
+      "bytes": 64,
+      "sha256": "8a461503467e1cc517f0937c0387ac69a9d835cc75ba914641f3af5421e4c2d9"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SOURCE_HASHES.json": {
+      "bytes": 10604,
+      "sha256": "bed69bb731bcad7789ed0189c54b4b8b660654c7be6018aa10fe114e5edb9e40"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_TEST_NORMAL.log": {
+      "bytes": 108,
+      "sha256": "6ce19fe5c6e39322ca0b13f5b467573e2eeec70d41fbf64d3e414ddbe59845d6"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_TEST_O.log": {
+      "bytes": 108,
+      "sha256": "6ce19fe5c6e39322ca0b13f5b467573e2eeec70d41fbf64d3e414ddbe59845d6"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_TEST_OO.log": {
+      "bytes": 108,
+      "sha256": "6ce19fe5c6e39322ca0b13f5b467573e2eeec70d41fbf64d3e414ddbe59845d6"
+    },
+    "notes/WP84_R400_ORDINARY_AGGREGATE_THEOREM_FEASIBILITY_HARD_STOP.md": {
+      "bytes": 19041,
+      "sha256": "abec2490ce6743935d25ea929b0694503d7b9a9d54e2af93c3ba1b3badce3cbf"
+    },
+    "src/wp84_r400_theorem_feasibility.py": {
+      "bytes": 5943,
+      "sha256": "8fec202c378efaa0fdfe0a15f4024fa0862f330a3b7774f997e5b5a5393b3f7a"
+    },
+    "src/wp84_r400_theorem_feasibility_manifest.py": {
+      "bytes": 8948,
+      "sha256": "c4ff3ab0f0dadc552159ebc781dc95918fe7116ae34cc83b9225e9c23ee5fe36"
+    },
+    "tests/test_wp84_r400_theorem_feasibility.py": {
+      "bytes": 1604,
+      "sha256": "614105eec43e4e618f72946c2b885b85827e708d75d615c3026563566cae0197"
+    }
+  },
+  "audit_branch": "codex/wp84-ordinary-aggregate-feasibility-20261103",
+  "base_commit": "d81bb1b6e46fb571906e7098e11372a5c38e8a2c",
+  "claim_boundary": "Published estimates checked here do not prove the source-weighted positive-part bound; no ordinary-prime source counterexample is claimed.",
+  "decisions": {
+    "ENDPOINT_CORRECTION": "OPEN",
+    "NEXT_ACTION": "NEW_ANALYTIC_THEOREM_REQUIRED",
+    "ORDINARY_CONNECTED_AGGREGATE": "OPEN",
+    "PUBLISHED_SOURCE_TRANSFER": "INSUFFICIENT",
+    "R400_CONSUMER": "OPEN",
+    "RIEMANN_HYPOTHESIS": "OPEN",
+    "STRICT_GT_79_PERCENT": "OPEN"
+  },
+  "schema": "wp84.r400.ordinary-theorem-feasibility.sha256-manifest.v1",
+  "self_hash_excluded": [
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SHA256_MANIFEST.json",
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SHA256_MANIFEST.sha256"
+  ],
+  "source_hash_inventory": {
+    "path": "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SOURCE_HASHES.json",
+    "sha256": "bed69bb731bcad7789ed0189c54b4b8b660654c7be6018aa10fe114e5edb9e40"
+  }
+}

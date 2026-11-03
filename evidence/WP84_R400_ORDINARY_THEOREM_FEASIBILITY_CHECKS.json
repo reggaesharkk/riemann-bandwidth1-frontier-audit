@@ -1,0 +1,81 @@
+{
+  "decisions": {
+    "ENDPOINT_CORRECTION": "OPEN",
+    "NEXT_ACTION": "NEW_ANALYTIC_THEOREM_REQUIRED",
+    "ORDINARY_CONNECTED_AGGREGATE": "OPEN",
+    "PUBLISHED_SOURCE_TRANSFER": "INSUFFICIENT",
+    "R400_CONSUMER": "OPEN"
+  },
+  "evans_direct_major_arc_insertion": {
+    "P_scale": "P=log^B(M_prod), so log(P)=O(log L) for fixed s",
+    "WP84_product_scale": "M_prod=T^s, fixed s>1",
+    "WP84_short_shift_width": "H=M_prod/T=T^(s-1)",
+    "after_WP84_weight_and_oversampling": "H*(log P)^2/(|a_phi|^4*L^4*(log M_prod)^eta)",
+    "asymptotic_form": "T^(s-1)*(log L)^2/L^(4+eta), up to constants depending on fixed s and the bounded nonzero a_phi normalization",
+    "conclusion": "diverges for each fixed s>1; this positive L2 insertion is not below Delta_max or Delta_max/8",
+    "published_global_remainder": "B^2(M_prod) << M_prod/(log M_prod)^eta"
+  },
+  "record_budget": {
+    "delta_max_decimal": "0.0247937517363305",
+    "delta_max_exact": "3675673694911/148250000000000",
+    "epsilon_one_eighth_positive_part_budget_decimal": "0.0030992189670413",
+    "epsilon_one_eighth_positive_part_budget_exact": "3675673694911/1186000000000000",
+    "limiting_delta_over_four_decimal": "0.0061984379340826",
+    "limiting_delta_over_four_exact": "3675673694911/593000000000000",
+    "strict_inequality_required": true
+  },
+  "repository_transfer": {
+    "flattened_ratio_frequency_warning": "the denominator-only spacing guarantee for distinct reduced A/B ratios with A,B<=N^2 is no better than order N^-4; after log-frequency scaling and d~T*L samples, the generic spacing term can be as large as order N^4/T. This is a worst-case guarantee for all integer ratios, not a claim that the ordinary-prime product subset attains it.",
+    "linear_source_grid_bound": "normalized discrete large sieve costs 1+O(N/T) for one-prime source points; it is uniform in section start but is linear/quadratic only",
+    "multilinear_source_extension": "repository search found no proved multilinear mean-value/large-sieve theorem for the section-dependent 26-term physical cumulant coefficients",
+    "product_block_bound": "the recorded two-index product Gram bound is 1+16*pi*M_prod/T=1+16*pi*H"
+  },
+  "schema": "wp84.r400.ordinary-theorem-feasibility-checks.v1",
+  "second_mass_fourth_moment_countermodel": {
+    "conclusion": "tau(Q_k^2)=k^-2<=1 while tau(Q_k^4)=k^4 is unbounded; a normalized second-mass bound alone gives no normalized fourth-moment upper bound",
+    "family": "Q_k=diag(k^3,0,...,0) of dimension k^8",
+    "rows": [
+      {
+        "dimension": 256,
+        "k": 2,
+        "nonzero_diagonal_entry": 8,
+        "normalized_tau_Q2": "1/4",
+        "normalized_tau_Q4": "16",
+        "operator_norm": 8
+      },
+      {
+        "dimension": 100000000,
+        "k": 10,
+        "nonzero_diagonal_entry": 1000,
+        "normalized_tau_Q2": "1/100",
+        "normalized_tau_Q4": "10000",
+        "operator_norm": 1000
+      },
+      {
+        "dimension": 10000000000000000,
+        "k": 100,
+        "nonzero_diagonal_entry": 1000000,
+        "normalized_tau_Q2": "1/10000",
+        "normalized_tau_Q4": "100000000",
+        "operator_norm": 1000000
+      }
+    ]
+  },
+  "signed_mean_vs_positive_part": {
+    "conclusion": "a signed mean bound does not imply the required mean positive-part bound",
+    "mean_positive_part_exact": "1/2",
+    "mean_signed_exact": "0",
+    "values": [
+      -1,
+      1
+    ]
+  },
+  "source_cutoff_scale": {
+    "N_fourth_over_T_asymptotic": "exp(3*L-4*sqrt(L))/(2*pi) -> infinity",
+    "N_over_T_asymptotic": "exp(-sqrt(L))/(2*pi) -> 0",
+    "N_squared_over_T_asymptotic": "exp(L-2*sqrt(L))/(2*pi) -> infinity",
+    "definitions": "L=log(T/(2*pi)); N=floor(exp(L-sqrt(L))); d=floor(T*L/(2*pi))",
+    "normalization_correction": "Using T=2*pi*exp(L), N^2/T is exp(L-2*sqrt(L))/(2*pi) = T*exp(-2*sqrt(L))/(4*pi^2); older prose that writes denominator 2*pi differs by a fixed factor 2*pi, not in the divergence conclusion."
+  },
+  "status_boundary": "These exact checks do not assert that the physical prime aggregate is positive, large, or illegal. Its record bound remains open."
+}
