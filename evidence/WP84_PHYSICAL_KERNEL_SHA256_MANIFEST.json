@@ -17,8 +17,8 @@
       "sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
     },
     "evidence/WP84_PHYSICAL_KERNEL_SOURCE_HASHES.json": {
-      "bytes": 7828,
-      "sha256": "18c485a4c8d933564679bc4ebb16f64b8faa50c6732f2a4fedf03bef5a3ab5d2"
+      "bytes": 12370,
+      "sha256": "f2de8519f6384f2b37b82686086b9739c78deef62e14f977a3a268e1c3c8a3c6"
     },
     "evidence/WP84_PHYSICAL_KERNEL_TESTS_NORMAL.log": {
       "bytes": 108,
@@ -49,8 +49,8 @@
       "sha256": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a"
     },
     "src/wp84_physical_kernel_manifest.py": {
-      "bytes": 7111,
-      "sha256": "b94ec3780e1cbbd4580736cb479dcfe74d9598a291f821d661dad205abe196b7"
+      "bytes": 7655,
+      "sha256": "bdc52f2a9136fc8d0af6e0e7fae9d445128ffda141a5b4ae3c3fcb1f4141b034"
     },
     "src/wp84_physical_kernel_proper_power_reconciliation.py": {
       "bytes": 12874,

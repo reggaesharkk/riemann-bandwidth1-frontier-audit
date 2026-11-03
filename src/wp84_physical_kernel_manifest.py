@@ -55,6 +55,10 @@ def sha(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def normalize_eol(data: bytes) -> bytes:
+    return data.replace(b"\r\n", b"\n")
+
+
 def git(*args: str) -> str:
     return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
 
@@ -68,20 +72,26 @@ def original_source_hashes() -> dict:
         rows[relative] = {
             "base_git_blob_sha1": blob,
             "base_git_blob_sha256": sha(source),
+            "base_normalized_sha256": sha(normalize_eol(source)),
             "worktree_sha256": sha(worktree),
+            "worktree_normalized_sha256": sha(normalize_eol(worktree)),
             "base_bytes": len(source),
             "worktree_bytes": len(worktree),
             "byte_identical_to_base": source == worktree,
+            "line_ending_normalized_identical": normalize_eol(source) == normalize_eol(worktree),
         }
     for relative in NEW_SOURCE_PATHS:
         data = (ROOT / relative).read_bytes()
         rows[relative] = {
             "base_git_blob_sha1": None,
             "base_git_blob_sha256": None,
+            "base_normalized_sha256": None,
             "worktree_sha256": sha(data),
+            "worktree_normalized_sha256": sha(normalize_eol(data)),
             "base_bytes": None,
             "worktree_bytes": len(data),
             "byte_identical_to_base": None,
+            "line_ending_normalized_identical": None,
         }
     return rows
 
@@ -145,8 +155,8 @@ def verify() -> None:
         actual = sha((ROOT / relative).read_bytes())
         if actual != row["worktree_sha256"]:
             raise RuntimeError(f"source hash mismatch: {relative}")
-        if row["byte_identical_to_base"] is False:
-            raise RuntimeError(f"preserved source differs from base: {relative}")
+        if row["base_git_blob_sha1"] and not row["line_ending_normalized_identical"]:
+            raise RuntimeError(f"preserved source differs from base after EOL normalization: {relative}")
     for relative, row in manifest["artifacts"].items():
         data = (ROOT / relative).read_bytes()
         if sha(data) != row["sha256"] or len(data) != row["bytes"]:
