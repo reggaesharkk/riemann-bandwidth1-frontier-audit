@@ -1,0 +1,8 @@
+PASS product endpoint set density 1/4
+PASS boundary concentration and score-energy anticorrelation: exact C/gamma loss
+PASS shrinking-density saturation for gamma=1/n
+PASS weighted-average mismatch: weighted gamma=1/100, not unweighted 1/2
+PASS coupled-pair hostile example: full marginals do not force pair density
+PASS exact inherited conditioned-energy threshold excess 28353810101/195312500000
+SCOPE: hostile arrays are abstract; none is claimed to be prime-field data
+STRICT >79: OPEN

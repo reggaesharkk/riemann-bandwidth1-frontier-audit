@@ -1,0 +1,661 @@
+{
+  "actual_endpoint_family": {
+    "I_uv": "[b+u,b+d-1-v], 0<=u,v<=M_end",
+    "M_end": "ceil(d*exp(-sqrt(L)/2))",
+    "X": "T/(2*pi)=exp(L)",
+    "d": "floor(T*L/(2*pi))",
+    "historical_correction": "The prior endpoint-near-product note's heuristic M~T*sqrt(L), U~T/sqrt(L) is not the Decision-B window. This revision uses M_end~(TL/(2*pi))*exp(-sqrt(L)/2) and U~T*exp(-sqrt(L)/2). The older commit remains unchanged.",
+    "m_uv": "d-u-v >= d-2*M_end",
+    "original_pair_measure": "uniform 1/(M_end+1)^2 on W_T={0,...,M_end}^2",
+    "source": "WP84 Decision B/D exact windows",
+    "trim_scale": "M_end/d=exp(-sqrt(L)/2)+o(1); h*M_end=(1+o(1))*T*exp(-sqrt(L)/2)"
+  },
+  "audit_branch": "codex/wp84-physical-endpoint-averaging-20261103",
+  "base_commit": "1139e81c5fdfc0ecfc054b892697c6f76f78db31",
+  "decisions": {
+    "AVERAGED_FOURIER_KERNEL": "EXACT",
+    "JOINT_ENDPOINT_SELECTION": "CONDITIONAL",
+    "ORDINARY_CONNECTED_AGGREGATE": "OPEN",
+    "PHYSICAL_CUMULANT_AVERAGING": "CORRECTION_REQUIRED",
+    "R400_CONSUMER": "CONDITIONAL"
+  },
+  "decisions_boundary": "Averaging the scalar Fourier kernel does not average the physical cumulant, path boundary, orientation sum, or positive connected excess. Tests verify exact finite identities only.",
+  "e2_principal_arc": {
+    "major_arc": "the inherited geometry places the important weighted E2 frequencies in the q=1 principal major arc",
+    "normalization": "the positive-L2 oversampling insertion pays H=M_prod/T; on fixed supercritical scales M_prod=T^s, s>1, H=T^(s-1), so the published global major-arc L2 bound alone is insufficient",
+    "safe_lobe": "the inherited Re(exp(i*T*Y)D_d(Y/L))>=0 lobe is for the public scalar finite trace and public B4_nc sign identity; the latter is not source-matched to Omega_4,400*kappa_m and does not include arbitrary selected starts/section-dependent m",
+    "source_decision": "no q=1 source-matched signed remainder or local H^(-1) saving is proved here; no generic minor-arc bound is used to claim closure",
+    "source_window": "for product scale M_prod and shift h=pq-rs, H=M_prod/T; |h|<=H gives |log(pq/rs)|<=-log(1-1/T) in the dyadic product cell"
+  },
+  "endpoint_identity": {
+    "K_uv": "K_uv(Y)=exp(i*T*Y)/(m_uv)*sum_{k=b+u}^{b+d-1-v} exp(2*pi*i*k*Y/L)",
+    "average": "E_rho K_uv(Y)=exp(i*T*Y)*sum_{k=b}^{b+d-1} w_k(rho)*exp(2*pi*i*k*Y/L)",
+    "closed_form": "Re K_uv(Y)=sin(pi*m_uv*Y/L)/(m_uv*sin(pi*Y/L))*cos(omega_uv*Y), omega_uv=T+2*pi*(b+u)/L+pi*(m_uv-1)/L",
+    "conditions": "rho_uv>=0, sum_S rho_uv=1; for uniform W_T use rho=1/(M_end+1)^2; for any source-selected nonempty S use its normalized conditional measure",
+    "properties": "each w_k>=0 exactly and sum_k w_k=1 exactly; no section endpoint, start phase, or row-normalization factor is dropped",
+    "weights": "w_k(rho)=sum_{(u,v) in S} rho_uv * 1_{b+u<=k<=b+d-1-v}/(d-u-v)"
+  },
+  "exact_checks": {
+    "finite_endpoint_example": {
+      "M_end": 2,
+      "b": 0,
+      "conditioned_selected_pair_set": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "conditioned_weights": {
+        "0": "11/120",
+        "1": "49/240",
+        "2": "49/240",
+        "3": "49/240",
+        "4": "49/240",
+        "5": "11/120"
+      },
+      "conditioned_weights_sum": "1",
+      "d": 6,
+      "quarter_phase_average": [
+        "-7/135",
+        "-7/135"
+      ],
+      "uniform_all_pair_weights": {
+        "0": "37/540",
+        "1": "7/45",
+        "2": "149/540",
+        "3": "149/540",
+        "4": "7/45",
+        "5": "37/540"
+      },
+      "unnormalized_row_sum_weights_total": "4",
+      "weights_sum": "1"
+    },
+    "joint_selection": {
+      "epsilon_1_16": {
+        "boundary_bad_fraction": "1/16",
+        "boundary_good_threshold": "E(I) <= C_B*log(d)/(1/16)",
+        "connected_positive_excess": "G_T(I)=max(0, Re C_T(I))",
+        "endpoint_and_boundary_good_density": "3/16",
+        "endpoint_good_pair_density": "at least 1/4 from two separately half-dense endpoint sets",
+        "exact_mean_budget": "11027021084733/2372000000000000",
+        "proof": "boundary Markov removes at most epsilon; connected Markov removes less than (1/4-epsilon); the endpoint-good set has density at least 1/4, so a common section remains",
+        "sufficient_global_mean": "mean_(u,v) in W_T G_T(I_uv) < 11027021084733/2372000000000000"
+      },
+      "epsilon_1_8": {
+        "boundary_bad_fraction": "1/8",
+        "boundary_good_threshold": "E(I) <= C_B*log(d)/(1/8)",
+        "connected_positive_excess": "G_T(I)=max(0, Re C_T(I))",
+        "endpoint_and_boundary_good_density": "1/8",
+        "endpoint_good_pair_density": "at least 1/4 from two separately half-dense endpoint sets",
+        "exact_mean_budget": "3675673694911/1186000000000000",
+        "proof": "boundary Markov removes at most epsilon; connected Markov removes less than (1/4-epsilon); the endpoint-good set has density at least 1/4, so a common section remains",
+        "sufficient_global_mean": "mean_(u,v) in W_T G_T(I_uv) < 3675673694911/1186000000000000"
+      },
+      "prior_delta_over_8_budget": "3675673694911/1186000000000000",
+      "supremal_mean_budget": "3675673694911/593000000000000"
+    },
+    "ordinary_prime_product_diagnostics": {
+      "near_comparable_products": {
+        "A": 10403,
+        "B": 10379,
+        "gap": 24
+      },
+      "scope": "finite source tuples once N admits these primes; neither example estimates an asymptotic aggregate",
+      "unequal_scale_products": {
+        "A": 6,
+        "B": 10403,
+        "all_factors_prime": true
+      }
+    },
+    "partitions": {
+      "balanced_words": [
+        "++--",
+        "+-+-",
+        "+--+",
+        "-++-",
+        "-+-+",
+        "--++"
+      ],
+      "block_counts": {
+        "1": 1,
+        "2": 7,
+        "3": 12,
+        "4": 6
+      },
+      "ordered_terms": [
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 1, 2, 3]) v_j)",
+          "term": 1
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1, 2, 3]) v_j)",
+          "term": 2
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 1]) v_j)*D_m(sum_(j in [2, 3]) v_j)",
+          "term": 3
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 2, 3]) v_j)*D_m(sum_(j in [1]) v_j)",
+          "term": 4
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2, 3]) v_j)",
+          "term": 5
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2, 3]) v_j)*D_m(sum_(j in [1]) v_j)",
+          "term": 6
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 1, 2]) v_j)*D_m(sum_(j in [3]) v_j)",
+          "term": 7
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 3]) v_j)*D_m(sum_(j in [1, 2]) v_j)",
+          "term": 8
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1, 2]) v_j)*D_m(sum_(j in [3]) v_j)",
+          "term": 9
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1, 2]) v_j)",
+          "term": 10
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 2]) v_j)*D_m(sum_(j in [1, 3]) v_j)",
+          "term": 11
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 1, 3]) v_j)*D_m(sum_(j in [2]) v_j)",
+          "term": 12
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1, 3]) v_j)",
+          "term": 13
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1, 3]) v_j)*D_m(sum_(j in [2]) v_j)",
+          "term": 14
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 1]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [3]) v_j)",
+          "term": 15
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 1]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [2]) v_j)",
+          "term": 16
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 2]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [3]) v_j)",
+          "term": 17
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 2]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1]) v_j)",
+          "term": 18
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 3]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2]) v_j)",
+          "term": 19
+        },
+        {
+          "coefficient": 1,
+          "ordered_blocks_zero_based": [
+            [
+              0,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0, 3]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1]) v_j)",
+          "term": 20
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [3]) v_j)",
+          "term": 21
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [2]) v_j)",
+          "term": 22
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [3]) v_j)",
+          "term": 23
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1]) v_j)",
+          "term": 24
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [1]) v_j)*D_m(sum_(j in [2]) v_j)",
+          "term": 25
+        },
+        {
+          "coefficient": -1,
+          "ordered_blocks_zero_based": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "row_product": "D_m(sum_(j in [0]) v_j)*D_m(sum_(j in [3]) v_j)*D_m(sum_(j in [2]) v_j)*D_m(sum_(j in [1]) v_j)",
+          "term": 26
+        }
+      ],
+      "sign_word_total": 16,
+      "sum_of_block_counts": 75,
+      "total": 26
+    },
+    "path_endpoint_correction_example": {
+      "absolute_correction_bound": "2/9",
+      "fractional_path_correction_at_Y_zero": "-2/9",
+      "prefix_vertices": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "roots_in_full_section": 9,
+      "roots_surviving_principal_compression": 7,
+      "span": 2
+    },
+    "positive_part_noncommutation": {
+      "average_positive_part": "1/2",
+      "average_signed": "0",
+      "positive_part_of_average": "0",
+      "section_values": [
+        "1",
+        "-1"
+      ]
+    },
+    "section_dependent_cumulant_example": {
+      "exact_length_correction": "37976/151875",
+      "kappa_at_untrimmed_length_d": "-2",
+      "kappa_m": {
+        "2": "-2",
+        "3": "-32/27",
+        "4": "-2",
+        "5": "-1056/625",
+        "6": "-2"
+      },
+      "scope": "exact row-cumulant algebraic witness; pair-product closure, not an ordinary nonpair aggregate counterexample",
+      "uniform_section_average_kappa": "-265774/151875",
+      "v": [
+        "1/2",
+        "-1/2",
+        "1/2",
+        "-1/2"
+      ]
+    }
+  },
+  "joint_selection": {
+    "epsilon_1_16": {
+      "boundary_bad_fraction": "1/16",
+      "boundary_good_threshold": "E(I) <= C_B*log(d)/(1/16)",
+      "connected_positive_excess": "G_T(I)=max(0, Re C_T(I))",
+      "endpoint_and_boundary_good_density": "3/16",
+      "endpoint_good_pair_density": "at least 1/4 from two separately half-dense endpoint sets",
+      "exact_mean_budget": "11027021084733/2372000000000000",
+      "proof": "boundary Markov removes at most epsilon; connected Markov removes less than (1/4-epsilon); the endpoint-good set has density at least 1/4, so a common section remains",
+      "sufficient_global_mean": "mean_(u,v) in W_T G_T(I_uv) < 11027021084733/2372000000000000"
+    },
+    "epsilon_1_8": {
+      "boundary_bad_fraction": "1/8",
+      "boundary_good_threshold": "E(I) <= C_B*log(d)/(1/8)",
+      "connected_positive_excess": "G_T(I)=max(0, Re C_T(I))",
+      "endpoint_and_boundary_good_density": "1/8",
+      "endpoint_good_pair_density": "at least 1/4 from two separately half-dense endpoint sets",
+      "exact_mean_budget": "3675673694911/1186000000000000",
+      "proof": "boundary Markov removes at most epsilon; connected Markov removes less than (1/4-epsilon); the endpoint-good set has density at least 1/4, so a common section remains",
+      "sufficient_global_mean": "mean_(u,v) in W_T G_T(I_uv) < 3675673694911/1186000000000000"
+    },
+    "prior_delta_over_8_budget": "3675673694911/1186000000000000",
+    "supremal_mean_budget": "3675673694911/593000000000000"
+  },
+  "physical_source_correction": {
+    "block_products": "the 26-term cumulant average is sum_pi mu(pi)*E_S[exp(i phase)*prod_{B in pi}D_{m_uv}(Y_B/L)]; the common m_uv couples block factors, so E(prod D_m) is not prod(E D_m)",
+    "exact_average": "(prod c)*Omega*exp(i*T*Y)*sum_S rho_uv*exp(2*pi*i*(b+u)*Y/L)*kappa_{m_uv}(v)",
+    "exact_row_correction_bound": "|D_m(x)-D_d(x)|<=2*(d-m)/d for |x| arbitrary; hence |kappa_m(v)-kappa_d(v)|<=150*(d-m)/d from block counts 1,7,12,6 and |D|<=1",
+    "finite_principal_section_path": "for closed lag path r with prefixes q_j, span ell=max(q)-min(q), valid roots are [k_- - min(q), k_+ - max(q)]; exact path correction is -(1/m)*sum_{k in I but invalid for r} exp(i*T*Y+2*pi*i*k*Y/L), with magnitude <=ell/m<=4R/m",
+    "orientation": "six balanced words each counted once; the inherited C24=4*C6=C8 normalization is retained; no extra factor six",
+    "physical_term": "Re[(prod_j c_{p_j})*Omega_{4,400}(v)*exp(i*T*Y)*exp(2*pi*i*(b+u)*Y/L)*kappa_{m_uv}(v)]",
+    "reference_factorization": "(prod c)*Omega*exp(i*T*Y)*[kappa_d(v)*sum_S rho_uv*exp(2*pi*i*(b+u)*Y/L) + sum_S rho_uv*exp(2*pi*i*(b+u)*Y/L)*(kappa_{m_uv}(v)-kappa_d(v))]",
+    "source_coefficient": "c_p=-log(p)/(a_phi(T)*L*sqrt(p)); four-slot coefficient product and all six balanced sign words retained",
+    "status": "the Fourier-kernel identity is exact; factoring Omega and a fixed kappa out of the actual section average requires the displayed row-length correction and finite path-boundary correction",
+    "summed_block_count_for_lipschitz_bound": 75,
+    "termwise_26_correction": "exactly one term per ordered partition in exact_checks.partitions.ordered_terms; each correction is coefficient(pi)*[prod_B D_m(v_B)-prod_B D_d(v_B)] with coefficient (-1)^(|pi|-1)"
+  },
+  "schema": "wp84.r400.physical-endpoint-averaging.v1",
+  "smallest_missing_source_estimate": "For C_T(I_uv)=Re of the source-matched ordinary-prime connected aggregate after exact A=B pair contractions, prove limsup_T E_{(u,v) uniform on W_T}[max(0,C_T(I_uv))] < Delta_max/4 (or a direct common-section bound C_T(I_T)<=Delta_max). The strict < Delta_max/4 is the supremal joint-selection threshold from endpoint-good density >=1/4; the parent Delta_max/8 is the epsilon=1/8 instance. This source estimate is open."
+}

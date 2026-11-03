@@ -1,0 +1,16 @@
+Preserved development failure (before the final test runs).
+
+Command:
+  python src/wp84_r400_physical_endpoint_averaging.py --write-json
+
+Result:
+  exit code 1; the initial JSON producer passed fractions.Fraction values to
+  json.dumps without a serializer. The exception was:
+
+  TypeError: Object of type Fraction is not JSON serializable
+
+Correction:
+  The ledger producer now serializes exact Fraction values as rational
+  strings via default=str. The rational in-memory checker and tests continue
+  to use Fraction objects. This was a serialization defect, not an analytic
+  or source-semantic result.

@@ -1,0 +1,269 @@
+{
+  "audit_branch": "codex/wp84-physical-endpoint-averaging-20261103",
+  "base_commit": "1139e81c5fdfc0ecfc054b892697c6f76f78db31",
+  "files": {
+    "evidence/WP84_PHYSICAL_KERNEL_PROPER_POWER_LEDGER.json": {
+      "base_bytes": 18488,
+      "base_git_blob": "2afa734a5a1c993ac4658a5be422c2d9246371b9",
+      "base_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 19330,
+      "worktree_normalized_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "worktree_sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_LEDGER.json": {
+      "base_bytes": 6389,
+      "base_git_blob": "520b00d630ad4376331231410909f85002e6fdeb",
+      "base_sha256": "5bf890391fa1490ff0819536472e474cf8fb2b96783f214037cbfa69e3d6422c",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 6490,
+      "worktree_normalized_sha256": "5bf890391fa1490ff0819536472e474cf8fb2b96783f214037cbfa69e3d6422c",
+      "worktree_sha256": "4bfbb1dd56647c24722695b0b8b262afe33ce962c0df3785631253109a765680"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SHA256_MANIFEST.json": {
+      "base_bytes": 2642,
+      "base_git_blob": "f746e008f6f8bf7b1e0ddd700b1cc36bd9e07fd1",
+      "base_sha256": "b22cc8d42e21329c281bca1445ef1d7b943ec6b71be203e4bdea9349a3b98ecc",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 2642,
+      "worktree_normalized_sha256": "b22cc8d42e21329c281bca1445ef1d7b943ec6b71be203e4bdea9349a3b98ecc",
+      "worktree_sha256": "b22cc8d42e21329c281bca1445ef1d7b943ec6b71be203e4bdea9349a3b98ecc"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SHA256_MANIFEST.sha256": {
+      "base_bytes": 128,
+      "base_git_blob": "2d0252e4b76b3afd65adc1cfe4d0a9cf08a4d477",
+      "base_sha256": "3169bffcc0db0bb6e24b2182b5bbffdc6643bf308dc2aa2feaa0bf1bd9e8d2a0",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 129,
+      "worktree_normalized_sha256": "3169bffcc0db0bb6e24b2182b5bbffdc6643bf308dc2aa2feaa0bf1bd9e8d2a0",
+      "worktree_sha256": "5a838e5393de3d63ed9cd253397d9a4f02185ae13c7f1363fba46c836733fe56"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SOURCE_HASHES.json": {
+      "base_bytes": 9095,
+      "base_git_blob": "73e8d3129c6e2353b193c6de50c495d5a4232189",
+      "base_sha256": "b78eb54c2e86db0d227747d18d575725523c5079d5fc473c17536d7b3ba6db9b",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 9095,
+      "worktree_normalized_sha256": "b78eb54c2e86db0d227747d18d575725523c5079d5fc473c17536d7b3ba6db9b",
+      "worktree_sha256": "b78eb54c2e86db0d227747d18d575725523c5079d5fc473c17536d7b3ba6db9b"
+    },
+    "evidence/WP84_R400_PARENT_PHYSICAL_ATOM_REPLAY.json": {
+      "base_bytes": 18488,
+      "base_git_blob": "2afa734a5a1c993ac4658a5be422c2d9246371b9",
+      "base_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 19330,
+      "worktree_normalized_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "worktree_sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_R400_SCHATTEN_ORDINARY_LEDGER.json": {
+      "base_bytes": 18241,
+      "base_git_blob": "2385dacfd2b6a3f6effc30787d090811618a6c2f",
+      "base_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 18241,
+      "worktree_normalized_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63",
+      "worktree_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63"
+    },
+    "evidence/WP84_R400_SOURCE_INTERVAL_REPLAY.json": {
+      "base_bytes": 10021,
+      "base_git_blob": "84541b9a2d1d2ec874e50655a60833eae727cc98",
+      "base_sha256": "60b8179eec892f5a1a17318ba2e0f1dae0d975125e7bcb10a7a0c03725db04ca",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 10410,
+      "worktree_normalized_sha256": "60b8179eec892f5a1a17318ba2e0f1dae0d975125e7bcb10a7a0c03725db04ca",
+      "worktree_sha256": "60e40feb5cb00bce04c2a8ec7c7ce5f3e646db609b569bef1c41b6a0e22f4c5b"
+    },
+    "notes/WP84_DECISION_D_ENDPOINT_ADMISSIBILITY_DENSITY.md": {
+      "base_bytes": 10487,
+      "base_git_blob": "573482eae970657cfa3b436246de29a040efd411",
+      "base_sha256": "6bcd6c6bf1942857c0d8f4f01c2908d5870f61a18dd338e9ece270ee4fe7c28d",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 10487,
+      "worktree_normalized_sha256": "6bcd6c6bf1942857c0d8f4f01c2908d5870f61a18dd338e9ece270ee4fe7c28d",
+      "worktree_sha256": "6bcd6c6bf1942857c0d8f4f01c2908d5870f61a18dd338e9ece270ee4fe7c28d"
+    },
+    "notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md": {
+      "base_bytes": 8304,
+      "base_git_blob": "428cd17b2847de598e976c7f252a4fcbaba2ede3",
+      "base_sha256": "fc79cbd46c4bedf1e28bc35f182503f00bc72c1c653731973397cdb54c9a8875",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 8697,
+      "worktree_normalized_sha256": "fc79cbd46c4bedf1e28bc35f182503f00bc72c1c653731973397cdb54c9a8875",
+      "worktree_sha256": "da3576668ac2d534d0ceda5e0938db9cfe5dc544e997bd9eb1f684548658799b"
+    },
+    "notes/WP84_E2_SHIFT_RANGE_SAFE_LOBE.md": {
+      "base_bytes": 5154,
+      "base_git_blob": "9ff0fd5ba59969ccd58aab28a0f9c3c489992c58",
+      "base_sha256": "15b91a732ce84b185698bc0a1156fd8b9acc9e6e467c7aa7e235c68c51631c37",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 5461,
+      "worktree_normalized_sha256": "15b91a732ce84b185698bc0a1156fd8b9acc9e6e467c7aa7e235c68c51631c37",
+      "worktree_sha256": "3d0147dce329c6336d8c8750d3093badbcb5d07a38789ab4af662539c6fc68c2"
+    },
+    "notes/WP84_F1C_FIRST_STRIKE_ENDPOINT_SOURCE_AUDIT.md": {
+      "base_bytes": 14556,
+      "base_git_blob": "152088ba505ba3e7009fa87f648e60d0bfbcd1a1",
+      "base_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 14556,
+      "worktree_normalized_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1",
+      "worktree_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1"
+    },
+    "notes/WP84_R400_ENDPOINT_QUANTIFIERS_AND_NEAR_PRODUCT_AUDIT.md": {
+      "base_bytes": 14861,
+      "base_git_blob": "ec6f733a798770dafbe7f79022db8f95d60b56c3",
+      "base_sha256": "402632bbeb0378764430676119e2be3951ed8f86ecc9704eb753c78444742ab5",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 14861,
+      "worktree_normalized_sha256": "402632bbeb0378764430676119e2be3951ed8f86ecc9704eb753c78444742ab5",
+      "worktree_sha256": "402632bbeb0378764430676119e2be3951ed8f86ecc9704eb753c78444742ab5"
+    },
+    "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+      "base_bytes": 22018,
+      "base_git_blob": "03dbcf6bb87eddcf8b63f5fbf33e2e44841c15b1",
+      "base_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 22018,
+      "worktree_normalized_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7",
+      "worktree_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+    },
+    "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+      "base_bytes": 5022,
+      "base_git_blob": "c0c0e061239366ec956daa573095d5b3a99a2b2e",
+      "base_sha256": "655e1ce3950308470c594a0339051072be629e7f211d4b245edfda36193d233d",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 5258,
+      "worktree_normalized_sha256": "655e1ce3950308470c594a0339051072be629e7f211d4b245edfda36193d233d",
+      "worktree_sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+    },
+    "notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md": {
+      "base_bytes": 4789,
+      "base_git_blob": "ac87e8a1731cd22bea8f769fee7eba1cbb0f4d5d",
+      "base_sha256": "a77a606a222beee9a85ca80b28ac598dada279fa99429b701c1a2457424c92ca",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 4984,
+      "worktree_normalized_sha256": "a77a606a222beee9a85ca80b28ac598dada279fa99429b701c1a2457424c92ca",
+      "worktree_sha256": "7945c3eda0dcfbf4dda160a71d98cb127fc09689e0cf639c962f393a56b3fdd6"
+    },
+    "notes/WP84_R400_SCHATTEN_ABSORPTION_AND_ORDINARY_AGGREGATE_AUDIT.md": {
+      "base_bytes": 16133,
+      "base_git_blob": "dcab939bc47d9413dd74055bdeb5feb58b716597",
+      "base_sha256": "43ac834f2a7370dc0c2f1d97730d1bd1c24f9783881729bbdc9f87e6418c7954",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 16532,
+      "worktree_normalized_sha256": "43ac834f2a7370dc0c2f1d97730d1bd1c24f9783881729bbdc9f87e6418c7954",
+      "worktree_sha256": "8334b30e2bf707d7ff9d2cb4dd56bfe012def04b0d751e77232c48aafb69edf5"
+    },
+    "src/wp84_decision_d_endpoint_admissibility.py": {
+      "base_bytes": 5480,
+      "base_git_blob": "6ef6096adc31186fe24b85e66294f716bd6d1eca",
+      "base_sha256": "e53ae22735e792be994559b8a41ec51758364555170a9a3a8f19a261d03a116e",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 5480,
+      "worktree_normalized_sha256": "e53ae22735e792be994559b8a41ec51758364555170a9a3a8f19a261d03a116e",
+      "worktree_sha256": "e53ae22735e792be994559b8a41ec51758364555170a9a3a8f19a261d03a116e"
+    },
+    "src/wp84_decision_d_endpoint_admissibility_replay.py": {
+      "base_bytes": 4031,
+      "base_git_blob": "3750da7247d4664579cb96a946d2b2ab618de0f5",
+      "base_sha256": "4546f29b4d42feb717c97cb38412945971f4cca5d30a076b1fe14b9a7acd5efa",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 4031,
+      "worktree_normalized_sha256": "4546f29b4d42feb717c97cb38412945971f4cca5d30a076b1fe14b9a7acd5efa",
+      "worktree_sha256": "4546f29b4d42feb717c97cb38412945971f4cca5d30a076b1fe14b9a7acd5efa"
+    },
+    "src/wp84_e2_shift_range_safe_lobe.py": {
+      "base_bytes": 1314,
+      "base_git_blob": "4741f932c7fade6229d1f2a35447644a5440c7a9",
+      "base_sha256": "e97e148e42ef28862b84fbb17d5faf4cbd1ed66b112950c4c771377724bae7de",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 1375,
+      "worktree_normalized_sha256": "e97e148e42ef28862b84fbb17d5faf4cbd1ed66b112950c4c771377724bae7de",
+      "worktree_sha256": "bf4e3e91d5438bb08884c6884aff4134af3c76cff04cd124650148ee91ac4f75"
+    },
+    "src/wp84_r400_endpoint_near_product_audit.py": {
+      "base_bytes": 10035,
+      "base_git_blob": "e81584931f1040dfc0ce15385caf0e0d341dcbb5",
+      "base_sha256": "55c5a890ffd586c94e703dfb7b19a5e01206f19931cf8ff0c92f7c0a689080fd",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 10035,
+      "worktree_normalized_sha256": "55c5a890ffd586c94e703dfb7b19a5e01206f19931cf8ff0c92f7c0a689080fd",
+      "worktree_sha256": "55c5a890ffd586c94e703dfb7b19a5e01206f19931cf8ff0c92f7c0a689080fd"
+    },
+    "src/wp84_r400_endpoint_near_product_manifest.py": {
+      "base_bytes": 6912,
+      "base_git_blob": "845dc9986040e25271a0bcd74cfbff603660139a",
+      "base_sha256": "06e0bc9615d9c648d7164e65fbef00d78a8a35c379032eb50f93389c59632917",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 6912,
+      "worktree_normalized_sha256": "06e0bc9615d9c648d7164e65fbef00d78a8a35c379032eb50f93389c59632917",
+      "worktree_sha256": "06e0bc9615d9c648d7164e65fbef00d78a8a35c379032eb50f93389c59632917"
+    },
+    "src/wp84_r400_filtered_connected_kernel.py": {
+      "base_bytes": 11981,
+      "base_git_blob": "ac379ffd065845691fbb451a12cdf28e0db8db65",
+      "base_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 11981,
+      "worktree_normalized_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486",
+      "worktree_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+    },
+    "src/wp84_r400_filtered_sharp_repair.py": {
+      "base_bytes": 8255,
+      "base_git_blob": "3aa9ce6adacc41c8049da03c06cdf77af3d0a44e",
+      "base_sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 8255,
+      "worktree_normalized_sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d",
+      "worktree_sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d"
+    },
+    "src/wp84_r400_pair_layer_exact.py": {
+      "base_bytes": 1593,
+      "base_git_blob": "3423ec96f79f2b28f134a66ac7f29e67d527ffa7",
+      "base_sha256": "49e1cff47509d80aae37087ef37d3dc22c7dc61d99ada60b403bc663eb972f39",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 1667,
+      "worktree_normalized_sha256": "49e1cff47509d80aae37087ef37d3dc22c7dc61d99ada60b403bc663eb972f39",
+      "worktree_sha256": "f185a9cde28b6b3d3a4e0ab2633d167c3fa6e44051330e15a48f4ee5c23e924f"
+    },
+    "src/wp84_r400_schatten_absorption_audit.py": {
+      "base_bytes": 16986,
+      "base_git_blob": "aec90017909e822d26b81d1e45670740345fde3b",
+      "base_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 16986,
+      "worktree_normalized_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "worktree_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2"
+    },
+    "src/wp84_r400_source_interval_replay.py": {
+      "base_bytes": 6275,
+      "base_git_blob": "e6a6c78867a2c3700cd6cad52072234fb996c82d",
+      "base_sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 6275,
+      "worktree_normalized_sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58",
+      "worktree_sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58"
+    },
+    "tests/test_wp84_r400_endpoint_near_product_audit.py": {
+      "base_bytes": 2651,
+      "base_git_blob": "fa5cac990a286266afe8f4177ec8ec1fcd3db2e8",
+      "base_sha256": "5efb87e1dd9ec86b171369591d6d3aaa16fcfbe8b0b8e88f5d4d677e54f7db07",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 2651,
+      "worktree_normalized_sha256": "5efb87e1dd9ec86b171369591d6d3aaa16fcfbe8b0b8e88f5d4d677e54f7db07",
+      "worktree_sha256": "5efb87e1dd9ec86b171369591d6d3aaa16fcfbe8b0b8e88f5d4d677e54f7db07"
+    },
+    "tests/test_wp84_r400_schatten_absorption_audit.py": {
+      "base_bytes": 5511,
+      "base_git_blob": "a69592e14abfda3a2a4afcee2b1c666ffc437585",
+      "base_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 5511,
+      "worktree_normalized_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "worktree_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6"
+    }
+  },
+  "method": "SHA-256 over raw git-show base bytes and worktree bytes; only CRLF/LF is normalized for unchanged-input comparison",
+  "schema": "wp84.r400.physical-endpoint-averaging.source-hashes.v1"
+}

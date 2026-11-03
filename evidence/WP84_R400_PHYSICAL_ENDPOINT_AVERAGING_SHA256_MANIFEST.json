@@ -1,0 +1,97 @@
+{
+  "artifacts": {
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_DENSITY_BUILD.log": {
+      "bytes": 74,
+      "sha256": "b6a8aee8cc55cb1bf670142fcd12de6aac40760d546109ccc0253eb0a941d1c2"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_DENSITY_REPLAY.log": {
+      "bytes": 498,
+      "sha256": "f3f51d0f2722fbe3baccce1e1f669b272de9798c38ab90aee3a9e32d672ffbd4"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_E2_SAFE_LOBE_REPLAY.log": {
+      "bytes": 82,
+      "sha256": "b6dfd7374593e97d8d10fe5ef620c3fcec026bfad7535ea943ffc1bb6b35aadf"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_INITIAL_SERIALIZATION_FAILURE.log": {
+      "bytes": 606,
+      "sha256": "57664cbdbc708f9146f1756f8e9de9b0a3f7c8e7a3fa7988836a22d43ea1eaf0"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_LEDGER.json": {
+      "bytes": 21332,
+      "sha256": "263936ce5d07175db5b97e7449a26ba86ed9c48620d83c2d6a82d0ee562027af"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_PARENT_MANIFEST_REPLAY.log": {
+      "bytes": 59,
+      "sha256": "fc45cf751668a9da8e02e32e63d080a8927cd831a9bb9a6ee1287f7312beee19"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_PARENT_TEST_NORMAL.log": {
+      "bytes": 118,
+      "sha256": "e2b6b634e37d45d2f3eef31f5cc650b9158d1d474744c63c3440e975589b4411"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_PARENT_TEST_O.log": {
+      "bytes": 118,
+      "sha256": "593025f584630fa9ee150ea27ba8e944ded67d0595228a044c058df7552084fe"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_PARENT_TEST_OO.log": {
+      "bytes": 118,
+      "sha256": "eef5d49a9132fccf7168ba93bdb2ea37fe7f1e0224d759119598a060c413bbce"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_SOURCE_HASHES.json": {
+      "bytes": 15732,
+      "sha256": "33ef2cdd037d33e9366d6d973df5ed67da49bda14b1ee0b9deaef45cf8ee22d7"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_SOURCE_INTERVAL_REPLAY.log": {
+      "bytes": 134,
+      "sha256": "8c52246e7cf72bad5be58b5534b16941757f440f96569a356f15d9a6b58ca44c"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_TEST_NORMAL.log": {
+      "bytes": 118,
+      "sha256": "b61e3b501ecc752b3e5c90d4f80d134ab8a1c49f64d456bdab0356864e9c8e65"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_TEST_O.log": {
+      "bytes": 118,
+      "sha256": "2c8b06482679f57eb5ead6f6a3f7a23b2cd534fd0e0d1c1dcd591c8c78562c6b"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_TEST_OO.log": {
+      "bytes": 118,
+      "sha256": "8d1a2b29f487acdec6fa0e1dc849314056374c4d6c04e26cd81869dc3a819028"
+    },
+    "notes/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_AND_NEAR_PRODUCT_CLOSURE.md": {
+      "bytes": 13667,
+      "sha256": "3de6e7bd87782af0e3f00eba9a4273a3b6ba3826afa6f8b19c4881022e0539e9"
+    },
+    "src/wp84_r400_physical_endpoint_averaging.py": {
+      "bytes": 16894,
+      "sha256": "0ddfb9667e444b7110b8a6406960640ec362472b62fd9d45eb168392505d2625"
+    },
+    "src/wp84_r400_physical_endpoint_averaging_manifest.py": {
+      "bytes": 8600,
+      "sha256": "fa6cbc91e49eabecd63ad9429bf41b51407279c2f0c4164fa2c4300a8b9d2ae2"
+    },
+    "tests/test_wp84_r400_physical_endpoint_averaging.py": {
+      "bytes": 7142,
+      "sha256": "7a1dbf983e5bf5960637b6cf21f5b6bddc2935e2eca3d76c594c204ff2bf114e"
+    }
+  },
+  "audit_branch": "codex/wp84-physical-endpoint-averaging-20261103",
+  "base_commit": "1139e81c5fdfc0ecfc054b892697c6f76f78db31",
+  "claim_boundary": "Exact finite identities and inherited replays are checked; the source-weighted ordinary-prime record-budget estimate remains open.",
+  "decisions": {
+    "AVERAGED_FOURIER_KERNEL": "EXACT",
+    "JOINT_ENDPOINT_SELECTION": "CONDITIONAL",
+    "ORDINARY_CONNECTED_AGGREGATE": "OPEN",
+    "PHYSICAL_CUMULANT_AVERAGING": "CORRECTION_REQUIRED",
+    "R400_CONSUMER": "CONDITIONAL",
+    "RIEMANN_HYPOTHESIS": "OPEN",
+    "STRICT_GT_79_PERCENT": "OPEN"
+  },
+  "schema": "wp84.r400.physical-endpoint-averaging.sha256-manifest.v1",
+  "self_hash_excluded": [
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_SHA256_MANIFEST.json",
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_SHA256_MANIFEST.sha256"
+  ],
+  "source_hash_inventory": {
+    "path": "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_SOURCE_HASHES.json",
+    "sha256": "33ef2cdd037d33e9366d6d973df5ed67da49bda14b1ee0b9deaef45cf8ee22d7"
+  }
+}
