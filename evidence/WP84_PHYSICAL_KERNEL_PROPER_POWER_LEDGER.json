@@ -1,0 +1,842 @@
+{
+  "abstract_positive_weight_counterexample": {
+    "classification": "abstract weight-mask counterexample only; not actual source-admissible arithmetic evidence",
+    "point": [
+      "1/6",
+      "-1/6",
+      "11/12",
+      "-11/12"
+    ],
+    "positive_term_weights": [
+      "1",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100",
+      "1/100"
+    ],
+    "positively_reweighted_bracket": "1187/1200",
+    "unweighted_public_bracket": "-1/12"
+  },
+  "common_first_overlap_OA": "2/5",
+  "decision": "PROPER_POWER_EXCEPTION_CONTROLLED",
+  "decision_scope": "the reported (p,p^2,p^3,p^2) positive resonance family is proper-power-containing and its complete same-base/permutation aggregate is O_R(L^-4); this does not close the full R400 aggregate or consumer",
+  "global_proper_power_sector": {
+    "absolute_first_mass": "O(1), not o(1)",
+    "conditional_quartic_removal": "if the ordinary-prime band matrix Y has normalized Schatten-4 norm O(1) on the same section, and the proper-power matrix P has ||P||op=O_R(1), tau(P^2)=O_R(L^-2), then ||P||4=O_R(L^-1/2) and |tau((Y+P)^4)-tau(Y^4)|=O_R(L^-1/2); this hypothesis is not proved here",
+    "exact_square_mass": "(1/(|a_phi|^2 L^2))*sum_p (log p)^2/[p(p-1)]",
+    "proof_bound": "log x<=4*x^(1/4) and p(p-1)>=p^2/2; sum_{n>=2} n^(-3/2)<=2",
+    "uniform_bound": "<=64/(|a_phi|^2 L^2) <=256/L^2 once |a_phi|>=1/2",
+    "what_square_mass_does_not_prove": "the complete quartic aggregate containing a proper-power label, without an independent prime fourth-moment/Schatten bound or signed multilinear estimate"
+  },
+  "kernel_reconciliation": {
+    "divergence": "public factor is a nested-path overlap for each partition; physical factor is the product over blocks of empirical row averages D_m(sum_B v_j), multiplied by one common external filtered overlap Omega_4,R(v)",
+    "finite_section": "at m=10 the physical term vector is e_1 exactly; for every selected m>=10 the independent 25-term bound gives kappa_m>=384/625",
+    "pair_subtraction": "not the divergence at the fixed tuple: pair contraction is separated only in B4=Pair4+Connected4,row+o(1); both connected ledgers use the same partition M\u00f6bius signs",
+    "same": [
+      "26 anchored ordered partitions",
+      "M\u00f6bius coefficients",
+      "original tuple coefficient",
+      "carrier",
+      "R400 cutoff",
+      "root intervals",
+      "source-selected section",
+      "label/orientation accounting"
+    ]
+  },
+  "m_test": 10,
+  "ordinary_prime_sector": {
+    "exact_nonpair_closure": "impossible by unique factorization; exact p0*p2=p1*p3 forces pairings for ordinary primes",
+    "near_products_and_near_aliases": "retained and uncontrolled by the kernel pointwise sign or proper-power square mass",
+    "pair_subtraction": "the exact pair layer is removed by Pair4; no source-admissible positive ordinary-prime non-pair aggregate was established in this audit"
+  },
+  "partition_counts": {
+    "1": 1,
+    "2": 7,
+    "3": 12,
+    "4": 6
+  },
+  "physical_kappa_m10": "1",
+  "physical_term_vector_m10": [
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "physical_uniform_lower_bound_m_ge_10": "1 - 7*(2/m)^2 - 12*(2/m)^3 - 6*(2/m)^4 >= 384/625",
+  "point": [
+    "1/5",
+    "-2/5",
+    "3/5",
+    "-2/5"
+  ],
+  "pointwise_physical_sign": "positive: Omega_4,400>799/4000 and kappa_m>=384/625, hence Phi_4,400,m>9588/78125 for the admitted family",
+  "proper_power_ledger_entry": {
+    "carrier": "1 because the signed logarithmic sum is exactly zero",
+    "coefficient_product": "+(log p)^4/(a_phi(T)^4 L^4 p^4)",
+    "family_aggregate_bound": "O_R(L^-4); this controls this complete one-base resonance family only",
+    "interval_certificate": "48 labeled source/conjugate placements, 24 unique rational vectors; every R400 Omega interval >799/4000; source ordering intervals lie near 0.199750432 or 0.399748481",
+    "orientation_multiplicity_envelope": 48,
+    "physical_kernel_envelope": "|(Phi_4,R,m)| <= (13/3) G_R^4; G_R=1+2 H_R/pi",
+    "prime_exponents": [
+      1,
+      2,
+      3,
+      2
+    ],
+    "product_exponent": 8,
+    "root_intervals_in_slot_order": [
+      [
+        "0",
+        "4/5"
+      ],
+      [
+        "2/5",
+        "1"
+      ],
+      [
+        "0",
+        "2/5"
+      ],
+      [
+        "2/5",
+        "1"
+      ]
+    ],
+    "section_uniformity": "S=0 makes exp(i*T*L*S) exp(2*pi*i*k_minus*S)=1 for every common selected section; m>=10 eventually",
+    "signed_exponent_sum": 0,
+    "signs": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "slot_coefficients": "c_(p^e)=-(log p)/(a_phi(T) L p^(e/2)); the four minus signs multiply to +",
+    "source_admission": "for p>=5, p^5 exp(-sqrt(5 log p)) > p^3, so all four slots are <= N on T=2 pi p^5 and L=5 log p",
+    "source_scales": "T=2*pi*p^5; L=log(T/(2*pi))=5 log p; N=floor(exp(L-sqrt(L))); h=2*pi/L; d=floor(TL/(2*pi)); q=floor(d/sqrt(L)); selected m>=d-2q",
+    "square_root_product_exponent": 4,
+    "summed_same_base_coefficient_mass": "O(L^-4), using sum_p (log p)^4/p^4 < infinity"
+  },
+  "public_and_physical_partition_term_ledger": [
+    {
+      "block_frequency_sums": [
+        "0"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 1,
+      "physical_signed_term_at_m10": 1,
+      "public_nested_overlap": "1",
+      "public_signed_term": "1",
+      "term": 1
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-1/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "4/5",
+      "public_signed_term": "-4/5",
+      "term": 2
+    },
+    {
+      "block_frequency_sums": [
+        "-1/5",
+        "1/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "4/5",
+      "public_signed_term": "-4/5",
+      "term": 3
+    },
+    {
+      "block_frequency_sums": [
+        "2/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "3/5",
+      "public_signed_term": "-3/5",
+      "term": 4
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-2/5",
+        "1/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "3/5",
+      "public_signed_term": "3/5",
+      "term": 5
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "1/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "3/5",
+      "public_signed_term": "3/5",
+      "term": 6
+    },
+    {
+      "block_frequency_sums": [
+        "2/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "3/5",
+      "public_signed_term": "-3/5",
+      "term": 7
+    },
+    {
+      "block_frequency_sums": [
+        "-1/5",
+        "1/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "4/5",
+      "public_signed_term": "-4/5",
+      "term": 8
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "1/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "3/5",
+      "public_signed_term": "3/5",
+      "term": 9
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-2/5",
+        "1/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "3/5",
+      "public_signed_term": "3/5",
+      "term": 10
+    },
+    {
+      "block_frequency_sums": [
+        "4/5",
+        "-4/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "-1/5",
+      "term": 11
+    },
+    {
+      "block_frequency_sums": [
+        "-3/5",
+        "3/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "-2/5",
+      "term": 12
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "3/5",
+        "-4/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "1/5",
+      "term": 13
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-4/5",
+        "3/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "1/5",
+      "term": 14
+    },
+    {
+      "block_frequency_sums": [
+        "-1/5",
+        "3/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "2/5",
+      "term": 15
+    },
+    {
+      "block_frequency_sums": [
+        "-1/5",
+        "-2/5",
+        "3/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          1
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "2/5",
+      "term": 16
+    },
+    {
+      "block_frequency_sums": [
+        "4/5",
+        "-2/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "1/5",
+      "term": 17
+    },
+    {
+      "block_frequency_sums": [
+        "4/5",
+        "-2/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "1/5",
+      "term": 18
+    },
+    {
+      "block_frequency_sums": [
+        "-1/5",
+        "-2/5",
+        "3/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          3
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "2/5",
+      "term": 19
+    },
+    {
+      "block_frequency_sums": [
+        "-1/5",
+        "3/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": 1,
+      "ordered_blocks_zero_based": [
+        [
+          0,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "2/5",
+      "term": 20
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-2/5",
+        "3/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "-2/5",
+      "term": 21
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-2/5",
+        "-2/5",
+        "3/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "-1/5",
+      "term": 22
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "3/5",
+        "-2/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "-1/5",
+      "term": 23
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "3/5",
+        "-2/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "-1/5",
+      "term": 24
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-2/5",
+        "-2/5",
+        "3/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "1/5",
+      "public_signed_term": "-1/5",
+      "term": 25
+    },
+    {
+      "block_frequency_sums": [
+        "1/5",
+        "-2/5",
+        "3/5",
+        "-2/5"
+      ],
+      "mobius_coefficient": -1,
+      "ordered_blocks_zero_based": [
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "physical_row_product_at_m10": 0,
+      "physical_signed_term_at_m10": 0,
+      "public_nested_overlap": "2/5",
+      "public_signed_term": "-2/5",
+      "term": 26
+    }
+  ],
+  "public_geometric_B4": "0",
+  "r400_consumer": {
+    "needed_inequality": "Re integral Phi_4,400,m(v) dmu_T,I(v) <= Delta_400+o(1), Delta_400 <= 0, or a quantified nonpositive allowance compatible with the consumer",
+    "pair_bound": "Pair_400 < 0.266329+o(1)",
+    "previous_conditional_positive_error_budget": "3675673694911/148250000000000 = 0.024793751736...",
+    "status": "OPEN; the ordinary-prime signed near-product/near-alias aggregate is not bounded here"
+  },
+  "schema": "wp84.physical-kernel-proper-power-reconciliation.v1",
+  "source_prefix_positions": [
+    "0",
+    "1/5",
+    "-1/5",
+    "2/5",
+    "0"
+  ],
+  "zero_margin_diagnostic": {
+    "classification": "rational-grid diagnostic only; not asserted source-admissible",
+    "m": 4,
+    "nonzero_term_vector_entries_one_based": [
+      [
+        1,
+        1
+      ],
+      [
+        8,
+        -1
+      ]
+    ],
+    "point": [
+      "-3/4",
+      "-1/2",
+      "1/2",
+      "3/4"
+    ],
+    "reweighting": "weight term 1 by 1+delta and term 8 by 1; exact bracket becomes delta for every rational delta",
+    "unweighted_bracket": "0"
+  }
+}

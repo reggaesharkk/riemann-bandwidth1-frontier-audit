@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "evidence/WP84_PHYSICAL_KERNEL_CHECKER_NORMAL.log": {
+      "bytes": 19570,
+      "sha256": "82d9c3e49f1fa6be12bf1604cb51b3e469912f0611aeaa3f38bf128e43ae8bba"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_CHECKER_O.log": {
+      "bytes": 19570,
+      "sha256": "82d9c3e49f1fa6be12bf1604cb51b3e469912f0611aeaa3f38bf128e43ae8bba"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_CHECKER_OO.log": {
+      "bytes": 19570,
+      "sha256": "82d9c3e49f1fa6be12bf1604cb51b3e469912f0611aeaa3f38bf128e43ae8bba"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_PROPER_POWER_LEDGER.json": {
+      "bytes": 19330,
+      "sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_SOURCE_HASHES.json": {
+      "bytes": 7828,
+      "sha256": "18c485a4c8d933564679bc4ebb16f64b8faa50c6732f2a4fedf03bef5a3ab5d2"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_TESTS_NORMAL.log": {
+      "bytes": 108,
+      "sha256": "9a5938bcb991e03c7ea0dac48fc018ab4da1487b1991c4ec4f42928fb50f87ae"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_TESTS_O.log": {
+      "bytes": 108,
+      "sha256": "714f29415a01b3dc098655f670ededa6a83a69a59d0cc42dd4e2d8bb8d9b4148"
+    },
+    "evidence/WP84_PHYSICAL_KERNEL_TESTS_OO.log": {
+      "bytes": 108,
+      "sha256": "58cef839c86be5536ccf415d5737a03e32f6795649aa55399acb8458b5cade67"
+    },
+    "evidence/WP84_PUBLIC_KERNEL_CROSSCHECK.log": {
+      "bytes": 44,
+      "sha256": "80e95a4de0b4ead5abd527f81f12eb34a8b59ce415fbff468c6bac023331f33f"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CERTIFICATE_REPLAY_20261103.log": {
+      "bytes": 2064,
+      "sha256": "a5c27887c75769ca43bcec6764dab5dd0283d5c3e754a42ca3a0a555afdaac5c"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_ORIENTATION_REPLAY_20261103.log": {
+      "bytes": 3078,
+      "sha256": "e2800d97a7c596a32dfb6f864c37671b109c19d6368e7f6e646cbf844ff622c3"
+    },
+    "notes/WP84_PHYSICAL_KERNEL_PROPER_POWER_AGGREGATE_AUDIT.md": {
+      "bytes": 13006,
+      "sha256": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a"
+    },
+    "src/wp84_physical_kernel_manifest.py": {
+      "bytes": 7111,
+      "sha256": "b94ec3780e1cbbd4580736cb479dcfe74d9598a291f821d661dad205abe196b7"
+    },
+    "src/wp84_physical_kernel_proper_power_reconciliation.py": {
+      "bytes": 12874,
+      "sha256": "524af6d95bb73ffcc3a403c0816b15d9e0f8225d82f3675cf31c939bf0a3f830"
+    },
+    "tests/test_wp84_physical_kernel_reconciliation.py": {
+      "bytes": 3532,
+      "sha256": "b22267ed4a33402d9357592d75fef4c93f84cdc2ca713497f2b963d404dc5499"
+    }
+  },
+  "audit_branch": "codex/wp84-physical-kernel-proper-power-aggregate-20261103",
+  "base_commit": "0185e68f53b50e2085eb30aaecc623861ccc107b",
+  "decision": "PROPER_POWER_EXCEPTION_CONTROLLED",
+  "decision_scope": "complete one-base family for the reported positive atom only; full R400 aggregate remains open",
+  "manifest_self_hash_excluded": [
+    "evidence/WP84_PHYSICAL_KERNEL_SHA256_MANIFEST.json",
+    "evidence/WP84_PHYSICAL_KERNEL_SHA256_MANIFEST.sha256"
+  ],
+  "schema": "wp84.physical-kernel-proper-power.sha256-manifest.v1",
+  "source_hash_file": "evidence/WP84_PHYSICAL_KERNEL_SOURCE_HASHES.json"
+}
