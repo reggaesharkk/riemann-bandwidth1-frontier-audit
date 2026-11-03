@@ -1,0 +1,17 @@
+WP84 inherited source interval replay — invocation record
+
+Attempt 1 (no repository src path): FAILED before computation.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "src/wp84_r400_source_interval_replay.py", line 19, in <module>
+    from wp84_r400_filtered_connected_kernel import omega_interval
+ModuleNotFoundError: No module named 'wp84_r400_filtered_connected_kernel'
+
+Attempt 2 (repository src path inserted into sys.path): PASS.
+PASS source atom admission and all 48 labeled placements
+unique interval evaluations= 24
+uniform overlap threshold= every unique source/conjugate placement has Omega_4,400 > 799/4000
+row cumulant= 384/625
+scope= this is a pointwise proper-power-containing source atom family, not the ordinary-prime aggregate sign
+
+No predecessor evidence file was overwritten. The successful replay called build() in memory and did not invoke the source script's write-to-historical-evidence path.

@@ -1,0 +1,62 @@
+{
+  "artifacts": {
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_LEDGER.json": {
+      "bytes": 6490,
+      "sha256": "4bfbb1dd56647c24722695b0b8b262afe33ce962c0df3785631253109a765680"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_PARENT_INTERVAL_REPLAY.log": {
+      "bytes": 956,
+      "sha256": "ea8c388fdbca19454198ed3a2c474fe56e691547014d044e7ea5725af6c2a413"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SOURCE_HASHES.json": {
+      "bytes": 9095,
+      "sha256": "b78eb54c2e86db0d227747d18d575725523c5079d5fc473c17536d7b3ba6db9b"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_TEST_NORMAL.log": {
+      "bytes": 118,
+      "sha256": "5d0520de23f70c795158928988ad03101bff3c45ee41151177da3ac3c7b6ef72"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_TEST_O.log": {
+      "bytes": 118,
+      "sha256": "e7a203ae1002685d052291cdde730747e18e5cfede14d9c73a8bfaabc7bd77ea"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_TEST_OO.log": {
+      "bytes": 118,
+      "sha256": "e7a203ae1002685d052291cdde730747e18e5cfede14d9c73a8bfaabc7bd77ea"
+    },
+    "notes/WP84_R400_ENDPOINT_QUANTIFIERS_AND_NEAR_PRODUCT_AUDIT.md": {
+      "bytes": 14861,
+      "sha256": "402632bbeb0378764430676119e2be3951ed8f86ecc9704eb753c78444742ab5"
+    },
+    "src/wp84_r400_endpoint_near_product_audit.py": {
+      "bytes": 10035,
+      "sha256": "55c5a890ffd586c94e703dfb7b19a5e01206f19931cf8ff0c92f7c0a689080fd"
+    },
+    "src/wp84_r400_endpoint_near_product_manifest.py": {
+      "bytes": 6912,
+      "sha256": "06e0bc9615d9c648d7164e65fbef00d78a8a35c379032eb50f93389c59632917"
+    },
+    "tests/test_wp84_r400_endpoint_near_product_audit.py": {
+      "bytes": 2651,
+      "sha256": "5efb87e1dd9ec86b171369591d6d3aaa16fcfbe8b0b8e88f5d4d677e54f7db07"
+    }
+  },
+  "audit_branch": "codex/wp84-r400-endpoint-near-product-20261103",
+  "base_commit": "6d4d43cea2479966ba0081dfbb38058fe6fffb87",
+  "claim_boundary": "Tests verify finite bookkeeping; the source-weighted asymptotic connected inequality remains open.",
+  "decisions": {
+    "EXISTENTIAL_ENDPOINT_REDUCTION": "NOT_SUFFICIENT",
+    "ORDINARY_CONNECTED_AGGREGATE": "OPEN",
+    "R400_CONSUMER": "CONDITIONAL",
+    "SCHATTEN_TRANSFER": "PROVED"
+  },
+  "schema": "wp84.r400.endpoint-near-product.sha256-manifest.v1",
+  "self_hash_excluded": [
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SHA256_MANIFEST.json",
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SHA256_MANIFEST.sha256"
+  ],
+  "source_hash_inventory": {
+    "path": "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SOURCE_HASHES.json",
+    "sha256": "b78eb54c2e86db0d227747d18d575725523c5079d5fc473c17536d7b3ba6db9b"
+  }
+}

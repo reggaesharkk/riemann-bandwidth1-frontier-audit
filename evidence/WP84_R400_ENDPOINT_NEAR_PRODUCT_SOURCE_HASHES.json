@@ -1,0 +1,157 @@
+{
+  "audit_branch": "codex/wp84-r400-endpoint-near-product-20261103",
+  "base_commit": "6d4d43cea2479966ba0081dfbb38058fe6fffb87",
+  "external_primary_reference": {
+    "title": "Montgomery and Vaughan, The Large Sieve, Mathematika 20 (1973), Theorem 1 and Lemma 1",
+    "url": "https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf",
+    "use": "separated-point trigonometric-polynomial inequality and explicit matrix self-duality"
+  },
+  "files": {
+    "evidence/WP84_PHYSICAL_KERNEL_PROPER_POWER_LEDGER.json": {
+      "base_bytes": 18488,
+      "base_git_blob": "2afa734a5a1c993ac4658a5be422c2d9246371b9",
+      "base_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 19330,
+      "worktree_normalized_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "worktree_sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_R400_PARENT_PHYSICAL_ATOM_REPLAY.json": {
+      "base_bytes": 18488,
+      "base_git_blob": "2afa734a5a1c993ac4658a5be422c2d9246371b9",
+      "base_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 19330,
+      "worktree_normalized_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "worktree_sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_R400_SCHATTEN_ORDINARY_LEDGER.json": {
+      "base_bytes": 18241,
+      "base_git_blob": "2385dacfd2b6a3f6effc30787d090811618a6c2f",
+      "base_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 18241,
+      "worktree_normalized_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63",
+      "worktree_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63"
+    },
+    "evidence/WP84_R400_SOURCE_INTERVAL_REPLAY.json": {
+      "base_bytes": 10021,
+      "base_git_blob": "84541b9a2d1d2ec874e50655a60833eae727cc98",
+      "base_sha256": "60b8179eec892f5a1a17318ba2e0f1dae0d975125e7bcb10a7a0c03725db04ca",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 10410,
+      "worktree_normalized_sha256": "60b8179eec892f5a1a17318ba2e0f1dae0d975125e7bcb10a7a0c03725db04ca",
+      "worktree_sha256": "60e40feb5cb00bce04c2a8ec7c7ce5f3e646db609b569bef1c41b6a0e22f4c5b"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_26_TERM_LEDGER.json": {
+      "base_bytes": 351515,
+      "base_git_blob": "2f2d04694ee0b457f71bc32bbfa883d5f12a7110",
+      "base_sha256": "b760aaf1b6a1fdb9e0a49bdd82408ce78c6ab2f31959b04efc3e3cdcf0a5799e",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 367427,
+      "worktree_normalized_sha256": "b760aaf1b6a1fdb9e0a49bdd82408ce78c6ab2f31959b04efc3e3cdcf0a5799e",
+      "worktree_sha256": "4e82dee573c84f12f3c188df695fe7432f26617df6673217a49fc113a70a5089"
+    },
+    "notes/WP84_DETUNING_COMMUTATOR_ENDPOINT.md": {
+      "base_bytes": 4460,
+      "base_git_blob": "dda38d04a887e8f389ddab7c515b01266ef61af5",
+      "base_sha256": "d567361de657c67dcce706c1e59c2ba114c81049092652b4df5f88077f5b1773",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 4710,
+      "worktree_normalized_sha256": "d567361de657c67dcce706c1e59c2ba114c81049092652b4df5f88077f5b1773",
+      "worktree_sha256": "d9784ef2cc35e221a93ed59f2dda2720412caaf0e8d1546c26ca4d934774075c"
+    },
+    "notes/WP84_F1C_FIRST_STRIKE_ENDPOINT_SOURCE_AUDIT.md": {
+      "base_bytes": 14556,
+      "base_git_blob": "152088ba505ba3e7009fa87f648e60d0bfbcd1a1",
+      "base_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 14556,
+      "worktree_normalized_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1",
+      "worktree_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1"
+    },
+    "notes/WP84_GOOD_ENDPOINT_TRIMMING.md": {
+      "base_bytes": 8155,
+      "base_git_blob": "936f500f644c99ec00bdb0b98bac12161296fff5",
+      "base_sha256": "c337e164735664ddc6cf8d56cc8f1249d0d02ebd4757f12781ce4daaec742bf8",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 8484,
+      "worktree_normalized_sha256": "c337e164735664ddc6cf8d56cc8f1249d0d02ebd4757f12781ce4daaec742bf8",
+      "worktree_sha256": "e1f99e231e565787d385e0a4b6c8d8e75e6f730a3d2150492b2bcdaf7da36694"
+    },
+    "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+      "base_bytes": 5022,
+      "base_git_blob": "c0c0e061239366ec956daa573095d5b3a99a2b2e",
+      "base_sha256": "655e1ce3950308470c594a0339051072be629e7f211d4b245edfda36193d233d",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 5258,
+      "worktree_normalized_sha256": "655e1ce3950308470c594a0339051072be629e7f211d4b245edfda36193d233d",
+      "worktree_sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+    },
+    "notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md": {
+      "base_bytes": 4789,
+      "base_git_blob": "ac87e8a1731cd22bea8f769fee7eba1cbb0f4d5d",
+      "base_sha256": "a77a606a222beee9a85ca80b28ac598dada279fa99429b701c1a2457424c92ca",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 4984,
+      "worktree_normalized_sha256": "a77a606a222beee9a85ca80b28ac598dada279fa99429b701c1a2457424c92ca",
+      "worktree_sha256": "7945c3eda0dcfbf4dda160a71d98cb127fc09689e0cf639c962f393a56b3fdd6"
+    },
+    "notes/WP84_R400_SCHATTEN_ABSORPTION_AND_ORDINARY_AGGREGATE_AUDIT.md": {
+      "base_bytes": 16133,
+      "base_git_blob": "dcab939bc47d9413dd74055bdeb5feb58b716597",
+      "base_sha256": "43ac834f2a7370dc0c2f1d97730d1bd1c24f9783881729bbdc9f87e6418c7954",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 16532,
+      "worktree_normalized_sha256": "43ac834f2a7370dc0c2f1d97730d1bd1c24f9783881729bbdc9f87e6418c7954",
+      "worktree_sha256": "8334b30e2bf707d7ff9d2cb4dd56bfe012def04b0d751e77232c48aafb69edf5"
+    },
+    "src/wp84_r400_first_record_assembly.py": {
+      "base_bytes": 682,
+      "base_git_blob": "0992647ebc0f8e169f03f0dd90fe2aa0dda529c6",
+      "base_sha256": "48491c28c7be5edb8c2ab1e5e5f9beedd2080d01852bf07221bde2e2e3c929a0",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 707,
+      "worktree_normalized_sha256": "48491c28c7be5edb8c2ab1e5e5f9beedd2080d01852bf07221bde2e2e3c929a0",
+      "worktree_sha256": "ded28dc77845d6c594fca5ebe6989d0725db669d392e5603466eceafff84368e"
+    },
+    "src/wp84_r400_pair_layer_exact.py": {
+      "base_bytes": 1593,
+      "base_git_blob": "3423ec96f79f2b28f134a66ac7f29e67d527ffa7",
+      "base_sha256": "49e1cff47509d80aae37087ef37d3dc22c7dc61d99ada60b403bc663eb972f39",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 1667,
+      "worktree_normalized_sha256": "49e1cff47509d80aae37087ef37d3dc22c7dc61d99ada60b403bc663eb972f39",
+      "worktree_sha256": "f185a9cde28b6b3d3a4e0ab2633d167c3fa6e44051330e15a48f4ee5c23e924f"
+    },
+    "src/wp84_r400_schatten_absorption_audit.py": {
+      "base_bytes": 16986,
+      "base_git_blob": "aec90017909e822d26b81d1e45670740345fde3b",
+      "base_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 16986,
+      "worktree_normalized_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "worktree_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2"
+    },
+    "src/wp84_r400_source_interval_replay.py": {
+      "base_bytes": 6275,
+      "base_git_blob": "e6a6c78867a2c3700cd6cad52072234fb996c82d",
+      "base_sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 6275,
+      "worktree_normalized_sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58",
+      "worktree_sha256": "e00189f7c811bfebc278e828655ad5af5adc31044fa310b03a6970d159142b58"
+    },
+    "tests/test_wp84_r400_schatten_absorption_audit.py": {
+      "base_bytes": 5511,
+      "base_git_blob": "a69592e14abfda3a2a4afcee2b1c666ffc437585",
+      "base_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "line_ending_normalized_identical_to_base": true,
+      "worktree_bytes": 5511,
+      "worktree_normalized_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "worktree_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6"
+    }
+  },
+  "method": "base bytes are read from git show BASE:path; worktree comparison normalizes CRLF only",
+  "schema": "wp84.r400.endpoint-near-product.source-hashes.v1"
+}
