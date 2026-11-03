@@ -122,11 +122,24 @@ def build_manifest(source_map: dict) -> dict:
         if not path.is_file():
             raise FileNotFoundError(f"manifest input missing: {rel}")
         data = path.read_bytes()
-        entries.append({"path": rel, "size_bytes": len(data), "sha256": sha256(data)})
+        git_text_bytes = data.replace(b"\r\n", b"\n")
+        entries.append({
+            "path": rel,
+            "size_bytes_worktree": len(data),
+            "size_bytes_git_text": len(git_text_bytes),
+            "sha256_worktree_raw": sha256(data),
+            "sha256_git_text_normalized": sha256(git_text_bytes),
+        })
     source_map_bytes = json.dumps(source_map, indent=2, sort_keys=True).encode("utf-8") + b"\n"
     dep_rel = "evidence/WP84_DIRECT_SMOOTH_SOURCE_DEPENDENCIES.json"
     (ROOT / dep_rel).write_bytes(source_map_bytes)
-    entries.append({"path": dep_rel, "size_bytes": len(source_map_bytes), "sha256": sha256(source_map_bytes)})
+    entries.append({
+        "path": dep_rel,
+        "size_bytes_worktree": len(source_map_bytes),
+        "size_bytes_git_text": len(source_map_bytes),
+        "sha256_worktree_raw": sha256(source_map_bytes),
+        "sha256_git_text_normalized": sha256(source_map_bytes),
+    })
     return {
         "audit": "WP84 direct smooth-taper proper-power absorption",
         "frozen_reference_commit": BASE,

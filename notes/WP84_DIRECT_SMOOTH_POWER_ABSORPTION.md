@@ -434,7 +434,9 @@ python src/wp84_direct_smooth_power_absorption.py
 ```
 
 The evidence directory records the frozen source hashes, the dependency map,
-all three test outputs, the checker output, and the SHA-256 manifest. The
+all three test outputs, the checker output, and the SHA-256 manifest. For
+each artifact, the manifest records both the exact worktree-byte hash and the
+LF-normalized Git text hash, since this checkout uses CRLF conversion. The
 manifest sidecar hashes the manifest itself.
 
 ## Source references
