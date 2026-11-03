@@ -2,7 +2,7 @@
   "artifacts": {
     "evidence/WP84_FROZEN_R400_AUX_TEST_NORMAL.log": {
       "bytes": 5642,
-      "sha256": "9beb8d2a3978cf492e9824c6dcb79c6520e68386c80e7f1cfd85d88df3491aa2"
+      "sha256": "38b31c49df2283d50bda89ad18d1a9d7705bf810a14ca2a865b8752143dde0be"
     },
     "evidence/WP84_FROZEN_R400_CERTIFICATE_REPLAYS.json": {
       "bytes": 2378,
@@ -34,15 +34,15 @@
     },
     "evidence/WP84_FROZEN_R400_CORE_TEST_NORMAL.log": {
       "bytes": 4627,
-      "sha256": "358d94158926481a1842128e45f5fce44e17afe04598ffd3a922a269e09d59f2"
+      "sha256": "27edde33ccf12cab45aa7dacbf7ce36ee9ff013564d944bfde00866100dcb67d"
     },
     "evidence/WP84_FROZEN_R400_CORE_TEST_O.log": {
       "bytes": 4627,
-      "sha256": "a12aa0dde68287b29a83dbda54b2bd3050c58eed18a40f606ebecb18b43874c1"
+      "sha256": "cc209b9173c23849c91aed5e2a1dbc5bd6ee978d40f558131da0035a6707cc9e"
     },
     "evidence/WP84_FROZEN_R400_CORE_TEST_OO.log": {
       "bytes": 4627,
-      "sha256": "3e13567d0919d0feab8d277ba96b1200cf8516f2aa4062a2b81b7a47431f3b6f"
+      "sha256": "7d66364810ac8c47ac46515b6e8e8e598cf6e48b4b4faa686434dfc5214d6a78"
     },
     "evidence/WP84_FROZEN_R400_DECISION_RECORD.json": {
       "bytes": 1160,
@@ -54,11 +54,11 @@
     },
     "evidence/WP84_FROZEN_R400_REPLAY_CHECKS.json": {
       "bytes": 9293,
-      "sha256": "32087cdd996d8fe1fc461b58eb2f30be085f39049dc379783b3cb2f07d43782c"
+      "sha256": "9a1529634bd628eb0aaea5905db7d39eaa7347514eb83509899a6161744c910d"
     },
     "notes/WP84_FROZEN_R400_HOSTILE_PROOF_READINESS.md": {
-      "bytes": 6835,
-      "sha256": "3213511f803572b8eaf7cafe9e16569303fe15962848fef6de16fdcb2f5bebec"
+      "bytes": 6845,
+      "sha256": "2c510c45e872215a730683b325057efdabfba5215ad3bf7c66ca250e92a367f8"
     },
     "notes/WP84_FROZEN_R400_PUBLICATION_PRIORITY.md": {
       "bytes": 6214,
@@ -69,8 +69,8 @@
       "sha256": "4858755dc191206e59fc20cb1634d77a48f4463f5d12a288aa773e9f1ecb3333"
     },
     "notes/WP84_FROZEN_R400_THEOREM_INVENTORY.md": {
-      "bytes": 19145,
-      "sha256": "50bd04daebb4e15e596acb16d09c95989d8198db63d18f51c21a266501a71129"
+      "bytes": 19164,
+      "sha256": "e645abb44a57f5f0482bdadb16afb4ed0dd39d017f573ee7ce11b86eed3e2763"
     },
     "src/wp84_frozen_r400_theorem_inventory_manifest.py": {
       "bytes": 15522,

@@ -19,7 +19,7 @@ These statuses are consistent with the final endpoint-restricted audit at the ba
 
 ## Notation and source boundary
 
-At finite (T), put (L=log(T/(2pi))), (N=lfloor e^{L-sqrt L}floor), (h=2pi/L), and (I=[a,a+m-1]). For a source frequency (u=log n/L),
+At finite \(T\), put \(L=\log(T/(2\pi))\), \(N=\lfloor e^{L-\sqrt L}\rfloor\), \(h=2\pi/L\), and \(I=[a,a+m-1]\). For a source frequency \(u=\log n/L\),
 \[
 D_I(u)=\frac1m\sum_{k\in I}e^{2\pi iku}.
 \]

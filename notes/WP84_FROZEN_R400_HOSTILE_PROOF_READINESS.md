@@ -42,7 +42,7 @@ There are two ordered gaps. First the source must define the product-frequency e
 \left(\Re C^{ord}_{T,I}\right)_+<
 \frac{3675673694911}{148250000000000},
 \]
-for the complete common admissible section set ΢(_T), with all ordinary-prime coefficients, six balanced orientations, pair subtraction, root terms, hard cutoff and aliases retained. Neither the signed mean nor a global mean positive-part estimate on the unconditioned candidate family is interchangeable with this claim.
+for the complete common admissible section set \(\mathcal G_T\), with all ordinary-prime coefficients, six balanced orientations, pair subtraction, root terms, hard cutoff and aliases retained. Neither the signed mean nor a global mean positive-part estimate on the unconditioned candidate family is interchangeable with this claim.
 
 ## Proof-readiness classification
 

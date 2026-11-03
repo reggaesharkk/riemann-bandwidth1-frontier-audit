@@ -170,7 +170,7 @@
       ],
       "exit_code": 0,
       "log": "evidence/WP84_FROZEN_R400_AUX_TEST_NORMAL.log",
-      "log_sha256": "9beb8d2a3978cf492e9824c6dcb79c6520e68386c80e7f1cfd85d88df3491aa2",
+      "log_sha256": "38b31c49df2283d50bda89ad18d1a9d7705bf810a14ca2a865b8752143dde0be",
       "result": "PASS"
     },
     "core_tests": {
@@ -186,7 +186,7 @@
         ],
         "exit_code": 0,
         "log": "evidence/WP84_FROZEN_R400_CORE_TEST_NORMAL.log",
-        "log_sha256": "358d94158926481a1842128e45f5fce44e17afe04598ffd3a922a269e09d59f2",
+        "log_sha256": "27edde33ccf12cab45aa7dacbf7ce36ee9ff013564d944bfde00866100dcb67d",
         "result": "PASS"
       },
       "O": {
@@ -202,7 +202,7 @@
         ],
         "exit_code": 0,
         "log": "evidence/WP84_FROZEN_R400_CORE_TEST_O.log",
-        "log_sha256": "a12aa0dde68287b29a83dbda54b2bd3050c58eed18a40f606ebecb18b43874c1",
+        "log_sha256": "cc209b9173c23849c91aed5e2a1dbc5bd6ee978d40f558131da0035a6707cc9e",
         "result": "PASS"
       },
       "OO": {
@@ -218,7 +218,7 @@
         ],
         "exit_code": 0,
         "log": "evidence/WP84_FROZEN_R400_CORE_TEST_OO.log",
-        "log_sha256": "3e13567d0919d0feab8d277ba96b1200cf8516f2aa4062a2b81b7a47431f3b6f",
+        "log_sha256": "7d66364810ac8c47ac46515b6e8e8e598cf6e48b4b4faa686434dfc5214d6a78",
         "result": "PASS"
       }
     }

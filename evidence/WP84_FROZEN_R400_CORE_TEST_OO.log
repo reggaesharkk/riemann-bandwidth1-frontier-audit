@@ -23,6 +23,6 @@ test_total_variation_bound_and_300r_over_d_consequence (tests.test_wp84_r400_cum
 test_zero_detuning_zero_margin_and_near_product_indices_are_retained (tests.test_wp84_r400_cumulant_endpoint_tensor.CumulantEndpointTensorTests.test_zero_detuning_zero_margin_and_near_product_indices_are_retained) ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 1.691s
+Ran 23 tests in 1.722s
 
 OK
