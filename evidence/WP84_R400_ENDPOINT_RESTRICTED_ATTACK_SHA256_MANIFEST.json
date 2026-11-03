@@ -1,0 +1,63 @@
+{
+  "artifacts": {
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_CHECKS.json": {
+      "bytes": 2390,
+      "sha256": "7bd7622641dde58b6ba1f196b14b6d5f3d5174f2e4a22014e3f33fa740629866"
+    },
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_PARENT_REPLAY.log": {
+      "bytes": 105,
+      "sha256": "5ef6351e0dead2ecb827bfcdbb35821c0cb78b470171e80af02b7fbbadc4915f"
+    },
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_SOURCE_HASHES.json": {
+      "bytes": 6580,
+      "sha256": "0e9f09867f033d7e53ef517343dc8f9e876b2aee8b62893df322bfabcec54cf8"
+    },
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_TEST_NORMAL.log": {
+      "bytes": 947,
+      "sha256": "49be638b41257c7a011a63dd24e489c33ed2dab4805380670b33317f2b1d45e6"
+    },
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_TEST_O.log": {
+      "bytes": 947,
+      "sha256": "49be638b41257c7a011a63dd24e489c33ed2dab4805380670b33317f2b1d45e6"
+    },
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_TEST_OO.log": {
+      "bytes": 947,
+      "sha256": "49be638b41257c7a011a63dd24e489c33ed2dab4805380670b33317f2b1d45e6"
+    },
+    "notes/WP84_R400_ENDPOINT_RESTRICTED_ORDINARY_PRIME_THEOREM_ATTACK.md": {
+      "bytes": 14674,
+      "sha256": "f8aa448c7f774ee548feea1c24b38d205004aefdd40604a10b8f3520c2314352"
+    },
+    "src/wp84_r400_endpoint_restricted_attack.py": {
+      "bytes": 4488,
+      "sha256": "598665829a59b6ebab62152f9699f903da883e3ec3a2cb40c4d4aa92d59221fb"
+    },
+    "src/wp84_r400_endpoint_restricted_attack_manifest.py": {
+      "bytes": 9904,
+      "sha256": "269140248cbc4fba2a6d32b80901755826f7272cd1d9bc310b50522d51d4a9a9"
+    },
+    "tests/test_wp84_r400_endpoint_restricted_attack.py": {
+      "bytes": 2278,
+      "sha256": "1a3114c245a7f95f2c5e4a803ab51803aeb57da515d94f47f8a04ca799656942"
+    }
+  },
+  "audit_branch": "codex/wp84-endpoint-restricted-ordinary-attack-20261103",
+  "base_commit": "13752ebd5cc399bf5cd04b74b679a0f59ab8eb41",
+  "claim_boundary": "Finite exact logic checks only; no legal prime-source counterexample or asymptotic ordinary-prime bound is claimed.",
+  "decisions": {
+    "GOOD_SECTION_SET": "INCOMPLETE",
+    "NEXT_ACTION": "FREEZE_R400_ROUTE",
+    "R400_RECORD_BUDGET": "OPEN",
+    "RESTRICTED_THEOREM": "OPEN",
+    "SOURCE_CONDITIONING_ADVANTAGE": "NONE_FOUND"
+  },
+  "schema": "wp84.r400.endpoint-restricted-attack.sha256-manifest.v1",
+  "self_hash_excluded": [
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_SHA256_MANIFEST.json",
+    "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_SHA256_MANIFEST.sha256"
+  ],
+  "source_hash_inventory": {
+    "path": "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_SOURCE_HASHES.json",
+    "sha256": "0e9f09867f033d7e53ef517343dc8f9e876b2aee8b62893df322bfabcec54cf8"
+  }
+}

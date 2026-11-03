@@ -1,0 +1,114 @@
+{
+  "audit_branch": "codex/wp84-endpoint-restricted-ordinary-attack-20261103",
+  "base_commit": "13752ebd5cc399bf5cd04b74b679a0f59ab8eb41",
+  "files": {
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_LEDGER.json": {
+      "base_git_blob": "b2b4f52abc454355b6a0a9e7e5d3f42d785b69f1",
+      "base_sha256": "480157411586cab2a6f58a51eaba112d4420990b83fd382d01637091afa2b604",
+      "bytes": 24436,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "cf11b83427042eaf0df909a3f05b7a0ebcd7bcc05a14bf32952107d9fb9c67cd"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_LEDGER.json": {
+      "base_git_blob": "520b00d630ad4376331231410909f85002e6fdeb",
+      "base_sha256": "5bf890391fa1490ff0819536472e474cf8fb2b96783f214037cbfa69e3d6422c",
+      "bytes": 6490,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "4bfbb1dd56647c24722695b0b8b262afe33ce962c0df3785631253109a765680"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SHA256_MANIFEST.json": {
+      "base_git_blob": "dde8fde1718397f21af0a9ac30ee3b7f7a2f2fa1",
+      "base_sha256": "ae3821cc462197efd6c481dc60e508c79b45fb37857270c9a84c6f63703d6373",
+      "bytes": 2850,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "ae3821cc462197efd6c481dc60e508c79b45fb37857270c9a84c6f63703d6373"
+    },
+    "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SHA256_MANIFEST.sha256": {
+      "base_git_blob": "11c5610ed2aadcc6df04db576ca3cf973d16b2ce",
+      "base_sha256": "2a00a62a82818a2b5769a7cb9f1afeb2f199ff06f2d256f8f0ec074352eba726",
+      "bytes": 136,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "2ead0a55e1f53f0753a29c7aab939d30a7e9cd29e581eb571817e79266f57033"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_LEDGER.json": {
+      "base_git_blob": "8649ba2ec3a1065a3af7a1c9f365ffc40589308b",
+      "base_sha256": "f52d9eb00b3be3eab05011830e3c065ebc24e3bfc1dcebc0c2cbfdbcd44a0083",
+      "bytes": 21332,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "263936ce5d07175db5b97e7449a26ba86ed9c48620d83c2d6a82d0ee562027af"
+    },
+    "notes/WP84_DECISION_D_ENDPOINT_ADMISSIBILITY_DENSITY.md": {
+      "base_git_blob": "573482eae970657cfa3b436246de29a040efd411",
+      "base_sha256": "6bcd6c6bf1942857c0d8f4f01c2908d5870f61a18dd338e9ece270ee4fe7c28d",
+      "bytes": 10487,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "6bcd6c6bf1942857c0d8f4f01c2908d5870f61a18dd338e9ece270ee4fe7c28d"
+    },
+    "notes/WP84_F1B_PRODUCT_FREQUENCY_ENDPOINT_BUDGET.md": {
+      "base_git_blob": "c7e44292219f3dcd1ee1ba2a464dda71f65b92be",
+      "base_sha256": "41429ecd2495bc48136a8f2dda0128367caa61c4f742125db8e6aa7909c912c3",
+      "bytes": 17056,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "41429ecd2495bc48136a8f2dda0128367caa61c4f742125db8e6aa7909c912c3"
+    },
+    "notes/WP84_F1C_FIRST_STRIKE_ENDPOINT_SOURCE_AUDIT.md": {
+      "base_git_blob": "152088ba505ba3e7009fa87f648e60d0bfbcd1a1",
+      "base_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1",
+      "bytes": 14556,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "1bb3e08361a0b2faafdea3ea71ffd101fd0ca4fb8d2f20dd9e683127be41b8f1"
+    },
+    "notes/WP84_F1_ENDPOINT_FEATURE_LENGTH_INVESTIGATION.md": {
+      "base_git_blob": "9b502dc3b84bf9f6abe926e8a49f1d1536099dd6",
+      "base_sha256": "552db5b31e20012f4b7bac84d3d0fa892581843ff5d57b12fe3b157e5223dbf3",
+      "bytes": 18809,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "552db5b31e20012f4b7bac84d3d0fa892581843ff5d57b12fe3b157e5223dbf3"
+    },
+    "notes/WP84_GOOD_ENDPOINT_TRIMMING.md": {
+      "base_git_blob": "936f500f644c99ec00bdb0b98bac12161296fff5",
+      "base_sha256": "c337e164735664ddc6cf8d56cc8f1249d0d02ebd4757f12781ce4daaec742bf8",
+      "bytes": 8484,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "e1f99e231e565787d385e0a4b6c8d8e75e6f730a3d2150492b2bcdaf7da36694"
+    },
+    "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+      "base_git_blob": "03dbcf6bb87eddcf8b63f5fbf33e2e44841c15b1",
+      "base_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7",
+      "bytes": 22018,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+    },
+    "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+      "base_git_blob": "c0c0e061239366ec956daa573095d5b3a99a2b2e",
+      "base_sha256": "655e1ce3950308470c594a0339051072be629e7f211d4b245edfda36193d233d",
+      "bytes": 5258,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+    },
+    "notes/WP84_R400_ORDINARY_AGGREGATE_THEOREM_FEASIBILITY_HARD_STOP.md": {
+      "base_git_blob": "6d3e1437204d54147a1c32c5e0d5e50bda272af4",
+      "base_sha256": "abec2490ce6743935d25ea929b0694503d7b9a9d54e2af93c3ba1b3badce3cbf",
+      "bytes": 19041,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "abec2490ce6743935d25ea929b0694503d7b9a9d54e2af93c3ba1b3badce3cbf"
+    },
+    "notes/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_AND_NEAR_PRODUCT_CLOSURE.md": {
+      "base_git_blob": "e6879e7ddec2b36877c1d7e78a3f8404202a1fcc",
+      "base_sha256": "3de6e7bd87782af0e3f00eba9a4273a3b6ba3826afa6f8b19c4881022e0539e9",
+      "bytes": 13667,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "3de6e7bd87782af0e3f00eba9a4273a3b6ba3826afa6f8b19c4881022e0539e9"
+    },
+    "notes/WP84_R400_PRINCIPAL_SECTION_PAIR_STABILITY.md": {
+      "base_git_blob": "ac87e8a1731cd22bea8f769fee7eba1cbb0f4d5d",
+      "base_sha256": "a77a606a222beee9a85ca80b28ac598dada279fa99429b701c1a2457424c92ca",
+      "bytes": 4984,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "7945c3eda0dcfbf4dda160a71d98cb127fc09689e0cf639c962f393a56b3fdd6"
+    }
+  },
+  "method": "SHA-256 of raw base blobs and worktree bytes; historical inputs checked unchanged after CRLF/LF normalization",
+  "predecessor_manifest_sha256": "ae3821cc462197efd6c481dc60e508c79b45fb37857270c9a84c6f63703d6373",
+  "schema": "wp84.r400.endpoint-restricted-attack.source-hashes.v1"
+}

@@ -1,0 +1,10 @@
+test_abstract_negative_control (test_wp84_r400_endpoint_restricted_attack.EndpointRestrictedAttackTests.test_abstract_negative_control) ... ok
+test_exact_budget_and_density (test_wp84_r400_endpoint_restricted_attack.EndpointRestrictedAttackTests.test_exact_budget_and_density) ... ok
+test_finite_conditional_average_implies_a_common_section (test_wp84_r400_endpoint_restricted_attack.EndpointRestrictedAttackTests.test_finite_conditional_average_implies_a_common_section) ... ok
+test_markov_intersection_bound_is_exact_union_bound (test_wp84_r400_endpoint_restricted_attack.EndpointRestrictedAttackTests.test_markov_intersection_bound_is_exact_union_bound) ... ok
+test_positive_part_is_not_controlled_by_signed_mean (test_wp84_r400_endpoint_restricted_attack.EndpointRestrictedAttackTests.test_positive_part_is_not_controlled_by_signed_mean) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

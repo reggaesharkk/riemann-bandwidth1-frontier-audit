@@ -1,0 +1,74 @@
+{
+  "claim_boundary": "Finite exact logic checks only; no legal prime-source counterexample or asymptotic ordinary-prime bound is claimed.",
+  "decisions": {
+    "GOOD_SECTION_SET": "INCOMPLETE",
+    "NEXT_ACTION": "FREEZE_R400_ROUTE",
+    "R400_RECORD_BUDGET": "OPEN",
+    "RESTRICTED_THEOREM": "OPEN",
+    "SOURCE_CONDITIONING_ADVANTAGE": "NONE_FOUND"
+  },
+  "exact_arithmetic": {
+    "abstract_admissible_density": "9/16",
+    "abstract_admissible_positive_mean_over_delta": "2",
+    "abstract_endpoint_score_means": "3/4",
+    "abstract_global_positive_mean_over_delta": "9/8",
+    "abstract_signed_mean": "0",
+    "delta_max": "3675673694911/148250000000000",
+    "delta_max_decimal_15dp": "0.024793751736331",
+    "delta_max_over_8": "3675673694911/1186000000000000",
+    "delta_max_over_8_decimal_15dp": "0.003099218967041",
+    "known_density_epsilon_1_over_8": "1/8"
+  },
+  "test_runs": {
+    "NORMAL": {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wp84_r400_endpoint_restricted_attack.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_TEST_NORMAL.log",
+      "sha256": "49be638b41257c7a011a63dd24e489c33ed2dab4805380670b33317f2b1d45e6"
+    },
+    "O": {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wp84_r400_endpoint_restricted_attack.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_TEST_O.log",
+      "sha256": "49be638b41257c7a011a63dd24e489c33ed2dab4805380670b33317f2b1d45e6"
+    },
+    "OO": {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "-OO",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_wp84_r400_endpoint_restricted_attack.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_TEST_OO.log",
+      "sha256": "49be638b41257c7a011a63dd24e489c33ed2dab4805380670b33317f2b1d45e6"
+    }
+  }
+}
