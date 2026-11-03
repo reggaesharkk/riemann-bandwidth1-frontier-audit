@@ -1,0 +1,13 @@
+Preserved initial regression failure (before final test replay).
+
+Commands:
+  python -m unittest tests.test_wp84_r400_cumulant_endpoint_tensor
+  python -O -m unittest tests.test_wp84_r400_cumulant_endpoint_tensor
+  python -OO -m unittest tests.test_wp84_r400_cumulant_endpoint_tensor
+
+All three runs reported 8 passing tests and one error in
+test_exact_carrier_overlap_weighted_tensor_ledger_keeps_all_terms. The test
+treated the ledger's boolean all_26_termwise_tensor_equalities field as a
+sequence. The 26 row records are stored in physical_weighted_terms_checked;
+the assertion was corrected to inspect that list and verify every exact
+identity flag. This was a test assertion-path error, not an identity failure.

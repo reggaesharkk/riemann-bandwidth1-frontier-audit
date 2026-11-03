@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_CHECKER_REPLAY.log": {
+      "bytes": 188,
+      "sha256": "63c09693299f00c584611d30f74fd8aecaf24badc9bfe4532aed04b59b082e11"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_INITIAL_TEST_FAILURE.log": {
+      "bytes": 718,
+      "sha256": "898d0a0ee00e729def54c05f192361cd1b61593ff04e35122b61c18d51042784"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_LEDGER.json": {
+      "bytes": 24436,
+      "sha256": "cf11b83427042eaf0df909a3f05b7a0ebcd7bcc05a14bf32952107d9fb9c67cd"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_PARENT_MANIFEST_REPLAY.log": {
+      "bytes": 64,
+      "sha256": "a816038e0bda96c293f3402e6f52cccf60181be1724a3a729c0b9ace541f2bc9"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_SOURCE_HASHES.json": {
+      "bytes": 14756,
+      "sha256": "002c51fd82ef579fd8a3700f8aeb9c874d238d911248c43faeb58388cf8f0205"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_TEST_NORMAL.log": {
+      "bytes": 114,
+      "sha256": "1bbda1700350c5a6199364780f5c6dfc94ce74e68f18595026c63f9f5f2c1396"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_TEST_O.log": {
+      "bytes": 114,
+      "sha256": "607a95c1d6384f09e13114203efc89d958536baad57c40371ba21f230f30c0a9"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_TEST_OO.log": {
+      "bytes": 114,
+      "sha256": "3ba000c36c778700b57e1dba29b461fa5650b37699c801ffda90377b286af216"
+    },
+    "notes/WP84_R400_PHYSICAL_CUMULANT_ENDPOINT_DIFFERENCE_AND_TENSOR_LIFT.md": {
+      "bytes": 13167,
+      "sha256": "40cf7d2a0a729653f69a06ca570364a1bbad78314bc7250ea78406564c08ee6c"
+    },
+    "src/wp84_r400_cumulant_endpoint_tensor.py": {
+      "bytes": 19392,
+      "sha256": "79b24540c70a6b29317fad2cb458231095850714e8c0e04489a98ab158cb4fe8"
+    },
+    "src/wp84_r400_cumulant_endpoint_tensor_manifest.py": {
+      "bytes": 8184,
+      "sha256": "7854dfe5596a4c321cc2338eca8bb169ce6708061c1156fa1a4e9786ddbde6a7"
+    },
+    "tests/test_wp84_r400_cumulant_endpoint_tensor.py": {
+      "bytes": 7599,
+      "sha256": "d152165f459c9efe5a6673a10e95fd7dde5e126ad516f9f33649f77671c53034"
+    }
+  },
+  "audit_branch": "codex/wp84-physical-cumulant-tensor-lift-20261103",
+  "base_commit": "0d3bc919451df298ef2a945569d8c3b1eb65192f",
+  "claim_boundary": "Exact cumulant variation and tensor identities are established; no source-weighted ordinary-prime record estimate is established.",
+  "decisions": {
+    "68_820273_PERCENT": "OPEN",
+    "CUMULANT_ENDPOINT_IDENTITY": "PROVED",
+    "ORDINARY_CONNECTED_RECORD_BOUND": "OPEN",
+    "R400_CONSUMER": "CONDITIONAL",
+    "RIEMANN_HYPOTHESIS": "OPEN",
+    "SOURCE_WEIGHTED_CORRECTION": "OPEN",
+    "STRICT_GT_79_PERCENT": "OPEN",
+    "TENSOR_AVERAGING": "EXACT"
+  },
+  "schema": "wp84.r400.cumulant-endpoint-tensor.sha256-manifest.v1",
+  "self_hash_excluded": [
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_SHA256_MANIFEST.json",
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_SHA256_MANIFEST.sha256"
+  ],
+  "source_hash_inventory": {
+    "path": "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_SOURCE_HASHES.json",
+    "sha256": "002c51fd82ef579fd8a3700f8aeb9c874d238d911248c43faeb58388cf8f0205"
+  }
+}

@@ -1,0 +1,1215 @@
+{
+  "audit_branch": "codex/wp84-physical-cumulant-tensor-lift-20261103",
+  "base_commit": "0d3bc919451df298ef2a945569d8c3b1eb65192f",
+  "decisions": {
+    "CUMULANT_ENDPOINT_IDENTITY": "PROVED",
+    "ORDINARY_CONNECTED_RECORD_BOUND": "OPEN",
+    "R400_CONSUMER": "CONDITIONAL",
+    "SOURCE_WEIGHTED_CORRECTION": "OPEN",
+    "TENSOR_AVERAGING": "EXACT"
+  },
+  "exact": {
+    "finite_root_boundary": {
+      "example_new_left_sum": [
+        "1/8",
+        "1/8"
+      ],
+      "example_new_right_sum": [
+        "1/8",
+        "-1/8"
+      ],
+      "example_old_left_sum": [
+        "1/9",
+        "0"
+      ],
+      "example_old_right_sum": [
+        "1/9",
+        "0"
+      ],
+      "left_deletion": "old valid-root interval loses its leftmost root if present; new normalized sum uses denominator m-1",
+      "path": [
+        2,
+        -2,
+        0,
+        0
+      ],
+      "per_path_l1_boundary_change": "<=2/m for the root measure; summing source-weighted paths needs an aggregate coefficient bound",
+      "right_deletion": "old valid-root interval loses its rightmost root if present; new normalized sum uses denominator m-1",
+      "root_interval": "[a-min(q), a+m-1-max(q)] where q are closed-path prefixes"
+    },
+    "partition_ledger": {
+      "counts_by_blocks": {
+        "1": 1,
+        "2": 7,
+        "3": 12,
+        "4": 6
+      },
+      "ordered_terms": [
+        {
+          "blocks": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "coefficient": 1,
+          "term": 1
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "coefficient": -1,
+          "term": 2
+        },
+        {
+          "blocks": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "coefficient": -1,
+          "term": 3
+        },
+        {
+          "blocks": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "coefficient": -1,
+          "term": 4
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "coefficient": 1,
+          "term": 5
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "coefficient": 1,
+          "term": 6
+        },
+        {
+          "blocks": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "coefficient": -1,
+          "term": 7
+        },
+        {
+          "blocks": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "coefficient": -1,
+          "term": 8
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "coefficient": 1,
+          "term": 9
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "coefficient": 1,
+          "term": 10
+        },
+        {
+          "blocks": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "coefficient": -1,
+          "term": 11
+        },
+        {
+          "blocks": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "coefficient": -1,
+          "term": 12
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "coefficient": 1,
+          "term": 13
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "coefficient": 1,
+          "term": 14
+        },
+        {
+          "blocks": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "coefficient": 1,
+          "term": 15
+        },
+        {
+          "blocks": [
+            [
+              0,
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "coefficient": 1,
+          "term": 16
+        },
+        {
+          "blocks": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "coefficient": 1,
+          "term": 17
+        },
+        {
+          "blocks": [
+            [
+              0,
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "coefficient": 1,
+          "term": 18
+        },
+        {
+          "blocks": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "coefficient": 1,
+          "term": 19
+        },
+        {
+          "blocks": [
+            [
+              0,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "coefficient": 1,
+          "term": 20
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "coefficient": -1,
+          "term": 21
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "coefficient": -1,
+          "term": 22
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "coefficient": -1,
+          "term": 23
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "coefficient": -1,
+          "term": 24
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "coefficient": -1,
+          "term": 25
+        },
+        {
+          "blocks": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "coefficient": -1,
+          "term": 26
+        }
+      ],
+      "total_block_factors": 75,
+      "total_terms": 26
+    },
+    "single_endpoint_deletion": {
+      "all_26_terms_checked": [
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 1
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 2
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 3
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 4
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 5
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 6
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 7
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 8
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 9
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 10
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 11
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 12
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 13
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 14
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 15
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 16
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 17
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 18
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 19
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 20
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 21
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 22
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 23
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 24
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 25
+        },
+        {
+          "left_exact": true,
+          "right_exact": true,
+          "term": 26
+        }
+      ],
+      "left_carrier_ratio": "exp(2*pi*i*Y/L) when the left endpoint row is deleted",
+      "mean_identity": "D_{I'}(x)-D_I(x)=(D_{I'}(x)-exp(2*pi*i*q*x))/m, q=deleted endpoint row",
+      "right_carrier_ratio": "1 when the right endpoint row is deleted",
+      "termwise_cumulant_rule": "for each of 26 ordered pi, delta(prod_B D_B)=sum_B delta(D_B)*prod_{C before B}D'_C*prod_{C after B}D_C; multiply by the original Mobius coefficient"
+    },
+    "source_aggregate_status": {
+      "balanced_words": [
+        "++--",
+        "+-+-",
+        "+--+",
+        "-++-",
+        "-+-+",
+        "--++"
+      ],
+      "carrier": "exp(i*T*log(A/B))*exp(2*pi*i*a_I*log(A/B)/L)",
+      "decision": "OPEN",
+      "missing_estimate": "a source-normalized bound for the full signed sum of endpoint-difference and root-boundary multilinear polynomials, uniform over the admissible sections, below Delta_max",
+      "ordinary_products": "A=pq, B=rs; all A!=B and near-alias terms remain",
+      "source_coefficient": "prod_j[-log(p_j)/(a_phi(T)*L*sqrt(p_j))]"
+    },
+    "tensor_average": {
+      "physical_weighted_W_normalization": "sum_(k_B) W_tilde_pi(k_B)=E_s[rho_s*c_sigma*exp(i*T*Y)*Omega_{I_s,pi,R}(v)]; generally complex and not 1; absolute row frequencies k_B in I_s already retain exp(2*pi*i*a_s*Y/L)",
+      "physical_weighted_terms_checked": [
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 1
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 2
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 3
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 4
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 5
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 6
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 7
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 8
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 9
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 10
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 11
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 12
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 13
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 14
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 15
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 16
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 17
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 18
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 19
+        },
+        {
+          "coefficient": 1,
+          "exact_identity": true,
+          "term": 20
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 21
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 22
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 23
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 24
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 25
+        },
+        {
+          "coefficient": -1,
+          "exact_identity": true,
+          "term": 26
+        }
+      ],
+      "plain_W_by_partition": {
+        "1": {
+          "block_order": [
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "10": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "11": {
+          "block_order": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "12": {
+          "block_order": [
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "13": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "14": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "15": {
+          "block_order": [
+            [
+              0,
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "16": {
+          "block_order": [
+            [
+              0,
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "17": {
+          "block_order": [
+            [
+              0,
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "18": {
+          "block_order": [
+            [
+              0,
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "mass": "1"
+        },
+        "19": {
+          "block_order": [
+            [
+              0,
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "2": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "20": {
+          "block_order": [
+            [
+              0,
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "mass": "1"
+        },
+        "21": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "22": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "23": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "24": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "mass": "1"
+        },
+        "25": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "26": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              2
+            ],
+            [
+              1
+            ]
+          ],
+          "mass": "1"
+        },
+        "3": {
+          "block_order": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "4": {
+          "block_order": [
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "mass": "1"
+        },
+        "5": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "6": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              1
+            ]
+          ],
+          "mass": "1"
+        },
+        "7": {
+          "block_order": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "mass": "1"
+        },
+        "8": {
+          "block_order": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "mass": "1"
+        },
+        "9": {
+          "block_order": [
+            [
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "mass": "1"
+        }
+      },
+      "plain_W_normalization": "sum_(k_B) W_pi(k_B)=1 for every pi",
+      "weighted_section_example": {
+        "all_26_termwise_tensor_equalities": true,
+        "height_carrier": [
+          "0",
+          "1"
+        ],
+        "scope": "exact algebraic tensorization diagnostic, not WP84 prime-source numerical data",
+        "section_overlap_Gaussian_pairs": {
+          "0:6": [
+            "1",
+            "0"
+          ],
+          "1:4": [
+            "-1/2",
+            "0"
+          ],
+          "1:5": [
+            "2/3",
+            "1/3"
+          ],
+          "2:4": [
+            "1/3",
+            "-1/3"
+          ]
+        },
+        "sections_start_length_mass": [
+          [
+            0,
+            6,
+            "1/4"
+          ],
+          [
+            1,
+            5,
+            "1/4"
+          ],
+          [
+            1,
+            4,
+            "1/4"
+          ],
+          [
+            2,
+            4,
+            "1/4"
+          ]
+        ],
+        "source_coefficient_gaussian_pair": [
+          "2/5",
+          "0"
+        ]
+      }
+    },
+    "total_variation": {
+      "deletion_left_kappa_delta": [
+        "-160/2401",
+        "0"
+      ],
+      "deletion_left_mu_l1": "1/4",
+      "deletion_right_kappa_delta": [
+        "-160/2401",
+        "0"
+      ],
+      "deletion_right_mu_l1": "1/4",
+      "one_deletion_bound": "150/m",
+      "scope": "uniform over all real v because |D_mu(x)|<=1",
+      "theorem": "|kappa_mu(v)-kappa_nu(v)| <= 75*||mu-nu||_1",
+      "two_sections_each_delete_at_most_r_from_d_grid": "300*r/d"
+    }
+  },
+  "preserved_gates": {
+    "68_820273_percent": "OPEN",
+    "Riemann_Hypothesis": "OPEN",
+    "physical_positive_atom": "preserved; proper-power family, not ordinary-prime aggregate counterexample",
+    "proper_power": "preserved from parent audit",
+    "strict_gt_79_percent": "OPEN"
+  },
+  "quantifier_and_source_limit": "The endpoint and boundary-good density is at least 1/4-epsilon. A record section follows if the mean positive excess is strictly below (1/4-epsilon)*Delta_max. The new tensor identities do not prove this source-weighted hypothesis.",
+  "schema": "wp84.r400.cumulant-endpoint-tensor.v1"
+}
