@@ -1,0 +1,101 @@
+{
+  "artifacts": {
+    "evidence/WP84_FROZEN_R400_AUX_TEST_NORMAL.log": {
+      "bytes": 5642,
+      "sha256": "9beb8d2a3978cf492e9824c6dcb79c6520e68386c80e7f1cfd85d88df3491aa2"
+    },
+    "evidence/WP84_FROZEN_R400_CERTIFICATE_REPLAYS.json": {
+      "bytes": 2378,
+      "sha256": "05f195a76785daa0eee33c9dd1e2f195b6e8d1b465625cbadfdb7d269ef74bc5"
+    },
+    "evidence/WP84_FROZEN_R400_CERT_EQUAL_SCALE_BROWNIAN.log": {
+      "bytes": 88,
+      "sha256": "495961c948c25b00ad0ec69f85bb13eac4f8eefaf29ff7727f9885f77db5af21"
+    },
+    "evidence/WP84_FROZEN_R400_CERT_GEOMETRIC_CROSS_SCALE.log": {
+      "bytes": 102,
+      "sha256": "e1f2fcc4f36340bd392f120add6ff60e13533d507acd9271e30bc9d16dcdb605"
+    },
+    "evidence/WP84_FROZEN_R400_CERT_GEOMETRIC_FIXED_SCALE.log": {
+      "bytes": 142,
+      "sha256": "ff5916d0e87cd92b65e15f7bf1bd1c8cd8a784811a2dc19c7a55ae0065bac653"
+    },
+    "evidence/WP84_FROZEN_R400_CERT_ORIENTATION_NORMALIZATION.log": {
+      "bytes": 85,
+      "sha256": "f98262a1b675cea8397d1252c9611b2e7f02498a271eb3412c03faf28d34b981"
+    },
+    "evidence/WP84_FROZEN_R400_CERT_PAIR_LAYER.log": {
+      "bytes": 178,
+      "sha256": "faac1a81e171ad6fc75a1f0d5389ae1c0dbbf856cef640e8f48d68f327d266e9"
+    },
+    "evidence/WP84_FROZEN_R400_CERT_PHYSICAL_FILTERED_KERNEL.log": {
+      "bytes": 2047,
+      "sha256": "a7fdb536fe979f8c8bb5c3a5dea51834e54e35b800a87f87921a5729796ed3ac"
+    },
+    "evidence/WP84_FROZEN_R400_CORE_TEST_NORMAL.log": {
+      "bytes": 4627,
+      "sha256": "358d94158926481a1842128e45f5fce44e17afe04598ffd3a922a269e09d59f2"
+    },
+    "evidence/WP84_FROZEN_R400_CORE_TEST_O.log": {
+      "bytes": 4627,
+      "sha256": "a12aa0dde68287b29a83dbda54b2bd3050c58eed18a40f606ebecb18b43874c1"
+    },
+    "evidence/WP84_FROZEN_R400_CORE_TEST_OO.log": {
+      "bytes": 4627,
+      "sha256": "3e13567d0919d0feab8d277ba96b1200cf8516f2aa4062a2b81b7a47431f3b6f"
+    },
+    "evidence/WP84_FROZEN_R400_DECISION_RECORD.json": {
+      "bytes": 1160,
+      "sha256": "9e393a86ad0766fce7f3ae2fdf639b4f3daace70eb2a3b8b25b1a6c6d4403b36"
+    },
+    "evidence/WP84_FROZEN_R400_PARENT_MANIFEST_REPLAY.json": {
+      "bytes": 3263,
+      "sha256": "138a8701d54cd119aa497651d17b4ccda729f171a49d7f12942a4b25c83803e3"
+    },
+    "evidence/WP84_FROZEN_R400_REPLAY_CHECKS.json": {
+      "bytes": 9293,
+      "sha256": "32087cdd996d8fe1fc461b58eb2f30be085f39049dc379783b3cb2f07d43782c"
+    },
+    "notes/WP84_FROZEN_R400_HOSTILE_PROOF_READINESS.md": {
+      "bytes": 6835,
+      "sha256": "3213511f803572b8eaf7cafe9e16569303fe15962848fef6de16fdcb2f5bebec"
+    },
+    "notes/WP84_FROZEN_R400_PUBLICATION_PRIORITY.md": {
+      "bytes": 6214,
+      "sha256": "15e2f3333e99880223f69071204b8e85678e71abc891c432b8e963d9434bd7f5"
+    },
+    "notes/WP84_FROZEN_R400_REPRODUCIBILITY.md": {
+      "bytes": 3318,
+      "sha256": "4858755dc191206e59fc20cb1634d77a48f4463f5d12a288aa773e9f1ecb3333"
+    },
+    "notes/WP84_FROZEN_R400_THEOREM_INVENTORY.md": {
+      "bytes": 19145,
+      "sha256": "50bd04daebb4e15e596acb16d09c95989d8198db63d18f51c21a266501a71129"
+    },
+    "src/wp84_frozen_r400_theorem_inventory_manifest.py": {
+      "bytes": 15522,
+      "sha256": "722e1a77c729872ce21ad5c9e5f059395b8dcbc0e7838e61d8860e24d6174cef"
+    }
+  },
+  "audit_branch": "codex/wp84-frozen-theorem-inventory-20261103",
+  "base_commit": "99712a495db3258f938f2509d1eaa37cbc966a03",
+  "claim_boundary": "No open R400 aggregate, percentage, or RH claim is promoted.",
+  "decisions": {
+    "68_820273_percent": "NOT_PROMOTED",
+    "complete_product_frequency_endpoint_selection": "INCOMPLETE",
+    "ordinary_prime_connected_aggregate": "OPEN",
+    "r400_record_budget": "OPEN",
+    "riemann_hypothesis": "OPEN",
+    "strict_gt_79_percent": "OPEN"
+  },
+  "schema": "wp84.frozen-r400.sha256-manifest.v1",
+  "self_hash_excluded": [
+    "evidence/WP84_FROZEN_R400_SHA256_MANIFEST.json",
+    "evidence/WP84_FROZEN_R400_SHA256_MANIFEST.sha256"
+  ],
+  "source_inventory": {
+    "file_count": 33,
+    "path": "evidence/WP84_FROZEN_R400_SOURCE_HASHES.json",
+    "sha256": "db87b1184dc9ac864e9a229659e1436ed2a34f6dbf631d8d5ff4e9736e4b8a8c"
+  }
+}

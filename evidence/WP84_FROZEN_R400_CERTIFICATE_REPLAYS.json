@@ -1,0 +1,65 @@
+{
+  "certificates": [
+    {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "src/wp84_r400_pair_layer_exact.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_FROZEN_R400_CERT_PAIR_LAYER.log",
+      "log_sha256": "faac1a81e171ad6fc75a1f0d5389ae1c0dbbf856cef640e8f48d68f327d266e9",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "src/wp84_r400_filtered_connected_kernel.py",
+        "--certificate"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_FROZEN_R400_CERT_PHYSICAL_FILTERED_KERNEL.log",
+      "log_sha256": "a7fdb536fe979f8c8bb5c3a5dea51834e54e35b800a87f87921a5729796ed3ac",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "src/wp84_fixed_scale_connected_kernel.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_FROZEN_R400_CERT_GEOMETRIC_FIXED_SCALE.log",
+      "log_sha256": "ff5916d0e87cd92b65e15f7bf1bd1c8cd8a784811a2dc19c7a55ae0065bac653",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "src/wp84_cross_scale_sharp_detuning.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_FROZEN_R400_CERT_GEOMETRIC_CROSS_SCALE.log",
+      "log_sha256": "e1f2fcc4f36340bd392f120add6ff60e13533d507acd9271e30bc9d16dcdb605",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "src/wp84_balanced_orientation_normalization.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_FROZEN_R400_CERT_ORIENTATION_NORMALIZATION.log",
+      "log_sha256": "f98262a1b675cea8397d1252c9611b2e7f02498a271eb3412c03faf28d34b981",
+      "result": "PASS"
+    },
+    {
+      "command": [
+        "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python312-arm64\\python.exe",
+        "src/wp84_phi4_equal_scale_brownian_kernel.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/WP84_FROZEN_R400_CERT_EQUAL_SCALE_BROWNIAN.log",
+      "log_sha256": "495961c948c25b00ad0ec69f85bb13eac4f8eefaf29ff7727f9885f77db5af21",
+      "result": "PASS"
+    }
+  ]
+}

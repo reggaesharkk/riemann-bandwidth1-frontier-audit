@@ -1,0 +1,4 @@
+reduced vertices = 4
+branch hyperplanes = 22
+symbolic reduced kernel = -2*(s - 1)*(-s + x + 1)
+RESULT: WP84_FIXED_SCALE_CONNECTED_KERNEL_PASS

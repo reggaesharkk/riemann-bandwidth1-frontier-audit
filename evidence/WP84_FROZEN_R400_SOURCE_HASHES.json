@@ -1,0 +1,239 @@
+{
+  "audit_branch": "codex/wp84-frozen-theorem-inventory-20261103",
+  "base_commit": "99712a495db3258f938f2509d1eaa37cbc966a03",
+  "files": {
+    "evidence/WP84_PHYSICAL_KERNEL_PROPER_POWER_LEDGER.json": {
+      "base_git_blob": "2afa734a5a1c993ac4658a5be422c2d9246371b9",
+      "base_sha256": "361a436f4ba12f3dfc95078cdb5cd30fd670b23a307a4fad09ee2417ff9fa6f7",
+      "bytes": 19330,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "fb0ca1831e765369e15f9c4f4efaea18b5718b46bab8ea40f4995ecace8c9187"
+    },
+    "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_LEDGER.json": {
+      "base_git_blob": "b2b4f52abc454355b6a0a9e7e5d3f42d785b69f1",
+      "base_sha256": "480157411586cab2a6f58a51eaba112d4420990b83fd382d01637091afa2b604",
+      "bytes": 24436,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "cf11b83427042eaf0df909a3f05b7a0ebcd7bcc05a14bf32952107d9fb9c67cd"
+    },
+    "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_LEDGER.json": {
+      "base_git_blob": "520b00d630ad4376331231410909f85002e6fdeb",
+      "base_sha256": "5bf890391fa1490ff0819536472e474cf8fb2b96783f214037cbfa69e3d6422c",
+      "bytes": 6490,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "4bfbb1dd56647c24722695b0b8b262afe33ce962c0df3785631253109a765680"
+    },
+    "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_LEDGER.json": {
+      "base_git_blob": "8649ba2ec3a1065a3af7a1c9f365ffc40589308b",
+      "base_sha256": "f52d9eb00b3be3eab05011830e3c065ebc24e3bfc1dcebc0c2cbfdbcd44a0083",
+      "bytes": 21332,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "263936ce5d07175db5b97e7449a26ba86ed9c48620d83c2d6a82d0ee562027af"
+    },
+    "evidence/WP84_R400_SCHATTEN_ORDINARY_LEDGER.json": {
+      "base_git_blob": "2385dacfd2b6a3f6effc30787d090811618a6c2f",
+      "base_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63",
+      "bytes": 18241,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "1016bcae956ab69d94d9e694a98033ddc24e93916fe9f4e67f52bc797126db63"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_26_TERM_LEDGER.json": {
+      "base_git_blob": "2f2d04694ee0b457f71bc32bbfa883d5f12a7110",
+      "base_sha256": "b760aaf1b6a1fdb9e0a49bdd82408ce78c6ab2f31959b04efc3e3cdcf0a5799e",
+      "bytes": 367427,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "4e82dee573c84f12f3c188df695fe7432f26617df6673217a49fc113a70a5089"
+    },
+    "evidence/WP84_SOURCE_WEIGHT_CONE_ORIENTATION_INTERVALS.json": {
+      "base_git_blob": "4ca823d617cbd7969b90de7d89d83e0aeb549592",
+      "base_sha256": "b82238a24348673c6c6caa6da8b17d15647f0ecec1b53a8f22bf613b6e465aad",
+      "bytes": 7685,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "363b6fc869a3c58f4dbd25f22f3e7ee5f478198374e7ff618f51f0c912c2b965"
+    },
+    "notes/WP84_BALANCED_ORIENTATION_NORMALIZATION.md": {
+      "base_git_blob": "e48bb9871fbc4f9a4f320fa2b796d3a6a188d64f",
+      "base_sha256": "33ab0e9150d5131aa25295877db8f47d1fddb366c9768fff80a95200879811d2",
+      "bytes": 2021,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "67f16e8b6e6a0c165e51ce6600fda10c19b41374b292905be5a3346fd4bf7adb"
+    },
+    "notes/WP84_CROSS_SCALE_SHARP_DETUNING.md": {
+      "base_git_blob": "a0a34012107ed8fd1668a65a1edf74b7bdaabbef",
+      "base_sha256": "7a8e4c7ade1d0da1954a19e2657f8ca0936f67ce70fc3902d409da8ce5321324",
+      "bytes": 6331,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "a8bb1df6a4e785c74104e7f24ddaf258fdf3c4d857618404bde1e8633eb72f5a"
+    },
+    "notes/WP84_FIXED_SCALE_CONNECTED_KERNEL.md": {
+      "base_git_blob": "132cf600fad7289eb75e492a6a206a32f04ccb6c",
+      "base_sha256": "8d0e64dea7edda796b7d2eb396b30a3e2ffbd86f44838052f4e371868538826c",
+      "bytes": 6108,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "2f9326735cce143a0c9f611efbf2416b243df5fa74b2e2e9437a77d47f90ed32"
+    },
+    "notes/WP84_PHYSICAL_KERNEL_PROPER_POWER_AGGREGATE_AUDIT.md": {
+      "base_git_blob": "4108bd8d37963107560c42464b652a2fafccc667",
+      "base_sha256": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a",
+      "bytes": 13006,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "e13f9e83cfa7cc165e48335ae20f05bb6cc0b1c2214a7a1a063987308986137a"
+    },
+    "notes/WP84_R400_COMPLETE_WORD_LEDGER_REPLAY.md": {
+      "base_git_blob": "9b2297a5e85dc4c8a35267473aed2637bbcaaa7e",
+      "base_sha256": "017817447fd732b006a6255741930a6cbddc4de6b819a02522e85c5e39407bc0",
+      "bytes": 9135,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "a5e0735e397d2d7f8c9f221d368f4708c028651415b31b63ead060ee533ddcd8"
+    },
+    "notes/WP84_R400_ENDPOINT_RESTRICTED_ORDINARY_PRIME_THEOREM_ATTACK.md": {
+      "base_git_blob": "2f7ab3c172abecbddc79826ee34801cb83d5d5e0",
+      "base_sha256": "f8aa448c7f774ee548feea1c24b38d205004aefdd40604a10b8f3520c2314352",
+      "bytes": 14674,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "f8aa448c7f774ee548feea1c24b38d205004aefdd40604a10b8f3520c2314352"
+    },
+    "notes/WP84_R400_EXACT_PAIR_LAYER.md": {
+      "base_git_blob": "f25779baa97d5a78f7b20155e14feb96ab57e5f0",
+      "base_sha256": "0277cc730aa40d06fac07b92a4b7a7a9a3f3bb8dd40333eaeeb03cc29cc55f5c",
+      "bytes": 5746,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "e7d9e2fa286860f5463f2531c9cca3f991f69aff73bbdb1fc9c7043f73683336"
+    },
+    "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+      "base_git_blob": "03dbcf6bb87eddcf8b63f5fbf33e2e44841c15b1",
+      "base_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7",
+      "bytes": 22018,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+    },
+    "notes/WP84_R400_ORDINARY_AGGREGATE_THEOREM_FEASIBILITY_HARD_STOP.md": {
+      "base_git_blob": "6d3e1437204d54147a1c32c5e0d5e50bda272af4",
+      "base_sha256": "abec2490ce6743935d25ea929b0694503d7b9a9d54e2af93c3ba1b3badce3cbf",
+      "bytes": 19041,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "abec2490ce6743935d25ea929b0694503d7b9a9d54e2af93c3ba1b3badce3cbf"
+    },
+    "notes/WP84_R400_PHYSICAL_CUMULANT_ENDPOINT_DIFFERENCE_AND_TENSOR_LIFT.md": {
+      "base_git_blob": "9325db5da00b14559c72ae43cc27ebf6a8401117",
+      "base_sha256": "40cf7d2a0a729653f69a06ca570364a1bbad78314bc7250ea78406564c08ee6c",
+      "bytes": 13167,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "40cf7d2a0a729653f69a06ca570364a1bbad78314bc7250ea78406564c08ee6c"
+    },
+    "notes/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_AND_NEAR_PRODUCT_CLOSURE.md": {
+      "base_git_blob": "e6879e7ddec2b36877c1d7e78a3f8404202a1fcc",
+      "base_sha256": "3de6e7bd87782af0e3f00eba9a4273a3b6ba3826afa6f8b19c4881022e0539e9",
+      "bytes": 13667,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "3de6e7bd87782af0e3f00eba9a4273a3b6ba3826afa6f8b19c4881022e0539e9"
+    },
+    "notes/WP84_R400_SCHATTEN_ABSORPTION_AND_ORDINARY_AGGREGATE_AUDIT.md": {
+      "base_git_blob": "dcab939bc47d9413dd74055bdeb5feb58b716597",
+      "base_sha256": "43ac834f2a7370dc0c2f1d97730d1bd1c24f9783881729bbdc9f87e6418c7954",
+      "bytes": 16532,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "8334b30e2bf707d7ff9d2cb4dd56bfe012def04b0d751e77232c48aafb69edf5"
+    },
+    "notes/WP84_SOURCE_WEIGHT_CONE_FOURTH_ORDER_OPERATOR_AUDIT.md": {
+      "base_git_blob": "1d7e707835a592fc987b95f8966a2efe128a1f43",
+      "base_sha256": "dd26e63b7f6d9e50c93b8ab2832c9a66c6d2980884e62da20b71a83856f5aadb",
+      "bytes": 14464,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "dd26e63b7f6d9e50c93b8ab2832c9a66c6d2980884e62da20b71a83856f5aadb"
+    },
+    "src/wp84_balanced_orientation_normalization.py": {
+      "base_git_blob": "3029eecc78467a8e4238bc4cfcbf26479d521b26",
+      "base_sha256": "9dd5382f9175d7cefb072e9ef63a266539f4306f6701eecbbf50b9b26a281738",
+      "bytes": 2162,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "84eb5b2c287eefa824d4f132f4e565b6d0f37ab35774dfd95e8e4666d6a6d17a"
+    },
+    "src/wp84_cross_scale_sharp_detuning.py": {
+      "base_git_blob": "3464b0a7a81299a0e53522aee140a864fa93f429",
+      "base_sha256": "4ea8bd17f96d0cdfe95cb9e196b0009853c41dd251655cf39be5135e52b59b53",
+      "bytes": 3700,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "111f4e962d31a07a52846cf004f14c4dc81d37cae311aed506b8eced470be437"
+    },
+    "src/wp84_fixed_scale_connected_kernel.py": {
+      "base_git_blob": "8fec6d05c3ef61a8e964f9ce14a5080728ebcb38",
+      "base_sha256": "c9573492114cf72e43a6e83b108e935f7e4940086c450791736cc91a867caf04",
+      "bytes": 5804,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "1975b0b8044e442ae884c5afd2f0efced1ee1f6ce94c38b83a3c7e7837d01e60"
+    },
+    "src/wp84_phi4_equal_scale_brownian_kernel.py": {
+      "base_git_blob": "029ce89c2a76b4c306a403f32f5d0961084a144d",
+      "base_sha256": "6c95dac3b6869f7ea1d1835a64625d73e777d1d916af604e2ba9d4ae23766ff9",
+      "bytes": 3922,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "d34c62e25b336a6fe034af911ede007021c36a71fc3d85875382165882832c72"
+    },
+    "src/wp84_physical_kernel_proper_power_reconciliation.py": {
+      "base_git_blob": "aa1246ed5079de394ae7e873c3143a981559f2d2",
+      "base_sha256": "524af6d95bb73ffcc3a403c0816b15d9e0f8225d82f3675cf31c939bf0a3f830",
+      "bytes": 12874,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "524af6d95bb73ffcc3a403c0816b15d9e0f8225d82f3675cf31c939bf0a3f830"
+    },
+    "src/wp84_r400_cumulant_endpoint_tensor.py": {
+      "base_git_blob": "bf6596bf72e29b71cde9a0919a6d0e92fc8d549a",
+      "base_sha256": "79b24540c70a6b29317fad2cb458231095850714e8c0e04489a98ab158cb4fe8",
+      "bytes": 19392,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "79b24540c70a6b29317fad2cb458231095850714e8c0e04489a98ab158cb4fe8"
+    },
+    "src/wp84_r400_filtered_connected_kernel.py": {
+      "base_git_blob": "ac379ffd065845691fbb451a12cdf28e0db8db65",
+      "base_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486",
+      "bytes": 11981,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+    },
+    "src/wp84_r400_pair_layer_exact.py": {
+      "base_git_blob": "3423ec96f79f2b28f134a66ac7f29e67d527ffa7",
+      "base_sha256": "49e1cff47509d80aae37087ef37d3dc22c7dc61d99ada60b403bc663eb972f39",
+      "bytes": 1667,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "f185a9cde28b6b3d3a4e0ab2633d167c3fa6e44051330e15a48f4ee5c23e924f"
+    },
+    "src/wp84_r400_physical_endpoint_averaging.py": {
+      "base_git_blob": "55eab35f760bb0c3258d765d83d92e037f7408e1",
+      "base_sha256": "0ddfb9667e444b7110b8a6406960640ec362472b62fd9d45eb168392505d2625",
+      "bytes": 16894,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "0ddfb9667e444b7110b8a6406960640ec362472b62fd9d45eb168392505d2625"
+    },
+    "src/wp84_r400_schatten_absorption_audit.py": {
+      "base_git_blob": "aec90017909e822d26b81d1e45670740345fde3b",
+      "base_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2",
+      "bytes": 16986,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "786b342e00680b397a9a587e026af935f72dbf4f07ff89ffa7d8873eb5d2fdd2"
+    },
+    "tests/test_wp84_physical_kernel_reconciliation.py": {
+      "base_git_blob": "6b04f4629b13597210d835b3d024d87e991dbeb4",
+      "base_sha256": "b22267ed4a33402d9357592d75fef4c93f84cdc2ca713497f2b963d404dc5499",
+      "bytes": 3532,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "b22267ed4a33402d9357592d75fef4c93f84cdc2ca713497f2b963d404dc5499"
+    },
+    "tests/test_wp84_r400_cumulant_endpoint_tensor.py": {
+      "base_git_blob": "5da7cd886187e541cdda698d2772c3d191a97181",
+      "base_sha256": "d152165f459c9efe5a6673a10e95fd7dde5e126ad516f9f33649f77671c53034",
+      "bytes": 7599,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "d152165f459c9efe5a6673a10e95fd7dde5e126ad516f9f33649f77671c53034"
+    },
+    "tests/test_wp84_r400_schatten_absorption_audit.py": {
+      "base_git_blob": "a69592e14abfda3a2a4afcee2b1c666ffc437585",
+      "base_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6",
+      "bytes": 5511,
+      "unchanged_from_base_after_line_ending_normalization": true,
+      "worktree_sha256": "65fcad8f149d280bceb235bb512a446dfb05b06ccc4ede4e79efb838a9e622a6"
+    }
+  },
+  "method": "SHA-256 raw bytes and Git blob IDs; historical inputs compared after CRLF/LF normalization",
+  "schema": "wp84.frozen-r400.source-hashes.v1"
+}

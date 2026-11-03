@@ -1,0 +1,69 @@
+{
+  "note": "Artifact and sidecar hashes were checked directly. The historical Schatten verifier's hard-coded branch-name guard is intentionally not changed or required.",
+  "parent_manifests": [
+    {
+      "artifacts_verified": 15,
+      "audit_branch": "codex/wp84-source-weight-cone-operator-audit-20261103",
+      "base_commit": "861bdad5f6f6495c5b755546b4b2fa43367e2901",
+      "manifest": "evidence/WP84_SOURCE_WEIGHT_CONE_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "eabe6259e7a85ab6574838f3ea477e26b46f7c723f111b5764bffca89f092243"
+    },
+    {
+      "artifacts_verified": 15,
+      "audit_branch": "codex/wp84-physical-kernel-proper-power-aggregate-20261103",
+      "base_commit": "0185e68f53b50e2085eb30aaecc623861ccc107b",
+      "manifest": "evidence/WP84_PHYSICAL_KERNEL_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "49e941f0fff58f981e1b970a5f797f8c0fc9c4907e358c41ff5660e873ec8b32"
+    },
+    {
+      "artifacts_verified": 17,
+      "audit_branch": "codex/wp84-r400-schatten-ordinary-aggregate-20261103",
+      "base_commit": "b1ff152df352216aa44c9a2535f04306a39df859",
+      "manifest": "evidence/WP84_R400_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "e521014b90bebac6c38b8775e80f6084868715d78ffcfd058f730e2344403ca1"
+    },
+    {
+      "artifacts_verified": 10,
+      "audit_branch": "codex/wp84-r400-endpoint-near-product-20261103",
+      "base_commit": "6d4d43cea2479966ba0081dfbb38058fe6fffb87",
+      "manifest": "evidence/WP84_R400_ENDPOINT_NEAR_PRODUCT_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "b22cc8d42e21329c281bca1445ef1d7b943ec6b71be203e4bdea9349a3b98ecc"
+    },
+    {
+      "artifacts_verified": 18,
+      "audit_branch": "codex/wp84-physical-endpoint-averaging-20261103",
+      "base_commit": "1139e81c5fdfc0ecfc054b892697c6f76f78db31",
+      "manifest": "evidence/WP84_R400_PHYSICAL_ENDPOINT_AVERAGING_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "84886dc38295f517894b116195529b630b578703a63872cf0ae80a2cb9486353"
+    },
+    {
+      "artifacts_verified": 12,
+      "audit_branch": "codex/wp84-physical-cumulant-tensor-lift-20261103",
+      "base_commit": "0d3bc919451df298ef2a945569d8c3b1eb65192f",
+      "manifest": "evidence/WP84_R400_CUMULANT_ENDPOINT_TENSOR_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "c4d355b29940673dce544abe5f16dccecc597f24d0eb34bb9a93c10a2d53f628"
+    },
+    {
+      "artifacts_verified": 10,
+      "audit_branch": "codex/wp84-ordinary-aggregate-feasibility-20261103",
+      "base_commit": "d81bb1b6e46fb571906e7098e11372a5c38e8a2c",
+      "manifest": "evidence/WP84_R400_ORDINARY_THEOREM_FEASIBILITY_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "ae3821cc462197efd6c481dc60e508c79b45fb37857270c9a84c6f63703d6373"
+    },
+    {
+      "artifacts_verified": 10,
+      "audit_branch": "codex/wp84-endpoint-restricted-ordinary-attack-20261103",
+      "base_commit": "13752ebd5cc399bf5cd04b74b679a0f59ab8eb41",
+      "manifest": "evidence/WP84_R400_ENDPOINT_RESTRICTED_ATTACK_SHA256_MANIFEST.json",
+      "result": "PASS",
+      "sidecar_sha256": "b6dc08fec3157dcae54cac57e345d4b02c02fb9a88b7ed4bb271b78aa2014854"
+    }
+  ]
+}

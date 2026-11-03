@@ -1,0 +1,27 @@
+{
+  "audit_branch": "codex/wp84-frozen-theorem-inventory-20261103",
+  "complete_product_frequency_endpoint_selection": "INCOMPLETE",
+  "conditional_68_820273_percent_route": "NOT_PROMOTED",
+  "first_parent_chain_head_to_older": [
+    "99712a495db3258f938f2509d1eaa37cbc966a03",
+    "13752ebd5cc399bf5cd04b74b679a0f59ab8eb41",
+    "d81bb1b6e46fb571906e7098e11372a5c38e8a2c",
+    "0d3bc919451df298ef2a945569d8c3b1eb65192f",
+    "1139e81c5fdfc0ecfc054b892697c6f76f78db31",
+    "6d4d43cea2479966ba0081dfbb38058fe6fffb87",
+    "b1ff152df352216aa44c9a2535f04306a39df859",
+    "48f681f163f916d5a694c041c14abe19ec317418",
+    "0185e68f53b50e2085eb30aaecc623861ccc107b",
+    "0b816a59bf600a72296d1a7a103d660a8523e232",
+    "861bdad5f6f6495c5b755546b4b2fa43367e2901",
+    "2caac1e6e4a8adfab7c74f87c805e6cd81d4f9a1",
+    "179f9959c4dabb675d1955646f212ddf6d3c51f5",
+    "8d1163d3396291ccfcdc4f8ff5a4e21d6bf616a2"
+  ],
+  "frozen_base": "99712a495db3258f938f2509d1eaa37cbc966a03",
+  "ordinary_prime_connected_aggregate": "OPEN",
+  "push_merge_publication": "NONE",
+  "r400_record_budget": "OPEN",
+  "riemann_hypothesis": "OPEN",
+  "strict_greater_than_79_percent": "OPEN"
+}
