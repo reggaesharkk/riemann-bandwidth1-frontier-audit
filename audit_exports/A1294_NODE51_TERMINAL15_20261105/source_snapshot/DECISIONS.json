@@ -1,0 +1,62 @@
+{
+  "input_packet": {
+    "name": "A1294_NODE53_TERMINAL16_PROOF_PACKET_V4_20261105.zip",
+    "sha256": "a0b58ec6b7241f88b0bb3b223c7944fbdc0d7922fcd8f049f040d61b642d3b13",
+    "bytes": 325810186,
+    "verified": true
+  },
+  "frozen_v2": {
+    "name": "A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+    "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+    "bytes": 5672384,
+    "verified": true
+  },
+  "environment": {
+    "local_worktree_head": "eb36159ee7e57053fcae3de025fe4dac539435ab",
+    "formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+    "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129",
+    "lean": "4.33.0-rc2 / d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "lake": "5.0.0-src+d8b1897",
+    "lake_manifest_sha256": "1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448"
+  },
+  "terminal_15": {
+    "source_reconstruction": "EXTERNALLY_CHECKED_EXACT_RATIONAL_REPLAY",
+    "quadratic_acceptance": "KERNEL_PROVED",
+    "leaf_soundness": "KERNEL_PROVED",
+    "anchor_codes": [0, 0, 0, 0, 0],
+    "anchor_byte_offset": 150,
+    "rows": 15,
+    "segment_occurrences": 369,
+    "distinct_catalog_references": 167,
+    "tangent_margin_positive_exactly": true,
+    "catalog_array_identity": "KERNEL_PROVED_FOR_GENERATED_SOURCE_ORDER_ARRAY",
+    "catalog_reference_to_frozen_source_mapping": "EXTERNALLY_CHECKED"
+  },
+  "node_51": {
+    "axis_zero_based": 1,
+    "source_connected_boxpredicate": "KERNEL_PROVED_OVER_COMPILED_SOURCE_LITERALS",
+    "replay": "KERNEL_PROVED",
+    "topology_tokens": 17,
+    "payloads": 9,
+    "exact_cursor_exhaustion": [17, 9],
+    "reuses_existing_node53_replay_object": true
+  },
+  "bulk_generation": {
+    "multi_leaf_generator": "PROTOTYPE_TESTED_ON_ONE_AUTHENTIC_NODE51_CHUNK",
+    "generated_source_matches_kernel_built_source": true,
+    "full_certificate_resource_feasibility": "OPEN",
+    "small_chunk_objects_bytes": 14823728,
+    "aggregate_sequential_lean_wall_seconds": 544.99,
+    "maximum_peak_rss_kib": 5559236
+  },
+  "provenance": {
+    "vrk_canonical_evidence_binding": "PASS_UNSIGNED_LOCAL_RECORD",
+    "intentseal_candidate_manifest_integrity_check": "PASS",
+    "signed_ledger_or_external_key_trust": "NOT_USED",
+    "source_bytes_to_lean_literals": "EXTERNAL",
+    "deterministic_catalog_selection_to_lean_literals": "EXTERNAL"
+  },
+  "full_initial_root_predicate": "OPEN",
+  "full_a1294_theorem": "OPEN",
+  "frozen_wp84_conclusions_changed": false
+}

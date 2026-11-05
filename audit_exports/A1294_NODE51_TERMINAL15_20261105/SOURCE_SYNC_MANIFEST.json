@@ -1,0 +1,273 @@
+{
+  "scope": "Private Git source snapshot; selected exact source/data/replay/log files only, not the full 337 MB packet.",
+  "source_packet": {
+    "name": "A1294_NODE51_TERMINAL15_SOURCE_CONNECTED_REPLAY_20261105.zip",
+    "bytes": 337171866,
+    "sha256": "2461505d5cf86aeceb0dce12ad50fcddae1958cad9e12f316b5d49234fc3ac83"
+  },
+  "source_worktree_head": "eb36159ee7e57053fcae3de025fe4dac539435ab",
+  "target_private_pr": "reggaesharkk/riemann-bandwidth1-frontier-audit#6",
+  "target_branch": "audit/a1294-proof-timeline-20261105",
+  "parent_remote_head": "326c33e015c9c8be65986f9797b1cf4b7354039f",
+  "original_packet_manifest": "All copied source files were checked against the packet MANIFEST_SHA256.txt before and after copying.",
+  "exclusions": [
+    "Full ZIP packet and embedded predecessor ZIPs",
+    "All .olean compiled objects",
+    "Original V2 binary streams",
+    "Unlicensed/third-party VRK and IntentSeal implementation source; hashes/provenance references remain in inventory."
+  ],
+  "files": [
+    {
+      "source_path": "Catalog15.lean",
+      "destination_path": "source_snapshot/Catalog15.lean",
+      "bytes": 6909,
+      "sha256": "d27681d08273a1317df72b95d5b2cf8277ae9209c104d62374d55bd1732085b3"
+    },
+    {
+      "source_path": "Catalog15Identity.lean",
+      "destination_path": "source_snapshot/Catalog15Identity.lean",
+      "bytes": 9961,
+      "sha256": "9868cf52966b8f88537b12ac068836770559f71a4f6fbf67092177bf4a80c87d"
+    },
+    {
+      "source_path": "Catalog15BoundaryBlocks.lean",
+      "destination_path": "source_snapshot/Catalog15BoundaryBlocks.lean",
+      "bytes": 1067,
+      "sha256": "83124154a04e7399779fc294e8bc4bd6882c6dc3101a665492e8e5cf399b1b44"
+    },
+    {
+      "source_path": "Catalog15AllLookups.lean",
+      "destination_path": "source_snapshot/Catalog15AllLookups.lean",
+      "bytes": 101523,
+      "sha256": "95f36e94da09353f32b675cb7545985d7768904b439237a36af78544d98ac304"
+    },
+    {
+      "source_path": "Terminal15Compositional.lean",
+      "destination_path": "source_snapshot/Terminal15Compositional.lean",
+      "bytes": 319694,
+      "sha256": "48341e899c669d95d1fa8375a28f77a703855868143fbb7c4672ba4176442451"
+    },
+    {
+      "source_path": "Node51Replay.lean",
+      "destination_path": "source_snapshot/Node51Replay.lean",
+      "bytes": 8883,
+      "sha256": "7d8f5a0b6e4ae9bf566cdc700a2eee08b29c4cec704bc96219920ac2e24dc150"
+    },
+    {
+      "source_path": "Node51Replay.lean.template",
+      "destination_path": "source_snapshot/Node51Replay.lean.template",
+      "bytes": 8300,
+      "sha256": "67c7150435f38d47d7a2f0347f120817e28625df607af49c6ab23d0bacdcbca8"
+    },
+    {
+      "source_path": "terminal15_authentic_input.json",
+      "destination_path": "source_snapshot/terminal15_authentic_input.json",
+      "bytes": 312617,
+      "sha256": "3e8b6a03723ca0d70adb98f744484ae398729bd8fa8aa86bbe456c7f7223b349"
+    },
+    {
+      "source_path": "terminal15_catalog_reindex.json",
+      "destination_path": "source_snapshot/terminal15_catalog_reindex.json",
+      "bytes": 4768,
+      "sha256": "da4faca87e19b89df5f1d7e155556a97fe0d8e12c5696637ebc66a2319adc45f"
+    },
+    {
+      "source_path": "extract15_reconstruct.py",
+      "destination_path": "source_snapshot/extract15_reconstruct.py",
+      "bytes": 12385,
+      "sha256": "a7ecd748cb9cb174eae020c1d644adf8374f6da4a2b253b8ccf3dd83c0f1c345"
+    },
+    {
+      "source_path": "verify15_reconstruction.py",
+      "destination_path": "source_snapshot/verify15_reconstruction.py",
+      "bytes": 8812,
+      "sha256": "de8309b48bbecb567132e8df655b4dfdcd29f1d1d075b4abd16755bf81d411d9"
+    },
+    {
+      "source_path": "derive_terminal15_generators.py",
+      "destination_path": "source_snapshot/derive_terminal15_generators.py",
+      "bytes": 1920,
+      "sha256": "7bc7a7d78dc7b630dbfc465119d73e2343fbafe59ad7348477590e95ce00b474"
+    },
+    {
+      "source_path": "derive_verify15.py",
+      "destination_path": "source_snapshot/derive_verify15.py",
+      "bytes": 2576,
+      "sha256": "8dcc1550cffb7f9467ea233c99e06f9c8990874bdcfc755b1f8eca48cccb1d9e"
+    },
+    {
+      "source_path": "generate_terminal15_catalog.py",
+      "destination_path": "source_snapshot/generate_terminal15_catalog.py",
+      "bytes": 8811,
+      "sha256": "0d5db3723ed24bee50ece2c63da6c0641bd6de3526485b330379f9668aa24130"
+    },
+    {
+      "source_path": "generate_terminal15_compositional.py",
+      "destination_path": "source_snapshot/generate_terminal15_compositional.py",
+      "bytes": 9242,
+      "sha256": "b8f6fe8f9f56f6871e9ac146fd5d72301c1fbd9ee18be2e38e6b35e29c4bd3a8"
+    },
+    {
+      "source_path": "generate_node51_replay.py",
+      "destination_path": "source_snapshot/generate_node51_replay.py",
+      "bytes": 8064,
+      "sha256": "84fd5e1f2b2cdf7d38448c83a4bd6b5019b7d2dd5e09a8a4f3ca80c8a6bf7588"
+    },
+    {
+      "source_path": "test_node51_generator_rejections.py",
+      "destination_path": "source_snapshot/test_node51_generator_rejections.py",
+      "bytes": 2952,
+      "sha256": "d23131753a1fd81f3f1b2df95a3177ef1d0d547b29979399743bf11c9c0a0de2"
+    },
+    {
+      "source_path": "independent_extract_check.py",
+      "destination_path": "source_snapshot/independent_extract_check.py",
+      "bytes": 5682,
+      "sha256": "7d33934a76d24e0e807d23c32a732fc7d22ea5e7b98f6e7ba018a725c46ba475"
+    },
+    {
+      "source_path": "collect_build_metrics.py",
+      "destination_path": "source_snapshot/collect_build_metrics.py",
+      "bytes": 3816,
+      "sha256": "2ed915b002ed7836d646843f1efaf9f3aefb01d8a49d163f69d71d68991d17fa"
+    },
+    {
+      "source_path": "Terminal15Compositional.build.log",
+      "destination_path": "source_snapshot/Terminal15Compositional.build.log",
+      "bytes": 2565,
+      "sha256": "807fdf47a2d450fd16b63d8e75df8468f502cebf3a5a6f9c33896d8eb7581349"
+    },
+    {
+      "source_path": "Terminal15Compositional.resource.log",
+      "destination_path": "source_snapshot/Terminal15Compositional.resource.log",
+      "bytes": 1201,
+      "sha256": "0f13874e30f93e6027b93370be4a25096e06c4f36c129ea75d07a1e09806d558"
+    },
+    {
+      "source_path": "Node51Replay.build.log",
+      "destination_path": "source_snapshot/Node51Replay.build.log",
+      "bytes": 5560,
+      "sha256": "a1df998e3a315730513a32e224b03be093825af4e5f1bd39abbb21328ffd88cf"
+    },
+    {
+      "source_path": "Node51Replay.resource.log",
+      "destination_path": "source_snapshot/Node51Replay.resource.log",
+      "bytes": 1176,
+      "sha256": "78ee0886a2233489e10e0b6b5494edc2e83e0ea684b433c8656d22f2d28db289"
+    },
+    {
+      "source_path": "Catalog15.build.log",
+      "destination_path": "source_snapshot/Catalog15.build.log",
+      "bytes": 1169,
+      "sha256": "44fc4478e0e65c37c74966e6075380a47601679a8b275fd06c6b5bcf3232ccc9"
+    },
+    {
+      "source_path": "Catalog15Identity.build.log",
+      "destination_path": "source_snapshot/Catalog15Identity.build.log",
+      "bytes": 7231,
+      "sha256": "7255b6445000fa5c36af221ff80780a5af6fd06d56031295120622ce91d2e8b6"
+    },
+    {
+      "source_path": "Catalog15BoundaryBlocks.build.log",
+      "destination_path": "source_snapshot/Catalog15BoundaryBlocks.build.log",
+      "bytes": 1399,
+      "sha256": "cc4119a79bb69068c70d69aba436b4fb0007ec235c4ef1bf9a473f549cedfbc9"
+    },
+    {
+      "source_path": "Catalog15AllLookups.build.log",
+      "destination_path": "source_snapshot/Catalog15AllLookups.build.log",
+      "bytes": 7880,
+      "sha256": "e5ea0a96bc4c3a54ebb86db1474dc97411eb78c20cdfd0cd5b359933e1b0f823"
+    },
+    {
+      "source_path": "terminal15_reconstruction_final_normal.log",
+      "destination_path": "source_snapshot/terminal15_reconstruction_final_normal.log",
+      "bytes": 1261,
+      "sha256": "9a146d437cbef8b503a185b4e9622418173663530d520388d4ffb9b4009b3b97"
+    },
+    {
+      "source_path": "terminal15_reconstruction_final_O.log",
+      "destination_path": "source_snapshot/terminal15_reconstruction_final_O.log",
+      "bytes": 1261,
+      "sha256": "5facd85a70472c39f23603d074513e041c166f5e42c02d60b92f571d87a8a8f5"
+    },
+    {
+      "source_path": "terminal15_reconstruction_final_OO.log",
+      "destination_path": "source_snapshot/terminal15_reconstruction_final_OO.log",
+      "bytes": 1261,
+      "sha256": "b4b6534eedb731e660f47ffba47ed7b286d7fa0bfb73bf13ff6bc3afdb24a774"
+    },
+    {
+      "source_path": "generator_rejection_tests_normal.log",
+      "destination_path": "source_snapshot/generator_rejection_tests_normal.log",
+      "bytes": 270,
+      "sha256": "c65f1b0c3e1c91a760875e1244b40ed74d3590ad172fcf37624834cfae448f66"
+    },
+    {
+      "source_path": "generator_rejection_tests_O.log",
+      "destination_path": "source_snapshot/generator_rejection_tests_O.log",
+      "bytes": 270,
+      "sha256": "c65f1b0c3e1c91a760875e1244b40ed74d3590ad172fcf37624834cfae448f66"
+    },
+    {
+      "source_path": "generator_rejection_tests_OO.log",
+      "destination_path": "source_snapshot/generator_rejection_tests_OO.log",
+      "bytes": 270,
+      "sha256": "c65f1b0c3e1c91a760875e1244b40ed74d3590ad172fcf37624834cfae448f66"
+    },
+    {
+      "source_path": "BUILD_STATUS.txt",
+      "destination_path": "source_snapshot/BUILD_STATUS.txt",
+      "bytes": 1531,
+      "sha256": "7f19f0a5c88d71461ed4b99133b68bfe560c4bba0e617fcc10407986fd697c72"
+    },
+    {
+      "source_path": "RESOURCE_BENCHMARK.json",
+      "destination_path": "source_snapshot/RESOURCE_BENCHMARK.json",
+      "bytes": 4477,
+      "sha256": "94e90ecc07dbd80bd9939788111e9a88f2c5a0d85c5066722d927dbbd3a0bec8"
+    },
+    {
+      "source_path": "SOURCE_HASH_INVENTORY.json",
+      "destination_path": "source_snapshot/SOURCE_HASH_INVENTORY.json",
+      "bytes": 7685,
+      "sha256": "004ac365427e5e88efea0b951f46fb864bd7f85d44d44e2eba5318543337df3c"
+    },
+    {
+      "source_path": "PROVENANCE_CONTRACT.json",
+      "destination_path": "source_snapshot/PROVENANCE_CONTRACT.json",
+      "bytes": 2789,
+      "sha256": "1e24357b2bc3f3a34f665464efb3438c396915b7048982d7aee22c2074b74617"
+    },
+    {
+      "source_path": "VRK_CLAIM_EVIDENCE.json",
+      "destination_path": "source_snapshot/VRK_CLAIM_EVIDENCE.json",
+      "bytes": 7784,
+      "sha256": "2a9603ce7c5528d02017bed922572631c63259dc57948f829684c7dee3a7093e"
+    },
+    {
+      "source_path": "ENVIRONMENT.txt",
+      "destination_path": "source_snapshot/ENVIRONMENT.txt",
+      "bytes": 887,
+      "sha256": "b21ef84fcaaa31ad3e75b25750388de4c49a5b3a106894a5f5a80538d5df0f6f"
+    },
+    {
+      "source_path": "DECISIONS.json",
+      "destination_path": "source_snapshot/DECISIONS.json",
+      "bytes": 2472,
+      "sha256": "40ecc3882c25036b4570d754e27f474ec38a23683c396d7fc889657ae1c2707e"
+    },
+    {
+      "source_path": "reference_dependencies/Node53Replay.lean",
+      "destination_path": "source_snapshot/reference_dependencies/Node53Replay.lean",
+      "bytes": 8723,
+      "sha256": "d3ab270499d165561d9345dac14404abcd2ad146be4051ea2a82501f9e121301"
+    }
+  ],
+  "git_attributes": {
+    "path": ".gitattributes",
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "purpose": "Disable line-ending conversion for this additive source snapshot so Git blobs preserve packet-manifest bytes."
+  },
+  "exclusion_note": "The packet ZIP and compiled objects are not in Git; all listed source files are byte-identical to the packet manifest. Full archive remains separately identified by its SHA-256."
+}

@@ -1,0 +1,5 @@
+PASS axis: rejected with source node 51 / axis 1
+PASS anchor: rejected with kind or serialized anchor mismatch
+PASS source_hash: rejected with frozen V2 archive digest mismatch
+PASS predecessor_object: rejected with node53 proof object does not match
+PYTHON_EXIT=0

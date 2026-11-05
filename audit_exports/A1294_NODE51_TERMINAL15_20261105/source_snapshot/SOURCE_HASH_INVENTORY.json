@@ -1,0 +1,202 @@
+{
+  "artifact_hashes": [
+    {
+      "bytes": 325810186,
+      "path": "reference_inputs/A1294_NODE53_TERMINAL16_PROOF_PACKET_V4_20261105.zip",
+      "role": "input_v4_packet",
+      "sha256": "a0b58ec6b7241f88b0bb3b223c7944fbdc0d7922fcd8f049f040d61b642d3b13"
+    },
+    {
+      "bytes": 5672384,
+      "path": "reference_inputs/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+      "role": "frozen_v2_package",
+      "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+    },
+    {
+      "bytes": 312617,
+      "path": "terminal15_authentic_input.json",
+      "role": "terminal15_source_record",
+      "sha256": "3e8b6a03723ca0d70adb98f744484ae398729bd8fa8aa86bbe456c7f7223b349"
+    },
+    {
+      "bytes": 12385,
+      "path": "extract15_reconstruct.py",
+      "role": "source_extractor",
+      "sha256": "a7ecd748cb9cb174eae020c1d644adf8374f6da4a2b253b8ccf3dd83c0f1c345"
+    },
+    {
+      "bytes": 8812,
+      "path": "verify15_reconstruction.py",
+      "role": "independent_exact_verifier",
+      "sha256": "de8309b48bbecb567132e8df655b4dfdcd29f1d1d075b4abd16755bf81d411d9"
+    },
+    {
+      "bytes": 8811,
+      "path": "generate_terminal15_catalog.py",
+      "role": "catalog_generator",
+      "sha256": "0d5db3723ed24bee50ece2c63da6c0641bd6de3526485b330379f9668aa24130"
+    },
+    {
+      "bytes": 9242,
+      "path": "generate_terminal15_compositional.py",
+      "role": "leaf_literal_generator",
+      "sha256": "b8f6fe8f9f56f6871e9ac146fd5d72301c1fbd9ee18be2e38e6b35e29c4bd3a8"
+    },
+    {
+      "bytes": 6909,
+      "path": "Catalog15.lean",
+      "role": "catalog_array",
+      "sha256": "d27681d08273a1317df72b95d5b2cf8277ae9209c104d62374d55bd1732085b3"
+    },
+    {
+      "bytes": 9961,
+      "path": "Catalog15Identity.lean",
+      "role": "catalog_identity_proof",
+      "sha256": "9868cf52966b8f88537b12ac068836770559f71a4f6fbf67092177bf4a80c87d"
+    },
+    {
+      "bytes": 1067,
+      "path": "Catalog15BoundaryBlocks.lean",
+      "role": "catalog_boundary_proofs",
+      "sha256": "83124154a04e7399779fc294e8bc4bd6882c6dc3101a665492e8e5cf399b1b44"
+    },
+    {
+      "bytes": 101523,
+      "path": "Catalog15AllLookups.lean",
+      "role": "catalog_lookup_proofs",
+      "sha256": "95f36e94da09353f32b675cb7545985d7768904b439237a36af78544d98ac304"
+    },
+    {
+      "bytes": 319694,
+      "path": "Terminal15Compositional.lean",
+      "role": "leaf_acceptance_source",
+      "sha256": "48341e899c669d95d1fa8375a28f77a703855868143fbb7c4672ba4176442451"
+    },
+    {
+      "bytes": 12449128,
+      "path": "Terminal15Compositional.olean",
+      "role": "leaf_acceptance_object",
+      "sha256": "962aa4b6869d4dc7ddfd9c447a91979497fbac26f884af6f5032df0009feb25e"
+    },
+    {
+      "bytes": 8300,
+      "path": "Node51Replay.lean.template",
+      "role": "node51_replay_template",
+      "sha256": "67c7150435f38d47d7a2f0347f120817e28625df607af49c6ab23d0bacdcbca8"
+    },
+    {
+      "bytes": 8064,
+      "path": "generate_node51_replay.py",
+      "role": "node51_replay_generator",
+      "sha256": "84fd5e1f2b2cdf7d38448c83a4bd6b5019b7d2dd5e09a8a4f3ca80c8a6bf7588"
+    },
+    {
+      "bytes": 2952,
+      "path": "test_node51_generator_rejections.py",
+      "role": "generator_negative_controls",
+      "sha256": "d23131753a1fd81f3f1b2df95a3177ef1d0d547b29979399743bf11c9c0a0de2"
+    },
+    {
+      "bytes": 8883,
+      "path": "Node51Replay.lean",
+      "role": "node51_replay_source",
+      "sha256": "7d8f5a0b6e4ae9bf566cdc700a2eee08b29c4cec704bc96219920ac2e24dc150"
+    },
+    {
+      "bytes": 607232,
+      "path": "Node51Replay.olean",
+      "role": "node51_replay_object",
+      "sha256": "5df36747893421cae04a0bcdd82400afbaad9316b27aa5a93ce32163fd536457"
+    },
+    {
+      "bytes": 8883,
+      "path": "Node51Replay.generated.lean",
+      "role": "generated_node51_replay_source",
+      "sha256": "7d8f5a0b6e4ae9bf566cdc700a2eee08b29c4cec704bc96219920ac2e24dc150"
+    },
+    {
+      "bytes": 8723,
+      "path": "reference_dependencies/Node53Replay.lean",
+      "role": "node53_predecessor_source",
+      "sha256": "d3ab270499d165561d9345dac14404abcd2ad146be4051ea2a82501f9e121301"
+    },
+    {
+      "bytes": 601856,
+      "path": "reference_dependencies/Node53Replay.olean",
+      "role": "node53_predecessor_object",
+      "sha256": "c047e8dfad8e1731ca814de4b61145f17adc48ebca75f3a7e224a77d6187f5e9"
+    },
+    {
+      "bytes": 67500,
+      "path": "reference_dependencies/V4_SHA256SUMS.txt",
+      "role": "v4_predecessor_manifest_copy",
+      "sha256": "be971b9cecdfb7b4868220f54c5f04a10822fc98497b1f98e5960e2e2df93e96"
+    },
+    {
+      "bytes": 2472,
+      "path": "DECISIONS.json",
+      "role": "proof_decisions",
+      "sha256": "40ecc3882c25036b4570d754e27f474ec38a23683c396d7fc889657ae1c2707e"
+    },
+    {
+      "bytes": 5488,
+      "path": "REPORT.md",
+      "role": "mathematical_report",
+      "sha256": "32fc910f8b2ef940301dfd477c12b1617b6a7b9d572f29609a58671ec5ae36ee"
+    },
+    {
+      "bytes": 4960,
+      "path": "BULK_GENERATION.md",
+      "role": "bulk_generation_report",
+      "sha256": "10ca758b94178bc8abc7fc17c1ae37c6f4fa2dac99a0499bbf02aa477a303c8b"
+    },
+    {
+      "bytes": 4477,
+      "path": "RESOURCE_BENCHMARK.json",
+      "role": "resource_benchmark",
+      "sha256": "94e90ecc07dbd80bd9939788111e9a88f2c5a0d85c5066722d927dbbd3a0bec8"
+    },
+    {
+      "bytes": 802,
+      "path": "reference_dependencies/vrk/canonical.py",
+      "role": "vrk_source_canonical",
+      "sha256": "6d090bc16273a53e3037b13db55722a1755ea63a91fb649731589e25244eaba8"
+    },
+    {
+      "bytes": 955,
+      "path": "reference_dependencies/vrk/evidence.py",
+      "role": "vrk_source_evidence",
+      "sha256": "027e331ee1a2e69ac13166413d6a781504514fa5b45d70dddafdfee9ab47b862"
+    },
+    {
+      "bytes": 1377,
+      "path": "protocol/verify_candidate_manifest.py",
+      "role": "protocol_manifest_verifier",
+      "sha256": "d3015fafed29642d1b93594ab5aa3fc953480a703a9083087e366acc406423a1"
+    },
+    {
+      "bytes": 420,
+      "path": "ENVIRONMENT_CHECK.log",
+      "role": "environment_check",
+      "sha256": "36f74c9966085154855bbdf3cdd4d0a83a8ce0760247e0075ee907101d0da986"
+    }
+  ],
+  "authenticity_boundary": "The archive and file hashes identify these local bytes. Source stream to Lean literal translation and deterministic catalog selection remain externally replayed, not kernel proved.",
+  "frozen_source_stream_and_catalog_hashes": {
+    "catalog_stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "catalog_v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "catalog_v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d",
+    "stream_anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "stream_kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "stream_topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "local_worktree_head": "eb36159ee7e57053fcae3de025fe4dac539435ab",
+  "pinned_environment": {
+    "formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+    "lake": "5.0.0-src+d8b1897",
+    "lake_manifest_sha256": "1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129"
+  },
+  "scope": "Terminal 15 / node 51 bounded proof packet; no full-certificate authentication claimed"
+}
