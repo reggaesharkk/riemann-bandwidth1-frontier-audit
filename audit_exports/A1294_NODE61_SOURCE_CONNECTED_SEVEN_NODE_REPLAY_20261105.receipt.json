@@ -1,0 +1,60 @@
+{
+  "zip": "C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit\\audit_exports\\A1294_NODE61_SOURCE_CONNECTED_SEVEN_NODE_REPLAY_20261105.zip",
+  "bytes": 27964776,
+  "sha256": "8691e355d0641aadd850851cab50235fbb392c56c7489e8e33e7d68b3f753397",
+  "manifest_entries": 42,
+  "CRC": "PASS",
+  "independent_extraction_replays": [
+    {
+      "mode": [],
+      "script": "verify_packet.py",
+      "exit": 0,
+      "stdout": "PASS: manifests, preserved objects, original source prefix/catalog data, exact geometry, bounded controls and recorded clean Lean builds. Python verification is not a substitute for Lean replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [],
+      "script": "finish_decoders.py",
+      "exit": 0,
+      "stdout": "PASS: exact final decoder conversion; SHA256 ace3a4f761a6c15caf755845967effa266b6ed11a5968abb2d216fa26cc16a77\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-O"
+      ],
+      "script": "verify_packet.py",
+      "exit": 0,
+      "stdout": "PASS: manifests, preserved objects, original source prefix/catalog data, exact geometry, bounded controls and recorded clean Lean builds. Python verification is not a substitute for Lean replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-O"
+      ],
+      "script": "finish_decoders.py",
+      "exit": 0,
+      "stdout": "PASS: exact final decoder conversion; SHA256 ace3a4f761a6c15caf755845967effa266b6ed11a5968abb2d216fa26cc16a77\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-OO"
+      ],
+      "script": "verify_packet.py",
+      "exit": 0,
+      "stdout": "PASS: manifests, preserved objects, original source prefix/catalog data, exact geometry, bounded controls and recorded clean Lean builds. Python verification is not a substitute for Lean replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-OO"
+      ],
+      "script": "finish_decoders.py",
+      "exit": 0,
+      "stdout": "PASS: exact final decoder conversion; SHA256 ace3a4f761a6c15caf755845967effa266b6ed11a5968abb2d216fa26cc16a77\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "terminal20 and source-connected nodes61..67 kernel proved; complete root OPEN"
+}

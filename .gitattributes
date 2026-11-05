@@ -2,3 +2,10 @@
 /notes/WP84_CROSS_PROJECT_FRONTIER_2026_11_03.md text eol=lf
 /notes/WP84_CROSS_PROJECT_FRONTIER_SOURCES_2026_11_03.json text eol=lf
 /notes/WP84_CROSS_PROJECT_FRONTIER_2026_11_03.SHA256SUMS text eol=lf
+/audit_exports/** -text
+/AUDIT_EXPORTS_SYNC_README_20261106.md text eol=lf
+/AUDIT_EXPORTS_SYNC_MANIFEST_20261106.json -text
+/AUDIT_EXPORTS_RELEASE_ASSET_CANDIDATES_20261106.json -text
+/AUDIT_EXPORTS_SYNC_CONTROL_FILES_20261106.sha256 text eol=lf
+/audit_exports_sync_manifest.ps1 text eol=lf
+/README.md text eol=lf

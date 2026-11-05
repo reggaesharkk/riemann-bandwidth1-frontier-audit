@@ -1,0 +1,6 @@
+Read-only WSL resource check before sequential filesystem comparison:
+Mem total: 7.5 GiB; used: 752 MiB; free: 6.3 GiB; available: 6.8 GiB.
+Swap total: 2.0 GiB; used: 0 B.
+No Lean process was present. cgroup memory.max reported max.
+Filesystem: WSL root / on ext4 (/dev/sdd), 1007G total, 920G available; /mnt/c (C:) 279G total, 48G available.
+All benchmark Lean commands use -M6800 and timeout 150 seconds, run strictly sequentially. No cache flush or concurrent build was used.

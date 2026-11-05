@@ -1,0 +1,58 @@
+{
+  "terminal21": {
+    "exit": "0",
+    "wall": "1:43.26",
+    "peak_RSS_KiB": "5562884",
+    "major_faults": "158736",
+    "minor_faults": "818952",
+    "sorryAx": false
+  },
+  "source63": {
+    "exit": "0",
+    "wall": "0:26.34",
+    "peak_RSS_KiB": "5800436",
+    "major_faults": "63961",
+    "minor_faults": "675719",
+    "sorryAx": false
+  },
+  "transport": {
+    "exit": "0",
+    "wall": "0:30.76",
+    "peak_RSS_KiB": "5822564",
+    "major_faults": "75417",
+    "minor_faults": "638469",
+    "sorryAx": false
+  },
+  "helpers63": {
+    "exit": "0",
+    "wall": "0:48.60",
+    "peak_RSS_KiB": "5415540",
+    "major_faults": "142996",
+    "minor_faults": "769608",
+    "sorryAx": false
+  },
+  "replay63": {
+    "exit": "0",
+    "wall": "1:16.63",
+    "peak_RSS_KiB": "5484328",
+    "major_faults": "168904",
+    "minor_faults": "760566",
+    "sorryAx": false
+  },
+  "controls63": {
+    "exit": "0",
+    "wall": "0:31.58",
+    "peak_RSS_KiB": "5461132",
+    "major_faults": "77304",
+    "minor_faults": "850076",
+    "sorryAx": false
+  },
+  "replay63_failed_v1": {
+    "exit": "1",
+    "wall": "0:40.98",
+    "peak_RSS_KiB": "5474548",
+    "major_faults": "111864",
+    "minor_faults": "760624",
+    "sorryAx": true
+  }
+}

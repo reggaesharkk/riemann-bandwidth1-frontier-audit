@@ -1,0 +1,74 @@
+{
+  "environment": {
+    "lean": "leanprover/lean4:v4.33.0-rc2",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "lake": "5.0.0-src+d8b1897",
+    "formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+    "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129"
+  },
+  "limits": {
+    "lean_memory_cap_MiB": 6800,
+    "timeout_seconds": 150,
+    "sequential": true,
+    "cache_flush": false
+  },
+  "measurements": [
+    {
+      "module": "ImportOnlyCatalog18",
+      "filesystem": "/mnt/c",
+      "elapsed_seconds": 135.69,
+      "user_seconds": 6.32,
+      "system_seconds": 39.04,
+      "peak_rss_kib": 5347572,
+      "major_faults": 174395,
+      "exit": 0,
+      "log": "ImportOnlyCatalog18_mnt_c_run1.log"
+    },
+    {
+      "module": "ImportOnlyCatalog18",
+      "filesystem": "ext4",
+      "elapsed_seconds": 72.6,
+      "user_seconds": 3.81,
+      "system_seconds": 14.6,
+      "peak_rss_kib": 5429432,
+      "major_faults": 72692,
+      "exit": 0,
+      "log": "ImportOnlyCatalog18_ext4_run1.log"
+    },
+    {
+      "module": "Catalog18AllLookups",
+      "filesystem": "/mnt/c",
+      "elapsed_seconds": 120.37,
+      "user_seconds": 10.98,
+      "system_seconds": 26.38,
+      "peak_rss_kib": 5487320,
+      "major_faults": 162792,
+      "exit": 0,
+      "log": "Catalog18AllLookups_mnt_c_run1.log"
+    },
+    {
+      "module": "Catalog18AllLookups",
+      "filesystem": "ext4",
+      "elapsed_seconds": 90.63,
+      "user_seconds": 10.46,
+      "system_seconds": 18.17,
+      "peak_rss_kib": 5333036,
+      "major_faults": 140189,
+      "exit": 0,
+      "log": "Catalog18AllLookups_ext4_run1.log"
+    },
+    {
+      "module": "Catalog18AllLookups",
+      "filesystem": "/mnt/c prior same-task run",
+      "elapsed_seconds": 72.05,
+      "user_seconds": 9.46,
+      "system_seconds": 17.49,
+      "peak_rss_kib": 5497184,
+      "major_faults": 169579,
+      "exit": 0,
+      "log": "../catalog_all_lookups.log"
+    }
+  ],
+  "decision": "INCONCLUSIVE_NO_OPTIMIZATION_CLAIM",
+  "reason": "Only one ext4 run per module, no cache flushing, and repeated /mnt/c lookup elapsed times varied from 72.05s to 120.37s."
+}

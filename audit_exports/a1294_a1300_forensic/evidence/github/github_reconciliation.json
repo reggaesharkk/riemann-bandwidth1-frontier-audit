@@ -1,0 +1,83 @@
+{
+  "retrieval_mode": "read-only GitHub connector",
+  "private_repository": "riemann-bandwidth1-frontier-audit",
+  "pull_requests": [
+    {
+      "number": 1,
+      "topic": "A1290 replay",
+      "state_observed": "open",
+      "head_branch": "research/bandwidth1-v0.1",
+      "head_sha": "d7a371fcd1605d71e2bede7542fb2061a10acdb7",
+      "base_sha": "68c191b1679b2670151f4db1572c3a849c08cf17",
+      "reported_result": "independent PASS, 3550925 nodes, 1775463 leaves, 602 catalog entries, 31664 seams",
+      "lean_rebuild": "not run",
+      "relevance": "historical comparator only; not an A1294-A1300 certificate"
+    },
+    {
+      "number": 2,
+      "topic": "A1294 source-free certificate",
+      "state_observed": "open",
+      "head_branch": "research/bandwidth1-v0.2",
+      "head_sha": "de11ac12a161f93bba311b1ab251d2567f2772b3",
+      "base_sha": "d7a371fcd1605d71e2bede7542fb2061a10acdb7",
+      "target": {"A": "647/50000", "B": "1094977/5000000000"},
+      "head_sha_reported": "de11ac12a161f93bba311b1ab251d2567f2772b3",
+      "workflow_run_id": 37133363690,
+      "artifact_id": 11286675906,
+      "artifact_sha256_reported": "11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19",
+      "remaining_release_gates_in_PR_body": [
+        "source-free full replay outside the generating CI environment",
+        "preferably Lean kernel integration/replay of the new seam-aware finite certificate",
+        "final same-lineage priority search",
+        "final release bundle / rights audit / DOI deposit"
+      ],
+      "ci_claim_sha256_is_pr_reported_metadata": true
+    },
+    {
+      "number": 3,
+      "topic": "q8 eta retune",
+      "state_observed": "open",
+      "draft": true,
+      "head_branch": "research/frontier-6735-v0.1",
+      "head_sha": "630af9b066cd84af9a2a92ded6f1a569367eb916",
+      "base_sha": "68c191b1679b2670151f4db1572c3a849c08cf17",
+      "relevance": "distinct framework conditional on imported q8 certificates; does not prove any A1294-A1300 candidate"
+    }
+  ],
+  "workflow_run": {
+    "id": 37133363690,
+    "head_sha": "3b748a75ad619ee130c4fabd22792102ccbe986c",
+    "workflow_path": ".github/workflows/a1294-seam-full-certificate.yml",
+    "event": "push",
+    "run_attempt": 2,
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {"id": 111232780404, "name": "generate", "conclusion": "success", "successful_steps": ["Generate complete canonical certificate", "Upload generated certificate"]},
+      {"id": 111284670404, "name": "verify", "conclusion": "success", "successful_steps": ["Download generated certificate", "Independent verifier", "Freeze hashes and feedback", "Upload verified certificate"]}
+    ]
+  },
+  "artifact_recovery": {
+    "artifact_id": 11286675906,
+    "cached_inventory": {
+      "path_in_packet": "evidence/github/ACTIONS_ARTIFACT_INVENTORY.json",
+      "collected": "2026-10-08",
+      "bytes": 37001,
+      "sha256": "dab967361938c4ee72d95816cc81b3200f1a56322648c49c312f582ed9c7b2f3",
+      "inventory_recorded_expired_at_collection": false,
+      "inventory_expiration_utc": "2026-11-02T22:30:42Z"
+    },
+    "historical_inventory_expiration_utc": "2026-11-02T22:30:42Z",
+    "current_artifact_listing": "empty",
+    "direct_download": "HTTP 404 Not Found",
+    "original_github_zip_recovered": false,
+    "claim_sha256": "11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19"
+  },
+  "upstream_pr": {
+    "repository": "anthropics/formal-math",
+    "number": 17,
+    "pinned_source_head": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+    "separate_from_candidate_certificate": true
+  },
+  "important_distinction": "The local V2 source-free replay ZIP has a different SHA-256 and is not claimed to be the expired Actions artifact."
+}

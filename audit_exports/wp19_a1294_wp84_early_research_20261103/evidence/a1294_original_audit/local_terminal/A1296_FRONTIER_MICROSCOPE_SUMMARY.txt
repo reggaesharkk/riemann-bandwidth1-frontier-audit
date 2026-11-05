@@ -1,0 +1,35 @@
+A1296 frontier microscope
+Pending total in 5M run: 1024
+Deepest boxes analyzed: 200
+
+LOW_MIDDLE_GAP: count=163 depth=66..75 mean_depth=69.18
+  center mean: 6.585186, 12.471577, 6.565516, 12.469713, 6.586922
+  mean seam-scalar partials per box: 8.37
+  top piece indices: 75:133, 76:111, 109:78, 84:74, 24:71, 108:66, 86:60, 74:47, 107:46, 106:45, 87:33, 77:28
+  seam partial indices: 0:57, 1:95, 2:105, 3:151, 4:162, 5:36, 6:68, 7:117, 8:136, 9:47, 10:75, 11:114, 12:50, 13:112, 14:39
+
+HIGH_MIDDLE_GAP: count=37 depth=67..73 mean_depth=68.49
+  center mean: 6.597290, 12.559551, 12.613047, 12.551336, 6.601002
+  mean seam-scalar partials per box: 5.62
+  top piece indices: 41:70, 21:67, 48:35, 33:32, 76:23, 89:16, 115:12, 94:9, 91:9, 77:9, 90:8, 93:8
+  seam partial indices: 0:15, 1:25, 2:31, 3:1, 4:2, 5:15, 6:1, 7:5, 8:2, 9:9, 10:3, 11:36, 12:15, 13:25, 14:23
+
+Global seam partial indices:
+0:72, 1:120, 2:136, 3:152, 4:164, 5:51, 6:69, 7:122, 8:138, 9:56, 10:78, 11:150, 12:65, 13:137, 14:62
+
+Nearest box center to exact frozen-catalog witness:
+{
+  "distance": 0.02526901940869218,
+  "index": 10,
+  "depth": 73,
+  "center": [
+    6.5753173828125,
+    12.48504638671875,
+    6.56524658203125,
+    12.46124267578125,
+    6.5899658203125
+  ],
+  "seam_count": 3
+}
+
+Send A1296_FRONTIER_MICROSCOPE_RESULT.json to ChatGPT / sync results folder to Drive.

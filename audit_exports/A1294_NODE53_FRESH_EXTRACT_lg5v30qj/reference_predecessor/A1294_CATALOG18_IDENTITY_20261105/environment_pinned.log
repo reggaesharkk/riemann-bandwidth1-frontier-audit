@@ -1,0 +1,12 @@
+Read-only pinned environment check (WSL, 2026-11-05)
+Command:
+  wsl.exe -- bash -lc 'cd /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23 && printf "LEAN_TOOLCHAIN=" && cat lean-toolchain && lean --version && lake --version && git rev-parse HEAD && printf "MATHLIB=" && git -C ../mathlib rev-parse HEAD 2>/dev/null || true && sha256sum lake-manifest.json'
+
+Output:
+LEAN_TOOLCHAIN=leanprover/lean4:v4.33.0-rc2
+Lean (version 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0-rc2)
+fba91d214655aaa1fd0504bb893c8859c20c79f9
+MATHLIB=1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448  lake-manifest.json
+
+The command's final line is the lake-manifest hash. Mathlib's exact commit was read from the manifest's `packages` entry (`51e6992efd06126df61a496bebf8f49482a4e129`). It was not printed by the attempted `git -C ../mathlib` path because the repository is stored in Lake's package directory.

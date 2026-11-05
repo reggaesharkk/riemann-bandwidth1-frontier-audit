@@ -1,0 +1,48 @@
+⚠ [8704/8704] Built Zeta23.ThmD.Sextuple.A1294Pilot (30s)
+warning: Zeta23/ThmD/Sextuple/A1294Pilot.lean:75:10: This simp argument is unused:
+  selectedBox
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [tailLeafBox, tailLeafPath, descend, reconstructedBox, initialGapBox, GapBox.lowerHalf, GapBox.upperHalf,
+    GapBox.midpoint, Function.update]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/ThmD/Sextuple/A1294Pilot.lean:106:4: This simp argument is unused:
+  checkAffineTree
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [replayAffineTree, CursorStream.get?, CursorStream.ofList, tailLeafTopology, tailLeafPayloads,
+    tailLeafChecker, affineLeafCheck, tailLeaf_check_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:128:0: 'A1294Pilot.exact_tail_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:129:0: 'A1294Pilot.tail_span_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:130:0: 'A1294Pilot.tail_covers_root_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:131:0: 'A1294Pilot.extracted_path_reconstructs_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:132:0: 'A1294Pilot.source_tail_leaf_checker_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:133:0: 'A1294Pilot.source_tail_leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:134:0: 'A1294Pilot.selected_complete_subtree_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8704 jobs).
+	Command being timed: "lake build Zeta23.ThmD.Sextuple.A1294Pilot"
+	User time (seconds): 11.23
+	System time (seconds): 15.09
+	Percent of CPU this job got: 63%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:41.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5430080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 97785
+	Minor (reclaiming a frame) page faults: 758927
+	Voluntary context switches: 277428
+	Involuntary context switches: 7133
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

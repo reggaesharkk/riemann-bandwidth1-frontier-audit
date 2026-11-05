@@ -1,0 +1,500 @@
+17a2562b84eb4354bce705355a4ada833e321a135f8a354c7d4208934b2e71d3  Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:23:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:71:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:217:60: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  825
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:217:67: error: Function expected at
+  128
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  5170581624709583018970186520240204081
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:217:109: error: Function expected at
+  3200000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_0
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:244:61: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  2475
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:244:69: error: Function expected at
+  128
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  1755263779336959657910023102330969
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:244:108: error: Function expected at
+  7812500000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_2
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:279:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  3315
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:279:70: error: Function expected at
+  128
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  6876046637736468087644507155946023489
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:279:112: error: Function expected at
+  80000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_3
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:293:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  4155
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:293:70: error: Function expected at
+  128
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  7594713117315031921983662976367761841
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:293:112: error: Function expected at
+  80000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_4
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:305:60: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:305:68: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:305:107: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_5
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:327:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1245
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:327:70: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  29727308394007168144031841183195847081
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:327:112: error: Function expected at
+  500000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_7
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:368:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1665
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:368:70: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  6876046637736468087644507155946023489
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:368:111: error: Function expected at
+  80000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_8
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:377:60: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  405
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:377:68: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  21287960894909617826490440080249
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:377:104: error: Function expected at
+  5000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_9
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:406:62: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1245
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:406:70: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  1755263779336959657910023102330969
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:406:108: error: Function expected at
+  7812500000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_11
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:418:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:418:69: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:418:108: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_12
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:438:61: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:438:68: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:438:107: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_left_14
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:450:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:450:69: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:450:108: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_0
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:472:62: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1245
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:472:71: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  29727308394007168144031841183195847081
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:472:113: error: Function expected at
+  500000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_2
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:505:62: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1665
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:505:70: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  1060756076606974029304872234228987649
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:505:111: error: Function expected at
+  5000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_3
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:511:61: error: Function expected at
+  8
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  2085
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:511:68: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  245028537159250067459167806169
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:511:102: error: Function expected at
+  1250000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_4
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:523:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:523:69: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:523:108: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_5
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:545:62: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1245
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:545:71: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  29727308394007168144031841183195847081
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:545:113: error: Function expected at
+  500000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_7
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:586:62: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1665
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:586:71: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  6876046637736468087644507155946023489
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:586:112: error: Function expected at
+  80000000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_8
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:595:61: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  405
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:595:69: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  21287960894909617826490440080249
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:595:105: error: Function expected at
+  5000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_9
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:624:63: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  1245
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:624:71: error: Function expected at
+  64
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  1755263779336959657910023102330969
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:624:109: error: Function expected at
+  7812500000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_11
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:636:62: error: Function expected at
+  128
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:636:70: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:636:109: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_12
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:656:62: error: Function expected at
+  64
+but this term has type
+  ?m.22
+
+Note: Expected a function because this term is being applied to the argument
+  105
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:656:69: error: Function expected at
+  16
+but this term has type
+  ?m.25
+
+Note: Expected a function because this term is being applied to the argument
+  12892869620170946020955818564495929
+Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean:656:108: error: Function expected at
+  50000000000000000000000000000000000000
+but this term has type
+  ?m.28
+
+Note: Expected a function because this term is being applied to the argument
+  segments_right_14
+Command exited with non-zero status 1
+	Command being timed: "lake env lean Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean -o Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.olean"
+	User time (seconds): 10.35
+	System time (seconds): 38.93
+	Percent of CPU this job got: 45%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:48.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5592652
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 159973
+	Minor (reclaiming a frame) page faults: 780413
+	Voluntary context switches: 220376
+	Involuntary context switches: 505
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

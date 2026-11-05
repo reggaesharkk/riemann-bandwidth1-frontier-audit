@@ -1,0 +1,196 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:772:90: error: unsolved goals
+hlen : decide (0 < segments1.length) = true
+hall : segments1.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments1.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments1, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:778:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_1, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:899:91: error: unsolved goals
+hlen : decide (0 < segments2.length) = true
+hall : segments2.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments2.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments2, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:905:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_2, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1146:90: error: unsolved goals
+hlen : decide (0 < segments3.length) = true
+hall : segments3.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments3.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments3, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1152:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_3, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1471:91: error: unsolved goals
+hlen : decide (0 < segments4.length) = true
+hall : segments4.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments4.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments4, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1477:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_4, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1737:90: error: unsolved goals
+hlen : decide (0 < segments6.length) = true
+hall : segments6.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments6.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments6, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1743:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_6, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1912:89: error: unsolved goals
+hlen : decide (0 < segments7.length) = true
+hall : segments7.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments7.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments7, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:1918:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_7, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2237:91: error: unsolved goals
+hlen : decide (0 < segments8.length) = true
+hall : segments8.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments8.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments8, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2243:73: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_8, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2437:92: error: unsolved goals
+hlen : decide (0 < segments10.length) = true
+hall : segments10.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments10.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments10, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2443:74: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_10, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2618:94: error: unsolved goals
+hlen : decide (0 < segments11.length) = true
+hall : segments11.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments11.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments11, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2624:74: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_11, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2884:91: error: unsolved goals
+hlen : decide (0 < segments13.length) = true
+hall : segments13.all (sourceSegmentCheck (0 / 1)) = true
+hp : (segments13.all fun s => s.piece.check) = true
+⊢ ∀ x ∈ segments13, sourceSegmentCheck 0 x = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:2890:74: warning: This simp argument is unused:
+  hall
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [certifiedPiecewiseCheck, sourcePiecewiseCheck, hlen, coverage_13, hp]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean:3092:225: warning: This simp argument is unused:
+  interpRat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rows, decodedRow, decode_0, decode_1, decode_2, decode_3, decode_4, decode_5, decode_6, decode_7,
+    decode_8, decode_9, decode_10, decode_11, decode_12, decode_13, decode_14, interpModel, terms, floors]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+theorem AuthenticCompact17.accepted : compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor
+    rows =
+  true :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (decide (∀ (p : Fin 15), compactRowCheck catalog box p (rows p) = true) &&
+              rankTangentCheck (647 / 50000) (1094977 / 5000000000) box anchor _a) =
+            true)
+        interpreted_terms))
+    (of_eq_true
+      (Eq.trans
+        (congrFun'
+          (congrArg Eq
+            (Eq.trans
+              (congr
+                (congrArg and
+                  (Eq.trans
+                    (Decidable.decide.congr_simp (∀ (p : Fin 15), compactRowCheck catalog box p (rows p) = true) True
+                      (Eq.trans
+                        (forall_congr fun p => Eq.trans (congrFun' (congrArg Eq (all_rows p)) true) (eq_self true))
+                        (implies_true (Fin 15))))
+                    (decide_true instDecidableTrue)))
+                tangent_checked)
+              (Bool.and_self true)))
+          true)
+        (eq_self true))))
+theorem AuthenticCompact17.accepted_original : compactQuadraticLeafCheck Catalog17.original (647 / 50000)
+    (1094977 / 5000000000) box anchor rows =
+  true :=
+Eq.mpr
+  (id
+    (congrArg (fun _a => compactQuadraticLeafCheck _a (647 / 50000) (1094977 / 5000000000) box anchor rows = true)
+      Catalog17Identity.original_eq_catalog))
+  accepted
+theorem AuthenticCompact17.leaf_sound : ∀ ⦃g : Fin 5 → ℝ⦄,
+  box.Holds g → ↑(647 / 50000) ≤ sextupleEnergy g + ↑(1094977 / 5000000000) * sextupleSpan g :=
+compactQuadraticLeafCheck_sound accepted_original
+'AuthenticCompact17.all_rows' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AuthenticCompact17.tangent_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact17.accepted' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AuthenticCompact17.leaf_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Command exited with non-zero status 1
+	Command being timed: "timeout 360 lake env lean -M6000 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17Compositional.olean"
+	User time (seconds): 253.34
+	System time (seconds): 46.04
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:49.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5370860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 159308
+	Minor (reclaiming a frame) page faults: 2239607
+	Voluntary context switches: 274801
+	Involuntary context switches: 14137
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

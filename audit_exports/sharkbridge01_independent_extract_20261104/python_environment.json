@@ -1,0 +1,6 @@
+{
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:31:18) [MSC v.1943 64 bit (ARM64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "zlib_build": "1.3.1",
+  "zlib_runtime": "1.3.1"
+}

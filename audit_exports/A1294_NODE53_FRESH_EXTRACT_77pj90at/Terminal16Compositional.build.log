@@ -1,0 +1,75 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105/Terminal16Compositional.lean:2957:225: warning: This simp argument is unused:
+  interpRat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rows, decodedRow, decode_0, decode_1, decode_2, decode_3, decode_4, decode_5, decode_6, decode_7,
+    decode_8, decode_9, decode_10, decode_11, decode_12, decode_13, decode_14, interpModel, terms, floors]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+theorem AuthenticCompact16.accepted : compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor
+    rows =
+  true :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (decide (∀ (p : Fin 15), compactRowCheck catalog box p (rows p) = true) &&
+              rankTangentCheck (647 / 50000) (1094977 / 5000000000) box anchor _a) =
+            true)
+        interpreted_terms))
+    (of_eq_true
+      (Eq.trans
+        (congrFun'
+          (congrArg Eq
+            (Eq.trans
+              (congr
+                (congrArg and
+                  (Eq.trans
+                    (Decidable.decide.congr_simp (∀ (p : Fin 15), compactRowCheck catalog box p (rows p) = true) True
+                      (Eq.trans
+                        (forall_congr fun p => Eq.trans (congrFun' (congrArg Eq (all_rows p)) true) (eq_self true))
+                        (implies_true (Fin 15))))
+                    (decide_true instDecidableTrue)))
+                tangent_checked)
+              (Bool.and_self true)))
+          true)
+        (eq_self true))))
+theorem AuthenticCompact16.accepted_original : compactQuadraticLeafCheck Catalog16.original (647 / 50000)
+    (1094977 / 5000000000) box anchor rows =
+  true :=
+Eq.mpr
+  (id
+    (congrArg (fun _a => compactQuadraticLeafCheck _a (647 / 50000) (1094977 / 5000000000) box anchor rows = true)
+      Catalog16Identity.original_eq_catalog))
+  accepted
+theorem AuthenticCompact16.leaf_sound : ∀ ⦃g : Fin 5 → ℝ⦄,
+  box.Holds g → ↑(647 / 50000) ≤ sextupleEnergy g + ↑(1094977 / 5000000000) * sextupleSpan g :=
+compactQuadraticLeafCheck_sound accepted_original
+'AuthenticCompact16.all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact16.tangent_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact16.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact16.leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 360 lake env lean -M6400 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105/Terminal16Compositional.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105/Terminal16Compositional.olean"
+	User time (seconds): 196.21
+	System time (seconds): 36.26
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:00.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5256076
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 177049
+	Minor (reclaiming a frame) page faults: 2046959
+	Voluntary context switches: 299381
+	Involuntary context switches: 13934
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

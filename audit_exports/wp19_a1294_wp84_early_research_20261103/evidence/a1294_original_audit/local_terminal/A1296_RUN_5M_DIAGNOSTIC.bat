@@ -1,0 +1,24 @@
+@echo off
+setlocal EnableExtensions
+title A1296 5M Launcher
+set "DL=%USERPROFILE%\Downloads"
+set "WORK=%DL%\A1296_5M_DIAGNOSTIC"
+set "PACKAGE="
+for %%F in ("%DL%\A1296_5M_DIAGNOSTIC_PACKAGE*.zip") do if exist "%%~fF" set "PACKAGE=%%~fF"
+if not defined PACKAGE goto NOZIP
+if exist "%WORK%" rmdir /s /q "%WORK%"
+mkdir "%WORK%"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Expand-Archive -LiteralPath '%PACKAGE%' -DestinationPath '%WORK%' -Force"
+if errorlevel 1 goto FAIL
+set "RUNNER=%WORK%\A1296_5M_DIAGNOSTIC_PACKAGE\RUN_A1296_5M.bat"
+if not exist "%RUNNER%" goto FAIL
+call "%RUNNER%"
+exit /b %ERRORLEVEL%
+:NOZIP
+echo ERROR: Put A1296_5M_DIAGNOSTIC_PACKAGE.zip in Downloads.
+pause
+exit /b 1
+:FAIL
+echo ERROR: Could not extract/start package.
+pause
+exit /b 1

@@ -1,0 +1,36 @@
+Host worktree HEAD: eb36159ee7e57053fcae3de025fe4dac539435ab
+Upstream formal-math pin: fba91d214655aaa1fd0504bb893c8859c20c79f9
+
+Observed local tools:
+  Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+  Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+  elan toolchains: leanprover/lean4:v4.35.0; leanprover/lean4:v4.36.0-rc1
+  Python 3.12.10
+
+Required upstream `zeta23/lean-toolchain` content:
+  leanprover/lean4:v4.33.0-rc2
+
+Required setup attempts:
+  `elan toolchain install leanprover/lean4:v4.33.0-rc2`
+  Output began: `info: downloading https://releases.lean-lang.org/lean4/v4.33.0-rc2/lean-4.33.0-rc2-windows.tar.zst`
+  The process remained active without progress; it was interrupted after checking the shell's unavailable GitHub network path. The required toolchain did not appear in `elan toolchain list`.
+
+  `git clone --filter=blob:none --no-checkout https://github.com/anthropics/formal-math.git audit_exports/a1294_lean_pilot_20261104/formal-math-pinned`
+  Clone initialized, but checkout of `fba91d214655aaa1fd0504bb893c8859c20c79f9` failed with:
+  `fatal: unable to access 'https://github.com/anthropics/formal-math.git/': Could not resolve host: github.com`
+  `fatal: unable to read tree (fba91d214655aaa1fd0504bb893c8859c20c79f9)`
+  The failed clone directory was removed after path containment verification.
+
+  `wsl --list --quiet`
+  Returned `Wsl/E_ACCESSDENIED`.
+
+Build/replay measurements:
+  No Lean/Lake build command was run because the exact environment gate failed.
+  No Lean compilation time, kernel replay time, peak RAM, or proof-data-size measurement is available.
+  Prior full Python replay result (included separately) reports 18,897.78099999996 seconds; this is historical Python replay data, not a measurement made in this pilot.
+
+Input checks performed:
+  `python -m zipfile -t <A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip>` -> `Done testing`
+  Separate ZIP extraction completed successfully.
+  `python preflight.py` -> `PREFLIGHT PASS`, visited_nodes 13454121.
+  The preflight script checks expected schema/count and file presence; it does not hash every payload or prove any mathematical inequality.

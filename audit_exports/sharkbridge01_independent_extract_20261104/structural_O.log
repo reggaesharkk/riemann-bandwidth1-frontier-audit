@@ -1,0 +1,13 @@
+{
+  "lossless_inverse": "PASS",
+  "row_occurrences": 30,
+  "unique_rows": 14,
+  "reflection_delta_rows": 13,
+  "raw_rows_bytes": 1504,
+  "ordinary_row_intern_bytes": 899,
+  "ordinary_row_intern_zlib": 295,
+  "reflection_residual_bytes": 1960,
+  "reflection_residual_zlib": 399,
+  "scope": "row substream only; not a full-payload compression comparison",
+  "K11": "not used; no injective exact reconstruction of arbitrary 99-vector from 11 coordinates without residual"
+}

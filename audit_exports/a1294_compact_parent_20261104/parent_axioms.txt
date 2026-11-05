@@ -1,0 +1,4 @@
+'A1294CompactParent.source_children_match_parent_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactRight.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294CompactParent.source_parent_box_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]

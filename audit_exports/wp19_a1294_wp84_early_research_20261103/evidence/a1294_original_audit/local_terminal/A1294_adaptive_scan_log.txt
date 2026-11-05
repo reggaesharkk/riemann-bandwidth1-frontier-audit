@@ -1,0 +1,78 @@
+A1294-A1299 adaptive scan started 
+Base: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE 
+==============================================================================
+A1294-A1299 ADAPTIVE FRONTIER SCAN
+==============================================================================
+Machine: ARM64 Windows-11-10.0.26200-SP0
+Python: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:31:18) [MSC v.1943 64 bit (ARM64)]
+Workers: 6
+Chunk nodes: 5000
+Initial boxes: 32
+Budget/candidate: 80,000 nodes
+
+------------------------------------------------------------------------------
+A1294 A = 1294/100000
+------------------------------------------------------------------------------
+Visited: 101,527
+Pending frontier: 149
+Max depth: 58
+Throughput: 3281.73 nodes/sec
+Vs GitHub: 4.62x
+Wall: 30.94 sec
+
+------------------------------------------------------------------------------
+A1295 A = 1295/100000
+------------------------------------------------------------------------------
+Visited: 102,135
+Pending frontier: 143
+Max depth: 58
+Throughput: 3306.30 nodes/sec
+Vs GitHub: 4.65x
+Wall: 30.89 sec
+
+------------------------------------------------------------------------------
+A1296 A = 1296/100000
+------------------------------------------------------------------------------
+Visited: 102,815
+Pending frontier: 131
+Max depth: 58
+Throughput: 1630.38 nodes/sec
+Vs GitHub: 2.29x
+Wall: 63.06 sec
+
+------------------------------------------------------------------------------
+A1297 A = 1297/100000
+------------------------------------------------------------------------------
+Visited: 103,487
+Pending frontier: 145
+Max depth: 58
+Throughput: 3144.93 nodes/sec
+Vs GitHub: 4.42x
+Wall: 32.91 sec
+
+------------------------------------------------------------------------------
+A1298 A = 1298/100000
+------------------------------------------------------------------------------
+Visited: 104,178
+Pending frontier: 142
+Max depth: 58
+Throughput: 3156.91 nodes/sec
+Vs GitHub: 4.44x
+Wall: 33.00 sec
+
+------------------------------------------------------------------------------
+A1299 A = 1299/100000
+------------------------------------------------------------------------------
+Visited: 104,828
+Pending frontier: 154
+Max depth: 58
+Throughput: 3098.85 nodes/sec
+Vs GitHub: 4.36x
+Wall: 33.83 sec
+
+==============================================================================
+DONE
+Result: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE\results\A1294_A1299_ADAPTIVE_FRONTIER_RESULT.json
+Summary: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE\results\A1294_A1299_ADAPTIVE_FRONTIER_SUMMARY.txt
+Total wall seconds: 224.67
+==============================================================================

@@ -1,0 +1,91 @@
+{
+  "import": {
+    "exit": "0",
+    "wall": "1:10.71",
+    "user_seconds": "3.35",
+    "system_seconds": "21.11",
+    "peak_RSS_KiB": "5503468",
+    "major_faults": "158391",
+    "sorryAx": false
+  },
+  "lookup": {
+    "exit": "0",
+    "wall": "0:25.05",
+    "user_seconds": "4.00",
+    "system_seconds": "8.68",
+    "peak_RSS_KiB": "5791588",
+    "major_faults": "49150",
+    "sorryAx": false
+  },
+  "direct": {
+    "exit": "1",
+    "wall": "1:23.67",
+    "user_seconds": "5.40",
+    "system_seconds": "31.54",
+    "peak_RSS_KiB": "5482872",
+    "major_faults": "157358",
+    "sorryAx": true
+  },
+  "ext4_import": {
+    "exit": "0",
+    "wall": "0:32.66",
+    "user_seconds": "3.91",
+    "system_seconds": "11.13",
+    "peak_RSS_KiB": "5419344",
+    "major_faults": "94764",
+    "sorryAx": false
+  },
+  "ext4_lookup": {
+    "exit": "1",
+    "wall": "0:00.10",
+    "user_seconds": "0.03",
+    "system_seconds": "0.06",
+    "peak_RSS_KiB": "91600",
+    "major_faults": "5",
+    "sorryAx": false
+  },
+  "ext4_import_repeat": {
+    "exit": "0",
+    "wall": "1:18.12",
+    "user_seconds": "4.01",
+    "system_seconds": "29.51",
+    "peak_RSS_KiB": "5490084",
+    "major_faults": "155935",
+    "sorryAx": false
+  },
+  "ext4_lookup_repeat": {
+    "exit": "0",
+    "wall": "0:19.67",
+    "user_seconds": "3.29",
+    "system_seconds": "7.15",
+    "peak_RSS_KiB": "6002716",
+    "major_faults": "43167",
+    "sorryAx": false
+  },
+  "boundary_failed_v1": {
+    "exit": "1",
+    "wall": "0:23.07",
+    "user_seconds": "3.27",
+    "system_seconds": "8.84",
+    "peak_RSS_KiB": "5380148",
+    "major_faults": "46528",
+    "sorryAx": false
+  },
+  "boundary": {
+    "exit": "0",
+    "wall": "1:08.03",
+    "user_seconds": "3.65",
+    "system_seconds": "19.97",
+    "peak_RSS_KiB": "5495888",
+    "major_faults": "161315",
+    "sorryAx": false
+  },
+  "statements": {
+    "exit": "0",
+    "wall": "1:10.62",
+    "user_seconds": "3.91",
+    "system_seconds": "19.16",
+    "peak_RSS_KiB": "5485928",
+    "major_faults": "161526"
+  }
+}

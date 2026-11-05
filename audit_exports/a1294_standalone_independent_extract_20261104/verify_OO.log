@@ -1,0 +1,2 @@
+PASS: unchanged generic math prefix; no original acceptance imports/references/default lookups; all exact 208 source segment occurrences and floors reconstructed from 107 interned records. This is external provenance verification, not kernel authentication of V2 bytes.
+PASS: exact sources/objects, successful independent compiler logs and axioms, no historical acceptance import in complete loaded-module closure. Failed optional path modules are excluded from success. Python is not the Lean kernel or a cryptographic authenticity anchor.

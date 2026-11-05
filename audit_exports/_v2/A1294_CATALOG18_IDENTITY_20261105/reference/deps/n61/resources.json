@@ -1,0 +1,66 @@
+{
+  "terminal20": {
+    "exit": "0",
+    "wall": "1:23.85",
+    "descendant_peak_RSS_KiB": "5497656",
+    "major_faults": "168863",
+    "minor_faults": "880775",
+    "sorryAx": false
+  },
+  "source61": {
+    "exit": "0",
+    "wall": "0:16.64",
+    "descendant_peak_RSS_KiB": "6003356",
+    "major_faults": "33722",
+    "minor_faults": "688780",
+    "sorryAx": false
+  },
+  "helpers61": {
+    "exit": "0",
+    "wall": "0:26.16",
+    "descendant_peak_RSS_KiB": "5412336",
+    "major_faults": "65956",
+    "minor_faults": "684495",
+    "sorryAx": false
+  },
+  "replay61": {
+    "exit": "0",
+    "wall": "0:32.86",
+    "descendant_peak_RSS_KiB": "5504228",
+    "major_faults": "93716",
+    "minor_faults": "874923",
+    "sorryAx": false
+  },
+  "controls61": {
+    "exit": "0",
+    "wall": "1:07.00",
+    "descendant_peak_RSS_KiB": "5491220",
+    "major_faults": "153046",
+    "minor_faults": "701670",
+    "sorryAx": false
+  },
+  "statements": {
+    "exit": "0",
+    "wall": "1:12.84",
+    "descendant_peak_RSS_KiB": "5488648",
+    "major_faults": "156185",
+    "minor_faults": "704989",
+    "sorryAx": false
+  },
+  "terminal20_failed_v1": {
+    "exit": "1",
+    "wall": "1:19.63",
+    "descendant_peak_RSS_KiB": "5483140",
+    "major_faults": "175402",
+    "minor_faults": "673627",
+    "sorryAx": true
+  },
+  "terminal20_failed_v2": {
+    "exit": "1",
+    "wall": "1:43.76",
+    "descendant_peak_RSS_KiB": "5492340",
+    "major_faults": "164255",
+    "minor_faults": "783187",
+    "sorryAx": false
+  }
+}

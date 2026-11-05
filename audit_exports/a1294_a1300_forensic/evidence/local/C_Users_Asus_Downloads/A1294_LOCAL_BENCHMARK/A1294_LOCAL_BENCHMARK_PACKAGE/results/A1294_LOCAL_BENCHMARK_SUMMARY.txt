@@ -1,0 +1,7 @@
+A1294 local benchmark
+Single:   683.09 nodes/sec  (0.96x GitHub)
+Parallel: 605.35 nodes/sec  (0.85x GitHub)
+Workers: 6
+Machine: ARM64
+
+Send A1294_LOCAL_BENCHMARK_RESULT.json back to ChatGPT.

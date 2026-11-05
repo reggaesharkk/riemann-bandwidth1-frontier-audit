@@ -1,0 +1,52 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE51_TERMINAL15_20261105/Terminal15Compositional.lean:3042:225: warning: This simp argument is unused:
+  interpRat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rows, decodedRow, decode_0, decode_1, decode_2, decode_3, decode_4, decode_5, decode_6, decode_7,
+    decode_8, decode_9, decode_10, decode_11, decode_12, decode_13, decode_14, interpModel, terms, floors]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+theorem AuthenticCompact15.accepted : compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor
+    rows =
+  true :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (decide (∀ (p : Fin 15), compactRowCheck catalog box p (rows p) = true) &&
+              rankTangentCheck (647 / 50000) (1094977 / 5000000000) box anchor _a) =
+            true)
+        interpreted_terms))
+    (of_eq_true
+      (Eq.trans
+        (congrFun'
+          (congrArg Eq
+            (Eq.trans
+              (congr
+                (congrArg and
+                  (Eq.trans
+                    (Decidable.decide.congr_simp (∀ (p : Fin 15), compactRowCheck catalog box p (rows p) = true) True
+                      (Eq.trans
+                        (forall_congr fun p => Eq.trans (congrFun' (congrArg Eq (all_rows p)) true) (eq_self true))
+                        (implies_true (Fin 15))))
+                    (decide_true instDecidableTrue)))
+                tangent_checked)
+              (Bool.and_self true)))
+          true)
+        (eq_self true))))
+theorem AuthenticCompact15.accepted_original : compactQuadraticLeafCheck Catalog15.original (647 / 50000)
+    (1094977 / 5000000000) box anchor rows =
+  true :=
+Eq.mpr
+  (id
+    (congrArg (fun _a => compactQuadraticLeafCheck _a (647 / 50000) (1094977 / 5000000000) box anchor rows = true)
+      Catalog15Identity.original_eq_catalog))
+  accepted
+theorem AuthenticCompact15.leaf_sound : ∀ ⦃g : Fin 5 → ℝ⦄,
+  box.Holds g → ↑(647 / 50000) ≤ sextupleEnergy g + ↑(1094977 / 5000000000) * sextupleSpan g :=
+compactQuadraticLeafCheck_sound accepted_original
+'AuthenticCompact15.all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact15.tangent_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact15.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact15.leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]

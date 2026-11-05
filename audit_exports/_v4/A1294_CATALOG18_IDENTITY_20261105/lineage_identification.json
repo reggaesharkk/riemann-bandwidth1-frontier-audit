@@ -1,0 +1,18 @@
+{
+  "intentseal_verifiable_research_kernel_v0_3_1": {
+    "sha256": "c18c4c697d8188490e96530cfb5ddcb2e63f7c65aa560415401b1541e575cd79",
+    "bytes": 177783,
+    "identity": "published release archive"
+  },
+  "intentseal_verification_kernel_lineage_final_published_v0_1_1_to_v0_5_0": {
+    "sha256": "05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0",
+    "bytes": 161324,
+    "identity": "final published frozen lineage; corrected identification"
+  },
+  "intentseal_verification_kernel_lineage_historical_inventory": {
+    "sha256": "14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db",
+    "bytes": 148371,
+    "identity": "historical inventory only; not the final published lineage"
+  },
+  "handling": "All archives are preserved byte-for-byte. No signing secrets accessed. Hash/evidence-root functions are used for local provenance only; no signature or mathematical-proof claim is made."
+}

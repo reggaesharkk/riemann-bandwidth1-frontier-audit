@@ -1,0 +1,9 @@
+Lean (version 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0-rc2)
+fba91d214655aaa1fd0504bb893c8859c20c79f9
+51e6992efd06126df61a496bebf8f49482a4e129
+0d3c76ccd8772d8bcbe207241421a760312b71a6aa82f84194391fdf5cb026d6  lean-toolchain
+1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448  lake-manifest.json
+64a198e5042931f3785c440a78722e9b3f8e62cdd4843854b0acc3f470722eb3  Zeta23/ThmD/Sextuple/AffineTree.lean
+4a34b508b8ce2dbf72f0bcacce70d01acea7848d381882f72fbeebcf1124bf61  Zeta23/ThmD/Sextuple/CompositionalLeaf.lean
+4baa4a617f3d2cec4602a476a30c8d2e59dbaa831b3a49227507eb15b34f7905  Zeta23/ThmD/Sextuple/CompositionalRight.lean

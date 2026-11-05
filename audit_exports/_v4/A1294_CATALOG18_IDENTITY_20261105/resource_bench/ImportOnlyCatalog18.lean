@@ -1,0 +1,2 @@
+import Catalog18Identity
+#check Catalog18Identity.original_eq_catalog

@@ -1,0 +1,13 @@
+Archived VRK canonical/evidence verifier, Python 3.12.10
+MODE=normal
+PASS VRK canonical digests, evidence hashes, and evidence root
+STATUS=UNSIGNED_PROVENANCE_ONLY; no Lean theorem was inferred from hashes
+EXIT=0
+MODE=O
+PASS VRK canonical digests, evidence hashes, and evidence root
+STATUS=UNSIGNED_PROVENANCE_ONLY; no Lean theorem was inferred from hashes
+EXIT=0
+MODE=OO
+PASS VRK canonical digests, evidence hashes, and evidence root
+STATUS=UNSIGNED_PROVENANCE_ONLY; no Lean theorem was inferred from hashes
+EXIT=0

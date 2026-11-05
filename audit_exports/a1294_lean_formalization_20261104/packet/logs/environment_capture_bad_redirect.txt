@@ -1,0 +1,26 @@
+=== upstream ===
+fba91d214655aaa1fd0504bb893c8859c20c79f9
+## HEAD (no branch)
+?? zeta23/Zeta23/ThmD/Sextuple/A1294Pilot.lean
+=== Lean ===
+Lean (version 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+=== Lake ===
+Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0-rc2)
+=== Mathlib ===
+51e6992efd06126df61a496bebf8f49482a4e129
+## HEAD (no branch)
+=== locked project files ===
+0d3c76ccd8772d8bcbe207241421a760312b71a6aa82f84194391fdf5cb026d6  lean-toolchain
+4942f994b9250b1efacea071fd997b0395960d61f30f5f79e21f4d2870265288  lakefile.toml
+1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448  lake-manifest.json
+=== pilot dependencies ===
+64a198e5042931f3785c440a78722e9b3f8e62cdd4843854b0acc3f470722eb3  Zeta23/ThmD/Sextuple/AffineTree.lean
+e50b67ee4e267a5a50a7b4bcfcf15568f83fe4aaa45d312cb6570370988d7a7b  Zeta23/ThmD/Sextuple/Kernel.lean
+77f8f59cf6ca531586307952457e75f500d8ac37dc40c643460a01b0334924d3  Zeta23/ThmD/Sextuple/Energy.lean
+b8e505a651d8b9b1a45da52080f6b1e86a92ea3fefbfe323a282432aef614f2f  Zeta23/ThmD/Sextuple/PieceCert.lean
+d09b9efe4a36394fa08bcc7a0e904a7eae409f0f198d8103d1522f8bbeba37fe  Zeta23/ThmD/Sextuple/KernelInterval.lean
+63792e1a3f8488f8c675185601049d80c901473f5274b8e88961fc1fc707caf5  Zeta23/ThmD/Sextuple/TrigInterval.lean
+=== source sizes ===
+870M	Zeta23
+96M	.lake/build/lib/lean
+7.2G	.lake/packages/mathlib

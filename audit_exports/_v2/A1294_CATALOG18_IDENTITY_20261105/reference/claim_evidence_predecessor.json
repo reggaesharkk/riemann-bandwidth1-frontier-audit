@@ -1,0 +1,35 @@
+{
+  "schema": "a1294-vrk-style-contract-v1",
+  "proposition": "For the newly blocked 171-element catalog, catalog[0]? = some refinementPiece3",
+  "status": "KERNEL_PROVED",
+  "theorem": "Catalog18.lookup0",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_authentication": "EXTERNALLY_CHECKED",
+  "original_catalog_correspondence": "INCOMPLETE",
+  "root_predicate": "INCOMPLETE",
+  "predecessor_sha256": "09de5506c416dfded56a5bc979f7cb776d05df2285d1f98f9565e071bccfea23",
+  "v2_sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+  "vrk_release_sha256": "c18c4c697d8188490e96530cfb5ddcb2e63f7c65aa560415401b1541e575cd79",
+  "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "upstream_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+  "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129",
+  "source_sha256": "65501ac71204b8e70ebf8b33a8f0def2e7f02ba39ed403f37f30eb906ae0c90a",
+  "object_sha256": "b4ffd1d9c909faa39fcf124058b28e50e7188cedde42caeb7ab4bd128ddc9c35",
+  "catalog_sequence_digest": "bdbce0e307f8765aca1ef99f929417d454fc8fab81213cf556f29da9de45c58b",
+  "evidence_root": "43a887738eb2f84701eed7e382ccaa40068bf72cd64a5db4fe05399dcff5709e",
+  "boundary": "VRK evidence roots bind metadata; no native VRK Lean verifier or signed external trust anchor is asserted.",
+  "source_stream_sha256": {
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "source_catalog_sha256": {
+    "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+  }
+}

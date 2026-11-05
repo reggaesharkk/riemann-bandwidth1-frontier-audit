@@ -1,0 +1,166 @@
+{
+  "artifact_id": 11251177469,
+  "artifact_run": 37049588602,
+  "artifact_sha256": "7186f6922efcaec2f3e612c18d68b2335319fa1c61a48a900703712f4828801f",
+  "claim_boundary": "Finite-path remainder arithmetic only. This does not certify a joint signed estimate, an omitted terminal Taylor remainder, an all-cutoff result, or continuum regularity.",
+  "frozen_input_hashes": {
+    "adjoint_report_sha256": "981dc8d6286f5d989e73dec050ad406776c1320ead36596ac173de95d6a7edc8",
+    "adjoint_rhs_sha256": "8c838ac0e93d70c5d170925e0d27799b745f0adc3c7296a0335219b7359c783c",
+    "adjoint_values_sha256": "00a230b47c66d3417b1fc259ead4e58ff46542753ddb7710c83a64dd4cd882ab",
+    "lower_metadata_sha256": "0ce684a72ba61de86b6d4293c28e14c6cff260585b86c3bd6ebea447b041c43e",
+    "lower_nodes_sha256": "e0b0a36d8b308cccb5befb3abe45777ec0775cbc7e5a76fef0011eed0fd1f7f0",
+    "lower_rhs_sha256": "f3a55190e9cba625b7285e5ba3e09e68fa4027e7a8909d1ad80671c1ee1ef253"
+  },
+  "impact": {
+    "boundary_fraction_of_remainder": "0.30277361",
+    "corresponding_terminal_error_radius": "0.001226999880",
+    "margin_if_boundary_removed_only": "-114087249061396.876722866365",
+    "margin_if_quadratic_removed_only": "-49539628209135.724932109325",
+    "quadratic_fraction_of_remainder": "0.69722639",
+    "required_uniform_radius_reduction_factor": "8606.0612088796487822745431627107042360289104900863499773770895975374419132544239",
+    "uniform_radius_scale_alpha_for_closure": "0.00011619717495945879363110962815868764325563548825187400914114601795870519954333956"
+  },
+  "largest_updated_step_quadratic_bounds": [
+    {
+      "step": 239,
+      "upper": "6691946535049.099901479884"
+    },
+    {
+      "step": 238,
+      "upper": "6287979331597.731868223491"
+    },
+    {
+      "step": 237,
+      "upper": "5908462869339.623469079063"
+    },
+    {
+      "step": 236,
+      "upper": "5553156273370.277526261045"
+    },
+    {
+      "step": 235,
+      "upper": "5219270983290.870920551459"
+    },
+    {
+      "step": 234,
+      "upper": "4906597659162.615880001933"
+    },
+    {
+      "step": 233,
+      "upper": "4612695528150.161000428788"
+    },
+    {
+      "step": 232,
+      "upper": "4337387454255.231159382531"
+    },
+    {
+      "step": 231,
+      "upper": "4078539124990.928609316886"
+    },
+    {
+      "step": 230,
+      "upper": "3836001656685.494043624279"
+    }
+  ],
+  "method": "Parse all decimal strings as exact rationals; recompute the 220\u2013239 replacement from the 192-bit Arb step coefficients and exact M15 radii; verify the published quadratic and total aggregates at their outward decimal precision.",
+  "quadratic_20_step_shards": [
+    {
+      "quadratic_upper_sum": "56851493.500408119078",
+      "steps": [
+        0,
+        19
+      ]
+    },
+    {
+      "quadratic_upper_sum": "550690348.399648974052",
+      "steps": [
+        20,
+        39
+      ]
+    },
+    {
+      "quadratic_upper_sum": "2487531778.497971507165",
+      "steps": [
+        40,
+        59
+      ]
+    },
+    {
+      "quadratic_upper_sum": "8910533871.672125379475",
+      "steps": [
+        60,
+        79
+      ]
+    },
+    {
+      "quadratic_upper_sum": "28731796488.229434476572",
+      "steps": [
+        80,
+        99
+      ]
+    },
+    {
+      "quadratic_upper_sum": "87865332121.526133314575",
+      "steps": [
+        100,
+        119
+      ]
+    },
+    {
+      "quadratic_upper_sum": "262855070512.029417139488",
+      "steps": [
+        120,
+        139
+      ]
+    },
+    {
+      "quadratic_upper_sum": "785774953682.902802040078",
+      "steps": [
+        140,
+        159
+      ]
+    },
+    {
+      "quadratic_upper_sum": "2383065138218.104050337582",
+      "steps": [
+        160,
+        179
+      ]
+    },
+    {
+      "quadratic_upper_sum": "7412357314641.617873242758",
+      "steps": [
+        180,
+        199
+      ]
+    },
+    {
+      "quadratic_upper_sum": "23830256274409.949754144524",
+      "steps": [
+        200,
+        219
+      ]
+    },
+    {
+      "quadratic_upper_sum": "79290095908202.220441623883",
+      "steps": [
+        220,
+        239
+      ]
+    }
+  ],
+  "schema": "wp19-v0.28-structural-decomposition-replay-v1",
+  "status": "PASS_EXACT_RATIONAL_AGGREGATE_REPLAY",
+  "terms": {
+    "adjoint_defect_upper": "240063.832492240296000000000000",
+    "published_margin_rounding_direction_issue": true,
+    "published_signed_margin_decimal": "-163632635604904.374992408432849939981121",
+    "remainder_to_signed_lower_ratio": "28416.47633615",
+    "remainder_total_upper": "163638394179339.980822081471920939981122",
+    "signed_integral_lower": "5758574435.605829673039071000000000",
+    "signed_margin_lower_exact_difference": "-163632635604904.374992408432849939981122",
+    "signed_margin_lower_outward_floor_from_published_total": "-163632635604904.374992408432849939981122",
+    "terminal_boundary_upper": "49545386543507.498269542068000000000000",
+    "whole_path_quadratic_upper": "114093007395768.650060299107920939981122"
+  }
+}

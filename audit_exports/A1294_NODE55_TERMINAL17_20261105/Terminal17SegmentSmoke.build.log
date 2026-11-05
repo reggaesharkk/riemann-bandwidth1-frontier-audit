@@ -1,0 +1,52 @@
+theorem Terminal17SegmentSmoke.decode_segment_0 : interpSegment catalog
+    { lo := { num := 195, den := 32 }, hi := { num := 250723, den := 40000 }, pieceRef := 0 } =
+  some { lo := 195 / 32, hi := 250723 / 40000, piece := macroPiece2 } :=
+Eq.mpr
+  (id
+    (congrFun'
+      (congrArg Eq
+        (congrArg
+          (fun x =>
+            match x with
+            | none => none
+            | some p =>
+              some
+                {
+                  lo :=
+                    interpRat
+                      { lo := { num := 195, den := 32 }, hi := { num := 250723, den := 40000 }, pieceRef := 0 }.lo,
+                  hi :=
+                    interpRat
+                      { lo := { num := 195, den := 32 }, hi := { num := 250723, den := 40000 }, pieceRef := 0 }.hi,
+                  piece := p })
+          catalog_ref_0))
+      (some { lo := 195 / 32, hi := 250723 / 40000, piece := macroPiece2 })))
+  (Eq.refl
+    (some
+      { lo := interpRat { num := 195, den := 32 }, hi := interpRat { num := 250723, den := 40000 },
+        piece := macroPiece2 }))
+'Terminal17SegmentSmoke.decode_segment_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Terminal17SegmentSmoke.source_segment_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 240 lake env lean -M6000 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17SegmentSmoke.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Terminal17SegmentSmoke.olean"
+	User time (seconds): 4.48
+	System time (seconds): 18.92
+	Percent of CPU this job got: 32%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:11.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5343900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 168481
+	Minor (reclaiming a frame) page faults: 769370
+	Voluntary context switches: 222001
+	Involuntary context switches: 388
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

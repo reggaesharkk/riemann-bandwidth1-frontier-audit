@@ -1,0 +1,65 @@
+ℹ [8705/8706] Replayed Zeta23.ThmD.Sextuple.Macro.EnvelopeData
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:561:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroEnvelope_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:563:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPiece0_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:564:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPiece3_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:565:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPieces_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [8706/8706] Building Zeta23.ThmD.Sextuple.A1294QuadraticLeaf (48s)
+trace: .> LEAN_PATH=/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/Cli/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/batteries/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/Qq/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/aesop/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/importGraph/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/plausible/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/mathlib/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/lib/lean /home/reggaeshark/.elan/toolchains/leanprover--lean4---v4.33.0-rc2/bin/lean /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean -o /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/lib/lean/Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.olean -i /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/lib/lean/Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.ilean -c /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/ir/Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.c --setup /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/ir/Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.setup.json --json
+warning: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:40:39: This simp argument is unused:
+  GapBox.upperHalf
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reconstructedSourceBox, sourcePath, descend, sourceLeafBox, initialGapBox, GapBox.lowerHalf,
+    GapBox.midpoint, Function.update, Fin.mk.injEq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:41:23: This simp argument is unused:
+  Fin.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reconstructedSourceBox, sourcePath, descend, sourceLeafBox, initialGapBox, GapBox.lowerHalf,
+    GapBox.upperHalf, GapBox.midpoint, Function.update]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+error: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:106:53: unsolved goals
+g : Fin 5 → ℝ
+hg : sourceLeafBox.Holds g
+hp : ↑9 = 9
+⊢ ∑ k with 2 ≤ ↑k ∧ ↑k < 3, g k = g 2
+error: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:111:4: Type mismatch
+  selected_pair9_model_valid hg2.left hg2.right
+has type
+  ↑selectedPositiveLower ≤ 2 * mtKernel (g 2) ^ 2
+but is expected to have type
+  14630385677 / 1000000000000 ≤ 2 * mtKernel (g 2) ^ 2
+error: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:118:31: unsolved goals
+⊢ { base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+      ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+        ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+          ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+            ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+              ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                  ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                    ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                      ({ base := 14630385677 / 1000000000000, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat
+                          sourceAnchor +
+                        ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                          ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                            ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                              ({ base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat sourceAnchor +
+                                { base := 0, weight := 0, offset := 0, coeff := fun x ↦ 0 }.valueRat
+                                  sourceAnchor))))))))))))) =
+    14630385677 / 1000000000000
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:152:0: 'A1294QuadraticLeaf.source_path_reconstructs_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:153:0: 'A1294QuadraticLeaf.selected_pair9_model_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:154:0: 'A1294QuadraticLeaf.selected_models_pairwise_valid' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:155:0: 'A1294QuadraticLeaf.selected_rank_tangent_check' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:156:0: 'A1294QuadraticLeaf.authentic_quadratic_leaf_box_predicate' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Zeta23.ThmD.Sextuple.A1294QuadraticLeaf
+error: build failed

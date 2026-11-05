@@ -1,0 +1,27 @@
+'Source61.node61_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Source61.right_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Source61.terminal_kinds' depends on axioms: [propext]
+'Source61.anchors20' depends on axioms: [propext]
+	Command being timed: "timeout 90 lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE61_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE61_20261105/Source61.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE61_20261105/Source61.olean"
+	User time (seconds): 3.64
+	System time (seconds): 6.07
+	Percent of CPU this job got: 58%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6003356
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 33722
+	Minor (reclaiming a frame) page faults: 688780
+	Voluntary context switches: 41764
+	Involuntary context switches: 623
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

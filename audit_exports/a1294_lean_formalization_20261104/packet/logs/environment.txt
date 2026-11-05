@@ -1,0 +1,28 @@
+HOST_LEAN_433=VERIFIED
+Windows command: elan run leanprover/lean4:v4.33.0-rc2 lean --version
+Windows output: Lean (version 4.33.0-rc2, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+
+WSL2 Lean output: Lean (version 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+Lake output: Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0-rc2)
+WSL platform: Ubuntu on WSL2, aarch64
+
+UPSTREAM_SOURCE_COMMIT=fba91d214655aaa1fd0504bb893c8859c20c79f9
+UPSTREAM_PROJECT=zeta23
+UPSTREAM_TRACKED_TREE=clean; local addition only: Zeta23/ThmD/Sextuple/A1294Pilot.lean
+MATHLIB_COMMIT=51e6992efd06126df61a496bebf8f49482a4e129
+PINNED_MATHLIB=READY
+Lake cache command: lake exe cache get
+Cache outcome: exit 0; 8,681 cache entries downloaded and decompressed; 8,655 were already decompressed during an earlier pass.
+
+zeta23/lean-toolchain SHA-256: 0d3c76ccd8772d8bcbe207241421a760312b71a6aa82f84194391fdf5cb026d6
+zeta23/lakefile.toml SHA-256: 4942f994b9250b1efacea071fd997b0395960d61f30f5f79e21f4d2870265288
+zeta23/lake-manifest.json SHA-256: 1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448
+
+Successful build: lake build Zeta23.ThmD.Sextuple.AffineTree
+Wall time: 2:33.21; maximum resident set size 5,562,088 kB; exit status 0.
+Successful pilot build: lake build Zeta23.ThmD.Sextuple.A1294Pilot
+Wall time 1:30.79; maximum resident set size 5,573,736 kB; exit status 0.
+
+Non-passing build attempt: lake build Zeta23.ThmD.Sextuple.A1290.Certificate was interrupted after Lake expanded the graph to 55,731 jobs. It had completed 8,976 jobs at interruption. This was an intentionally stopped oversized target; it is not a mathematical counterexample or a completed theorem build.
+
+Working-copy sizes observed after cache restore: zeta23 source tree 870 MB, root .lake/build/lib/lean 96 MB, Mathlib working tree 7.2 GB. The packet does not vendor Mathlib source or its cache.

@@ -1,0 +1,3 @@
+6A5767E8EDAD6B2A975A498452BD37F30E3223298C3776AAFEB4C34201418435 C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\a1294_fifteen_bridge_20261104\AuthenticCompactLeaf.lean
+338C8F6A3A4EADC10A013A932FE6EA6A16A14CA7259BDC7E956BC5CF41A3CEE0 C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\a1294_two_quadratic_parent_20261104\A1294TwoQuadraticParent.lean
+C4FFA84A393403716A43978BCE5F1373423865578FB58E420ED96A18D44AE9EB C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\a1294_fifteen_bridge_20261104.zip

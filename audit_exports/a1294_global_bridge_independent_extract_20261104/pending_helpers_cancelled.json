@@ -1,0 +1,18 @@
+[
+  {
+    "ProcessId": 24680,
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -e bash -lc \"cd /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23 && lake env bash -c \\\"cd /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_GLOBAL_BRIDGE_20261104; export LEAN_PATH=\\$PWD:\\$LEAN_PATH; /usr/bin/time -v timeout 240 lean -M 6800 --root \\$PWD CheckpointSmoke.lean -o CheckpointSmoke.olean > checkpoint_smoke.log 2>&1 && /usr/bin/time -v timeout 300 lean -M 6800 --root \\$PWD SourceNode65.lean -o SourceNode65.olean > source_build.log 2>&1\\\"; result=$?; echo SOURCE_EXIT=$result; exit $result\""
+  },
+  {
+    "ProcessId": 11792,
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -e bash -lc \"cd /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23 && lake env bash -c \\\"cd /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_GLOBAL_BRIDGE_20261104; export LEAN_PATH=\\$PWD:\\$LEAN_PATH; /usr/bin/time -v timeout 240 lean -M 6800 --root \\$PWD CheckpointSmoke.lean -o CheckpointSmoke.olean > checkpoint_smoke.log 2>&1 && /usr/bin/time -v timeout 300 lean -M 6800 --root \\$PWD SourceNode65.lean -o SourceNode65.olean > source_build.log 2>&1\\\"; result=$?; echo SOURCE_EXIT=$result; exit $result\""
+  },
+  {
+    "ProcessId": 31524,
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -e bash -lc \"printf \\\"WSL_RESPONSIVE\\n\\\"; ps -eo pid,etime,rss,args | grep -E \\\"CheckpointSmoke|SourceNode65|lake env bash\\\" | grep -v grep; free -m\""
+  },
+  {
+    "ProcessId": 34132,
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -e bash -lc \"printf \\\"WSL_RESPONSIVE\\n\\\"; ps -eo pid,etime,rss,args | grep -E \\\"CheckpointSmoke|SourceNode65|lake env bash\\\" | grep -v grep; free -m\""
+  }
+]

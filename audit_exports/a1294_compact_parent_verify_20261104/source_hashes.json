@@ -1,0 +1,38 @@
+{
+  "CompositionalRight.lean": {
+    "bytes": 122176,
+    "sha256": "4baa4a617f3d2cec4602a476a30c8d2e59dbaa831b3a49227507eb15b34f7905"
+  },
+  "CompositionalRight.olean": {
+    "bytes": 9270368,
+    "sha256": "2d17b9c061e22c4d9a14a59ead52c4f0f33068692a2e2a08e37657570fed62dd"
+  },
+  "A1294CompactParent.lean": {
+    "bytes": 2871,
+    "sha256": "31de815525cb22f1cd656bae923a34ffc57f99832add6e352293372324d3fe5b"
+  },
+  "A1294CompactParent.olean": {
+    "bytes": 446368,
+    "sha256": "0acec8e1b47ad691d30275ce0d3935e4356239c7c0dc48134adf9be7c988bcb5"
+  },
+  "left_preserved/CompositionalLeaf.lean": {
+    "bytes": 148181,
+    "sha256": "4a34b508b8ce2dbf72f0bcacce70d01acea7848d381882f72fbeebcf1124bf61"
+  },
+  "left_preserved/CompositionalLeaf.olean": {
+    "bytes": 11078224,
+    "sha256": "f65ae374b127388dc40e203a57337dd7e2d594417453bca4d0ff00df5c557a57"
+  },
+  "historical/A1294TwoQuadraticParent.lean": {
+    "bytes": 245907,
+    "sha256": "338c8f6a3a4eadc10a013a932fe6ea6a16a14ca7259bdc7e956bc5cf41a3cee0"
+  },
+  "frozen/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip": {
+    "bytes": 5672384,
+    "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+  },
+  "authentic_input.json": {
+    "bytes": 355345,
+    "sha256": "9d261c03f582e7b1f61bc08f38025d3871f01f70806c3ab87783a2a5768da072"
+  }
+}

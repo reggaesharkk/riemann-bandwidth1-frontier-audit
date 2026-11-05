@@ -1,0 +1,29 @@
+Catalog18.lookup0 : Catalog18.catalog[0]? = some Zeta23.ThmD.Sextuple.MacroPrototype.refinementPiece3
+Catalog18.boundary_57 : Catalog18.catalog[57]? = some Zeta23.ThmD.Sextuple.MacroPrototype.refinementPiece75
+Catalog18.boundary_114 : Catalog18.catalog[114]? = some Zeta23.ThmD.Sextuple.MacroPrototype.refinementPiece135
+'Catalog18.lookup0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog18.boundary_57' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog18.boundary_114' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 90 lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_VRK_BRIDGE_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_VRK_BRIDGE_20261105/Statements.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_VRK_BRIDGE_20261105/Statements.olean"
+	User time (seconds): 3.91
+	System time (seconds): 19.16
+	Percent of CPU this job got: 32%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:10.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5485928
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 161526
+	Minor (reclaiming a frame) page faults: 693076
+	Voluntary context switches: 214624
+	Involuntary context switches: 212
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

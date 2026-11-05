@@ -1,0 +1,69 @@
+A1294 fixed-B ceiling bracket started 
+Base: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE 
+Loaded 80 A1299 hard seed boxes from previous scan
+==============================================================================
+FIXED-B CEILING BRACKET: 0.012990 ... 0.013000
+==============================================================================
+Machine: ARM64 Windows-11-10.0.26200-SP0
+Workers: 6 chunk: 5000 budget/candidate: 180000
+Hard seed boxes: 80
+
+------------------------------------------------------------------------------
+A = 0.012990
+Visited: 17,110
+Pending: 0
+Max depth: 58
+Throughput: 1215.37 nodes/sec
+Status: FULLY_CLOSED_HARD_SEED
+Density if eventually certified: 0.6728106815719984
+
+------------------------------------------------------------------------------
+A = 0.012992
+Visited: 17,248
+Pending: 0
+Max depth: 58
+Throughput: 869.88 nodes/sec
+Status: FULLY_CLOSED_HARD_SEED
+Density if eventually certified: 0.6728109063288992
+
+------------------------------------------------------------------------------
+A = 0.012994
+Visited: 17,410
+Pending: 0
+Max depth: 58
+Throughput: 607.87 nodes/sec
+Status: FULLY_CLOSED_HARD_SEED
+Density if eventually certified: 0.6728111310859501
+
+------------------------------------------------------------------------------
+A = 0.012996
+Visited: 17,572
+Pending: 0
+Max depth: 58
+Throughput: 911.36 nodes/sec
+Status: FULLY_CLOSED_HARD_SEED
+Density if eventually certified: 0.6728113558431513
+
+------------------------------------------------------------------------------
+A = 0.012998
+Visited: 17,744
+Pending: 0
+Max depth: 58
+Throughput: 1227.70 nodes/sec
+Status: FULLY_CLOSED_HARD_SEED
+Density if eventually certified: 0.6728115806005026
+
+------------------------------------------------------------------------------
+A = 0.013000
+Visited: 17,904
+Pending: 0
+Max depth: 58
+Throughput: 1244.11 nodes/sec
+Status: FULLY_CLOSED_HARD_SEED
+Density if eventually certified: 0.6728118053580041
+
+==============================================================================
+DONE
+Result: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE\results\A1294_FIXED_B_CEILING_BRACKET_RESULT.json
+Total wall: 110.67 sec
+==============================================================================

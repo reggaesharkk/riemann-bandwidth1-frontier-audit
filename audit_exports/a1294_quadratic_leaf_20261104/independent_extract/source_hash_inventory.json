@@ -1,0 +1,47 @@
+{
+  "evidence_file_sha256": {
+    "logs/build_final_axioms.log": "f0a18b58d21e789e534253df6fe4c7405334caa0d7050262103d319bd0b3932d",
+    "reports/catalog_O.json": "5d8d20f4e8fdaa212a5358a09bdf4336b8e0a9d54def4db5491a712a5dd593dc",
+    "reports/catalog_OO.json": "5d8d20f4e8fdaa212a5358a09bdf4336b8e0a9d54def4db5491a712a5dd593dc",
+    "reports/catalog_normal.json": "5d8d20f4e8fdaa212a5358a09bdf4336b8e0a9d54def4db5491a712a5dd593dc",
+    "reports/ledger_O.json": "41273349b7ecfa5a2f8db2858dd5d7869bbf7ff79ced247b789412254a47f27b",
+    "reports/ledger_OO.json": "41273349b7ecfa5a2f8db2858dd5d7869bbf7ff79ced247b789412254a47f27b",
+    "reports/ledger_normal.json": "41273349b7ecfa5a2f8db2858dd5d7869bbf7ff79ced247b789412254a47f27b",
+    "reports/source_prefix.json": "8aafa8a5a8043deac9063a5a059024a370166a0fd27bd1626cf20bcf182a8973"
+  },
+  "final_lean_source_sha256": "a91af133c826b98a3b9dee221b298ee434184d015690c4bb66f4838283ab2986",
+  "frozen_v2_entry_sha256": {
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "refinement_v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "refinement_v2": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d",
+    "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "terminal_kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "frozen_v2_zip_sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+  "lean_compiler_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "lean_toolchain_file": "leanprover/lean4:v4.33.0-rc2",
+  "local_worktree_commit": "eb36159ee7e57053fcae3de025fe4dac539435ab",
+  "mathlib_commit_from_lake_manifest": "51e6992efd06126df61a496bebf8f49482a4e129",
+  "pinned_upstream_source_file_sha256": {
+    "Zeta23/ThmD/Sextuple/A1275/RefinementData.lean": "67b78979fc1e7dcbd291f2da19cb53071142ef11104eeeea08af718269f16d43",
+    "Zeta23/ThmD/Sextuple/A1290/Certificate.lean": "a1b87a935e2165229180631cfd0b78753737659607002170f018efe094562c7a",
+    "Zeta23/ThmD/Sextuple/A1290/RefinementData2.lean": "71a065f430af833700eda1ab911b31409d96cf3d0b9ae9946d8c536e94d993ad",
+    "Zeta23/ThmD/Sextuple/AffineTree.lean": "64a198e5042931f3785c440a78722e9b3f8e62cdd4843854b0acc3f470722eb3",
+    "Zeta23/ThmD/Sextuple/Energy.lean": "77f8f59cf6ca531586307952457e75f500d8ac37dc40c643460a01b0334924d3",
+    "Zeta23/ThmD/Sextuple/Interval.lean": "0bbb8991defb97ece3ff76ef81b3cab86bd430ada6cb933804e419774e92f866",
+    "Zeta23/ThmD/Sextuple/Kernel.lean": "e50b67ee4e267a5a50a7b4bcfcf15568f83fe4aaa45d312cb6570370988d7a7b",
+    "Zeta23/ThmD/Sextuple/KernelInterval.lean": "d09b9efe4a36394fa08bcc7a0e904a7eae409f0f198d8103d1522f8bbeba37fe",
+    "Zeta23/ThmD/Sextuple/Macro/AffineAdapter.lean": "61c2adce61a763582895d124eac67f37eb204a5844a19cca62b08a12994cb217",
+    "Zeta23/ThmD/Sextuple/Macro/Analytic.lean": "c0757a933f4c2ea2987da6e3d3dbe0d4f804c5c4a88174758e2e7c5ed8370ddf",
+    "Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean": "44a3295dbf1eb76b5ae99263d282ac2397bc6b0953c8456632768476f25ee052",
+    "Zeta23/ThmD/Sextuple/PieceCert.lean": "b8e505a651d8b9b1a45da52080f6b1e86a92ea3fefbfe323a282432aef614f2f",
+    "Zeta23/ThmD/Sextuple/TrigInterval.lean": "63792e1a3f8488f8c675185601049d80c901473f5274b8e88961fc1fc707caf5",
+    "lake-manifest.json": "1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448",
+    "lakefile.toml": "4942f994b9250b1efacea071fd997b0395960d61f30f5f79e21f4d2870265288",
+    "lean-toolchain": "0d3c76ccd8772d8bcbe207241421a760312b71a6aa82f84194391fdf5cb026d6"
+  },
+  "prior_pilot_zip_sha256": "2e1284945636ce6de55b21ab686ae0835d4400e40b830c3226a304907311e949",
+  "scope_note": "Hashes authenticate packaged bytes; the serialized-node-to-Lean-path link and owner selector are not kernel formalized.",
+  "upstream_formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9"
+}

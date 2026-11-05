@@ -1,0 +1,38 @@
+[
+  {
+    "catalog": "stable",
+    "exact_model_field_matches": 56,
+    "json_count": 56,
+    "json_sha256": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "lean_declaration_count": 56,
+    "lean_file_sha256": "44a3295dbf1eb76b5ae99263d282ac2397bc6b0953c8456632768476f25ee052",
+    "mismatch_count": 0,
+    "mismatches": [],
+    "owner_metadata_count": 0,
+    "owner_metadata_sha256_canonical_json": "724e18b06f1e18372c1ec8daee94471ee3be1a4457fa65c40ec2777907e1878b"
+  },
+  {
+    "catalog": "refinement_v1",
+    "exact_model_field_matches": 216,
+    "json_count": 216,
+    "json_sha256": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "lean_declaration_count": 216,
+    "lean_file_sha256": "67b78979fc1e7dcbd291f2da19cb53071142ef11104eeeea08af718269f16d43",
+    "mismatch_count": 0,
+    "mismatches": [],
+    "owner_metadata_count": 216,
+    "owner_metadata_sha256_canonical_json": "c9ba571b80ff5adefd2a52257fb3dd7dbe145abf3fe23fd4cae1f87b57b4ebc4"
+  },
+  {
+    "catalog": "refinement_v2",
+    "exact_model_field_matches": 394,
+    "json_count": 394,
+    "json_sha256": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d",
+    "lean_declaration_count": 394,
+    "lean_file_sha256": "71a065f430af833700eda1ab911b31409d96cf3d0b9ae9946d8c536e94d993ad",
+    "mismatch_count": 0,
+    "mismatches": [],
+    "owner_metadata_count": 394,
+    "owner_metadata_sha256_canonical_json": "73a125e255cbb44ec73e5252e86480e85322a3937fdfca2662086890549d0c12"
+  }
+]

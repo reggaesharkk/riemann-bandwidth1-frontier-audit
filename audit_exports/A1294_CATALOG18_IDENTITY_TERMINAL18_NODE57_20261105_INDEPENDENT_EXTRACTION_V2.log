@@ -1,0 +1,16 @@
+A1294 final independent extraction and replay
+Archive: C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\A1294_CATALOG18_IDENTITY_TERMINAL18_NODE57_20261105.zip
+SHA256: 1b2648fc7734f63a096623350e1290bae67fa6ad8b20241147d869e672674fcb
+Bytes: 93781352
+ZIP CRC: PASS (Python zipfile.testzip returned None)
+Extracted to: 
+C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\_v4\A1294_CATALOG18_IDENTITY_20261105
+Independent verifier output:
+PASS: all three evidence scripts passed under normal Python, -O, and -OO
+PASS extracted packet manifest: 314 entries; source inventory: 313 entries
+ZIP_ENTRIES=315
+CRC=PASS
+Manifest entries: 314
+Source inventory entries: 313
+Post-replay manifest hash mismatches: 0
+Result: PASS

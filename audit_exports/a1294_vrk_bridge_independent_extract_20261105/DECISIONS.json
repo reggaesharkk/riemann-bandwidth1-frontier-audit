@@ -1,0 +1,17 @@
+{
+  "RESOURCE_OPTIMIZATION": "INCONCLUSIVE: non-randomized cache states; ext4/MNT-C measurements only",
+  "ORIGINAL_CATALOG_CORRESPONDENCE": "OPEN",
+  "STRUCTURAL_REPRESENTATIVES": "Blocked catalog indices 0,57,114 KERNEL_PROVED; original catalog equality OPEN",
+  "DIRECT_ORIGINAL_LOOKUP": "INCOMPLETE: maximum recursion depth; no Boolean rejection",
+  "TERMINAL18": "INCOMPLETE",
+  "NODE57": "INCOMPLETE",
+  "VRK_INTENTSEAL_INTEGRATION": "PROTOTYPE using unchanged VRK canonical-digest/evidence-root functions; no Lean plugin or signed trust anchor",
+  "MUTATION_TESTS": "Prototype rejects the six supplied identity mutations; provenance only",
+  "SOURCE_BOUNDARIES": [
+    "V2 bytes to Lean literals external",
+    "source selection and catalog correspondence external",
+    "no claim that signatures prove Lean propositions"
+  ],
+  "FULL_ROOT_PREDICATE": "OPEN",
+  "WP84": "UNCHANGED"
+}

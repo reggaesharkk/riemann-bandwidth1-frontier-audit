@@ -1,0 +1,14 @@
+A1294 source-free replay started 
+Traceback (most recent call last):
+  File "C:\Users\Asus\Downloads\A1294_SOURCE_FREE_REPLAY\A1294_SOURCE_FREE_REPLAY_PACKAGE\replay_a1294_source_free.py", line 452, in <module>
+    main()
+  File "C:\Users\Asus\Downloads\A1294_SOURCE_FREE_REPLAY\A1294_SOURCE_FREE_REPLAY_PACKAGE\replay_a1294_source_free.py", line 287, in main
+    manifest = json.loads((cert / "manifest.json").read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\Asus\\Downloads\\A1294_SOURCE_FREE_REPLAY\\A1294_SOURCE_FREE_REPLAY_PACKAGE" --progress 250000 \\certificate\\manifest.json'

@@ -1,0 +1,28 @@
+{
+  "generic_array_identity": "KERNEL_PROVED",
+  "original_array_correspondence": "KERNEL_PROVED",
+  "blocked_array_lookups": "KERNEL_PROVED_ALL_171",
+  "original_array_lookups": "KERNEL_PROVED_ALL_171",
+  "historical_terminal18_catalog_connection": "KERNEL_PROVED",
+  "all_171_lookups_on_both_arrays": "KERNEL_PROVED",
+  "terminal18_boolean_acceptance": "KERNEL_PROVED",
+  "terminal18_leaf_soundness": "KERNEL_PROVED",
+  "node57_replay": "KERNEL_PROVED",
+  "node57_cursor_exhaustion": {
+    "status": "KERNEL_PROVED",
+    "topology": 11,
+    "payloads": 6
+  },
+  "node57_source_connected_predicate": "KERNEL_PROVED_FOR_COMPILED_SOURCE_LITERALS",
+  "frozen_source_bytes_to_lean_literals": "EXTERNALLY_CHECKED",
+  "deterministic_catalog_selection_to_lean_literals": "EXTERNALLY_CHECKED",
+  "source_tree_byte_decoding": "EXTERNAL_TO_LEAN_KERNEL",
+  "vrk_intentseal_record": "PROTOTYPE_PROVENANCE_ONLY_UNSIGNED",
+  "reggae_shark_protocol_signed_ledger": "INSPECTED_NOT_INVOKED_NO_TRUSTED_KEY_OR_SIGNED_HEAD",
+  "reggae_shark_protocol_version_identity": "SOURCE_1.3.2_PACKAGE_METADATA_1.3.3.dev0_MISMATCH_RECORDED",
+  "resource_optimization": "MEASURED_INCONCLUSIVE_NO_OPTIMIZATION_CLAIM",
+  "intentseal_lineage_identification": "CORRECTED_FINAL_PUBLISHED_AND_HISTORICAL_INVENTORY_DISTINGUISHED",
+  "full_a1294_root_predicate": "OPEN",
+  "full_a1294_theorem": "NOT_PROVED",
+  "wp84_frozen_theorem_status": "UNCHANGED"
+}

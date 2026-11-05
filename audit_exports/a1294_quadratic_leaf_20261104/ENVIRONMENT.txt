@@ -1,0 +1,16 @@
+Pinned build environment and measured run
+
+Host: WSL2 Ubuntu, aarch64-unknown-linux-gnu
+Upstream commit: fba91d214655aaa1fd0504bb893c8859c20c79f9
+Mathlib commit: 51e6992efd06126df61a496bebf8f49482a4e129
+Command: lean --version
+Output: Lean (version 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+Command: lake --version
+Output: Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0-rc2)
+Build command: lake build Zeta23.ThmD.Sextuple.A1294QuadraticLeaf
+Build result: exit status 0; Build completed successfully (8706 jobs)
+Final exact-source timed run: 1:23.15 wall time; maximum resident set size 5,539,572 KB (about 5.28 GiB)
+The exact command output and `#print axioms` transcript are in logs/build_final_axioms.log.
+Python used for exact extraction and comparisons: CPython 3.12.10
+
+The isolated checkout was at the pinned commit. The only untracked Lean files were the earlier A1294 pilot module and this quadratic-leaf module; no tracked upstream file was changed.

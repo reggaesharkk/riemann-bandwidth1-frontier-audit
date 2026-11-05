@@ -1,0 +1,35 @@
+ℹ [8705/8706] Replayed Zeta23.ThmD.Sextuple.Macro.EnvelopeData
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:561:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroEnvelope_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:563:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPiece0_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:564:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPiece3_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:565:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPieces_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8706/8706] Built Zeta23.ThmD.Sextuple.A1294QuadraticLeaf (46s)
+warning: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:40:39: This simp argument is unused:
+  GapBox.upperHalf
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reconstructedSourceBox, sourcePath, descend, sourceLeafBox, initialGapBox, GapBox.lowerHalf,
+    GapBox.midpoint, Function.update, Fin.mk.injEq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:41:23: This simp argument is unused:
+  Fin.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [reconstructedSourceBox, sourcePath, descend, sourceLeafBox, initialGapBox, GapBox.lowerHalf,
+    GapBox.upperHalf, GapBox.midpoint, Function.update]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:108:46: This simp argument is unused:
+  Fin.succ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [gapDistance, gapSupport, pairLeft, pairRight, Finset.sum_filter, Fin.sum_univ_five]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:155:0: 'A1294QuadraticLeaf.source_path_reconstructs_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:156:0: 'A1294QuadraticLeaf.selected_pair9_model_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:157:0: 'A1294QuadraticLeaf.selected_models_pairwise_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:158:0: 'A1294QuadraticLeaf.selected_rank_tangent_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:159:0: 'A1294QuadraticLeaf.authentic_quadratic_leaf_box_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8706 jobs).

@@ -1,0 +1,37 @@
+{
+  "terminal19_failed_v1": {
+    "exit": "1",
+    "wall": "2:34.01",
+    "max_rss_kib": "5482344",
+    "major_faults": "169182",
+    "sorryAx": true
+  },
+  "terminal19": {
+    "exit": "0",
+    "wall": "1:50.42",
+    "max_rss_kib": "5491764",
+    "major_faults": "155555",
+    "sorryAx": false
+  },
+  "source59": {
+    "exit": "0",
+    "wall": "0:29.56",
+    "max_rss_kib": "5364616",
+    "major_faults": "65377",
+    "sorryAx": false
+  },
+  "helpers59": {
+    "exit": "0",
+    "wall": "0:24.37",
+    "max_rss_kib": "5531980",
+    "major_faults": "40697",
+    "sorryAx": false
+  },
+  "replay59": {
+    "exit": "0",
+    "wall": "0:30.17",
+    "max_rss_kib": "5472988",
+    "major_faults": "81319",
+    "sorryAx": false
+  }
+}

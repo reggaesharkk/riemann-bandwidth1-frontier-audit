@@ -1,0 +1,72 @@
+{
+  "checkpoint": {
+    "exit": "0",
+    "wall": "1:29.96",
+    "peak_RSS_KiB": "5645888",
+    "major_faults": "156364",
+    "sorryAx_in_log": false
+  },
+  "checkpoint_targeted": {
+    "exit": "0",
+    "wall": "0:08.99",
+    "peak_RSS_KiB": "6216748",
+    "major_faults": "6173",
+    "sorryAx_in_log": false
+  },
+  "source": {
+    "exit": "0",
+    "wall": "0:11.02",
+    "peak_RSS_KiB": "6419484",
+    "major_faults": "503",
+    "sorryAx_in_log": false
+  },
+  "helpers": {
+    "exit": "0",
+    "wall": "0:23.44",
+    "peak_RSS_KiB": "5726288",
+    "major_faults": "29527",
+    "sorryAx_in_log": false
+  },
+  "replay_only": {
+    "exit": "0",
+    "wall": "0:24.14",
+    "peak_RSS_KiB": "5837856",
+    "major_faults": "45891",
+    "sorryAx_in_log": false
+  },
+  "combined": {
+    "exit": "0",
+    "wall": "0:18.44",
+    "peak_RSS_KiB": "5570528",
+    "major_faults": "40670",
+    "sorryAx_in_log": false
+  },
+  "negative": {
+    "exit": "0",
+    "wall": "0:05.41",
+    "peak_RSS_KiB": "6143288",
+    "major_faults": "992",
+    "sorryAx_in_log": false
+  },
+  "combined_failed_v1": {
+    "exit": "143",
+    "wall": "1:39.71",
+    "peak_RSS_KiB": "836792",
+    "major_faults": "55",
+    "sorryAx_in_log": false
+  },
+  "combined_timeout_v2": {
+    "exit": "124",
+    "wall": "3:00.07",
+    "peak_RSS_KiB": "834708",
+    "major_faults": "1947",
+    "sorryAx_in_log": false
+  },
+  "combined_timeout_v3": {
+    "exit": "124",
+    "wall": "1:30.52",
+    "peak_RSS_KiB": "6125564",
+    "major_faults": "724",
+    "sorryAx_in_log": false
+  }
+}

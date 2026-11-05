@@ -1,0 +1,20 @@
+{
+  "stable": {
+    "filename": "macro-data-exact.json",
+    "bytes": 17396,
+    "sha256": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "expected": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b"
+  },
+  "v1": {
+    "filename": "refinement-catalog-v1-exact.json",
+    "bytes": 67741,
+    "sha256": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "expected": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9"
+  },
+  "v3": {
+    "filename": "refinement-catalog-v3.json",
+    "bytes": 132964,
+    "sha256": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d",
+    "expected": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+  }
+}

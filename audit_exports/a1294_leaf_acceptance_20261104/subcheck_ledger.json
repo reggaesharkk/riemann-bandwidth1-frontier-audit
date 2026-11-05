@@ -1,0 +1,2306 @@
+[
+  {
+    "name": "canonical_0",
+    "exact_expression": "compactRowCanonical row0 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_0",
+    "exact_expression": "interpCompactRow catalog row0 = some (.floor (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) segments0)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_0",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (405/64), hi := (253223/40000), piece := refinementPiece3} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_1",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (253223/40000), hi := (31731/5000), piece := refinementPiece4} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_2",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (31731/5000), hi := (254473/40000), piece := refinementPiece5} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_3",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (254473/40000), hi := (127549/20000), piece := refinementPiece6} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_4",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (127549/20000), hi := (255723/40000), piece := refinementPiece7} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_5",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (255723/40000), hi := (64087/10000), piece := refinementPiece8} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_6",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (64087/10000), hi := (256973/40000), piece := refinementPiece9} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_7",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (256973/40000), hi := (128799/20000), piece := refinementPiece10} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_0_8",
+    "exact_expression": "sourceSegmentCheck (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) {lo := (128799/20000), hi := (825/128), piece := refinementPiece11} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_0",
+    "exact_expression": "sourceCoverFrom (405/64) (825/128) segments0 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_0",
+    "exact_expression": "certifiedPiecewiseCheck (405/64) (825/128) (5170581624709583018970186520240204081/3200000000000000000000000000000000000000) segments0 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_1",
+    "exact_expression": "compactRowCanonical row1 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_1",
+    "exact_expression": "interpCompactRow catalog row1 = some (.direct macroPiece11)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_2",
+    "exact_expression": "compactRowCanonical row2 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_2",
+    "exact_expression": "interpCompactRow catalog row2 = some (.floor (1755263779336959657910023102330969/7812500000000000000000000000000000000000) segments2)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_0",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (1215/64), hi := (4748093/250000), piece := refinementPiece48} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_1",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (4748093/250000), hi := (19007997/1000000), piece := refinementPiece49} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_2",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19007997/1000000), hi := (9511811/500000), piece := refinementPiece50} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_3",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9511811/500000), hi := (19039247/1000000), piece := refinementPiece51} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_4",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19039247/1000000), hi := (2381859/125000), piece := refinementPiece52} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_5",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (2381859/125000), hi := (19070497/1000000), piece := refinementPiece53} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_6",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19070497/1000000), hi := (9543061/500000), piece := refinementPiece54} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_7",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9543061/500000), hi := (19101747/1000000), piece := refinementPiece55} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_8",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19101747/1000000), hi := (4779343/250000), piece := refinementPiece56} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_9",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (4779343/250000), hi := (19132997/1000000), piece := refinementPiece57} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_10",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19132997/1000000), hi := (9574311/500000), piece := refinementPiece58} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_11",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9574311/500000), hi := (19164247/1000000), piece := refinementPiece59} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_12",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19164247/1000000), hi := (599371/31250), piece := refinementPiece60} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_13",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (599371/31250), hi := (19195497/1000000), piece := refinementPiece61} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_14",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19195497/1000000), hi := (9605561/500000), piece := refinementPiece62} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_15",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9605561/500000), hi := (19226747/1000000), piece := refinementPiece63} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_16",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19226747/1000000), hi := (4810593/250000), piece := refinementPiece64} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_17",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (4810593/250000), hi := (19257997/1000000), piece := refinementPiece65} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_18",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19257997/1000000), hi := (9636811/500000), piece := refinementPiece66} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_19",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9636811/500000), hi := (19289247/1000000), piece := refinementPiece67} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_20",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19289247/1000000), hi := (2413109/125000), piece := refinementPiece68} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_21",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (2413109/125000), hi := (19320497/1000000), piece := refinementPiece69} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_2_22",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19320497/1000000), hi := (2475/128), piece := refinementPiece70} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_2",
+    "exact_expression": "sourceCoverFrom (1215/64) (2475/128) segments2 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_2",
+    "exact_expression": "certifiedPiecewiseCheck (1215/64) (2475/128) (1755263779336959657910023102330969/7812500000000000000000000000000000000000) segments2 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_3",
+    "exact_expression": "compactRowCanonical row3 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_3",
+    "exact_expression": "interpCompactRow catalog row3 = some (.floor (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) segments3)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_0",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (3255/128), hi := (5086319/200000), piece := refinementPiece84} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_1",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5086319/200000), hi := (1272361/50000), piece := refinementPiece85} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_2",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1272361/50000), hi := (5092569/200000), piece := refinementPiece86} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_3",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5092569/200000), hi := (2547847/100000), piece := refinementPiece87} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_4",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2547847/100000), hi := (5098819/200000), piece := refinementPiece88} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_5",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5098819/200000), hi := (637743/25000), piece := refinementPiece89} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_6",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (637743/25000), hi := (5105069/200000), piece := refinementPiece90} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_7",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5105069/200000), hi := (2554097/100000), piece := refinementPiece91} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_8",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2554097/100000), hi := (5111319/200000), piece := refinementPiece92} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_9",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5111319/200000), hi := (1278611/50000), piece := refinementPiece93} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_10",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1278611/50000), hi := (5117569/200000), piece := refinementPiece94} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_11",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5117569/200000), hi := (2560347/100000), piece := refinementPiece95} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_12",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2560347/100000), hi := (5123819/200000), piece := macroPiece24} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_13",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5123819/200000), hi := (160217/6250), piece := macroPiece24} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_14",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (160217/6250), hi := (5130069/200000), piece := refinementPiece98} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_15",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5130069/200000), hi := (2566597/100000), piece := refinementPiece99} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_16",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2566597/100000), hi := (5136319/200000), piece := refinementPiece100} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_17",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5136319/200000), hi := (1284861/50000), piece := refinementPiece101} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_18",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1284861/50000), hi := (5142569/200000), piece := refinementPiece102} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_19",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5142569/200000), hi := (2572847/100000), piece := refinementPiece103} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_20",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2572847/100000), hi := (5148819/200000), piece := refinementPiece104} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_21",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5148819/200000), hi := (643993/25000), piece := refinementPiece105} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_22",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (643993/25000), hi := (5155069/200000), piece := refinementPiece106} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_23",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5155069/200000), hi := (2579097/100000), piece := refinementPiece107} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_24",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2579097/100000), hi := (5161319/200000), piece := refinementPiece108} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_25",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5161319/200000), hi := (1291111/50000), piece := refinementPiece109} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_26",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1291111/50000), hi := (5167569/200000), piece := refinementPiece110} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_27",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5167569/200000), hi := (2585347/100000), piece := refinementPiece111} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_28",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2585347/100000), hi := (5173819/200000), piece := refinementPiece112} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_29",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5173819/200000), hi := (323559/12500), piece := refinementPiece113} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_3_30",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (323559/12500), hi := (3315/128), piece := refinementPiece114} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_3",
+    "exact_expression": "sourceCoverFrom (3255/128) (3315/128) segments3 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_3",
+    "exact_expression": "certifiedPiecewiseCheck (3255/128) (3315/128) (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) segments3 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_4",
+    "exact_expression": "compactRowCanonical row4 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_4",
+    "exact_expression": "interpCompactRow catalog row4 = some (.floor (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) segments4)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_0",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (4065/128), hi := (1587913/50000), piece := refinementPiece160} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_1",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (1587913/50000), hi := (6354777/200000), piece := refinementPiece161} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_2",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (6354777/200000), hi := (3178951/100000), piece := refinementPiece162} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_3",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (3178951/100000), hi := (6361027/200000), piece := refinementPiece163} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_4",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (6361027/200000), hi := (795519/25000), piece := refinementPiece164} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_5",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (795519/25000), hi := (6367277/200000), piece := refinementPiece165} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_6",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (6367277/200000), hi := (3185201/100000), piece := refinementPiece166} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_7",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (3185201/100000), hi := (6373527/200000), piece := refinementPiece167} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_8",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (6373527/200000), hi := (6448527/200000), piece := macroPiece30} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_4_9",
+    "exact_expression": "sourceSegmentCheck (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) {lo := (6448527/200000), hi := (4155/128), piece := macroPiece31} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_4",
+    "exact_expression": "sourceCoverFrom (4065/128) (4155/128) segments4 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_4",
+    "exact_expression": "certifiedPiecewiseCheck (4065/128) (4155/128) (7594713117315031921983662976367761841/80000000000000000000000000000000000000000) segments4 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_5",
+    "exact_expression": "compactRowCanonical row5 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_5",
+    "exact_expression": "interpCompactRow catalog row5 = some (.floor (12892869620170946020955818564495929/50000000000000000000000000000000000000) segments5)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_0",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (825/128), hi := (258223/40000), piece := refinementPiece11} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_1",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (258223/40000), hi := (8089/1250), piece := refinementPiece12} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_2",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (8089/1250), hi := (259473/40000), piece := refinementPiece13} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_3",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (259473/40000), hi := (130049/20000), piece := refinementPiece14} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_4",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (130049/20000), hi := (260723/40000), piece := refinementPiece15} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_5",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (260723/40000), hi := (65337/10000), piece := refinementPiece16} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_6",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (65337/10000), hi := (261973/40000), piece := refinementPiece17} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_5_7",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (261973/40000), hi := (105/16), piece := refinementPiece18} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_5",
+    "exact_expression": "sourceCoverFrom (825/128) (105/16) segments5 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_5",
+    "exact_expression": "certifiedPiecewiseCheck (825/128) (105/16) (12892869620170946020955818564495929/50000000000000000000000000000000000000) segments5 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_6",
+    "exact_expression": "compactRowCanonical row6 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_6",
+    "exact_expression": "interpCompactRow catalog row6 = some (.floor (0) segments6)",
+    "compiler_status": "FAILED_LOCAL_PROOF",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_0",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (405/32), hi := (633077/50000), piece := refinementPiece41} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_1",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (633077/50000), hi := (2535433/200000), piece := refinementPiece42} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_2",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (2535433/200000), hi := (1269279/100000), piece := refinementPiece43} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_3",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (1269279/100000), hi := (2541683/200000), piece := refinementPiece44} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_4",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (2541683/200000), hi := (318101/25000), piece := refinementPiece45} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_5",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (318101/25000), hi := (2547933/200000), piece := refinementPiece46} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_6",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (2547933/200000), hi := (1275529/100000), piece := macroPiece9} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_7",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (1275529/100000), hi := (12755291/1000000), piece := macroPiece10} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_6_8",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (12755291/1000000), hi := (825/64), piece := macroPiece11} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_6",
+    "exact_expression": "sourceCoverFrom (405/32) (825/64) segments6 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_6",
+    "exact_expression": "certifiedPiecewiseCheck (405/32) (825/64) (0) segments6 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_7",
+    "exact_expression": "compactRowCanonical row7 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_7",
+    "exact_expression": "interpCompactRow catalog row7 = some (.floor (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) segments7)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_0",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (2445/128), hi := (19101747/1000000), piece := refinementPiece55} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_1",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19101747/1000000), hi := (4779343/250000), piece := refinementPiece56} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_2",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (4779343/250000), hi := (19132997/1000000), piece := refinementPiece57} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_3",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19132997/1000000), hi := (9574311/500000), piece := refinementPiece58} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_4",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (9574311/500000), hi := (19164247/1000000), piece := refinementPiece59} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_5",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19164247/1000000), hi := (599371/31250), piece := refinementPiece60} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_6",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (599371/31250), hi := (19195497/1000000), piece := refinementPiece61} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_7",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19195497/1000000), hi := (9605561/500000), piece := refinementPiece62} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_8",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (9605561/500000), hi := (19226747/1000000), piece := refinementPiece63} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_9",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19226747/1000000), hi := (4810593/250000), piece := refinementPiece64} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_10",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (4810593/250000), hi := (19257997/1000000), piece := refinementPiece65} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_11",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19257997/1000000), hi := (9636811/500000), piece := refinementPiece66} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_12",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (9636811/500000), hi := (19289247/1000000), piece := refinementPiece67} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_13",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19289247/1000000), hi := (2413109/125000), piece := refinementPiece68} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_14",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (2413109/125000), hi := (19320497/1000000), piece := refinementPiece69} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_15",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19320497/1000000), hi := (9668061/500000), piece := refinementPiece70} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_16",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (9668061/500000), hi := (19351747/1000000), piece := refinementPiece71} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_7_17",
+    "exact_expression": "sourceSegmentCheck (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) {lo := (19351747/1000000), hi := (1245/64), piece := macroPiece18} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_7",
+    "exact_expression": "sourceCoverFrom (2445/128) (1245/64) segments7 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_7",
+    "exact_expression": "certifiedPiecewiseCheck (2445/128) (1245/64) (29727308394007168144031841183195847081/500000000000000000000000000000000000000000) segments7 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_8",
+    "exact_expression": "compactRowCanonical row8 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_8",
+    "exact_expression": "interpCompactRow catalog row8 = some (.floor (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) segments8)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_0",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (3255/128), hi := (5086319/200000), piece := refinementPiece84} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_1",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5086319/200000), hi := (1272361/50000), piece := refinementPiece85} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_2",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1272361/50000), hi := (5092569/200000), piece := refinementPiece86} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_3",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5092569/200000), hi := (2547847/100000), piece := refinementPiece87} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_4",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2547847/100000), hi := (5098819/200000), piece := refinementPiece88} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_5",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5098819/200000), hi := (637743/25000), piece := refinementPiece89} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_6",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (637743/25000), hi := (5105069/200000), piece := refinementPiece90} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_7",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5105069/200000), hi := (2554097/100000), piece := refinementPiece91} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_8",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2554097/100000), hi := (5111319/200000), piece := refinementPiece92} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_9",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5111319/200000), hi := (1278611/50000), piece := refinementPiece93} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_10",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1278611/50000), hi := (5117569/200000), piece := refinementPiece94} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_11",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5117569/200000), hi := (2560347/100000), piece := refinementPiece95} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_12",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2560347/100000), hi := (5123819/200000), piece := macroPiece24} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_13",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5123819/200000), hi := (160217/6250), piece := macroPiece24} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_14",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (160217/6250), hi := (5130069/200000), piece := refinementPiece98} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_15",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5130069/200000), hi := (2566597/100000), piece := refinementPiece99} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_16",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2566597/100000), hi := (5136319/200000), piece := refinementPiece100} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_17",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5136319/200000), hi := (1284861/50000), piece := refinementPiece101} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_18",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1284861/50000), hi := (5142569/200000), piece := refinementPiece102} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_19",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5142569/200000), hi := (2572847/100000), piece := refinementPiece103} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_20",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2572847/100000), hi := (5148819/200000), piece := refinementPiece104} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_21",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5148819/200000), hi := (643993/25000), piece := refinementPiece105} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_22",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (643993/25000), hi := (5155069/200000), piece := refinementPiece106} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_23",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5155069/200000), hi := (2579097/100000), piece := refinementPiece107} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_24",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2579097/100000), hi := (5161319/200000), piece := refinementPiece108} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_25",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5161319/200000), hi := (1291111/50000), piece := refinementPiece109} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_26",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1291111/50000), hi := (5167569/200000), piece := refinementPiece110} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_27",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5167569/200000), hi := (2585347/100000), piece := refinementPiece111} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_28",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2585347/100000), hi := (5173819/200000), piece := refinementPiece112} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_29",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5173819/200000), hi := (323559/12500), piece := refinementPiece113} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_30",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (323559/12500), hi := (5180069/200000), piece := refinementPiece114} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_31",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5180069/200000), hi := (2591597/100000), piece := refinementPiece115} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_32",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2591597/100000), hi := (5186319/200000), piece := refinementPiece116} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_33",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5186319/200000), hi := (1297361/50000), piece := refinementPiece117} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_34",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (1297361/50000), hi := (5192569/200000), piece := refinementPiece118} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_35",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (5192569/200000), hi := (2597847/100000), piece := refinementPiece119} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_8_36",
+    "exact_expression": "sourceSegmentCheck (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) {lo := (2597847/100000), hi := (1665/64), piece := macroPiece25} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_8",
+    "exact_expression": "sourceCoverFrom (3255/128) (1665/64) segments8 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_8",
+    "exact_expression": "certifiedPiecewiseCheck (3255/128) (1665/64) (6876046637736468087644507155946023489/80000000000000000000000000000000000000000) segments8 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_9",
+    "exact_expression": "compactRowCanonical row9 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_9",
+    "exact_expression": "interpCompactRow catalog row9 = some (.floor (21287960894909617826490440080249/5000000000000000000000000000000000) segments9)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_9_0",
+    "exact_expression": "sourceSegmentCheck (21287960894909617826490440080249/5000000000000000000000000000000000) {lo := (795/128), hi := (250723/40000), piece := macroPiece2} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_9_1",
+    "exact_expression": "sourceSegmentCheck (21287960894909617826490440080249/5000000000000000000000000000000000) {lo := (250723/40000), hi := (62837/10000), piece := refinementPiece0} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_9_2",
+    "exact_expression": "sourceSegmentCheck (21287960894909617826490440080249/5000000000000000000000000000000000) {lo := (62837/10000), hi := (251973/40000), piece := refinementPiece1} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_9_3",
+    "exact_expression": "sourceSegmentCheck (21287960894909617826490440080249/5000000000000000000000000000000000) {lo := (251973/40000), hi := (126299/20000), piece := refinementPiece2} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_9_4",
+    "exact_expression": "sourceSegmentCheck (21287960894909617826490440080249/5000000000000000000000000000000000) {lo := (126299/20000), hi := (405/64), piece := refinementPiece3} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_9",
+    "exact_expression": "sourceCoverFrom (795/128) (405/64) segments9 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_9",
+    "exact_expression": "certifiedPiecewiseCheck (795/128) (405/64) (21287960894909617826490440080249/5000000000000000000000000000000000) segments9 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_10",
+    "exact_expression": "compactRowCanonical row10 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_10",
+    "exact_expression": "interpCompactRow catalog row10 = some (.floor (0) segments10)",
+    "compiler_status": "FAILED_LOCAL_PROOF",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_0",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (405/32), hi := (633077/50000), piece := refinementPiece41} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_1",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (633077/50000), hi := (2535433/200000), piece := refinementPiece42} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_2",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (2535433/200000), hi := (1269279/100000), piece := refinementPiece43} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_3",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (1269279/100000), hi := (2541683/200000), piece := refinementPiece44} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_4",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (2541683/200000), hi := (318101/25000), piece := refinementPiece45} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_5",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (318101/25000), hi := (2547933/200000), piece := refinementPiece46} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_6",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (2547933/200000), hi := (1275529/100000), piece := macroPiece9} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_7",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (1275529/100000), hi := (12755291/1000000), piece := macroPiece10} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_10_8",
+    "exact_expression": "sourceSegmentCheck (0) {lo := (12755291/1000000), hi := (825/64), piece := macroPiece11} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_10",
+    "exact_expression": "sourceCoverFrom (405/32) (825/64) segments10 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_10",
+    "exact_expression": "certifiedPiecewiseCheck (405/32) (825/64) (0) segments10 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_11",
+    "exact_expression": "compactRowCanonical row11 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_11",
+    "exact_expression": "interpCompactRow catalog row11 = some (.floor (1755263779336959657910023102330969/7812500000000000000000000000000000000000) segments11)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_0",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (1215/64), hi := (4748093/250000), piece := refinementPiece48} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_1",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (4748093/250000), hi := (19007997/1000000), piece := refinementPiece49} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_2",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19007997/1000000), hi := (9511811/500000), piece := refinementPiece50} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_3",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9511811/500000), hi := (19039247/1000000), piece := refinementPiece51} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_4",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19039247/1000000), hi := (2381859/125000), piece := refinementPiece52} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_5",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (2381859/125000), hi := (19070497/1000000), piece := refinementPiece53} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_6",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19070497/1000000), hi := (9543061/500000), piece := refinementPiece54} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_7",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9543061/500000), hi := (19101747/1000000), piece := refinementPiece55} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_8",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19101747/1000000), hi := (4779343/250000), piece := refinementPiece56} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_9",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (4779343/250000), hi := (19132997/1000000), piece := refinementPiece57} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_10",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19132997/1000000), hi := (9574311/500000), piece := refinementPiece58} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_11",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9574311/500000), hi := (19164247/1000000), piece := refinementPiece59} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_12",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19164247/1000000), hi := (599371/31250), piece := refinementPiece60} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_13",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (599371/31250), hi := (19195497/1000000), piece := refinementPiece61} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_14",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19195497/1000000), hi := (9605561/500000), piece := refinementPiece62} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_15",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9605561/500000), hi := (19226747/1000000), piece := refinementPiece63} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_16",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19226747/1000000), hi := (4810593/250000), piece := refinementPiece64} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_17",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (4810593/250000), hi := (19257997/1000000), piece := refinementPiece65} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_18",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19257997/1000000), hi := (9636811/500000), piece := refinementPiece66} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_19",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9636811/500000), hi := (19289247/1000000), piece := refinementPiece67} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_20",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19289247/1000000), hi := (2413109/125000), piece := refinementPiece68} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_21",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (2413109/125000), hi := (19320497/1000000), piece := refinementPiece69} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_22",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19320497/1000000), hi := (9668061/500000), piece := refinementPiece70} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_23",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (9668061/500000), hi := (19351747/1000000), piece := refinementPiece71} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_11_24",
+    "exact_expression": "sourceSegmentCheck (1755263779336959657910023102330969/7812500000000000000000000000000000000000) {lo := (19351747/1000000), hi := (1245/64), piece := macroPiece18} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_11",
+    "exact_expression": "sourceCoverFrom (1215/64) (1245/64) segments11 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_11",
+    "exact_expression": "certifiedPiecewiseCheck (1215/64) (1245/64) (1755263779336959657910023102330969/7812500000000000000000000000000000000000) segments11 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_12",
+    "exact_expression": "compactRowCanonical row12 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_12",
+    "exact_expression": "interpCompactRow catalog row12 = some (.floor (12892869620170946020955818564495929/50000000000000000000000000000000000000) segments12)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_0",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (825/128), hi := (258223/40000), piece := refinementPiece11} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_1",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (258223/40000), hi := (8089/1250), piece := refinementPiece12} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_2",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (8089/1250), hi := (259473/40000), piece := refinementPiece13} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_3",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (259473/40000), hi := (130049/20000), piece := refinementPiece14} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_4",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (130049/20000), hi := (260723/40000), piece := refinementPiece15} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_5",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (260723/40000), hi := (65337/10000), piece := refinementPiece16} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_6",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (65337/10000), hi := (261973/40000), piece := refinementPiece17} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_12_7",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (261973/40000), hi := (105/16), piece := refinementPiece18} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_12",
+    "exact_expression": "sourceCoverFrom (825/128) (105/16) segments12 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_12",
+    "exact_expression": "certifiedPiecewiseCheck (825/128) (105/16) (12892869620170946020955818564495929/50000000000000000000000000000000000000) segments12 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_13",
+    "exact_expression": "compactRowCanonical row13 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_13",
+    "exact_expression": "interpCompactRow catalog row13 = some (.direct macroPiece11)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "canonical_14",
+    "exact_expression": "compactRowCanonical row14 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "decode_14",
+    "exact_expression": "interpCompactRow catalog row14 = some (.floor (12892869620170946020955818564495929/50000000000000000000000000000000000000) segments14)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_0",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (405/64), hi := (253223/40000), piece := refinementPiece3} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_1",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (253223/40000), hi := (31731/5000), piece := refinementPiece4} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_2",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (31731/5000), hi := (254473/40000), piece := refinementPiece5} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_3",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (254473/40000), hi := (127549/20000), piece := refinementPiece6} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_4",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (127549/20000), hi := (255723/40000), piece := refinementPiece7} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_5",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (255723/40000), hi := (64087/10000), piece := refinementPiece8} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_6",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (64087/10000), hi := (256973/40000), piece := refinementPiece9} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_7",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (256973/40000), hi := (128799/20000), piece := refinementPiece10} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_8",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (128799/20000), hi := (258223/40000), piece := refinementPiece11} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_9",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (258223/40000), hi := (8089/1250), piece := refinementPiece12} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_10",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (8089/1250), hi := (259473/40000), piece := refinementPiece13} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_11",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (259473/40000), hi := (130049/20000), piece := refinementPiece14} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_12",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (130049/20000), hi := (260723/40000), piece := refinementPiece15} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_13",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (260723/40000), hi := (65337/10000), piece := refinementPiece16} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_14",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (65337/10000), hi := (261973/40000), piece := refinementPiece17} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "segment_14_15",
+    "exact_expression": "sourceSegmentCheck (12892869620170946020955818564495929/50000000000000000000000000000000000000) {lo := (261973/40000), hi := (105/16), piece := refinementPiece18} = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "coverage_14",
+    "exact_expression": "sourceCoverFrom (405/64) (105/16) segments14 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "piecewise_14",
+    "exact_expression": "certifiedPiecewiseCheck (405/64) (105/16) (12892869620170946020955818564495929/50000000000000000000000000000000000000) segments14 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "distances_exact",
+    "exact_expression": "\u2200 p, distanceInterval box p = distances p",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_0",
+    "exact_expression": "compactRowCheck catalog box (\u27e80, by decide\u27e9 : Fin 15) row0 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_1",
+    "exact_expression": "compactRowCheck catalog box (\u27e81, by decide\u27e9 : Fin 15) row1 = true",
+    "compiler_status": "FAILED_LOCAL_PROOF",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_2",
+    "exact_expression": "compactRowCheck catalog box (\u27e82, by decide\u27e9 : Fin 15) row2 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_3",
+    "exact_expression": "compactRowCheck catalog box (\u27e83, by decide\u27e9 : Fin 15) row3 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_4",
+    "exact_expression": "compactRowCheck catalog box (\u27e84, by decide\u27e9 : Fin 15) row4 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_5",
+    "exact_expression": "compactRowCheck catalog box (\u27e85, by decide\u27e9 : Fin 15) row5 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_6",
+    "exact_expression": "compactRowCheck catalog box (\u27e86, by decide\u27e9 : Fin 15) row6 = true",
+    "compiler_status": "DEPENDS_ON_FAILED_DECLARATION",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_7",
+    "exact_expression": "compactRowCheck catalog box (\u27e87, by decide\u27e9 : Fin 15) row7 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_8",
+    "exact_expression": "compactRowCheck catalog box (\u27e88, by decide\u27e9 : Fin 15) row8 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_9",
+    "exact_expression": "compactRowCheck catalog box (\u27e89, by decide\u27e9 : Fin 15) row9 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_10",
+    "exact_expression": "compactRowCheck catalog box (\u27e810, by decide\u27e9 : Fin 15) row10 = true",
+    "compiler_status": "DEPENDS_ON_FAILED_DECLARATION",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_11",
+    "exact_expression": "compactRowCheck catalog box (\u27e811, by decide\u27e9 : Fin 15) row11 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_12",
+    "exact_expression": "compactRowCheck catalog box (\u27e812, by decide\u27e9 : Fin 15) row12 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_13",
+    "exact_expression": "compactRowCheck catalog box (\u27e813, by decide\u27e9 : Fin 15) row13 = true",
+    "compiler_status": "FAILED_LOCAL_PROOF",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "row_checked_14",
+    "exact_expression": "compactRowCheck catalog box (\u27e814, by decide\u27e9 : Fin 15) row14 = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "interpreted_terms",
+    "exact_expression": "(fun p => interpModel (decodedRow catalog (rows p)) p) = terms",
+    "compiler_status": "DEPENDS_ON_FAILED_DECLARATION",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "tangent_lower",
+    "exact_expression": "rankTangentLower terms (1094977/5000000000) box anchor = (108853955129699356804065918948443215217/7812500000000000000000000000000000000000)",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "tangent_checked",
+    "exact_expression": "rankTangentCheck (647/50000) (1094977/5000000000) box anchor terms = true",
+    "compiler_status": "NO_ERROR_REPORTED_IN_FAILED_MODULE",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "all_rows",
+    "exact_expression": "\u2200 p, compactRowCheck catalog box p (rows p) = true",
+    "compiler_status": "DEPENDS_ON_FAILED_DECLARATION",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "accepted",
+    "exact_expression": "compactQuadraticLeafCheck catalog (647/50000) (1094977/5000000000) box anchor rows = true",
+    "compiler_status": "DEPENDS_ON_FAILED_DECLARATION",
+    "clean_module_verified": false,
+    "boolean_false_established": false,
+    "corrected_build_status": "NO_LEAN_RESULT_WSL_SERVICE_TIMEOUT"
+  },
+  {
+    "name": "first_floor_canonical",
+    "exact_expression": "(CompactRat.mk 5170581624709583018970186520240204081 3200000000000000000000000000000000000000).check = true",
+    "compiler_status": "KERNEL_CHECKED_IN_CLEAN_CHECKPOINT_MODULE",
+    "clean_module_verified": true,
+    "equality_obtained": true,
+    "support": "checkpoints.log"
+  },
+  {
+    "name": "first_catalog_ref",
+    "exact_expression": "catalog[0]? = some refinementPiece3",
+    "compiler_status": "KERNEL_CHECKED_IN_CLEAN_CHECKPOINT_MODULE",
+    "clean_module_verified": true,
+    "equality_obtained": true,
+    "support": "checkpoints.log"
+  },
+  {
+    "name": "first_segment_decode",
+    "exact_expression": "interpSegment catalog {lo := \u27e8405,64\u27e9, hi := \u27e8253223,40000\u27e9, pieceRef := 0} = some {lo := 405/64, hi := 253223/40000, piece := refinementPiece3}",
+    "compiler_status": "KERNEL_CHECKED_IN_CLEAN_CHECKPOINT_MODULE",
+    "clean_module_verified": true,
+    "equality_obtained": true,
+    "support": "checkpoints.log"
+  }
+]

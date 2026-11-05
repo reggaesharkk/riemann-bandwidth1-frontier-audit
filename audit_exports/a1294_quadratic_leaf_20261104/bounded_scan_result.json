@@ -1,0 +1,9 @@
+{
+  "status": "NO_DIRECT_MODEL_CANDIDATE_IN_PREFIX",
+  "scope": "Preserved bounded diagnostic only; not evidence that no other candidate exists.",
+  "nodes_scanned": 50000,
+  "quadratic_terminals_scanned": 24986,
+  "minimum_margin_threshold": "1/1000000",
+  "result": "The restricted single-full-cover-piece representation found no candidate in this prefix. The successful proof uses the exact segmented envelope and a direct kernel proof of the effective lower models.",
+  "full_tree_search_run": false
+}

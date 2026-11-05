@@ -1,0 +1,144 @@
+{
+  "schema": "a1294-local-benchmark-v1",
+  "candidate": {
+    "A": "1294/100000",
+    "B": "1094977/5000000000"
+  },
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "ARM64",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:31:18) [MSC v.1943 64 bit (ARM64)]",
+    "logical_cpu_count": 8
+  },
+  "github_reference": {
+    "nodes": 1000000,
+    "seconds": 1406.36,
+    "nodes_per_second": 711.0554907704998
+  },
+  "single_process": {
+    "requested_node_cap": 250000,
+    "result": {
+      "status": "NODE_CAP",
+      "visited": 250000,
+      "pending": 35,
+      "leaves": 124983,
+      "tail": 0,
+      "quadratic": 124983,
+      "maximum_depth": 72,
+      "smallest_closed_margin": "163160670100160163665765460025055051/2048000000000000000000000000000000000000000000",
+      "scalar_cache_entries": 3846,
+      "elapsed_seconds": 365.9679999999935
+    },
+    "wall_seconds": 365.98399999999674,
+    "nodes_per_second": 683.0899711462857,
+    "speedup_vs_github": 0.9606704118212903,
+    "estimated_large_runs": {
+      "5M_nodes_minutes": 121.99466666666558,
+      "10M_nodes_minutes": 243.98933333333116
+    }
+  },
+  "parallel_probe": {
+    "workers": 6,
+    "subboxes": 8,
+    "node_cap_per_subbox": 40000,
+    "results": [
+      {
+        "status": "PASS",
+        "visited": 1,
+        "pending": 0,
+        "leaves": 1,
+        "tail": 1,
+        "quadratic": 0,
+        "maximum_depth": 0,
+        "smallest_closed_margin": "49931/250000000",
+        "elapsed_seconds": 0.0
+      },
+      {
+        "status": "PASS",
+        "visited": 1,
+        "pending": 0,
+        "leaves": 1,
+        "tail": 1,
+        "quadratic": 0,
+        "maximum_depth": 0,
+        "smallest_closed_margin": "49931/250000000",
+        "elapsed_seconds": 0.0
+      },
+      {
+        "status": "PASS",
+        "visited": 1,
+        "pending": 0,
+        "leaves": 1,
+        "tail": 1,
+        "quadratic": 0,
+        "maximum_depth": 0,
+        "smallest_closed_margin": "49931/250000000",
+        "elapsed_seconds": 0.0
+      },
+      {
+        "status": "PASS",
+        "visited": 1,
+        "pending": 0,
+        "leaves": 1,
+        "tail": 1,
+        "quadratic": 0,
+        "maximum_depth": 0,
+        "smallest_closed_margin": "3384793/500000000",
+        "elapsed_seconds": 0.0
+      },
+      {
+        "status": "PASS",
+        "visited": 1319,
+        "pending": 0,
+        "leaves": 660,
+        "tail": 188,
+        "quadratic": 472,
+        "maximum_depth": 35,
+        "smallest_closed_margin": "269151/1000000000000",
+        "elapsed_seconds": 7.186999999976251
+      },
+      {
+        "status": "PASS",
+        "visited": 1043,
+        "pending": 0,
+        "leaves": 522,
+        "tail": 158,
+        "quadratic": 364,
+        "maximum_depth": 34,
+        "smallest_closed_margin": "193253973397852433765232692367689009/20000000000000000000000000000000000000000",
+        "elapsed_seconds": 7.51500000001397
+      },
+      {
+        "status": "PASS",
+        "visited": 1191,
+        "pending": 0,
+        "leaves": 596,
+        "tail": 188,
+        "quadratic": 408,
+        "maximum_depth": 34,
+        "smallest_closed_margin": "269151/1000000000000",
+        "elapsed_seconds": 7.702999999979511
+      },
+      {
+        "status": "NODE_CAP",
+        "visited": 40000,
+        "pending": 25,
+        "leaves": 19988,
+        "tail": 0,
+        "quadratic": 19988,
+        "maximum_depth": 65,
+        "smallest_closed_margin": "1866645708105200915176844975234298927/256000000000000000000000000000000000000000000",
+        "elapsed_seconds": 71.84299999999348
+      }
+    ],
+    "total_visited": 43557,
+    "wall_seconds": 71.95299999997951,
+    "aggregate_nodes_per_second": 605.3534946425084,
+    "speedup_vs_github": 0.8513449407254381,
+    "estimated_large_runs": {
+      "5M_nodes_minutes": 137.66061329594842,
+      "10M_nodes_minutes": 275.32122659189685
+    }
+  },
+  "note": "This is a speed benchmark and search probe, not a complete A1294 certificate. Exact Fraction arithmetic is used for acceptance."
+}

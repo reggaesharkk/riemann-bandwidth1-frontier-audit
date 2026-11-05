@@ -1,0 +1,14 @@
+{
+  "LOSSLESS_ROUNDTRIP": "PASS",
+  "negative_tests": 11,
+  "rats": 126,
+  "segments": 110,
+  "catalog": 100,
+  "rows": 30,
+  "semantic_bytes": 24247,
+  "wire_bytes": 7456,
+  "wire_zlib_bytes": 1974,
+  "semantic_zlib_bytes": 1782,
+  "frozen_ledger_zlib_bytes": 31564,
+  "zstd": "NOT_INSTALLED_NOT_DOWNLOADED"
+}

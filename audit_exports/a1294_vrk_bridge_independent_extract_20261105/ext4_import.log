@@ -1,0 +1,23 @@
+	Command being timed: "timeout 90 lean -M6800 --root /tmp/a1294-vrk-ext4-lMF6EU /tmp/a1294-vrk-ext4-lMF6EU/ImportBaseline.lean -o /tmp/a1294-vrk-ext4-lMF6EU/ImportBaseline.olean"
+	User time (seconds): 3.91
+	System time (seconds): 11.13
+	Percent of CPU this job got: 46%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5419344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 94764
+	Minor (reclaiming a frame) page faults: 676611
+	Voluntary context switches: 98107
+	Involuntary context switches: 144
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

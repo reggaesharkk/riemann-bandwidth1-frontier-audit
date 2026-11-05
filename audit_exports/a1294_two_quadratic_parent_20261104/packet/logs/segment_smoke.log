@@ -1,0 +1,48 @@
+Zeta23/ThmD/Sextuple/SegmentSmoke.lean:22:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Zeta23/ThmD/Sextuple/SegmentSmoke.lean:70:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Zeta23/ThmD/Sextuple/SegmentSmoke.lean:161:105: error: unsolved goals
+⊢ (MacroPiece.well
+            { box := { lo := 126299 / 20000, hi := 253223 / 40000 }, side := WellSide.left, positive := true,
+              q := 253223 / 40000, v := 45762276348897 / 1000000000000000, m := 768575381857 / 5000000000000,
+              turn := 2 }).box.lo ≤
+      405 / 64 ∧
+    253223 / 40000 ≤
+      (MacroPiece.well
+            { box := { lo := 126299 / 20000, hi := 253223 / 40000 }, side := WellSide.left, positive := true,
+              q := 253223 / 40000, v := 45762276348897 / 1000000000000000, m := 768575381857 / 5000000000000,
+              turn := 2 }).box.hi
+Command exited with non-zero status 1
+	Command being timed: "lake env lean Zeta23/ThmD/Sextuple/SegmentSmoke.lean -o /tmp/A1294SegmentSmoke.olean"
+	User time (seconds): 9.60
+	System time (seconds): 38.52
+	Percent of CPU this job got: 50%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:35.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5569328
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 161266
+	Minor (reclaiming a frame) page faults: 775653
+	Voluntary context switches: 222542
+	Involuntary context switches: 407
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

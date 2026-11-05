@@ -1,0 +1,89 @@
+A1294 source-free replay V2 started 
+{"visited": 250000, "pending": 35, "tail": 0, "quadratic": 124983, "elapsed_seconds": 158.71899999998277, "nodes_per_second": 1575.11073028451}
+{"visited": 500000, "pending": 35, "tail": 0, "quadratic": 249983, "elapsed_seconds": 312.68799999996554, "nodes_per_second": 1599.0380187281096}
+{"visited": 750000, "pending": 37, "tail": 0, "quadratic": 374982, "elapsed_seconds": 495.905999999959, "nodes_per_second": 1512.383395240352}
+{"visited": 1000000, "pending": 39, "tail": 0, "quadratic": 499981, "elapsed_seconds": 664.0939999999828, "nodes_per_second": 1505.810924357133}
+{"visited": 1250000, "pending": 37, "tail": 0, "quadratic": 624982, "elapsed_seconds": 891.6719999999623, "nodes_per_second": 1401.8607739169256}
+{"visited": 1500000, "pending": 37, "tail": 0, "quadratic": 749982, "elapsed_seconds": 1120.2660000000033, "nodes_per_second": 1338.9677094547148}
+{"visited": 1750000, "pending": 37, "tail": 0, "quadratic": 874982, "elapsed_seconds": 1335.155999999959, "nodes_per_second": 1310.7082618061513}
+{"visited": 2000000, "pending": 39, "tail": 0, "quadratic": 999981, "elapsed_seconds": 1530.405999999959, "nodes_per_second": 1306.8427593723845}
+{"visited": 2250000, "pending": 37, "tail": 0, "quadratic": 1124982, "elapsed_seconds": 1702.530999999959, "nodes_per_second": 1321.5618394026624}
+{"visited": 2500000, "pending": 37, "tail": 0, "quadratic": 1249982, "elapsed_seconds": 1874.905999999959, "nodes_per_second": 1333.4001811291098}
+{"visited": 2750000, "pending": 37, "tail": 0, "quadratic": 1374982, "elapsed_seconds": 2040.484999999986, "nodes_per_second": 1347.7188021475379}
+{"visited": 3000000, "pending": 41, "tail": 0, "quadratic": 1499980, "elapsed_seconds": 2389.8439999999828, "nodes_per_second": 1255.3120622099273}
+{"visited": 3250000, "pending": 39, "tail": 0, "quadratic": 1624981, "elapsed_seconds": 2802.8439999999828, "nodes_per_second": 1159.5365278980992}
+{"visited": 3500000, "pending": 41, "tail": 0, "quadratic": 1749980, "elapsed_seconds": 3210.280999999959, "nodes_per_second": 1090.2472400391257}
+{"visited": 3750000, "pending": 39, "tail": 0, "quadratic": 1874981, "elapsed_seconds": 3617.1719999999623, "nodes_per_second": 1036.7215050874106}
+{"visited": 4000000, "pending": 35, "tail": 0, "quadratic": 1999983, "elapsed_seconds": 3991.780999999959, "nodes_per_second": 1002.0589806905842}
+{"visited": 4250000, "pending": 45, "tail": 0, "quadratic": 2124978, "elapsed_seconds": 4366.609999999986, "nodes_per_second": 973.2950732948474}
+{"visited": 4500000, "pending": 43, "tail": 0, "quadratic": 2249979, "elapsed_seconds": 4771.375, "nodes_per_second": 943.1243614262136}
+{"visited": 4750000, "pending": 37, "tail": 0, "quadratic": 2374982, "elapsed_seconds": 5173.375, "nodes_per_second": 918.1627080967454}
+{"visited": 5000000, "pending": 31, "tail": 0, "quadratic": 2499985, "elapsed_seconds": 5554.780999999959, "nodes_per_second": 900.1254954965888}
+{"visited": 5250000, "pending": 35, "tail": 0, "quadratic": 2624983, "elapsed_seconds": 5908.8129999999655, "nodes_per_second": 888.5033254564039}
+{"visited": 5500000, "pending": 37, "tail": 0, "quadratic": 2749982, "elapsed_seconds": 6271.4529999999795, "nodes_per_second": 876.9897502221603}
+{"visited": 5750000, "pending": 35, "tail": 0, "quadratic": 2874983, "elapsed_seconds": 6633.734999999986, "nodes_per_second": 866.7816848276291}
+{"visited": 6000000, "pending": 45, "tail": 0, "quadratic": 2999978, "elapsed_seconds": 6978.093999999983, "nodes_per_second": 859.8336451185689}
+{"visited": 6250000, "pending": 45, "tail": 0, "quadratic": 3124978, "elapsed_seconds": 7320.391000000003, "nodes_per_second": 853.7795317217342}
+{"visited": 6500000, "pending": 43, "tail": 0, "quadratic": 3249979, "elapsed_seconds": 7496.266000000003, "nodes_per_second": 867.0983660398387}
+{"visited": 6750000, "pending": 47, "tail": 0, "quadratic": 3374977, "elapsed_seconds": 7667.0779999999795, "nodes_per_second": 880.387547902867}
+{"visited": 7000000, "pending": 43, "tail": 0, "quadratic": 3499979, "elapsed_seconds": 7878.891000000003, "nodes_per_second": 888.4499100190619}
+{"visited": 7250000, "pending": 43, "tail": 0, "quadratic": 3624979, "elapsed_seconds": 8074.718999999983, "nodes_per_second": 897.8640618949112}
+{"visited": 7500000, "pending": 43, "tail": 0, "quadratic": 3749979, "elapsed_seconds": 8365.95299999998, "nodes_per_second": 896.490812224264}
+{"visited": 7750000, "pending": 45, "tail": 0, "quadratic": 3874978, "elapsed_seconds": 8737.0, "nodes_per_second": 887.0321620693602}
+{"visited": 8000000, "pending": 43, "tail": 0, "quadratic": 3999979, "elapsed_seconds": 9057.671999999962, "nodes_per_second": 883.2291564543332}
+{"visited": 8250000, "pending": 49, "tail": 0, "quadratic": 4124976, "elapsed_seconds": 9440.266000000003, "nodes_per_second": 873.9160527891902}
+{"visited": 8500000, "pending": 45, "tail": 0, "quadratic": 4249978, "elapsed_seconds": 9824.45299999998, "nodes_per_second": 865.1881178524665}
+{"visited": 8750000, "pending": 43, "tail": 0, "quadratic": 4374979, "elapsed_seconds": 10232.875, "nodes_per_second": 855.0871578124427}
+{"visited": 9000000, "pending": 47, "tail": 0, "quadratic": 4499977, "elapsed_seconds": 10631.484999999986, "nodes_per_second": 846.5421340480668}
+{"visited": 9250000, "pending": 45, "tail": 0, "quadratic": 4624978, "elapsed_seconds": 10981.468999999983, "nodes_per_second": 842.3281074690476}
+{"visited": 9500000, "pending": 39, "tail": 0, "quadratic": 4749981, "elapsed_seconds": 11375.062999999966, "nodes_per_second": 835.1602096621381}
+{"visited": 9750000, "pending": 45, "tail": 0, "quadratic": 4874978, "elapsed_seconds": 11754.780999999959, "nodes_per_second": 829.4497362392403}
+{"visited": 10000000, "pending": 27, "tail": 0, "quadratic": 4999987, "elapsed_seconds": 12077.905999999959, "nodes_per_second": 827.9580914108815}
+{"visited": 10250000, "pending": 37, "tail": 0, "quadratic": 5124982, "elapsed_seconds": 12426.421999999962, "nodes_per_second": 824.8552962389359}
+{"visited": 10500000, "pending": 33, "tail": 0, "quadratic": 5249984, "elapsed_seconds": 12914.968999999983, "nodes_per_second": 813.010081557301}
+{"visited": 10750000, "pending": 35, "tail": 0, "quadratic": 5374983, "elapsed_seconds": 13585.218999999983, "nodes_per_second": 791.3011928626262}
+{"visited": 11000000, "pending": 37, "tail": 0, "quadratic": 5499982, "elapsed_seconds": 14332.312999999966, "nodes_per_second": 767.4964955063448}
+{"visited": 11250000, "pending": 37, "tail": 0, "quadratic": 5624982, "elapsed_seconds": 15037.45299999998, "nodes_per_second": 748.1320141116993}
+{"visited": 11500000, "pending": 35, "tail": 0, "quadratic": 5749983, "elapsed_seconds": 15775.030999999959, "nodes_per_second": 729.0001522025555}
+{"visited": 11750000, "pending": 39, "tail": 0, "quadratic": 5874981, "elapsed_seconds": 16499.312999999966, "nodes_per_second": 712.15086349353}
+{"visited": 12000000, "pending": 35, "tail": 0, "quadratic": 5999983, "elapsed_seconds": 17196.391000000003, "nodes_per_second": 697.8208392679602}
+{"visited": 12250000, "pending": 41, "tail": 0, "quadratic": 6124980, "elapsed_seconds": 17950.15599999996, "nodes_per_second": 682.4453224807644}
+{"visited": 12500000, "pending": 35, "tail": 0, "quadratic": 6249983, "elapsed_seconds": 18279.687999999966, "nodes_per_second": 683.819111135815}
+{"visited": 12750000, "pending": 33, "tail": 0, "quadratic": 6374984, "elapsed_seconds": 18458.266000000003, "nodes_per_second": 690.7474407400997}
+{"visited": 13000000, "pending": 35, "tail": 0, "quadratic": 6499983, "elapsed_seconds": 18625.95299999998, "nodes_per_second": 697.9508645812654}
+{"visited": 13250000, "pending": 37, "tail": 0, "quadratic": 6624982, "elapsed_seconds": 18789.25, "nodes_per_second": 705.1904679537502}
+
+=== A1294 SOURCE-FREE REPLAY ===
+{
+  "A": "647/50000",
+  "B": "1094977/5000000000",
+  "elapsed_seconds": 18897.78099999996,
+  "environment": {
+    "machine": "ARM64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:31:18) [MSC v.1943 64 bit (ARM64)]"
+  },
+  "input_sha256": {
+    "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+  },
+  "leaves": 6727061,
+  "maximum_pending_stack": 55,
+  "nodes_per_second": 711.9418412140573,
+  "quadratic_leaves": 6725258,
+  "schema": "a1294-source-free-third-replay-v1",
+  "smallest_quadratic_margin": "33853157328150681621271330867899241/8192000000000000000000000000000000000000000000",
+  "smallest_tail_margin": "49931/250000000",
+  "status": "PASS",
+  "stream_sha256": {
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "tail_leaves": 1803,
+  "trust_note": "Standard-library source-free replay. No generator, project Checker, or project verifier is imported. Every terminal inequality is recomputed with fractions.Fraction.",
+  "visited_nodes": 13454121
+}
+
+RESULT: C:\Users\Asus\Downloads\A1294_SOURCE_FREE_REPLAY_V2\A1294_SOURCE_FREE_REPLAY_PACKAGE_V2\A1294_SOURCE_FREE_REPLAY_RESULT.json

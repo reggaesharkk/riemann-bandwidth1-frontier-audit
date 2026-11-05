@@ -1,0 +1,1588 @@
+theorem Node53.left_box : parentBox.lowerHalf ⟨3, ⋯⟩ = AuthenticCompact16.box :=
+box_ext
+  (fun i =>
+    List.Mem.casesOn (motive := fun a x =>
+      List.finRange 5 = a →
+        Fintype.complete i ≍ x →
+          (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i = AuthenticCompact16.box.lo i)
+      (Fintype.complete i)
+      (fun as h =>
+        List.cons.noConfusion h fun head_eq =>
+          Eq.ndrec (motive := fun i =>
+            ∀ (this : i ∈ Fintype.elems),
+              (fun x1 x2 => (fun i => i) x1 :: x2) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                        ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))) ≍
+                  as →
+                this ≍ List.Mem.head as →
+                  (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i = AuthenticCompact16.box.lo i)
+            (fun this tail_eq =>
+              Eq.ndrec (motive := fun as =>
+                this ≍ List.Mem.head as →
+                  (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                      ((fun i => i) ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩) =
+                    AuthenticCompact16.box.lo
+                      ((fun i => i) ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩))
+                (fun h =>
+                  of_eq_true
+                    (Eq.trans
+                      (congr
+                        (congrArg Eq
+                          (Eq.trans
+                            (congrFun'
+                              (congrArg GapBox.lo
+                                (congrArg
+                                  (GapBox.mk fun i =>
+                                    match ↑i with
+                                    | 0 => 195 / 32
+                                    | 1 => 405 / 64
+                                    | 2 => 195 / 32
+                                    | 3 => 195 / 32
+                                    | x => 195 / 32)
+                                  (congrArg
+                                    (Function.update
+                                      (fun i =>
+                                        match ↑i with
+                                        | 0 => 105 / 16
+                                        | 1 => 105 / 16
+                                        | 2 => 405 / 64
+                                        | 3 => 105 / 16
+                                        | x => 105 / 16)
+                                      ⟨3, of_decide_eq_true (id (Eq.refl true))⟩)
+                                    (congrFun'
+                                      (congrArg HDiv.hDiv
+                                        (congr
+                                          (congrArg HAdd.hAdd
+                                            (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                              (fun _ => 195 / 32) (fun _ => 195 / 32) fun x => 195 / 32))
+                                          (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 105 / 16) (fun _ => 105 / 16)
+                                            (fun _ => 405 / 64) (fun _ => 105 / 16) fun x => 105 / 16)))
+                                      2))))
+                              ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩)
+                            (box1.match_1.eq_1 (fun x => ℚ) (fun _ => 195 / 32) (fun _ => 405 / 64) (fun _ => 195 / 32)
+                              (fun _ => 195 / 32) fun x => 195 / 32)))
+                        (AuthenticCompact16.box.match_1.eq_1 (fun x => ℚ) (fun _ => 195 / 32) (fun _ => 405 / 64)
+                          (fun _ => 195 / 32) (fun _ => 195 / 32) fun x => 195 / 32))
+                      (eq_self (195 / 32))))
+                (eq_of_heq tail_eq))
+            (eq_of_heq head_eq) (Fintype.complete i))
+      (fun b {as} a h =>
+        List.cons.noConfusion h fun head_eq =>
+          Eq.ndrec (motive := fun b =>
+            (fun x1 x2 => (fun i => i) x1 :: x2) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))) ≍
+                as →
+              Fintype.complete i ≍ List.Mem.tail b a →
+                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i = AuthenticCompact16.box.lo i)
+            (fun tail_eq =>
+              Eq.ndrec (motive := fun {as} =>
+                ∀ (a : List.Mem i as),
+                  Fintype.complete i ≍
+                      List.Mem.tail
+                        ((fun i => i) ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩)
+                        a →
+                    (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i = AuthenticCompact16.box.lo i)
+                (fun a h =>
+                  List.Mem.casesOn (motive := fun a_1 x =>
+                    (fun x1 x2 => (fun i => i) x1 :: x2) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                          ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                            ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                              ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))) =
+                        a_1 →
+                      a ≍ x →
+                        (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                          AuthenticCompact16.box.lo i)
+                    a
+                    (fun as h =>
+                      List.cons.noConfusion h fun head_eq =>
+                        Eq.ndrec (motive := fun i =>
+                          ∀
+                            (a :
+                              List.Mem i
+                                ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                  ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))))),
+                            (fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])) ≍
+                                as →
+                              a ≍ List.Mem.head as →
+                                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                  AuthenticCompact16.box.lo i)
+                          (fun a tail_eq =>
+                            Eq.ndrec (motive := fun as =>
+                              a ≍ List.Mem.head as →
+                                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                    ((fun i => i) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩) =
+                                  AuthenticCompact16.box.lo
+                                    ((fun i => i) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩))
+                              (fun h =>
+                                of_eq_true
+                                  (Eq.trans
+                                    (congr
+                                      (congrArg Eq
+                                        (Eq.trans
+                                          (congrFun'
+                                            (congrArg GapBox.lo
+                                              (congrArg
+                                                (GapBox.mk fun i =>
+                                                  match ↑i with
+                                                  | 0 => 195 / 32
+                                                  | 1 => 405 / 64
+                                                  | 2 => 195 / 32
+                                                  | 3 => 195 / 32
+                                                  | x => 195 / 32)
+                                                (congrArg
+                                                  (Function.update
+                                                    (fun i =>
+                                                      match ↑i with
+                                                      | 0 => 105 / 16
+                                                      | 1 => 105 / 16
+                                                      | 2 => 405 / 64
+                                                      | 3 => 105 / 16
+                                                      | x => 105 / 16)
+                                                    ⟨3, of_decide_eq_true (id (Eq.refl true))⟩)
+                                                  (congrFun'
+                                                    (congrArg HDiv.hDiv
+                                                      (congr
+                                                        (congrArg HAdd.hAdd
+                                                          (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 195 / 32)
+                                                            (fun _ => 405 / 64) (fun _ => 195 / 32) (fun _ => 195 / 32)
+                                                            fun x => 195 / 32))
+                                                        (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 105 / 16)
+                                                          (fun _ => 105 / 16) (fun _ => 405 / 64) (fun _ => 105 / 16)
+                                                          fun x => 105 / 16)))
+                                                    2))))
+                                            ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩)
+                                          (box1.match_1.eq_2 (fun x => ℚ) (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                            (fun _ => 195 / 32) (fun _ => 195 / 32) fun x => 195 / 32)))
+                                      (AuthenticCompact16.box.match_1.eq_2 (fun x => ℚ) (fun _ => 195 / 32)
+                                        (fun _ => 405 / 64) (fun _ => 195 / 32) (fun _ => 195 / 32) fun x => 195 / 32))
+                                    (eq_self (405 / 64))))
+                              (eq_of_heq tail_eq))
+                          (eq_of_heq head_eq) a)
+                    (fun b {as} a_1 h =>
+                      List.cons.noConfusion h fun head_eq =>
+                        Eq.ndrec (motive := fun b =>
+                          (fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])) ≍
+                              as →
+                            a ≍ List.Mem.tail b a_1 →
+                              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                AuthenticCompact16.box.lo i)
+                          (fun tail_eq =>
+                            Eq.ndrec (motive := fun {as} =>
+                              ∀ (a_2 : List.Mem i as),
+                                a ≍
+                                    List.Mem.tail
+                                      ((fun i => i) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩)
+                                      a_2 →
+                                  (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                    AuthenticCompact16.box.lo i)
+                              (fun a_2 h =>
+                                List.Mem.casesOn (motive := fun a x =>
+                                  (fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                        ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                          ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])) =
+                                      a →
+                                    a_2 ≍ x →
+                                      (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                        AuthenticCompact16.box.lo i)
+                                  a_2
+                                  (fun as h =>
+                                    List.cons.noConfusion h fun head_eq =>
+                                      Eq.ndrec (motive := fun i =>
+                                        ∀
+                                          (a :
+                                            List.Mem i
+                                              ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                                ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])))),
+                                          (fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []) ≍
+                                              as →
+                                            a ≍ List.Mem.head as →
+                                              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                                AuthenticCompact16.box.lo i)
+                                        (fun a tail_eq =>
+                                          Eq.ndrec (motive := fun as =>
+                                            a ≍ List.Mem.head as →
+                                              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                  ((fun i => i) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩) =
+                                                AuthenticCompact16.box.lo
+                                                  ((fun i => i) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩))
+                                            (fun h =>
+                                              of_eq_true
+                                                (Eq.trans
+                                                  (congr
+                                                    (congrArg Eq
+                                                      (Eq.trans
+                                                        (congrFun'
+                                                          (congrArg GapBox.lo
+                                                            (congrArg
+                                                              (GapBox.mk fun i =>
+                                                                match ↑i with
+                                                                | 0 => 195 / 32
+                                                                | 1 => 405 / 64
+                                                                | 2 => 195 / 32
+                                                                | 3 => 195 / 32
+                                                                | x => 195 / 32)
+                                                              (congrArg
+                                                                (Function.update
+                                                                  (fun i =>
+                                                                    match ↑i with
+                                                                    | 0 => 105 / 16
+                                                                    | 1 => 105 / 16
+                                                                    | 2 => 405 / 64
+                                                                    | 3 => 105 / 16
+                                                                    | x => 105 / 16)
+                                                                  ⟨3, of_decide_eq_true (id (Eq.refl true))⟩)
+                                                                (congrFun'
+                                                                  (congrArg HDiv.hDiv
+                                                                    (congr
+                                                                      (congrArg HAdd.hAdd
+                                                                        (box1.match_1.eq_4 (fun x => ℚ)
+                                                                          (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                                                          (fun _ => 195 / 32) (fun _ => 195 / 32)
+                                                                          fun x => 195 / 32))
+                                                                      (box1.match_1.eq_4 (fun x => ℚ)
+                                                                        (fun _ => 105 / 16) (fun _ => 105 / 16)
+                                                                        (fun _ => 405 / 64) (fun _ => 105 / 16) fun x =>
+                                                                        105 / 16)))
+                                                                  2))))
+                                                          ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩)
+                                                        (box1.match_1.eq_3 (fun x => ℚ) (fun _ => 195 / 32)
+                                                          (fun _ => 405 / 64) (fun _ => 195 / 32) (fun _ => 195 / 32)
+                                                          fun x => 195 / 32)))
+                                                    (AuthenticCompact16.box.match_1.eq_3 (fun x => ℚ)
+                                                      (fun _ => 195 / 32) (fun _ => 405 / 64) (fun _ => 195 / 32)
+                                                      (fun _ => 195 / 32) fun x => 195 / 32))
+                                                  (eq_self (195 / 32))))
+                                            (eq_of_heq tail_eq))
+                                        (eq_of_heq head_eq) a_2)
+                                  (fun b {as} a h =>
+                                    List.cons.noConfusion h fun head_eq =>
+                                      Eq.ndrec (motive := fun b =>
+                                        (fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                              ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []) ≍
+                                            as →
+                                          a_2 ≍ List.Mem.tail b a →
+                                            (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                              AuthenticCompact16.box.lo i)
+                                        (fun tail_eq =>
+                                          Eq.ndrec (motive := fun {as} =>
+                                            ∀ (a : List.Mem i as),
+                                              a_2 ≍
+                                                  List.Mem.tail
+                                                    ((fun i => i) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩) a →
+                                                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo i =
+                                                  AuthenticCompact16.box.lo i)
+                                            (fun a h =>
+                                              List.Mem.casesOn (motive := fun a_3 x =>
+                                                (fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []) =
+                                                    a_3 →
+                                                  a ≍ x →
+                                                    (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                        i =
+                                                      AuthenticCompact16.box.lo i)
+                                                a
+                                                (fun as h =>
+                                                  List.cons.noConfusion h fun head_eq =>
+                                                    Eq.ndrec (motive := fun i =>
+                                                      ∀
+                                                        (a :
+                                                          List.Mem i
+                                                            ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                                              ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                              ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩
+                                                                []))),
+                                                        (fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [] ≍
+                                                            as →
+                                                          a ≍ List.Mem.head as →
+                                                            (parentBox.lowerHalf
+                                                                    ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                                i =
+                                                              AuthenticCompact16.box.lo i)
+                                                      (fun a tail_eq =>
+                                                        Eq.ndrec (motive := fun as =>
+                                                          a ≍ List.Mem.head as →
+                                                            (parentBox.lowerHalf
+                                                                    ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                                ((fun i => i) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩) =
+                                                              AuthenticCompact16.box.lo
+                                                                ((fun i => i) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩))
+                                                          (fun h =>
+                                                            of_eq_true
+                                                              (Eq.trans
+                                                                (congr
+                                                                  (congrArg Eq
+                                                                    (Eq.trans
+                                                                      (congrFun'
+                                                                        (congrArg GapBox.lo
+                                                                          (congrArg
+                                                                            (GapBox.mk fun i =>
+                                                                              match ↑i with
+                                                                              | 0 => 195 / 32
+                                                                              | 1 => 405 / 64
+                                                                              | 2 => 195 / 32
+                                                                              | 3 => 195 / 32
+                                                                              | x => 195 / 32)
+                                                                            (congrArg
+                                                                              (Function.update
+                                                                                (fun i =>
+                                                                                  match ↑i with
+                                                                                  | 0 => 105 / 16
+                                                                                  | 1 => 105 / 16
+                                                                                  | 2 => 405 / 64
+                                                                                  | 3 => 105 / 16
+                                                                                  | x => 105 / 16)
+                                                                                ⟨3,
+                                                                                  of_decide_eq_true
+                                                                                    (id (Eq.refl true))⟩)
+                                                                              (congrFun'
+                                                                                (congrArg HDiv.hDiv
+                                                                                  (congr
+                                                                                    (congrArg HAdd.hAdd
+                                                                                      (box1.match_1.eq_4 (fun x => ℚ)
+                                                                                        (fun _ => 195 / 32)
+                                                                                        (fun _ => 405 / 64)
+                                                                                        (fun _ => 195 / 32)
+                                                                                        (fun _ => 195 / 32) fun x =>
+                                                                                        195 / 32))
+                                                                                    (box1.match_1.eq_4 (fun x => ℚ)
+                                                                                      (fun _ => 105 / 16)
+                                                                                      (fun _ => 105 / 16)
+                                                                                      (fun _ => 405 / 64)
+                                                                                      (fun _ => 105 / 16) fun x =>
+                                                                                      105 / 16)))
+                                                                                2))))
+                                                                        ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩)
+                                                                      (box1.match_1.eq_4 (fun x => ℚ)
+                                                                        (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                                                        (fun _ => 195 / 32) (fun _ => 195 / 32) fun x =>
+                                                                        195 / 32)))
+                                                                  (AuthenticCompact16.box.match_1.eq_4 (fun x => ℚ)
+                                                                    (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                                                    (fun _ => 195 / 32) (fun _ => 195 / 32) fun x =>
+                                                                    195 / 32))
+                                                                (eq_self (195 / 32))))
+                                                          (eq_of_heq tail_eq))
+                                                      (eq_of_heq head_eq) a)
+                                                (fun b {as} a_3 h =>
+                                                  List.cons.noConfusion h fun head_eq =>
+                                                    Eq.ndrec (motive := fun b =>
+                                                      (fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [] ≍ as →
+                                                        a ≍ List.Mem.tail b a_3 →
+                                                          (parentBox.lowerHalf
+                                                                  ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                              i =
+                                                            AuthenticCompact16.box.lo i)
+                                                      (fun tail_eq =>
+                                                        Eq.ndrec (motive := fun {as} =>
+                                                          ∀ (a_4 : List.Mem i as),
+                                                            a ≍
+                                                                List.Mem.tail
+                                                                  ((fun i => i) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩) a_4 →
+                                                              (parentBox.lowerHalf
+                                                                      ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                                  i =
+                                                                AuthenticCompact16.box.lo i)
+                                                          (fun a_4 h =>
+                                                            List.Mem.casesOn (motive := fun a x =>
+                                                              (fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩
+                                                                    [] =
+                                                                  a →
+                                                                a_4 ≍ x →
+                                                                  (parentBox.lowerHalf
+                                                                          ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).lo
+                                                                      i =
+                                                                    AuthenticCompact16.box.lo i)
+                                                              a_4
+                                                              (fun as h =>
+                                                                List.cons.noConfusion h fun head_eq =>
+                                                                  Eq.ndrec (motive := fun i =>
+                                                                    ∀
+                                                                      (a :
+                                                                        List.Mem i
+                                                                          ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                                                            ⟨4, Nat.le_refl 5⟩ [])),
+                                                                      [] ≍ as →
+                                                                        a ≍ List.Mem.head as →
+                                                                          (parentBox.lowerHalf
+                                                                                  ⟨3,
+                                                                                    of_decide_eq_true
+                                                                                      (id (Eq.refl true))⟩).lo
+                                                                              i =
+                                                                            AuthenticCompact16.box.lo i)
+                                                                    (fun a tail_eq =>
+                                                                      Eq.ndrec (motive := fun as =>
+                                                                        a ≍ List.Mem.head as →
+                                                                          (parentBox.lowerHalf
+                                                                                  ⟨3,
+                                                                                    of_decide_eq_true
+                                                                                      (id (Eq.refl true))⟩).lo
+                                                                              ((fun i => i) ⟨4, Nat.le_refl 5⟩) =
+                                                                            AuthenticCompact16.box.lo
+                                                                              ((fun i => i) ⟨4, Nat.le_refl 5⟩))
+                                                                        (fun h =>
+                                                                          of_eq_true
+                                                                            (Eq.trans
+                                                                              (congr
+                                                                                (congrArg Eq
+                                                                                  (Eq.trans
+                                                                                    (congrFun'
+                                                                                      (congrArg GapBox.lo
+                                                                                        (congrArg (GapBox.mk ⋯)
+                                                                                          (congrArg ⋯ ⋯)))
+                                                                                      ⟨4, Nat.le_refl 5⟩)
+                                                                                    (box1.match_1.eq_5 (fun x => ℚ) 4
+                                                                                      (fun _ => 195 / 32)
+                                                                                      (fun _ => 405 / 64)
+                                                                                      (fun _ => 195 / 32)
+                                                                                      (fun _ => 195 / 32)
+                                                                                      (fun x => 195 / 32)
+                                                                                      (fun x =>
+                                                                                        False.elim
+                                                                                          (noConfusion_of_Nat
+                                                                                            Nat.ctorIdx x))
+                                                                                      (fun x =>
+                                                                                        Nat.Internal.elimOffset (0 + 3)
+                                                                                          0 1 x fun x =>
+                                                                                          False.elim
+                                                                                            (noConfusion_of_Nat
+                                                                                              Nat.ctorIdx x))
+                                                                                      (fun x =>
+                                                                                        Nat.Internal.elimOffset (0 + 2)
+                                                                                          0 2 x fun x =>
+                                                                                          False.elim
+                                                                                            (noConfusion_of_Nat
+                                                                                              Nat.ctorIdx x))
+                                                                                      fun x =>
+                                                                                      Nat.Internal.elimOffset (0 + 1) 0
+                                                                                        3 x fun x =>
+                                                                                        False.elim
+                                                                                          (noConfusion_of_Nat
+                                                                                            Nat.ctorIdx x))))
+                                                                                (AuthenticCompact16.box.match_1.eq_5
+                                                                                  (fun x => ℚ) 4 (fun _ => 195 / 32)
+                                                                                  (fun _ => 405 / 64)
+                                                                                  (fun _ => 195 / 32)
+                                                                                  (fun _ => 195 / 32)
+                                                                                  (fun x => 195 / 32)
+                                                                                  (fun x =>
+                                                                                    False.elim
+                                                                                      (noConfusion_of_Nat Nat.ctorIdx
+                                                                                        x))
+                                                                                  (fun x =>
+                                                                                    Nat.Internal.elimOffset (0 + 3) 0 1
+                                                                                      x fun x =>
+                                                                                      False.elim
+                                                                                        (noConfusion_of_Nat Nat.ctorIdx
+                                                                                          x))
+                                                                                  (fun x =>
+                                                                                    Nat.Internal.elimOffset (0 + 2) 0 2
+                                                                                      x fun x =>
+                                                                                      False.elim
+                                                                                        (noConfusion_of_Nat Nat.ctorIdx
+                                                                                          x))
+                                                                                  fun x =>
+                                                                                  Nat.Internal.elimOffset (0 + 1) 0 3 x
+                                                                                    fun x =>
+                                                                                    False.elim
+                                                                                      (noConfusion_of_Nat Nat.ctorIdx
+                                                                                        x)))
+                                                                              (eq_self (195 / 32))))
+                                                                        (eq_of_heq tail_eq))
+                                                                    (eq_of_heq head_eq) a_4)
+                                                              (fun b {as} a h =>
+                                                                List.cons.noConfusion h fun head_eq =>
+                                                                  Eq.ndrec (motive := fun b =>
+                                                                    [] ≍ as →
+                                                                      a_4 ≍ List.Mem.tail b a →
+                                                                        (parentBox.lowerHalf
+                                                                                ⟨3,
+                                                                                  of_decide_eq_true
+                                                                                    (id (Eq.refl true))⟩).lo
+                                                                            i =
+                                                                          AuthenticCompact16.box.lo i)
+                                                                    (fun tail_eq =>
+                                                                      Eq.ndrec (motive := fun {as} =>
+                                                                        ∀ (a : List.Mem i as),
+                                                                          a_4 ≍
+                                                                              List.Mem.tail
+                                                                                ((fun i => i) ⟨4, Nat.le_refl 5⟩) a →
+                                                                            (parentBox.lowerHalf
+                                                                                    ⟨3,
+                                                                                      of_decide_eq_true
+                                                                                        (id (Eq.refl true))⟩).lo
+                                                                                i =
+                                                                              AuthenticCompact16.box.lo i)
+                                                                        (fun a h =>
+                                                                          List.Mem.casesOn (motive := fun a_5 x =>
+                                                                            [] = a_5 →
+                                                                              a ≍ x →
+                                                                                (parentBox.lowerHalf
+                                                                                        ⟨3,
+                                                                                          of_decide_eq_true
+                                                                                            (id (Eq.refl true))⟩).lo
+                                                                                    i =
+                                                                                  AuthenticCompact16.box.lo i)
+                                                                            a
+                                                                            (fun as h =>
+                                                                              False.elim
+                                                                                (noConfusion_of_Nat List.ctorIdx h))
+                                                                            (fun b {as} a_5 h =>
+                                                                              False.elim
+                                                                                (noConfusion_of_Nat List.ctorIdx h))
+                                                                            (Eq.refl []) (HEq.refl a))
+                                                                        (eq_of_heq tail_eq) a)
+                                                                    (eq_of_heq head_eq))
+                                                              (Eq.refl
+                                                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩
+                                                                  []))
+                                                              (HEq.refl a_4))
+                                                          (eq_of_heq tail_eq) a_3)
+                                                      (eq_of_heq head_eq))
+                                                (Eq.refl
+                                                  ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                                    ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])))
+                                                (HEq.refl a))
+                                            (eq_of_heq tail_eq) a)
+                                        (eq_of_heq head_eq))
+                                  (Eq.refl
+                                    ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                      ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                        ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))))
+                                  (HEq.refl a_2))
+                              (eq_of_heq tail_eq) a_1)
+                          (eq_of_heq head_eq))
+                    (Eq.refl
+                      ((fun x1 x2 => (fun i => i) x1 :: x2)
+                        ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                        ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                          ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                            ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])))))
+                    (HEq.refl a))
+                (eq_of_heq tail_eq) a)
+            (eq_of_heq head_eq))
+      (Eq.refl (List.finRange 5)) (HEq.refl (Fintype.complete i)))
+  fun i =>
+  List.Mem.casesOn (motive := fun a x =>
+    List.finRange 5 = a →
+      Fintype.complete i ≍ x →
+        (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i = AuthenticCompact16.box.hi i)
+    (Fintype.complete i)
+    (fun as h =>
+      List.cons.noConfusion h fun head_eq =>
+        Eq.ndrec (motive := fun i =>
+          ∀ (this : i ∈ Fintype.elems),
+            (fun x1 x2 => (fun i => i) x1 :: x2) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))) ≍
+                as →
+              this ≍ List.Mem.head as →
+                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i = AuthenticCompact16.box.hi i)
+          (fun this tail_eq =>
+            Eq.ndrec (motive := fun as =>
+              this ≍ List.Mem.head as →
+                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                    ((fun i => i) ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩) =
+                  AuthenticCompact16.box.hi
+                    ((fun i => i) ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩))
+              (fun h =>
+                Eq.mpr
+                  (id
+                    (congr
+                      (congrArg Eq
+                        (Eq.trans
+                          (congrFun'
+                            (congrArg GapBox.hi
+                              (congrArg
+                                (GapBox.mk fun i =>
+                                  match ↑i with
+                                  | 0 => 195 / 32
+                                  | 1 => 405 / 64
+                                  | 2 => 195 / 32
+                                  | 3 => 195 / 32
+                                  | x => 195 / 32)
+                                (congrArg
+                                  (Function.update
+                                    (fun i =>
+                                      match ↑i with
+                                      | 0 => 105 / 16
+                                      | 1 => 105 / 16
+                                      | 2 => 405 / 64
+                                      | 3 => 105 / 16
+                                      | x => 105 / 16)
+                                    ⟨3, of_decide_eq_true (id (Eq.refl true))⟩)
+                                  (congrFun'
+                                    (congrArg HDiv.hDiv
+                                      (congr
+                                        (congrArg HAdd.hAdd
+                                          (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                            (fun _ => 195 / 32) (fun _ => 195 / 32) fun x => 195 / 32))
+                                        (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 105 / 16) (fun _ => 105 / 16)
+                                          (fun _ => 405 / 64) (fun _ => 105 / 16) fun x => 105 / 16)))
+                                    2))))
+                            ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩)
+                          (Eq.trans
+                            (Function.update_apply
+                              (fun i =>
+                                match ↑i with
+                                | 0 => 105 / 16
+                                | 1 => 105 / 16
+                                | 2 => 405 / 64
+                                | 3 => 105 / 16
+                                | x => 105 / 16)
+                              ⟨3, of_decide_eq_true (id (Eq.refl true))⟩ ((195 / 32 + 105 / 16) / 2)
+                              ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩)
+                            (ite_congr
+                              (Eq.refl
+                                (⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩ =
+                                  ⟨3, of_decide_eq_true (id (Eq.refl true))⟩))
+                              (fun a => Eq.refl ((195 / 32 + 105 / 16) / 2)) fun a =>
+                              box1.match_1.eq_1 (fun x => ℚ) (fun _ => 105 / 16) (fun _ => 105 / 16) (fun _ => 405 / 64)
+                                (fun _ => 105 / 16) fun x => 105 / 16))))
+                      (AuthenticCompact16.box.match_1.eq_1 (fun x => ℚ) (fun _ => 105 / 16) (fun _ => 105 / 16)
+                        (fun _ => 405 / 64) (fun _ => 405 / 64) fun x => 105 / 16)))
+                  (Eq.mpr
+                    (id
+                      (Eq.trans
+                        (Eq.trans
+                          (congr
+                            (congrArg Eq
+                              (Eq.trans
+                                (ite_congr
+                                  (congrArg (Eq 0)
+                                    (Zeta23.ThmD.Sextuple.fin5_mk_three✝ (of_decide_eq_true (id (Eq.refl true)))))
+                                  (fun a =>
+                                    Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                      (Mathlib.Meta.NormNum.isNNRat_div
+                                        (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                          (Mathlib.Meta.NormNum.isNNRat_add (Eq.refl HAdd.hAdd)
+                                            (Mathlib.Meta.NormNum.isNNRat_div
+                                              (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 195)))
+                                                (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 32))))
+                                                (Eq.refl (Nat.mul 195 1)) (Eq.refl 32)))
+                                            (Mathlib.Meta.NormNum.isNNRat_div
+                                              (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                                (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                                (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                            (Eq.refl 6480) (Eq.refl 512))
+                                          (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                            (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                              (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 2))))
+                                          (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                      (Eq.refl 405) (Eq.refl 64))
+                                  fun a =>
+                                  Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                    (Mathlib.Meta.NormNum.isNNRat_div
+                                      (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                          (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                        (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                            (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                        (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                    (Eq.refl 105) (Eq.refl 16))
+                                (ite_congr (Eq.refl (0 = 3))
+                                  (fun a =>
+                                    Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                      (Mathlib.Meta.NormNum.isNNRat_div
+                                        (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                            (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 405)))
+                                          (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                            (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                              (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 64))))
+                                          (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                      (Eq.refl 405) (Eq.refl 64))
+                                  fun a =>
+                                  Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                    (Mathlib.Meta.NormNum.isNNRat_div
+                                      (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                          (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                        (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                            (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                        (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                    (Eq.refl 105) (Eq.refl 16))))
+                            (Mathlib.Meta.NormNum.IsNNRat.to_eq
+                              (Mathlib.Meta.NormNum.isNNRat_div
+                                (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                  (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                      (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                  (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                              (Eq.refl 105) (Eq.refl 16)))
+                          ite_eq_right_iff._simp_1)
+                        (Eq.trans
+                          (implies_congr (Eq.refl (0 = 3))
+                            (eq_false
+                              (Mathlib.Meta.NormNum.isNNRat_eq_false
+                                (Mathlib.Meta.NormNum.isNNRat_div
+                                  (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                      (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 405)))
+                                    (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                      (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                        (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 64))))
+                                    (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                (Mathlib.Meta.NormNum.isNNRat_div
+                                  (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                      (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                    (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                      (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                        (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                    (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                (Eq.refl false))))
+                          imp_false._simp_1)))
+                    (of_decide_eq_true (id (Eq.refl true)))))
+              (eq_of_heq tail_eq))
+          (eq_of_heq head_eq) (Fintype.complete i))
+    (fun b {as} a h =>
+      List.cons.noConfusion h fun head_eq =>
+        Eq.ndrec (motive := fun b =>
+          (fun x1 x2 => (fun i => i) x1 :: x2) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))) ≍
+              as →
+            Fintype.complete i ≍ List.Mem.tail b a →
+              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i = AuthenticCompact16.box.hi i)
+          (fun tail_eq =>
+            Eq.ndrec (motive := fun {as} =>
+              ∀ (a : List.Mem i as),
+                Fintype.complete i ≍
+                    List.Mem.tail
+                      ((fun i => i) ⟨0, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))))⟩) a →
+                  (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i = AuthenticCompact16.box.hi i)
+              (fun a h =>
+                List.Mem.casesOn (motive := fun a_1 x =>
+                  (fun x1 x2 => (fun i => i) x1 :: x2) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                        ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                          ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                            ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))) =
+                      a_1 →
+                    a ≍ x →
+                      (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                        AuthenticCompact16.box.hi i)
+                  a
+                  (fun as h =>
+                    List.cons.noConfusion h fun head_eq =>
+                      Eq.ndrec (motive := fun i =>
+                        ∀
+                          (a :
+                            List.Mem i
+                              ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩
+                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []))))),
+                          (fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                  ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])) ≍
+                              as →
+                            a ≍ List.Mem.head as →
+                              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                                AuthenticCompact16.box.hi i)
+                        (fun a tail_eq =>
+                          Eq.ndrec (motive := fun as =>
+                            a ≍ List.Mem.head as →
+                              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                  ((fun i => i) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩) =
+                                AuthenticCompact16.box.hi
+                                  ((fun i => i) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩))
+                            (fun h =>
+                              Eq.mpr
+                                (id
+                                  (congr
+                                    (congrArg Eq
+                                      (Eq.trans
+                                        (congrFun'
+                                          (congrArg GapBox.hi
+                                            (congrArg
+                                              (GapBox.mk fun i =>
+                                                match ↑i with
+                                                | 0 => 195 / 32
+                                                | 1 => 405 / 64
+                                                | 2 => 195 / 32
+                                                | 3 => 195 / 32
+                                                | x => 195 / 32)
+                                              (congrArg
+                                                (Function.update
+                                                  (fun i =>
+                                                    match ↑i with
+                                                    | 0 => 105 / 16
+                                                    | 1 => 105 / 16
+                                                    | 2 => 405 / 64
+                                                    | 3 => 105 / 16
+                                                    | x => 105 / 16)
+                                                  ⟨3, of_decide_eq_true (id (Eq.refl true))⟩)
+                                                (congrFun'
+                                                  (congrArg HDiv.hDiv
+                                                    (congr
+                                                      (congrArg HAdd.hAdd
+                                                        (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 195 / 32)
+                                                          (fun _ => 405 / 64) (fun _ => 195 / 32) (fun _ => 195 / 32)
+                                                          fun x => 195 / 32))
+                                                      (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 105 / 16)
+                                                        (fun _ => 105 / 16) (fun _ => 405 / 64) (fun _ => 105 / 16)
+                                                        fun x => 105 / 16)))
+                                                  2))))
+                                          ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩)
+                                        (Eq.trans
+                                          (Function.update_apply
+                                            (fun i =>
+                                              match ↑i with
+                                              | 0 => 105 / 16
+                                              | 1 => 105 / 16
+                                              | 2 => 405 / 64
+                                              | 3 => 105 / 16
+                                              | x => 105 / 16)
+                                            ⟨3, of_decide_eq_true (id (Eq.refl true))⟩ ((195 / 32 + 105 / 16) / 2)
+                                            ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩)
+                                          (ite_congr
+                                            (Eq.refl
+                                              (⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩ =
+                                                ⟨3, of_decide_eq_true (id (Eq.refl true))⟩))
+                                            (fun a => Eq.refl ((195 / 32 + 105 / 16) / 2)) fun a =>
+                                            box1.match_1.eq_2 (fun x => ℚ) (fun _ => 105 / 16) (fun _ => 105 / 16)
+                                              (fun _ => 405 / 64) (fun _ => 105 / 16) fun x => 105 / 16))))
+                                    (AuthenticCompact16.box.match_1.eq_2 (fun x => ℚ) (fun _ => 105 / 16)
+                                      (fun _ => 105 / 16) (fun _ => 405 / 64) (fun _ => 405 / 64) fun x => 105 / 16)))
+                                (Eq.mpr
+                                  (id
+                                    (Eq.trans
+                                      (Eq.trans
+                                        (congr
+                                          (congrArg Eq
+                                            (Eq.trans
+                                              (ite_congr
+                                                (congrArg (Eq 1)
+                                                  (Zeta23.ThmD.Sextuple.fin5_mk_three✝
+                                                    (of_decide_eq_true (id (Eq.refl true)))))
+                                                (fun a =>
+                                                  Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                    (Mathlib.Meta.NormNum.isNNRat_div
+                                                      (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                        (Mathlib.Meta.NormNum.isNNRat_add (Eq.refl HAdd.hAdd)
+                                                          (Mathlib.Meta.NormNum.isNNRat_div
+                                                            (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 195)))
+                                                              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 32))))
+                                                              (Eq.refl (Nat.mul 195 1)) (Eq.refl 32)))
+                                                          (Mathlib.Meta.NormNum.isNNRat_div
+                                                            (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                                              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                                              (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                                          (Eq.refl 6480) (Eq.refl 512))
+                                                        (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                            (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 2))))
+                                                        (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                    (Eq.refl 405) (Eq.refl 64))
+                                                fun a =>
+                                                Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                  (Mathlib.Meta.NormNum.isNNRat_div
+                                                    (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                      (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                        (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                                      (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                          (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                                      (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                                  (Eq.refl 105) (Eq.refl 16))
+                                              (ite_congr (Eq.refl (1 = 3))
+                                                (fun a =>
+                                                  Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                    (Mathlib.Meta.NormNum.isNNRat_div
+                                                      (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                          (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 405)))
+                                                        (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                            (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 64))))
+                                                        (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                    (Eq.refl 405) (Eq.refl 64))
+                                                fun a =>
+                                                Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                  (Mathlib.Meta.NormNum.isNNRat_div
+                                                    (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                      (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                        (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                                      (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                          (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                                      (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                                  (Eq.refl 105) (Eq.refl 16))))
+                                          (Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                            (Mathlib.Meta.NormNum.isNNRat_div
+                                              (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                                (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                                (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                            (Eq.refl 105) (Eq.refl 16)))
+                                        ite_eq_right_iff._simp_1)
+                                      (Eq.trans
+                                        (implies_congr (Eq.refl (1 = 3))
+                                          (eq_false
+                                            (Mathlib.Meta.NormNum.isNNRat_eq_false
+                                              (Mathlib.Meta.NormNum.isNNRat_div
+                                                (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 405)))
+                                                  (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                      (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 64))))
+                                                  (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                              (Mathlib.Meta.NormNum.isNNRat_div
+                                                (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 105)))
+                                                  (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                      (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 16))))
+                                                  (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                              (Eq.refl false))))
+                                        imp_false._simp_1)))
+                                  (of_decide_eq_true (id (Eq.refl true)))))
+                            (eq_of_heq tail_eq))
+                        (eq_of_heq head_eq) a)
+                  (fun b {as} a_1 h =>
+                    List.cons.noConfusion h fun head_eq =>
+                      Eq.ndrec (motive := fun b =>
+                        (fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                              ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])) ≍
+                            as →
+                          a ≍ List.Mem.tail b a_1 →
+                            (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                              AuthenticCompact16.box.hi i)
+                        (fun tail_eq =>
+                          Eq.ndrec (motive := fun {as} =>
+                            ∀ (a_2 : List.Mem i as),
+                              a ≍
+                                  List.Mem.tail
+                                    ((fun i => i) ⟨1, Nat.le_of_lt (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))⟩) a_2 →
+                                (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                                  AuthenticCompact16.box.hi i)
+                            (fun a_2 h =>
+                              List.Mem.casesOn (motive := fun a x =>
+                                (fun x1 x2 => (fun i => i) x1 :: x2) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                      ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                        ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])) =
+                                    a →
+                                  a_2 ≍ x →
+                                    (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                                      AuthenticCompact16.box.hi i)
+                                a_2
+                                (fun as h =>
+                                  List.cons.noConfusion h fun head_eq =>
+                                    Eq.ndrec (motive := fun i =>
+                                      ∀
+                                        (a :
+                                          List.Mem i
+                                            ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                              ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩
+                                              ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [])))),
+                                        (fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                              ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []) ≍
+                                            as →
+                                          a ≍ List.Mem.head as →
+                                            (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                                              AuthenticCompact16.box.hi i)
+                                      (fun a tail_eq =>
+                                        Eq.ndrec (motive := fun as =>
+                                          a ≍ List.Mem.head as →
+                                            (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                ((fun i => i) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩) =
+                                              AuthenticCompact16.box.hi
+                                                ((fun i => i) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩))
+                                          (fun h =>
+                                            Eq.mpr
+                                              (id
+                                                (congr
+                                                  (congrArg Eq
+                                                    (Eq.trans
+                                                      (congrFun'
+                                                        (congrArg GapBox.hi
+                                                          (congrArg
+                                                            (GapBox.mk fun i =>
+                                                              match ↑i with
+                                                              | 0 => 195 / 32
+                                                              | 1 => 405 / 64
+                                                              | 2 => 195 / 32
+                                                              | 3 => 195 / 32
+                                                              | x => 195 / 32)
+                                                            (congrArg
+                                                              (Function.update
+                                                                (fun i =>
+                                                                  match ↑i with
+                                                                  | 0 => 105 / 16
+                                                                  | 1 => 105 / 16
+                                                                  | 2 => 405 / 64
+                                                                  | 3 => 105 / 16
+                                                                  | x => 105 / 16)
+                                                                ⟨3, of_decide_eq_true (id (Eq.refl true))⟩)
+                                                              (congrFun'
+                                                                (congrArg HDiv.hDiv
+                                                                  (congr
+                                                                    (congrArg HAdd.hAdd
+                                                                      (box1.match_1.eq_4 (fun x => ℚ)
+                                                                        (fun _ => 195 / 32) (fun _ => 405 / 64)
+                                                                        (fun _ => 195 / 32) (fun _ => 195 / 32) fun x =>
+                                                                        195 / 32))
+                                                                    (box1.match_1.eq_4 (fun x => ℚ) (fun _ => 105 / 16)
+                                                                      (fun _ => 105 / 16) (fun _ => 405 / 64)
+                                                                      (fun _ => 105 / 16) fun x => 105 / 16)))
+                                                                2))))
+                                                        ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩)
+                                                      (Eq.trans
+                                                        (Function.update_apply
+                                                          (fun i =>
+                                                            match ↑i with
+                                                            | 0 => 105 / 16
+                                                            | 1 => 105 / 16
+                                                            | 2 => 405 / 64
+                                                            | 3 => 105 / 16
+                                                            | x => 105 / 16)
+                                                          ⟨3, of_decide_eq_true (id (Eq.refl true))⟩
+                                                          ((195 / 32 + 105 / 16) / 2)
+                                                          ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩)
+                                                        (ite_congr
+                                                          (Eq.refl
+                                                            (⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩ =
+                                                              ⟨3, of_decide_eq_true (id (Eq.refl true))⟩))
+                                                          (fun a => Eq.refl ((195 / 32 + 105 / 16) / 2)) fun a =>
+                                                          box1.match_1.eq_3 (fun x => ℚ) (fun _ => 105 / 16)
+                                                            (fun _ => 105 / 16) (fun _ => 405 / 64) (fun _ => 105 / 16)
+                                                            fun x => 105 / 16))))
+                                                  (AuthenticCompact16.box.match_1.eq_3 (fun x => ℚ) (fun _ => 105 / 16)
+                                                    (fun _ => 105 / 16) (fun _ => 405 / 64) (fun _ => 405 / 64) fun x =>
+                                                    105 / 16)))
+                                              (of_eq_true
+                                                (Eq.trans
+                                                  (Eq.trans
+                                                    (congr
+                                                      (congrArg Eq
+                                                        (Eq.trans
+                                                          (Eq.trans
+                                                            (ite_congr
+                                                              (congr
+                                                                (congrArg Eq
+                                                                  (Zeta23.ThmD.Sextuple.fin5_mk_two✝
+                                                                    (Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5)))))
+                                                                (Zeta23.ThmD.Sextuple.fin5_mk_three✝
+                                                                  (of_decide_eq_true (id (Eq.refl true)))))
+                                                              (fun a =>
+                                                                Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                                  (Mathlib.Meta.NormNum.isNNRat_div
+                                                                    (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                      (Eq.refl HMul.hMul)
+                                                                      (Mathlib.Meta.NormNum.isNNRat_add
+                                                                        (Eq.refl HAdd.hAdd)
+                                                                        (Mathlib.Meta.NormNum.isNNRat_div
+                                                                          (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                            (Eq.refl HMul.hMul)
+                                                                            (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                              (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                (Eq.refl 195)))
+                                                                            (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                  (Eq.refl 32))))
+                                                                            (Eq.refl (Nat.mul 195 1)) (Eq.refl 32)))
+                                                                        (Mathlib.Meta.NormNum.isNNRat_div
+                                                                          (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                            (Eq.refl HMul.hMul)
+                                                                            (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                              (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                (Eq.refl 105)))
+                                                                            (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                  (Eq.refl 16))))
+                                                                            (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                                                        (Eq.refl 6480) (Eq.refl 512))
+                                                                      (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                          (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                            (Eq.refl 2))))
+                                                                      (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                                  (Eq.refl 405) (Eq.refl 64))
+                                                              fun a =>
+                                                              Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                                (Mathlib.Meta.NormNum.isNNRat_div
+                                                                  (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                      (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                        (Eq.refl 405)))
+                                                                    (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                      (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                        (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                          (Eq.refl 64))))
+                                                                    (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                                (Eq.refl 405) (Eq.refl 64))
+                                                            (ite_self (405 / 64)))
+                                                          (Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                            (Mathlib.Meta.NormNum.isNNRat_div
+                                                              (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 405)))
+                                                                (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 64))))
+                                                                (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                            (Eq.refl 405) (Eq.refl 64))))
+                                                      (Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                        (Mathlib.Meta.NormNum.isNNRat_div
+                                                          (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                                                            (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                              (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 405)))
+                                                            (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                (Mathlib.Meta.NormNum.isNat_ofNat ℚ (Eq.refl 64))))
+                                                            (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                        (Eq.refl 405) (Eq.refl 64)))
+                                                    (eq_self (405 / 64)))
+                                                  (eq_true True.intro))))
+                                          (eq_of_heq tail_eq))
+                                      (eq_of_heq head_eq) a_2)
+                                (fun b {as} a h =>
+                                  List.cons.noConfusion h fun head_eq =>
+                                    Eq.ndrec (motive := fun b =>
+                                      (fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                            ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []) ≍
+                                          as →
+                                        a_2 ≍ List.Mem.tail b a →
+                                          (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                                            AuthenticCompact16.box.hi i)
+                                      (fun tail_eq =>
+                                        Eq.ndrec (motive := fun {as} =>
+                                          ∀ (a : List.Mem i as),
+                                            a_2 ≍
+                                                List.Mem.tail
+                                                  ((fun i => i) ⟨2, Nat.le_of_lt (Nat.le_of_lt (Nat.le_refl 5))⟩) a →
+                                              (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi i =
+                                                AuthenticCompact16.box.hi i)
+                                          (fun a h =>
+                                            List.Mem.casesOn (motive := fun a_3 x =>
+                                              (fun x1 x2 => (fun i => i) x1 :: x2) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                    ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ []) =
+                                                  a_3 →
+                                                a ≍ x →
+                                                  (parentBox.lowerHalf ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                      i =
+                                                    AuthenticCompact16.box.hi i)
+                                              a
+                                              (fun as h =>
+                                                List.cons.noConfusion h fun head_eq =>
+                                                  Eq.ndrec (motive := fun i =>
+                                                    ∀
+                                                      (a :
+                                                        List.Mem i
+                                                          ((fun x1 x2 => (fun i => i) x1 :: x2)
+                                                            ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩
+                                                            ((fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩
+                                                              []))),
+                                                      (fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [] ≍ as →
+                                                        a ≍ List.Mem.head as →
+                                                          (parentBox.lowerHalf
+                                                                  ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                              i =
+                                                            AuthenticCompact16.box.hi i)
+                                                    (fun a tail_eq =>
+                                                      Eq.ndrec (motive := fun as =>
+                                                        a ≍ List.Mem.head as →
+                                                          (parentBox.lowerHalf
+                                                                  ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                              ((fun i => i) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩) =
+                                                            AuthenticCompact16.box.hi
+                                                              ((fun i => i) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩))
+                                                        (fun h =>
+                                                          Eq.mpr
+                                                            (id
+                                                              (congr
+                                                                (congrArg Eq
+                                                                  (Eq.trans
+                                                                    (congrFun'
+                                                                      (congrArg GapBox.hi
+                                                                        (congrArg
+                                                                          (GapBox.mk fun i =>
+                                                                            match ↑i with
+                                                                            | 0 => 195 / 32
+                                                                            | 1 => 405 / 64
+                                                                            | 2 => 195 / 32
+                                                                            | 3 => 195 / 32
+                                                                            | x => 195 / 32)
+                                                                          (congrArg
+                                                                            (Function.update
+                                                                              (fun i =>
+                                                                                match ↑i with
+                                                                                | 0 => 105 / 16
+                                                                                | 1 => 105 / 16
+                                                                                | 2 => 405 / 64
+                                                                                | 3 => 105 / 16
+                                                                                | x => 105 / 16)
+                                                                              ⟨3,
+                                                                                of_decide_eq_true (id (Eq.refl true))⟩)
+                                                                            (congrFun'
+                                                                              (congrArg HDiv.hDiv
+                                                                                (congr
+                                                                                  (congrArg HAdd.hAdd
+                                                                                    (box1.match_1.eq_4 (fun x => ℚ)
+                                                                                      (fun _ => 195 / 32)
+                                                                                      (fun _ => 405 / 64)
+                                                                                      (fun _ => 195 / 32)
+                                                                                      (fun _ => 195 / 32) fun x =>
+                                                                                      195 / 32))
+                                                                                  (box1.match_1.eq_4 (fun x => ℚ)
+                                                                                    (fun _ => 105 / 16)
+                                                                                    (fun _ => 105 / 16)
+                                                                                    (fun _ => 405 / 64)
+                                                                                    (fun _ => 105 / 16) fun x =>
+                                                                                    105 / 16)))
+                                                                              2))))
+                                                                      ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩)
+                                                                    (Eq.trans
+                                                                      (Function.update_apply
+                                                                        (fun i =>
+                                                                          match ↑i with
+                                                                          | 0 => 105 / 16
+                                                                          | 1 => 105 / 16
+                                                                          | 2 => 405 / 64
+                                                                          | 3 => 105 / 16
+                                                                          | x => 105 / 16)
+                                                                        ⟨3, of_decide_eq_true (id (Eq.refl true))⟩
+                                                                        ((195 / 32 + 105 / 16) / 2)
+                                                                        ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩)
+                                                                      (ite_congr
+                                                                        (eq_self ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩)
+                                                                        (fun a => Eq.refl ((195 / 32 + 105 / 16) / 2))
+                                                                        fun a =>
+                                                                        box1.match_1.eq_4 (fun x => ℚ)
+                                                                          (fun _ => 105 / 16) (fun _ => 105 / 16)
+                                                                          (fun _ => 405 / 64) (fun _ => 105 / 16)
+                                                                          fun x => 105 / 16))))
+                                                                (AuthenticCompact16.box.match_1.eq_4 (fun x => ℚ)
+                                                                  (fun _ => 105 / 16) (fun _ => 105 / 16)
+                                                                  (fun _ => 405 / 64) (fun _ => 405 / 64) fun x =>
+                                                                  105 / 16)))
+                                                            (of_eq_true
+                                                              (Eq.trans
+                                                                (Eq.trans
+                                                                  (congr
+                                                                    (congrArg Eq
+                                                                      (Eq.trans
+                                                                        (ite_congr (eq_true True.intro)
+                                                                          (fun a =>
+                                                                            Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                                              (Mathlib.Meta.NormNum.isNNRat_div
+                                                                                (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                                  (Eq.refl HMul.hMul)
+                                                                                  (Mathlib.Meta.NormNum.isNNRat_add
+                                                                                    (Eq.refl HAdd.hAdd)
+                                                                                    (Mathlib.Meta.NormNum.isNNRat_div
+                                                                                      (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                                        (Eq.refl HMul.hMul)
+                                                                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                          (Mathlib.Meta.NormNum.isNat_ofNat
+                                                                                            ℚ (Eq.refl 195)))
+                                                                                        (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                            (Mathlib.Meta.NormNum.isNat_ofNat
+                                                                                              ℚ (Eq.refl 32))))
+                                                                                        (Eq.refl (Nat.mul 195 1))
+                                                                                        (Eq.refl 32)))
+                                                                                    (Mathlib.Meta.NormNum.isNNRat_div
+                                                                                      (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                                        (Eq.refl HMul.hMul)
+                                                                                        (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                          (Mathlib.Meta.NormNum.isNat_ofNat
+                                                                                            ℚ (Eq.refl 105)))
+                                                                                        (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                            (Mathlib.Meta.NormNum.isNat_ofNat
+                                                                                              ℚ (Eq.refl 16))))
+                                                                                        (Eq.refl (Nat.mul 105 1))
+                                                                                        (Eq.refl 16)))
+                                                                                    (Eq.refl 6480) (Eq.refl 512))
+                                                                                  (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                                    (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                      (Mathlib.Meta.NormNum.isNat_ofNat
+                                                                                        ℚ (Eq.refl 2))))
+                                                                                  (Eq.refl (Nat.mul 405 1))
+                                                                                  (Eq.refl 64)))
+                                                                              (Eq.refl 405) (Eq.refl 64))
+                                                                          fun a =>
+                                                                          Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                                            (Mathlib.Meta.NormNum.isNNRat_div
+                                                                              (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                                (Eq.refl HMul.hMul)
+                                                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                    (Eq.refl 105)))
+                                                                                (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                    (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                      (Eq.refl 16))))
+                                                                                (Eq.refl (Nat.mul 105 1)) (Eq.refl 16)))
+                                                                            (Eq.refl 105) (Eq.refl 16))
+                                                                        (Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                                          (Mathlib.Meta.NormNum.isNNRat_div
+                                                                            (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                              (Eq.refl HMul.hMul)
+                                                                              (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                  (Eq.refl 405)))
+                                                                              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                                (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                                  (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                    (Eq.refl 64))))
+                                                                              (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                                          (Eq.refl 405) (Eq.refl 64))))
+                                                                    (Mathlib.Meta.NormNum.IsNNRat.to_eq
+                                                                      (Mathlib.Meta.NormNum.isNNRat_div
+                                                                        (Mathlib.Meta.NormNum.isNNRat_mul
+                                                                          (Eq.refl HMul.hMul)
+                                                                          (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                            (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                              (Eq.refl 405)))
+                                                                          (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                                                                            (Mathlib.Meta.NormNum.IsNat.to_isNNRat
+                                                                              (Mathlib.Meta.NormNum.isNat_ofNat ℚ
+                                                                                (Eq.refl 64))))
+                                                                          (Eq.refl (Nat.mul 405 1)) (Eq.refl 64)))
+                                                                      (Eq.refl 405) (Eq.refl 64)))
+                                                                  (eq_self (405 / 64)))
+                                                                (eq_true True.intro))))
+                                                        (eq_of_heq tail_eq))
+                                                    (eq_of_heq head_eq) a)
+                                              (fun b {as} a_3 h =>
+                                                List.cons.noConfusion h fun head_eq =>
+                                                  Eq.ndrec (motive := fun b =>
+                                                    (fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [] ≍ as →
+                                                      a ≍ List.Mem.tail b a_3 →
+                                                        (parentBox.lowerHalf
+                                                                ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                            i =
+                                                          AuthenticCompact16.box.hi i)
+                                                    (fun tail_eq =>
+                                                      Eq.ndrec (motive := fun {as} =>
+                                                        ∀ (a_4 : List.Mem i as),
+                                                          a ≍
+                                                              List.Mem.tail
+                                                                ((fun i => i) ⟨3, Nat.le_of_lt (Nat.le_refl 5)⟩) a_4 →
+                                                            (parentBox.lowerHalf
+                                                                    ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                                i =
+                                                              AuthenticCompact16.box.hi i)
+                                                        (fun a_4 h =>
+                                                          List.Mem.casesOn (motive := fun a x =>
+                                                            (fun x1 x2 => (fun i => i) x1 :: x2) ⟨4, Nat.le_refl 5⟩ [] =
+                                                                a →
+                                                              a_4 ≍ x →
+                                                                (parentBox.lowerHalf
+                                                                        ⟨3, of_decide_eq_true (id (Eq.refl true))⟩).hi
+                                                                    i =
+                                                                  AuthenticCompact16.box.hi i)
+                                                            a_4
+                                                            (fun as h =>
+                                                              List.cons.noConfusion h fun head_eq =>
+                                                                Eq.ndrec (motive := fun i =>
+                                                                  ∀ (a : ⋯),
+                                                                    ⋯ → ⋯ → (parentBox.lowerHalf ⟨⋯, ⋯⟩).hi ⋯ = ⋯)
+                                                                  ⋯ ⋯ ⋯)
+                                                            ⋯ ⋯ ⋯)
+                                                        ⋯ ⋯)
+                                                    ⋯)
+                                              ⋯ ⋯)
+                                          ⋯ ⋯)
+                                      ⋯)
+                                ⋯ ⋯)
+                            ⋯ ⋯)
+                        ⋯)
+                  ⋯ ⋯)
+              ⋯ ⋯)
+          ⋯)
+    ⋯ ⋯
+theorem Node53.replay53 : replayAffineTree leafCheck topology payloads 8 0 0 parentBox = some (15, 8) :=
+split_chunk_replay leafCheck topology payloads parentBox 3 7 0 0 (2, 1) (15, 8) top0 left_run right_run
+theorem Node53.exact_exhaustion : replayAffineTree leafCheck topology payloads 8 0 0 parentBox =
+  some (topology.length, payloads.length) :=
+checkAffineTree_exact_exhaustion accepted_tree
+theorem Node53.source_node53_box : sourceBoxAt 53 = some (box37, 16) :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (do
+              let __x ← _a
+              match __x with
+                | (p, c) => do
+                  let typed ← decodePath p
+                  pure (walk (initialGapBox 60) typed, c)) =
+            some (box37, 16))
+        locate53))
+    (id
+      (Eq.mpr
+        (id
+          (congrArg (fun _a => (_a.bind fun typed => some (walk (initialGapBox 60) typed, 16)) = some (box37, 16))
+            typed_path53))
+        (id
+          (Eq.mpr (id (congrArg (fun _a => some (_a, 16) = some (box37, 16)) source_path53))
+            (Eq.refl (some (box37, 16))))))))
+theorem Node53.source_check_accepted : sourceCheck53 = true :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (match _a, List.mapM decodeAffineTreeToken (List.drop 53 topologyBytes) with
+            | some (box, cursor), some tokens =>
+              match sourcePayloads53 cursor with
+              | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 8 box
+              | none => false
+            | x, x_1 => false) =
+            true)
+        source_node53_box))
+    (Eq.mpr
+      (id
+        (congrArg
+          (fun _a =>
+            (match some (box37, 16), _a with
+              | some (box, cursor), some tokens =>
+                match sourcePayloads53 cursor with
+                | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 8 box
+                | none => false
+              | x, x_1 => false) =
+              true)
+          source_topology53))
+      (id
+        (Eq.mpr
+          (id
+            (congrArg
+              (fun _a =>
+                (match _a with
+                  | some ps =>
+                    checkAffineTree leafCheck
+                      (CursorStream.ofList
+                        [AffineTreeToken.split 3, AffineTreeToken.terminal, AffineTreeToken.split 0,
+                          AffineTreeToken.terminal, AffineTreeToken.split 4, AffineTreeToken.terminal,
+                          AffineTreeToken.split 2, AffineTreeToken.terminal, AffineTreeToken.split 1,
+                          AffineTreeToken.terminal, AffineTreeToken.split 3, AffineTreeToken.terminal,
+                          AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal])
+                      (CursorStream.ofList ps) 8 parentBox
+                  | none => false) =
+                  true)
+              source_payloads53))
+          accepted_tree))))
+theorem Node53.source_connected_predicate : BoxPredicate (affineEnergyGoal A B) parentBox :=
+have h := source_check_accepted;
+id
+  (fun h =>
+    tree_sound
+      (Eq.mp
+        (congrArg
+          (fun _a =>
+            (match _a with
+              | some ps =>
+                checkAffineTree leafCheck
+                  (CursorStream.ofList
+                    [AffineTreeToken.split 3, AffineTreeToken.terminal, AffineTreeToken.split 0,
+                      AffineTreeToken.terminal, AffineTreeToken.split 4, AffineTreeToken.terminal,
+                      AffineTreeToken.split 2, AffineTreeToken.terminal, AffineTreeToken.split 1,
+                      AffineTreeToken.terminal, AffineTreeToken.split 3, AffineTreeToken.terminal,
+                      AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal])
+                  (CursorStream.ofList ps) 8 parentBox
+              | none => false) =
+              true)
+          source_payloads53)
+        h))
+  (Eq.mp
+    (congrArg
+      (fun _a =>
+        (match some (box37, 16), _a with
+          | some (box, cursor), some tokens =>
+            match sourcePayloads53 cursor with
+            | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 8 box
+            | none => false
+          | x, x_1 => false) =
+          true)
+      source_topology53)
+    (Eq.mp
+      (congrArg
+        (fun _a =>
+          (match _a, List.mapM decodeAffineTreeToken (List.drop 53 topologyBytes) with
+            | some (box, cursor), some tokens =>
+              match sourcePayloads53 cursor with
+              | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 8 box
+              | none => false
+            | x, x_1 => false) =
+            true)
+        source_node53_box)
+      h))
+'Node53.left_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node53.replay53' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node53.exact_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node53.source_node53_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node53.source_connected_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 300 lake env lean -M6400 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105/Node53Replay.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE53_TERMINAL16_20261105/Node53Replay.olean"
+	User time (seconds): 20.48
+	System time (seconds): 79.04
+	Percent of CPU this job got: 69%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:22.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5287912
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 174378
+	Minor (reclaiming a frame) page faults: 862169
+	Voluntary context switches: 227006
+	Involuntary context switches: 6773
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

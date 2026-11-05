@@ -1,0 +1,17 @@
+{
+  "TERMINAL21_KERNEL_PROVED": "YES",
+  "NODE63_FIVE_NODE_REPLAY_KERNEL_PROVED": "YES",
+  "SOURCE_CONNECTED_NODE63_PREDICATE_PROVED": "YES",
+  "CURSOR_EXHAUSTION": "PROVED: local (5,3), original terminal/quadratic end 24, anchor byte end 240",
+  "SOURCE_PREFIX_AUTHENTICATED": "Externally hash/byte verified; Lean prefix-literal arithmetic and cursors proved",
+  "EXTERNAL_AUTHENTICATION_BOUNDARY": [
+    "Original compressed bytes to Lean literals remain external",
+    "Pinned catalog JSON-to-declaration identity and deterministic source model selection remain external provenance; interval validity and mathematical soundness of selected data are kernel checked"
+  ],
+  "ROOT_BOX_PREDICATE_STATUS": "OPEN",
+  "FULL_A1294_THEOREM_STATUS": "NOT_YET_PROVED",
+  "MISSING_ROOT_PREMISE": "BoxPredicate (affineEnergyGoal (647/50000) (1094977/5000000000)) (initialGapBox 60)",
+  "FIRST_UNRESOLVED_LOCAL_OBLIGATION": "NONE in the bounded node63 theorem",
+  "WP84_FROZEN_STATUS": "UNCHANGED",
+  "SCOPE": "nodes63..67 only; no next subtree or full-tree replay"
+}

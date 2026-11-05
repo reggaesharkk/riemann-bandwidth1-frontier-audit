@@ -1,0 +1,20 @@
+PASS generic_linux/GenericArrayIdentity.lean: no forbidden shortcut/custom axiom token
+PASS Catalog18Identity.lean: no forbidden shortcut/custom axiom token
+PASS Catalog18AllLookups.lean: no forbidden shortcut/custom axiom token
+PASS Terminal18CatalogConnection.lean: no forbidden shortcut/custom axiom token
+PASS Terminal18Compositional.lean: no forbidden shortcut/custom axiom token
+PASS Terminal18HistoricalAcceptance.lean: no forbidden shortcut/custom axiom token
+PASS Source57.lean: no forbidden shortcut/custom axiom token
+PASS Node57Helpers.lean: no forbidden shortcut/custom axiom token
+PASS Node57Replay.lean: no forbidden shortcut/custom axiom token
+PASS Node57Final.lean: no forbidden shortcut/custom axiom token
+PASS generic_linux/generic_pinned_linux.log: exit 0; no sorryAx
+PASS catalog_identity.log: exit 0; no sorryAx
+PASS catalog_all_lookups.log: exit 0; no sorryAx
+PASS terminal18_catalog_connection.log: exit 0; no sorryAx
+PASS terminal18_compositional.log: exit 0; no sorryAx
+PASS terminal18_historical_acceptance.log: exit 0; no sorryAx
+PASS source57_build.log: exit 0; no sorryAx
+PASS node57_helpers_build.log: exit 0; no sorryAx
+PASS node57_replay_build.log: exit 0; no sorryAx
+PASS node57_final_statements.log: exit 0; no sorryAx

@@ -1,0 +1,9 @@
+{
+  "rational_records": 119,
+  "unique_segments": 107,
+  "segment_occurrences": 208,
+  "catalog_records": 100,
+  "row_records": 15,
+  "unique_checks": 107,
+  "max_floor_source": "maximum of unchanged source row floors sharing each exact segment; monotonicity proved generically"
+}

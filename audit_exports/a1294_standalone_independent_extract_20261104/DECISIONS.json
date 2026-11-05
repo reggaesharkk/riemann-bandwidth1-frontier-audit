@@ -1,0 +1,12 @@
+{
+  "STANDALONE_COMPACT_ACCEPTANCE_PROVED": "YES",
+  "ORIGINAL_ACCEPTANCE_IMPORTS_ELIMINATED": "YES",
+  "SOURCE_CORRESPONDENCE_STATUS": "TYPED_DECODING_PROVED; ORIGINAL_BYTES_AND_CATALOG_MAPPING_EXTERNAL; OPTIONAL_PATH_NORMALIZATION_OPEN",
+  "TOTAL_OBJECT_SIZE_IMPROVEMENT": "NO_MEASURED_INCREASE",
+  "TOTAL_COMPILATION_COST_IMPROVEMENT": "NO_DEMONSTRATED_IMPROVEMENT",
+  "PEAK_MEMORY_IMPROVEMENT": "NOT_DEMONSTRATED",
+  "NEXT_EXACT_BLOCKER": "No acceptance blocker. Performance break-even is unmet. Optional SourcePath_v2.lean:60:153 has a stuck Decidable reduction for the expanded coordinate-zero path equality, not a false witness.",
+  "RECOMMENDATION": "STOP_THIS_ARCHITECTURE; preserve independent acceptance proof and negative cost evidence",
+  "FULL_A1294_THEOREM": "NOT_YET_PROVED",
+  "other_leaves_or_subtrees_compiled": false
+}

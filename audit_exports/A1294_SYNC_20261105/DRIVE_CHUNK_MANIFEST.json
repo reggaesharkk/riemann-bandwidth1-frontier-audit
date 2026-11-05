@@ -1,0 +1,34 @@
+{
+  "format": "A1294-drive-chunked-archive-v1",
+  "source_name": "A1294_NODE51_TERMINAL15_SOURCE_CONNECTED_REPLAY_20261105.zip",
+  "source_bytes": 337171866,
+  "source_sha256": "2461505d5cf86aeceb0dce12ad50fcddae1958cad9e12f316b5d49234fc3ac83",
+  "chunk_bytes": 94371840,
+  "reconstruction": "Concatenate part files in ascending index order, with no separators or transformations.",
+  "chunks": [
+    {
+      "index": 1,
+      "name": "A1294_NODE51_TERMINAL15_SOURCE_CONNECTED_REPLAY_20261105.zip.part001-of-004",
+      "bytes": 94371840,
+      "sha256": "737e167e5b853d3701267ac73303a392d39bd7be2a354f64d71a3f192f70d960"
+    },
+    {
+      "index": 2,
+      "name": "A1294_NODE51_TERMINAL15_SOURCE_CONNECTED_REPLAY_20261105.zip.part002-of-004",
+      "bytes": 94371840,
+      "sha256": "c983c62542e3bc5ddc4fd18a574888214d7f81cbf89120d32be01c91090314e0"
+    },
+    {
+      "index": 3,
+      "name": "A1294_NODE51_TERMINAL15_SOURCE_CONNECTED_REPLAY_20261105.zip.part003-of-004",
+      "bytes": 94371840,
+      "sha256": "2763ebcc1806461bfd334d19590b55ad82f00a816ae5a3cf39b6fcc1af75802f"
+    },
+    {
+      "index": 4,
+      "name": "A1294_NODE51_TERMINAL15_SOURCE_CONNECTED_REPLAY_20261105.zip.part004-of-004",
+      "bytes": 54056346,
+      "sha256": "b8052d0002533b401d7ab66502910cc0aa035722fe90ded99a95698ac6775bdd"
+    }
+  ]
+}

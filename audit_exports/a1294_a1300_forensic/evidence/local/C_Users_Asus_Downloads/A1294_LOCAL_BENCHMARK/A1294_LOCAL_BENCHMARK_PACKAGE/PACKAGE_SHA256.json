@@ -1,0 +1,9 @@
+{
+  "README_FIRST.txt": "5de90f5d36b7193162b1ca874bc7d8d8a09381c21f864ffed5b21f5cfcc7f809",
+  "RUN_BENCHMARK.bat": "e0c3e6598b7c5eca820a103f347fa7602b78a74230f751d5e18d65d4e34d06ab",
+  "a1294_seam_pilot.py": "d98599405fca0c40971dd77c3dfc8e7d6f415b4a2a25a276febacbe7b929cce3",
+  "benchmark_local.py": "280f8484a9177ef7cd7fec728a5d681567ff482f03d1f2783a240f24c58456fe",
+  "data/macro-data-exact.json": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+  "data/refinement-catalog-v1-exact.json": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+  "data/refinement-catalog-v3.json": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+}

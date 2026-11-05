@@ -1,0 +1,43 @@
+{
+  "input_packet_sha256": "ba18a4a2993cf3941ffa1c13c11db812852b4a3ea3b485bd850f0b481264ab14",
+  "frozen_v2_sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+  "pinned_formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+  "pinned_mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129",
+  "lean": "4.33.0-rc2 (d8b18978322de05a8f3dba51ef03cf5461676c17)",
+  "lake": "5.0.0-src+d8b1897",
+  "terminal_16": "PROVED",
+  "terminal_16_acceptance_and_soundness": "KERNEL_PROVED",
+  "terminal_16_anchor": {
+    "terminal_ordinal": 16,
+    "kind": "quadratic",
+    "codes": [0, 0, 0, 0, 0],
+    "anchor_stream_byte_offset": 160,
+    "coordinates": ["195/32", "405/64", "195/32", "195/32", "195/32"]
+  },
+  "terminal_16_exact_tangent_margin_positive": true,
+  "terminal_16_catalog_identity_and_166_lookups": "KERNEL_PROVED",
+  "node_53_source_geometry": "KERNEL_PROVED_OVER_COMPILED_SOURCE_LITERALS",
+  "node_53_replay": "KERNEL_PROVED",
+  "node_53_topology_tokens": 15,
+  "node_53_terminal_payloads": 8,
+  "node_53_exact_cursor_exhaustion": [15, 8],
+  "node_53_source_connected_box_predicate": "KERNEL_PROVED_OVER_COMPILED_SOURCE_LITERALS",
+  "theorem_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "shortcut_scan": "PASS: successful terminal and replay Lean modules contain no sorry/admit/native_decide or custom axiom declarations",
+  "independent_python_replay": {
+    "normal": "PASS",
+    "-O": "PASS",
+    "-OO": "PASS",
+    "python": "3.12.10"
+  },
+  "fresh_zip_extraction_verifier": "included; final archive checked externally with independent extraction and six replay-mode invocations",
+  "source_byte_to_lean_literal_bridge": "EXTERNALLY_CHECKED",
+  "deterministic_catalog_selection_bridge": "EXTERNALLY_CHECKED",
+  "vrk_intentseal_integration": "PROVENANCE_RECORD_ONLY; no kernel claim delegated to VRK/IntentSeal",
+  "bounded_chunk_feasibility": "DEMONSTRATED_FOR_15_NODES_8_TERMINALS_ONLY",
+  "full_bulk_verification_feasibility": "OPEN",
+  "next_subtree": "node 51: split token 2 / axis 1, terminal node 52 ordinal 15 on left, proved node 53 on right",
+  "full_initial_root_predicate": "OPEN",
+  "full_a1294_theorem": "OPEN",
+  "frozen_wp84_status_changed": false
+}

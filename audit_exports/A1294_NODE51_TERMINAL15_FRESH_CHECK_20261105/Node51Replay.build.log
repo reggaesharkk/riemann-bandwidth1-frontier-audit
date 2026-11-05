@@ -1,0 +1,126 @@
+def Node51.payload15 : Payload :=
+{ catalog := AuthenticCompact15.catalog, codes := [0, 0, 0, 0, 0], rows := List.ofFn AuthenticCompact15.rows }
+theorem Node51.replay51 : replayAffineTree leafCheck topology payloads 9 0 0 parentBox = some (17, 9) :=
+split_chunk_replay leafCheck topology payloads parentBox 1 8 0 0 (2, 1) (17, 9) top0 left_run right_run
+theorem Node51.exact_exhaustion : replayAffineTree leafCheck topology payloads 9 0 0 parentBox =
+  some (topology.length, payloads.length) :=
+checkAffineTree_exact_exhaustion accepted_tree
+theorem Node51.source_node51_box : sourceBoxAt 51 = some (box36, 15) :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (do
+              let __x ← _a
+              match __x with
+                | (p, c) => do
+                  let typed ← decodePath p
+                  pure (walk (initialGapBox 60) typed, c)) =
+            some (box36, 15))
+        locate51))
+    (id
+      (Eq.mpr
+        (id
+          (congrArg (fun _a => (_a.bind fun typed => some (walk (initialGapBox 60) typed, 15)) = some (box36, 15))
+            typed_path51))
+        (id
+          (Eq.mpr (id (congrArg (fun _a => some (_a, 15) = some (box36, 15)) source_path51))
+            (Eq.refl (some (box36, 15))))))))
+theorem Node51.source_check_accepted : sourceCheck51 = true :=
+id
+  (Eq.mpr
+    (id
+      (congrArg
+        (fun _a =>
+          (match _a, List.mapM decodeAffineTreeToken (List.drop 51 topologyBytes) with
+            | some (box, cursor), some tokens =>
+              match sourcePayloads51 cursor with
+              | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 9 box
+              | none => false
+            | x, x_1 => false) =
+            true)
+        source_node51_box))
+    (Eq.mpr
+      (id
+        (congrArg
+          (fun _a =>
+            (match some (box36, 15), _a with
+              | some (box, cursor), some tokens =>
+                match sourcePayloads51 cursor with
+                | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 9 box
+                | none => false
+              | x, x_1 => false) =
+              true)
+          source_topology51))
+      (id
+        (Eq.mpr
+          (id
+            (congrArg
+              (fun _a =>
+                (match _a with
+                  | some ps =>
+                    checkAffineTree leafCheck
+                      (CursorStream.ofList
+                        [AffineTreeToken.split 1, AffineTreeToken.terminal, AffineTreeToken.split 3,
+                          AffineTreeToken.terminal, AffineTreeToken.split 0, AffineTreeToken.terminal,
+                          AffineTreeToken.split 4, AffineTreeToken.terminal, AffineTreeToken.split 2,
+                          AffineTreeToken.terminal, AffineTreeToken.split 1, AffineTreeToken.terminal,
+                          AffineTreeToken.split 3, AffineTreeToken.terminal, AffineTreeToken.split 0,
+                          AffineTreeToken.terminal, AffineTreeToken.terminal])
+                      (CursorStream.ofList ps) 9 parentBox
+                  | none => false) =
+                  true)
+              source_payloads51))
+          accepted_tree))))
+theorem Node51.source_connected_predicate : BoxPredicate (affineEnergyGoal A B) parentBox :=
+have h := source_check_accepted;
+id
+  (fun h =>
+    tree_sound
+      (Eq.mp
+        (congrArg
+          (fun _a =>
+            (match _a with
+              | some ps =>
+                checkAffineTree leafCheck
+                  (CursorStream.ofList
+                    [AffineTreeToken.split 1, AffineTreeToken.terminal, AffineTreeToken.split 3,
+                      AffineTreeToken.terminal, AffineTreeToken.split 0, AffineTreeToken.terminal,
+                      AffineTreeToken.split 4, AffineTreeToken.terminal, AffineTreeToken.split 2,
+                      AffineTreeToken.terminal, AffineTreeToken.split 1, AffineTreeToken.terminal,
+                      AffineTreeToken.split 3, AffineTreeToken.terminal, AffineTreeToken.split 0,
+                      AffineTreeToken.terminal, AffineTreeToken.terminal])
+                  (CursorStream.ofList ps) 9 parentBox
+              | none => false) =
+              true)
+          source_payloads51)
+        h))
+  (Eq.mp
+    (congrArg
+      (fun _a =>
+        (match some (box36, 15), _a with
+          | some (box, cursor), some tokens =>
+            match sourcePayloads51 cursor with
+            | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 9 box
+            | none => false
+          | x, x_1 => false) =
+          true)
+      source_topology51)
+    (Eq.mp
+      (congrArg
+        (fun _a =>
+          (match _a, List.mapM decodeAffineTreeToken (List.drop 51 topologyBytes) with
+            | some (box, cursor), some tokens =>
+              match sourcePayloads51 cursor with
+              | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens) (CursorStream.ofList ps) 9 box
+              | none => false
+            | x, x_1 => false) =
+            true)
+        source_node51_box)
+      h))
+'Node51.left_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node51.replay51' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node51.exact_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node51.source_node51_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node51.source_connected_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]

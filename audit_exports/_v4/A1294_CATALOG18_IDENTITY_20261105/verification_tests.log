@@ -1,0 +1,99 @@
+MODE=normal
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe verify_archive_inputs.py
+PASS reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip bytes=5672384 sha256=3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5 CRC=OK
+PASS reference/checkpoints/A1294_VRK_INTENTSEAL_BRIDGE_CHECKPOINT_20261105.zip bytes=415555 sha256=efd9bb37ad16d5c843df454921f7145115e9dc39e08d347b55c79e3e860dff4f CRC=OK
+PASS reference/checkpoints/A1294_NODE57_AUTHENTIC_TERMINAL18_INCOMPLETE_20261105.zip bytes=188281 sha256=ec9eca5910487d096edbfc142ee781762e8c4a16bc1db21c399886b55e35d13c CRC=OK
+PASS reference/checkpoints/A1294_NODE59_TERMINAL19_SOURCE_CONNECTED_20261105.zip bytes=4291776 sha256=1c7af665c1c70ddd46bfe966c963658846bee212163f70cc531d044d111f1b24 CRC=OK
+PASS reference/releases/IntentSeal_Verifiable_Research_Kernel_v0_3_1.zip bytes=177783 sha256=c18c4c697d8188490e96530cfb5ddcb2e63f7c65aa560415401b1541e575cd79 CRC=OK
+PASS reference/lineage/IntentSeal_lineage_final_published.zip bytes=161324 sha256=05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0 CRC=OK
+PASS reference/lineage/IntentSeal_lineage_historical_inventory.zip bytes=148371 sha256=14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db CRC=OK
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe verify_catalog_source.py
+PASS exact ordered catalog: original Terminal18 inline 57+57+57 = Catalog18.original = three named blocks = leaf summary (171 entries)
+PASS all three block lengths 57; Lean module contains all 171 lookup statements
+PASS all 350 segment theorem occurrences and 15 row theorem occurrences retained
+PASS Terminal18 normalized source unchanged outside catalog storage/reference proofs
+PASS frozen V2 SHA-256 and ZIP CRC: 3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe verify_terminal18_provenance.py
+PASS exact anchor, 15 distance supports, segmented seams/catalog records, tangent 805762688477455194592676257298467787/50000000000000000000000000000000000000 margin 158762688477455194592676257298467787/50000000000000000000000000000000000000
+PASS independent DFS geometry and terminal cursor
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe test_provenance_mutations.py
+PASS rejected single catalog entry mutation: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected catalog record reorder: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected duplicate catalog entry: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected truncated catalog stream: exit=1; RuntimeError: catalog count
+PASS rejected shifted lookup index: exit=1; RuntimeError: blocked_lookup: expected each ordered index 0..170 exactly once
+PASS rejected mismatched frozen source SHA-256: exit=1; RuntimeError: SHA-256 mismatch: reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe verify_vrk_claim_record.py
+PASS VRK canonical claim digests, local file hashes, evidence root, record digest, and separate final/historical lineage identities
+STATUS IS PROVENANCE ONLY; it does not authenticate mathematical truth or source bytes in Lean
+EXIT=0
+MODE=-O
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -O verify_archive_inputs.py
+PASS reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip bytes=5672384 sha256=3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5 CRC=OK
+PASS reference/checkpoints/A1294_VRK_INTENTSEAL_BRIDGE_CHECKPOINT_20261105.zip bytes=415555 sha256=efd9bb37ad16d5c843df454921f7145115e9dc39e08d347b55c79e3e860dff4f CRC=OK
+PASS reference/checkpoints/A1294_NODE57_AUTHENTIC_TERMINAL18_INCOMPLETE_20261105.zip bytes=188281 sha256=ec9eca5910487d096edbfc142ee781762e8c4a16bc1db21c399886b55e35d13c CRC=OK
+PASS reference/checkpoints/A1294_NODE59_TERMINAL19_SOURCE_CONNECTED_20261105.zip bytes=4291776 sha256=1c7af665c1c70ddd46bfe966c963658846bee212163f70cc531d044d111f1b24 CRC=OK
+PASS reference/releases/IntentSeal_Verifiable_Research_Kernel_v0_3_1.zip bytes=177783 sha256=c18c4c697d8188490e96530cfb5ddcb2e63f7c65aa560415401b1541e575cd79 CRC=OK
+PASS reference/lineage/IntentSeal_lineage_final_published.zip bytes=161324 sha256=05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0 CRC=OK
+PASS reference/lineage/IntentSeal_lineage_historical_inventory.zip bytes=148371 sha256=14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db CRC=OK
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -O verify_catalog_source.py
+PASS exact ordered catalog: original Terminal18 inline 57+57+57 = Catalog18.original = three named blocks = leaf summary (171 entries)
+PASS all three block lengths 57; Lean module contains all 171 lookup statements
+PASS all 350 segment theorem occurrences and 15 row theorem occurrences retained
+PASS Terminal18 normalized source unchanged outside catalog storage/reference proofs
+PASS frozen V2 SHA-256 and ZIP CRC: 3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -O verify_terminal18_provenance.py
+PASS exact anchor, 15 distance supports, segmented seams/catalog records, tangent 805762688477455194592676257298467787/50000000000000000000000000000000000000 margin 158762688477455194592676257298467787/50000000000000000000000000000000000000
+PASS independent DFS geometry and terminal cursor
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -O test_provenance_mutations.py
+PASS rejected single catalog entry mutation: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected catalog record reorder: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected duplicate catalog entry: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected truncated catalog stream: exit=1; RuntimeError: catalog count
+PASS rejected shifted lookup index: exit=1; RuntimeError: blocked_lookup: expected each ordered index 0..170 exactly once
+PASS rejected mismatched frozen source SHA-256: exit=1; RuntimeError: SHA-256 mismatch: reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -O verify_vrk_claim_record.py
+PASS VRK canonical claim digests, local file hashes, evidence root, record digest, and separate final/historical lineage identities
+STATUS IS PROVENANCE ONLY; it does not authenticate mathematical truth or source bytes in Lean
+EXIT=0
+MODE=-OO
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -OO verify_archive_inputs.py
+PASS reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip bytes=5672384 sha256=3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5 CRC=OK
+PASS reference/checkpoints/A1294_VRK_INTENTSEAL_BRIDGE_CHECKPOINT_20261105.zip bytes=415555 sha256=efd9bb37ad16d5c843df454921f7145115e9dc39e08d347b55c79e3e860dff4f CRC=OK
+PASS reference/checkpoints/A1294_NODE57_AUTHENTIC_TERMINAL18_INCOMPLETE_20261105.zip bytes=188281 sha256=ec9eca5910487d096edbfc142ee781762e8c4a16bc1db21c399886b55e35d13c CRC=OK
+PASS reference/checkpoints/A1294_NODE59_TERMINAL19_SOURCE_CONNECTED_20261105.zip bytes=4291776 sha256=1c7af665c1c70ddd46bfe966c963658846bee212163f70cc531d044d111f1b24 CRC=OK
+PASS reference/releases/IntentSeal_Verifiable_Research_Kernel_v0_3_1.zip bytes=177783 sha256=c18c4c697d8188490e96530cfb5ddcb2e63f7c65aa560415401b1541e575cd79 CRC=OK
+PASS reference/lineage/IntentSeal_lineage_final_published.zip bytes=161324 sha256=05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0 CRC=OK
+PASS reference/lineage/IntentSeal_lineage_historical_inventory.zip bytes=148371 sha256=14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db CRC=OK
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -OO verify_catalog_source.py
+PASS exact ordered catalog: original Terminal18 inline 57+57+57 = Catalog18.original = three named blocks = leaf summary (171 entries)
+PASS all three block lengths 57; Lean module contains all 171 lookup statements
+PASS all 350 segment theorem occurrences and 15 row theorem occurrences retained
+PASS Terminal18 normalized source unchanged outside catalog storage/reference proofs
+PASS frozen V2 SHA-256 and ZIP CRC: 3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -OO verify_terminal18_provenance.py
+PASS exact anchor, 15 distance supports, segmented seams/catalog records, tangent 805762688477455194592676257298467787/50000000000000000000000000000000000000 margin 158762688477455194592676257298467787/50000000000000000000000000000000000000
+PASS independent DFS geometry and terminal cursor
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -OO test_provenance_mutations.py
+PASS rejected single catalog entry mutation: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected catalog record reorder: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected duplicate catalog entry: exit=1; RuntimeError: catalog order/content mismatch
+PASS rejected truncated catalog stream: exit=1; RuntimeError: catalog count
+PASS rejected shifted lookup index: exit=1; RuntimeError: blocked_lookup: expected each ordered index 0..170 exactly once
+PASS rejected mismatched frozen source SHA-256: exit=1; RuntimeError: SHA-256 mismatch: reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip
+EXIT=0
+$ C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\python.exe -OO verify_vrk_claim_record.py
+PASS VRK canonical claim digests, local file hashes, evidence root, record digest, and separate final/historical lineage identities
+STATUS IS PROVENANCE ONLY; it does not authenticate mathematical truth or source bytes in Lean
+EXIT=0

@@ -1,0 +1,62 @@
+{
+  "baseline_sources": {
+    "file_bytes": 273228,
+    "framed_stream_bytes": 273252,
+    "zlib9_bytes": 26781,
+    "compression_seconds": 0.005484699999215081,
+    "roundtrip": "PASS"
+  },
+  "experimental_closure_sources": {
+    "file_bytes": 289025,
+    "framed_stream_bytes": 289057,
+    "zlib9_bytes": 30178,
+    "compression_seconds": 0.006069700000807643,
+    "roundtrip": "PASS"
+  },
+  "baseline_objects": {
+    "file_bytes": 20794984,
+    "framed_stream_bytes": 20795008,
+    "zlib9_bytes": 6487664,
+    "compression_seconds": 9.345045100024436,
+    "roundtrip": "PASS"
+  },
+  "experimental_closure_objects": {
+    "file_bytes": 23323144,
+    "framed_stream_bytes": 23323176,
+    "zlib9_bytes": 7166236,
+    "compression_seconds": 10.360587200004375,
+    "roundtrip": "PASS"
+  },
+  "baseline_total": {
+    "wall_seconds": 257.14,
+    "peak_rss_kib": 5490748,
+    "major_faults": 445789,
+    "exit": 0
+  },
+  "wire_increment": {
+    "wall_seconds": 67.32,
+    "peak_rss_kib": 5722316,
+    "major_faults": 85840,
+    "exit": 0
+  },
+  "import_only": {
+    "wall_seconds": 101.05,
+    "peak_rss_kib": 5500256,
+    "major_faults": 156060,
+    "exit": 0
+  },
+  "experimental_complete_closure": {
+    "wall_seconds": 324.46,
+    "peak_rss_kib": 5722316,
+    "major_faults": 531629,
+    "method": "serial measured baseline plus additional measured bridge; no independent cold-cache trial"
+  },
+  "kernel_only_time": "NOT_ISOLATED: measured Lean compilation includes elaboration and kernel checking; no full dependency recheck or independent -t0 replay",
+  "python_decode_mean_seconds": 0.0013333249997231178,
+  "common_dependency_cache_upper_bounds_bytes": {
+    "mathlib_lib_lean": 6006957427,
+    "zeta23_lib_lean": 659473397,
+    "note": "installed cache totals, not a minimal transitive import closure; excluded from any savings claim"
+  },
+  "converter_required_source_bytes": 447536
+}

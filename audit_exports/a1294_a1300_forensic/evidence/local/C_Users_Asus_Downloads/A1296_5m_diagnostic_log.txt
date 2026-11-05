@@ -1,0 +1,20 @@
+A1296 5M diagnostic started 
+{"visited": 502644, "pending": 112, "max_depth": 70, "elapsed": 133.14000000001397}
+{"visited": 1001828, "pending": 278, "max_depth": 72, "elapsed": 262.8280000000377}
+{"visited": 1501061, "pending": 381, "max_depth": 73, "elapsed": 386.65600000001723}
+{"visited": 2008840, "pending": 436, "max_depth": 75, "elapsed": 515.6870000000345}
+{"visited": 2508490, "pending": 468, "max_depth": 75, "elapsed": 713.890000000014}
+{"visited": 3000209, "pending": 633, "max_depth": 75, "elapsed": 902.1870000000345}
+{"visited": 3509516, "pending": 672, "max_depth": 75, "elapsed": 1113.375}
+{"visited": 4000120, "pending": 844, "max_depth": 77, "elapsed": 1238.7030000000377}
+{"visited": 4508365, "pending": 1033, "max_depth": 79, "elapsed": 1486.265000000014}
+{"visited": 5003955, "pending": 1003, "max_depth": 79, "elapsed": 1840.8280000000377}
+{
+  "status": "BUDGET_REACHED_WITH_FRONTIER",
+  "visited": 5057564,
+  "pending": 1024,
+  "maximum_depth": 79,
+  "wall_seconds": 1852.6870000000345,
+  "nodes_per_second": 2729.8534506907567
+}
+RESULT C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE\results\A1296_FULLROOT_5M_DIAGNOSTIC_RESULT.json

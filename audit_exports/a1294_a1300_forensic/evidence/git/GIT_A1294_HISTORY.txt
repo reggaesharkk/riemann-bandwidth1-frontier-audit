@@ -1,0 +1,32 @@
+Read-only local Git history inspection; no refs or worktree files changed.
+
+Downloads clone
+  HEAD: 908f6c2b5b4c1dbf9d35461b5701b5a475fe96c5
+  branch: research/frontier-7962-hostile-audit-v0.1
+  `git status --short`: no entries observed
+
+Current audit worktree
+  HEAD: eb36159ee7e57053fcae3de025fe4dac539435ab
+  branch: codex/cross-project-math-frontier-20261103
+  pre-existing untracked materials were present; preserved
+
+Second worktree, dd2a
+  HEAD: e61f116ac3eb4b07bf1df3e91960d84a6f730034
+  detached HEAD (symbolic branch name was empty)
+  unrelated SHARKLANG/output/release artifacts were untracked; preserved
+
+Relevant recovered commit ancestry (full commit hashes):
+79d19eaca41874c6994e514cebe86b848366ecd7  research: add canonical seam-aware A1294 certificate generator
+a52128bae18adeb38fd20c8067c57ba70216271d  research: add independent exact A1294 certificate verifier
+4e98a716aceb569645087949987f17747f0e9304  ci: run canonical A1294 stream smoke test
+b441128221d1c953628b9621f6fab7187db93740  ci: stage seam-aware A1294 full certificate workflow
+2ac07045d35a82a67544ee8bbc884807179e430b  ci: launch seam-aware full A1294 certificate
+3b748a75ad619ee130c4fabd22792102ccbe986c  ci: split A1294 generation and verification into 6h jobs
+f0ff892e70fd5178e6272140acbbe86f8514e559  research: freeze local A1294-A1299 adaptive frontier scan
+bff7f0955b70f3af0b0a33956708cd5918d36cce  research: freeze full-root 1M A1299-A1300 bracket
+1517a19296f11c7770e0019f7b8d2517be19f8b1  research: freeze A1296 5M diagnostic log summary
+e90033d8c55bbc452a7bfbc06606844e92fb7a3e  research: cluster A1296 deepest unresolved frontier
+420d65cec710dcdaa2aad6e63d035667dcc189e2  research: freeze verified A1294 full certificate result
+719e6aa2338a7c080942f619aa7a17475388edd3  audit: delimit A1294 novelty against broader public zero-bound claims
+
+The A1294 history appeared in an alternate ref lineage in the Codex worktree; exact commits were inspected by commit id. This inventory does not rewrite or cherry-pick any history.

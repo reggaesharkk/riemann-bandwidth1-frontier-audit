@@ -1,0 +1,23 @@
+{
+  "A": "647/50000",
+  "B": "1094977/5000000000",
+  "input_sha256": {
+    "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+    "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+    "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+  },
+  "leaves": 6727061,
+  "quadratic_leaves": 6725258,
+  "schema": "a1294-seam-aware-independent-replay-v1",
+  "smallest_quadratic_margin": "33853157328150681621271330867899241/8192000000000000000000000000000000000000000000",
+  "smallest_tail_margin": "49931/250000000",
+  "status": "PASS",
+  "stream_sha256": {
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "tail_leaves": 1803,
+  "trust_note": "Verification uses Fraction arithmetic only and reconstructs coverage and every terminal inequality independently of generator anchor proposals.",
+  "visited_nodes": 13454121
+}

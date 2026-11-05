@@ -1,0 +1,33 @@
+{
+  "retrieval_mode": "read-only Google Drive connector search/fetch",
+  "connected_collections": [
+    {"name": "3rd", "link_id": "link_6ae0aed7237881918791cd7b9e88c663"},
+    {"name": "Google Drive", "link_id": "link_6aa97edbc684819186f31da7b33390d1"}
+  ],
+  "search_summary": {
+    "a1294_original_actions_artifact": "not found in either collection by run id, artifact id, name, or reported SHA-256",
+    "v1_source_free_package": "found; folder 1PJR1JrMDigUXpdGrCBVFilyiOrByGSPe",
+    "v2_source_free_package": "found; folder 1XoKubUTXaxIzwha-kbmJUXkQBIL1TOd2",
+    "local_diagnostic_logs_and_summaries": "found in the Google Drive collection",
+    "artifact_id_11286675906": "not found"
+  },
+  "v1_files": {
+    "folder_id": "1PJR1JrMDigUXpdGrCBVFilyiOrByGSPe",
+    "log_file_id": "1XALb9Jnmc3Q-A4LFLEXJSxve4c-5jOs1",
+    "content_summary": "matches the Windows trailing-backslash quoting failure; not a successful replay"
+  },
+  "v2_files": {
+    "folder_id": "1XoKubUTXaxIzwha-kbmJUXkQBIL1TOd2",
+    "log_file_ids": ["1OZKLNTdHeKQNiXFd44IaXdaDPzu_95o6", "1K03hk3BGQa_nhrJh3UR84wv0N72qmgpu"],
+    "contents_summary": "result JSON, package manifest, replay source, certificate folder and final 13,454,121-node PASS record"
+  },
+  "diagnostic_drive_file_ids": {
+    "a1296_5m_log": "1pzmTSjJr8-LFCgX1sQW_VZ29gJYuiilV",
+    "a1294_fullroot_log": "1Ufd62M3VfW81J0XaEwnnJIiirlGVxrZU",
+    "fixed_bracket_log": "11nk7K9jANqWP3SLAUcQ0cAsfshjoWeZN",
+    "adaptive_log": "170Er8j0UPifywdFaL8oNbcm5ve9Dsiq4",
+    "adaptive_summary": "1YUqz3u7LoCvGq7bb90HS_jtc7jZmbYuS",
+    "microscope_summary": "1j3IkOYYplXjTgDUZQFWkF6xDOGElGm64"
+  },
+  "local_evidence_crosscheck": "The V2 Drive record corresponds to the recovered local V2 source-free ZIP and saved result. It is not the original Actions ZIP identified by SHA 11c1ab…"
+}

@@ -1,0 +1,1106 @@
+[
+  {
+    "Name": "A1294_A1300_FORENSIC_INDEPENDENT_ADDENDUM_20261103.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_A1300_FORENSIC_INDEPENDENT_ADDENDUM_20261103.md",
+    "Bytes": 3986,
+    "CreationTimeUtc": "2026-11-03T16:35:36.1018051Z",
+    "LastWriteTimeUtc": "2026-11-03T16:35:41.4264087Z",
+    "SHA256": "3d9f8b449abad1fa8a3b0b9d43bcf0d426d5ffad827c5d939ee4757192ea76c5"
+  },
+  {
+    "Name": "A1294_ADAPTIVE_FRONTIER_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_ADAPTIVE_FRONTIER_PACKAGE.zip",
+    "Bytes": 6467,
+    "CreationTimeUtc": "2026-10-03T13:32:46.3786225Z",
+    "LastWriteTimeUtc": "2026-10-03T13:32:50.1884252Z",
+    "SHA256": "f9358bae045e0123e6cdfb076bb58f8dfea329ccd8d840af8fbf701d6772c583"
+  },
+  {
+    "Name": "A1294_adaptive_scan_log.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_adaptive_scan_log.txt",
+    "Bytes": 2841,
+    "CreationTimeUtc": "2026-10-03T13:33:12.9879752Z",
+    "LastWriteTimeUtc": "2026-10-03T13:36:57.8754029Z",
+    "SHA256": "95757e0c75d5fb0ede87eb42a33ef5987c61fa11dac2366460c5180c0f471cf7"
+  },
+  {
+    "Name": "A1294_ceiling_bracket_log.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_ceiling_bracket_log.txt",
+    "Bytes": 2356,
+    "CreationTimeUtc": "2026-10-03T13:46:30.1717342Z",
+    "LastWriteTimeUtc": "2026-10-03T13:48:21.0652133Z",
+    "SHA256": "b836b10d4f5959e82f957167dcc26dd4e5a44aefd0ca3385a6541dcd1fdf0a64"
+  },
+  {
+    "Name": "A1294_CEILING_BRACKET_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_CEILING_BRACKET_PACKAGE.zip",
+    "Bytes": 5075,
+    "CreationTimeUtc": "2026-10-03T13:46:08.6155019Z",
+    "LastWriteTimeUtc": "2026-10-03T13:46:15.7274129Z",
+    "SHA256": "555413d060fa944aa35d00a610dd9d6bc5ae1cf26b10cb5a4ce2ebd815d25b54"
+  },
+  {
+    "Name": "A1294_fullroot_1m_bracket_log.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_fullroot_1m_bracket_log.txt",
+    "Bytes": 1393,
+    "CreationTimeUtc": "2026-10-03T13:57:03.7720652Z",
+    "LastWriteTimeUtc": "2026-10-03T14:12:27.9478669Z",
+    "SHA256": "f3699076a09c1d691ae573a7ece7999c19c3fa179f1ca6e1aacfa2905a3ee25c"
+  },
+  {
+    "Name": "A1294_FULLROOT_BRACKET_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_FULLROOT_BRACKET_PACKAGE.zip",
+    "Bytes": 4755,
+    "CreationTimeUtc": "2026-10-03T13:56:37.2533551Z",
+    "LastWriteTimeUtc": "2026-10-03T13:56:40.4815769Z",
+    "SHA256": "1077923492a60cbbd694cf1cf8febc910138c860aec3da3ef56f85e9d8507961"
+  },
+  {
+    "Name": "A1294_launcher_log.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_launcher_log.txt",
+    "Bytes": 262,
+    "CreationTimeUtc": "2026-10-03T13:04:25.1283020Z",
+    "LastWriteTimeUtc": "2026-10-03T13:17:45.3983681Z",
+    "SHA256": "2547d554872b5aa54618bdc5f5a6acc4ff5764ed7c74478957985624680f1604"
+  },
+  {
+    "Name": "A1294_LOCAL_BENCHMARK_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_LOCAL_BENCHMARK_PACKAGE.zip",
+    "Bytes": 32391,
+    "CreationTimeUtc": "2026-10-03T12:55:30.2621727Z",
+    "LastWriteTimeUtc": "2026-10-03T12:55:33.1932216Z",
+    "SHA256": "7e57a2d41f52f1153c9fdae50210ea976300e5f6da4d044b0af972154a83ba5c"
+  },
+  {
+    "Name": "A1294_RUN_ADAPTIVE_FRONTIER.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_RUN_ADAPTIVE_FRONTIER.bat",
+    "Bytes": 1125,
+    "CreationTimeUtc": "2026-10-03T13:32:58.2595275Z",
+    "LastWriteTimeUtc": "2026-10-03T13:33:00.5151228Z",
+    "SHA256": "bf0059dc38618290e38b8b14f270254f9707e84ce98c0fd3a3c77a8fcd5ae364"
+  },
+  {
+    "Name": "A1294_RUN_CEILING_BRACKET.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_RUN_CEILING_BRACKET.bat",
+    "Bytes": 835,
+    "CreationTimeUtc": "2026-10-03T13:46:14.4661602Z",
+    "LastWriteTimeUtc": "2026-10-03T13:46:16.4937296Z",
+    "SHA256": "2941b408e2ca07a7c97e84fa50f5680ab972dd2d20a62c70e03e1cd893c458bc"
+  },
+  {
+    "Name": "A1294_RUN_FULLROOT_BRACKET.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_RUN_FULLROOT_BRACKET.bat",
+    "Bytes": 845,
+    "CreationTimeUtc": "2026-10-03T13:56:47.1503342Z",
+    "LastWriteTimeUtc": "2026-10-03T13:56:50.8999648Z",
+    "SHA256": "52e618396e43d98bc6034c17cbf6d9e6115228c32babf1291c1f2beb8231c6f3"
+  },
+  {
+    "Name": "A1294_RUN_SOURCE_FREE_REPLAY_V2.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_RUN_SOURCE_FREE_REPLAY_V2.bat",
+    "Bytes": 827,
+    "CreationTimeUtc": "2026-10-04T03:48:48.7677502Z",
+    "LastWriteTimeUtc": "2026-10-04T03:48:51.1541611Z",
+    "SHA256": "ec6f83a61c5f57b26182a626bf3d04b482ffbcaadbc4558d76253e1d9e6a6957"
+  },
+  {
+    "Name": "A1294_RUN_SOURCE_FREE_REPLAY.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_RUN_SOURCE_FREE_REPLAY.bat",
+    "Bytes": 878,
+    "CreationTimeUtc": "2026-10-04T03:37:18.9082958Z",
+    "LastWriteTimeUtc": "2026-10-04T03:37:22.3493793Z",
+    "SHA256": "8ff0fc6df7632d8bb8473bc80cbb3cc424bca0921f2757fe4d240b34b8201b28"
+  },
+  {
+    "Name": "A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+    "Bytes": 5672384,
+    "CreationTimeUtc": "2026-10-04T03:48:42.6809816Z",
+    "LastWriteTimeUtc": "2026-10-04T03:48:47.2156896Z",
+    "SHA256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+  },
+  {
+    "Name": "A1294_SOURCE_FREE_REPLAY_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_SOURCE_FREE_REPLAY_PACKAGE.zip",
+    "Bytes": 5670917,
+    "CreationTimeUtc": "2026-10-04T03:37:34.7373875Z",
+    "LastWriteTimeUtc": "2026-10-04T03:37:38.8293232Z",
+    "SHA256": "14db7449078ff7f60962c1dca8a5bc5ca2b414be2ee66d173870e6f05ffdd124"
+  },
+  {
+    "Name": "A1294_START_HERE.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1294_START_HERE.bat",
+    "Bytes": 2615,
+    "CreationTimeUtc": "2026-10-03T13:04:09.7201528Z",
+    "LastWriteTimeUtc": "2026-10-03T13:04:14.1480296Z",
+    "SHA256": "3d154bc62b62d50691f1634325768d7a91864deb480d009a7d40254a7ce570a5"
+  },
+  {
+    "Name": "A1296_5m_diagnostic_log.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1296_5m_diagnostic_log.txt",
+    "Bytes": 1207,
+    "CreationTimeUtc": "2026-10-03T14:28:13.0368557Z",
+    "LastWriteTimeUtc": "2026-10-03T14:59:05.8653440Z",
+    "SHA256": "a356cdde6222bced2c947f3b024343195553ca4db015ab6a716cba3fa67862c2"
+  },
+  {
+    "Name": "A1296_5M_DIAGNOSTIC_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1296_5M_DIAGNOSTIC_PACKAGE.zip",
+    "Bytes": 4101,
+    "CreationTimeUtc": "2026-10-03T14:27:41.8876703Z",
+    "LastWriteTimeUtc": "2026-10-03T14:27:44.7728806Z",
+    "SHA256": "350445e617e64921ab3027361f3be3ef4dc49ef4200a4c2fb507de6813a589b5"
+  },
+  {
+    "Name": "A1296_frontier_microscope_log.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1296_frontier_microscope_log.txt",
+    "Bytes": 1419,
+    "CreationTimeUtc": "2026-10-03T15:23:20.1051245Z",
+    "LastWriteTimeUtc": "2026-10-03T15:23:20.6843855Z",
+    "SHA256": "81883167c6fc43453e417bd9698c6a9ec649476789311a5b8373e24d07752435"
+  },
+  {
+    "Name": "A1296_FRONTIER_MICROSCOPE_PACKAGE.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1296_FRONTIER_MICROSCOPE_PACKAGE.zip",
+    "Bytes": 4476,
+    "CreationTimeUtc": "2026-10-03T15:21:43.2408483Z",
+    "LastWriteTimeUtc": "2026-10-03T15:21:45.6711870Z",
+    "SHA256": "e2ce1345ccab1bf5bd6464d55b6114fc08a2057fd3ad671834624336ff0a5d39"
+  },
+  {
+    "Name": "A1296_RUN_5M_DIAGNOSTIC.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1296_RUN_5M_DIAGNOSTIC.bat",
+    "Bytes": 797,
+    "CreationTimeUtc": "2026-10-03T14:27:58.3570038Z",
+    "LastWriteTimeUtc": "2026-10-03T14:28:00.4523831Z",
+    "SHA256": "b86bfe506afb0495d151b6945ca70a09a8d0a3e8921af47ed134d2dc8b2e5ba1"
+  },
+  {
+    "Name": "A1296_RUN_FRONTIER_MICROSCOPE.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\A1296_RUN_FRONTIER_MICROSCOPE.bat",
+    "Bytes": 855,
+    "CreationTimeUtc": "2026-10-03T15:21:37.1079103Z",
+    "LastWriteTimeUtc": "2026-10-03T15:21:40.5505769Z",
+    "SHA256": "76482b37c0ce6516518bb1e657c9a9d1a95709971033f8344e361252d7a12ac0"
+  },
+  {
+    "Name": "CLAUDE_WP84_HOSTILE_AUDIT_ONE_SHOT.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\CLAUDE_WP84_HOSTILE_AUDIT_ONE_SHOT.zip",
+    "Bytes": 13044,
+    "CreationTimeUtc": "2026-10-05T03:02:29.9712106Z",
+    "LastWriteTimeUtc": "2026-10-05T03:02:33.7384427Z",
+    "SHA256": "82d36ca213dd135e15faaa60c98d93fa3680441743b47e52be12c94344938c49"
+  },
+  {
+    "Name": "GOOGLE_WP84_PLAINTEXT_ONE_SHOT.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\GOOGLE_WP84_PLAINTEXT_ONE_SHOT.txt",
+    "Bytes": 15053,
+    "CreationTimeUtc": "2026-10-05T03:10:58.3202814Z",
+    "LastWriteTimeUtc": "2026-10-05T03:11:00.4950406Z",
+    "SHA256": "b7646f18889858886ba2cf5c3e58a474c45503b7b779f85aa282735f07ae8849"
+  },
+  {
+    "Name": "I've audited your `SHARKLANG_V22_FI.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\I've audited your `SHARKLANG_V22_FI.txt",
+    "Bytes": 6727,
+    "CreationTimeUtc": "2026-10-31T10:37:58.1154170Z",
+    "LastWriteTimeUtc": "2026-10-31T10:37:58.2243354Z",
+    "SHA256": "7d13e28f7237721c55be1f49366037e3bbefd7cda2cd537c6b04898ff9164add"
+  },
+  {
+    "Name": "Independent Technical Review of the WP84 Analytic Framework.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Independent Technical Review of the WP84 Analytic Framework.md",
+    "Bytes": 13015,
+    "CreationTimeUtc": "2026-11-01T12:49:47.5841297Z",
+    "LastWriteTimeUtc": "2026-11-01T12:49:49.8390573Z",
+    "SHA256": "141b6424135ccfd633d83276924cdfc879b7615b70bc8853cf815e971087cf4d"
+  },
+  {
+    "Name": "LRSC_arXiv_Candidate_2026-10-11.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_arXiv_Candidate_2026-10-11.pdf",
+    "Bytes": 196328,
+    "CreationTimeUtc": "2026-10-11T07:11:45.3223406Z",
+    "LastWriteTimeUtc": "2026-10-11T07:11:47.6326036Z",
+    "SHA256": "e2324a771566064817257f9554a9352b8dc1d49537b5a535d654fb54524804aa"
+  },
+  {
+    "Name": "LRSC_arXiv_Source_Candidate_2026-10-11.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_arXiv_Source_Candidate_2026-10-11.zip",
+    "Bytes": 7196,
+    "CreationTimeUtc": "2026-10-11T07:14:59.7684732Z",
+    "LastWriteTimeUtc": "2026-10-11T07:15:03.7677607Z",
+    "SHA256": "0bd6e779e2a57a782eaec39263f3e2acc3889853fa701aa0a6ec5f3714c6acda"
+  },
+  {
+    "Name": "LRSC_interval_gate_2026-09-26.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_interval_gate_2026-09-26.zip",
+    "Bytes": 11430,
+    "CreationTimeUtc": "2026-09-26T17:10:04.2491605Z",
+    "LastWriteTimeUtc": "2026-09-26T17:10:06.5476610Z",
+    "SHA256": "ba15cfd51cbe921e9107bde3dd528824ab24db8ba716f14f0ceb4746a3a7ce5f"
+  },
+  {
+    "Name": "LRSC_K11_exact_integer_certificate_2026-09-26.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_K11_exact_integer_certificate_2026-09-26.zip",
+    "Bytes": 29183,
+    "CreationTimeUtc": "2026-09-26T17:19:03.8777799Z",
+    "LastWriteTimeUtc": "2026-09-26T17:19:06.1311603Z",
+    "SHA256": "17d86e154ae4c72f1ca5b55076f0c4ea3e0931304f504e50d898ca2e50fc69a5"
+  },
+  {
+    "Name": "LRSC_K11_threshold_error_budget_2026-09-26.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_K11_threshold_error_budget_2026-09-26.md",
+    "Bytes": 5963,
+    "CreationTimeUtc": "2026-09-26T17:03:02.3881222Z",
+    "LastWriteTimeUtc": "2026-09-26T17:03:04.2782474Z",
+    "SHA256": "ab0420e7bbbcffefb9ad0663135d3aa6bafb334c7bb1777a46756d9fcda74a0d"
+  },
+  {
+    "Name": "LRSC_K7_Exhaustive_Audit.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_K7_Exhaustive_Audit.zip",
+    "Bytes": 6202,
+    "CreationTimeUtc": "2026-09-23T10:32:12.2698036Z",
+    "LastWriteTimeUtc": "2026-09-23T10:32:15.4724662Z",
+    "SHA256": "465ac630dfe5c386047ebd0932d55dd9d422605f95c50d7dc057c15c5b511bd0"
+  },
+  {
+    "Name": "LRSC_Odd_Ring_Rank_Manuscript_Review.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Odd_Ring_Rank_Manuscript_Review.pdf",
+    "Bytes": 224288,
+    "CreationTimeUtc": "2026-10-10T12:35:48.2287221Z",
+    "LastWriteTimeUtc": "2026-10-10T12:35:49.7155244Z",
+    "SHA256": "96b2f999de7f9283f906a128b0fd41402ea95754dfd9b54d732272ef9c9eed02"
+  },
+  {
+    "Name": "LRSC_Odd_Ring_Rank_Provenance_Updated (1).pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Odd_Ring_Rank_Provenance_Updated (1).pdf",
+    "Bytes": 223255,
+    "CreationTimeUtc": "2026-10-10T13:28:06.3640537Z",
+    "LastWriteTimeUtc": "2026-10-10T13:28:07.4767022Z",
+    "SHA256": "d8fa2ac74aeff92cf575d925efd9dfa4f8906e45ffe9a190bcf4d5de09dc4441"
+  },
+  {
+    "Name": "LRSC_Odd_Ring_Rank_Provenance_Updated.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Odd_Ring_Rank_Provenance_Updated.pdf",
+    "Bytes": 223255,
+    "CreationTimeUtc": "2026-10-10T12:56:38.7579950Z",
+    "LastWriteTimeUtc": "2026-10-10T12:56:41.0672847Z",
+    "SHA256": "d8fa2ac74aeff92cf575d925efd9dfa4f8906e45ffe9a190bcf4d5de09dc4441"
+  },
+  {
+    "Name": "LRSC_Odd_Ring_Rank_Source_Review.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Odd_Ring_Rank_Source_Review.zip",
+    "Bytes": 14682,
+    "CreationTimeUtc": "2026-10-10T12:38:54.6423431Z",
+    "LastWriteTimeUtc": "2026-10-10T12:38:58.5743343Z",
+    "SHA256": "d073d8975b376d467a41ac1333f673fc23e0f16967e3344644b1eae5ea72e03a"
+  },
+  {
+    "Name": "LRSC_One_Step_Formula_Audit_v0_1.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_One_Step_Formula_Audit_v0_1.zip",
+    "Bytes": 8778,
+    "CreationTimeUtc": "2026-09-23T10:33:20.5652820Z",
+    "LastWriteTimeUtc": "2026-09-23T10:33:23.1716285Z",
+    "SHA256": "eb29c798682af9b1ec37c9f7a36a7196f59729639f01486fdd96bbfb025e6c4c"
+  },
+  {
+    "Name": "LRSC_Single_Step_Spectral_Certificate_v1_0.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Single_Step_Spectral_Certificate_v1_0.zip",
+    "Bytes": 10354,
+    "CreationTimeUtc": "2026-09-23T11:23:07.7743225Z",
+    "LastWriteTimeUtc": "2026-09-23T11:23:10.3978382Z",
+    "SHA256": "5a82e2eabdc12bad4aa48414285091814cdf79b0192be8b079c2eee3955ea0ef"
+  },
+  {
+    "Name": "LRSC_Symmetry_Masked_Fourier_Rank_Revised_2026-10-10 (1).pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Symmetry_Masked_Fourier_Rank_Revised_2026-10-10 (1).pdf",
+    "Bytes": 233920,
+    "CreationTimeUtc": "2026-10-10T17:02:17.0960871Z",
+    "LastWriteTimeUtc": "2026-10-10T17:02:18.2203630Z",
+    "SHA256": "c4acf326b786c360a45a61e79300713ecaf22fb343c852d170d02f5aadb81afc"
+  },
+  {
+    "Name": "LRSC_Symmetry_Masked_Fourier_Rank_Revised_2026-10-10.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_Symmetry_Masked_Fourier_Rank_Revised_2026-10-10.pdf",
+    "Bytes": 233920,
+    "CreationTimeUtc": "2026-10-10T17:02:11.3422534Z",
+    "LastWriteTimeUtc": "2026-10-10T17:02:17.2231069Z",
+    "SHA256": "c4acf326b786c360a45a61e79300713ecaf22fb343c852d170d02f5aadb81afc"
+  },
+  {
+    "Name": "LRSC_v1_0_Companion_Verification.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_0_Companion_Verification.zip",
+    "Bytes": 9445,
+    "CreationTimeUtc": "2026-09-23T11:23:01.0778593Z",
+    "LastWriteTimeUtc": "2026-09-23T11:23:03.8867696Z",
+    "SHA256": "0c9ed1a7793f6be0c5c92f84cd8b8c2f9f59073968d0d8b8b0df6449ef275144"
+  },
+  {
+    "Name": "LRSC_v1_1_1_Independent_Companion (1).zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Independent_Companion (1).zip",
+    "Bytes": 12555,
+    "CreationTimeUtc": "2026-09-23T13:34:23.0232799Z",
+    "LastWriteTimeUtc": "2026-09-23T13:34:26.3766572Z",
+    "SHA256": "9971ed513df181e42e8f3c16073243b770fe0e2a8b71a5bc312b775e9266210c"
+  },
+  {
+    "Name": "LRSC_v1_1_1_Independent_Companion.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Independent_Companion.zip",
+    "Bytes": 12685,
+    "CreationTimeUtc": "2026-09-23T11:57:32.7877665Z",
+    "LastWriteTimeUtc": "2026-09-23T11:57:36.0267525Z",
+    "SHA256": "cdc955f297d60aa4f1ecd5d78f51003f08ab3adc336bc5ea5487554d617d96fa"
+  },
+  {
+    "Name": "LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf",
+    "Bytes": 96266,
+    "CreationTimeUtc": "2026-09-23T11:17:58.7049923Z",
+    "LastWriteTimeUtc": "2026-09-23T11:18:00.5826872Z",
+    "SHA256": "de40b42c42297cdce2f0c3ecb1f9852424065a63297c99411cf4ebfa1d1f4fa0"
+  },
+  {
+    "Name": "LRSC_v1_1_1_Source_Bundle (1).zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle (1).zip",
+    "Bytes": 139453,
+    "CreationTimeUtc": "2026-09-23T13:34:25.8602329Z",
+    "LastWriteTimeUtc": "2026-09-23T13:34:27.9454111Z",
+    "SHA256": "b0d9c6af1ca83d2f13bd54d35d5a06423c276b7698b266a16237201b7772a161"
+  },
+  {
+    "Name": "LRSC_v1_1_1_Source_Bundle.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle.zip",
+    "Bytes": 138741,
+    "CreationTimeUtc": "2026-09-23T11:20:14.3859427Z",
+    "LastWriteTimeUtc": "2026-09-23T11:20:16.7425518Z",
+    "SHA256": "ff5f26b04a10c0d665bc89e1ad2ec025bd99c61c8b5815dacac3f89d362f26b7"
+  },
+  {
+    "Name": "LRSC_v1_2_1_Proof_Clarification_Supplement (1).pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_2_1_Proof_Clarification_Supplement (1).pdf",
+    "Bytes": 247769,
+    "CreationTimeUtc": "2026-09-23T13:38:31.3117903Z",
+    "LastWriteTimeUtc": "2026-09-23T13:38:32.4685749Z",
+    "SHA256": "7172788b99538ff2f3ba640167465e21d2c31d7b71d17823f4300902e4e8fb51"
+  },
+  {
+    "Name": "LRSC_v1_2_1_Proof_Clarification_Supplement.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_2_1_Proof_Clarification_Supplement.pdf",
+    "Bytes": 247769,
+    "CreationTimeUtc": "2026-09-23T07:36:01.5617097Z",
+    "LastWriteTimeUtc": "2026-09-23T07:36:03.4012425Z",
+    "SHA256": "7172788b99538ff2f3ba640167465e21d2c31d7b71d17823f4300902e4e8fb51"
+  },
+  {
+    "Name": "LRSC_v1_2_1_Source_Bundle.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\LRSC_v1_2_1_Source_Bundle.zip",
+    "Bytes": 253185,
+    "CreationTimeUtc": "2026-09-23T07:36:09.7053408Z",
+    "LastWriteTimeUtc": "2026-09-23T07:36:12.5591112Z",
+    "SHA256": "b017e336253d5446a6c309d2092b7d7587ca368ed45d8c249f857f3a8b1836e9"
+  },
+  {
+    "Name": "lrsc-odd-ring-spectral-rank_github_ready_2026-09-24.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\lrsc-odd-ring-spectral-rank_github_ready_2026-09-24.zip",
+    "Bytes": 425955,
+    "CreationTimeUtc": "2026-09-24T10:31:56.8231934Z",
+    "LastWriteTimeUtc": "2026-09-24T10:31:59.8166117Z",
+    "SHA256": "210063708ffb6694597fa0b35f372a60b7e48fb6454e0dd91f00e8552e51b5b4"
+  },
+  {
+    "Name": "lrsc-verifiable-research-kernel.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\lrsc-verifiable-research-kernel.zip",
+    "Bytes": 9946,
+    "CreationTimeUtc": "2026-10-07T09:49:33.4301053Z",
+    "LastWriteTimeUtc": "2026-10-07T09:49:36.7734724Z",
+    "SHA256": "1ab0414e64c6568bb2d177800ec5867b4b24f6d9bd51df05dd53175bf80a8d48"
+  },
+  {
+    "Name": "OSF_DEPOSIT_LRSC_v1_1_1_NUMERICAL.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\OSF_DEPOSIT_LRSC_v1_1_1_NUMERICAL.zip",
+    "Bytes": 152864,
+    "CreationTimeUtc": "2026-09-23T14:25:13.1983115Z",
+    "LastWriteTimeUtc": "2026-09-23T14:25:17.8193805Z",
+    "SHA256": "4db7cb2c0c03a2c99ae3674078dd14e1cc4db2c0e9255942680d2ae90df23dbe"
+  },
+  {
+    "Name": "Prince_Upadhyay_Curated_Research_MasterLock_to_LRSC_v1_1_1_2026-09-23 (1).zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Prince_Upadhyay_Curated_Research_MasterLock_to_LRSC_v1_1_1_2026-09-23 (1).zip",
+    "Bytes": 3531077,
+    "CreationTimeUtc": "2026-09-23T17:48:00.7464111Z",
+    "LastWriteTimeUtc": "2026-09-23T17:48:02.4606459Z",
+    "SHA256": "b27ca774b5f7bb218f54e068f8ea853497663762d2b7e5b6416ae6048f072d77"
+  },
+  {
+    "Name": "Prince_Upadhyay_Curated_Research_MasterLock_to_LRSC_v1_1_1_2026-09-23.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Prince_Upadhyay_Curated_Research_MasterLock_to_LRSC_v1_1_1_2026-09-23.zip",
+    "Bytes": 3531077,
+    "CreationTimeUtc": "2026-09-23T16:03:16.6491516Z",
+    "LastWriteTimeUtc": "2026-09-23T16:03:26.3383530Z",
+    "SHA256": "b27ca774b5f7bb218f54e068f8ea853497663762d2b7e5b6416ae6048f072d77"
+  },
+  {
+    "Name": "RUN_A1294_FROM_DOWNLOADS_FIXED.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\RUN_A1294_FROM_DOWNLOADS_FIXED.bat",
+    "Bytes": 2326,
+    "CreationTimeUtc": "2026-10-03T13:00:45.4176797Z",
+    "LastWriteTimeUtc": "2026-10-03T13:00:49.6166773Z",
+    "SHA256": "7bd5ae5695f1fef3ed9e38ba8e224ca797de75d5293c8f98bfdd5f1b23bba235"
+  },
+  {
+    "Name": "RUN_A1294_FROM_DOWNLOADS_READY.bat",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\RUN_A1294_FROM_DOWNLOADS_READY.bat",
+    "Bytes": 2190,
+    "CreationTimeUtc": "2026-10-03T12:56:22.5832537Z",
+    "LastWriteTimeUtc": "2026-10-03T12:56:25.9618613Z",
+    "SHA256": "ff322c78c208af88a81e24551a88a0dcbc86becd166d4279b4e4b93a0617b9fc"
+  },
+  {
+    "Name": "SHARK_LRSC_K11_INDEPENDENT_SECURITY_INVESTIGATION_20261027.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_LRSC_K11_INDEPENDENT_SECURITY_INVESTIGATION_20261027.md",
+    "Bytes": 22378,
+    "CreationTimeUtc": "2026-10-27T10:29:47.0441376Z",
+    "LastWriteTimeUtc": "2026-10-27T10:29:48.6538183Z",
+    "SHA256": "384a4a02e084d724ca3f32ecdff77c14d2eb295c33ba9a2769ce4b417c88e0d5"
+  },
+  {
+    "Name": "SHARK_LRSC_K11_SECURITY_CHALLENGE_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_LRSC_K11_SECURITY_CHALLENGE_20261027.zip",
+    "Bytes": 13285,
+    "CreationTimeUtc": "2026-10-27T09:53:05.3260764Z",
+    "LastWriteTimeUtc": "2026-10-27T09:53:08.0158255Z",
+    "SHA256": "a88b9f9f7bca0bfe2b7519147037506d58c18d344954732e6914124ebaf59a77"
+  },
+  {
+    "Name": "SHARK_PROTOCOL_GEMINI_WORKSPACE_CONTINUATION_20261026.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_PROTOCOL_GEMINI_WORKSPACE_CONTINUATION_20261026.zip",
+    "Bytes": 589173,
+    "CreationTimeUtc": "2026-10-26T17:32:11.2190950Z",
+    "LastWriteTimeUtc": "2026-10-26T17:32:14.0165925Z",
+    "SHA256": "017db12e8ede3dff5b7f7301a42b4bf1772a2261b16f9b56ed7b9575668cd2f8"
+  },
+  {
+    "Name": "Shark_Protocol_LRSC_K11_Security_Investigation_v1_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_LRSC_K11_Security_Investigation_v1_20261027.zip",
+    "Bytes": 694383,
+    "CreationTimeUtc": "2026-10-27T10:28:53.0045855Z",
+    "LastWriteTimeUtc": "2026-10-27T10:28:56.3704386Z",
+    "SHA256": "5274af234cf7e8e1b8dfdf6444b5abc41c969a67373d481541d47bc65c608b80"
+  },
+  {
+    "Name": "Shark_Protocol_v1_3_3_Audit_And_Remediation_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Audit_And_Remediation_20261027.zip",
+    "Bytes": 2581999,
+    "CreationTimeUtc": "2026-10-26T22:34:09.4062266Z",
+    "LastWriteTimeUtc": "2026-10-26T22:34:15.3873635Z",
+    "SHA256": "c926512d0b4b8d07f146a2249c091552c3189d93cd11190270f7043aec7168e0"
+  },
+  {
+    "Name": "Shark_Protocol_v1_3_3_Audit_Remediation_WSL_Ready_v3_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Audit_Remediation_WSL_Ready_v3_20261027.zip",
+    "Bytes": 2584091,
+    "CreationTimeUtc": "2026-10-26T22:48:26.0472237Z",
+    "LastWriteTimeUtc": "2026-10-26T22:48:33.6496405Z",
+    "SHA256": "276d975a4d03f5d201f7001f3383225cf8fbc0b1d9ce92f0ed2ee948f4a7d834"
+  },
+  {
+    "Name": "Shark_Protocol_v1_3_3_Workspace_Continuation_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Continuation_20261027.zip",
+    "Bytes": 1950472,
+    "CreationTimeUtc": "2026-10-26T19:23:15.2003996Z",
+    "LastWriteTimeUtc": "2026-10-26T19:23:20.9164965Z",
+    "SHA256": "cea4f755434d4370c1b43d835be1aa02e77f41858267de0af450cc2ccae252f9"
+  },
+  {
+    "Name": "Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "Bytes": 1935543,
+    "CreationTimeUtc": "2026-10-26T18:51:51.5167513Z",
+    "LastWriteTimeUtc": "2026-10-26T18:51:56.5657132Z",
+    "SHA256": "003cb7942471225e53fbe9a0acdea995b43f443ab4eb3dd4ebeee7d70bad5744"
+  },
+  {
+    "Name": "SHARK_PROTOCOL_V133_DIRECTORY_CONTRACT_HANDOFF_20261026_v1.1_FINAL.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_PROTOCOL_V133_DIRECTORY_CONTRACT_HANDOFF_20261026_v1.1_FINAL.zip",
+    "Bytes": 2115484,
+    "CreationTimeUtc": "2026-10-26T14:15:00.2539923Z",
+    "LastWriteTimeUtc": "2026-10-26T14:15:00.4591742Z",
+    "SHA256": "a5f554901cf13108e8a0b314a83a71eb820361d5203dd0493307ce5b9fdeb669"
+  },
+  {
+    "Name": "Shark_Protocol_v133_Execution_Event_Semantic_Linkage_Hardened_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v133_Execution_Event_Semantic_Linkage_Hardened_20261027.zip",
+    "Bytes": 855453,
+    "CreationTimeUtc": "2026-10-27T16:46:34.9821410Z",
+    "LastWriteTimeUtc": "2026-10-27T16:46:45.3238231Z",
+    "SHA256": "a30bc61d159f038e081526db1e104465d4c145451bcd803e662b9fbe34e975b2"
+  },
+  {
+    "Name": "Shark_Protocol_v133_Execution_Event_Semantic_Linkage_Integrated_Private_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v133_Execution_Event_Semantic_Linkage_Integrated_Private_20261027.zip",
+    "Bytes": 21821465,
+    "CreationTimeUtc": "2026-10-27T18:54:56.5894643Z",
+    "LastWriteTimeUtc": "2026-10-27T18:55:02.7928488Z",
+    "SHA256": "774e1ad54e70c1355fe4738956ac5dddac4328c50fd4b7bade788a234b6c05e9"
+  },
+  {
+    "Name": "SHARK_PROTOCOL_V133_HARDENED_AUDIT_AND_CONTINUATION_20261026.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_PROTOCOL_V133_HARDENED_AUDIT_AND_CONTINUATION_20261026.zip",
+    "Bytes": 1225733,
+    "CreationTimeUtc": "2026-10-26T18:03:38.7025293Z",
+    "LastWriteTimeUtc": "2026-10-26T18:03:42.8625448Z",
+    "SHA256": "aefba4243841b9d4d7b7cc4efc3414bbde74b564e3beae2d19e91955fc2b6ef4"
+  },
+  {
+    "Name": "Shark_Protocol_v133_Independent_310_Hostile_Reconciliation_Audit_20261028.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v133_Independent_310_Hostile_Reconciliation_Audit_20261028.zip",
+    "Bytes": 99658,
+    "CreationTimeUtc": "2026-10-27T20:23:30.0711408Z",
+    "LastWriteTimeUtc": "2026-10-27T20:23:33.3536737Z",
+    "SHA256": "2fac312793a68a15cea3b8599110864b44080bed136ab24e07e68020e151f2fa"
+  },
+  {
+    "Name": "Shark_Protocol_v133_Independent_Hostile_Security_Audit_20261028.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v133_Independent_Hostile_Security_Audit_20261028.zip",
+    "Bytes": 75891,
+    "CreationTimeUtc": "2026-10-27T19:27:52.2309638Z",
+    "LastWriteTimeUtc": "2026-10-27T19:27:55.1061596Z",
+    "SHA256": "b68acc82f8e189487d8b6edf088080deae98e12b831adb5f582f602f3a8dd5da"
+  },
+  {
+    "Name": "Shark_Protocol_v133_K11_V10_Reconciled_Candidate_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v133_K11_V10_Reconciled_Candidate_20261027.zip",
+    "Bytes": 675961,
+    "CreationTimeUtc": "2026-10-27T10:56:13.4705381Z",
+    "LastWriteTimeUtc": "2026-10-27T10:56:16.7547823Z",
+    "SHA256": "1f71e82afd59b014889386bfa6784530002db625834cda773b0fddd751bad2df"
+  },
+  {
+    "Name": "Shark_Protocol_v133_V12_Production_Security_Engineering_Candidate_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v133_V12_Production_Security_Engineering_Candidate_20261027.zip",
+    "Bytes": 726914,
+    "CreationTimeUtc": "2026-10-27T13:52:56.9563487Z",
+    "LastWriteTimeUtc": "2026-10-27T13:53:00.8440879Z",
+    "SHA256": "a6c4b98c8b3cb22f1162a9f022bd39a88086d2c3bb34f982d6fdabebdd7309a0"
+  },
+  {
+    "Name": "SHARK_PROTOCOL_V133_WORKSPACE_CONTINUATION_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_PROTOCOL_V133_WORKSPACE_CONTINUATION_20261027.zip",
+    "Bytes": 1934006,
+    "CreationTimeUtc": "2026-10-26T19:06:16.5994983Z",
+    "LastWriteTimeUtc": "2026-10-26T19:06:20.3370936Z",
+    "SHA256": "1bc179c6ade0d94420454e92a0eac1050a15fde52665fe1491812109616ba176"
+  },
+  {
+    "Name": "SHARK_PROTOCOL_V133_WORKSPACE_UPDATE_20261026.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_PROTOCOL_V133_WORKSPACE_UPDATE_20261026.zip",
+    "Bytes": 658459,
+    "CreationTimeUtc": "2026-10-26T18:24:39.0890495Z",
+    "LastWriteTimeUtc": "2026-10-26T18:24:42.0292643Z",
+    "SHA256": "07c40749deaf54a8e8bbd3b400b025389e10e0c96aa0b88ec363fcb59edfdeef"
+  },
+  {
+    "Name": "SHARK_PROTOCOL_V2_RECOVERY_PREFLIGHT_20261030.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_PROTOCOL_V2_RECOVERY_PREFLIGHT_20261030.zip",
+    "Bytes": 18160276,
+    "CreationTimeUtc": "2026-10-30T07:26:52.5577288Z",
+    "LastWriteTimeUtc": "2026-10-30T07:27:39.4843341Z",
+    "SHA256": "7cf8bffe5eb79fba1d1b586abeafca0b92825ebf85a272ed399e2da9dce08586"
+  },
+  {
+    "Name": "SHARK_V133_LRSC_K11_V10_RECONCILIATION_REPORT_20261027.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_V133_LRSC_K11_V10_RECONCILIATION_REPORT_20261027.md",
+    "Bytes": 9499,
+    "CreationTimeUtc": "2026-10-27T10:56:34.1801415Z",
+    "LastWriteTimeUtc": "2026-10-27T10:56:35.8115176Z",
+    "SHA256": "fa4c10cbe3ad1c4f02c75b11c5b434d807a28da9b4662c77c94d3ce81c36b75a"
+  },
+  {
+    "Name": "SHARK_V133_LRSC_K11_V10_REVIEW_PATCH_20261027.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARK_V133_LRSC_K11_V10_REVIEW_PATCH_20261027.zip",
+    "Bytes": 8746,
+    "CreationTimeUtc": "2026-10-27T10:42:04.4313808Z",
+    "LastWriteTimeUtc": "2026-10-27T10:42:07.2686619Z",
+    "SHA256": "6463e6708bd1fcd0fda70797aac9fefcd4ebb42ff5e6e6296f658204426d8707"
+  },
+  {
+    "Name": "shark-protocol-4d-trajectory.png",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-4d-trajectory.png",
+    "Bytes": 150148,
+    "CreationTimeUtc": "2026-10-24T12:58:24.3984548Z",
+    "LastWriteTimeUtc": "2026-10-24T12:58:26.7287230Z",
+    "SHA256": "06d07b2b4cb045a245cc04979333d9dc817179a7bb5378607961bcf49c0261a1"
+  },
+  {
+    "Name": "shark-protocol-api-wrapper-v2.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-api-wrapper-v2.py",
+    "Bytes": 12023,
+    "CreationTimeUtc": "2026-10-24T10:02:48.4274942Z",
+    "LastWriteTimeUtc": "2026-10-24T10:02:51.3278597Z",
+    "SHA256": "d503455dd2328ee7ec89e7f7b0eab0f6ee3ab552bdb739d47e8c9328b3fcb137"
+  },
+  {
+    "Name": "shark-protocol-api-wrapper.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-api-wrapper.py",
+    "Bytes": 11229,
+    "CreationTimeUtc": "2026-10-24T09:53:17.5007044Z",
+    "LastWriteTimeUtc": "2026-10-24T09:53:20.7438974Z",
+    "SHA256": "7fce942811d31ecb72c27537af64b8a6db48c1d81b3e9065df364c7ab48f1199"
+  },
+  {
+    "Name": "shark-protocol-dashboard.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-dashboard.py",
+    "Bytes": 3147,
+    "CreationTimeUtc": "2026-10-24T10:39:31.6501256Z",
+    "LastWriteTimeUtc": "2026-10-24T10:39:35.3984996Z",
+    "SHA256": "4569e0a48e53bd038a01f318fada6d0328b578cd2e5734bdf0041b32a39804d2"
+  },
+  {
+    "Name": "shark-protocol-governor.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-governor.py",
+    "Bytes": 9594,
+    "CreationTimeUtc": "2026-10-24T09:45:35.5629829Z",
+    "LastWriteTimeUtc": "2026-10-24T09:45:38.8512828Z",
+    "SHA256": "431d3c2b032e66c31cfa8d2d93481d2fa4e7438d8affbbbe7754778feda1e530"
+  },
+  {
+    "Name": "shark-protocol-README.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-README.md",
+    "Bytes": 83,
+    "CreationTimeUtc": "2026-10-24T10:39:55.1384220Z",
+    "LastWriteTimeUtc": "2026-10-24T10:39:56.6729836Z",
+    "SHA256": "2c3990db948cc439f948e4c20ed41ca736131c616fc7c1e3b02a1a9056b24b9b"
+  },
+  {
+    "Name": "shark-protocol-runtime-v2.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-runtime-v2.py",
+    "Bytes": 11656,
+    "CreationTimeUtc": "2026-10-24T09:41:13.6474611Z",
+    "LastWriteTimeUtc": "2026-10-24T09:41:17.5028872Z",
+    "SHA256": "d3cdcf80fc371cbc78284951482ae07100be0f696bbfad599cbf8903668a3d8b"
+  },
+  {
+    "Name": "shark-protocol-runtime.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-runtime.py",
+    "Bytes": 11656,
+    "CreationTimeUtc": "2026-10-24T09:23:43.3567362Z",
+    "LastWriteTimeUtc": "2026-10-24T09:23:46.7530179Z",
+    "SHA256": "a66bd144f14856789798ac68b35d192b5eb0f818774c94f5ed2c80c471dd0b22"
+  },
+  {
+    "Name": "shark-protocol-v1.0.0-release.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-v1.0.0-release.zip",
+    "Bytes": 16974,
+    "CreationTimeUtc": "2026-10-24T10:35:04.5950372Z",
+    "LastWriteTimeUtc": "2026-10-24T10:35:07.9863704Z",
+    "SHA256": "52cec9f04cf17f04b2f4406f0d84d3d6754f506d1321d7c4e091d6f28d016359"
+  },
+  {
+    "Name": "shark-protocol-v1.0.1-release.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-v1.0.1-release.zip",
+    "Bytes": 6488,
+    "CreationTimeUtc": "2026-10-24T11:03:48.9129064Z",
+    "LastWriteTimeUtc": "2026-10-24T11:03:52.9593283Z",
+    "SHA256": "d7fbabb0d4c1bc84414513ff5303e8036755a32a576ba60a7b8a367d6cae054b"
+  },
+  {
+    "Name": "shark-protocol-v1.0.2-release.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-v1.0.2-release.zip",
+    "Bytes": 4249,
+    "CreationTimeUtc": "2026-10-24T11:13:05.5440158Z",
+    "LastWriteTimeUtc": "2026-10-24T11:13:09.5483571Z",
+    "SHA256": "a70a34f7443e83273f0a31ecbe626f69aefb60fc860384cd96a0cf7ea9c0495d"
+  },
+  {
+    "Name": "shark-protocol-v1.0.3-release.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\shark-protocol-v1.0.3-release.zip",
+    "Bytes": 12389,
+    "CreationTimeUtc": "2026-10-24T11:57:37.4592501Z",
+    "LastWriteTimeUtc": "2026-10-24T11:57:41.4265758Z",
+    "SHA256": "b48aa316343bc7cb83222d04a2fbb0d3e477f18ad16929445013c8eb5c5e6c2a"
+  },
+  {
+    "Name": "Sharklang V14 Sha256sums.txt",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\Sharklang V14 Sha256sums.txt",
+    "Bytes": 748,
+    "CreationTimeUtc": "2026-10-31T06:01:23.3492665Z",
+    "LastWriteTimeUtc": "2026-10-31T06:01:26.1420109Z",
+    "SHA256": "558cf4d5137b3c6c8f803ee3bec1358617fd97b64229d3ee3b0af18bd6366193"
+  },
+  {
+    "Name": "SHARKLANG_EVIDENCE_DESK_0.1.1_20261101.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_EVIDENCE_DESK_0.1.1_20261101.zip",
+    "Bytes": 80900,
+    "CreationTimeUtc": "2026-11-01T07:34:17.9166514Z",
+    "LastWriteTimeUtc": "2026-11-01T07:34:17.9482198Z",
+    "SHA256": "54bc2bc14a57c88535958c4cddaf35cb55f307670d5d4ccd644879447554749a"
+  },
+  {
+    "Name": "SHARKLANG_GOVERNED_AI_DEMO_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_GOVERNED_AI_DEMO_20261031.zip",
+    "Bytes": 211251,
+    "CreationTimeUtc": "2026-10-31T13:34:23.6575836Z",
+    "LastWriteTimeUtc": "2026-10-31T13:38:13.9796576Z",
+    "SHA256": "3e8c2baa2fd4d1de83ba0c14a5f857e539873e95ff11661d3757e17d754dc05d"
+  },
+  {
+    "Name": "SHARKLANG_GOVERNED_AI_DEMO_V2_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_GOVERNED_AI_DEMO_V2_20261031.zip",
+    "Bytes": 211812,
+    "CreationTimeUtc": "2026-10-31T13:46:53.0462452Z",
+    "LastWriteTimeUtc": "2026-10-31T13:46:47.8022417Z",
+    "SHA256": "3946c5d103f2912df7b0a78b73227af1a8f5a86e74c9b66e6c6037630a389e9b"
+  },
+  {
+    "Name": "SHARKLANG_GOVERNED_AI_REVIEW_RELEASE_20261101_FINAL.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_GOVERNED_AI_REVIEW_RELEASE_20261101_FINAL.zip",
+    "Bytes": 530289,
+    "CreationTimeUtc": "2026-10-31T19:30:22.8910101Z",
+    "LastWriteTimeUtc": "2026-10-31T19:30:28.5448023Z",
+    "SHA256": "d347cb51591d7e1ee5e65a5903fe862663081574f027cdb9db86cf80a1a0027d"
+  },
+  {
+    "Name": "SharkLang_Sovereign_Architecture_and_Verification_Monograph.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SharkLang_Sovereign_Architecture_and_Verification_Monograph.pdf",
+    "Bytes": 653821,
+    "CreationTimeUtc": "2026-11-01T05:44:46.5350067Z",
+    "LastWriteTimeUtc": "2026-11-01T05:44:49.2131772Z",
+    "SHA256": "5116cab1d666277c69d1983d833bb07a753ac048e7f9ebddc6bd0a738ed5dc16"
+  },
+  {
+    "Name": "SHARKLANG_V14_FROZEN_RELEASE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V14_FROZEN_RELEASE_20261031.zip",
+    "Bytes": 41215,
+    "CreationTimeUtc": "2026-10-31T06:01:26.1237586Z",
+    "LastWriteTimeUtc": "2026-10-31T06:01:27.9921477Z",
+    "SHA256": "cca4a3d298cb8f70ee78d6f8aa5d6d84e50a311519c6f498d6558a39878b6c7b"
+  },
+  {
+    "Name": "SharkLang_v2.4.2_Social_Overview.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SharkLang_v2.4.2_Social_Overview.pdf",
+    "Bytes": 62374,
+    "CreationTimeUtc": "2026-11-01T06:12:33.6259365Z",
+    "LastWriteTimeUtc": "2026-11-01T06:12:33.7453778Z",
+    "SHA256": "34101706a34b802315cb3dc59970698b64ac7caf1434b547ed0b2dfbfcb37109"
+  },
+  {
+    "Name": "SHARKLANG_V20_FROZEN_RELEASE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V20_FROZEN_RELEASE_20261031.zip",
+    "Bytes": 58820,
+    "CreationTimeUtc": "2026-10-31T06:47:55.5853864Z",
+    "LastWriteTimeUtc": "2026-10-31T08:39:58.9998222Z",
+    "SHA256": "a1ac40dd47b21beba8cb07bef956cb507ab8f102559f0627035bca45ed9ffadb"
+  },
+  {
+    "Name": "SHARKLANG_V22_FINAL_SOVEREIGN_RELEASE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V22_FINAL_SOVEREIGN_RELEASE_20261031.zip",
+    "Bytes": 69670,
+    "CreationTimeUtc": "2026-10-31T10:11:06.7214213Z",
+    "LastWriteTimeUtc": "2026-10-31T10:11:09.2035006Z",
+    "SHA256": "0d495d8f85f82cd48ea0782b245e98a2221ababd2c2217f24360a3f34c477c89"
+  },
+  {
+    "Name": "SHARKLANG_V23_FINAL_SOVEREIGN_RELEASE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V23_FINAL_SOVEREIGN_RELEASE_20261031.zip",
+    "Bytes": 76775,
+    "CreationTimeUtc": "2026-10-31T10:38:21.9048536Z",
+    "LastWriteTimeUtc": "2026-10-31T10:38:25.1475741Z",
+    "SHA256": "9b17d3fd2ace635a814261625d0015159c5f22835f43c05ea893c0978c789f41"
+  },
+  {
+    "Name": "SHARKLANG_V24_1_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_1_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "Bytes": 359186,
+    "CreationTimeUtc": "2026-10-31T12:31:52.4004400Z",
+    "LastWriteTimeUtc": "2026-10-31T12:37:19.7727943Z",
+    "SHA256": "de7c07237391f3a04944a4c22e4bf274a1de722376696ea20916949d59c7be7e"
+  },
+  {
+    "Name": "sharklang_v24_1_pre_v24_2_20261031.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\sharklang_v24_1_pre_v24_2_20261031.py",
+    "Bytes": 303310,
+    "CreationTimeUtc": "2026-10-31T13:02:35.0719611Z",
+    "LastWriteTimeUtc": "2026-10-31T12:34:34.4420450Z",
+    "SHA256": "26fd927167720f169b9ee28c3d68e9f9f237fdd7b4a5b7c65db1d024233eebf3"
+  },
+  {
+    "Name": "SHARKLANG_V24_1_SECURITY_HARDENING_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_1_SECURITY_HARDENING_20261031.zip",
+    "Bytes": 84790,
+    "CreationTimeUtc": "2026-10-31T12:03:11.8651861Z",
+    "LastWriteTimeUtc": "2026-10-31T12:37:19.6574458Z",
+    "SHA256": "2a71e7249ea3d6a249f4656f9042a48d3f8451aa888052d41ff6c373a65980f6"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "Bytes": 437502,
+    "CreationTimeUtc": "2026-10-31T13:02:35.1003382Z",
+    "LastWriteTimeUtc": "2026-10-31T13:01:49.6979863Z",
+    "SHA256": "58002603e671b98fa09114dbb8b2cdefebd0449f82f4126331480d21bdb78884"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_LIVE_REVIEW_UBUNTU_20261031T132728Z.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_LIVE_REVIEW_UBUNTU_20261031T132728Z.zip",
+    "Bytes": 465624,
+    "CreationTimeUtc": "2026-10-31T13:27:28.1964926Z",
+    "LastWriteTimeUtc": "2026-10-31T13:27:28.4722736Z",
+    "SHA256": "420de7a638e1e608c03e6a6b036b764d4b1c0614d1c4bb64f0229cda01d93ce2"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_LIVE_REVIEW_UBUNTU_20261031T132728Z.zip.audit.json",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_LIVE_REVIEW_UBUNTU_20261031T132728Z.zip.audit.json",
+    "Bytes": 1963,
+    "CreationTimeUtc": "2026-11-01T07:38:55.8445556Z",
+    "LastWriteTimeUtc": "2026-11-01T07:38:57.7695734Z",
+    "SHA256": "01d0a2ebe9924e66facc49e0f94606c780d54ab1c3d85408ae55c01a9a94ce3a"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_LIVE_REVIEW_WINDOWS_20261031T132010Z.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_LIVE_REVIEW_WINDOWS_20261031T132010Z.zip",
+    "Bytes": 453631,
+    "CreationTimeUtc": "2026-10-31T13:20:10.7570658Z",
+    "LastWriteTimeUtc": "2026-10-31T13:20:10.8026287Z",
+    "SHA256": "e5ce2f0f1e2e1b6b560a65ce523a3c423e11dd07d29c98dbda4815d8cc8ac919"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_LIVE_REVIEW_WINDOWS_20261031T132415Z.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_LIVE_REVIEW_WINDOWS_20261031T132415Z.zip",
+    "Bytes": 453637,
+    "CreationTimeUtc": "2026-10-31T13:24:15.4103366Z",
+    "LastWriteTimeUtc": "2026-10-31T13:24:15.4537698Z",
+    "SHA256": "f0d189197c2ebedc2eda9e04d5f8a9045b2ce41b1dbf7868ea7909fada46ce5a"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_LIVE_TEST_BUNDLE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_LIVE_TEST_BUNDLE_20261031.zip",
+    "Bytes": 453631,
+    "CreationTimeUtc": "2026-10-31T13:12:31.7721863Z",
+    "LastWriteTimeUtc": "2026-10-31T13:14:09.1515864Z",
+    "SHA256": "e8f379ec222ff092a665c33af1130dc29057f5504eac7d8f032c0855e6a64803"
+  },
+  {
+    "Name": "SHARKLANG_V24_2_SECURITY_HARDENING_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_SECURITY_HARDENING_20261031.zip",
+    "Bytes": 98289,
+    "CreationTimeUtc": "2026-10-31T13:02:35.0983358Z",
+    "LastWriteTimeUtc": "2026-10-31T13:01:15.1874846Z",
+    "SHA256": "96686943ba7fbc835e63f250a6a1d2af8cd39b3868b9e4e731d88de38a405e3a"
+  },
+  {
+    "Name": "SHARKLANG_V24_FINAL_SOVEREIGN_RELEASE_20261031.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_FINAL_SOVEREIGN_RELEASE_20261031.zip",
+    "Bytes": 79139,
+    "CreationTimeUtc": "2026-10-31T11:08:52.4327002Z",
+    "LastWriteTimeUtc": "2026-10-31T11:08:56.2256093Z",
+    "SHA256": "ca30b7d2ed3ffa8dba1898bc4674179dc875da015b765feba1120b3c9825360e"
+  },
+  {
+    "Name": "SHARKLANG_V242_INDEPENDENT_RELEASE_AUDIT_20261101.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V242_INDEPENDENT_RELEASE_AUDIT_20261101.md",
+    "Bytes": 8815,
+    "CreationTimeUtc": "2026-10-31T19:38:45.4087414Z",
+    "LastWriteTimeUtc": "2026-10-31T19:38:47.2977043Z",
+    "SHA256": "1afced6c613cdb0148e47d2fc1c8446c5dd6c606056f5e3fc1cd17730d591ed8"
+  },
+  {
+    "Name": "sharklang.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\sharklang.py",
+    "Bytes": 305592,
+    "CreationTimeUtc": "2026-10-30T20:54:10.5463985Z",
+    "LastWriteTimeUtc": "2026-10-31T12:58:14.5101143Z",
+    "SHA256": "bd5083da604368bf9b6ad17ee69a00889de1381b6b7d72f7fa39d09ca3522b1b"
+  },
+  {
+    "Name": "The_Reggae_Shark_Protocol_v1_3_2_git_archive.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\The_Reggae_Shark_Protocol_v1_3_2_git_archive.zip",
+    "Bytes": 477662,
+    "CreationTimeUtc": "2026-10-26T06:09:16.9758754Z",
+    "LastWriteTimeUtc": "2026-10-26T06:09:17.0055548Z",
+    "SHA256": "ecb7a19b80ade99cfa00c7022116521911cf1d34be6ded00585b333b37e02ef1"
+  },
+  {
+    "Name": "The_Reggae_Shark_Protocol_v1_3_2_Specification.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\The_Reggae_Shark_Protocol_v1_3_2_Specification.pdf",
+    "Bytes": 405584,
+    "CreationTimeUtc": "2026-10-26T06:04:57.6279914Z",
+    "LastWriteTimeUtc": "2026-10-26T06:05:00.3463132Z",
+    "SHA256": "2741d42d619e1037ffd7d00c74ba6f3902cf235d634e6b86bfb6108276688e6f"
+  },
+  {
+    "Name": "The_Reggae_Shark_Protocol_v1_3_2.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\The_Reggae_Shark_Protocol_v1_3_2.zip",
+    "Bytes": 477661,
+    "CreationTimeUtc": "2026-10-26T06:05:10.4314689Z",
+    "LastWriteTimeUtc": "2026-10-26T06:05:13.8576764Z",
+    "SHA256": "48beedd6a42312d1bc9912ab64330eba6f642882530fef5b1a18db7655964322"
+  },
+  {
+    "Name": "WP19_A1294_WP84_EARLY_RESEARCH_PROVENANCE_AND_ERRATUM_20261103.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP19_A1294_WP84_EARLY_RESEARCH_PROVENANCE_AND_ERRATUM_20261103.zip",
+    "Bytes": 33903500,
+    "CreationTimeUtc": "2026-11-03T17:09:57.0048798Z",
+    "LastWriteTimeUtc": "2026-11-03T17:09:04.5082631Z",
+    "SHA256": "2d13de16b6bf5dca6a28e13f79fde1b3114a4e63cef858620665863a4c3933ac"
+  },
+  {
+    "Name": "WP84_CLAUDE_FULL_SOURCE_20261008.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_CLAUDE_FULL_SOURCE_20261008.zip",
+    "Bytes": 15694580,
+    "CreationTimeUtc": "2026-10-08T10:20:51.5830566Z",
+    "LastWriteTimeUtc": "2026-10-08T10:20:22.8051786Z",
+    "SHA256": "61b13cd6e635e73308a9bf38323d02a5c567243bf98937b5820c4ad5bdee8d3d"
+  },
+  {
+    "Name": "WP84_Claude_Google_Hostile_Audit_Pack.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_Claude_Google_Hostile_Audit_Pack.zip",
+    "Bytes": 6315,
+    "CreationTimeUtc": "2026-10-05T21:01:53.5430734Z",
+    "LastWriteTimeUtc": "2026-10-05T21:01:55.9500375Z",
+    "SHA256": "f0f90bff045112b3b32a45b93cd2e3c098d19ebdd2e30195ad18b6d5d7ce430a"
+  },
+  {
+    "Name": "WP84_CLAUDE_INCREMENTAL_9203b8e_20261008.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_CLAUDE_INCREMENTAL_9203b8e_20261008.zip",
+    "Bytes": 7617283,
+    "CreationTimeUtc": "2026-10-08T12:41:49.3349923Z",
+    "LastWriteTimeUtc": "2026-10-08T12:41:49.3457983Z",
+    "SHA256": "f0ba45cdfb8df6d8dd9980766d5a780540181096035aef614f3893d68f93f2d6"
+  },
+  {
+    "Name": "WP84_DIRECT_SMOOTH_THIRD_REFEREE_PACKET_20261103.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_DIRECT_SMOOTH_THIRD_REFEREE_PACKET_20261103.zip",
+    "Bytes": 585121,
+    "CreationTimeUtc": "2026-11-03T13:08:42.0501983Z",
+    "LastWriteTimeUtc": "2026-11-03T13:07:58.4438485Z",
+    "SHA256": "d1695d3676e8bacad2e3464bed79c49bb001522d1581ef71d083f907f1b7193a"
+  },
+  {
+    "Name": "WP84_HOSTILE_FRONTIER_20261102.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_HOSTILE_FRONTIER_20261102.zip",
+    "Bytes": 6676,
+    "CreationTimeUtc": "2026-11-02T16:29:25.3745800Z",
+    "LastWriteTimeUtc": "2026-11-02T16:29:28.6560934Z",
+    "SHA256": "41332180d782916005425886ba65bec3600a032b7e62626a188b402317eea0cf"
+  },
+  {
+    "Name": "WP84_INDEPENDENT_BOUNDARY_CHECK.py",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_INDEPENDENT_BOUNDARY_CHECK.py",
+    "Bytes": 1228,
+    "CreationTimeUtc": "2026-11-03T11:24:59.9958548Z",
+    "LastWriteTimeUtc": "2026-11-03T11:25:03.9284575Z",
+    "SHA256": "e07fa58983540b7eb543ea9b2ef90902c3440529f84aaf9f9587f61653739f56"
+  },
+  {
+    "Name": "WP84_INDEPENDENT_REFEREE_CORE_20261103.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_INDEPENDENT_REFEREE_CORE_20261103.zip",
+    "Bytes": 6389,
+    "CreationTimeUtc": "2026-11-03T09:36:05.5802633Z",
+    "LastWriteTimeUtc": "2026-11-03T09:36:09.6478273Z",
+    "SHA256": "0dbd6aa3e056fd1a2104805935ba3f908e939d433be07eec025945e5d0ffc850"
+  },
+  {
+    "Name": "WP84_INDEPENDENT_REFEREE_VERDICT_V2_20261103.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_INDEPENDENT_REFEREE_VERDICT_V2_20261103.md",
+    "Bytes": 5491,
+    "CreationTimeUtc": "2026-11-03T11:25:03.8171862Z",
+    "LastWriteTimeUtc": "2026-11-03T11:25:05.3035247Z",
+    "SHA256": "82cc23181890bebf61d4da87242b4c69caf9446fe59933e1be704c07e578c086"
+  },
+  {
+    "Name": "WP84_PRIVATE_PREPUBLICATION_f962f23_20261008.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_PRIVATE_PREPUBLICATION_f962f23_20261008.zip",
+    "Bytes": 16833978,
+    "CreationTimeUtc": "2026-10-08T14:21:52.6269373Z",
+    "LastWriteTimeUtc": "2026-10-08T14:21:55.1900771Z",
+    "SHA256": "1ed9f4e7b23f83036dc2f3950ee23eed5395d41dea2650af334a3b4dc354df63"
+  },
+  {
+    "Name": "WP84_PUBLICATION_READINESS_ASSESSMENT_20261103.md",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_PUBLICATION_READINESS_ASSESSMENT_20261103.md",
+    "Bytes": 10815,
+    "CreationTimeUtc": "2026-11-03T14:47:42.5275794Z",
+    "LastWriteTimeUtc": "2026-11-03T14:47:51.5340241Z",
+    "SHA256": "93a7710f43d64db0759811b4d29f80c3a686e143dd476e01a904eeebdca690d2"
+  },
+  {
+    "Name": "WP84_Referee_Draft_Adaptive_Cubic_Boundary_F1C.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_Referee_Draft_Adaptive_Cubic_Boundary_F1C.pdf",
+    "Bytes": 379847,
+    "CreationTimeUtc": "2026-10-10T10:58:55.2128608Z",
+    "LastWriteTimeUtc": "2026-10-10T10:58:57.5582345Z",
+    "SHA256": "c265f1165f5bb53e1499fdcfc2ad03a815ff94783b3ae87307b04e4d2fe9cd94"
+  },
+  {
+    "Name": "WP84_Referee_Draft_Adaptive_Cubic_Boundary_F1C.tex",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_Referee_Draft_Adaptive_Cubic_Boundary_F1C.tex",
+    "Bytes": 23837,
+    "CreationTimeUtc": "2026-10-10T10:58:57.2277288Z",
+    "LastWriteTimeUtc": "2026-10-10T10:59:00.4042675Z",
+    "SHA256": "fb6a8448881a6e3eee9b7dd504aa1b761205c6d2ba3b2d0b8de20af7a9961f9a"
+  },
+  {
+    "Name": "WP84_Referee_Draft_Adaptive_Cubic_Boundary.pdf",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_Referee_Draft_Adaptive_Cubic_Boundary.pdf",
+    "Bytes": 376330,
+    "CreationTimeUtc": "2026-10-10T09:41:20.5299258Z",
+    "LastWriteTimeUtc": "2026-10-10T09:41:22.1112466Z",
+    "SHA256": "a46aa9b34317dc155fb37e2e0051c31b0ab886dc8ebe85a0d0a022b823909e81"
+  },
+  {
+    "Name": "WP84_Referee_Draft_Adaptive_Cubic_Boundary.tex",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_Referee_Draft_Adaptive_Cubic_Boundary.tex",
+    "Bytes": 18115,
+    "CreationTimeUtc": "2026-10-10T09:41:12.2569837Z",
+    "LastWriteTimeUtc": "2026-10-10T09:41:15.6057342Z",
+    "SHA256": "d988c2a464df984181e7cf3b230abc0b603201917933b95c737c642c8232908c"
+  },
+  {
+    "Name": "WP84_SAFE_LOBE_HOSTILE_REPLAY_20261102.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_SAFE_LOBE_HOSTILE_REPLAY_20261102.zip",
+    "Bytes": 5084,
+    "CreationTimeUtc": "2026-11-02T16:55:48.5655288Z",
+    "LastWriteTimeUtc": "2026-11-02T16:55:52.1851628Z",
+    "SHA256": "ede4ae47eed6bdbe8e65ab7b083b316e172b5d26f05fa3214fc9ad9e5c370d43"
+  },
+  {
+    "Name": "WP84_SCHATTEN_INDEPENDENT_REFEREE_PACKET_20261103.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_SCHATTEN_INDEPENDENT_REFEREE_PACKET_20261103.zip",
+    "Bytes": 188457,
+    "CreationTimeUtc": "2026-11-03T10:00:16.1073126Z",
+    "LastWriteTimeUtc": "2026-11-03T10:01:58.0929516Z",
+    "SHA256": "f440038912517581e2df4c07ba71b3063d583f2461240dedfb0abfdab00141dd"
+  },
+  {
+    "Name": "WP84_SCHATTEN_INDEPENDENT_REFEREE_PACKET_V2_20261103.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_SCHATTEN_INDEPENDENT_REFEREE_PACKET_V2_20261103.zip",
+    "Bytes": 321803,
+    "CreationTimeUtc": "2026-11-03T10:39:24.8387938Z",
+    "LastWriteTimeUtc": "2026-11-03T10:41:08.1986653Z",
+    "SHA256": "1c365afd03ed3b5694bee8c60587831a11c439b31339eaa91643db4a0087f996"
+  },
+  {
+    "Name": "WP84_SECOND_HOSTILE_REFEREE_20261103.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_SECOND_HOSTILE_REFEREE_20261103.zip",
+    "Bytes": 28121,
+    "CreationTimeUtc": "2026-11-03T11:37:08.8713665Z",
+    "LastWriteTimeUtc": "2026-11-03T11:37:13.0868910Z",
+    "SHA256": "dd2e0a002edc9951b6a121ebac33c6df6959da8671dc451643ad05b90a41750d"
+  },
+  {
+    "Name": "wp84_second_hostile_referee_report.tex",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\wp84_second_hostile_referee_report.tex",
+    "Bytes": 36501,
+    "CreationTimeUtc": "2026-11-03T12:01:53.8236302Z",
+    "LastWriteTimeUtc": "2026-11-03T12:02:00.5650333Z",
+    "SHA256": "1810d9b21af68e971f2a0d4e5f2fa90743ee51cab15c1571b0343da2b7a207d5"
+  },
+  {
+    "Name": "WP84_SOURCE_WEIGHT_MASK_HOSTILE_20261102.zip",
+    "OriginalPath": "C:\\Users\\Asus\\Downloads\\WP84_SOURCE_WEIGHT_MASK_HOSTILE_20261102.zip",
+    "Bytes": 8680,
+    "CreationTimeUtc": "2026-11-02T17:06:02.8302666Z",
+    "LastWriteTimeUtc": "2026-11-02T17:06:05.9878183Z",
+    "SHA256": "ae2d29f18f477d5d0010663f953798d8096d8a9141a081b858c5c46dc57c20fc"
+  }
+]

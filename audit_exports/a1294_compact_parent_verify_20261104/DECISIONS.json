@@ -1,0 +1,16 @@
+{
+  "RIGHT_COMPACT_LEAF_ACCEPTED": "YES",
+  "COMPACT_PARENT_COVERAGE_PROVED": "YES",
+  "COMPACT_TWO_LEAF_PARENT_KERNEL_PROVED": "YES",
+  "SOURCE_CORRESPONDENCE_STATUS": "EXTERNALLY_AUTHENTICATED_NOT_KERNEL_DECODED",
+  "LIKE_FOR_LIKE_RESOURCE_COMPARISON": "NOT_ESTABLISHED_NO_ADVANTAGE_CLAIMED",
+  "FULL_A1294_THEOREM_STATUS": "NOT_YET_PROVED",
+  "right_build_exit": 0,
+  "parent_build_exit": 0,
+  "right_wall_seconds": 112.61,
+  "right_peak_rss_kib": 5492820,
+  "parent_assembly_wall_seconds": 49.02,
+  "parent_assembly_peak_rss_kib": 5870988,
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "next_enclosing_subtree": {"root": 63, "nodes": 5, "terminals": [21, 22, 23], "not_compiled": true}
+}

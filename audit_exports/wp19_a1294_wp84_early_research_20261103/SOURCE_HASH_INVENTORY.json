@@ -1,0 +1,714 @@
+{
+  "a1294_catalogs": {
+    "macro-data-exact.json": {
+      "bytes": 17396,
+      "drive_file_id": "1mGh7V4a-ENeQhKdxGRIpueSyigMe0QwP",
+      "sha256": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b"
+    },
+    "refinement-catalog-v1-exact.json": {
+      "bytes": 67741,
+      "drive_file_id": "1GruYyoHoz5hlWqPfOFbRnTuaqGRPHrPd",
+      "sha256": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9"
+    },
+    "refinement-catalog-v3.json": {
+      "bytes": 132964,
+      "drive_file_id": "1IfNPJuftnpFe3oo6-lZ__1Ipa2eaTQcn",
+      "sha256": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+    }
+  },
+  "a1294_local_v2_zip": {
+    "bytes": 5672384,
+    "member_count": 15,
+    "path": "audit_exports/a1294_a1300_forensic/evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+    "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+    "zip_crc": "PASS"
+  },
+  "a1294_recovered_local_terminal_files": {
+    "A1294_A1299_ADAPTIVE_FRONTIER_RESULT.json": {
+      "bytes": 244247,
+      "sha256": "cfd0f44fb0984abc76a983bfe644a284223b0c22c591c1e3275629d2a8643c0d"
+    },
+    "A1294_A1299_ADAPTIVE_FRONTIER_SUMMARY.txt": {
+      "bytes": 599,
+      "sha256": "78feaf6caf7e92f83c2cfeb034733d34c1a5ecb825db2e7fd7d20216453729d3"
+    },
+    "A1294_ADAPTIVE_FRONTIER_PACKAGE.zip": {
+      "bytes": 6467,
+      "sha256": "f9358bae045e0123e6cdfb076bb58f8dfea329ccd8d840af8fbf701d6772c583"
+    },
+    "A1294_CEILING_BRACKET_PACKAGE.zip": {
+      "bytes": 5075,
+      "sha256": "555413d060fa944aa35d00a610dd9d6bc5ae1cf26b10cb5a4ce2ebd815d25b54"
+    },
+    "A1294_FIXED_B_CEILING_BRACKET_RESULT.json": {
+      "bytes": 5838,
+      "sha256": "65e27f06aa9e38a19b06c5b088c2404052049b57bd5f2a566b5d594e196c4696"
+    },
+    "A1294_FULLROOT_1M_BRACKET_RESULT.json": {
+      "bytes": 187654,
+      "sha256": "745ecb1917e8ea12fc1e141ffea37b3d80ede265cf62badcc86807f3e82d8ef8"
+    },
+    "A1294_FULLROOT_BRACKET_PACKAGE.zip": {
+      "bytes": 4755,
+      "sha256": "1077923492a60cbbd694cf1cf8febc910138c860aec3da3ef56f85e9d8507961"
+    },
+    "A1294_LOCAL_BENCHMARK_PACKAGE.zip": {
+      "bytes": 32391,
+      "sha256": "7e57a2d41f52f1153c9fdae50210ea976300e5f6da4d044b0af972154a83ba5c"
+    },
+    "A1294_LOCAL_BENCHMARK_RESULT.json": {
+      "bytes": 4206,
+      "sha256": "1387728aea1f8047e92f882e3b1e6533cc6ad931d8eb6be75671e977963d39a4"
+    },
+    "A1294_LOCAL_BENCHMARK_SUMMARY.txt": {
+      "bytes": 198,
+      "sha256": "ca0bb4567402805c657cdc7a52b9f5104d5c8585685d4e0a8c607378c5d1dd1e"
+    },
+    "A1294_RUN_ADAPTIVE_FRONTIER.bat": {
+      "bytes": 1125,
+      "sha256": "bf0059dc38618290e38b8b14f270254f9707e84ce98c0fd3a3c77a8fcd5ae364"
+    },
+    "A1294_RUN_CEILING_BRACKET.bat": {
+      "bytes": 835,
+      "sha256": "2941b408e2ca07a7c97e84fa50f5680ab972dd2d20a62c70e03e1cd893c458bc"
+    },
+    "A1294_RUN_FULLROOT_BRACKET.bat": {
+      "bytes": 845,
+      "sha256": "52e618396e43d98bc6034c17cbf6d9e6115228c32babf1291c1f2beb8231c6f3"
+    },
+    "A1294_adaptive_scan_log.txt": {
+      "bytes": 2841,
+      "sha256": "95757e0c75d5fb0ede87eb42a33ef5987c61fa11dac2366460c5180c0f471cf7"
+    },
+    "A1294_ceiling_bracket_log.txt": {
+      "bytes": 2356,
+      "sha256": "b836b10d4f5959e82f957167dcc26dd4e5a44aefd0ca3385a6541dcd1fdf0a64"
+    },
+    "A1294_fullroot_1m_bracket_log.txt": {
+      "bytes": 1393,
+      "sha256": "f3699076a09c1d691ae573a7ece7999c19c3fa179f1ca6e1aacfa2905a3ee25c"
+    },
+    "A1294_launcher_log.txt": {
+      "bytes": 262,
+      "sha256": "2547d554872b5aa54618bdc5f5a6acc4ff5764ed7c74478957985624680f1604"
+    },
+    "A1296_5M_DIAGNOSTIC_PACKAGE.zip": {
+      "bytes": 4101,
+      "sha256": "350445e617e64921ab3027361f3be3ef4dc49ef4200a4c2fb507de6813a589b5"
+    },
+    "A1296_5m_diagnostic_log.txt": {
+      "bytes": 1207,
+      "sha256": "a356cdde6222bced2c947f3b024343195553ca4db015ab6a716cba3fa67862c2"
+    },
+    "A1296_FRONTIER_MICROSCOPE_PACKAGE.zip": {
+      "bytes": 4476,
+      "sha256": "e2ce1345ccab1bf5bd6464d55b6114fc08a2057fd3ad671834624336ff0a5d39"
+    },
+    "A1296_FRONTIER_MICROSCOPE_RESULT.json": {
+      "bytes": 1530865,
+      "sha256": "d3e514cfde87e3bd9ef821dedf3dc13001f9b4e00ff934c1e97868072bc22048"
+    },
+    "A1296_FRONTIER_MICROSCOPE_SUMMARY.txt": {
+      "bytes": 1383,
+      "sha256": "c89730205858b781a39efd859aebf17e6d4cf98a78f7497dd54c3ae4daaed722"
+    },
+    "A1296_FULLROOT_5M_DIAGNOSTIC_RESULT.json": {
+      "bytes": 84031,
+      "sha256": "8ffc050ed6ebcd080771b4cb3dafc6d958acd09986103b190eb7d806fc13ac1a"
+    },
+    "A1296_RUN_5M_DIAGNOSTIC.bat": {
+      "bytes": 797,
+      "sha256": "b86bfe506afb0495d151b6945ca70a09a8d0a3e8921af47ed134d2dc8b2e5ba1"
+    },
+    "A1296_RUN_FRONTIER_MICROSCOPE.bat": {
+      "bytes": 855,
+      "sha256": "76482b37c0ce6516518bb1e657c9a9d1a95709971033f8344e361252d7a12ac0"
+    },
+    "A1296_frontier_microscope_log.txt": {
+      "bytes": 1419,
+      "sha256": "81883167c6fc43453e417bd9698c6a9ec649476789311a5b8373e24d07752435"
+    },
+    "RUN_A1294_FROM_DOWNLOADS_FIXED.bat": {
+      "bytes": 2326,
+      "sha256": "7bd5ae5695f1fef3ed9e38ba8e224ca797de75d5293c8f98bfdd5f1b23bba235"
+    }
+  },
+  "a1294_small_historical_packages": {
+    "A1294_ADAPTIVE_FRONTIER_PACKAGE.zip": {
+      "bytes": 6467,
+      "member_count": 4,
+      "sha256": "f9358bae045e0123e6cdfb076bb58f8dfea329ccd8d840af8fbf701d6772c583",
+      "zip_crc": "PASS"
+    },
+    "A1294_CEILING_BRACKET_PACKAGE.zip": {
+      "bytes": 5075,
+      "member_count": 4,
+      "sha256": "555413d060fa944aa35d00a610dd9d6bc5ae1cf26b10cb5a4ce2ebd815d25b54",
+      "zip_crc": "PASS"
+    },
+    "A1294_FULLROOT_BRACKET_PACKAGE.zip": {
+      "bytes": 4755,
+      "member_count": 4,
+      "sha256": "1077923492a60cbbd694cf1cf8febc910138c860aec3da3ef56f85e9d8507961",
+      "zip_crc": "PASS"
+    },
+    "A1294_LOCAL_BENCHMARK_PACKAGE.zip": {
+      "bytes": 32391,
+      "member_count": 8,
+      "sha256": "7e57a2d41f52f1153c9fdae50210ea976300e5f6da4d044b0af972154a83ba5c",
+      "zip_crc": "PASS"
+    },
+    "A1296_5M_DIAGNOSTIC_PACKAGE.zip": {
+      "bytes": 4101,
+      "member_count": 4,
+      "sha256": "350445e617e64921ab3027361f3be3ef4dc49ef4200a4c2fb507de6813a589b5",
+      "zip_crc": "PASS"
+    },
+    "A1296_FRONTIER_MICROSCOPE_PACKAGE.zip": {
+      "bytes": 4476,
+      "member_count": 4,
+      "sha256": "e2ce1345ccab1bf5bd6464d55b6114fc08a2057fd3ad671834624336ff0a5d39",
+      "zip_crc": "PASS"
+    }
+  },
+  "audit_date": "2026-11-03",
+  "current_worktree": {
+    "branch": "codex/cross-project-math-frontier-20261103",
+    "head": "eb36159ee7e57053fcae3de025fe4dac539435ab",
+    "path": "C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit",
+    "status_note": "Pre-existing untracked research files were left untouched; packet is an additive audit_exports subdirectory."
+  },
+  "doi_status": {
+    "concept_doi": "10.5281/zenodo.23244817",
+    "not_claimed": "No claim that record is absent, invalid, deleted or withdrawn.",
+    "status": "INACCESSIBLE_TO_WEB_READER; targeted Drive searches found mentions but no record payload",
+    "version_doi": "10.5281/zenodo.23244818"
+  },
+  "github_a1294_sources": [
+    {
+      "bytes": 7136,
+      "commit": "79d19eaca41874c6994e514cebe86b848366ecd7",
+      "git_blob_sha1": "11ebe5707b2ef118cbad5b5307d45359f7787173",
+      "label": "A1294 generator",
+      "path": "src/a1294_certificate_generator.py",
+      "sha256": "ca3309ada7ea69f95c032830e06dff1b4e4747cdb0b9b87c15f373fc88adfa7d"
+    },
+    {
+      "bytes": 9975,
+      "commit": "a52128bae18adeb38fd20c8067c57ba70216271d",
+      "git_blob_sha1": "cec96888c0dbdcaf85708b1df81b1039be35c670",
+      "label": "A1294 independent verifier",
+      "path": "src/a1294_certificate_verifier.py",
+      "sha256": "50ea847b19f518533039480f9681b8840b6bb96e5b3d573b2f386df8ce401ca9"
+    },
+    {
+      "bytes": 2989,
+      "commit": "3b748a75ad619ee130c4fabd22792102ccbe986c",
+      "git_blob_sha1": "d726cb17b6627cef4775e1cd03df3b5990939647",
+      "label": "A1294 Actions workflow",
+      "path": ".github/workflows/a1294-seam-full-certificate.yml",
+      "sha256": "19631d6ba229c6829baa00c5f3879c5cd30b125467a8199f841c12e7da757a2e"
+    },
+    {
+      "bytes": 2553,
+      "commit": "420d65cec710dcdaa2aad6e63d035667dcc189e2",
+      "git_blob_sha1": "ff421196cfd0db69b4e65ea1d3398c2ac6f83310",
+      "label": "A1294 frozen result",
+      "path": "results/optimization/a1294_full_certificate_final_freeze.json",
+      "sha256": "0b75610625cf0fdbb4e1de65f00f94d525545e65643a72941a5174d84e74ddee"
+    }
+  ],
+  "github_exact_source_copies": {
+    "a1294_actions_workflow.yml": {
+      "bytes": 2989,
+      "sha256": "19631d6ba229c6829baa00c5f3879c5cd30b125467a8199f841c12e7da757a2e"
+    },
+    "frozen_result.json": {
+      "bytes": 2553,
+      "sha256": "0b75610625cf0fdbb4e1de65f00f94d525545e65643a72941a5174d84e74ddee"
+    },
+    "generator.py": {
+      "bytes": 7136,
+      "sha256": "ca3309ada7ea69f95c032830e06dff1b4e4747cdb0b9b87c15f373fc88adfa7d"
+    },
+    "independent_verifier.py": {
+      "bytes": 9975,
+      "sha256": "50ea847b19f518533039480f9681b8840b6bb96e5b3d573b2f386df8ce401ca9"
+    }
+  },
+  "github_state_snapshot": {
+    "formal_math_pr17": {
+      "merged": false,
+      "pinned_head": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+      "state": "open",
+      "url": "https://github.com/anthropics/formal-math/pull/17"
+    },
+    "pr1": {
+      "head": "d7a371fcd1605d71e2bede7542fb2061a10acdb7",
+      "merged": false,
+      "state": "open",
+      "url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/pull/1"
+    },
+    "pr2": {
+      "a1294_actions_run": 37133363690,
+      "artifact_recovered": false,
+      "claimed_artifact_sha256": "11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19",
+      "expired_artifact_id": 11286675906,
+      "head": "de11ac12a161f93bba311b1ab251d2567f2772b3",
+      "merged": false,
+      "state": "open",
+      "url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/pull/2"
+    },
+    "pr3": {
+      "draft": true,
+      "head": "630af9b066cd84af9a2a92ded6f1a569367eb916",
+      "state": "open",
+      "url": "https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/pull/3"
+    }
+  },
+  "google_drive_v2": {
+    "exact_catalog_byte_matches": true,
+    "folder_id": "1XoKubUTXaxIzwha-kbmJUXkQBIL1TOd2",
+    "manifest_bytes": 2131,
+    "manifest_id": "1JNXRykUcw_gykj7DwwJMwF29wAzRku64",
+    "manifest_sha256": "4b125bfb8c94a382afa3b0e7dede37e7c411278d406597b51dd314e0ce566fe4",
+    "result_bytes": 1442,
+    "result_id": "1WB7GjQ6jyomzAwKp9CZ0o0pO1O1K6t46",
+    "result_sha256": "7de6a70671dee42307847e3b321389f1bdfcae66f8bc73b99b0227a6c8e54db0"
+  },
+  "m14_split_archive_metadata": {
+    "concatenated_sha256": "330bb3e931fa8d45d1837c090b13a4a638fb54577cb26b8d8eaa2fe009303058",
+    "directory": "M14_parts_20261002_232916",
+    "inner_members": {
+      "M14_adjoint_rhs.npy": {
+        "bytes": 163652624,
+        "sha256": "8c838ac0e93d70c5d170925e0d27799b745f0adc3c7296a0335219b7359c783c"
+      },
+      "M14_adjoint_values.npy": {
+        "bytes": 163652624,
+        "sha256": "00a230b47c66d3417b1fc259ead4e58ff46542753ddb7710c83a64dd4cd882ab"
+      },
+      "M14_arb_vjp_point.json": {
+        "bytes": 5733,
+        "sha256": "981dc8d6286f5d989e73dec050ad406776c1320ead36596ac173de95d6a7edc8"
+      }
+    },
+    "part_count": 10,
+    "parts": [
+      {
+        "bytes": 31457280,
+        "file": "M14.part000",
+        "sha256": "c13faa38e3c258514d846678af35127c39c2839849e23c6e8d97ee8c172ac070"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part001",
+        "sha256": "1efc7a01f601779c4723a077603666fb53868b6ea8c150065c50e095d8151136"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part002",
+        "sha256": "52936f2c3ef15312fb4fe3295cb02b62922d2b290a85f905dcd39785a8cf2945"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part003",
+        "sha256": "b4f506fa819cb23ed6f4ce66f2a96754c127e0812661d6ff3c540274e14fbee3"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part004",
+        "sha256": "dd4d324ac55d2e9475ad8a716828cfc5f11bf758206c0c81bee50fa945c9d3dd"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part005",
+        "sha256": "54979de5da9a9ebee45685fc4aa177982015d1688e7f257e315817f03ac927d0"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part006",
+        "sha256": "c5c6ed935d029c16b6655d95de94ea666d042512bc8e7b0078d0731066f1f214"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part007",
+        "sha256": "778e23ce48d3061759a8d52167c7aa7f3ca631a46f3708190da384e52f593e20"
+      },
+      {
+        "bytes": 31457280,
+        "file": "M14.part008",
+        "sha256": "6b4393939981df01fe39085f44b9aad0e496ca693d46f7ae41f3747b0ae9f65f"
+      },
+      {
+        "bytes": 27811952,
+        "file": "M14.part009",
+        "sha256": "d8919e58ddde467c2a8f5c6b19a5807b77331b40ac68e7a32da82369c1f3392e"
+      }
+    ],
+    "scope_note": "The 310,927,472-byte split archive was verified by concatenated virtual read; array members are not copied into this supplemental packet.",
+    "total_bytes": 310927472,
+    "zip_directory_crc": "PASS"
+  },
+  "prior_audit_zip": {
+    "bytes": 27782063,
+    "member_count": 132,
+    "path": "audit_exports/A1294_A1300_COMPLETE_LOCAL_GITHUB_FORENSIC_AUDIT_20261103.zip",
+    "sha256": "a82af88f6de8236e61cbb8d27d03cd741e3171eb52399f5073953d3faecdfdb2",
+    "zip_crc": "PASS"
+  },
+  "schema": "early-research-source-hash-inventory-v1",
+  "search_boundaries": {
+    "D_drive_checkout": "INACCESSIBLE (permission denied); not classified as absent",
+    "Downloads": "top-level source packages and specified archive families inspected; unrelated personal folders not recursively scanned",
+    "WSL": "INACCESSIBLE (Wsl/E_ACCESSDENIED)",
+    "doi": "direct resolver/record open returned tool-inaccessible status",
+    "google_drive": "two connected collections queried for A1294 V2/WP19/M14/DOI; direct V2 folder and exact source hashes recovered in Mr Shark collection; second collection had no exact V2 or WP19/M14 result"
+  },
+  "wp19_original_archives": {
+    "WP19_v017.zip": {
+      "bytes": 5396,
+      "member_count": 3,
+      "sha256": "62ad60b8c9c5d61af9591b7600bb7411c7d8654cf869f9b29a7e0381b7627827",
+      "zip_crc": "PASS"
+    },
+    "WP19_v0_11_Fixed_Pi11_and_Prospective_N14.zip": {
+      "bytes": 20388,
+      "member_count": 18,
+      "sha256": "0f3853212d697c0dcc3619454e15e6543a21f2d05a039f988ccc1f54c09ffe86",
+      "zip_crc": "PASS"
+    },
+    "WP19_v0_12_Recursive_Closure_and_Regularity_Gate.zip": {
+      "bytes": 7101,
+      "member_count": 3,
+      "sha256": "6d59f7d9c62ad968cae86034ef333883488364c0540c234d6f1afa9e526af702",
+      "zip_crc": "PASS"
+    },
+    "WP19_v0_13_Fixed_Output_Closure_and_Weak_Limit.zip": {
+      "bytes": 4013,
+      "member_count": 3,
+      "sha256": "fd236ae9056711c139ede0db750c8c566e47ee571fa62b9a1417023bbcf72606",
+      "zip_crc": "PASS"
+    },
+    "WP19_v0_16_BGT_Critical_Space_Arb_Gate.zip": {
+      "bytes": 11889,
+      "member_count": 4,
+      "sha256": "382c9cdff7902990132ba36f1d593e72cf1f6bdf66ec3878352f903d6a57073c",
+      "zip_crc": "PASS"
+    },
+    "WP19_v0_18_N18_Stress_and_Parallel_Arb.zip": {
+      "bytes": 4420,
+      "member_count": 3,
+      "sha256": "ad3678c4db7aa78b35e27574eb01044a0417c84a745d22e63893c810df7b365e",
+      "zip_crc": "PASS"
+    },
+    "wp19-v0-25b-signed-c500-n11-n18.zip": {
+      "bytes": 14351,
+      "member_count": 7,
+      "sha256": "242eb12a60dfb60ecde9b0187f0ab7f45e2f877699748b3af5b25b65683f2de4",
+      "zip_crc": "PASS"
+    },
+    "wp19-v0-28-structured-uncertainty-ab-M14-step237-final.zip": {
+      "bytes": 12555,
+      "member_count": 7,
+      "sha256": "69e18706e6ec4b82a65fbfaeb85b18bf7da9b618183e848af26f686619b4ca60",
+      "zip_crc": "PASS"
+    },
+    "wp19-v028-segment-pilot.zip": {
+      "bytes": 10885,
+      "member_count": 5,
+      "sha256": "2639c2a297be80588a912ef433ed7ae26f03bbcaf48f79fb583d1aad90a28d4c",
+      "zip_crc": "PASS"
+    }
+  },
+  "wp84_original_archives": {
+    "CLAUDE_WP84_HOSTILE_AUDIT_ONE_SHOT.zip": {
+      "bytes": 13044,
+      "member_count": 12,
+      "sha256": "82d36ca213dd135e15faaa60c98d93fa3680441743b47e52be12c94344938c49",
+      "zip_crc": "PASS"
+    },
+    "WP84_CLAUDE_FULL_SOURCE_20261008.zip": {
+      "bytes": 15694580,
+      "member_count": 872,
+      "sha256": "61b13cd6e635e73308a9bf38323d02a5c567243bf98937b5820c4ad5bdee8d3d",
+      "zip_crc": "PASS"
+    },
+    "WP84_CLAUDE_INCREMENTAL_9203b8e_20261008.zip": {
+      "bytes": 7617283,
+      "member_count": 780,
+      "sha256": "f0ba45cdfb8df6d8dd9980766d5a780540181096035aef614f3893d68f93f2d6",
+      "zip_crc": "PASS"
+    },
+    "WP84_Claude_Google_Hostile_Audit_Pack.zip": {
+      "bytes": 6315,
+      "member_count": 4,
+      "sha256": "f0f90bff045112b3b32a45b93cd2e3c098d19ebdd2e30195ad18b6d5d7ce430a",
+      "zip_crc": "PASS"
+    },
+    "WP84_PRIVATE_PREPUBLICATION_f962f23_20261008.zip": {
+      "bytes": 16833978,
+      "member_count": 1518,
+      "sha256": "1ed9f4e7b23f83036dc2f3950ee23eed5395d41dea2650af334a3b4dc354df63",
+      "zip_crc": "PASS"
+    },
+    "deterministic-verification-suite.zip": {
+      "bytes": 15922,
+      "member_count": 11,
+      "sha256": "a6f8b015bee23a747ecbaba73c21bfa549e411a6856fe79b5c55d7506a908b81",
+      "zip_crc": "PASS"
+    },
+    "lrsc-verifiable-research-kernel.zip": {
+      "bytes": 9946,
+      "member_count": 7,
+      "sha256": "1ab0414e64c6568bb2d177800ec5867b4b24f6d9bd51df05dd53175bf80a8d48",
+      "zip_crc": "PASS"
+    },
+    "riemann-bandwidth1-verification-0.1.0 (1).zip": {
+      "bytes": 131117,
+      "member_count": 45,
+      "sha256": "87540ba5b5649c797e63070c0cb7df41616bb818aee649b447312b95b65abcf0",
+      "zip_crc": "PASS"
+    },
+    "riemann-bandwidth1-verification-0.1.0.zip": {
+      "bytes": 131117,
+      "member_count": 45,
+      "sha256": "87540ba5b5649c797e63070c0cb7df41616bb818aee649b447312b95b65abcf0",
+      "zip_crc": "PASS"
+    }
+  },
+  "wp84_selected_member_hashes": {
+    "full": {
+      "notes/CROSS_PROJECT_METHOD_TRANSFER_AUDIT.md": {
+        "bytes": 2860,
+        "sha256": "63bedd0888fbc0091f55c5c947966675891265e6aab22b2b487c80ac9998bf09"
+      },
+      "notes/WP84_FOURIER_REPROJECTION_BRIDGE_AUDIT.md": {
+        "bytes": 11962,
+        "sha256": "563451a6193cbf62269fb389f7e58a82f7218557f44da8f1a633692c1fddb715"
+      },
+      "notes/WP84_FULL_CHANGED_NOTES_SRC_HOSTILE_AUDIT_2026_10_06.md": {
+        "bytes": 5507,
+        "sha256": "df0dda30b0b427f9d761c704e98e7fe87cd3e71c8ddd894810f2a1b7a28337d8"
+      },
+      "notes/WP84_R400_COMPLETE_WORD_LEDGER_REPLAY.md": {
+        "bytes": 9135,
+        "sha256": "a5e0735e397d2d7f8c9f221d368f4708c028651415b31b63ead060ee533ddcd8"
+      },
+      "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+        "bytes": 22018,
+        "sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+      },
+      "notes/WP84_R400_FILTERED_SHARP_REPAIR.md": {
+        "bytes": 23890,
+        "sha256": "11cdc2c705e9bb33837e9e6d5b469eb52661d3f9aa12edeaf6f0be7ad3f3c7bd"
+      },
+      "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+        "bytes": 5258,
+        "sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+      },
+      "notes/WP84_R400_SAME_NORMALIZATION_REPLAY.md": {
+        "bytes": 7944,
+        "sha256": "14347fb7cea407222293a118504e5e175ccfcf9cfa3715bea2be92b3d9aa72a3"
+      },
+      "notes/WP84_R400_ZERO_SIDE_TRANSFER_SOURCE_AUDIT_2026_10_06.md": {
+        "bytes": 4105,
+        "sha256": "a3118a6fa16278c7fb1818a8d08cf2cad653ab98c516b41817daaa038a48d8f2"
+      },
+      "notes/WP84_SOURCE_PROVENANCE_RECOVERY_AUDIT.md": {
+        "bytes": 13213,
+        "sha256": "3670ba80159c5c3bd15dadd64a715dc2f46ab467e127ba4f77ea6786cdcbb3eb"
+      },
+      "notes/WP84_SOURCE_PROVENANCE_RECOVERY_CERTIFICATE.json": {
+        "bytes": 21425,
+        "sha256": "11982e2babe5161627d39ab84aaac050b8eb1dc28ad6decd7179b989656210af"
+      },
+      "src/wp84_fourier_reprojection_bridge.py": {
+        "bytes": 9280,
+        "sha256": "d09e816107f6fa227733f2d010a23832c6abea9a6bc4e09a0d5b53f677cc6bda"
+      },
+      "src/wp84_r400_filtered_connected_kernel.py": {
+        "bytes": 11981,
+        "sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+      },
+      "src/wp84_r400_filtered_sharp_repair.py": {
+        "bytes": 8255,
+        "sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d"
+      },
+      "src/wp84_r400_first_record_assembly.py": {
+        "bytes": 707,
+        "sha256": "ded28dc77845d6c594fca5ebe6989d0725db669d392e5603466eceafff84368e"
+      },
+      "src/wp84_r400_same_normalization_replay.py": {
+        "bytes": 1436,
+        "sha256": "624eb712e880b74505b20c158f91e680531c82d597eaf17987392c1fc68e0c90"
+      },
+      "src/wp84_source_provenance_recovery_replay.py": {
+        "bytes": 18021,
+        "sha256": "d9261d648efbb733db5f328a045aa1d2705b038c7fdac52eede27937d62628a1"
+      }
+    },
+    "incremental": {
+      "notes/CROSS_PROJECT_METHOD_TRANSFER_AUDIT.md": {
+        "bytes": 2860,
+        "sha256": "63bedd0888fbc0091f55c5c947966675891265e6aab22b2b487c80ac9998bf09"
+      },
+      "notes/WP84_FOURIER_REPROJECTION_BRIDGE_AUDIT.md": {
+        "bytes": 11962,
+        "sha256": "563451a6193cbf62269fb389f7e58a82f7218557f44da8f1a633692c1fddb715"
+      },
+      "notes/WP84_FULL_CHANGED_NOTES_SRC_HOSTILE_AUDIT_2026_10_06.md": {
+        "bytes": 5507,
+        "sha256": "df0dda30b0b427f9d761c704e98e7fe87cd3e71c8ddd894810f2a1b7a28337d8"
+      },
+      "notes/WP84_R400_COMPLETE_WORD_LEDGER_REPLAY.md": {
+        "bytes": 9135,
+        "sha256": "a5e0735e397d2d7f8c9f221d368f4708c028651415b31b63ead060ee533ddcd8"
+      },
+      "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+        "bytes": 22018,
+        "sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+      },
+      "notes/WP84_R400_FILTERED_SHARP_REPAIR.md": {
+        "bytes": 23890,
+        "sha256": "11cdc2c705e9bb33837e9e6d5b469eb52661d3f9aa12edeaf6f0be7ad3f3c7bd"
+      },
+      "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+        "bytes": 5258,
+        "sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+      },
+      "notes/WP84_R400_SAME_NORMALIZATION_REPLAY.md": {
+        "bytes": 7944,
+        "sha256": "14347fb7cea407222293a118504e5e175ccfcf9cfa3715bea2be92b3d9aa72a3"
+      },
+      "notes/WP84_R400_ZERO_SIDE_TRANSFER_SOURCE_AUDIT_2026_10_06.md": {
+        "bytes": 4105,
+        "sha256": "a3118a6fa16278c7fb1818a8d08cf2cad653ab98c516b41817daaa038a48d8f2"
+      },
+      "notes/WP84_SOURCE_PROVENANCE_RECOVERY_AUDIT.md": {
+        "bytes": 13213,
+        "sha256": "3670ba80159c5c3bd15dadd64a715dc2f46ab467e127ba4f77ea6786cdcbb3eb"
+      },
+      "notes/WP84_SOURCE_PROVENANCE_RECOVERY_CERTIFICATE.json": {
+        "bytes": 21425,
+        "sha256": "11982e2babe5161627d39ab84aaac050b8eb1dc28ad6decd7179b989656210af"
+      },
+      "src/wp84_fourier_reprojection_bridge.py": {
+        "bytes": 9280,
+        "sha256": "d09e816107f6fa227733f2d010a23832c6abea9a6bc4e09a0d5b53f677cc6bda"
+      },
+      "src/wp84_r400_filtered_connected_kernel.py": {
+        "bytes": 11981,
+        "sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+      },
+      "src/wp84_r400_filtered_sharp_repair.py": {
+        "bytes": 8255,
+        "sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d"
+      },
+      "src/wp84_r400_first_record_assembly.py": {
+        "bytes": 707,
+        "sha256": "ded28dc77845d6c594fca5ebe6989d0725db669d392e5603466eceafff84368e"
+      },
+      "src/wp84_r400_same_normalization_replay.py": {
+        "bytes": 1436,
+        "sha256": "624eb712e880b74505b20c158f91e680531c82d597eaf17987392c1fc68e0c90"
+      },
+      "src/wp84_source_provenance_recovery_replay.py": {
+        "bytes": 18021,
+        "sha256": "d9261d648efbb733db5f328a045aa1d2705b038c7fdac52eede27937d62628a1"
+      }
+    },
+    "older_public": {
+      "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+        "bytes": 22003,
+        "sha256": "5df4b27870bf774998faffb29a2c1b1f9fdcd274dbcd4001e82a14de837eab86"
+      },
+      "notes/WP84_R400_FILTERED_SHARP_REPAIR.md": {
+        "bytes": 23865,
+        "sha256": "0a5f07b5783eb4d644e9d771d284a239f17af8a741f40bafe7395358fc4f1df4"
+      },
+      "src/wp84_fourier_reprojection_bridge.py": {
+        "bytes": 9280,
+        "sha256": "d09e816107f6fa227733f2d010a23832c6abea9a6bc4e09a0d5b53f677cc6bda"
+      },
+      "src/wp84_r400_filtered_connected_kernel.py": {
+        "bytes": 11981,
+        "sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+      },
+      "src/wp84_r400_filtered_sharp_repair.py": {
+        "bytes": 8255,
+        "sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d"
+      }
+    },
+    "private": {
+      "notes/CROSS_PROJECT_METHOD_TRANSFER_AUDIT.md": {
+        "bytes": 2860,
+        "sha256": "63bedd0888fbc0091f55c5c947966675891265e6aab22b2b487c80ac9998bf09"
+      },
+      "notes/WP84_FOURIER_REPROJECTION_BRIDGE_AUDIT.md": {
+        "bytes": 11962,
+        "sha256": "563451a6193cbf62269fb389f7e58a82f7218557f44da8f1a633692c1fddb715"
+      },
+      "notes/WP84_FULL_CHANGED_NOTES_SRC_HOSTILE_AUDIT_2026_10_06.md": {
+        "bytes": 5507,
+        "sha256": "df0dda30b0b427f9d761c704e98e7fe87cd3e71c8ddd894810f2a1b7a28337d8"
+      },
+      "notes/WP84_R400_COMPLETE_WORD_LEDGER_REPLAY.md": {
+        "bytes": 9135,
+        "sha256": "a5e0735e397d2d7f8c9f221d368f4708c028651415b31b63ead060ee533ddcd8"
+      },
+      "notes/WP84_R400_FILTERED_CONNECTED_KERNEL.md": {
+        "bytes": 22018,
+        "sha256": "35fabf8e14cca2b5da08f1d6a20814de5e5148f4dd0f9127a681d1662629ccc7"
+      },
+      "notes/WP84_R400_FILTERED_SHARP_REPAIR.md": {
+        "bytes": 23890,
+        "sha256": "11cdc2c705e9bb33837e9e6d5b469eb52661d3f9aa12edeaf6f0be7ad3f3c7bd"
+      },
+      "notes/WP84_R400_FIRST_RECORD_ASSEMBLY.md": {
+        "bytes": 5258,
+        "sha256": "d9482fc5f426ebd157b97d3692ea6a0d2e858b6d2d75573db32d4e815351cdfd"
+      },
+      "notes/WP84_R400_SAME_NORMALIZATION_REPLAY.md": {
+        "bytes": 7944,
+        "sha256": "14347fb7cea407222293a118504e5e175ccfcf9cfa3715bea2be92b3d9aa72a3"
+      },
+      "notes/WP84_R400_ZERO_SIDE_TRANSFER_SOURCE_AUDIT_2026_10_06.md": {
+        "bytes": 4105,
+        "sha256": "a3118a6fa16278c7fb1818a8d08cf2cad653ab98c516b41817daaa038a48d8f2"
+      },
+      "notes/WP84_SOURCE_PROVENANCE_RECOVERY_AUDIT.md": {
+        "bytes": 13213,
+        "sha256": "3670ba80159c5c3bd15dadd64a715dc2f46ab467e127ba4f77ea6786cdcbb3eb"
+      },
+      "notes/WP84_SOURCE_PROVENANCE_RECOVERY_CERTIFICATE.json": {
+        "bytes": 21425,
+        "sha256": "11982e2babe5161627d39ab84aaac050b8eb1dc28ad6decd7179b989656210af"
+      },
+      "src/wp84_fourier_reprojection_bridge.py": {
+        "bytes": 9280,
+        "sha256": "d09e816107f6fa227733f2d010a23832c6abea9a6bc4e09a0d5b53f677cc6bda"
+      },
+      "src/wp84_r400_filtered_connected_kernel.py": {
+        "bytes": 11981,
+        "sha256": "1a8b339f944bd5bcc776da5ce2608a980a1b0161b64174f8ce30bed17cf52486"
+      },
+      "src/wp84_r400_filtered_sharp_repair.py": {
+        "bytes": 8255,
+        "sha256": "ed3c31e0371c10867b4aa0a68f3d45bd3168f98bd16db424d562724c38a38d7d"
+      },
+      "src/wp84_r400_first_record_assembly.py": {
+        "bytes": 707,
+        "sha256": "ded28dc77845d6c594fca5ebe6989d0725db669d392e5603466eceafff84368e"
+      },
+      "src/wp84_r400_same_normalization_replay.py": {
+        "bytes": 1436,
+        "sha256": "624eb712e880b74505b20c158f91e680531c82d597eaf17987392c1fc68e0c90"
+      },
+      "src/wp84_source_provenance_recovery_replay.py": {
+        "bytes": 18021,
+        "sha256": "d9261d648efbb733db5f328a045aa1d2705b038c7fdac52eede27937d62628a1"
+      }
+    }
+  }
+}

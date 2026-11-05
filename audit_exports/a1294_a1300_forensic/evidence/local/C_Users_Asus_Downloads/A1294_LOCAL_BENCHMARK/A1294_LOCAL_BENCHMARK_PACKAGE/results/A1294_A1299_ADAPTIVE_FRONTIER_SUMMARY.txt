@@ -1,0 +1,12 @@
+A1294-A1299 adaptive frontier scan
+
+A       visited   pending   depth   nodes/sec   vs GitHub
+1294/100000   101527       149      58     3281.73       4.62x
+1295/100000   102135       143      58     3306.30       4.65x
+1296/100000   102815       131      58     1630.38       2.29x
+1297/100000   103487       145      58     3144.93       4.42x
+1298/100000   104178       142      58     3156.91       4.44x
+1299/100000   104828       154      58     3098.85       4.36x
+
+Send A1294_A1299_ADAPTIVE_FRONTIER_RESULT.json back to ChatGPT
+or upload/sync the results folder to Google Drive.

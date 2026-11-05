@@ -1,0 +1,11 @@
+Verified 2026-11-04.
+Lean 4.33.0-rc2, aarch64-unknown-linux-gnu, compiler d8b18978322de05a8f3dba51ef03cf5461676c17, Release.
+Lake 5.0.0-src+d8b1897.
+Upstream fba91d214655aaa1fd0504bb893c8859c20c79f9.
+Mathlib 51e6992efd06126df61a496bebf8f49482a4e129.
+Pinned project tracked status: clean. Main and experimental worktrees tracked status: clean.
+Existing SHARKBRIDGE01 packet SHA256 ddacc3e0167d11ba62175f3d3c7d6e55d1386791ee841d12771ecef43afa9077 unchanged.
+Existing successful compact leaf packet SHA256 e4c3ff5cab3ddae9e8e902d8d6c1c965437ff601e211d75ba0c9725ef8cc63f0 unchanged.
+Standalone build shell exit 0; core and leaf GNU time exits 0.
+Baseline and transitive import audits shell exit 0.
+Optional path builds shell exit 1; explicitly excluded from successful results.

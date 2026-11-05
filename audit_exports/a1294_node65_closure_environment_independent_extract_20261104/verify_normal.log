@@ -1,0 +1,1 @@
+PASS: preserved predecessor and copied sources; successful global artifacts unchanged; native pinned version recorded; no new Lean build/object claimed. Integrity verification only: checkpoint and source-connected replay remain unverified.

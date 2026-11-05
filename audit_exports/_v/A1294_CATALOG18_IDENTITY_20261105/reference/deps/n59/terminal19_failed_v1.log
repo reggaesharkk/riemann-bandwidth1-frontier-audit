@@ -1,0 +1,41 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE59_20261105/Terminal19.lean:2074:84: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE59_20261105/Terminal19.lean:2783:225: warning: This simp argument is unused:
+  interpRat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rows, decodedRow, decode_0, decode_1, decode_2, decode_3, decode_4, decode_5, decode_6, decode_7,
+    decode_8, decode_9, decode_10, decode_11, decode_12, decode_13, decode_14, interpModel, terms, floors]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'AuthenticCompact19.all_rows' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AuthenticCompact19.tangent_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact19.decode_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact19.decode_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompact19.accepted' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AuthenticCompact19.leaf_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Command exited with non-zero status 1
+	Command being timed: "timeout 240 lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE59_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE59_20261105/Terminal19.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE59_20261105/Terminal19.olean"
+	User time (seconds): 97.27
+	System time (seconds): 77.57
+	Percent of CPU this job got: 113%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:34.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5482344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 169182
+	Minor (reclaiming a frame) page faults: 935687
+	Voluntary context switches: 286387
+	Involuntary context switches: 15170
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

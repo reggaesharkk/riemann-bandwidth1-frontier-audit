@@ -1,0 +1,92 @@
+{
+  "status": "SOURCE_TAIL_LEAF_EXTRACTED",
+  "scope": "prefix traversal to first source tail terminal; structural extraction only, no quadratic leaf replay",
+  "source_node_index_zero_based": 13353584,
+  "source_leaf_index_zero_based": 6676785,
+  "source_terminal_kind": "tail",
+  "anchor_stream_byte_offset_before_leaf": 66767850,
+  "source_path_axis_zero_based": [
+    2,
+    1,
+    3,
+    0,
+    4,
+    2,
+    1,
+    3,
+    0,
+    4,
+    2,
+    1,
+    3,
+    0,
+    4,
+    2,
+    1,
+    3,
+    0,
+    4,
+    2,
+    1,
+    3,
+    0,
+    4
+  ],
+  "source_path_sides": [
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "L",
+    "R",
+    "L",
+    "R",
+    "R",
+    "R",
+    "L",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "L",
+    "L",
+    "L",
+    "R"
+  ],
+  "source_root_box_exact": [
+    [
+      "45/4",
+      "105/8"
+    ],
+    [
+      "45/4",
+      "105/8"
+    ],
+    [
+      "45/8",
+      "15/2"
+    ],
+    [
+      "45/4",
+      "105/8"
+    ],
+    [
+      "165/8",
+      "45/2"
+    ]
+  ],
+  "A": "647/50000",
+  "B": "1094977/5000000000",
+  "exact_tail_margin": "49931/250000000",
+  "source_stream_sha256": {
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76",
+    "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5"
+  }
+}

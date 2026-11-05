@@ -1,0 +1,50 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:45:47: error: unsolved goals
+rows : Fin 15 → CompactRow
+p : Fin 15
+⊢ [rows 0, rows 1, rows 2, rows 3, rows 4, rows 5, rows 6, rows 7, rows 8, rows 9, rows 10, rows 11, rows 12, rows 13,
+        rows 14][↑p] =
+    rows p
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:53:2: warning: 'congr 1' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:72:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  A1294Source.parentBox.lowerHalf ⟨0, ⋯⟩
+in the target expression
+  leafCheck (A1294Source.parentBox.lowerHalf 0) (AffineLeafPayload.quadratic leftPayload) = true
+
+⊢ leafCheck (A1294Source.parentBox.lowerHalf 0) (AffineLeafPayload.quadratic leftPayload) = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:76:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  A1294Source.parentBox.upperHalf ⟨0, ⋯⟩
+in the target expression
+  leafCheck (A1294Source.parentBox.upperHalf 0) (AffineLeafPayload.quadratic rightPayload) = true
+
+⊢ leafCheck (A1294Source.parentBox.upperHalf 0) (AffineLeafPayload.quadratic rightPayload) = true
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:88:25: error: unexpected token 'local'; expected '[', '{', '|', '⦃' or term
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:88:31: error: unexpected token '=>'; expected 'add_aesop_rules', 'binder_predicate', 'builtin_cbv_simproc', 'builtin_dsimproc', 'builtin_simproc', 'cbv_simproc', 'def_eval_config_item', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'notation3', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:89:25: error: unexpected token 'let'; expected 'add_aesop_rules', 'binder_predicate', 'builtin_cbv_simproc', 'builtin_dsimproc', 'builtin_simproc', 'cbv_simproc', 'def_eval_config_item', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'notation3', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:90:49: error: unexpected token ']'; expected 'add_aesop_rules', 'binder_predicate', 'builtin_cbv_simproc', 'builtin_dsimproc', 'builtin_simproc', 'cbv_simproc', 'def_eval_config_item', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'notation3', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean:93:75: error: unexpected token ')'; expected 'add_aesop_rules', 'binder_predicate', 'builtin_cbv_simproc', 'builtin_dsimproc', 'builtin_simproc', 'cbv_simproc', 'def_eval_config_item', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'notation3', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+/mnt/c/Users/AsCommand exited with non-zero status 143
+	Command being timed: "timeout 360 lake env lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/CombinedTree.olean"
+	User time (seconds): 0.25
+	System time (seconds): 0.44
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:39.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 836792
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 55
+	Minor (reclaiming a frame) page faults: 28784
+	Voluntary context switches: 1473
+	Involuntary context switches: 60
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 143

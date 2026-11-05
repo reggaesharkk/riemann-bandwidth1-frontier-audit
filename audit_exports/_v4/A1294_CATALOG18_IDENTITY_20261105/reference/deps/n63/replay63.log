@@ -1,0 +1,32 @@
+'Node63.reused_node65_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node63.replay63' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node63.accepted_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node63.source_check_accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node63.source_connected_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Node63.exact_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+Node63.source_connected_predicate : BoxPredicate (affineEnergyGoal A B) Source63.parentBox
+Node63.exact_exhaustion :
+  replayAffineTree leafCheck topology payloads 3 0 0 Source63.parentBox = some (topology.length, payloads.length)
+	Command being timed: "timeout 90 lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE63_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE63_20261105/Node63Replay.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE63_20261105/Node63Replay.olean"
+	User time (seconds): 5.47
+	System time (seconds): 21.90
+	Percent of CPU this job got: 35%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5484328
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 168904
+	Minor (reclaiming a frame) page faults: 760566
+	Voluntary context switches: 222943
+	Involuntary context switches: 1127
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

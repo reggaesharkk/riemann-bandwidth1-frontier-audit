@@ -1,0 +1,133 @@
+theorem Catalog17Identity.original_eq_catalog : Catalog17.original = Catalog17.catalog :=
+id
+  (id
+    (id
+      (id
+        (id
+          (id
+            (id
+              (id
+                (id
+                  (CatalogArrayIdentity.toArray_append3
+                    [macroPiece2, macroPiece9, macroPiece10, macroPiece11, macroPiece14, macroPiece15, macroPiece16,
+                      macroPiece17, macroPiece18, macroPiece20, macroPiece21, macroPiece22, macroPiece23, macroPiece24,
+                      macroPiece25, macroPiece26, macroPiece27, macroPiece28, macroPiece29, macroPiece30, macroPiece31]
+                    (let y :=
+                      let y :=
+                        let y :=
+                          let y :=
+                            [refinementPiece82, refinementPiece83, refinementPiece84, refinementPiece85,
+                              refinementPiece86];
+                          refinementPiece77 ::
+                            refinementPiece78 :: refinementPiece79 :: refinementPiece80 :: refinementPiece81 :: y;
+                        let y :=
+                          refinementPiece71 ::
+                            refinementPiece73 :: refinementPiece74 :: refinementPiece75 :: refinementPiece76 :: y;
+                        refinementPiece66 ::
+                          refinementPiece67 :: refinementPiece68 :: refinementPiece69 :: refinementPiece70 :: y;
+                      let y :=
+                        let y :=
+                          refinementPiece61 ::
+                            refinementPiece62 :: refinementPiece63 :: refinementPiece64 :: refinementPiece65 :: y;
+                        refinementPiece56 ::
+                          refinementPiece57 :: refinementPiece58 :: refinementPiece59 :: refinementPiece60 :: y;
+                      let y :=
+                        refinementPiece51 ::
+                          refinementPiece52 :: refinementPiece53 :: refinementPiece54 :: refinementPiece55 :: y;
+                      refinementPiece45 :: refinementPiece46 :: refinementPiece49 :: refinementPiece50 :: y;
+                    let y :=
+                      let y :=
+                        let y :=
+                          refinementPiece40 ::
+                            refinementPiece41 :: refinementPiece42 :: refinementPiece43 :: refinementPiece44 :: y;
+                        refinementPiece35 ::
+                          refinementPiece36 :: refinementPiece37 :: refinementPiece38 :: refinementPiece39 :: y;
+                      let y :=
+                        refinementPiece30 ::
+                          refinementPiece31 :: refinementPiece32 :: refinementPiece33 :: refinementPiece34 :: y;
+                      refinementPiece26 :: refinementPiece27 :: refinementPiece28 :: refinementPiece29 :: y;
+                    let y :=
+                      let y :=
+                        refinementPiece14 ::
+                          refinementPiece15 :: refinementPiece16 :: refinementPiece17 :: refinementPiece18 :: y;
+                      refinementPiece9 ::
+                        refinementPiece10 :: refinementPiece11 :: refinementPiece12 :: refinementPiece13 :: y;
+                    let y :=
+                      refinementPiece4 ::
+                        refinementPiece5 :: refinementPiece6 :: refinementPiece7 :: refinementPiece8 :: y;
+                    refinementPiece0 :: refinementPiece1 :: refinementPiece2 :: refinementPiece3 :: y)
+                    (let y :=
+                      let y :=
+                        let y :=
+                          let y :=
+                            [refinementPiece163, refinementPiece164, refinementPiece165, refinementPiece166,
+                              refinementPiece167];
+                          refinementPiece158 ::
+                            refinementPiece159 :: refinementPiece160 :: refinementPiece161 :: refinementPiece162 :: y;
+                        let y :=
+                          refinementPiece153 ::
+                            refinementPiece154 :: refinementPiece155 :: refinementPiece156 :: refinementPiece157 :: y;
+                        refinementPiece148 ::
+                          refinementPiece149 :: refinementPiece150 :: refinementPiece151 :: refinementPiece152 :: y;
+                      let y :=
+                        let y :=
+                          refinementPiece141 ::
+                            refinementPiece142 :: refinementPiece145 :: refinementPiece146 :: refinementPiece147 :: y;
+                        refinementPiece136 ::
+                          refinementPiece137 :: refinementPiece138 :: refinementPiece139 :: refinementPiece140 :: y;
+                      let y :=
+                        refinementPiece131 ::
+                          refinementPiece132 :: refinementPiece133 :: refinementPiece134 :: refinementPiece135 :: y;
+                      refinementPiece127 :: refinementPiece128 :: refinementPiece129 :: refinementPiece130 :: y;
+                    let y :=
+                      let y :=
+                        let y :=
+                          refinementPiece122 ::
+                            refinementPiece123 :: refinementPiece124 :: refinementPiece125 :: refinementPiece126 :: y;
+                        refinementPiece117 ::
+                          refinementPiece118 :: refinementPiece119 :: refinementPiece120 :: refinementPiece121 :: y;
+                      let y :=
+                        refinementPiece112 ::
+                          refinementPiece113 :: refinementPiece114 :: refinementPiece115 :: refinementPiece116 :: y;
+                      refinementPiece108 :: refinementPiece109 :: refinementPiece110 :: refinementPiece111 :: y;
+                    let y :=
+                      let y :=
+                        refinementPiece103 ::
+                          refinementPiece104 :: refinementPiece105 :: refinementPiece106 :: refinementPiece107 :: y;
+                      refinementPiece98 ::
+                        refinementPiece99 :: refinementPiece100 :: refinementPiece101 :: refinementPiece102 :: y;
+                    let y :=
+                      refinementPiece91 ::
+                        refinementPiece92 :: refinementPiece93 :: refinementPiece94 :: refinementPiece95 :: y;
+                    refinementPiece87 :: refinementPiece88 :: refinementPiece89 :: refinementPiece90 :: y))))))))))
+theorem Catalog17AllLookups.original_lookup_0 : Catalog17.original[0]? = some macroPiece2 :=
+Eq.mpr (id (congrArg (fun _a => _a[0]? = some macroPiece2) Catalog17Identity.original_eq_catalog)) catalog_lookup_0
+theorem Catalog17AllLookups.original_lookup_174 : Catalog17.original[174]? = some refinementPiece167 :=
+Eq.mpr (id (congrArg (fun _a => _a[174]? = some refinementPiece167) Catalog17Identity.original_eq_catalog))
+  catalog_lookup_174
+'Catalog17Identity.original_eq_catalog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog17AllLookups.original_lookup_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog17AllLookups.original_lookup_174' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 300 lake env lean -M6000 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17AllLookups.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17AllLookups.olean"
+	User time (seconds): 16.95
+	System time (seconds): 56.85
+	Percent of CPU this job got: 65%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:52.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5534272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 154946
+	Minor (reclaiming a frame) page faults: 808935
+	Voluntary context switches: 226031
+	Involuntary context switches: 3918
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

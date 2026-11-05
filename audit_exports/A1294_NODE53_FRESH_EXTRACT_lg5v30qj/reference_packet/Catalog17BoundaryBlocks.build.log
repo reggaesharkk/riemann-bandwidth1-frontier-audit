@@ -1,0 +1,80 @@
+theorem Catalog17BoundaryBlocks.boundary_block1_0 : Catalog17.catalog[21]? = some refinementPiece0 :=
+id
+  (Eq.mpr
+    (id
+      (congrArg (fun _a => _a = some refinementPiece0)
+        (Array.getElem?_append_left
+          (Eq.mpr (id (congrArg (fun _a => 21 < _a) Array.size_append))
+            (Eq.mpr (id (congrArg (fun _a => 21 < _a + Catalog17.block1.size) Catalog17.size0))
+              (Eq.mpr (id (congrArg (fun _a => 21 < 21 + _a) Catalog17.size1))
+                (of_decide_eq_true (id (Eq.refl true)))))))))
+    (Eq.mpr
+      (id
+        (congrArg (fun _a => _a = some refinementPiece0)
+          (Array.getElem?_append_right (Eq.mpr (id (congrArg (fun _a => _a ≤ 21) Catalog17.size0)) (le_refl 21)))))
+      (Eq.mpr
+        (id
+          (congrFun'
+            (congrArg Eq
+              (congrArg (getElem? Catalog17.block1)
+                (Eq.trans (congrArg (HSub.hSub 21) Catalog17.size0)
+                  (Mathlib.Meta.NormNum.IsNat.to_eq
+                    (Mathlib.Meta.NormNum.isNat_natSub (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 21))
+                      (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 21)) (Eq.refl 0))
+                    (Eq.refl 0)))))
+            (some refinementPiece0)))
+        local_block1_0)))
+theorem Catalog17BoundaryBlocks.boundary_block2_0 : Catalog17.catalog[98]? = some refinementPiece87 :=
+id
+  (Eq.mpr
+    (id
+      (congrArg (fun _a => _a = some refinementPiece87)
+        (Array.getElem?_append_right
+          (Eq.mpr (id (congrArg (fun _a => _a ≤ 98) Array.size_append))
+            (Eq.mpr (id (congrArg (fun _a => _a + Catalog17.block1.size ≤ 98) Catalog17.size0))
+              (Eq.mpr (id (congrArg (fun _a => 21 + _a ≤ 98) Catalog17.size1)) (le_refl (21 + 77))))))))
+    (Eq.mpr
+      (id
+        (congrFun'
+          (congrArg Eq
+            (congrArg (getElem? Catalog17.block2)
+              (Eq.trans
+                (congrArg (HSub.hSub 98)
+                  (Eq.trans Array.size_append
+                    (Eq.trans (congr (congrArg HAdd.hAdd Catalog17.size0) Catalog17.size1)
+                      (Mathlib.Meta.NormNum.IsNat.to_eq
+                        (Mathlib.Meta.NormNum.isNat_add (Eq.refl HAdd.hAdd)
+                          (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 21))
+                          (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 77)) (Eq.refl 98))
+                        (Eq.refl 98)))))
+                (Mathlib.Meta.NormNum.IsNat.to_eq
+                  (Mathlib.Meta.NormNum.isNat_natSub (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 98))
+                    (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 98)) (Eq.refl 0))
+                  (Eq.refl 0)))))
+          (some refinementPiece87)))
+      local_block2_0))
+'Catalog17BoundaryBlocks.boundary_block1_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog17BoundaryBlocks.boundary_block2_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 240 lake env lean -M6000 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17BoundaryBlocks.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17BoundaryBlocks.olean"
+	User time (seconds): 4.25
+	System time (seconds): 22.31
+	Percent of CPU this job got: 36%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:12.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5287968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 155072
+	Minor (reclaiming a frame) page faults: 797160
+	Voluntary context switches: 207309
+	Involuntary context switches: 223
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,1 @@
+PASS: bound source/payload/decoded/proof artifacts; exact 400-segment stream, boxes, anchors and 30 rows; lossless byte roundtrips; recorded clean Lean acceptance. This Python check is not itself a mathematical proof or an external authentication anchor.

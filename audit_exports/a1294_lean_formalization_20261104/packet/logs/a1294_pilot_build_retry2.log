@@ -1,0 +1,48 @@
+✖ [8704/8704] Building Zeta23.ThmD.Sextuple.A1294Pilot (25s)
+trace: .> LEAN_PATH=/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/Cli/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/batteries/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/Qq/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/aesop/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/importGraph/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/plausible/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/packages/mathlib/.lake/build/lib/lean:/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/lib/lean /home/reggaeshark/.elan/toolchains/leanprover--lean4---v4.33.0-rc2/bin/lean /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/Zeta23/ThmD/Sextuple/A1294Pilot.lean -o /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/lib/lean/Zeta23/ThmD/Sextuple/A1294Pilot.olean -i /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/lib/lean/Zeta23/ThmD/Sextuple/A1294Pilot.ilean -c /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/ir/Zeta23/ThmD/Sextuple/A1294Pilot.c --setup /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/.lake/build/ir/Zeta23/ThmD/Sextuple/A1294Pilot.setup.json --json
+error: Zeta23/ThmD/Sextuple/A1294Pilot.lean:70:2: No applicable extensionality theorem found for type
+  GapBox
+
+Note: Extensionality theorems can be registered by marking them with the `[ext]` attribute
+error: Zeta23/ThmD/Sextuple/A1294Pilot.lean:86:84: unsolved goals
+hordered : tailLeafBox.ordered = true
+hspan : tailLeafBox.lowerSpan = 60
+⊢ decide (0 ≤ 1094977 / 5000000000) = true ∧ 647 / 50000 ≤ 1094977 / 5000000000 * 60
+error: Zeta23/ThmD/Sextuple/A1294Pilot.lean:97:94: unsolved goals
+⊢ 1 = (CursorStream.ofList [AffineTreeToken.terminal]).length ∧
+    1 = (CursorStream.ofList [AffineLeafPayload.tail]).length
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:124:0: 'A1294Pilot.exact_tail_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:125:0: 'A1294Pilot.tail_span_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:126:0: 'A1294Pilot.tail_covers_root_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:127:0: 'A1294Pilot.extracted_path_reconstructs_box' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:128:0: 'A1294Pilot.source_tail_leaf_checker_true' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:129:0: 'A1294Pilot.source_tail_leaf_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:130:0: 'A1294Pilot.selected_complete_subtree_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Zeta23.ThmD.Sextuple.A1294Pilot
+error: build failed
+Command exited with non-zero status 1
+	Command being timed: "lake build Zeta23.ThmD.Sextuple.A1294Pilot"
+	User time (seconds): 10.49
+	System time (seconds): 15.36
+	Percent of CPU this job got: 71%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:36.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5415952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 79247
+	Minor (reclaiming a frame) page faults: 738193
+	Voluntary context switches: 257491
+	Involuntary context switches: 6121
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

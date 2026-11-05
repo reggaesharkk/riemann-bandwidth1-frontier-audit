@@ -1,0 +1,42 @@
+{
+  "GenericReference.lean": {
+    "bytes": 17293,
+    "sha256": "2986b37de7130785b830d4e53792052a586f556f5a461d4afd05c17724633f59"
+  },
+  "StandaloneCore.lean": {
+    "bytes": 18274,
+    "sha256": "ef1eafa685722340e94f4febb44c9cf8b5daa8a18645beda4d031b1797684397"
+  },
+  "StandaloneCore.olean": {
+    "bytes": 1230920,
+    "sha256": "275790e37e7e7202e6182bf16fb78527b7ab1a9b13838fa1b1f83bf4694ab2a1"
+  },
+  "StandaloneTerminal22.lean": {
+    "bytes": 122074,
+    "sha256": "2a2c9921a7ea0c1c14ac2ec4c1eb551f19eb89a963d2e00e1ce3fcbc1a8c1c29"
+  },
+  "StandaloneTerminal22.olean": {
+    "bytes": 11944624,
+    "sha256": "c3e4e82b5ab5181d7e83ba757dd8061347df2a24750e347592f2acd6c73464a0"
+  },
+  "baseline/Zeta23/ThmD/Sextuple/CompositionalLeaf.lean": {
+    "bytes": 148181,
+    "sha256": "4a34b508b8ce2dbf72f0bcacce70d01acea7848d381882f72fbeebcf1124bf61"
+  },
+  "Baseline.olean": {
+    "bytes": 11078232,
+    "sha256": "7ea33441e19dbf2a64a59f1a9348f52ae6c5b5506c410e294ebfb186b9df8298"
+  },
+  "authentic_input.json": {
+    "bytes": 355345,
+    "sha256": "9d261c03f582e7b1f61bc08f38025d3871f01f70806c3ab87783a2a5768da072"
+  },
+  "data_certificate.json": {
+    "bytes": 6507,
+    "sha256": "5474c9e6a609d1775cceec3b84144d162cbfd82495c6768ab2d3d59b48f3e84f"
+  },
+  "frozen/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip": {
+    "bytes": 5672384,
+    "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+  }
+}

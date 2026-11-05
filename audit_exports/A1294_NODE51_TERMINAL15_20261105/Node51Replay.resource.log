@@ -1,0 +1,23 @@
+	Command being timed: "timeout 480 lake env lean -M6400 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE51_TERMINAL15_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE51_TERMINAL15_20261105/Node51Replay.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE51_TERMINAL15_20261105/Node51Replay.olean"
+	User time (seconds): 13.27
+	System time (seconds): 26.67
+	Percent of CPU this job got: 46%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:25.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5304140
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 167152
+	Minor (reclaiming a frame) page faults: 874129
+	Voluntary context switches: 225456
+	Involuntary context switches: 8267
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

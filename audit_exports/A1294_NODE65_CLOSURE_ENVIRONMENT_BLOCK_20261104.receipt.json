@@ -1,0 +1,9 @@
+{
+  "zip": "C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit\\audit_exports\\A1294_NODE65_CLOSURE_ENVIRONMENT_BLOCK_20261104.zip",
+  "bytes": 5915115,
+  "sha256": "a1cd335d545c4f2e713571f4d12e74cc6d04f11867c990c86bc552db9b7cf1cc",
+  "manifest_entries": 17,
+  "CRC": "PASS",
+  "independent_manifest": "PASS",
+  "new_proof_status": "NO_LEAN_BUILD_STARTED; ENVIRONMENT_BLOCKED"
+}

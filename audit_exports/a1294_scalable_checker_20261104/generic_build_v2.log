@@ -1,0 +1,37 @@
+Zeta23/ThmD/Sextuple/A1294GenericChecker.lean:23:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Zeta23/ThmD/Sextuple/A1294GenericChecker.lean:71:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'A1294GenericChecker.certifiedPiecewiseCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "lake env lean Zeta23/ThmD/Sextuple/A1294GenericChecker.lean -o /tmp/A1294GenericChecker.olean"
+	User time (seconds): 12.48
+	System time (seconds): 56.33
+	Percent of CPU this job got: 55%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:05.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5654328
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 154405
+	Minor (reclaiming a frame) page faults: 889527
+	Voluntary context switches: 206318
+	Involuntary context switches: 437
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

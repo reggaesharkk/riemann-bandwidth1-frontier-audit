@@ -1,0 +1,10 @@
+{
+ "decision":"EVALUATION_BLOCKED_AT_EXACT_SUBCHECK",
+ "first_blocking_expression":"interpCompactRow catalog row6 = some (ModelRow.floor 0 segments6)",
+ "false_witness":false,
+ "clean_checkpoint_module":"KERNEL_PROVED",
+ "authentic_compact_leaf_accepted":false,
+ "corrected_proof_status":"UNVERIFIED_WSL_SERVICE_TIMEOUT",
+ "original_segments_preserved":208,
+ "full_A1294_theorem":"NOT_YET_PROVED"
+}

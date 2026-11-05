@@ -1,0 +1,49 @@
+{
+  "standalone_core": {
+    "wall_seconds": 119.32,
+    "peak_rss_kib": 5502300,
+    "major_faults": 161860,
+    "exit": 0
+  },
+  "standalone_leaf": {
+    "wall_seconds": 81.81,
+    "peak_rss_kib": 5377096,
+    "major_faults": 134570,
+    "exit": 0
+  },
+  "baseline_leaf": {
+    "wall_seconds": 118.47,
+    "peak_rss_kib": 5498500,
+    "major_faults": 154915,
+    "exit": 0
+  },
+  "standalone_outer_wrapper": {
+    "wall_seconds": 206.57,
+    "peak_rss_kib": 5502300,
+    "major_faults": 299558,
+    "exit": 0
+  },
+  "standalone_compile_process_sum_seconds": 201.13,
+  "new_source_bytes": 140348,
+  "baseline_source_bytes": 148181,
+  "new_local_olean_bytes": 13175544,
+  "baseline_fresh_olean_bytes": 11078232,
+  "baseline_cached_olean_bytes_in_raw_census": 11078224,
+  "new_closure_olean_bytes": 2744958000,
+  "baseline_closure_olean_bytes_adjusted_for_fresh_root": 2742860688,
+  "common_module_count": 10500,
+  "common_source_bytes": 123596428,
+  "new_only": [
+    "StandaloneCore",
+    "StandaloneTerminal22"
+  ],
+  "old_only": [
+    "Zeta23.ThmD.Sextuple.CompositionalLeaf"
+  ],
+  "notes": [
+    "Compile-process sums are comparable units; outer wrapper includes additional Lake/shell startup and is reported separately.",
+    "Cache/paging conditions not randomized or controlled. No isolated kernel-only timing or full imported-module -t0 replay.",
+    "Raw baseline import audit loads the previously built module with identical source hash; its object is 8 bytes smaller than this fresh baseline artifact. The adjusted closure explicitly pays the observed difference.",
+    "Complete import-module census includes companion object files, not OS runtime libraries or a minimal reachable-proof-constant graph."
+  ]
+}

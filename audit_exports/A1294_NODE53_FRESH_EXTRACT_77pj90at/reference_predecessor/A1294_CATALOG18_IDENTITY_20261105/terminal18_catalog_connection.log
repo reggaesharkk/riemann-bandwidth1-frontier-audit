@@ -1,0 +1,29 @@
+theorem Catalog18TerminalLiteral.historicalTerminal18_eq_blocked : historicalTerminal18Catalog = Catalog18.catalog :=
+Eq.refl historicalTerminal18Catalog
+theorem Catalog18TerminalLiteral.historicalTerminal18_eq_original : historicalTerminal18Catalog = Catalog18.original :=
+Trans.trans historicalTerminal18_eq_blocked (Eq.symm Catalog18Identity.original_eq_catalog)
+'Catalog18TerminalLiteral.historicalTerminal18_eq_blocked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog18TerminalLiteral.historicalTerminal18_eq_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 120 lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_CATALOG18_IDENTITY_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_CATALOG18_IDENTITY_20261105/Terminal18CatalogConnection.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_CATALOG18_IDENTITY_20261105/Terminal18CatalogConnection.olean"
+	User time (seconds): 4.05
+	System time (seconds): 25.21
+	Percent of CPU this job got: 37%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5497540
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 163509
+	Minor (reclaiming a frame) page faults: 673223
+	Voluntary context switches: 216257
+	Involuntary context switches: 209
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,35 @@
+'Catalog17LookupSmoke.original_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Catalog17LookupSmoke.original_20' depends on axioms: [propext, Classical.choice, Quot.sound]
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17LookupSmoke.lean:22:71: error: unsolved goals
+⊢ (Catalog17.block0 ++ Catalog17.block1)[21]? = some refinementPiece0
+'Catalog17LookupSmoke.original_21' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Catalog17LookupSmoke.original_97' depends on axioms: [propext, Classical.choice, Quot.sound]
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17LookupSmoke.lean:41:96: error: No goals to be solved
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17LookupSmoke.lean:39:72: error: unsolved goals
+⊢ Catalog17.block2[98 - (Catalog17.block0 ++ Catalog17.block1).size]? = some refinementPiece87
+'Catalog17LookupSmoke.original_98' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Catalog17LookupSmoke.original_174' depends on axioms: [propext, Classical.choice, Quot.sound]
+Command exited with non-zero status 1
+	Command being timed: "timeout 240 lake env lean -M6000 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17LookupSmoke.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/Catalog17LookupSmoke.olean"
+	User time (seconds): 3.82
+	System time (seconds): 19.02
+	Percent of CPU this job got: 32%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:11.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5353376
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 164187
+	Minor (reclaiming a frame) page faults: 792756
+	Voluntary context switches: 217210
+	Involuntary context switches: 228
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

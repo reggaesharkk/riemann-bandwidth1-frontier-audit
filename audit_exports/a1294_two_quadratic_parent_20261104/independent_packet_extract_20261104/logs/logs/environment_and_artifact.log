@@ -1,0 +1,26 @@
+UPSTREAM_COMMIT=fba91d214655aaa1fd0504bb893c8859c20c79f9
+
+WORKTREE_STATUS
+## HEAD (no branch)
+?? zeta23/Zeta23/ThmD/Sextuple/A1294Pilot.lean
+?? zeta23/Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean
+?? zeta23/Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean
+?? zeta23/Zeta23/ThmD/Sextuple/BoxSmoke.lean
+?? zeta23/Zeta23/ThmD/Sextuple/SegmentRowSmoke.lean
+?? zeta23/Zeta23/ThmD/Sextuple/SegmentSmoke.lean
+
+LEAN_TOOLCHAIN=leanprover/lean4:v4.33.0-rc2
+
+LEAN=Lean (version 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+LAKE=Lake version 5.0.0-src+d8b1897 (Lean version 4.33.0-rc2)
+
+MATHLIB_COMMIT=51e6992efd06126df61a496bebf8f49482a4e129
+
+MODULE_SHA256=338c8f6a3a4eadc10a013a932fe6ea6a16a14ca7259bdc7e956bc5cf41a3cee0  Zeta23/ThmD/Sextuple/A1294TwoQuadraticParent.lean
+OLEAN=14407976 bytes
+OLEAN_SHA256=5c6fc561151c1da472d205cd787cb1ac6ef50b23c45b1b7adbc76ab9d6d1a2fa  /tmp/A1294TwoQuadraticParent_v7.olean
+
+MEMORY
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       622Mi       5.8Gi        15Mi       1.4Gi       6.9Gi
+Swap:          2.0Gi       159Mi       1.8Gi

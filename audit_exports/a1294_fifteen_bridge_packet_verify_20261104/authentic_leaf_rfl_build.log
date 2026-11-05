@@ -1,0 +1,54 @@
+Zeta23/ThmD/Sextuple/AuthenticCompactLeaf.lean:23:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Zeta23/ThmD/Sextuple/AuthenticCompactLeaf.lean:71:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'A1294GenericChecker.certifiedPiecewiseCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294Compact.compactSegmentCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294FifteenBridge.fifteenCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294FifteenBridge.compactQuadraticLeafCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Zeta23/ThmD/Sextuple/AuthenticCompactLeaf.lean:620:2: error: Tactic `decide` failed for proposition
+  compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor rows = true
+because its `Decidable` instance
+  instDecidableEqBool (compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor rows) true
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqRat`, `Bool.decEq`, `Int.decEq`, `Int.instDecidableEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Nat.decidableBallLT`, `Nat.decidableForallFin`, `Nat.instDecidableCoprime`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor rows, true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+'AuthenticCompactLeaf.leaf_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Command exited with non-zero status 1
+	Command being timed: "timeout 240 lake env lean Zeta23/ThmD/Sextuple/AuthenticCompactLeaf.lean -o /tmp/AuthenticCompactLeaf.olean"
+	User time (seconds): 7.77
+	System time (seconds): 23.82
+	Percent of CPU this job got: 34%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:31.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5496664
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 167422
+	Minor (reclaiming a frame) page faults: 734625
+	Voluntary context switches: 234359
+	Involuntary context switches: 896
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

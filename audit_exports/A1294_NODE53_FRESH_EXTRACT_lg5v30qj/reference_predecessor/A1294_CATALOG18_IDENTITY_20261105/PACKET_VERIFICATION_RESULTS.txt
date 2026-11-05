@@ -1,0 +1,5 @@
+Independent extraction and replay record
+
+The final archive was unpacked into a fresh directory, its ZIP CRC was checked with Python zipfile.testzip(), and verify_extracted_packet.py was run against the extracted directory. The extraction verifier checked exact path and SHA-256 coverage, checked every source inventory entry, and reran the local provenance and mathematical consistency scripts in normal Python, -O, and -OO modes. A second manifest hash pass after replay found no changed or missing files.
+
+The final archive SHA-256 and byte size are recorded in the external companion extraction log, because embedding an archive's own digest would be self-referential.

@@ -1,0 +1,31 @@
+{
+  "frozen_input_archive": {
+    "sha256": "1b2648fc7734f63a096623350e1290bae67fa6ad8b20241147d869e672674fcb",
+    "bytes": 93781352,
+    "verified": true
+  },
+  "terminal17_source_reconstruction": "INDEPENDENTLY_VERIFIED_EXACT_RATIONAL",
+  "terminal17_catalog_original_array_identity": "KERNEL_PROVED_FOR_COMPILED_LITERALS",
+  "terminal17_catalog_lookups": "KERNEL_PROVED_ALL_175_LOCAL_AND_ORIGINAL",
+  "terminal17_acceptance": "KERNEL_PROVED",
+  "terminal17_leaf_soundness": "KERNEL_PROVED",
+  "node55_topology": [1, 0, 5, 0, 3, 0, 2, 0, 4, 0, 1, 0, 0],
+  "node55_replay": "KERNEL_PROVED",
+  "node55_cursor_exhaustion": {
+    "status": "KERNEL_PROVED",
+    "topology_tokens": 13,
+    "terminal_payloads": 7
+  },
+  "node55_source_connected_box_predicate": "KERNEL_PROVED_FOR_COMPILED_SOURCE_LITERALS",
+  "final_node55_build_exit": 0,
+  "final_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "custom_axioms_or_shortcuts": "NONE",
+  "byte_stream_to_lean_literals": "EXTERNAL_SOURCE_CONVERSION_BOUNDARY",
+  "deterministic_catalog_selection_to_lean_literals": "EXTERNALLY_REPLAYED_NOT_KERNEL_PROVED",
+  "bounded_bulk_feasibility": "DEMONSTRATED_FOR_TWO_SEGMENTED_LEAVES_ONLY",
+  "full_certificate_bulk_feasibility": "OPEN",
+  "initialGapBox_60_predicate": "OPEN",
+  "full_a1294_theorem": "OPEN",
+  "wp84_frozen_status": "UNCHANGED"
+}
+

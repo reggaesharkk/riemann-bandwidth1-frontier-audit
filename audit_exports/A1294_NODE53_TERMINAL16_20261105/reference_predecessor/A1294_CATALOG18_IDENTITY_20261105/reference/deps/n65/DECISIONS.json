@@ -1,0 +1,13 @@
+{
+  "CHECKPOINT0_KERNEL_PROVED": "PROVED",
+  "ALL_43_PATH_CHECKPOINTS_PROVED": "PROVED",
+  "SOURCE_NODE65_BOX_KERNEL_PROVED": "PROVED",
+  "COMBINED_THREE_NODE_REPLAY_ACCEPTED": "PROVED",
+  "NODE65_SOURCE_CONNECTED_PREDICATE_PROVED": "PROVED",
+  "CURSOR_EXHAUSTION_PROVED": "PROVED",
+  "EXTERNAL_AUTHENTICATION_BOUNDARY": "Original ZIP bytes to Lean literals and pinned catalog correspondence remain external; literal-level arithmetic, leaf soundness and replay are kernel checked.",
+  "ROOT_BOX_PREDICATE_STATUS": "OPEN",
+  "FULL_A1294_THEOREM_STATUS": "NOT_YET_PROVED",
+  "FIRST_UNRESOLVED_LOCAL_PROOF_OBLIGATION": "NONE in the completed bounded three-node theorem",
+  "NEXT_UNRESOLVED_GLOBAL_PREMISE": "BoxPredicate (affineEnergyGoal (647/50000) (1094977/5000000000)) (initialGapBox 60)"
+}

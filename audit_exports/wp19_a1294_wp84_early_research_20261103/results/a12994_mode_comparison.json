@@ -1,0 +1,15 @@
+{
+  "A12994": {
+    "A": "6497/500000",
+    "V_minus_A": "-4350909811584954657472771732099514186792925501/134217728000000000000000000000000000000000000000000",
+    "sign": "negative",
+    "target": "A12994"
+  },
+  "modes": [
+    "normal",
+    "optimized",
+    "optimize_docstrings"
+  ],
+  "output_equal": true,
+  "status": "PASS"
+}

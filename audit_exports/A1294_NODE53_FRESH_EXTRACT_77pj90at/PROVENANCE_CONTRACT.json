@@ -1,0 +1,48 @@
+{
+  "format": "A1294-claim-evidence-v1",
+  "scope": "terminal-16 acceptance and node-53 source-connected replay only",
+  "source": {
+    "node55_packet_sha256": "ba18a4a2993cf3941ffa1c13c11db812852b4a3ea3b485bd850f0b481264ab14",
+    "v2_archive_sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a",
+    "topology_53_67": [4, 0, 1, 0, 5, 0, 3, 0, 2, 0, 4, 0, 1, 0, 0],
+    "terminal16_anchor_offset_bytes": 160,
+    "stream_hashes": {
+      "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76",
+      "terminal_kinds": "859e25cdff7379072a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+      "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5"
+    }
+  },
+  "lean_claims": [
+    {
+      "theorem": "AuthenticCompact16.accepted_original",
+      "status": "KERNEL_PROVED",
+      "source_file": "Terminal16Compositional.lean"
+    },
+    {
+      "theorem": "AuthenticCompact16.leaf_sound",
+      "status": "KERNEL_PROVED",
+      "source_file": "Terminal16Compositional.lean"
+    },
+    {
+      "theorem": "Node53.replay53",
+      "status": "KERNEL_PROVED",
+      "source_file": "Node53Replay.lean"
+    },
+    {
+      "theorem": "Node53.exact_exhaustion",
+      "status": "KERNEL_PROVED",
+      "source_file": "Node53Replay.lean"
+    },
+    {
+      "theorem": "Node53.source_connected_predicate",
+      "status": "KERNEL_PROVED_OVER_COMPILED_SOURCE_LITERALS",
+      "source_file": "Node53Replay.lean"
+    }
+  ],
+  "external_obligations": [
+    "prove that the frozen V2 byte streams are parsed into the exact Lean literal declarations",
+    "prove in Lean that the deterministic catalog-selection procedure returns the generated catalog/row/segment data",
+    "authenticate archive origin beyond local SHA-256 binding if an authenticated publisher signature is required"
+  ],
+  "trust_note": "The provenance hashes bind named artifacts. They do not establish the mathematical claims; the listed theorem claims are kernel checked separately. No signing secret, external receipt verifier, or VRK theorem acceptance is asserted."
+}

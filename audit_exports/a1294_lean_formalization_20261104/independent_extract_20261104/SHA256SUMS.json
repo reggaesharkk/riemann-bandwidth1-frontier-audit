@@ -1,0 +1,247 @@
+{
+  "files": [
+    {
+      "path": "A1294Pilot.lean",
+      "sha256": "8f56896f45fcc5d63f0a5f878fdceba0220fd313e8fa275fce2327626f0e6db9",
+      "size_bytes": 5237
+    },
+    {
+      "path": "evidence/catalog_comparison.json",
+      "sha256": "bec8369f6a4a357d374adb23ea8ca8dc6ed9da6902b11d5a5d3732cdefbe6d2e",
+      "size_bytes": 1512
+    },
+    {
+      "path": "evidence/prior_A1294_SOURCE_FREE_REPLAY_RESULT.json",
+      "sha256": "7de6a70671dee42307847e3b321389f1bdfcae66f8bc73b99b0227a6c8e54db0",
+      "size_bytes": 1442
+    },
+    {
+      "path": "evidence/source_tail_leaf.json",
+      "sha256": "7789d59d4def41604cd5e7f3fcef084d2efb120ed5937359db0ba00eb856414e",
+      "size_bytes": 1502
+    },
+    {
+      "path": "logs/a1294_pilot_build_failed_attempt1.log",
+      "sha256": "9317a2949fa1a772dc630713f6704b8cec3c5e50448f42350a6529e7d473f89c",
+      "size_bytes": 10576
+    },
+    {
+      "path": "logs/a1294_pilot_build_final.log",
+      "sha256": "045e105191fafbaa8142befec7d16e7d1c20e2fad2639cb4380f1a4ec22cec77",
+      "size_bytes": 2066
+    },
+    {
+      "path": "logs/a1294_pilot_build_retry1.log",
+      "sha256": "cd09d0cf19072aad97bb962eee380b1ce70b0a8e3edd0cb8d3f3f652c9277780",
+      "size_bytes": 390559
+    },
+    {
+      "path": "logs/a1294_pilot_build_retry2.log",
+      "sha256": "2a2159c4035b7fbb89913d6b1204318df32a2a2900adf1b754a28debd6b52a3a",
+      "size_bytes": 4575
+    },
+    {
+      "path": "logs/a1294_pilot_build_retry3.log",
+      "sha256": "d2f63ade0f273e446eac6024e95572405c3bbd205661405afc25cc1bb38f9a0a",
+      "size_bytes": 972004
+    },
+    {
+      "path": "logs/a1294_pilot_build_retry4.log",
+      "sha256": "27cd5a44bc32f3d1d59ab9d32e8a9391b57881e0757f3e26ca7f26ba6616dcd6",
+      "size_bytes": 2686
+    },
+    {
+      "path": "logs/environment.txt",
+      "sha256": "a3950dac44d25fb0765ac6bcc4f7c9674c072e98beaebc4e39b3f52b7841ae53",
+      "size_bytes": 1947
+    },
+    {
+      "path": "logs/environment_capture_bad_redirect.txt",
+      "sha256": "a8734b907af7dc7bc8d0e168ce1b1558fcb4c2c0d781e0c18fe54da5e42473d4",
+      "size_bytes": 1425
+    },
+    {
+      "path": "logs/environment_raw_duplicated.txt",
+      "sha256": "a8734b907af7dc7bc8d0e168ce1b1558fcb4c2c0d781e0c18fe54da5e42473d4",
+      "size_bytes": 1425
+    },
+    {
+      "path": "logs/input_preflight.log",
+      "sha256": "71c0c87ecd44f1bc1d8c451f1777bce490aa1e5a066ca36a6cd500ddd6e4ea2f",
+      "size_bytes": 211
+    },
+    {
+      "path": "logs/input_preflight_wrong_cwd.log",
+      "sha256": "8d42421f4451b54a17229e7ed0f4c53591878bb3f2520d5531e8aaeb961669b0",
+      "size_bytes": 1048
+    },
+    {
+      "path": "logs/upstream_a1290_certificate_build_aborted_oversized.log",
+      "sha256": "0d7e55725c27ff671cf1c36986b160f527538425703b254edad1e3de9c515708",
+      "size_bytes": 23647
+    },
+    {
+      "path": "logs/upstream_affinetree_build.log",
+      "sha256": "a4c5e7418813cb1738d5370fb2a11dcce4904069dd3be540e55982cf21fd554d",
+      "size_bytes": 1064
+    },
+    {
+      "path": "NEXT_BLOCKER.md",
+      "sha256": "ec563e2b6b0bdad644b749e314915781fd331d216b9b0850a759fcc82b7a7509",
+      "size_bytes": 1357
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "41cd6df0327205b460e1e5025ef53f87157949e3094a4bf792e8895d5fc4d387",
+      "size_bytes": 2315
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "5980a351007e005ff07352f4b8e2f800e010c1bfa40f5425a5fbbcfb7cb2bfcf",
+      "size_bytes": 2136
+    },
+    {
+      "path": "README.md",
+      "sha256": "f34154dbb710417dc91bbf404f8080e873a83db97fb2dba87cf877114b49c314",
+      "size_bytes": 3242
+    },
+    {
+      "path": "REPRODUCE.md",
+      "sha256": "8b4b2481b3359cefbb8de058dbdb3a5ebd513f44afddd4dc6e4e25c67b76617d",
+      "size_bytes": 2324
+    },
+    {
+      "path": "scripts/compare_catalogs.py",
+      "sha256": "e384e32b9792d68524bd4ae3ac9204478d7146a047da02cde8e244f4dd467072",
+      "size_bytes": 5689
+    },
+    {
+      "path": "scripts/create_packet_zip.py",
+      "sha256": "831bb4952ca3e9ad3743a4cbe0ae6c7fe0a2e8e658d56c6c0b1f6819b99c34c5",
+      "size_bytes": 763
+    },
+    {
+      "path": "scripts/extract_tail_subtree.py",
+      "sha256": "b1fe62b858e7c8c2026c87033fc4ba0e087e18cd6f9b0c4edd4627b556916181",
+      "size_bytes": 10762
+    },
+    {
+      "path": "scripts/find_low_kernel_leaf.py",
+      "sha256": "04e4c20ccfd8452519239122575cb8a22b047c30bd54910e767a7b8ee049672f",
+      "size_bytes": 4284
+    },
+    {
+      "path": "scripts/verify_archive.py",
+      "sha256": "7a7fc8cb0f2eae7534e5d2f97ceaf79483412b4a04fc63daccebff64b0d132fc",
+      "size_bytes": 1862
+    },
+    {
+      "path": "scripts/verify_packet.py",
+      "sha256": "470c74c7cc00379a6360c18df2a820420b086a70c488ab7be5a5944f4beb01ee",
+      "size_bytes": 1732
+    },
+    {
+      "path": "scripts/write_manifests.py",
+      "sha256": "b5ef1a458a416e625a193a61e21a857216b421ce767064e6f9595f9b319dd732",
+      "size_bytes": 5428
+    },
+    {
+      "path": "source/input_v2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+      "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+      "size_bytes": 5672384
+    },
+    {
+      "path": "source/upstream/formal-math-LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size_bytes": 11357
+    },
+    {
+      "path": "source/upstream/zeta23/lake-manifest.json",
+      "sha256": "1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448",
+      "size_bytes": 3200
+    },
+    {
+      "path": "source/upstream/zeta23/lakefile.toml",
+      "sha256": "4942f994b9250b1efacea071fd997b0395960d61f30f5f79e21f4d2870265288",
+      "size_bytes": 802
+    },
+    {
+      "path": "source/upstream/zeta23/lean-toolchain",
+      "sha256": "0d3c76ccd8772d8bcbe207241421a760312b71a6aa82f84194391fdf5cb026d6",
+      "size_bytes": 29
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/A1275/RefinementData.lean",
+      "sha256": "67b78979fc1e7dcbd291f2da19cb53071142ef11104eeeea08af718269f16d43",
+      "size_bytes": 231043
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/A1290/Certificate.lean",
+      "sha256": "a1b87a935e2165229180631cfd0b78753737659607002170f018efe094562c7a",
+      "size_bytes": 1629
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/A1290/RefinementData2.lean",
+      "sha256": "71a065f430af833700eda1ab911b31409d96cf3d0b9ae9946d8c536e94d993ad",
+      "size_bytes": 371835
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/AffineTree.lean",
+      "sha256": "64a198e5042931f3785c440a78722e9b3f8e62cdd4843854b0acc3f470722eb3",
+      "size_bytes": 47084
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/Energy.lean",
+      "sha256": "77f8f59cf6ca531586307952457e75f500d8ac37dc40c643460a01b0334924d3",
+      "size_bytes": 1216
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/Interval.lean",
+      "sha256": "0bbb8991defb97ece3ff76ef81b3cab86bd430ada6cb933804e419774e92f866",
+      "size_bytes": 7481
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/Kernel.lean",
+      "sha256": "e50b67ee4e267a5a50a7b4bcfcf15568f83fe4aaa45d312cb6570370988d7a7b",
+      "size_bytes": 5243
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/KernelInterval.lean",
+      "sha256": "d09b9efe4a36394fa08bcc7a0e904a7eae409f0f198d8103d1522f8bbeba37fe",
+      "size_bytes": 3911
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/Macro/AffineAdapter.lean",
+      "sha256": "61c2adce61a763582895d124eac67f37eb204a5844a19cca62b08a12994cb217",
+      "size_bytes": 12471
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/Macro/Analytic.lean",
+      "sha256": "c0757a933f4c2ea2987da6e3d3dbe0d4f804c5c4a88174758e2e7c5ed8370ddf",
+      "size_bytes": 28540
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean",
+      "sha256": "44a3295dbf1eb76b5ae99263d282ac2397bc6b0953c8456632768476f25ee052",
+      "size_bytes": 52786
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/PieceCert.lean",
+      "sha256": "b8e505a651d8b9b1a45da52080f6b1e86a92ea3fefbfe323a282432aef614f2f",
+      "size_bytes": 8084
+    },
+    {
+      "path": "source/upstream/zeta23/Zeta23/ThmD/Sextuple/TrigInterval.lean",
+      "sha256": "63792e1a3f8488f8c675185601049d80c901473f5274b8e88961fc1fc707caf5",
+      "size_bytes": 10940
+    },
+    {
+      "path": "SOURCE_HASH_INVENTORY.json",
+      "sha256": "e63e8c25dc7ce023b8dc54639db7d6120254cfab1bcb64a971644e7fb18c99cf",
+      "size_bytes": 9734
+    }
+  ],
+  "root": ".",
+  "schema": "sha256-file-manifest-v1",
+  "self_excluded": "SHA256SUMS.json does not hash itself; the final ZIP hash is reported separately."
+}

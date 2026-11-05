@@ -1,0 +1,25 @@
+input file '/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/a1294_scalable_checker_20261104/A1294GenericChecker.lean' must be contained in root directory (/home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23/)
+Command exited with non-zero status 1
+	Command being timed: "lake env lean /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/a1294_scalable_checker_20261104/A1294GenericChecker.lean -o /tmp/A1294GenericChecker.olean"
+	User time (seconds): 0.32
+	System time (seconds): 3.47
+	Percent of CPU this job got: 69%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 846304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2864
+	Minor (reclaiming a frame) page faults: 32213
+	Voluntary context switches: 11568
+	Involuntary context switches: 497
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

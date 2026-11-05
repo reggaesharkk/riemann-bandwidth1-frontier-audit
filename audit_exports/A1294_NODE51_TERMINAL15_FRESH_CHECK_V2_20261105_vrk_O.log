@@ -1,0 +1,4 @@
+PASS VRK canonical evidence hashes, evidence root, claim digests and record digest
+STATUS=UNSIGNED_PROVENANCE_ONLY; no Lean theorem or source authenticity was inferred from hashes
+
+EXIT=0

@@ -1,0 +1,17 @@
+Independent point evaluation cross-check
+
+Primary calculation: verification/verify_exact_witness.py
+- reads the three exact JSON catalogs
+- scans all models covering each of the 15 partial sums
+- uses fractions.Fraction throughout
+- does not import a project checker
+
+Secondary cross-check only: imported the historical a1294_seam_pilot.Checker and
+evaluated its lower() method on the singleton box with the five rational witness
+coordinates. The historical checker returned exactly:
+
+1739674247820415045342527228267900485813207074499/
+134217728000000000000000000000000000000000000000000
+
+The independent evaluator returned the same fraction. This secondary comparison
+does not replace the independent catalog calculation.

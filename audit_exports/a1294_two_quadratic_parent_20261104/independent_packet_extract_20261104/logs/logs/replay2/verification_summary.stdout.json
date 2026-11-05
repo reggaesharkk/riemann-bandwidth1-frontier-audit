@@ -1,0 +1,53 @@
+{
+  "child_path_depth": 44,
+  "exact_margins": {
+    "left": "7760205129699356804065918948443215217/7812500000000000000000000000000000000000",
+    "right": "156215021254826261948480423241409791537/2000000000000000000000000000000000000000000"
+  },
+  "extract_output_sha256": {
+    "O": "9d261c03f582e7b1f61bc08f38025d3871f01f70806c3ab87783a2a5768da072",
+    "OO": "9d261c03f582e7b1f61bc08f38025d3871f01f70806c3ab87783a2a5768da072",
+    "normal": "9d261c03f582e7b1f61bc08f38025d3871f01f70806c3ab87783a2a5768da072"
+  },
+  "model_counts_by_child": {
+    "left": {
+      "direct_piece": 2,
+      "segmented_constant": 13
+    },
+    "right": {
+      "direct_piece": 2,
+      "segmented_constant": 13
+    }
+  },
+  "models_each": 15,
+  "modes_equal": [
+    "normal",
+    "-O",
+    "-OO"
+  ],
+  "parent_and_children": [
+    65,
+    66,
+    67
+  ],
+  "parent_path_depth": 43,
+  "parent_split_axis": 0,
+  "positive_floor_terms": 22,
+  "scope": "source-authenticated bounded DFS through topology node 67; not full-tree replay",
+  "segments_for_positive_floors": 400,
+  "source_stream_sha256": {
+    "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+    "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+    "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+  },
+  "source_zip_sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+  "status": "PASS",
+  "terminal_indices": [
+    22,
+    23
+  ],
+  "terminal_kinds": [
+    "quadratic",
+    "quadratic"
+  ]
+}

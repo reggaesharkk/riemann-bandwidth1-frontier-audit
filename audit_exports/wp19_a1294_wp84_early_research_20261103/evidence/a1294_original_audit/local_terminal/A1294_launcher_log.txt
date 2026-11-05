@@ -1,0 +1,5 @@
+A1294 launcher started 
+Downloads: C:\Users\Asus\Downloads 
+Found ZIP: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK_PACKAGE.zip 
+Runner: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE\RUN_BENCHMARK.bat 
+Benchmark exit code: 0 

@@ -1,0 +1,1136 @@
+{
+  "repository": "reggaesharkk/riemann-bandwidth1-frontier-audit",
+  "collected": "2026-10-08",
+  "runs_scanned": 153,
+  "artifact_total": 112,
+  "active": 112,
+  "expired": 0,
+  "total_bytes": 13610363,
+  "by_branch": {
+    "research/frontier-7962-hostile-audit-v0.1": 44,
+    "research/bandwidth1-v0.2": 68
+  },
+  "artifacts": [
+    {
+      "id": 11298785983,
+      "name": "stage-a-cellmean",
+      "size": 543,
+      "expired": false,
+      "expires": "2027-01-02T08:26:56Z",
+      "digest": "sha256:bf9f1369f1f10a2b8766916410d4600b93e79428cc59007d4cae6baf7beb0e98",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188949166
+    },
+    {
+      "id": 11298681863,
+      "name": "stage-a-band-9600",
+      "size": 534,
+      "expired": false,
+      "expires": "2027-01-02T08:26:56Z",
+      "digest": "sha256:248c84a89abc2e2d111dc2a5a88cb18415accffdb58d41b3247573e485c964d9",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188949166
+    },
+    {
+      "id": 11298656161,
+      "name": "stage-a-band-4800",
+      "size": 535,
+      "expired": false,
+      "expires": "2027-01-02T08:26:56Z",
+      "digest": "sha256:7c343af9537daf84b24a4d859a330d8a48dc2dbfa3681c852439ed0bdb150005",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188949166
+    },
+    {
+      "id": 11297544792,
+      "name": "stage-a-band-2400",
+      "size": 535,
+      "expired": false,
+      "expires": "2027-01-02T08:26:56Z",
+      "digest": "sha256:f948ae9ad8fc299527dfb1f01d580fc04e55df104e3fb938e21ab89ba66181d2",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188949166
+    },
+    {
+      "id": 11299510838,
+      "name": "c7-orbit-batch-9",
+      "size": 1288,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:a0cd1d3cf3eccd290111d597f5b6b1ed4f579857cdc9a44bf280f30fa633bfe2",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299508078,
+      "name": "c7-orbit-batch-19",
+      "size": 1229,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:3140b22f58f7f31d1238418a6fbd828e8b22fa94267860efb1ef4ab2193fd140",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299495774,
+      "name": "c7-orbit-batch-7",
+      "size": 1283,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:033129fecbc93097bbee5e857f014c8f92a98e292149985c8610b49f09248012",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299405191,
+      "name": "c7-orbit-batch-11",
+      "size": 1301,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:c069d562e11170bd3fd7a18f49114840a56ce26acab66c2d6b1a7bd99b019668",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299211773,
+      "name": "c7-orbit-batch-10",
+      "size": 1291,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:053ab5e0daae5d33099707aa9d6fda342f1159749e3ac5a00f404e33cfd0d973",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299141110,
+      "name": "c7-orbit-batch-20",
+      "size": 1253,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:750d291d31a9e4cd827bfdf8c913c8b7d979efa60f260ab512655bbbb9b83830",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299135747,
+      "name": "c7-orbit-batch-1",
+      "size": 1297,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:8e18a9877ba4157677f7e4498dc8ee6ab7cd7b5cc53c109a5ed8a30d3b952bc9",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11299040191,
+      "name": "c7-orbit-batch-12",
+      "size": 1288,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:29feb199e1199c99f4cb1c278cd4fd46ac7b1c32627a91d428ef23778324f903",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298910121,
+      "name": "c7-orbit-batch-4",
+      "size": 1287,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:643b0ed85307353e00a2b0b5b0cb3fd0255b5f419b088a4f1bccfb96b3d597e9",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298881721,
+      "name": "c7-orbit-batch-18",
+      "size": 1250,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:04ef7368dd75be5b873bf009a6aec9f2cd82e86abd8a8eb9a91925d45133d8a2",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298881553,
+      "name": "c7-orbit-batch-17",
+      "size": 1240,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:60c59040aca8b3720758be237d113dee7c92209bbc77bdc22094d3ea2303cd4b",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298817158,
+      "name": "c7-orbit-batch-3",
+      "size": 1275,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:531eecdf140c6deb8ce4a6dede62dc9110a67d927660039b7a274f9cd5ed07d7",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298777068,
+      "name": "c7-orbit-batch-5",
+      "size": 1281,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:da26128adc17c0fc6ed6092c64c7682e51c179ea129a56770bf2926506f58494",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298714167,
+      "name": "c7-orbit-batch-22",
+      "size": 1246,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:6f881d36082c95c38ccd8f5bc7376bdd92bc40e3073a2c95a1ff0783ef1b68fd",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298672061,
+      "name": "c7-orbit-batch-8",
+      "size": 1275,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:09af19f10dfa59e4ee6883a89901fc3dddfd6e410b9bc004dd466986915abe59",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298664520,
+      "name": "c7-orbit-batch-23",
+      "size": 1233,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:46f9b79055d69ef065ea22955769d4c032a2947174baec1c7c390bd5fee745e7",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298658942,
+      "name": "c7-orbit-batch-15",
+      "size": 1239,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:5d50c1e5a5796444de232c19aacb848ab10afc4a4d919ee2bc0bd1b016049acd",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298636982,
+      "name": "c7-orbit-batch-13",
+      "size": 1236,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:8fd9bf66126176650f1eecfc6e9efed0f998e91319a17e2e77a205b3a4f25b58",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298552505,
+      "name": "c7-orbit-batch-16",
+      "size": 1246,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:aa5ea4f942122d775dc871672e09dc9f252c1342c2df5e60db8477289fc04864",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298552341,
+      "name": "c7-orbit-batch-14",
+      "size": 1262,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:129a9ee831a5e4d0c9fe074c4589792f0e74c9590fc109cd11817fbbaf7e00db",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298473431,
+      "name": "c7-orbit-batch-0",
+      "size": 1288,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:f97c6cec90d655fab0dc3400459f0c43d113feb143404225e9fa7f7ebe5f770b",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11298204955,
+      "name": "c7-orbit-batch-2",
+      "size": 1284,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:c9c3bc8f91c38fd185568dbafcd219aa54e67d45ac7e2be5355009fcc5a8d675",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11297569411,
+      "name": "c7-orbit-batch-21",
+      "size": 1241,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:112d7e3a5b0cb5b78dd781589408e97d6e6c86656c4bd03acfd7d9cf63f1761b",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11297419613,
+      "name": "c7-orbit-batch-6",
+      "size": 1254,
+      "expired": false,
+      "expires": "2027-01-02T08:20:55Z",
+      "digest": "sha256:7d7465763a1219db4f050e760080273b6faa219acdd3636e8295041cbe9f8863",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37188620618
+    },
+    {
+      "id": 11297630810,
+      "name": "c7-symmetry-reduction",
+      "size": 1191,
+      "expired": false,
+      "expires": "2027-01-02T07:56:39Z",
+      "digest": "sha256:d68f6c78ce3851ec13dda9c8b0a6a8efc75ea61e92be79d49384d60b47b708f6",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187321072
+    },
+    {
+      "id": 11297179151,
+      "name": "dispersion-bridge-replay",
+      "size": 1649,
+      "expired": false,
+      "expires": "2027-01-02T07:51:48Z",
+      "digest": "sha256:a1a9ad93dc6743bbc8bdf31a64ba75daafff750cbe7d3e77cb784bb7c25cd0d7",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187078273
+    },
+    {
+      "id": 11297805759,
+      "name": "c7-exact-pilot-3",
+      "size": 268,
+      "expired": false,
+      "expires": "2027-01-02T07:50:45Z",
+      "digest": "sha256:3ff0febc262820169497989625632e0c2f9953755ce26f5045b10219e64e4412",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187029878
+    },
+    {
+      "id": 11297665931,
+      "name": "c7-exact-pilot-0",
+      "size": 249,
+      "expired": false,
+      "expires": "2027-01-02T07:50:45Z",
+      "digest": "sha256:f2f419f29e47fa85021d2bfd068d20fe24c468cc07d0f24a60714b396e322123",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187029878
+    },
+    {
+      "id": 11297306905,
+      "name": "c7-exact-pilot-2",
+      "size": 286,
+      "expired": false,
+      "expires": "2027-01-02T07:50:45Z",
+      "digest": "sha256:75b4bcacc48bc4278046524b3e738608a541820ebbfea753d43268606a306d6e",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187029878
+    },
+    {
+      "id": 11297248166,
+      "name": "c7-exact-pilot-4",
+      "size": 283,
+      "expired": false,
+      "expires": "2027-01-02T07:50:45Z",
+      "digest": "sha256:8d1217b7437de3a63d344a6dfb97b58c1bf1e0370586e51536e848790c6497cf",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187029878
+    },
+    {
+      "id": 11297184365,
+      "name": "c7-exact-pilot-1",
+      "size": 272,
+      "expired": false,
+      "expires": "2027-01-02T07:50:45Z",
+      "digest": "sha256:e34574d483afc47bbbef3d2241787efd701a8e773d233f5ddc492553336b4111",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37187029878
+    },
+    {
+      "id": 11296379600,
+      "name": "corrected-gamma-global-replay",
+      "size": 1068,
+      "expired": false,
+      "expires": "2027-01-02T07:35:42Z",
+      "digest": "sha256:e32c7de076c8bf96e269a6fd4edef03e798c3a328dd3658d846a528b6c2566cf",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37186263034
+    },
+    {
+      "id": 11296895747,
+      "name": "public-higher-moment-gate-reproduction",
+      "size": 3257,
+      "expired": false,
+      "expires": "2027-01-02T07:02:16Z",
+      "digest": "sha256:6a8dc69a6c32be66abde1d4403e925d17f718b0a063ae2bdbadc19e4d44721b6",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37184586211
+    },
+    {
+      "id": 11296357075,
+      "name": "public-higher-moment-gate-reproduction",
+      "size": 2980,
+      "expired": false,
+      "expires": "2027-01-02T06:58:34Z",
+      "digest": "sha256:642fd690289bb771575f5bd222a92587030a3afaa52283e1aed606726ff9b329",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37184383113
+    },
+    {
+      "id": 11296477488,
+      "name": "tight-rankin-gamma-tail",
+      "size": 886,
+      "expired": false,
+      "expires": "2027-01-02T06:57:10Z",
+      "digest": "sha256:d26b9215f69de6720e42b80a82643dc833b7c238c4e73c621d4f9c337411bbf2",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37184311986
+    },
+    {
+      "id": 11296625406,
+      "name": "rankin-gamma-tail-diagnostic",
+      "size": 752,
+      "expired": false,
+      "expires": "2027-01-02T06:52:32Z",
+      "digest": "sha256:722c6d837585dfaf20c5f09dc756091e9072767a22f010d44fa9e785eb0083a7",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37184085697
+    },
+    {
+      "id": 11296081970,
+      "name": "reconstructed-paper-tail",
+      "size": 1316,
+      "expired": false,
+      "expires": "2027-01-02T06:47:56Z",
+      "digest": "sha256:d75ddeb26c5d7a8372a11278f891d71ef5058c823f85ed4e44fac57c7b109ba7",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37183856136
+    },
+    {
+      "id": 11296510091,
+      "name": "public-main-envelope-reproduction",
+      "size": 1880,
+      "expired": false,
+      "expires": "2027-01-02T06:34:45Z",
+      "digest": "sha256:97dc97e63bc00fd0cb56944090acb593e202148755666a04551ed21659b32418",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37183212740
+    },
+    {
+      "id": 11295314333,
+      "name": "public-tail-envelope-reproduction",
+      "size": 850,
+      "expired": false,
+      "expires": "2027-01-02T06:28:28Z",
+      "digest": "sha256:ed8f89c5b1a3ed8b7f79a2bfbd67db5dcdb8d867410d80f558ea8e9117b4b07d",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37182902963
+    },
+    {
+      "id": 11295985176,
+      "name": "public-continuum-core-reproduction",
+      "size": 2483,
+      "expired": false,
+      "expires": "2027-01-02T06:12:09Z",
+      "digest": "sha256:7ca83e8f4e5d61f759252eb5148f50393d8182789aeb5098caf273974defb2f6",
+      "branch": "research/frontier-7962-hostile-audit-v0.1",
+      "run": 37182113806
+    },
+    {
+      "id": 11286675906,
+      "name": "a1294-seam-aware-full-certificate",
+      "size": 6737519,
+      "expired": false,
+      "expires": "2026-11-02T22:30:42Z",
+      "digest": "sha256:11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37133363690
+    },
+    {
+      "id": 11283653186,
+      "name": "a1294-seam-aware-generated",
+      "size": 6735223,
+      "expired": false,
+      "expires": "2026-11-02T20:17:03Z",
+      "digest": "sha256:56fa57b1cd36d56a19c3904479eca0bf9e1953df90652e1618719bcd59ae4b93",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37133363690
+    },
+    {
+      "id": 11272462782,
+      "name": "a1294-canonical-smoke",
+      "size": 1940,
+      "expired": false,
+      "expires": "2027-01-01T11:12:36Z",
+      "digest": "sha256:70a35327a9a5fe8c6b3c1d069db2f003caa4d0528c11e7950c5443842cc2663e",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118923577
+    },
+    {
+      "id": 11272680789,
+      "name": "a1295-pilot-3.12",
+      "size": 1294,
+      "expired": false,
+      "expires": "2027-01-01T11:08:50Z",
+      "digest": "sha256:f87454ffc603a5c21a15aa4f095ad6fc36240fc76f17f5df1bd65b3638b00933",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118721912
+    },
+    {
+      "id": 11271999796,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T11:08:50Z",
+      "digest": "sha256:4ef2e5279beb31080203c466f6adbb94e54a9d332c63082c7706649b2f430e35",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118721912
+    },
+    {
+      "id": 11272838391,
+      "name": "a1293-regeneration",
+      "size": 1272,
+      "expired": false,
+      "expires": "2027-01-01T11:07:21Z",
+      "digest": "sha256:cac0dc840d203294cf68cb6f36281ad29d5011b872a28d90b0275d75651259a1",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118641060
+    },
+    {
+      "id": 11272715520,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T11:07:21Z",
+      "digest": "sha256:953a398d7ed551fead228c4b32427814cb67015efaf905cf71b549d3ac4ab480",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118640989
+    },
+    {
+      "id": 11272591875,
+      "name": "a1295-pilot-3.12",
+      "size": 1294,
+      "expired": false,
+      "expires": "2027-01-01T11:07:21Z",
+      "digest": "sha256:f2cf853b100232f3ad1ad974ab2ffa4567cc61716cd7215addb8f7311ace979c",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118640989
+    },
+    {
+      "id": 11272900009,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T11:06:45Z",
+      "digest": "sha256:2c53d9e4fd156dc18deb0623cd1d72bcea4e6c84875f0112000e52ffa62aa07f",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118605914
+    },
+    {
+      "id": 11271894723,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T11:06:45Z",
+      "digest": "sha256:467767d45f87a3a37bafb23fb5ae008ff889aea29ccedb87ca7ae4f5d1334d92",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118605914
+    },
+    {
+      "id": 11274155756,
+      "name": "a1293-regeneration",
+      "size": 1269,
+      "expired": false,
+      "expires": "2027-01-01T11:06:45Z",
+      "digest": "sha256:e793dbc90dd80423c71c27aa07d749e20ec0a8aeefc62fcdb636c5ecdaf928bf",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118605911
+    },
+    {
+      "id": 11272815085,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T11:05:56Z",
+      "digest": "sha256:08238c813eec04a00412a3f7b44c2e751cd48c0ace06107cefb4df2dd9c1272c",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118559970
+    },
+    {
+      "id": 11271814654,
+      "name": "a1295-pilot-3.12",
+      "size": 1294,
+      "expired": false,
+      "expires": "2027-01-01T11:05:56Z",
+      "digest": "sha256:d0f82cf7566d0e219844f5fde941e1013471928f9c1303d13117ec41c611a8b1",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118559970
+    },
+    {
+      "id": 11274080785,
+      "name": "a1293-regeneration",
+      "size": 1272,
+      "expired": false,
+      "expires": "2027-01-01T11:05:56Z",
+      "digest": "sha256:b64ee9704590c31fa560230f2b3ec5ff5da0c2522a252e964681729a3853bd47",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118559944
+    },
+    {
+      "id": 11273032930,
+      "name": "a1293-regeneration",
+      "size": 1273,
+      "expired": false,
+      "expires": "2027-01-01T11:05:50Z",
+      "digest": "sha256:21fefc17976e7a49866b4f5041c60d8d8590e01655e0a0b65d7c3d2d354621f4",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118554702
+    },
+    {
+      "id": 11272596740,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T11:05:50Z",
+      "digest": "sha256:12b194c4541e70af0a8622357db7cb26b36fc7ecd8100a25aa598882bdeb9ee5",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118554651
+    },
+    {
+      "id": 11271984587,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T11:05:50Z",
+      "digest": "sha256:025793a04ef731a32df3c54f32d196bb980ebe91d9b7485e28472b634950b4e6",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118554651
+    },
+    {
+      "id": 11273273568,
+      "name": "a1293-regeneration",
+      "size": 1272,
+      "expired": false,
+      "expires": "2027-01-01T11:05:37Z",
+      "digest": "sha256:1da78d86cd6b1da3850775e810323e82de1053295ed044c9f3c82989cf039352",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118541724
+    },
+    {
+      "id": 11272770179,
+      "name": "a1295-pilot-3.12",
+      "size": 1292,
+      "expired": false,
+      "expires": "2027-01-01T11:05:37Z",
+      "digest": "sha256:66324174b4c46d5b16cea7eaf6ace1804771e086e7ba8188221667ebec006da8",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118541716
+    },
+    {
+      "id": 11271599963,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1300,
+      "expired": false,
+      "expires": "2027-01-01T11:05:37Z",
+      "digest": "sha256:075c030e8a41f9eb6a77882baae0cebb1bbe5cd8cfbc69d5a61c7af9fa19f549",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118541716
+    },
+    {
+      "id": 11272103847,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T11:00:53Z",
+      "digest": "sha256:e8c4c8d9fd7501f71497243907e24894d373e85a7c8abd5c3b4bfd6eabd9d3c3",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118280507
+    },
+    {
+      "id": 11271948950,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T11:00:53Z",
+      "digest": "sha256:475f7fe64c123d822d9b5332dcfb059d03f152ca298f4f961ceabf8b8a22e86c",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118280507
+    },
+    {
+      "id": 11273421745,
+      "name": "a1293-regeneration",
+      "size": 1274,
+      "expired": false,
+      "expires": "2027-01-01T11:00:53Z",
+      "digest": "sha256:b3fa03e9f20dce1a49c51e032c7db358229984c8e6acc9de4cd470c6d7965f41",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118280499
+    },
+    {
+      "id": 11274220149,
+      "name": "a1293-regeneration",
+      "size": 1270,
+      "expired": false,
+      "expires": "2027-01-01T11:00:22Z",
+      "digest": "sha256:e0f596fdec80751b93c5e6141ef900bd486d633e7029f367da63b34cac585150",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118244811
+    },
+    {
+      "id": 11272058857,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T11:00:22Z",
+      "digest": "sha256:7a8c94c098ba7c62afeaa5e07e2056fa54911ea439cfd433ce6a4aed08e4d480",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118244786
+    },
+    {
+      "id": 11271817926,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T11:00:22Z",
+      "digest": "sha256:7e50d428983bcdb3d5e055ab9a176540be663c323ba59f6b841b2c46f5c75bb1",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118244786
+    },
+    {
+      "id": 11271814115,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1301,
+      "expired": false,
+      "expires": "2027-01-01T10:59:34Z",
+      "digest": "sha256:92ddb0a96a9752738b450399bbc312d727942bb6c6c70a72c78108861858aeb0",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118194352
+    },
+    {
+      "id": 11271549675,
+      "name": "a1295-pilot-3.12",
+      "size": 1292,
+      "expired": false,
+      "expires": "2027-01-01T10:59:34Z",
+      "digest": "sha256:5ccea36200556f4f8285a06f10f505d72fea871c6a6b804ba32c54eac21f0ee4",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118194352
+    },
+    {
+      "id": 11273186995,
+      "name": "a1293-regeneration",
+      "size": 1271,
+      "expired": false,
+      "expires": "2027-01-01T10:59:34Z",
+      "digest": "sha256:9d52b5eb9e445839b616cc2526242d3dc80e7466eb5dd81f677fbabe700e36cd",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118194348
+    },
+    {
+      "id": 11273865778,
+      "name": "a1293-regeneration",
+      "size": 1270,
+      "expired": false,
+      "expires": "2027-01-01T10:59:29Z",
+      "digest": "sha256:4af4de7b4fb91b06023d04b45d1ccf02cf979cf48fbb39f09e276a5590ce45e9",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118189730
+    },
+    {
+      "id": 11272247380,
+      "name": "a1295-pilot-3.12",
+      "size": 1294,
+      "expired": false,
+      "expires": "2027-01-01T10:59:29Z",
+      "digest": "sha256:22b4123d11e1ae2911ab63931035d77b9df06b486b5d6e2a37d8fd0c92fa96bb",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118189722
+    },
+    {
+      "id": 11271509723,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T10:59:29Z",
+      "digest": "sha256:cac6ac6293bd2f93f8719fb4d289833748bf76484230becddfb7217b2772919a",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118189722
+    },
+    {
+      "id": 11273456570,
+      "name": "a1293-regeneration",
+      "size": 1272,
+      "expired": false,
+      "expires": "2027-01-01T10:56:42Z",
+      "digest": "sha256:eebe11fd92ae4dfc85c9c387374522f2004ad660b9d05d81f50603647e337135",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118043967
+    },
+    {
+      "id": 11271833859,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T10:56:42Z",
+      "digest": "sha256:ece99ff57dec09890f02956e263bd759a1bd9438de4f02d253766dd4205a8323",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118043954
+    },
+    {
+      "id": 11271439871,
+      "name": "a1295-pilot-3.12",
+      "size": 1293,
+      "expired": false,
+      "expires": "2027-01-01T10:56:42Z",
+      "digest": "sha256:1c893c519bf2ad9400ff8cb78100f2b415d0435c3d77a5ba01a3a82035d7ba87",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118043954
+    },
+    {
+      "id": 11272551504,
+      "name": "a1295-pilot-3.12",
+      "size": 1293,
+      "expired": false,
+      "expires": "2027-01-01T10:55:56Z",
+      "digest": "sha256:c9178b0045d368ff9349dbc3d95445e4b01509c45d564dc3a2615a0ec96f2f6a",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118004503
+    },
+    {
+      "id": 11271629120,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1299,
+      "expired": false,
+      "expires": "2027-01-01T10:55:56Z",
+      "digest": "sha256:85af32750cb9bac06e612d455ba1ae6adcae583127151654f6b6144271f7385c",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118004503
+    },
+    {
+      "id": 11273920741,
+      "name": "a1293-regeneration",
+      "size": 1270,
+      "expired": false,
+      "expires": "2027-01-01T10:55:56Z",
+      "digest": "sha256:846cd017a679dc040a685ed65f96522b5b7cfb9fb62a5c6b3ff741405d7411c6",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37118004464
+    },
+    {
+      "id": 11272038541,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1302,
+      "expired": false,
+      "expires": "2027-01-01T10:55:37Z",
+      "digest": "sha256:1bcdd22ae55f767d3775d0fd04dd1913cbc58894867e4aab85e65c53ae25d5f8",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117987275
+    },
+    {
+      "id": 11271414808,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T10:55:37Z",
+      "digest": "sha256:86cde9a872486deb1f7e84ca83a7b1616d0eb754beadbe2520db6b4c3a57ba71",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117987275
+    },
+    {
+      "id": 11272082275,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1300,
+      "expired": false,
+      "expires": "2027-01-01T10:55:34Z",
+      "digest": "sha256:5bb4f10cd56492e8e85e66a5f44438e1bfedb68c9e250c1987bbda228d7596b0",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117985445
+    },
+    {
+      "id": 11271499396,
+      "name": "a1295-pilot-3.12",
+      "size": 1291,
+      "expired": false,
+      "expires": "2027-01-01T10:55:34Z",
+      "digest": "sha256:68d473295bc9b8793a47598ef30135fd66307c661ad7b69619e3419bd88d562c",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117985445
+    },
+    {
+      "id": 11272556325,
+      "name": "a1295-pilot-3.12",
+      "size": 1294,
+      "expired": false,
+      "expires": "2027-01-01T10:53:56Z",
+      "digest": "sha256:9de83215442a9b0fc8ce90a7f1a55605bd5e4c1a6f6ebf51e6dcdc2e731691cc",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117901973
+    },
+    {
+      "id": 11272082168,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T10:53:56Z",
+      "digest": "sha256:3a0df9360ac42796bd0e893093249c9701673c811fc4423512115d8adbbde781",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117901973
+    },
+    {
+      "id": 11271858707,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T10:53:18Z",
+      "digest": "sha256:017ea3deb1d4640c8ae26dc76e7ab9cb9454cb67dda74452b21b34fc00cc7add",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117870403
+    },
+    {
+      "id": 11271399407,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T10:53:18Z",
+      "digest": "sha256:8cbe65d57b7ea4b6f49dfe73134a9f718d5b4608bbac352c648c81e0af803a62",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117870403
+    },
+    {
+      "id": 11272196836,
+      "name": "a1295-pilot-3.12",
+      "size": 1292,
+      "expired": false,
+      "expires": "2027-01-01T10:52:30Z",
+      "digest": "sha256:3a1d90dce674b4f04a418b938a4ceb31a29f4266d92cad292e503b15c1ce4924",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117827942
+    },
+    {
+      "id": 11271499123,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T10:52:30Z",
+      "digest": "sha256:33a21fb347a183481b9effc420ca9c5f550c7c872a9b41aee3b79a67248e4d2a",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117827942
+    },
+    {
+      "id": 11272572689,
+      "name": "a1294-scaling-1m",
+      "size": 1006,
+      "expired": false,
+      "expires": "2027-01-01T10:52:27Z",
+      "digest": "sha256:c8fa4014e39ea362ba87839a8b290aa9391a26e03e72e661537696d582548e9a",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117825391
+    },
+    {
+      "id": 11271513779,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1300,
+      "expired": false,
+      "expires": "2027-01-01T10:47:58Z",
+      "digest": "sha256:82dc5858d31b36fd1dfad96b905939d763821b3f85a44113ecd57df26ac8be9d",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117582070
+    },
+    {
+      "id": 11271409038,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T10:47:58Z",
+      "digest": "sha256:eee3547ee87442f1ab477bd82163606d46ab570d7dbec364816b5f4ea2408ca3",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117582070
+    },
+    {
+      "id": 11272088005,
+      "name": "a1294-scaling-250k",
+      "size": 1019,
+      "expired": false,
+      "expires": "2027-01-01T10:47:55Z",
+      "digest": "sha256:ebed6d4f37018688ba7549df066174f8c8ed9c690f4781bf868a65c9f6ea21ed",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117579760
+    },
+    {
+      "id": 11271463543,
+      "name": "a1295-pilot-3.12",
+      "size": 1292,
+      "expired": false,
+      "expires": "2027-01-01T10:42:46Z",
+      "digest": "sha256:f451ec3b76d97d0c16f960a4e144aa02e3fcd40255b496e7bf257143283345fd",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117310955
+    },
+    {
+      "id": 11271388784,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1299,
+      "expired": false,
+      "expires": "2027-01-01T10:42:46Z",
+      "digest": "sha256:7c7632b585a996114e4c9d2b01b7848b23b8ddce443d0c2727c6e8aaf6a30374",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37117310955
+    },
+    {
+      "id": 11270773401,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T09:51:05Z",
+      "digest": "sha256:57b0c274b6e94cdad4da9d9ade8649e0483c329d4b34967a697ecc888072420e",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114431539
+    },
+    {
+      "id": 11270173395,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T09:51:05Z",
+      "digest": "sha256:5db825bae6a1e1d56dc2808909462be024ce904119f9ac0ac2fe136758ccbf43",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114431539
+    },
+    {
+      "id": 11270793234,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T09:51:01Z",
+      "digest": "sha256:4f0a39ce4fefa6ec8bc1f9138ac92b338728c91100e60f295860439bd96aa43a",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114427888
+    },
+    {
+      "id": 11270683478,
+      "name": "a1295-pilot-3.12",
+      "size": 1293,
+      "expired": false,
+      "expires": "2027-01-01T09:51:01Z",
+      "digest": "sha256:cacbb06ea24185cc8abda3cb48f91d9c27b2d03e0338754fbf4a762399255266",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114427888
+    },
+    {
+      "id": 11270957543,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T09:46:17Z",
+      "digest": "sha256:36f3d3837a007411d2c5e44ba1b3b2d1c85bf663e822c8c1f17b6cf31d0f83b7",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114168647
+    },
+    {
+      "id": 11270922615,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T09:46:17Z",
+      "digest": "sha256:e3ea4c6b76913e56c6b72b9b7653997b46081a0980cbdedf0548c7fb1faa8f18",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114168647
+    },
+    {
+      "id": 11270852709,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1301,
+      "expired": false,
+      "expires": "2027-01-01T09:45:02Z",
+      "digest": "sha256:a579d5fda287bd9bcabb8681ddd9f07acecce3e3981df8d5134d8c53d2a9f0a3",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114094312
+    },
+    {
+      "id": 11270342358,
+      "name": "a1295-pilot-3.12",
+      "size": 1293,
+      "expired": false,
+      "expires": "2027-01-01T09:45:02Z",
+      "digest": "sha256:17681b946612785a6cc0806b92852f2f54f3eb577d261ed770c89308abe1ebd1",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114094312
+    },
+    {
+      "id": 11270686742,
+      "name": "a1295-pilot-3.12",
+      "size": 1295,
+      "expired": false,
+      "expires": "2027-01-01T09:43:25Z",
+      "digest": "sha256:e56d29d86018a8b542f5518047772d45a9142504ac818e31127257896dc139d0",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114007563
+    },
+    {
+      "id": 11270507057,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T09:43:25Z",
+      "digest": "sha256:b35dc92ab3d21dbc0f4a35229e06d9a5c0bacb1abea3eae296ef123bb7d35bd6",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37114007563
+    },
+    {
+      "id": 11270882502,
+      "name": "a1295-pilot-3.12",
+      "size": 1293,
+      "expired": false,
+      "expires": "2027-01-01T09:43:12Z",
+      "digest": "sha256:33b46a03d8cca19e3f32232e5c96f9466f9db4b1df03b7d2b772e12bd3764117",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37113994877
+    },
+    {
+      "id": 11270737798,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T09:43:12Z",
+      "digest": "sha256:7740357b5cbef38c02c49f87b827bc8be7d93d5bd8334d1dba4561ba46fb25c1",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37113994877
+    },
+    {
+      "id": 11271121990,
+      "name": "a1295-pilot-3.12",
+      "size": 1293,
+      "expired": false,
+      "expires": "2027-01-01T09:41:54Z",
+      "digest": "sha256:af1acae45855923fe93021f13d3ce318839f31fcbb5a0fa12bc3db3f55002557",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37113922130
+    },
+    {
+      "id": 11270581811,
+      "name": "a1295-pilot-pypy3.10",
+      "size": 1303,
+      "expired": false,
+      "expires": "2027-01-01T09:41:54Z",
+      "digest": "sha256:ad719003743a811bba0f9172cb09e7b70c6b3b25f9b198ad2b24601135452a60",
+      "branch": "research/bandwidth1-v0.2",
+      "run": 37113922130
+    }
+  ],
+  "limitation": "ZIP payloads not inspectable through available connector; metadata only."
+}

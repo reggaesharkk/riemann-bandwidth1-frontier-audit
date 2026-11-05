@@ -1,0 +1,32 @@
+{
+  "zip": "C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit\\audit_exports\\A1294_NODE63_SOURCE_CONNECTED_FIVE_NODE_REPLAY_20261105.zip",
+  "bytes": 24172197,
+  "sha256": "9f7ffe3ad15c1cef23a56384896e6afd4641442e197df7629bd53602d52f5cd3",
+  "manifest_entries": 37,
+  "CRC": "PASS",
+  "independent_extraction_replays": [
+    {
+      "mode": [],
+      "exit": 0,
+      "stdout": "PASS: manifests, preserved objects, original source prefix/catalog data, exact geometry, bounded controls and recorded clean Lean builds. Python verification is not a substitute for Lean replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-O"
+      ],
+      "exit": 0,
+      "stdout": "PASS: manifests, preserved objects, original source prefix/catalog data, exact geometry, bounded controls and recorded clean Lean builds. Python verification is not a substitute for Lean replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-OO"
+      ],
+      "exit": 0,
+      "stdout": "PASS: manifests, preserved objects, original source prefix/catalog data, exact geometry, bounded controls and recorded clean Lean builds. Python verification is not a substitute for Lean replay.\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "terminal21 and source-connected nodes63..67 kernel proved; complete root OPEN"
+}

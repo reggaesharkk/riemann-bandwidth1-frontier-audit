@@ -1,0 +1,11 @@
+Verified 2026-11-04 in existing isolated WSL project.
+Lean 4.33.0-rc2, aarch64-unknown-linux-gnu
+Compiler d8b18978322de05a8f3dba51ef03cf5461676c17 (Release)
+Lake 5.0.0-src+d8b1897
+Upstream fba91d214655aaa1fd0504bb893c8859c20c79f9
+Mathlib 51e6992efd06126df61a496bebf8f49482a4e129
+Compiled source SHA256 4a34b508b8ce2dbf72f0bcacce70d01acea7848d381882f72fbeebcf1124bf61
+Object SHA256 f65ae374b127388dc40e203a57337dd7e2d594417453bca4d0ff00df5c557a57
+Actual shell BUILD_EXIT=0; GNU time Exit status: 0.
+Tracked isolated project status: clean.
+Command: /usr/bin/time -v timeout 300 lake env lean Zeta23/ThmD/Sextuple/CompositionalLeaf.lean -o [additive packet directory]/CompositionalLeaf.olean

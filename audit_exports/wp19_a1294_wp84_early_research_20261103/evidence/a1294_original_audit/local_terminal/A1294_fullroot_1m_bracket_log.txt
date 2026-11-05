@@ -1,0 +1,37 @@
+Full-root 1M bracket started 
+Base: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE 
+==============================================================================
+FULL-ROOT 1M BRACKET: A1299 / A12994 / A1300
+==============================================================================
+Machine: ARM64 Windows-11-10.0.26200-SP0
+Workers: 6 chunk: 10000 budget: 1000000
+
+------------------------------------------------------------------------------
+A1299 A = 1299/100000
+Visited: 1,055,320
+Pending: 366
+Max depth: 73
+Throughput: 3497.69 nodes/sec
+Status: BUDGET_REACHED_WITH_FRONTIER
+
+------------------------------------------------------------------------------
+A12994 A = 6497/500000
+Visited: 1,041,970
+Pending: 302
+Max depth: 73
+Throughput: 2984.92 nodes/sec
+Status: BUDGET_REACHED_WITH_FRONTIER
+
+------------------------------------------------------------------------------
+A1300 A = 13/1000
+Visited: 1,066,433
+Pending: 345
+Max depth: 74
+Throughput: 3903.89 nodes/sec
+Status: BUDGET_REACHED_WITH_FRONTIER
+
+==============================================================================
+DONE
+Result: C:\Users\Asus\Downloads\A1294_LOCAL_BENCHMARK\A1294_LOCAL_BENCHMARK_PACKAGE\results\A1294_FULLROOT_1M_BRACKET_RESULT.json
+Total wall: 923.98 sec
+==============================================================================

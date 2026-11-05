@@ -1,0 +1,9 @@
+{
+  "zip": "C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit\\audit_exports\\A1294_GLOBAL_INTERFACE_SOURCE_BRIDGE_AUDIT_20261104.zip",
+  "bytes": 5877426,
+  "sha256": "151048a061e5aef71befb0150c6d44e034855171c9b5c7949ac875e7eabf53ba",
+  "manifest_entries": 53,
+  "CRC": "PASS",
+  "independent_extraction_manifest": "PASS",
+  "proof_scope": "CONDITIONAL_GLOBAL_INTERFACE_ONLY; SOURCE_CONNECTED_SUBTREE_OPEN"
+}

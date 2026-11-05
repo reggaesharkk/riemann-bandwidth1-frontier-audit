@@ -1,0 +1,24 @@
+[
+  {
+    "mode": [],
+    "exit": 0,
+    "stdout": "PASS exact anchor, 15 distance supports, segmented seams/catalog records, tangent 805762688477455194592676257298467787/50000000000000000000000000000000000000 margin 158762688477455194592676257298467787/50000000000000000000000000000000000000\nPASS independent DFS geometry and terminal cursor\n",
+    "stderr": ""
+  },
+  {
+    "mode": [
+      "-O"
+    ],
+    "exit": 0,
+    "stdout": "PASS exact anchor, 15 distance supports, segmented seams/catalog records, tangent 805762688477455194592676257298467787/50000000000000000000000000000000000000 margin 158762688477455194592676257298467787/50000000000000000000000000000000000000\nPASS independent DFS geometry and terminal cursor\n",
+    "stderr": ""
+  },
+  {
+    "mode": [
+      "-OO"
+    ],
+    "exit": 0,
+    "stdout": "PASS exact anchor, 15 distance supports, segmented seams/catalog records, tangent 805762688477455194592676257298467787/50000000000000000000000000000000000000 margin 158762688477455194592676257298467787/50000000000000000000000000000000000000\nPASS independent DFS geometry and terminal cursor\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,10 @@
+GENERIC_CHECKER_KERNEL_PROVED: YES, reusable piecewise-envelope checker with internal piece validity checks; not a complete quadratic-leaf/tree decoder.
+COMPACT_CERTIFICATE_FORMAT: DESIGN SPECIFIED; acceptance implementation OPEN.
+SOURCE_DECODER_STATUS: OPEN; authentic prefix supplied as external JSON, not decoded inside Lean.
+EXTERNAL_TRUST_BOUNDARY: source ZIP hashes and Python conversion remain external; Lean proves supplied mathematical literals.
+SMALL_MULTILEAF_KERNEL_PROVED: prior two-leaf parent preserved; no new compact multi-leaf proof.
+MEMORY_AND_SIZE_SCALING: generic source 10677 bytes versus 245907 bytes; source reduction excludes concrete certificates. Build 125.07 seconds, peak RSS 5654328 KiB. No full-scale inference.
+FULL_CERTIFICATE_FEASIBILITY: OPEN. Next obligations: canonical data decoder/correspondence, generic fifteen-term payload soundness, a concrete compact two-leaf reflection acceptance proof, then at most four/eight leaves under a memory cap.
+FULL_A1294_THEOREM_STATUS: NOT_YET_PROVED.
+
+Pinned environment inherited from the verified parent: Lean 4.33.0-rc2, upstream fba91d214655aaa1fd0504bb893c8859c20c79f9, Mathlib 51e6992efd06126df61a496bebf8f49482a4e129. Generic build log confirms exit 0 and standard axioms only. Initial failed external-path build log is preserved. Prior packet verification passed. No WP84 status changes.

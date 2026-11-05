@@ -1,0 +1,8 @@
+{
+  "entry_mutation": "REJECTED",
+  "index_shift": "REJECTED",
+  "reorder": "REJECTED",
+  "duplicate": "REJECTED",
+  "truncation": "REJECTED",
+  "mismatched_source_hash": "REJECTED"
+}

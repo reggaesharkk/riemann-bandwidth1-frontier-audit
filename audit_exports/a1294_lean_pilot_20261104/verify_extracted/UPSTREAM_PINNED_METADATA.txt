@@ -1,0 +1,18 @@
+Repository: https://github.com/anthropics/formal-math
+Commit: fba91d214655aaa1fd0504bb893c8859c20c79f9
+Lean project subdirectory: zeta23
+
+Pinned environment/dependency metadata read from that exact public commit:
+  zeta23/lean-toolchain content: leanprover/lean4:v4.33.0-rc2
+  zeta23/lean-toolchain Git blob SHA-1: c084c7fbe586b0276863b66f16d2955a43bc3fc6
+  zeta23/lakefile.toml Git blob SHA-1: 43d9da33fb523dce999b070df74e7cdd03381e2b
+  zeta23/lake-manifest.json Git blob SHA-1: af9ef405e4e292f2e0176b12b6cb66f547575314
+  Mathlib URL: https://github.com/leanprover-community/mathlib4
+  Mathlib revision: 51e6992efd06126df61a496bebf8f49482a4e129
+
+Relevant upstream Sextuple file blob IDs read at the same pinned commit:
+  zeta23/Zeta23/ThmD/Sextuple/Kernel.lean: cf459a997180ec8d6e3b456fe0dd0af96dbf1293
+  zeta23/Zeta23/ThmD/Sextuple/Energy.lean: b761f80388ce3ca688e485a50a502d0a312cafe3
+  zeta23/Zeta23/ThmD/Sextuple/AffineTree.lean: 7008cf1571a12c18d436d3e2e2c1569558c1e737
+
+These are Git blob SHA-1 identifiers, not SHA-256 file digests. This packet records pinned metadata only; it does not contain an upstream source checkout or compiled Mathlib artifacts because local source checkout was blocked by DNS failure.

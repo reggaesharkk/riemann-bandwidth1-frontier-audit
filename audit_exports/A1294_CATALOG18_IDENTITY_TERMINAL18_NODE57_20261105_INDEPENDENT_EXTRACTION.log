@@ -1,0 +1,8 @@
+ZIP_SHA256=e086df7f5fdc1c4f396ef88a6c5a1d10dc9ec9be9f957b9f8bb185453d316f24
+ZIP_BYTES=93780260
+ZIP_CRC=PASS
+EXTRACTED_TO=C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\_v2
+VERIFY_EXIT=0
+PASS: all three evidence scripts passed under normal Python, -O, and -OO
+PASS extracted packet manifest: 313 entries; source inventory: 308 entries
+SECOND_EXTRACTED_REPLAY=PASS; exit=0; 313 manifest files and 308 inventory files verified again.

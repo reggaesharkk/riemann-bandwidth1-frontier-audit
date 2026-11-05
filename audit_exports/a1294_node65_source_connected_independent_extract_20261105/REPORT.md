@@ -1,0 +1,27 @@
+# A1294 source node 65: bounded closure, 2026-11-05
+
+The source-connected three-node subtree is kernel proved. The full root predicate and full A1294 theorem remain open. No global-reduction theorem was rederived or supplied its missing hypothesis.
+
+`SourceNode65.source_path_box` proves all 43 literal rational-box steps. `A1294Source.node65_box` proves `sourceBoxAt 65 = some (parentBox,22)`. The parent coordinates are, in order, [405/64,105/16], [825/128,105/16], [795/128,405/64], [825/128,105/16], [405/64,105/16]. These were obtained by midpoint arithmetic and compared with the frozen ledger, rather than assumed as a path theorem.
+
+`A1294Combined.replay65` proves the actual upstream replay returns `some (3,2)` for topology [split 0, terminal, terminal], two quadratic payloads and fuel 2. `accepted_tree` proves the upstream exact-exhaustion Boolean. `source_check_accepted` connects this to the literal source prefix, terminal cursor 22, kinds and little-endian anchors. `source_connected_parent` applies upstream tree soundness to that source-accepted replay. It does not import or restate the old compact parent theorem. It uses the previously proved left and right compact acceptance facts via generic leaf soundness. `exact_exhaustion` proves complete consumption of both local streams. Prefix node 65 starts at terminal/quadratic cursor 22; nodes 66 and 67 consume terminals 22 and 23. Anchors are indexed by the count of quadratic kinds, not the count of all terminals.
+
+`NegativeControls` kernel proves rejection of extra topology, truncated topology, missing right payload, invalid topology code 6, and invalid terminal kind in the prefix scanner. Existing helper lemmas reject bad row/anchor lengths. These controls do not establish rejection of every conceivable malformed original binary archive.
+
+All final modules exited 0. Axiom reports contain only standard `propext`, `Classical.choice`, `Quot.sound` (some prefix lemmas need only propext). No sorryAx or custom axiom occurs in the successful dependency reports. See resources.json, raw logs and SHA256SUMS.txt for exact measurements and hashes. The final modules and object sizes are inventoried there. Successful main stages: targeted checkpoint 8.99 s / 6,216,748 KiB; complete source path 11.02 s / 6,419,484 KiB; helpers 23.44 s / 5,726,288 KiB; replay 24.14 s / 5,837,856 KiB; source composition 18.44 s / 5,570,528 KiB; negative controls 5.41 s / 6,143,288 KiB. These are sequential warm/cold mixed runs, not a fair performance comparison or scaling prediction. Major page faults are retained in resources.json.
+
+## Preserved failures and repairs
+
+The first Python edit failed on Windows's default text encoding; it changed no Lean source. Consequently the preserved smoke proof also ran and passed (89.96 s). The separate targeted proof initially used lemma names absent from this pinned Mathlib. It was repaired with narrow `Function.update_apply` simplification, finite coordinate cases and rational normalization/decide; no recursion-limit increase was used. All 43 coordinate checks passed on their first targeted run. The first node65_box assembly failed because Option.bind was not reduced; explicit changes and rewrites closed it.
+
+The original CombinedTree draft contained a reserved identifier `local`, an unresolved finite-list lookup, and Fin-literal rewriting mismatches. Its own failed build was stopped at approximately 6,603,520 KiB observed RSS; no unrelated job or WSL service was terminated. Exit 143 is interruption, not mathematical rejection. Two subsequent monolithic attempts timed out (124). The first interrupted/time-limited Lake-wrapper resource summaries do not include reliable descendant peak RSS; do not use their small reported peaks for comparison. After splitting helpers from replay and proving a generic replay for arbitrary leaf values, both concrete replay and source composition passed. Failed sources/logs and uncompiled diagnostic drafts are retained, explicitly outside the successful build chain. Two failed negative-control drafts are also preserved; a narrowly reduced stream-length contradiction closed the final draft.
+
+## Authentication and remaining obligations
+
+1. Lean checks arithmetic and cursor logic for the literal prefix and the complete selected three-node replay.
+2. Converting original ZIP byte arrays to those literals remains external. verify_packet.py independently compares the bounded prefixes against the frozen archive and recomputes the rational path, but is not a formal binary-parser theorem.
+3. Pinned expanded catalog identity and historical JSON/source selection remain external provenance obligations. The mathematical validity of accepted segment/model data is checked through the existing Lean soundness framework; hashes alone do not prove model semantics.
+4. SHA-256 authenticates recorded bytes relative to their references; it is not mathematical acceptance.
+5. The complete original topology/terminal/anchor streams, all remaining leaves and their assembly are not kernel proved. The smallest unfulfilled global premise is `BoxPredicate (affineEnergyGoal (647/50000) (1094977/5000000000)) (initialGapBox 60)`.
+
+The successful GenericGlobalization/GlobalInterface, old compact parent, standalone acceptance packet and frozen V2 remain unchanged. Reference archives retain earlier source, objects and failures. No full-tree computation, WSL restart, Mathlib rebuild, push, merge or publication occurred. WP84 frozen conclusions are unchanged.

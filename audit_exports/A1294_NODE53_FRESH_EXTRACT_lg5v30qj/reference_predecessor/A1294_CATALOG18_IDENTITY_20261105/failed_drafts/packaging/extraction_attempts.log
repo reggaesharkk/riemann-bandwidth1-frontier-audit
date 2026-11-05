@@ -1,0 +1,3 @@
+Attempt 1: Python zipfile.extractall failed because parent directories for nested file entries were not prepared by the harness. ZIP CRC check had passed.
+Attempt 2: manual path-checked extraction created parents, then Windows FileNotFoundError occurred on a destination with a measured normalized length of 298 characters. No packet file or proof was rejected.
+Resolution: copied predecessor dependency directories were reorganized into reference/deps/n59, n61, n63, n65. Source file bytes were preserved. The final ZIP will be extracted into a short fresh directory and rechecked.

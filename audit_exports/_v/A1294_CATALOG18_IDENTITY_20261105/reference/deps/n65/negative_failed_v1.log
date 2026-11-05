@@ -1,0 +1,191 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:7:51: error: unsolved goals
+α : Type
+check : GapBox → α → Bool
+box : GapBox
+l r : α
+hl : check (box.lowerHalf 0) l = true
+hr : check (box.upperHalf 0) r = true
+⊢ ¬(match
+        { length := 4,
+              read := fun cursor =>
+                [AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal,
+                    AffineTreeToken.terminal][cursor]? }.get?
+          0 with
+      | none => none
+      | some AffineTreeToken.terminal =>
+        match { length := 2, read := fun cursor => [l, r][cursor]? }.get? 0 with
+        | none => none
+        | some payload => if check box payload = true then some (1, 1) else none
+      | some (AffineTreeToken.split axis) =>
+        match
+          match
+            { length := 4,
+                  read := fun cursor =>
+                    [AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal,
+                        AffineTreeToken.terminal][cursor]? }.get?
+              1 with
+          | none => none
+          | some AffineTreeToken.terminal =>
+            match { length := 2, read := fun cursor => [l, r][cursor]? }.get? 0 with
+            | none => none
+            | some payload => if check (box.lowerHalf axis) payload = true then some (2, 1) else none
+          | some (AffineTreeToken.split axis) => none with
+        | none => none
+        | some cursors =>
+          match
+            { length := 4,
+                  read := fun cursor =>
+                    [AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal,
+                        AffineTreeToken.terminal][cursor]? }.get?
+              cursors.1 with
+          | none => none
+          | some AffineTreeToken.terminal =>
+            match { length := 2, read := fun cursor => [l, r][cursor]? }.get? cursors.2 with
+            | none => none
+            | some payload =>
+              if check (box.upperHalf axis) payload = true then some (cursors.1 + 1, cursors.2 + 1) else none
+          | some (AffineTreeToken.split axis) => none) =
+      some (4, 2)
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:8:43: warning: This simp argument is unused:
+  hl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [checkAffineTree, replayAffineTree, hr, CursorStream.ofList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:8:47: warning: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [checkAffineTree, replayAffineTree, hl, CursorStream.ofList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:12:51: error: unsolved goals
+α : Type
+check : GapBox → α → Bool
+box : GapBox
+l r : α
+hl : check (box.lowerHalf 0) l = true
+⊢ ¬(match
+        { length := 2, read := fun cursor => [AffineTreeToken.split 0, AffineTreeToken.terminal][cursor]? }.get? 0 with
+      | none => none
+      | some AffineTreeToken.terminal =>
+        match { length := 2, read := fun cursor => [l, r][cursor]? }.get? 0 with
+        | none => none
+        | some payload => if check box payload = true then some (1, 1) else none
+      | some (AffineTreeToken.split axis) =>
+        match
+          match
+            { length := 2, read := fun cursor => [AffineTreeToken.split 0, AffineTreeToken.terminal][cursor]? }.get?
+              1 with
+          | none => none
+          | some AffineTreeToken.terminal =>
+            match { length := 2, read := fun cursor => [l, r][cursor]? }.get? 0 with
+            | none => none
+            | some payload => if check (box.lowerHalf axis) payload = true then some (2, 1) else none
+          | some (AffineTreeToken.split axis) => none with
+        | none => none
+        | some cursors =>
+          match
+            { length := 2, read := fun cursor => [AffineTreeToken.split 0, AffineTreeToken.terminal][cursor]? }.get?
+              cursors.1 with
+          | none => none
+          | some AffineTreeToken.terminal =>
+            match { length := 2, read := fun cursor => [l, r][cursor]? }.get? cursors.2 with
+            | none => none
+            | some payload =>
+              if check (box.upperHalf axis) payload = true then some (cursors.1 + 1, cursors.2 + 1) else none
+          | some (AffineTreeToken.split axis) => none) =
+      some (2, 2)
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:13:43: warning: This simp argument is unused:
+  hl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [checkAffineTree, replayAffineTree, CursorStream.ofList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:17:49: error: unsolved goals
+α : Type
+check : GapBox → α → Bool
+box : GapBox
+l : α
+hl : check (box.lowerHalf 0) l = true
+⊢ ¬(match
+        { length := 3,
+              read := fun cursor =>
+                [AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal][cursor]? }.get?
+          0 with
+      | none => none
+      | some AffineTreeToken.terminal =>
+        match { length := 1, read := fun cursor => [l][cursor]? }.get? 0 with
+        | none => none
+        | some payload => if check box payload = true then some (1, 1) else none
+      | some (AffineTreeToken.split axis) =>
+        match
+          match
+            { length := 3,
+                  read := fun cursor =>
+                    [AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal][cursor]? }.get?
+              1 with
+          | none => none
+          | some AffineTreeToken.terminal =>
+            match { length := 1, read := fun cursor => [l][cursor]? }.get? 0 with
+            | none => none
+            | some payload => if check (box.lowerHalf axis) payload = true then some (2, 1) else none
+          | some (AffineTreeToken.split axis) => none with
+        | none => none
+        | some cursors =>
+          match
+            { length := 3,
+                  read := fun cursor =>
+                    [AffineTreeToken.split 0, AffineTreeToken.terminal, AffineTreeToken.terminal][cursor]? }.get?
+              cursors.1 with
+          | none => none
+          | some AffineTreeToken.terminal =>
+            match { length := 1, read := fun cursor => [l][cursor]? }.get? cursors.2 with
+            | none => none
+            | some payload =>
+              if check (box.upperHalf axis) payload = true then some (cursors.1 + 1, cursors.2 + 1) else none
+          | some (AffineTreeToken.split axis) => none) =
+      some (3, 1)
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:18:43: warning: This simp argument is unused:
+  hl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [checkAffineTree, replayAffineTree, CursorStream.ofList]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:19:21: error: unexpected token ':='; expected ':'
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:22:25: error: unexpected token ':='; expected ':'
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean:24:23: error: unexpected token ':='; expected ':'
+'A1294ReplayControls.reject_extra' does not depend on any axioms
+'A1294ReplayControls.reject_truncated' does not depend on any axioms
+'A1294ReplayControls.reject_missing' does not depend on any axioms
+'A1294ReplayControls.invalid_prefix_kind' depends on axioms: [propext]
+'A1294Combined.exact_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+A1294Combined.source_connected_parent :
+  BoxPredicate (affineEnergyGoal A1294Combined.A A1294Combined.B) A1294Source.parentBox
+Command exited with non-zero status 1
+	Command being timed: "timeout 90 lean -M6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE65_RESUME_20261105/NegativeControls.olean"
+	User time (seconds): 2.97
+	System time (seconds): 3.66
+	Percent of CPU this job got: 84%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6001140
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5261
+	Minor (reclaiming a frame) page faults: 508644
+	Voluntary context switches: 9296
+	Involuntary context switches: 398
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

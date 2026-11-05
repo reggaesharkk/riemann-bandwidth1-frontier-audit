@@ -1,0 +1,7 @@
+{
+  "kernel.py": "1e4003b3f7f0647f0bb56f3ba8b84ee7ac6b40c3f80557b6996bca163462e193",
+  "verify_candidate_manifest.py": "d3015fafed29642d1b93594ab5aa3fc953480a703a9083087e366acc406423a1",
+  "pyproject.toml": "85f4aac1b80b0dd32441f26d9e6ad278dc6178565f53e0722fad5585e7f4a088",
+  "LICENSE": "4da7aaf8771126eb6d4e5651dd656336601032983824e85dc94ac98a600b3881",
+  "identity_note": "A1294 predecessor recorded v1.3.3-labelled source with workspace metadata 1.3.3.dev0 and kernel 1.3.2; release identity not independently resolved."
+}

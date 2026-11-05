@@ -1,0 +1,6 @@
+Benchmark setup failures preserved for distinction from proof status:
+1. PowerShell parsed a bash variable expression in an inline WSL command and rejected it before launch: `Variable reference is not valid. ':' was not followed by a valid variable name character.` Replaced the inline command with saved shell scripts.
+2. The first ext4 staging inline command lost its shell variable during native argument parsing and failed with `mkdir: cannot create directory '': No such file or directory`. The staged ext4 directory was then created by `stage_ext4.sh` and source/object hashes verified.
+3. A staging-script creation command was run from the repository root where `resource_bench/` did not exist; Python raised `FileNotFoundError`, and WSL reported the expected script path absent. Re-ran from the packet directory.
+4. First run wrapper could not find `lake`; second could not find `elan` because the direct WSL invocation did not load the interactive PATH. Corrected the wrapper to invoke `/home/reggaeshark/.elan/bin/elan run leanprover/lean4:v4.33.0-rc2 lake ...` explicitly. The four final benchmark commands then exited 0.
+These were command-launch/setup failures. No research source, proof, or original certificate was rejected or changed.

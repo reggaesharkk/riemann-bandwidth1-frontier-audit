@@ -1,0 +1,8 @@
+PASS source-bound two-child replay generation
+topology_tokens=17 payloads=9 child=Node53.replay53(15,8) plus terminal15
+terminal15_rows=15 segment_occurrences=369 anchor_offset=150 exact_margin_positive=true
+generated_sha256=7d8f5a0b6e4ae9bf566cdc700a2eee08b29c4cec704bc96219920ac2e24dc150
+node53_lean_sha256=d3ab270499d165561d9345dac14404abcd2ad146be4051ea2a82501f9e121301
+node53_olean_bytes=601856
+elapsed_seconds=0.637807
+PYTHON_EXIT=0

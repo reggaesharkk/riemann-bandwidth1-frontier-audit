@@ -1,0 +1,2 @@
+PASS: three exact frozen replays; 192 source segment proof statements; 15 rows; exact tangent; midpoint boxes; historical parent statement and box identical; both compact theorem references.
+PASS: successful build logs, standard axiom reports, printed compact child dependencies, exact bundled hashes. Kernel verification itself is evidenced by the Lean compiler logs, not by this Python script.

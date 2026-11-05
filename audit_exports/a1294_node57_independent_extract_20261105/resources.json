@@ -1,0 +1,18 @@
+{
+  "terminal18_failed_v1": {
+    "exit": "1",
+    "wall": "1:52.12",
+    "peak_rss_kib": "5485624",
+    "major_faults": "160753",
+    "first_error": "/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE57_20261105/Terminal18.lean:380:66: error: Tactic `simp` failed with a nested error:",
+    "contains_sorryAx": false
+  },
+  "terminal18": {
+    "exit": "1",
+    "wall": "1:21.97",
+    "peak_rss_kib": "5491592",
+    "major_faults": "157787",
+    "first_error": "/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_NODE57_20261105/Terminal18.lean:380:66: error: Tactic `simp` failed with a nested error:",
+    "contains_sorryAx": false
+  }
+}

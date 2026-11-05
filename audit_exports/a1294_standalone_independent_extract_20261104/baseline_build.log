@@ -1,0 +1,54 @@
+baseline/Zeta23/ThmD/Sextuple/CompositionalLeaf.lean:23:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+baseline/Zeta23/ThmD/Sextuple/CompositionalLeaf.lean:71:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'A1294GenericChecker.certifiedPiecewiseCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294Compact.compactSegmentCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294FifteenBridge.fifteenCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294FifteenBridge.compactQuadraticLeafCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+baseline/Zeta23/ThmD/Sextuple/CompositionalLeaf.lean:1523:225: warning: This simp argument is unused:
+  interpRat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rows, decodedRow, decode_0, decode_1, decode_2, decode_3, decode_4, decode_5, decode_6, decode_7,
+    decode_8, decode_9, decode_10, decode_11, decode_12, decode_13, decode_14, interpModel, terms, floors]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'AuthenticCompactLeaf.all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.tangent_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.decode_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.decode_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 240 lean -M 6800 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/sharkbridge01_worktree/A1294_STANDALONE_20261104/baseline baseline/Zeta23/ThmD/Sextuple/CompositionalLeaf.lean -o Baseline.olean"
+	User time (seconds): 73.33
+	System time (seconds): 35.67
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:58.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5498500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 154915
+	Minor (reclaiming a frame) page faults: 807808
+	Voluntary context switches: 286830
+	Involuntary context switches: 7280
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

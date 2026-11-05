@@ -1,0 +1,24 @@
+Catalog18Identity.original_eq_catalog : Catalog18.original = Catalog18.catalog
+	Command being timed: "timeout 150 lean -M6800 --root /home/reggaeshark/a1294_catalog18_bench_20261105 /home/reggaeshark/a1294_catalog18_bench_20261105/ImportOnlyCatalog18.lean -o /home/reggaeshark/a1294_catalog18_bench_20261105/ImportOnlyCatalog18_ext4_run1.olean"
+	User time (seconds): 3.81
+	System time (seconds): 14.60
+	Percent of CPU this job got: 25%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:12.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5429432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 72692
+	Minor (reclaiming a frame) page faults: 659650
+	Voluntary context switches: 413762
+	Involuntary context switches: 351
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

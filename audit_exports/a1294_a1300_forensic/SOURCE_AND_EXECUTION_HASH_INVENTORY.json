@@ -1,0 +1,701 @@
+{
+  "evidence_bytes": 190949013,
+  "file_count": 108,
+  "files": [
+    {
+      "bytes": 1823,
+      "origin": "read-only Google Drive connector inventory recorded in this audit",
+      "path": "evidence/drive/drive_search_inventory.json",
+      "sha256": "4d61dce632d0cd76e721eaa00da11094303f2fdbc05520363309871bfd956bf7"
+    },
+    {
+      "bytes": 2014,
+      "origin": "read-only local Git history observations recorded in this audit",
+      "path": "evidence/git/GIT_A1294_HISTORY.txt",
+      "sha256": "1fb662007ad0e90c7fd2cff65fc73fd4c26251e80ca5210783e7d08f1651499f"
+    },
+    {
+      "bytes": 37001,
+      "origin": "read-only GitHub connector metadata recorded in this audit",
+      "path": "evidence/github/ACTIONS_ARTIFACT_INVENTORY.json",
+      "sha256": "dab967361938c4ee72d95816cc81b3200f1a56322648c49c312f582ed9c7b2f3"
+    },
+    {
+      "bytes": 3758,
+      "origin": "read-only GitHub connector metadata recorded in this audit",
+      "path": "evidence/github/github_reconciliation.json",
+      "sha256": "0e4b53add4057c4fc3822dce911ecde35e1f470fdcd7a9daa4aaba7f9f8e3da7"
+    },
+    {
+      "bytes": 13014,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_ADAPTIVE_FRONTIER/A1294_ADAPTIVE_FRONTIER_PACKAGE/adaptive_frontier_scan.py",
+      "sha256": "b85c829d39363fc03b4fe7b989822618ec1592a99cb859577fd70f2884850d46"
+    },
+    {
+      "bytes": 770,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_ADAPTIVE_FRONTIER/A1294_ADAPTIVE_FRONTIER_PACKAGE/README.txt",
+      "sha256": "bfa29c1dc1f77d2f998957b38b034f3c54f10aeab3edc9c31caa4ad49422b715"
+    },
+    {
+      "bytes": 2191,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_ADAPTIVE_FRONTIER/A1294_ADAPTIVE_FRONTIER_PACKAGE/RUN_ADAPTIVE_FRONTIER_SCAN.bat",
+      "sha256": "c1fedb150fde9a2b335a18fe10202eef8c8f0cd0f61bb0c5a308518cd77f0d5a"
+    },
+    {
+      "bytes": 289,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_ADAPTIVE_FRONTIER/A1294_ADAPTIVE_FRONTIER_PACKAGE/SHA256SUMS.json",
+      "sha256": "44c5bdd610c8dfb590fe3a52caa8d0b35318a0ca3e72dc3ceef7a734ed18c0b5"
+    },
+    {
+      "bytes": 6467,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_ADAPTIVE_FRONTIER_PACKAGE.zip",
+      "sha256": "f9358bae045e0123e6cdfb076bb58f8dfea329ccd8d840af8fbf701d6772c583"
+    },
+    {
+      "bytes": 2841,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_adaptive_scan_log.txt",
+      "sha256": "95757e0c75d5fb0ede87eb42a33ef5987c61fa11dac2366460c5180c0f471cf7"
+    },
+    {
+      "bytes": 9389,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_CEILING_BRACKET/A1294_CEILING_BRACKET_PACKAGE/ceiling_bracket.py",
+      "sha256": "dcfbc02f4a96e53680bdd26b549ebd4de4dc6f3e762bd25de69db84767bea7f4"
+    },
+    {
+      "bytes": 155,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_CEILING_BRACKET/A1294_CEILING_BRACKET_PACKAGE/README.txt",
+      "sha256": "1459c9b8e31527a5a9f00cd0545250bdd48cb9e058d35a3fd3611fa80e857992"
+    },
+    {
+      "bytes": 1858,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_CEILING_BRACKET/A1294_CEILING_BRACKET_PACKAGE/RUN_CEILING_BRACKET.bat",
+      "sha256": "11b0826b9bc30f64841f183c21affac45576f5da690f927375564a01fe1eb6a1"
+    },
+    {
+      "bytes": 275,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_CEILING_BRACKET/A1294_CEILING_BRACKET_PACKAGE/SHA256SUMS.json",
+      "sha256": "fb76bb289508cbae10e0a9b17a0f39cd78b932cfc6e3838fa81a95ba5aaa4839"
+    },
+    {
+      "bytes": 2356,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_ceiling_bracket_log.txt",
+      "sha256": "b836b10d4f5959e82f957167dcc26dd4e5a44aefd0ca3385a6541dcd1fdf0a64"
+    },
+    {
+      "bytes": 5075,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_CEILING_BRACKET_PACKAGE.zip",
+      "sha256": "555413d060fa944aa35d00a610dd9d6bc5ae1cf26b10cb5a4ce2ebd815d25b54"
+    },
+    {
+      "bytes": 1393,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_fullroot_1m_bracket_log.txt",
+      "sha256": "f3699076a09c1d691ae573a7ece7999c19c3fa179f1ca6e1aacfa2905a3ee25c"
+    },
+    {
+      "bytes": 8565,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_FULLROOT_BRACKET/A1294_FULLROOT_BRACKET_PACKAGE/fullroot_bracket.py",
+      "sha256": "1caeb15f06914f65fb430095391d284fbe6a84990277514d2adaf131c4076274"
+    },
+    {
+      "bytes": 170,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_FULLROOT_BRACKET/A1294_FULLROOT_BRACKET_PACKAGE/README.txt",
+      "sha256": "746e5b39a6ad45b82fc0363bfbb2edf1080dcca24f8a0729d9505e3148e69b40"
+    },
+    {
+      "bytes": 1809,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_FULLROOT_BRACKET/A1294_FULLROOT_BRACKET_PACKAGE/RUN_FULLROOT_1M_BRACKET.bat",
+      "sha256": "c81691fba2af8f174f4c53ee59fffdcff7d5785b00ba22a9827f0c4c8d7f4826"
+    },
+    {
+      "bytes": 280,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_FULLROOT_BRACKET/A1294_FULLROOT_BRACKET_PACKAGE/SHA256SUMS.json",
+      "sha256": "01385977592e0868367a56e4bcf8a579f67b2079ae8ae33fcbf3d14cd40e1f93"
+    },
+    {
+      "bytes": 4755,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_FULLROOT_BRACKET_PACKAGE.zip",
+      "sha256": "1077923492a60cbbd694cf1cf8febc910138c860aec3da3ef56f85e9d8507961"
+    },
+    {
+      "bytes": 262,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_launcher_log.txt",
+      "sha256": "2547d554872b5aa54618bdc5f5a6acc4ff5764ed7c74478957985624680f1604"
+    },
+    {
+      "bytes": 21339,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/__pycache__/a1294_seam_pilot.cpython-312.pyc",
+      "sha256": "9fbc7230b1638706f49fe6b1fce45dabfb8676e1513868f1fa43fe1654694111"
+    },
+    {
+      "bytes": 11828,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/a1294_seam_pilot.py",
+      "sha256": "d98599405fca0c40971dd77c3dfc8e7d6f415b4a2a25a276febacbe7b929cce3"
+    },
+    {
+      "bytes": 8811,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/benchmark_local.py",
+      "sha256": "280f8484a9177ef7cd7fec728a5d681567ff482f03d1f2783a240f24c58456fe"
+    },
+    {
+      "bytes": 17396,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/data/macro-data-exact.json",
+      "sha256": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b"
+    },
+    {
+      "bytes": 67741,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/data/refinement-catalog-v1-exact.json",
+      "sha256": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9"
+    },
+    {
+      "bytes": 132964,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/data/refinement-catalog-v3.json",
+      "sha256": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+    },
+    {
+      "bytes": 684,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/PACKAGE_SHA256.json",
+      "sha256": "bf56d234fc5c4d8f449ee60f85dc16da06d2b00748cb72055c5cf0c40887f30a"
+    },
+    {
+      "bytes": 1464,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/README_FIRST.txt",
+      "sha256": "5de90f5d36b7193162b1ca874bc7d8d8a09381c21f864ffed5b21f5cfcc7f809"
+    },
+    {
+      "bytes": 244247,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1294_A1299_ADAPTIVE_FRONTIER_RESULT.json",
+      "sha256": "cfd0f44fb0984abc76a983bfe644a284223b0c22c591c1e3275629d2a8643c0d"
+    },
+    {
+      "bytes": 599,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1294_A1299_ADAPTIVE_FRONTIER_SUMMARY.txt",
+      "sha256": "78feaf6caf7e92f83c2cfeb034733d34c1a5ecb825db2e7fd7d20216453729d3"
+    },
+    {
+      "bytes": 5838,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1294_FIXED_B_CEILING_BRACKET_RESULT.json",
+      "sha256": "65e27f06aa9e38a19b06c5b088c2404052049b57bd5f2a566b5d594e196c4696"
+    },
+    {
+      "bytes": 187654,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1294_FULLROOT_1M_BRACKET_RESULT.json",
+      "sha256": "745ecb1917e8ea12fc1e141ffea37b3d80ede265cf62badcc86807f3e82d8ef8"
+    },
+    {
+      "bytes": 4206,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1294_LOCAL_BENCHMARK_RESULT.json",
+      "sha256": "1387728aea1f8047e92f882e3b1e6533cc6ad931d8eb6be75671e977963d39a4"
+    },
+    {
+      "bytes": 198,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1294_LOCAL_BENCHMARK_SUMMARY.txt",
+      "sha256": "ca0bb4567402805c657cdc7a52b9f5104d5c8585685d4e0a8c607378c5d1dd1e"
+    },
+    {
+      "bytes": 1530865,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1296_FRONTIER_MICROSCOPE_RESULT.json",
+      "sha256": "d3e514cfde87e3bd9ef821dedf3dc13001f9b4e00ff934c1e97868072bc22048"
+    },
+    {
+      "bytes": 1383,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1296_FRONTIER_MICROSCOPE_SUMMARY.txt",
+      "sha256": "c89730205858b781a39efd859aebf17e6d4cf98a78f7497dd54c3ae4daaed722"
+    },
+    {
+      "bytes": 84031,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/results/A1296_FULLROOT_5M_DIAGNOSTIC_RESULT.json",
+      "sha256": "8ffc050ed6ebcd080771b4cb3dafc6d958acd09986103b190eb7d806fc13ac1a"
+    },
+    {
+      "bytes": 1125,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK/A1294_LOCAL_BENCHMARK_PACKAGE/RUN_BENCHMARK.bat",
+      "sha256": "e0c3e6598b7c5eca820a103f347fa7602b78a74230f751d5e18d65d4e34d06ab"
+    },
+    {
+      "bytes": 32391,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_LOCAL_BENCHMARK_PACKAGE.zip",
+      "sha256": "7e57a2d41f52f1153c9fdae50210ea976300e5f6da4d044b0af972154a83ba5c"
+    },
+    {
+      "bytes": 1125,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_RUN_ADAPTIVE_FRONTIER.bat",
+      "sha256": "bf0059dc38618290e38b8b14f270254f9707e84ce98c0fd3a3c77a8fcd5ae364"
+    },
+    {
+      "bytes": 835,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_RUN_CEILING_BRACKET.bat",
+      "sha256": "2941b408e2ca07a7c97e84fa50f5680ab972dd2d20a62c70e03e1cd893c458bc"
+    },
+    {
+      "bytes": 845,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_RUN_FULLROOT_BRACKET.bat",
+      "sha256": "52e618396e43d98bc6034c17cbf6d9e6115228c32babf1291c1f2beb8231c6f3"
+    },
+    {
+      "bytes": 878,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_RUN_SOURCE_FREE_REPLAY.bat",
+      "sha256": "8ff0fc6df7632d8bb8473bc80cbb3cc424bca0921f2757fe4d240b34b8201b28"
+    },
+    {
+      "bytes": 827,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_RUN_SOURCE_FREE_REPLAY_V2.bat",
+      "sha256": "ec6f83a61c5f57b26182a626bf3d04b482ffbcaadbc4558d76253e1d9e6a6957"
+    },
+    {
+      "bytes": 1191,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/A1294_SOURCE_FREE_REPLAY_LOG.txt",
+      "sha256": "cb5cd4e0eee3057a346b8af3d8f7475b1e907b75a2c99ed91be345278a21a882"
+    },
+    {
+      "bytes": 67252580,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/certificate/anchors-u16le.bin",
+      "sha256": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5"
+    },
+    {
+      "bytes": 1372,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/certificate/manifest.json",
+      "sha256": "86da81aaf1d825d67dacff28f7c998061192d2962385ec17277cdf6a681f36cd"
+    },
+    {
+      "bytes": 1090,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/certificate/replay.json",
+      "sha256": "5f3e498cbcdbe9c0614b71f9fe5a54687eceb806b85c25a907dc2e58a72467c8"
+    },
+    {
+      "bytes": 946,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/certificate/SHA256SUMS.txt",
+      "sha256": "43085f1f6f5ddbecb3f978d4916751eca9fb1c5806a04ccb2ae935415b1a3a29"
+    },
+    {
+      "bytes": 6727061,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/certificate/terminal-kinds-u8.bin",
+      "sha256": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06"
+    },
+    {
+      "bytes": 13454121,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/certificate/topology-u8.bin",
+      "sha256": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+    },
+    {
+      "bytes": 17396,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/data/macro-data-exact.json",
+      "sha256": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b"
+    },
+    {
+      "bytes": 67741,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/data/refinement-catalog-v1-exact.json",
+      "sha256": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9"
+    },
+    {
+      "bytes": 132964,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/data/refinement-catalog-v3.json",
+      "sha256": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+    },
+    {
+      "bytes": 1857,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/PACKAGE_MANIFEST.json",
+      "sha256": "7e1ff3069b596a70cecf46df0654538b9a5b592b5df4d90415a4cbcce16a887c"
+    },
+    {
+      "bytes": 1239,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/README.txt",
+      "sha256": "36f16a0f3c50b59c0f7af108d8c508e452fd0df8136bf0b508c8e673ef330c25"
+    },
+    {
+      "bytes": 15860,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/replay_a1294_source_free.py",
+      "sha256": "5a6e5b67b14c88106dfd49e2d826ed07488cfbd97b7a7819eabaa948f6254324"
+    },
+    {
+      "bytes": 1603,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY/A1294_SOURCE_FREE_REPLAY_PACKAGE/RUN_A1294_SOURCE_FREE_REPLAY.bat",
+      "sha256": "70492bc9104dd2250ead796fc5d92d174245547d26a8535cced42e1fe1921002"
+    },
+    {
+      "bytes": 5670917,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_PACKAGE.zip",
+      "sha256": "14db7449078ff7f60962c1dca8a5bc5ca2b414be2ee66d173870e6f05ffdd124"
+    },
+    {
+      "bytes": 5672384,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+      "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+    },
+    {
+      "bytes": 9426,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/A1294_SOURCE_FREE_REPLAY_LOG.txt",
+      "sha256": "aa6501e0d0a01658fd2d8ce87c045cecb2b2db3b2fde38825953c996bbba89df"
+    },
+    {
+      "bytes": 1442,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/A1294_SOURCE_FREE_REPLAY_RESULT.json",
+      "sha256": "7de6a70671dee42307847e3b321389f1bdfcae66f8bc73b99b0227a6c8e54db0"
+    },
+    {
+      "bytes": 67252580,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/certificate/anchors-u16le.bin",
+      "sha256": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5"
+    },
+    {
+      "bytes": 1372,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/certificate/manifest.json",
+      "sha256": "86da81aaf1d825d67dacff28f7c998061192d2962385ec17277cdf6a681f36cd"
+    },
+    {
+      "bytes": 1090,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/certificate/replay.json",
+      "sha256": "5f3e498cbcdbe9c0614b71f9fe5a54687eceb806b85c25a907dc2e58a72467c8"
+    },
+    {
+      "bytes": 946,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/certificate/SHA256SUMS.txt",
+      "sha256": "43085f1f6f5ddbecb3f978d4916751eca9fb1c5806a04ccb2ae935415b1a3a29"
+    },
+    {
+      "bytes": 6727061,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/certificate/terminal-kinds-u8.bin",
+      "sha256": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06"
+    },
+    {
+      "bytes": 13454121,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/certificate/topology-u8.bin",
+      "sha256": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+    },
+    {
+      "bytes": 17396,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/data/macro-data-exact.json",
+      "sha256": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b"
+    },
+    {
+      "bytes": 67741,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/data/refinement-catalog-v1-exact.json",
+      "sha256": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9"
+    },
+    {
+      "bytes": 132964,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/data/refinement-catalog-v3.json",
+      "sha256": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+    },
+    {
+      "bytes": 2131,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/PACKAGE_MANIFEST.json",
+      "sha256": "4b125bfb8c94a382afa3b0e7dede37e7c411278d406597b51dd314e0ce566fe4"
+    },
+    {
+      "bytes": 663,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/preflight.py",
+      "sha256": "32de2faf2812bff44c5feacbf9744fe87c0b534846a2d92fff1e3466cc45a833"
+    },
+    {
+      "bytes": 1753,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/README.txt",
+      "sha256": "f37af2138129ce1b5ed9726403868bdf3b5bf8d4961f3ac9bede8209884180b6"
+    },
+    {
+      "bytes": 15860,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/replay_a1294_source_free.py",
+      "sha256": "5a6e5b67b14c88106dfd49e2d826ed07488cfbd97b7a7819eabaa948f6254324"
+    },
+    {
+      "bytes": 1800,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/RUN_A1294_SOURCE_FREE_REPLAY.bat",
+      "sha256": "3bb9ef7b28f2556138d30ca8a903a5435db5520dfbecb8b7469cb15e2acb7aa3"
+    },
+    {
+      "bytes": 241,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_V2/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2/RUN_PREFLIGHT_ONLY.bat",
+      "sha256": "3422a2af6312eb731de93a013476c48665765b37f75d8ece5b5e0dfbd28e13ff"
+    },
+    {
+      "bytes": 2615,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_START_HERE.bat",
+      "sha256": "3d154bc62b62d50691f1634325768d7a91864deb480d009a7d40254a7ce570a5"
+    },
+    {
+      "bytes": 6635,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_5M_DIAGNOSTIC/A1296_5M_DIAGNOSTIC_PACKAGE/a1296_5m.py",
+      "sha256": "5cd4da4286a0cf087a4360694b078277ee820a13a49e48dbb80a644b4e63f4aa"
+    },
+    {
+      "bytes": 98,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_5M_DIAGNOSTIC/A1296_5M_DIAGNOSTIC_PACKAGE/README.txt",
+      "sha256": "cef8db1eb344ccc64a4e16a4d98232f647ac2429b4de4f2e6f49e78be8005c63"
+    },
+    {
+      "bytes": 1672,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_5M_DIAGNOSTIC/A1296_5M_DIAGNOSTIC_PACKAGE/RUN_A1296_5M.bat",
+      "sha256": "3b4060a6302f0c647bd57bc938aa62893cad38a203b23e6512659565a404a7f1"
+    },
+    {
+      "bytes": 261,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_5M_DIAGNOSTIC/A1296_5M_DIAGNOSTIC_PACKAGE/SHA256SUMS.json",
+      "sha256": "3d9e616b13823e2c50df7452bc32d88144fb597b4f66671b2dceee9e9cdcb704"
+    },
+    {
+      "bytes": 1207,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_5m_diagnostic_log.txt",
+      "sha256": "a356cdde6222bced2c947f3b024343195553ca4db015ab6a716cba3fa67862c2"
+    },
+    {
+      "bytes": 4101,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_5M_DIAGNOSTIC_PACKAGE.zip",
+      "sha256": "350445e617e64921ab3027361f3be3ef4dc49ef4200a4c2fb507de6813a589b5"
+    },
+    {
+      "bytes": 8113,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_FRONTIER_MICROSCOPE/A1296_FRONTIER_MICROSCOPE_PACKAGE/a1296_frontier_microscope.py",
+      "sha256": "6c09d749fc3a12f16b5e4f4a9920d3d1fb29e32e6d7c3965c8183d17c00da9b8"
+    },
+    {
+      "bytes": 162,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_FRONTIER_MICROSCOPE/A1296_FRONTIER_MICROSCOPE_PACKAGE/README.txt",
+      "sha256": "246f2d03870a49fa1994e9495c6b2f0d0ab811a5460b32e5c0b1f809518317af"
+    },
+    {
+      "bytes": 1605,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_FRONTIER_MICROSCOPE/A1296_FRONTIER_MICROSCOPE_PACKAGE/RUN_A1296_FRONTIER_MICROSCOPE.bat",
+      "sha256": "917851c424d060875c77d49494fb01954af0e8af6eff18d83d4004f30628977a"
+    },
+    {
+      "bytes": 295,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_FRONTIER_MICROSCOPE/A1296_FRONTIER_MICROSCOPE_PACKAGE/SHA256SUMS.json",
+      "sha256": "3f5bf51727243686d4c641a8aa0611f314e6b6f6e6d5946546413c466ce4a3d8"
+    },
+    {
+      "bytes": 1419,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_frontier_microscope_log.txt",
+      "sha256": "81883167c6fc43453e417bd9698c6a9ec649476789311a5b8373e24d07752435"
+    },
+    {
+      "bytes": 4476,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_FRONTIER_MICROSCOPE_PACKAGE.zip",
+      "sha256": "e2ce1345ccab1bf5bd6464d55b6114fc08a2057fd3ad671834624336ff0a5d39"
+    },
+    {
+      "bytes": 797,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_RUN_5M_DIAGNOSTIC.bat",
+      "sha256": "b86bfe506afb0495d151b6945ca70a09a8d0a3e8921af47ed134d2dc8b2e5ba1"
+    },
+    {
+      "bytes": 855,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/A1296_RUN_FRONTIER_MICROSCOPE.bat",
+      "sha256": "76482b37c0ce6516518bb1e657c9a9d1a95709971033f8344e361252d7a12ac0"
+    },
+    {
+      "bytes": 24333,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/RH_Bandwidth1_Frontier_Audit_2026-10-03.zip",
+      "sha256": "32fd0e8a22296a4beb0f68c738edac56e14f8a7113f691dd3e563e6a2f4087fa"
+    },
+    {
+      "bytes": 29206,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/RH_Bandwidth1_Frontier_Audit_Repo_2026-10-03.zip",
+      "sha256": "0ce394bd8a0003102ff4ac05ff14a92ed005cb7a2d9209dfde55febac7f28d86"
+    },
+    {
+      "bytes": 2326,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/RUN_A1294_FROM_DOWNLOADS_FIXED.bat",
+      "sha256": "7bd5ae5695f1fef3ed9e38ba8e224ca797de75d5293c8f98bfdd5f1b23bba235"
+    },
+    {
+      "bytes": 2190,
+      "origin": "recovered local Downloads evidence",
+      "path": "evidence/local/C_Users_Asus_Downloads/RUN_A1294_FROM_DOWNLOADS_READY.bat",
+      "sha256": "ff322c78c208af88a81e24551a88a0dcbc86becd166d4279b4e4b93a0617b9fc"
+    },
+    {
+      "bytes": 185897,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 183441.png",
+      "sha256": "d107b59a17b4964d1cc4a85a021a71ff7deba815d8c2b7943ea01126fa1d07f9"
+    },
+    {
+      "bytes": 241240,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 184200.png",
+      "sha256": "91ba6b5758a8fa8625a965cd7083d2bffa16f76f663d230128492e809b1b6560"
+    },
+    {
+      "bytes": 274316,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 184823.png",
+      "sha256": "c0fd9af0742286de837c907253d8822016fd21649ec20632075546eaacce3f20"
+    },
+    {
+      "bytes": 239866,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 184837.png",
+      "sha256": "efc58a171dde111a6e7bf53a713aa78f23fe901103c49f66695e7e3ced048f75"
+    },
+    {
+      "bytes": 164671,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 190426.png",
+      "sha256": "7a200f104bbf697f93b44947455baa83b05db3e3bb874a41ceeb42d0f3984788"
+    },
+    {
+      "bytes": 145724,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 191652.png",
+      "sha256": "e99101307a0548c47ca01d1bdbffaa8e4640f45f7eb2a634e55cd1a83a36aa3b"
+    },
+    {
+      "bytes": 146899,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 192713.png",
+      "sha256": "7df9a8a04e4b34cf462a76db751e55f52bb5769296c74314d0c4d19542898da3"
+    },
+    {
+      "bytes": 141627,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 195820.png",
+      "sha256": "6d9ec7bf40b4bcf4fa06ab6f31faeb8fd8e0555d03fd31c82eeed98fff82070b"
+    },
+    {
+      "bytes": 141714,
+      "origin": "user-supplied screenshot copied from OneDrive Pictures/Screenshots",
+      "path": "evidence/screenshots/Screenshot 2026-10-03 202037.png",
+      "sha256": "a787621c19be2092f71e1d12635dedb8fa3aa49ffbd2893b8a76d4c8f716d9f4"
+    }
+  ],
+  "generated_from": "the byte-preserved evidence tree in this packet",
+  "limits": [
+    "The expired GitHub Actions artifact bytes were not recovered; its reported SHA is metadata, not a locally recomputed source hash.",
+    "File hashes in files[] are recomputed from packet evidence bytes.",
+    "This inventory contains no credentials or authorization headers."
+  ],
+  "notable_claims_and_hashes": {
+    "catalog_inputs": {
+      "stable": "961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b",
+      "v1": "3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9",
+      "v3": "7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d"
+    },
+    "local_v2_replay_zip": {
+      "bytes": 5672384,
+      "is_original_github_artifact": false,
+      "path": "evidence/local/C_Users_Asus_Downloads/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+      "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+    },
+    "original_github_artifact_claim": {
+      "artifact_id": 11286675906,
+      "reason": "expired; listing empty and direct download returned 404",
+      "recovered": false,
+      "reported_sha256": "11c1ab1820039284f60e492fe609f6a497175284acdd0c3c53d6ab62b8b1cd19"
+    },
+    "source_free_v2_replay": {
+      "A": "647/50000",
+      "B": "1094977/5000000000",
+      "elapsed_seconds": 18897.781,
+      "leaves": 6727061,
+      "quadratic_leaves": 6725258,
+      "status": "PASS",
+      "stream_sha256": {
+        "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5",
+        "kinds": "859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+        "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76"
+      },
+      "tail_leaves": 1803,
+      "visited_nodes": 13454121
+    }
+  },
+  "repository_observations": {
+    "current_audit_worktree_head": "eb36159ee7e57053fcae3de025fe4dac539435ab",
+    "downloads_clone_branch": "research/frontier-7962-hostile-audit-v0.1",
+    "downloads_clone_head": "908f6c2b5b4c1dbf9d35461b5701b5a475fe96c5",
+    "second_worktree_head": "e61f116ac3eb4b07bf1df3e91960d84a6f730034"
+  },
+  "schema": "a1294-a1300-forensic-inventory-v1"
+}

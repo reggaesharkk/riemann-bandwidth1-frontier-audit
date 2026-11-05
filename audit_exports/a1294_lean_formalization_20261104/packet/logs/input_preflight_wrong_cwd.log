@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Asus\.codex\worktrees\0498\riemann-bandwidth1-frontier-audit\audit_exports\a1294_lean_pilot_20261104\input_v2\A1294_SOURCE_FREE_REPLAY_PACKAGE_V2\preflight.py", line 8, in <module>
+    manifest = json.loads((cert / "manifest.json").read_text(encoding="utf-8"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python312-arm64\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit\\certificate\\manifest.json'

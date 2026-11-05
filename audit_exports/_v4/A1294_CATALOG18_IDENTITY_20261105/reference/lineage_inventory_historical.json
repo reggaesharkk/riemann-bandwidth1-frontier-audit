@@ -1,0 +1,187 @@
+{
+  "lineage_sha256": "14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db",
+  "versions": [
+    {
+      "version": "0.1.1",
+      "sha256": "9766417faa5f63ff97bfbcf312b2c286c8cf497f1809a002a633e3bd09983662",
+      "bytes": 10045,
+      "crc": "PASS",
+      "source_inventory": [
+        {
+          "path": "agentos-kernel/src/agentos_kernel/__init__.py",
+          "sha256": "fc66d507efa69c4fc65b037484e8451741192f16269f544947e593966101647f",
+          "declarations": []
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/core.py",
+          "sha256": "6744d416985c25d8c90eb3c210895975e678d6db32e9040556276404ddf0148d",
+          "declarations": [
+            "PolicyError",
+            "AuditError",
+            "canonical",
+            "cents",
+            "Tool",
+            "Decision",
+            "Gateway"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "sha256": "dbf73e7618747b4681fdd20f46f5601527d45a154d250bd07477ed2143ef2f77",
+      "bytes": 14096,
+      "crc": "PASS",
+      "source_inventory": [
+        {
+          "path": "agentos-kernel/src/agentos_kernel/__init__.py",
+          "sha256": "fc66d507efa69c4fc65b037484e8451741192f16269f544947e593966101647f",
+          "declarations": []
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/service.py",
+          "sha256": "8bd1b039f72cc1f408090bc3ddaa299b3bd3f682920fdc50322e79d2f5620091",
+          "declarations": [
+            "GatewayService",
+            "_Handler",
+            "invoke_remote"
+          ]
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/core.py",
+          "sha256": "6744d416985c25d8c90eb3c210895975e678d6db32e9040556276404ddf0148d",
+          "declarations": [
+            "PolicyError",
+            "AuditError",
+            "canonical",
+            "cents",
+            "Tool",
+            "Decision",
+            "Gateway"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "sha256": "6174d62d96557916c9eeff3cfb1f2b3659eb16085dd72c59cd726c8569c7636d",
+      "bytes": 21981,
+      "crc": "PASS",
+      "source_inventory": [
+        {
+          "path": "agentos-kernel/src/agentos_kernel/service.py",
+          "sha256": "0aacb91e908df8429f7f3d3759ea222c1280288426ee472a4ba314fbe6ca1f1d",
+          "declarations": [
+            "_valid_token",
+            "GatewayService",
+            "_Handler",
+            "_post",
+            "invoke_remote",
+            "review_remote"
+          ]
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/__init__.py",
+          "sha256": "fc66d507efa69c4fc65b037484e8451741192f16269f544947e593966101647f",
+          "declarations": []
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/core.py",
+          "sha256": "8bc79897a9e867f110c3ac022f41887ddfac65b1dda2312bcefea799e0336816",
+          "declarations": [
+            "PolicyError",
+            "AuditError",
+            "canonical",
+            "cents",
+            "Tool",
+            "Decision",
+            "_name",
+            "Gateway"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "0.4.0",
+      "sha256": "78cd8b1409a68a8f1d7c425ce7a272f8319ce1a7719271e7904b14eb83f87db2",
+      "bytes": 27136,
+      "crc": "PASS",
+      "source_inventory": [
+        {
+          "path": "agentos-kernel/src/agentos_kernel/service.py",
+          "sha256": "6eff403a65ff1083ba60199b3ae4ae8e3ebd7808f4827327de326ebe9dbc790e",
+          "declarations": [
+            "_valid_token",
+            "GatewayService",
+            "_Handler",
+            "_post",
+            "invoke_remote",
+            "review_remote",
+            "attest_remote"
+          ]
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/__init__.py",
+          "sha256": "fc66d507efa69c4fc65b037484e8451741192f16269f544947e593966101647f",
+          "declarations": []
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/core.py",
+          "sha256": "317cb0ee982789e0c4048827f7cf3f57e853cae708c29a76b149b240886b2b7b",
+          "declarations": [
+            "PolicyError",
+            "AuditError",
+            "canonical",
+            "cents",
+            "Tool",
+            "Decision",
+            "_name",
+            "Gateway"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "0.5.0",
+      "sha256": "cde3e9ea62598f883912d8cc52f8aaf9f2d265dff4b863a687c59936f64df138",
+      "bytes": 32704,
+      "crc": "PASS",
+      "source_inventory": [
+        {
+          "path": "agentos-kernel/src/agentos_kernel/service.py",
+          "sha256": "af0757f5f173be466d6f8daf97f1d60902d115f622ed5a9b9c3c31c09d144f5a",
+          "declarations": [
+            "_valid_token",
+            "_Bucket",
+            "GatewayService",
+            "_Handler",
+            "_post",
+            "invoke_remote",
+            "review_remote",
+            "attest_remote"
+          ]
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/__init__.py",
+          "sha256": "fc66d507efa69c4fc65b037484e8451741192f16269f544947e593966101647f",
+          "declarations": []
+        },
+        {
+          "path": "agentos-kernel/src/agentos_kernel/core.py",
+          "sha256": "0cf14dd9cda44779091deec448e2f4d5a41c890e479a3a3cdbf3f973fbbe1212",
+          "declarations": [
+            "PolicyError",
+            "AuditError",
+            "canonical",
+            "cents",
+            "Tool",
+            "Decision",
+            "_name",
+            "Gateway"
+          ]
+        }
+      ]
+    }
+  ],
+  "release_test_counts": "historical self-reported; not independently rerun"
+}

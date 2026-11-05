@@ -1,0 +1,42 @@
+{
+  "predecessor_sha256": "151048a061e5aef71befb0150c6d44e034855171c9b5c7949ac875e7eabf53ba",
+  "artifacts": [
+    {
+      "path": "GenericGlobalization.lean",
+      "bytes": 1040,
+      "sha256": "2a31d68927304f0c1eb4aff225aab67a1ad27b3caae77c4d95779929a687c41d",
+      "live_original_checked": true
+    },
+    {
+      "path": "GenericGlobalization.olean",
+      "bytes": 68960,
+      "sha256": "a8c22ea90ec0b3b69e153df237beb9380bac97b1197e9c571cf4747ded97cab9",
+      "live_original_checked": true
+    },
+    {
+      "path": "generic_global_build.log",
+      "bytes": 1079,
+      "sha256": "4daa36d3953f53f0ca594e3ae3e6d18d35465f847dd63199894a186b8bf7a7f1",
+      "live_original_checked": true
+    },
+    {
+      "path": "GlobalInterface.lean",
+      "bytes": 798,
+      "sha256": "38d19fe3febc2041a336298a3ac71ef39c9e1f84a24ec52982bd5024285cf6a7",
+      "live_original_checked": true
+    },
+    {
+      "path": "GlobalInterface.olean",
+      "bytes": 44720,
+      "sha256": "3167355a1b00c3c82ec0f7892b1a1bc2f0b2401bd37f898d64b1e46b12b70559",
+      "live_original_checked": true
+    },
+    {
+      "path": "global_build.log",
+      "bytes": 1155,
+      "sha256": "d1992987604d76b9f8a79f135fce07ddfbcbf2aa0982c5d4a93eb398ee6a09d6",
+      "live_original_checked": true
+    }
+  ],
+  "scope": "preservation only, no new mathematical proof"
+}

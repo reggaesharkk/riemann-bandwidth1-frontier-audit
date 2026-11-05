@@ -1,0 +1,7 @@
+# Reproduction
+
+`python provenance_prototype.py` runs the private provenance prototype using unchanged VRK v0.3.1 canonical/evidence modules and the bundled predecessor/reference ledger. It rewrites its two JSON result files deterministically; run it in a disposable extraction. This does not run a VRK Lean verifier or establish mathematical validity. The full original V2 ZIP and pinned Lean/Mathlib environment remain external dependencies.
+
+Use Lean 4.33.0-rc2, upstream fba91d214655aaa1fd0504bb893c8859c20c79f9 and Mathlib 51e6992efd06126df61a496bebf8f49482a4e129. The Lean objects in this packet were built in WSL aarch64 and are not portable across arbitrary platforms. With D the extracted packet and the pinned zeta23 project current, compile Catalog18Lookup.lean then BoundaryBlocks.lean then Statements.lean with `LEAN_PATH="$D" lake env /usr/bin/time -v timeout 90 lean -M6800 --root "$D" "$D/NAME.lean" -o "$D/NAME.olean"`. A timeout is not a false theorem. DirectOriginal.lean and BoundaryBlocks_failed_v1.lean are preserved failed drafts and must not be counted as proofs.
+
+The ext4 staging logs are comparative samples, not an optimization benchmark; shared imports stayed in the pinned project and cache states were uncontrolled. No original archive or license was changed. Release-lineage inventory records actual nested ZIP digests, while historical release test counts have not been rerun. Protocol source is copied unchanged as an inspectable reference, not invoked as a signing authority.

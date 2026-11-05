@@ -1,0 +1,44 @@
+[
+  {
+    "log": "import_baseline.log",
+    "status": "PASS",
+    "wall": "1:24.02",
+    "peak_rss_KiB": 5323240,
+    "major_page_faults": 116885
+  },
+  {
+    "log": "segment_profile_v2.log",
+    "status": "PASS",
+    "wall": "1:35.10",
+    "peak_rss_KiB": 5490488,
+    "major_page_faults": 157420
+  },
+  {
+    "log": "compact_bridge_build.log",
+    "status": "PASS",
+    "wall": "1:24.49",
+    "peak_rss_KiB": 5338200,
+    "major_page_faults": 142846
+  },
+  {
+    "log": "authentic_leaf_build.log",
+    "status": "FAILED_DECIDE",
+    "wall": "0:58.34",
+    "peak_rss_KiB": 5421376,
+    "major_page_faults": 99744
+  },
+  {
+    "log": "authentic_leaf_rfl_actual.log",
+    "status": "FAILED_RFL",
+    "wall": "1:08.46",
+    "peak_rss_KiB": 5321028,
+    "major_page_faults": 98208
+  },
+  {
+    "log": "bridge_artifact_build.log",
+    "status": "PASS_ARTIFACT",
+    "wall": "1:59.69",
+    "peak_rss_KiB": 5441720,
+    "major_page_faults": 158992
+  }
+]

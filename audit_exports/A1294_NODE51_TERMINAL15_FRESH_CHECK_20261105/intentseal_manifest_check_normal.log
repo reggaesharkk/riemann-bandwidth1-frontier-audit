@@ -1,0 +1,5 @@
+PASS IntentSeal/Reggae Shark Protocol candidate manifest verifier
+Observed normal, -O and -OO outputs: manifest entries=92 actual=92 missing=[] unlisted=[] mismatched=[]
+All three exits: 0
+
+This checks file inventory/hash integrity only; it does not verify the signed ledger or theorem claims.

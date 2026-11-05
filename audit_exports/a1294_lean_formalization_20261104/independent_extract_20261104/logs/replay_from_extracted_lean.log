@@ -1,0 +1,10 @@
+ℹ [8704/8704] Replayed Zeta23.ThmD.Sextuple.A1294Pilot
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:127:0: 'A1294Pilot.exact_tail_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:128:0: 'Zeta23.ThmD.Sextuple.sextupleEnergy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:129:0: 'A1294Pilot.tail_span_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:130:0: 'A1294Pilot.tail_covers_root_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:131:0: 'A1294Pilot.extracted_path_reconstructs_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:132:0: 'A1294Pilot.source_tail_leaf_checker_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:133:0: 'A1294Pilot.source_tail_leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294Pilot.lean:134:0: 'A1294Pilot.selected_complete_subtree_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8704 jobs).

@@ -1,0 +1,15 @@
+Catalog15.lean: PASS, Lean process exit 0, Catalog15.olean emitted.
+Catalog15Identity.lean: PASS, Lean process exit 0, Catalog15Identity.olean emitted.
+Catalog15BoundaryBlocks.lean: PASS, Lean process exit 0, Catalog15BoundaryBlocks.olean emitted.
+Catalog15AllLookups.lean: PASS, Lean process exit 0, 167 lookup proofs, Catalog15AllLookups.olean emitted.
+Terminal15Compositional.lean: PASS, Lean process exit 0, AuthenticCompact15.accepted_original and leaf_sound kernel proved.
+Node51Replay.lean: PASS, Lean process exit 0, Node51.replay51 and source_connected_predicate kernel proved.
+
+Pinned Lean: 4.33.0-rc2; Lake 5.0.0-src+d8b1897; Mathlib commit 51e6992efd06126df61a496bebf8f49482a4e129. All builds sequential with Lean -M6400; no Mathlib rebuild. See RESOURCE_BENCHMARK.json and each per-module build log for exits, time, RSS, faults, theorem signatures, and axiom output.
+
+Python exact source verification and the VRK/IntentSeal manifest checks passed in normal, -O, and -OO modes. These checks validate evidence and source conversion, not Lean theorem status.
+The source-bound multi-leaf generator also passed normal/-O/-OO replay; negative controls reject a changed axis, anchor code, V2 hash, and Node53 object hash.
+
+IntentSeal/Reggae Shark Protocol `verify_candidate_manifest.py`: normal/-O/-OO all exit 0 with all listed files present and no missing, unlisted, or mismatched entries. This is file-integrity checking only; no signed ledger is claimed.
+
+Full initialGapBox 60 predicate: OPEN. Full A1294 theorem: OPEN.

@@ -1,0 +1,12 @@
+[
+  {
+    "ProcessId": 23796,
+    "CreationDate": "2026-11-04T23:04:40.01252+05:30",
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -e bash -lc \"cd /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23 && lean --version && lake --version && printf \\\"WSL_RESPONSIVE\\n\\\"\""
+  },
+  {
+    "ProcessId": 35108,
+    "CreationDate": "2026-11-04T23:04:40.036629+05:30",
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -e bash -lc \"cd /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23 && lean --version && lake --version && printf \\\"WSL_RESPONSIVE\\n\\\"\""
+  }
+]

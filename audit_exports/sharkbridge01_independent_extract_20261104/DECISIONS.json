@@ -1,0 +1,13 @@
+{
+  "SHARKLANG_CERTIFICATE_CODEC": "EXPERIMENTAL",
+  "SHARK_PROTOCOL_PROVENANCE": "USEFUL",
+  "LRSC_EXACT_COMPRESSION": "NOT_USEFUL",
+  "LOSSLESS_ROUNDTRIP": "PASS",
+  "TWO_LEAF_KERNEL_EQUIVALENCE": "PROVED",
+  "SOURCE_SIZE_IMPROVEMENT": "NOT_ESTABLISHED",
+  "OBJECT_SIZE_IMPROVEMENT": "NOT_ESTABLISHED",
+  "PEAK_RAM_IMPROVEMENT": "NOT_ESTABLISHED",
+  "FULL_TREE_FEASIBILITY": "OPEN",
+  "scope": "Typed IR correspondence and transported authentic acceptance. Byte parser/source conversion remains external. Existing proof closure retained. No complete A1294 or cost reduction claim.",
+  "recommendation": "Reject this prototype as a lower-cost verifier; retain correspondence proof; use ordinary compression; do not scale."
+}

@@ -1,0 +1,41 @@
+Zeta23/ThmD/Sextuple/SegmentRowSmoke.lean:23:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Zeta23/ThmD/Sextuple/SegmentRowSmoke.lean:71:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Zeta23/ThmD/Sextuple/SegmentRowSmoke.lean:250:144: error: unsolved goals
+hlen : decide (0 < smokeSegments.length) = true
+hcover : sourceCoverFrom (405 / 64) (825 / 128) smokeSegments = true
+⊢ (true && (true && (true && (true && (true && (true && (true && (true && (true && true))))))))) = true
+Command exited with non-zero status 1
+	Command being timed: "lake env lean Zeta23/ThmD/Sextuple/SegmentRowSmoke.lean -o /tmp/A1294SegmentRowSmoke.olean"
+	User time (seconds): 7.81
+	System time (seconds): 21.75
+	Percent of CPU this job got: 39%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:14.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5600420
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 152062
+	Minor (reclaiming a frame) page faults: 752852
+	Voluntary context switches: 216727
+	Involuntary context switches: 788
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

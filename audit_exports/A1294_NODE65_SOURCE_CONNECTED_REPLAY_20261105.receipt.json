@@ -1,0 +1,32 @@
+{
+  "zip": "C:\\Users\\Asus\\.codex\\worktrees\\0498\\riemann-bandwidth1-frontier-audit\\audit_exports\\A1294_NODE65_SOURCE_CONNECTED_REPLAY_20261105.zip",
+  "bytes": 20681618,
+  "sha256": "7205153baa297ab573ab65b212db41469144f494eaa2eea064b9650182b35a54",
+  "manifest_entries": 56,
+  "CRC": "PASS",
+  "independent_extraction_replay": [
+    {
+      "mode": [],
+      "exit": 0,
+      "stdout": "PASS: manifest, frozen references, bounded source extraction, exact path/box, recorded clean builds. This Python check is not a Lean kernel replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-O"
+      ],
+      "exit": 0,
+      "stdout": "PASS: manifest, frozen references, bounded source extraction, exact path/box, recorded clean builds. This Python check is not a Lean kernel replay.\n",
+      "stderr": ""
+    },
+    {
+      "mode": [
+        "-OO"
+      ],
+      "exit": 0,
+      "stdout": "PASS: manifest, frozen references, bounded source extraction, exact path/box, recorded clean builds. This Python check is not a Lean kernel replay.\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "bounded three-node theorem; complete root remains open"
+}

@@ -1,0 +1,38 @@
+{
+  "format": "A1294-node51-claim-evidence-v1",
+  "scope": "terminal 15 acceptance, node 51 source-connected replay, exact local cursor exhaustion, and bounded generator experiment",
+  "source": {
+    "v4_predecessor_archive_sha256": "a0b58ec6b7241f88b0bb3b223c7944fbdc0d7922fcd8f049f040d61b642d3b13",
+    "frozen_v2_archive_sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5",
+    "node51_topology_51_67": [2, 0, 4, 0, 1, 0, 5, 0, 3, 0, 2, 0, 4, 0, 1, 0, 0],
+    "terminal15_anchor_byte_offset": 150,
+    "terminal15_anchor_codes": [0, 0, 0, 0, 0],
+    "terminal15_rows": 15,
+    "terminal15_segment_occurrences": 369,
+    "terminal15_distinct_catalog_refs": 167,
+    "terminal15_tangent_margin": "15548403072798677216495474300033874301/5000000000000000000000000000000000000000",
+    "source_stream_sha256": {
+      "topology": "9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76",
+      "terminal_kinds": "859e25cdff7379072a3928347b66dfbe762ff83c98035b0e3b591e9b533f06",
+      "anchors": "32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5"
+    }
+  },
+  "lean_claims": [
+    {"theorem": "AuthenticCompact15.accepted_original", "status": "KERNEL_PROVED", "source_file": "Terminal15Compositional.lean"},
+    {"theorem": "AuthenticCompact15.leaf_sound", "status": "KERNEL_PROVED", "source_file": "Terminal15Compositional.lean"},
+    {"theorem": "Node51.replay51", "status": "KERNEL_PROVED", "source_file": "Node51Replay.lean"},
+    {"theorem": "Node51.exact_exhaustion", "status": "KERNEL_PROVED", "source_file": "Node51Replay.lean"},
+    {"theorem": "Node51.source_connected_predicate", "status": "KERNEL_PROVED_OVER_COMPILED_SOURCE_LITERALS", "source_file": "Node51Replay.lean"}
+  ],
+  "external_obligations": [
+    "prove in Lean that the frozen V2 byte arrays parse into the compiled Lean source literal declarations",
+    "prove in Lean that the deterministic source catalog selector returns every generated row, segment, and catalog reference",
+    "authenticate the original archive publisher if publisher-level authenticity is required"
+  ],
+  "integrity_methods": {
+    "vrk": "Archived VRK v0.3.1 canonical JSON digest and evidence_root implementation; unsigned local evidence record",
+    "intentseal_protocol": "Archived candidate manifest verifier executed for fail-closed file inventory and SHA-256 consistency only",
+    "signature": "None; no signer, key, external public-key pin, signed head, or freshness chain was used"
+  },
+  "trust_note": "Hashes detect changes relative to the local manifest; VRK/IntentSeal integrity checks do not prove mathematical claims, source conversion, deterministic selection, archive origin, or rollback freshness. Lean theorem claims are verified separately by the pinned Lean kernel."
+}

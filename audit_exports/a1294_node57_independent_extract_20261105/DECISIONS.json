@@ -1,0 +1,9 @@
+{
+  "SOURCE_RECONSTRUCTION": "EXTERNAL_RECONSTRUCTION_PASS",
+  "TERMINAL18_ACCEPTANCE": "INCOMPLETE: shared catalog lookup elaboration recursion depth; no Boolean false established",
+  "NODE57_REPLAY": "NOT_ATTEMPTED: terminal acceptance required first",
+  "ROOT_PREDICATE": "OPEN",
+  "FULL_A1294_THEOREM": "OPEN",
+  "SOURCE_AUTHENTICATION": "External V2 ZIP and pinned catalog/source-to-literal correspondence required",
+  "NEXT_ANCESTOR": "NOT_REPORTED: node57 not closed"
+}

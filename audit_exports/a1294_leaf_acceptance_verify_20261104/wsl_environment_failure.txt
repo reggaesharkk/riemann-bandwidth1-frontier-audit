@@ -1,0 +1,3 @@
+WSL corrected compilation attempt: Wsl/Service/ERROR_TIMEOUT.
+Read-only responsiveness check (echo WSL_READY; ps filtered to lean/lake; free -m): Wsl/Service/CreateInstance/ERROR_TIMEOUT. No compiler output or theorem result was produced.
+No WSL shutdown/restart/process termination was performed. This is not evidence of memory exhaustion, a false Boolean, or a mathematical counterexample.

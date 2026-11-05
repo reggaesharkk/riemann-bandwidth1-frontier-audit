@@ -1,0 +1,171 @@
+{
+  "authentication": "Unsigned local provenance record using the archived VRK canonical digest and evidence-root implementation. It does not verify Lean proofs, authenticate the source publisher, prove byte-to-literal or selector correspondence, or provide a signed IntentSeal ledger/head.",
+  "claims": [
+    {
+      "claim_digest": "35dd09407ce6d6b56f9a9f14aec15fb7bc87928dcd21bc6f977b71b4f4802333",
+      "name": "terminal15_compact_acceptance",
+      "proposition": "AuthenticCompact15.accepted_original is true for the recovered terminal-15 source payload over Catalog15.original.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "db5e753bcf68f7b92fa00fd2afe2071c9959235549fa5e26d4ed74e55d8153ac",
+      "name": "terminal15_leaf_soundness",
+      "proposition": "The accepted exact tangent data implies the upstream affine energy goal on AuthenticCompact15.box.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "53cc7c0c7702e9582a9314fa08206cb1cfe075d8be3a90311dce78ee4628d955",
+      "name": "node51_replay_and_cursor_exhaustion",
+      "proposition": "The 17-token/9-payload node-51 replay consumes exactly (17,9), reusing Node53.replay53.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "20c0b50865a1017da47a9277bf3f1443a6832236ff5d72910f5603c038bbb23f",
+      "name": "node51_source_connected_boxpredicate",
+      "proposition": "The source path, literal topology/kinds/anchors and accepted replay imply BoxPredicate (affineEnergyGoal A B) A1294Source.box36.",
+      "status": "KERNEL_PROVED_OVER_COMPILED_SOURCE_LITERALS"
+    },
+    {
+      "claim_digest": "c8ca70b9e2b0cf1235c4a5e10d5c0bf6161eabfd8e62923c54fbd950c74e60ff",
+      "name": "v2_source_byte_to_lean_literal_correspondence",
+      "proposition": "The independent verifier compares the frozen V2 source streams and catalogs to the compiled Lean literal data; that conversion is not proved in Lean.",
+      "status": "EXTERNALLY_CHECKED"
+    },
+    {
+      "claim_digest": "2fc923154b33872aea5afd3ed8549ac94549432c19119ab63c75a6218811335d",
+      "name": "deterministic_catalog_selection_correspondence",
+      "proposition": "The exact Python verifier recomputes all fifteen model selections and their segment intervals from the frozen catalogs; Lean proves the resulting compact payload checks, not the selector implementation's equivalence to the source algorithm.",
+      "status": "EXTERNALLY_CHECKED"
+    },
+    {
+      "claim_digest": "7d33bb6b09c44cb9d82d5f195c9134846f21b80577294502e367a840c438a4df",
+      "name": "complete_initial_root_predicate",
+      "proposition": "This chunk proves no BoxPredicate for initialGapBox 60 and no complete A1294 theorem.",
+      "status": "INCOMPLETE"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "reference_inputs/A1294_NODE53_TERMINAL16_PROOF_PACKET_V4_20261105.zip",
+      "role": "v4-predecessor-archive",
+      "sha256": "a0b58ec6b7241f88b0bb3b223c7944fbdc0d7922fcd8f049f040d61b642d3b13"
+    },
+    {
+      "path": "reference_inputs/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+      "role": "frozen-v2-source-archive",
+      "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+    },
+    {
+      "path": "terminal15_authentic_input.json",
+      "role": "terminal15-source-reconstruction",
+      "sha256": "3e8b6a03723ca0d70adb98f744484ae398729bd8fa8aa86bbe456c7f7223b349"
+    },
+    {
+      "path": "verify15_reconstruction.py",
+      "role": "terminal15-independent-reconstruction-checker",
+      "sha256": "de8309b48bbecb567132e8df655b4dfdcd29f1d1d075b4abd16755bf81d411d9"
+    },
+    {
+      "path": "Catalog15Identity.lean",
+      "role": "terminal15-catalog-identity-proof",
+      "sha256": "9868cf52966b8f88537b12ac068836770559f71a4f6fbf67092177bf4a80c87d"
+    },
+    {
+      "path": "Catalog15AllLookups.lean",
+      "role": "terminal15-catalog-lookup-proofs",
+      "sha256": "95f36e94da09353f32b675cb7545985d7768904b439237a36af78544d98ac304"
+    },
+    {
+      "path": "Terminal15Compositional.lean",
+      "role": "terminal15-acceptance-proof",
+      "sha256": "48341e899c669d95d1fa8375a28f77a703855868143fbb7c4672ba4176442451"
+    },
+    {
+      "path": "Terminal15Compositional.olean",
+      "role": "terminal15-acceptance-object",
+      "sha256": "962aa4b6869d4dc7ddfd9c447a91979497fbac26f884af6f5032df0009feb25e"
+    },
+    {
+      "path": "Node51Replay.lean",
+      "role": "node51-replay-proof",
+      "sha256": "7d8f5a0b6e4ae9bf566cdc700a2eee08b29c4cec704bc96219920ac2e24dc150"
+    },
+    {
+      "path": "Node51Replay.olean",
+      "role": "node51-replay-object",
+      "sha256": "5df36747893421cae04a0bcdd82400afbaad9316b27aa5a93ce32163fd536457"
+    },
+    {
+      "path": "reference_dependencies/Node53Replay.lean",
+      "role": "reused-node53-proof",
+      "sha256": "d3ab270499d165561d9345dac14404abcd2ad146be4051ea2a82501f9e121301"
+    },
+    {
+      "path": "reference_dependencies/Node53Replay.olean",
+      "role": "reused-node53-object",
+      "sha256": "c047e8dfad8e1731ca814de4b61145f17adc48ebca75f3a7e224a77d6187f5e9"
+    },
+    {
+      "path": "generate_node51_replay.py",
+      "role": "source-bound-multileaf-generator",
+      "sha256": "84fd5e1f2b2cdf7d38448c83a4bd6b5019b7d2dd5e09a8a4f3ca80c8a6bf7588"
+    },
+    {
+      "path": "test_node51_generator_rejections.py",
+      "role": "generator-mutation-tests",
+      "sha256": "d23131753a1fd81f3f1b2df95a3177ef1d0d547b29979399743bf11c9c0a0de2"
+    },
+    {
+      "path": "generator_rejection_tests_normal.log",
+      "role": "generator-mutation-test-results",
+      "sha256": "c65f1b0c3e1c91a760875e1244b40ed74d3590ad172fcf37624834cfae448f66"
+    },
+    {
+      "path": "Node51Replay.generated.lean",
+      "role": "generated-multileaf-replay-source",
+      "sha256": "7d8f5a0b6e4ae9bf566cdc700a2eee08b29c4cec704bc96219920ac2e24dc150"
+    },
+    {
+      "path": "RESOURCE_BENCHMARK.json",
+      "role": "resource-measurements",
+      "sha256": "94e90ecc07dbd80bd9939788111e9a88f2c5a0d85c5066722d927dbbd3a0bec8"
+    },
+    {
+      "path": "REPORT.md",
+      "role": "mathematical-proof-report",
+      "sha256": "32fc910f8b2ef940301dfd477c12b1617b6a7b9d572f29609a58671ec5ae36ee"
+    },
+    {
+      "path": "BULK_GENERATION.md",
+      "role": "bounded-generator-feasibility-report",
+      "sha256": "10ca758b94178bc8abc7fc17c1ae37c6f4fa2dac99a0499bbf02aa477a303c8b"
+    },
+    {
+      "path": "DECISIONS.json",
+      "role": "proof-decisions",
+      "sha256": "40ecc3882c25036b4570d754e27f474ec38a23683c396d7fc889657ae1c2707e"
+    },
+    {
+      "path": "SOURCE_HASH_INVENTORY.json",
+      "role": "source-hash-inventory",
+      "sha256": "004ac365427e5e88efea0b951f46fb864bd7f85d44d44e2eba5318543337df3c"
+    },
+    {
+      "path": "ENVIRONMENT_CHECK.log",
+      "role": "pinned-environment-check",
+      "sha256": "36f74c9966085154855bbdf3cdd4d0a83a8ce0760247e0075ee907101d0da986"
+    }
+  ],
+  "evidence_root": "fcfb798d403fe598c08a64643369575febd32d1f16b01f13cd0ed945eeff7f8c",
+  "project": "A1294 authentic terminal-15 acceptance and source-connected node-51 replay",
+  "record_digest": "44db502f14ac1973dfd2593a5f9b4a060916d44c6b65cf943f3c28f403737959",
+  "schema": "a1294-vrk-claim-evidence-v1",
+  "source_environment": {
+    "formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+    "lake_manifest_sha256": "1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448",
+    "lake_version": "5.0.0-src+d8b1897",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "lean_toolchain": "leanprover/lean4:v4.33.0-rc2",
+    "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129"
+  }
+}

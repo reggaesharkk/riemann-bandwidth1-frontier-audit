@@ -1,0 +1,43 @@
+Zeta23/ThmD/Sextuple/Checkpoints.lean:23:5: warning: Variable name `hord` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hord
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Zeta23/ThmD/Sextuple/Checkpoints.lean:71:59: warning: This simp argument is unused:
+  LowerPiece.model
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Rat.cast_add, Rat.cast_mul, Rat.cast_pow]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'A1294GenericChecker.certifiedPiecewiseCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294Compact.compactSegmentCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294FifteenBridge.fifteenCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A1294FifteenBridge.compactQuadraticLeafCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.first_floor_canonical' does not depend on any axioms
+'AuthenticCompactLeaf.first_catalog_ref' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactLeaf.first_segment_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+	Command being timed: "timeout 240 lake env lean Zeta23/ThmD/Sextuple/Checkpoints.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/a1294_leaf_acceptance_20261104/Checkpoints.olean"
+	User time (seconds): 14.35
+	System time (seconds): 47.19
+	Percent of CPU this job got: 55%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:50.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5490504
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 162116
+	Minor (reclaiming a frame) page faults: 767269
+	Voluntary context switches: 225864
+	Involuntary context switches: 816
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

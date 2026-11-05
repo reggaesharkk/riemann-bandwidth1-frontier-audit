@@ -1,0 +1,38 @@
+Independent audit replay results
+Date: 2026-11-03
+Current interpreter: CPython 3.12.10 (MSC v.1943 64-bit ARM64)
+Current platform: Windows 11 10.0.26300-SP0, ARM64
+Historical run environment in saved V2 result: Windows 11 10.0.26200-SP0, CPython 3.12.10, ARM64
+
+Exact rational witness checker
+- normal Python: PASS
+- python -O: PASS
+- python -OO: PASS
+- output SHA-256 in all three modes: C6812F3851FB51F20A2A8DFE24F87D6ECE4DC2BCE63796B3B734327CAAF6B5A6
+- exact RHS: 1739674247820415045342527228267900485813207074499/134217728000000000000000000000000000000000000000000
+- decimal: 0.01296158319577883963...
+- exact source input hashes: stable 961a0281a134382f9c2678cc49487839d2b9c2cbd9df382871f2c7b706552a5b; v1 3f83563fb3d6f5a4e1aa0263384d0781494a672368233445a8c6e8e0e9817cb9; v3 7625c6dd291b88604fb7a201fef400eabd1309155e203e366aac8ca4357d992d
+
+V2 source-free package integrity
+- normal Python: PASS
+- python -O: PASS
+- python -OO: PASS
+- ZIP CRC: PASS
+- fresh independent extraction: PASS
+- package manifest members checked: 14
+- archive replay record equals separately saved result: PASS
+- stream hashes match: anchors 32e1264ab3c8350a31b9b8e1d260a16ef3ec82a71046378441f4f429dc4254f5; kinds 859e25cdff7379072c7a3928347b66dfbe762ff83c98035b0e3b591e9b533f06; topology 9726eb31321c84dc22ae90f16bfe48a2fa57ff96ab404af644d33294951b8c76
+- historical full traversal recorded PASS: 13,454,121 nodes, 6,727,061 leaves; not repeated in this audit
+
+Historical checker point cross-check
+- exact singleton evaluation agrees with the independent evaluator: PASS
+
+SHA256SUMS.txt is generated after the packet contents are frozen; run
+`python verification/verify_manifest.py` after extraction to check the final
+packet manifest. The standalone audit ZIP itself is also SHA-256 hashed after
+creation and checked after independent extraction.
+
+Outer ZIP extraction note: the first verification attempt used a nested scratch
+path and encountered Windows MAX_PATH. The verifier was changed to use a
+shallow scratch directory at the workspace root; the complete fresh extraction
+and replay then passed. No packet evidence was modified by the failed attempt.

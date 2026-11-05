@@ -1,0 +1,6 @@
+'AuthenticCompactRight.all_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactRight.tangent_checked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactRight.decode_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactRight.decode_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactRight.accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AuthenticCompactRight.leaf_sound' depends on axioms: [propext, Classical.choice, Quot.sound]

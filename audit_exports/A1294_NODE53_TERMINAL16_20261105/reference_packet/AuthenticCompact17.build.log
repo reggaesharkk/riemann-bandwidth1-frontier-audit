@@ -1,0 +1,45 @@
+/mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/AuthenticCompact17.lean:403:115: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+theorem AuthenticCompact17.accepted : compactQuadraticLeafCheck catalog (647 / 50000) (1094977 / 5000000000) box anchor
+    rows =
+  true :=
+sorry
+theorem AuthenticCompact17.accepted_original : compactQuadraticLeafCheck Catalog17.original (647 / 50000)
+    (1094977 / 5000000000) box anchor rows =
+  true :=
+Eq.mpr
+  (id
+    (congrArg (fun _a => compactQuadraticLeafCheck _a (647 / 50000) (1094977 / 5000000000) box anchor rows = true)
+      Catalog17Identity.original_eq_catalog))
+  accepted
+theorem AuthenticCompact17.leaf_sound : ∀ ⦃g : Fin 5 → ℝ⦄,
+  box.Holds g → ↑(647 / 50000) ≤ sextupleEnergy g + ↑(1094977 / 5000000000) * sextupleSpan g :=
+compactQuadraticLeafCheck_sound accepted_original
+'AuthenticCompact17.accepted' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AuthenticCompact17.accepted_original' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AuthenticCompact17.leaf_sound' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+Command exited with non-zero status 1
+	Command being timed: "timeout 360 lake env lean -M6000 --root /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105 /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/AuthenticCompact17.lean -o /mnt/c/Users/Asus/.codex/worktrees/0498/riemann-bandwidth1-frontier-audit/audit_exports/A1294_NODE55_TERMINAL17_20261105/AuthenticCompact17.olean"
+	User time (seconds): 4.69
+	System time (seconds): 21.62
+	Percent of CPU this job got: 37%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:10.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5358644
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 153302
+	Minor (reclaiming a frame) page faults: 818520
+	Voluntary context switches: 207214
+	Involuntary context switches: 604
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

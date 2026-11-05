@@ -1,0 +1,203 @@
+import Terminal15Compositional
+import Node53Replay
+
+open Zeta23.ThmD.Sextuple A1294FifteenBridge A1294Compact
+noncomputable section
+
+namespace Node51
+open A1294Source A1294Combined
+
+def payload15 : Payload :=
+  ⟨AuthenticCompact15.catalog, [0,0,0,0,0], List.ofFn AuthenticCompact15.rows⟩
+
+def parentBox : GapBox := A1294Source.box36
+
+theorem left_box : parentBox.lowerHalf (⟨1, by decide⟩ : Fin 5) = AuthenticCompact15.box := by
+  apply A1294Source.box_ext
+  all_goals
+    intro i
+    fin_cases i <;>
+      simp only [GapBox.lowerHalf, GapBox.midpoint, parentBox, A1294Source.box36,
+        AuthenticCompact15.box, Function.update_apply] <;> norm_num <;> decide
+
+theorem right_box : parentBox.upperHalf (⟨1, by decide⟩ : Fin 5) = Node53.parentBox := by
+  exact A1294Source.checkpoint36
+
+theorem left_check : leafCheck (parentBox.lowerHalf 1) (.quadratic payload15) = true := by
+  change leafCheck (parentBox.lowerHalf (⟨1, by decide⟩ : Fin 5)) (.quadratic payload15) = true
+  rw [left_box]
+  simp only [leafCheck, affineLeafCheck, quadraticCheck, payload15,
+    decodeRows_ofFn, decodeAnchor_zero]
+  exact AuthenticCompact15.accepted
+
+def topology : CursorStream AffineTreeToken := CursorStream.ofList
+  [.split 1, .terminal, .split 3, .terminal, .split 0, .terminal, .split 4, .terminal,
+   .split 2, .terminal, .split 1, .terminal, .split 3, .terminal, .split 0, .terminal,
+   .terminal]
+
+def payloads : CursorStream (AffineLeafPayload Payload) := CursorStream.ofList
+  [.quadratic payload15, .quadratic Node53.payload16, .quadratic Node55.payload17,
+   .quadratic Node57.payload18, .quadratic Node59.payload19, .quadratic Node61.payload20,
+   .quadratic Node63.payload21, .quadratic A1294Combined.leftPayload, .quadratic A1294Combined.rightPayload]
+
+theorem top0 : topology.get? 0 = some (.split 1) := by rfl
+theorem top1 : topology.get? 1 = some .terminal := by rfl
+theorem pay0 : payloads.get? 0 = some (.quadratic payload15) := by rfl
+
+theorem topology_offset : ∀ i, topology.get? (2+i) = Node53.topology.get? i := by
+  intro i
+  rw [show 2+i=i+2 by omega]
+  simp [topology, Node53.topology]
+
+theorem payload_offset : ∀ i, payloads.get? (1+i) = Node53.payloads.get? i := by
+  intro i
+  rw [show 1+i=i+1 by omega]
+  simp [payloads, Node53.payloads]
+
+theorem left_run : replayAffineTree leafCheck topology payloads 8 1 0
+    (parentBox.lowerHalf 1) = some (2,1) := by
+  simp only [replayAffineTree, top1, pay0, left_check, ite_true]
+
+theorem reused_node53_run : replayAffineTree leafCheck topology payloads 8 2 1
+    Node53.parentBox = some (17,9) := by
+  exact ReplayTransport.transport leafCheck Node53.topology topology
+    Node53.payloads payloads 2 1 topology_offset payload_offset
+    (fuel := 8) (tc := 0) (pc := 0) (a := 15) (b := 8) (box := Node53.parentBox)
+    Node53.replay53
+
+theorem right_run : replayAffineTree leafCheck topology payloads 8 2 1
+    (parentBox.upperHalf (⟨1, by decide⟩ : Fin 5)) = some (17,9) := by
+  rw [right_box]
+  exact reused_node53_run
+
+theorem replay51 : replayAffineTree leafCheck topology payloads 9 0 0 parentBox = some (17,9) := by
+  exact A1294Combined.split_chunk_replay leafCheck topology payloads parentBox
+    1 8 0 0 (2,1) (17,9) top0 left_run right_run
+
+theorem accepted_tree : checkAffineTree leafCheck topology payloads 9 parentBox = true := by
+  unfold checkAffineTree
+  rw [replay51]
+  rfl
+
+theorem exact_exhaustion : replayAffineTree leafCheck topology payloads 9 0 0 parentBox =
+    some (topology.length, payloads.length) := checkAffineTree_exact_exhaustion accepted_tree
+
+theorem exact_lengths : topology.length = 17 ∧ payloads.length = 9 := by
+  constructor <;> rfl
+
+def sourcePath51 : Path := Source57.path.take 36
+def typedPath51 : List (Fin 5 × Bool) := Source57.typedPath.take 36
+
+theorem locate51 : locate 51 topologyBytes kindBytes = some (sourcePath51,15) := by decide
+theorem typed_path51 : decodePath sourcePath51 = some typedPath51 := by rfl
+
+theorem source_path51 : walk (initialGapBox 60) typedPath51 = A1294Source.box36 := by
+  change walk A1294Source.box0 typedPath51 = A1294Source.box36
+  simp only [typedPath51, Source57.typedPath, List.take, walk]
+  rw [A1294Source.checkpoint0, A1294Source.checkpoint1, A1294Source.checkpoint2,
+    A1294Source.checkpoint3, A1294Source.checkpoint4, A1294Source.checkpoint5,
+    A1294Source.checkpoint6, A1294Source.checkpoint7, A1294Source.checkpoint8,
+    A1294Source.checkpoint9, A1294Source.checkpoint10, A1294Source.checkpoint11,
+    A1294Source.checkpoint12, A1294Source.checkpoint13, A1294Source.checkpoint14,
+    A1294Source.checkpoint15, A1294Source.checkpoint16, A1294Source.checkpoint17,
+    A1294Source.checkpoint18, A1294Source.checkpoint19, A1294Source.checkpoint20,
+    A1294Source.checkpoint21, A1294Source.checkpoint22, A1294Source.checkpoint23,
+    A1294Source.checkpoint24, A1294Source.checkpoint25, A1294Source.checkpoint26,
+    A1294Source.checkpoint27, A1294Source.checkpoint28, A1294Source.checkpoint29,
+    A1294Source.checkpoint30, A1294Source.checkpoint31, A1294Source.checkpoint32,
+    A1294Source.checkpoint33, A1294Source.checkpoint34, A1294Source.checkpoint35]
+
+theorem source_node51_box : sourceBoxAt 51 = some (A1294Source.box36,15) := by
+  unfold sourceBoxAt
+  rw [locate51]
+  change (decodePath sourcePath51).bind
+    (fun typed => some (walk (initialGapBox 60) typed,15)) = _
+  rw [typed_path51]
+  change some (walk (initialGapBox 60) typedPath51,15) = _
+  rw [source_path51]
+
+theorem source_topology_bytes51 : topologyBytes.drop 51 =
+    [2,0,4,0,1,0,5,0,3,0,2,0,4,0,1,0,0] := by rfl
+
+theorem source_topology51 : (topologyBytes.drop 51).mapM decodeAffineTreeToken =
+    some [.split 1,.terminal,.split 3,.terminal,.split 0,.terminal,.split 4,.terminal,
+      .split 2,.terminal,.split 1,.terminal,.split 3,.terminal,.split 0,.terminal,.terminal] := by rfl
+
+theorem source_kind_anchor15 : (kindBytes[15]?, (List.range 5).mapM (anchorCode 15)) =
+    (some 1, some [0,0,0,0,0]) := by rfl
+
+def witness51 : Nat → Option Payload
+  | 15 => some payload15
+  | 16 => some Node53.payload16
+  | 17 => some Node55.payload17
+  | 18 => some Node57.payload18
+  | 19 => some Node59.payload19
+  | 20 => some Node61.payload20
+  | 21 => some Node63.payload21
+  | 22 => some A1294Combined.leftPayload
+  | 23 => some A1294Combined.rightPayload
+  | _ => none
+
+def sourcePayloads51 (cursor : Nat) : Option (List (AffineLeafPayload Payload)) :=
+  (List.range 9).mapM fun offset => do
+    let p ← witness51 (cursor+offset)
+    let kind ← kindBytes[cursor+offset]?
+    if kind = 0 then return .tail
+    else if kind = 1 then
+      let codes ← (List.range 5).mapM (anchorCode (cursor+offset))
+      return .quadratic {p with codes := codes}
+    else none
+
+theorem source_payloads51 : sourcePayloads51 15 = some
+    [.quadratic payload15, .quadratic Node53.payload16, .quadratic Node55.payload17,
+     .quadratic Node57.payload18, .quadratic Node59.payload19, .quadratic Node61.payload20,
+     .quadratic Node63.payload21, .quadratic A1294Combined.leftPayload,
+     .quadratic A1294Combined.rightPayload] := by rfl
+
+def sourceCheck51 : Bool :=
+  match sourceBoxAt 51, (topologyBytes.drop 51).mapM decodeAffineTreeToken with
+  | some (box,cursor), some tokens =>
+    match sourcePayloads51 cursor with
+    | some ps => checkAffineTree leafCheck (CursorStream.ofList tokens)
+      (CursorStream.ofList ps) 9 box
+    | none => false
+  | _,_ => false
+
+theorem source_check_accepted : sourceCheck51 = true := by
+  unfold sourceCheck51
+  rw [source_node51_box, source_topology51]
+  change (match sourcePayloads51 15 with
+    | some ps => checkAffineTree leafCheck (CursorStream.ofList
+        [.split 1,.terminal,.split 3,.terminal,.split 0,.terminal,.split 4,.terminal,
+         .split 2,.terminal,.split 1,.terminal,.split 3,.terminal,.split 0,.terminal,.terminal])
+        (CursorStream.ofList ps) 9 parentBox
+    | none => false) = true
+  rw [source_payloads51]
+  exact accepted_tree
+
+theorem source_connected_predicate : BoxPredicate (affineEnergyGoal A B) parentBox := by
+  have h := source_check_accepted
+  unfold sourceCheck51 at h
+  rw [source_node51_box, source_topology51] at h
+  change (match sourcePayloads51 15 with
+    | some ps => checkAffineTree leafCheck (CursorStream.ofList
+        [.split 1,.terminal,.split 3,.terminal,.split 0,.terminal,.split 4,.terminal,
+         .split 2,.terminal,.split 1,.terminal,.split 3,.terminal,.split 0,.terminal,.terminal])
+        (CursorStream.ofList ps) 9 parentBox
+    | none => false) = true at h
+  rw [source_payloads51] at h
+  exact A1294Combined.tree_sound h
+
+#print payload15
+#print replay51
+#print exact_exhaustion
+#print source_node51_box
+#print source_check_accepted
+#print source_connected_predicate
+#print axioms left_check
+#print axioms replay51
+#print axioms exact_exhaustion
+#print axioms source_node51_box
+#print axioms source_connected_predicate
+
+end Node51

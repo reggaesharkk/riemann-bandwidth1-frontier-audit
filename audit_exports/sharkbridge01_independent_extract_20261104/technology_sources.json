@@ -1,0 +1,74 @@
+[
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "archive_sha256": "58002603e671b98fa09114dbb8b2cdefebd0449f82f4126331480d21bdb78884",
+    "member": "release/sharklang.py",
+    "sha256": "bd5083da604368bf9b6ad17ee69a00889de1381b6b7d72f7fa39d09ca3522b1b"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "archive_sha256": "58002603e671b98fa09114dbb8b2cdefebd0449f82f4126331480d21bdb78884",
+    "member": "release/README.md",
+    "sha256": "60140ce7cfbf8b9be9247d4d29bbdcecb09e1ee7b1c23b212c2c5d6b235998e8"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\SHARKLANG_V24_2_FINAL_REVIEW_BUNDLE_20261031.zip",
+    "archive_sha256": "58002603e671b98fa09114dbb8b2cdefebd0449f82f4126331480d21bdb78884",
+    "member": "release/CHANGELOG.md",
+    "sha256": "291a7b58521ac59b35ba2fd51b1c4ad09c543ac8b6021ee64f30ba13ac2e4dd1"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "archive_sha256": "003cb7942471225e53fbe9a0acdea995b43f443ab4eb3dd4ebeee7d70bad5744",
+    "member": "source_v1.3.3_hardened/shark_protocol/kernel.py",
+    "sha256": "1e4003b3f7f0647f0bb56f3ba8b84ee7ac6b40c3f80557b6996bca163462e193"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "archive_sha256": "003cb7942471225e53fbe9a0acdea995b43f443ab4eb3dd4ebeee7d70bad5744",
+    "member": "source_v1.3.3_hardened/tools/verify_candidate_manifest.py",
+    "sha256": "d3015fafed29642d1b93594ab5aa3fc953480a703a9083087e366acc406423a1"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "archive_sha256": "003cb7942471225e53fbe9a0acdea995b43f443ab4eb3dd4ebeee7d70bad5744",
+    "member": "source_v1.3.3_hardened/README.md",
+    "sha256": "8f3eaa0a55118eae2196268d767377af7e9fc637a128ccb810fc5ce1376e6ac2"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "archive_sha256": "003cb7942471225e53fbe9a0acdea995b43f443ab4eb3dd4ebeee7d70bad5744",
+    "member": "source_v1.3.3_hardened/SECURITY.md",
+    "sha256": "6c213430caf0b3f47619baaceb8bc454b604159fea9dc6dd17436b8f3a086dbb"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\Shark_Protocol_v1_3_3_Workspace_Package_20261026.zip",
+    "archive_sha256": "003cb7942471225e53fbe9a0acdea995b43f443ab4eb3dd4ebeee7d70bad5744",
+    "member": "SHARK_PROTOCOL_V133_TECHNICAL_AUDIT_AND_THEOREM_MAP_20261026.md",
+    "sha256": "536a29137ce7901cbce414901b6abb740577f73c415cf237bea100b9fd24fcac"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\LRSC_v1_2_1_Source_Bundle.zip",
+    "archive_sha256": "b017e336253d5446a6c309d2092b7d7587ca368ed45d8c249f857f3a8b1836e9",
+    "member": "source/verify_LRSC_v1_2_1_independent.py",
+    "sha256": "06717b00df425c7558273fbbe8ee93c858e252f44ee95bb48c4a4261cd3fbb62"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle.zip",
+    "archive_sha256": "ff5f26b04a10c0d665bc89e1ad2ec025bd99c61c8b5815dacac3f89d362f26b7",
+    "member": "LRSC_v1_1_1_Reproducibility_Supplement/README.md",
+    "sha256": "89c32dc748c7da05d8cf6c7a2178a96b5333c5d61818642992becb8fe3309afc"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle.zip",
+    "archive_sha256": "ff5f26b04a10c0d665bc89e1ad2ec025bd99c61c8b5815dacac3f89d362f26b7",
+    "member": "LRSC_v1_1_1_Reproducibility_Supplement/RELEASE_NOTES.md",
+    "sha256": "c9eff824585b326805b7f36dd77932317788b390386bf75c13d6b83236ea5b78"
+  },
+  {
+    "archive": "C:\\Users\\Asus\\Downloads\\LRSC_v1_1_1_Source_Bundle.zip",
+    "archive_sha256": "ff5f26b04a10c0d665bc89e1ad2ec025bd99c61c8b5815dacac3f89d362f26b7",
+    "member": "LRSC_v1_1_1_Reproducibility_Supplement/source/exhaustive_search.cpp",
+    "sha256": "866974459c3b3cf8fd40482c7ac35eff87fc03c699beb0bb7a1104a6d99c7fd6"
+  }
+]

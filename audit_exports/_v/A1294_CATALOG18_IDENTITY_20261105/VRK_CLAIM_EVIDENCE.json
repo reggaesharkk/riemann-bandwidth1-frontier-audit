@@ -1,0 +1,167 @@
+{
+  "authentication": "Unsigned local evidence record. Hashes bind file identities only. No signature, external trust anchor, byte-parser theorem, or mathematical proof is supplied by this record.",
+  "claim_digest_algorithm": "sha256-canonical-json-v1",
+  "claims": [
+    {
+      "claim_digest": "e8d6a1d786eec5c3ca76b3bb9bfd7f757c0472079211cc5cf9efaf6ce7220cba",
+      "name": "generic_array_split",
+      "proposition": "For all element types and lists xs ys zs, ((xs ++ ys) ++ zs).toArray = (xs.toArray ++ ys.toArray) ++ zs.toArray; concrete six/nine-element examples follow.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "50e7df46dc0ee88f1121461704f8fa5e7a2553cb3f499f500624edb39ea3565b",
+      "name": "original_catalog_identity",
+      "proposition": "Catalog18.original = Catalog18.catalog for the exact 171 declaration references and 57+57+57 order in the Lean modules.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "342d3008f48d00fd0ba1d90d5c4c715d412f4371e1e8ecb2799e25fdc641280b",
+      "name": "historical_terminal18_catalog_connection",
+      "proposition": "The historical inline terminal-18 catalog expression equals Catalog18.original and hence Catalog18.catalog.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "ae0a736915f0674d08917e5d0f3bc45fb28a58ff0aebe3cafe48f1c8780a80ce",
+      "name": "terminal18_acceptance",
+      "proposition": "The supplied terminal-18 compact leaf checker evaluates to true on the historical catalog expression and upstream soundness yields the leaf box predicate.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "8774740be276bb296b0dda9085442d4d5ddd69e75e7b236dc85817728ee73001",
+      "name": "node57_bounded_replay",
+      "proposition": "The supplied node-57 source structure replays with exact exhaustion (11 topology entries, 6 payloads) and upstream soundness yields its parent BoxPredicate.",
+      "status": "KERNEL_PROVED"
+    },
+    {
+      "claim_digest": "bb28d3f057a84594544d7b0b9983d64ec6f953ac458f7dde27f4a1fe5404ee49",
+      "name": "v2_bytes_to_lean_literals",
+      "proposition": "Python/source checks compare frozen V2 bytes, catalog-selection output, and supplied Lean literals; this is not proved by the Lean kernel.",
+      "status": "EXTERNALLY_CHECKED"
+    },
+    {
+      "claim_digest": "6767e86ea6cf657c5974fd9d6b77991786fe559f68284b19440856ade2b72b54",
+      "name": "full_root_predicate",
+      "proposition": "The initial root BoxPredicate and complete A1294 theorem have not been established.",
+      "status": "INCOMPLETE"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "reference/input/A1294_SOURCE_FREE_REPLAY_PACKAGE_V2.zip",
+      "role": "frozen-input",
+      "sha256": "3ecf4d268a74d94310d4d5d8863160e5d6f1fe8a6dd00afef9afe6a80a4ed1a5"
+    },
+    {
+      "path": "reference/checkpoints/A1294_VRK_INTENTSEAL_BRIDGE_CHECKPOINT_20261105.zip",
+      "role": "predecessor-record",
+      "sha256": "efd9bb37ad16d5c843df454921f7145115e9dc39e08d347b55c79e3e860dff4f"
+    },
+    {
+      "path": "reference/checkpoints/A1294_NODE57_AUTHENTIC_TERMINAL18_INCOMPLETE_20261105.zip",
+      "role": "terminal18-source-checkpoint",
+      "sha256": "ec9eca5910487d096edbfc142ee781762e8c4a16bc1db21c399886b55e35d13c"
+    },
+    {
+      "path": "reference/checkpoints/A1294_NODE59_TERMINAL19_SOURCE_CONNECTED_20261105.zip",
+      "role": "terminal19-predecessor",
+      "sha256": "1c7af665c1c70ddd46bfe966c963658846bee212163f70cc531d044d111f1b24"
+    },
+    {
+      "path": "generic_linux/GenericArrayIdentity.lean",
+      "role": "generic-array-proof",
+      "sha256": "baf225dfd9d13fd6ad5a00a818078cce259aed86126f847ee87ee920202c36c0"
+    },
+    {
+      "path": "Catalog18Identity.lean",
+      "role": "catalog-identity-proof",
+      "sha256": "9dfbfc451f985701278fc90560c8e9fc5b414826cceb884c2979692cca87e936"
+    },
+    {
+      "path": "Catalog18AllLookups.lean",
+      "role": "all-catalog-lookups-proof",
+      "sha256": "af670450f73433a8a9494e3f5578152740f7b0baab5a2ad643de4bc21d7e75b8"
+    },
+    {
+      "path": "Terminal18CatalogConnection.lean",
+      "role": "historical-catalog-connection-proof",
+      "sha256": "db271ffcd53cd577b995c358bcb738ca7edac63cbfdc8295f55f401f9612e843"
+    },
+    {
+      "path": "Terminal18Compositional.lean",
+      "role": "terminal18-acceptance-proof",
+      "sha256": "6292fea2616015df3823fe97953bf57e4e460c09f49145af3023b78304567ffc"
+    },
+    {
+      "path": "Terminal18HistoricalAcceptance.lean",
+      "role": "historical-terminal18-acceptance-proof",
+      "sha256": "15b0314a2959a0a1bfd2f0bac841dcb7071dac56be156f10b38eea00e0ff9b9f"
+    },
+    {
+      "path": "Source57.lean",
+      "role": "node57-source-geometry-proof",
+      "sha256": "f6e9c1ef38ca8bcaf9c60509989ef987c097aed98640f08111db5eb8872b49e1"
+    },
+    {
+      "path": "Node57Helpers.lean",
+      "role": "node57-helper-proof",
+      "sha256": "8c01eb43ddcb70de720ece687efee8a9fe01cc5811f3dd173cbbd3ffbdfa8d90"
+    },
+    {
+      "path": "Node57Replay.lean",
+      "role": "node57-replay-proof",
+      "sha256": "81edd18b2ff549de2e91a203e22d8bafdefcc62c59c1e4076c714053857f9440"
+    },
+    {
+      "path": "Node57Final.lean",
+      "role": "node57-final-proof",
+      "sha256": "75a95e5c9ecd9387fc6763813373b58a01868d73c6b6af70fce9aef179fdd5ea"
+    },
+    {
+      "path": "verify_catalog_source.py",
+      "role": "source-catalog-reconstruction-check",
+      "sha256": "ffa725fd7fbe8db832af090813740d4614567d06b100ff5c8afdcb3b71b7a346"
+    },
+    {
+      "path": "verify_terminal18_provenance.py",
+      "role": "terminal18-exact-provenance-check",
+      "sha256": "4a7cdde4a397fcbdd517924eadaac226833c19dff5b13806d87876a6d7205a44"
+    },
+    {
+      "path": "verify_archive_inputs.py",
+      "role": "archive-identity-check",
+      "sha256": "14780c5e5d70c609b1c5ddad5047d427e72fe9094760a82699f0adaea2e20b2d"
+    },
+    {
+      "path": "reference/lineage/IntentSeal_lineage_final_published.zip",
+      "role": "final-published-lineage",
+      "sha256": "05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0"
+    },
+    {
+      "path": "reference/lineage/IntentSeal_lineage_historical_inventory.zip",
+      "role": "historical-lineage-inventory",
+      "sha256": "14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db"
+    },
+    {
+      "path": "reference/vrk/canonical.py",
+      "role": "vrk-canonical-code",
+      "sha256": "6d090bc16273a53e3037b13db55722a1755ea63a91fb649731589e25244eaba8"
+    },
+    {
+      "path": "reference/vrk/evidence.py",
+      "role": "vrk-evidence-code",
+      "sha256": "027e331ee1a2e69ac13166413d6a781504514fa5b45d70dddafdfee9ab47b862"
+    }
+  ],
+  "evidence_root": "84b86e5be722d9a984c8ff17b72a1e46684b203d4e21687769ac02d52acb6615",
+  "project": "A1294 terminal-18 catalog identity and bounded node-57 replay",
+  "record_digest": "3b2075de1e5e0e026ae1da00b88baf6d2c4456d629c94ae7b5015fffe45dea2c",
+  "schema": "a1294-vrk-claim-evidence-v1",
+  "source_environment": {
+    "formal_math_commit": "fba91d214655aaa1fd0504bb893c8859c20c79f9",
+    "lake_manifest_sha256": "1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448",
+    "lake_version": "5.0.0-src+d8b1897",
+    "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "lean_toolchain": "leanprover/lean4:v4.33.0-rc2",
+    "mathlib_commit": "51e6992efd06126df61a496bebf8f49482a4e129"
+  }
+}

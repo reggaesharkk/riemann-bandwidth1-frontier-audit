@@ -1,0 +1,36 @@
+ℹ [8705/8706] Replayed Zeta23.ThmD.Sextuple.Macro.EnvelopeData
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:561:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroEnvelope_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:563:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPiece0_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:564:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPiece3_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/Macro/EnvelopeData.lean:565:0: 'Zeta23.ThmD.Sextuple.MacroPrototype.macroPieces_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8706/8706] Built Zeta23.ThmD.Sextuple.A1294QuadraticLeaf (71s)
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:164:0: 'A1294QuadraticLeaf.source_path_reconstructs_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:165:0: 'A1294QuadraticLeaf.active_zero_source_piece_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:166:0: 'A1294QuadraticLeaf.selected_pair9_model_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:167:0: 'A1294QuadraticLeaf.selected_models_pairwise_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:168:0: 'A1294QuadraticLeaf.selected_rank_tangent_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Zeta23/ThmD/Sextuple/A1294QuadraticLeaf.lean:169:0: 'A1294QuadraticLeaf.authentic_quadratic_leaf_box_predicate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8706 jobs).
+	Command being timed: "lake build Zeta23.ThmD.Sextuple.A1294QuadraticLeaf"
+	User time (seconds): 11.88
+	System time (seconds): 23.28
+	Percent of CPU this job got: 43%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:20.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5353440
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 193081
+	Minor (reclaiming a frame) page faults: 850618
+	Voluntary context switches: 336162
+	Involuntary context switches: 1975
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

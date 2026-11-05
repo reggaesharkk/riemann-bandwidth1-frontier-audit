@@ -1,0 +1,74 @@
+{
+  "directory": "M14_parts_20261002_232916",
+  "part_count": 10,
+  "total_bytes": 310927472,
+  "parts": [
+    {
+      "file": "M14.part000",
+      "bytes": 31457280,
+      "sha256": "c13faa38e3c258514d846678af35127c39c2839849e23c6e8d97ee8c172ac070"
+    },
+    {
+      "file": "M14.part001",
+      "bytes": 31457280,
+      "sha256": "1efc7a01f601779c4723a077603666fb53868b6ea8c150065c50e095d8151136"
+    },
+    {
+      "file": "M14.part002",
+      "bytes": 31457280,
+      "sha256": "52936f2c3ef15312fb4fe3295cb02b62922d2b290a85f905dcd39785a8cf2945"
+    },
+    {
+      "file": "M14.part003",
+      "bytes": 31457280,
+      "sha256": "b4f506fa819cb23ed6f4ce66f2a96754c127e0812661d6ff3c540274e14fbee3"
+    },
+    {
+      "file": "M14.part004",
+      "bytes": 31457280,
+      "sha256": "dd4d324ac55d2e9475ad8a716828cfc5f11bf758206c0c81bee50fa945c9d3dd"
+    },
+    {
+      "file": "M14.part005",
+      "bytes": 31457280,
+      "sha256": "54979de5da9a9ebee45685fc4aa177982015d1688e7f257e315817f03ac927d0"
+    },
+    {
+      "file": "M14.part006",
+      "bytes": 31457280,
+      "sha256": "c5c6ed935d029c16b6655d95de94ea666d042512bc8e7b0078d0731066f1f214"
+    },
+    {
+      "file": "M14.part007",
+      "bytes": 31457280,
+      "sha256": "778e23ce48d3061759a8d52167c7aa7f3ca631a46f3708190da384e52f593e20"
+    },
+    {
+      "file": "M14.part008",
+      "bytes": 31457280,
+      "sha256": "6b4393939981df01fe39085f44b9aad0e496ca693d46f7ae41f3747b0ae9f65f"
+    },
+    {
+      "file": "M14.part009",
+      "bytes": 27811952,
+      "sha256": "d8919e58ddde467c2a8f5c6b19a5807b77331b40ac68e7a32da82369c1f3392e"
+    }
+  ],
+  "concatenated_sha256": "330bb3e931fa8d45d1837c090b13a4a638fb54577cb26b8d8eaa2fe009303058",
+  "zip_directory_crc": "PASS",
+  "inner_members": {
+    "M14_adjoint_rhs.npy": {
+      "bytes": 163652624,
+      "sha256": "8c838ac0e93d70c5d170925e0d27799b745f0adc3c7296a0335219b7359c783c"
+    },
+    "M14_adjoint_values.npy": {
+      "bytes": 163652624,
+      "sha256": "00a230b47c66d3417b1fc259ead4e58ff46542753ddb7710c83a64dd4cd882ab"
+    },
+    "M14_arb_vjp_point.json": {
+      "bytes": 5733,
+      "sha256": "981dc8d6286f5d989e73dec050ad406776c1320ead36596ac173de95d6a7edc8"
+    }
+  },
+  "scope_note": "The 310,927,472-byte split archive was verified by concatenated virtual read; array members are not copied into this supplemental packet."
+}
