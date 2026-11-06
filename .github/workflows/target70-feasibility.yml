@@ -1,0 +1,25 @@
+name: 70 percent feasibility gate
+
+on:
+  push:
+    branches:
+      - research/70pct-support-escape-v0.1
+    paths:
+      - src/target70_feasibility_gate.py
+      - .github/workflows/target70-feasibility.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  feasibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Quantify the 70 percent barrier and escape targets
+        run: python -u src/target70_feasibility_gate.py
