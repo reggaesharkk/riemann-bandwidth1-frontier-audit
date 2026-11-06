@@ -14,7 +14,15 @@ The root `.gitattributes` marks `audit_exports/**` as byte-preserving (`-text`) 
 
 The local tree contains 217 ZIP paths totaling 5,342,255,030 bytes. They represent 56 distinct archive byte streams totaling 2,462,048,823 bytes after SHA-256 deduplication. The individual files are below GitHub's 2 GiB release-asset ceiling; the candidate list is in `AUDIT_EXPORTS_RELEASE_ASSET_CANDIDATES_20261106.json`. These binaries are not Git blobs in this source-sync commit. Generated Lean objects and raw build artifacts are likewise inventoried but not added to ordinary Git. The nested `sharkbridge01_worktree` and `__pycache__` copies are excluded as scratch/build copies.
 
-This commit does not claim that those release candidates have been uploaded. The source/evidence branch and existing Git refs are synchronized separately from those large archive payloads. The manifest makes the remaining local-only payloads and hashes explicit.
+At the initial source-sync commit, the release candidates had not yet been uploaded. The later upload is recorded below; the candidate manifest preserves their local paths and hashes.
+
+## Post-upload verification — 2026-11-06
+
+The 56 unique manifest-listed payloads were subsequently uploaded to the public [audit archive release](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/releases/tag/audit-archive-snapshot-20261106). Their combined size is 2,462,048,823 bytes. GitHub's release API reports matching names, sizes, and SHA-256 digests for all 56 assets. The release tag points to commit ff1583f6ba6bd7629a5a2315679ce85dee65331a on branch codex/cross-project-math-frontier-20261103.
+
+An independent local archive-membership check found 651 of 655 inventoried generated artifacts byte-for-byte inside the valid uploaded packets. The other four files are split parts of the 337,171,866-byte terminal-15 packet; concatenating them reproduces SHA-256 2461505d5cf86aeceb0dce12ad50fcddae1958cad9e12f316b5d49234fc3ac83. One 22-byte not_the_frozen_v2.zip is deliberately retained as a malformed failed-draft control and is not expected to extract.
+
+AUDIT_EXPORTS_RELEASE_VERIFICATION_20261106.json records the release asset IDs, URLs, sizes, server-reported digests, and the local cross-check. The GitHub Actions query returned zero runs for the sync commit. Existing push workflows are restricted to other research branches and paths, so no sync-branch CI result is claimed.
 
 ## Reproduce the inventory
 
