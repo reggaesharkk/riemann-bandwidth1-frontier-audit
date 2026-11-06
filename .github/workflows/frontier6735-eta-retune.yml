@@ -1,0 +1,25 @@
+name: Frontier 67.3500052 exact eta retune
+
+on:
+  push:
+    branches:
+      - research/frontier-6735-v0.1
+    paths:
+      - src/frontier6735_eta_retune_exact.py
+      - .github/workflows/frontier6735-eta-retune.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-retune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Exact scalar replay
+        run: python -u src/frontier6735_eta_retune_exact.py
