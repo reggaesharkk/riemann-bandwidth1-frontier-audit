@@ -1,0 +1,12 @@
+Local audit worktree HEAD: eb36159ee7e57053fcae3de025fe4dac539435ab
+Lean project: /home/reggaeshark/a1294_lean_formalization_20261104/formal-math/zeta23
+Formal Math commit: fba91d214655aaa1fd0504bb893c8859c20c79f9
+Lean: 4.33.0-rc2, aarch64-unknown-linux-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17
+Lake: 5.0.0-src+d8b1897
+Mathlib commit: 51e6992efd06126df61a496bebf8f49482a4e129
+lake-manifest.json SHA-256: 1847b362e15efd927e75aa8b5442e491f998e4a3f730f9dcaca9841f2957c448
+Lean memory option: -M6400 MiB; all six Lean stages were sequential.
+Mathlib rebuild: no.
+Host-side Python: 3.12.10, Windows ARM64.
+
+The first unsandboxed WSL invocation returned Wsl/E_ACCESSDENIED before starting a Lean process. The normal approval-controlled retry was then granted and the bounded command completed successfully. This was an execution permission issue, not a Lean or certificate result.
