@@ -1,0 +1,38 @@
+name: Tight Rankin gamma tail with class correction
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp70_rankin_gamma_tail_v2.py
+      - .github/workflows/wp70-rankin-gamma-tail-v2.yml
+
+permissions:
+  contents: read
+
+jobs:
+  tight-tail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy mpmath
+      - name: Pin public source
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+      - name: Tight tail T2400
+        run: python -u src/wp70_rankin_gamma_tail_v2.py 2400 | tee tight_tail_2400.log
+      - name: Tight tail T4800
+        run: python -u src/wp70_rankin_gamma_tail_v2.py 4800 | tee tight_tail_4800.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tight-rankin-gamma-tail
+          path: tight_tail_*.log
+          if-no-files-found: error

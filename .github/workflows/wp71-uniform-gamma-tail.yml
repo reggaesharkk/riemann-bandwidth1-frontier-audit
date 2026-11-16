@@ -1,0 +1,24 @@
+name: Uniform gamma tail local algebra
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp71_uniform_gamma_tail_local.py
+      - .github/workflows/wp71-uniform-gamma-tail.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  local-algebra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -u src/wp71_uniform_gamma_tail_local.py

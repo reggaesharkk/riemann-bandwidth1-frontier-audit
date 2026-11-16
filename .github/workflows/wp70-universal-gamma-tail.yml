@@ -1,0 +1,24 @@
+name: Universal gamma infinite tail
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp70_universal_gamma_tail.py
+      - .github/workflows/wp70-universal-gamma-tail.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  universal-tail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -u src/wp70_universal_gamma_tail.py

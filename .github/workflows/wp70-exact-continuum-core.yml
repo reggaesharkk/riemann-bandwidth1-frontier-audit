@@ -1,0 +1,26 @@
+name: Exact continuum core polytope audit
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp70_exact_continuum_core.py
+      - .github/workflows/wp70-exact-continuum-core.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy scipy
+      - name: Exact rational polytope audit
+        run: python -u src/wp70_exact_continuum_core.py

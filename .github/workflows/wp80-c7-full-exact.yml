@@ -1,0 +1,77 @@
+name: C7 full exact orbit certificate
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp80_c7_full_orbit_batch.py
+      - src/wp80_c7_full_orbit_aggregate.py
+      - .github/workflows/wp80-c7-full-exact.yml
+
+permissions:
+  contents: read
+
+jobs:
+  orbit-batch:
+    strategy:
+      fail-fast: false
+      max-parallel: 24
+      matrix:
+        batch: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin upstream exact polytope engine
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+          test "$(git rev-parse HEAD)" = "d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8"
+      - name: Exact orbit batch
+        run: |
+          mkdir -p c7_batches
+          python -u src/wp80_c7_full_orbit_batch.py \
+            --upstream upstream \
+            --batch ${{ matrix.batch }} \
+            --batches 32 \
+            --out "c7_batches/batch_${{ matrix.batch }}.json" \
+            | tee "c7_batches/batch_${{ matrix.batch }}.log"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: c7-orbit-batch-${{ matrix.batch }}
+          path: c7_batches/
+          if-no-files-found: warn
+
+  aggregate:
+    needs: orbit-batch
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: c7-orbit-batch-*
+          path: downloaded
+          merge-multiple: false
+      - name: Aggregate exact orbit certificate
+        run: |
+          python -u src/wp80_c7_full_orbit_aggregate.py \
+            --root downloaded \
+            --out C7_FULL_EXACT_CERTIFICATE.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: c7-full-exact-certificate
+          path: C7_FULL_EXACT_CERTIFICATE.json
+          if-no-files-found: warn

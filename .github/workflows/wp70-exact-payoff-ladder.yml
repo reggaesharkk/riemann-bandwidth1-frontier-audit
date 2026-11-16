@@ -1,0 +1,24 @@
+name: Exact payoff ladder
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp70_exact_payoff_ladder.py
+      - .github/workflows/wp70-exact-payoff-ladder.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  payoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -u src/wp70_exact_payoff_ladder.py

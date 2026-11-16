@@ -1,0 +1,348 @@
+# WP84 — balanced product-correlation bridge for the bounded resolvent route
+
+Date: 2026-10-05
+
+Status: **EXACT 2-vs-2 KERNEL REDUCTION CLOSED; PUBLISHED AVERAGE E2-CORRELATION INPUT IDENTIFIED FOR THE LONG-SHIFT RANGE; WEIGHTED ADAPTATION / SHORT-SHIFT PATCH OPEN**
+
+This note combines three previously separate pieces:
+
+1. the exact finite-compression Dirichlet trace kernel;
+2. the old WP70 observation that fourth-order off-diagonals are weighted
+   correlations of `Lambda*Lambda`;
+3. a published unconditional average-correlation theorem for almost primes.
+
+The result is a much narrower arithmetic interface for the first balanced
+near-resonance sector of WP84.
+
+## 1. Exact product collapse
+
+Let `u_n` denote any scalar coefficient attached to a retained prime-power
+shift.  In a balanced two-positive/two-negative sector define the product
+convolution
+
+    c(m) = sum_{ab=m} u_a u_b.
+
+Then on the Gabor/Fourier grid
+
+    tau_k = T + 2*pi*k/L
+
+we have exactly
+
+    sum_{a,b} u_a u_b exp(i tau_k log(ab))
+      = sum_m c(m) exp(i tau_k log m).
+
+Therefore the balanced quadratic form collapses from four prime-power
+indices to two product indices:
+
+    (1/d) sum_k |sum_m c(m) exp(i tau_k log m)|^2
+
+      = sum_{m,n}
+          c(m) conjugate(c(n))
+          exp(i T log(m/n))
+          D_d(log(m/n)/L),
+
+where
+
+    D_d(s)=(1/d) sum_{k=0}^{d-1} exp(i 2*pi*k s).
+
+This is an exact identity at finite d.
+
+The overlap/spread factors do not destroy the reduction: after the usual
+cell decomposition they become bounded piecewise-polynomial weights in the
+factor variables, so each cell gives the same product-kernel identity with a
+weighted convolution coefficient.
+
+## 2. Multiplicative near resonance becomes an additive shift
+
+Restrict m,n to one dyadic product block
+
+    M < m,n <= 2M.
+
+Write
+
+    h=n-m.
+
+If
+
+    |log(n/m)| <= C/T,
+
+then
+
+    |h| <= C' M/T
+
+for an absolute C' depending only on C.
+
+Conversely, for |h|<=M/2,
+
+    |log(1+h/m)| <= 2|h|/M.
+
+Thus the finite-compression window is, scale by scale, exactly an additive
+shift window of length
+
+    boxed:
+    H_M ~ M/T.
+
+The balanced off-diagonal is therefore a smooth weighted average of
+
+    boxed:
+    sum_m c(m) c(m+h).
+
+For prime support,
+
+    c(m)
+
+is the two-almost-prime / generalized-Mangoldt convolution.  For distinct
+primes p q,
+
+    (Lambda*Lambda)(pq)
+      = 2 log p log q.
+
+So the hard 2-vs-2 sector is not an unspecified four-prime theorem.  It is a
+long-shift correlation problem for weighted E2 numbers.
+
+## 3. Exact connection to the old WP70 dispersion lead
+
+The earlier WP70 reduction had already isolated
+
+    sum_m (Lambda*Lambda)(m)(Lambda*Lambda)(m+h),
+
+with shift range
+
+    H = X^2/T
+
+when the prime cutoff is X.
+
+The present derivation identifies the same object directly from the bounded
+resolvent / displacement route.
+
+At bandwidth X=T^lambda,
+
+    product scale M ~ X^2,
+    H_M ~ X^2/T = T^(2 lambda-1).
+
+Thus the WP70 dispersion object and the WP84 first balanced-resonance object
+are the same arithmetic family, reached from two independent derivations.
+
+This is a strong consistency check.
+
+## 4. Existing unconditional theorem in the long-shift range
+
+Natalie Evans, *Correlations of almost primes* (Math. Proc. Cambridge Philos.
+Soc. 174 (2023), 301-344), proves an average Hardy--Littlewood asymptotic for
+products of two primes.
+
+The theorem is especially close to our coefficient because the proof first
+uses the weighted function
+
+    varpi_2(n)=log p_2
+
+for n=p_1 p_2 with one factor p_1 in a prescribed multiplicative slice.
+
+For
+
+    log^(19+eps) M <= H <= M log^(-A) M,
+
+Theorem 3.2 gives, for almost all |h|<=H,
+
+    sum_{M<n<=2M} varpi_2(n)varpi_2(n+h)
+
+      = singular_series(h) * main_term
+        + O(M/log^eta M).
+
+The proof also gives an L2-in-shift estimate: the squared correlation error
+summed over |h|<=H is
+
+    O(H M^2 / log^eta M).
+
+This is relevant, but it is **not by itself sufficient** for the WP84 trace
+weight.  The finite-compression Dirichlet kernel has O(1) size across O(H)
+near-resonant shifts.  A naive Cauchy--Schwarz insertion can therefore lose
+a factor of H and need not be o(1) after the WP84 normalization.
+
+The more promising source-level interface is Proposition 3.5 in Evans:
+a local minor-arc energy bound on every frequency window of width 1/H.
+That estimate occurs before the lossy passage to an almost-all-h
+corollary and is structurally closer to our weighted Fourier kernel.
+
+## 5. Why the Evans weight is structurally compatible with Lambda*Lambda
+
+On a factor slice
+
+    P < p_1 <= P^(1+delta)
+
+and a product block M<n<=2M,
+
+our distinct-prime coefficient is
+
+    2 log p_1 log p_2 / sqrt(n).
+
+Inside a sufficiently fine multiplicative partition:
+
+- 1/sqrt(n) is a smooth product-scale weight;
+- log p_1 is a slowly varying factor-slice weight;
+- log p_2 is exactly the Evans varpi_2 weight.
+
+Therefore a theorem-grade adaptation should proceed by:
+
+1. dyadic/smooth partition in product scale n;
+2. multiplicative partition of one prime factor;
+3. partial summation to insert 1/sqrt(n) and log p_1;
+4. rewrite the actual WP84 h-weight as its circle/Fourier multiplier;
+5. apply Evans' local minor-arc estimate (Proposition 3.5) before taking any
+   absolute h-sum;
+6. treat the major-arc multiplier with the same exact WP84 weight;
+7. sum the factor slices;
+8. handle diagonal p=q and proper-prime-power pieces separately.
+
+This is substantially narrower than proving a new pointwise
+Hardy--Littlewood conjecture for Lambda*Lambda.
+
+## 6. Long-shift cells potentially become source-closed
+
+On product scale M the theorem applies once
+
+    H_M=M/T >= log^(19+eps) M.
+
+Equivalently,
+
+    M >= T log^(19+eps) M.
+
+For those cells, the first balanced near-resonance obstruction has a
+published unconditional circle-method mechanism in the correct short-shift
+regime.
+
+However, the exact WP84 weighted multiplier still has to be transported
+through the major/minor-arc argument.  Until that weighted transfer is
+proved, the Evans theorem is a relevant source input rather than a closed
+WP84 correlation theorem.
+
+## 7. The short-shift patch is now explicit
+
+The unresolved product scales satisfy
+
+    M/T < log^(19+eps) M.
+
+These are precisely the cells too short for the cited E2 theorem.
+
+We should not guess that their contribution is negligible.
+
+Instead the companion exact computation
+
+    src/wp84_phi4_product_scale_split.py
+
+splits the known connected calibration
+
+    Phi4=-1/60
+
+at the normalized product-scale wall
+
+    s=log M/L=1.
+
+That calculation tells us how much of the connected model correction is
+carried by the long-product side versus the classical-length side.
+
+If the long side carries the entire connected correction, the Evans route is
+a direct candidate closure.  If not, the residual short side becomes a
+separate, numerically quantified theorem target.
+
+## 8. Proposition-R firewall
+
+This bridge is being used only inside a bounded fixed-pole resolvent
+functional.
+
+We are **not** asserting a finite-T fourth raw trace-moment bound.
+
+That distinction is essential: Proposition R blocks the old unconditional
+raw higher-even-moment route, while bounded resolvent statistics are stable
+under o(d)-rank power-law outliers.
+
+## 9. New kill gate
+
+The next theorem-grade statement is now concrete:
+
+> Prove a weighted circle-method transfer for the exact WP84
+> Lambda*Lambda / E2 kernel, using the local minor-arc estimate before the
+> almost-all-shift Cauchy--Schwarz step, and preserve the exact
+> finite-compression multiplier through the major arcs.
+
+At order four the target must still reproduce
+
+    pair layer = 4/15,
+    connected core = -1/60.
+
+No unconditional >79% theorem is claimed yet.
+
+
+## 10. Evidence boundary: this is not yet the full fixed-pole theorem
+
+The Evans/dispersion interface controls the first balanced degree-four
+near-product-collision calibration sector.
+
+It must **not** be promoted to a proof of the full four-pole or six-pole
+resolvent comparison merely because the order-four model gate closes.
+
+A fixed nonreal resolvent contains translation words of all degrees through
+the evolving intermediate state.  The active theorem still needs one of:
+
+1. a direct bounded-resolvent estimate that sums those higher-degree sectors;
+2. a closed finite generator law for the rank-four displacement statistics;
+3. a truncation/approximation theorem with an error budget uniform enough to
+   reduce the full bounded consumer to finitely many calibrated sectors.
+
+Accordingly, the published almost-prime correlation theorem is a real
+source-closed input for one previously unnamed arithmetic obstruction, but it
+is **not** by itself the WP84 kill shot.
+
+The new four-pole delta=6 rung in
+
+    notes/WP84_FOUR_POLE_RECORD_BEATING_RUNG.md
+
+is the preferred place to test whether the remaining bounded generator can
+be closed with enough margin before escalating to the six-pole 79.627% rung.
+
+
+## 11. Source-interface correction: principal q=1 arc, not the generic minor arc
+
+The earlier discussion in Sections 4--6 identified Evans' local minor-arc
+estimate as the preferred source interface.
+
+That classification has been superseded by the exact frequency-location
+calculation.
+
+For a product cell of scale M with H=M/T,
+
+    alpha_k=tau_k/(2pi M)
+
+lies in
+
+    [1/(2pi H),1/(pi H)]+o(1/H).
+
+In the E2 long-shift range, Evans' parameters satisfy Q<H.  Hence this
+entire interval lies inside the q=1 principal major arc
+
+    |alpha|<=1/Q.
+
+Therefore:
+
+- the balanced product collapse and H=M/T shift geometry in this note remain
+  valid;
+- the generic minor-arc estimate is not the load-bearing theorem for the
+  main WP84 window;
+- the primary source object is the q=1 centered major-arc remainder.
+
+A further normalization audit shows that the published global positive L2
+bound
+
+    B^2(M)<<M/log^eta M
+
+cannot simply be inserted after oversampling: the extra factor H is too
+large on a fixed supercritical cell.
+
+The active target is a signed pair-subtracted q=1 principal-arc estimate, or
+a genuinely local centered-remainder bound with an additional effective
+H^(-1) gain.
+
+See:
+
+    notes/WP84_E2_PRINCIPAL_ARC_GEOMETRY.md
+    notes/WP84_E2_PRINCIPAL_ARC_NORMALIZATION_AUDIT.md

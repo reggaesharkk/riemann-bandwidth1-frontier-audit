@@ -1,0 +1,38 @@
+name: Corrected gamma global replay
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp70_gamma_resummation_global_replay.py
+      - .github/workflows/wp70-gamma-global-replay.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy
+      - name: Pin public source
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+      - name: T2400 corrected gamma replay
+        run: python -u src/wp70_gamma_resummation_global_replay.py 2400 --upstream upstream | tee gamma_fixed_2400.log
+      - name: T4800 corrected gamma replay
+        run: python -u src/wp70_gamma_resummation_global_replay.py 4800 --upstream upstream | tee gamma_fixed_4800.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corrected-gamma-global-replay
+          path: gamma_fixed_*.log
+          if-no-files-found: error

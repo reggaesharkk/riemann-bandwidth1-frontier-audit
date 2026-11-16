@@ -1,0 +1,25 @@
+name: Prime-power measure collapse face
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp71_prime_measure_face.py
+      - .github/workflows/wp71-prime-measure-face.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  measure-face:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check numpy
+      - run: python -u src/wp71_prime_measure_face.py

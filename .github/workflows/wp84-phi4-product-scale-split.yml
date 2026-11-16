@@ -1,0 +1,36 @@
+name: WP84 exact Phi4 product-scale split
+
+on:
+  push:
+    branches:
+      - research/frontier-7962-hostile-audit-v0.1
+    paths:
+      - src/wp84_phi4_product_scale_split.py
+      - .github/workflows/wp84-phi4-product-scale-split.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin public exact connected-integral engine
+        run: |
+          git clone --filter=blob:none https://github.com/JoshuaHKU/zeta-0.7947-reproduction.git upstream
+          cd upstream
+          git checkout d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8
+          test "$(git rev-parse HEAD)" = "d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8"
+      - name: Exact rational split of Phi4
+        run: python -u src/wp84_phi4_product_scale_split.py | tee wp84_phi4_product_scale_split.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp84-phi4-product-scale-split
+          path: wp84_phi4_product_scale_split.log
+          if-no-files-found: error
