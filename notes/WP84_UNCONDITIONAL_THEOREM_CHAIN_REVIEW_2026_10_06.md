@@ -2,7 +2,7 @@
 
 Status: **CONDITIONAL CONSUMER ARITHMETIC VERIFIED; NO UNCONDITIONAL SIMPLE-ZERO THEOREM ESTABLISHED**
 
-Audit basis: private PR #5, branch `research/frontier-7962-hostile-audit-v0.1`,
+Audit basis: public draft PR #5, branch `research/frontier-7962-hostile-audit-v0.1`,
 head `4e032b97819fed050a1b3ae9fcb86b2a88932bed`.
 
 This review follows the two usable theorem routes from the consumer calculation

@@ -56,7 +56,7 @@ A later comment on that issue points to the successor retraction and asks whethe
 
 ## 4. Evidence-grade correction
 
-Effective immediately, the private project must distinguish:
+This research record must distinguish:
 
 ### Exact/model/consumer layer — ACTIVE
 

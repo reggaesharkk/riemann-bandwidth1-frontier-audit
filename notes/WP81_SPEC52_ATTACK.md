@@ -1,7 +1,7 @@
 # WP81 — exact {5,2} attack
 
 Date: 2026-10-04  
-Status: **LAUNCHED; private/local/Colab first; no theorem claim**
+Status: **EXPLORATORY; local/Colab first; no theorem claim**
 
 ## Why {5,2} now
 
@@ -65,7 +65,7 @@ from tuning the computation toward a desired rational.
 
 ## Fastest compute plan
 
-Do not spend private GitHub Actions minutes.
+Keep exploratory runs local until source inputs and acceptance checks are frozen.
 
 Use the laptop and/or free Colab as interchangeable workers.  Split each class
 into term shards.  For example, 10-term shards:
@@ -97,6 +97,4 @@ Next steps are:
 3. prove the corresponding arithmetic transport;
 4. only then consume m7 in the exact k=8 Christoffel gate.
 
-The repository remains private while this attack is active.  Public GitHub
-Actions may be used later only by an explicit decision to trade secrecy for
-speed; publication is not required for mathematical validity.
+This note records local/Colab exploration; no GitHub Actions result is claimed here. Repository visibility is defined by GitHub settings, not this draft.

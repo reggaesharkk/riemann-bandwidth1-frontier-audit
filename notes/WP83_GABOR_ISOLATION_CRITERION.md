@@ -97,7 +97,7 @@ A theorem-grade globalization step may take any of the following forms:
 3. **cluster form:** allow a near-maximal cluster but prove its aggregate restricted form has operator norm comparable to the deepest X^delta scale;
 4. **duality form:** construct an explicit coefficient vector c for which the chosen pair contributes with fixed sign and every other zero is quantitatively smaller.
 
-None of these statements is present in the public C26 paper, and the successor retraction says the relevant reviewer argument lives in the private forward archive.
+The public C26 paper and this repository do not contain the required argument; this transfer remains OPEN. No outside material is used as evidence.
 
 ## 7. Current verdict
 

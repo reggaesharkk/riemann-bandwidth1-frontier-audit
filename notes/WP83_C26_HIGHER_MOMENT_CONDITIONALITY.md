@@ -47,7 +47,7 @@ The same program's later successor then explicitly retracted its unconditional `
 
 These facts are mutually consistent with the C26 boundary: the hard fourth-moment input never became routine merely by changing bookkeeping.
 
-## 4. Consequence for this private project
+## 4. Consequence for the current public record
 
 The following statements remain useful but **conditional/model-side** until a genuinely new analytic theorem is supplied:
 
@@ -66,7 +66,7 @@ We have two source facts:
 1. C26: an individual off-line self-pair has power-law growth `X^(2 delta)` in the zero-side second-moment expansion;
 2. successor retraction: a verified reviewer argument shows finite unconditional higher-even-moment bounds of the claimed strength force power-law zero-free regions.
 
-What is **not** public is the bridge proving item 2 from the compressed-Weil matrix in the presence of all other zeros. The retraction says that proof exists in the private forward archive, but the released repository does not contain it.
+The current public record does not establish the bridge proving item 2 from the compressed-Weil matrix in the presence of all other zeros. This transfer remains OPEN; no unpublished material is used as evidence.
 
 So our independent Proposition-R reconstruction remains OPEN at one precise interface:
 

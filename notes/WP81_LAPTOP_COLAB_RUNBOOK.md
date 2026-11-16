@@ -11,7 +11,7 @@ We lock source bytes, upstream commit, shard plan and environment instead.
 
 ## Laptop preparation
 
-From the private Riemann repository root:
+From the authorized local repository root:
 
 ```bash
 mkdir -p work/spec52
@@ -63,7 +63,7 @@ Do not let two workers run the same shard.
 
 ## Colab privacy
 
-The Riemann repository remains private.
+Use an authorized local checkout; this runbook does not determine repository visibility.
 
 For Colab, prefer uploading only the small WP81 scripts and the locked
 manifest/execution receipt rather than putting a long-lived GitHub personal

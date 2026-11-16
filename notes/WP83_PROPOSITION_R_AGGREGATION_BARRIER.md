@@ -75,7 +75,7 @@ The proof must survive arbitrarily close ordinates, horizontal near-collisions a
 - local off-line growth: SOURCE-CLOSED in C26;
 - cancellation of indefinite blocks: EXACT COUNTEREXAMPLE to the naive monotonicity step;
 - globalization/isolation for the actual Gabor evaluation family: OPEN;
-- successor retraction: says this interface was resolved in the private forward archive, but the proof is not released.
+- The public record does not include a proof closing this interface; the obligation remains OPEN.
 
 This is now the precise Proposition-R reconstruction gate.
 
